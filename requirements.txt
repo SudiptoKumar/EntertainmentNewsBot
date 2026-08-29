@@ -1,2 +1,8 @@
-Pillow>=10.4,<12
+exa-py
+cerebras_cloud_sdk
 requests>=2.32,<3
+urllib3>=2.2,<3
+beautifulsoup4>=4.12,<5
+Pillow>=10.4,<12
+feedparser>=6.0,<7
+trafilatura>=2.0,<3

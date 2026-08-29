@@ -1,80 +1,34 @@
-# Entertainment Newsroom V1
+# EntertainmentNewsroom V1
 
-Automated movie, streaming, and scripted-series news intelligence for Telegram, powered by GitHub Actions, Exa, Cerebras, RSS/Google News, and batched editorial ranking.
+Automated movie, streaming, and scripted-series news intelligence for Telegram, powered by GitHub Actions, Exa, and Cerebras.
 
-The bot targets **@EntertainmentNewsroom** and follows the supplied editorial policy: selective top-news coverage across Hollywood, Indian cinema, Korean drama, Chinese drama, and major streaming platforms. Stories compete in one ranked pool and must clear an importance score of **7/10** before publication.
+## Editorial mission
 
-## Project structure
+This bot is intentionally selective. It prioritizes major Hollywood films and series, major Indian cinema, major streaming-platform developments, significant Korean and Chinese productions, major casting, trailers, first looks, release-date changes, renewals/cancellations, production milestones, rights/distribution deals, and high-impact entertainment-industry developments.
 
-```text
-EntertainmentNewsBot/
-├── .github/
-│   └── workflows/
-│       └── newbot.yml
-├── main.py
-├── requirements.txt
-├── README.md
-├── news_state.json
-└── posted_urls.txt
-```
+Stories compete in one ranked pool. A story is publishable only at **7/10 or higher**. Weak category coverage never displaces a stronger story.
 
 ## Pipeline
 
 ```text
-RSS feeds
-  ↓
-Google News RSS gap fill
-  ↓
-Exa gap fill
-  ↓
-Allowed-domain validation
-  ↓
-24-hour filter + URL deduplication
-  ↓
-Cerebras ranking in batches of 15
-  ↓
-Global score merge + soft market diversity
-  ↓
-Sequential article extraction
-  ↓
-Verification against article evidence
-  ↓
-Story generation
-  ↓
-Branded 1200×675 image
-  ↓
-Telegram photo + rich HTML caption
-  ↓
-Persistent state
+RSS
+  -> Google News RSS gap fill
+  -> Exa gap fill
+  -> source + date validation
+  -> URL + event deduplication
+  -> Cerebras structured editorial ranking
+  -> recovery pool
+  -> article extraction / Exa fallback
+  -> story generation
+  -> claim verification
+  -> 1200x675 branded card
+  -> Telegram Rich Message / Bot API fallback
+  -> persistent state
 ```
 
-## Editorial behavior
+## Secrets
 
-- Publish only candidates scoring **7–10**.
-- Rank significance, reach, production scale, platform importance, franchise/IP strength, cast/director prominence, international relevance, and audience anticipation.
-- Reject routine celebrity lifestyle/gossip, unsupported rumors, generic interviews, minor casting, low-value promotions, ordinary catalog additions, and duplicate event coverage.
-- Use soft market diversity only after importance ranking. Diversity never lowers the importance threshold.
-- Keep a rolling published-event history to avoid near-duplicate follow-ups.
-
-## Telegram format
-
-Each post contains:
-
-1. Branded photo card
-2. 6–14 word headline
-3. Exactly one-sentence summary
-4. 3–5 key highlights
-5. Expandable **THE CONTEXT** blockquote
-6. Expandable **BOTTOM LINE** blockquote
-7. Hashtags
-8. Clickable source link
-
-Telegram's current HTML parse mode supports expandable blockquotes, which this bot uses for the context and takeaway sections.
-
-## GitHub setup
-
-1. Create a Telegram bot with **@BotFather** and add it as an administrator to `@EntertainmentNewsroom` with permission to post messages.
-2. Create GitHub repository secrets:
+Required:
 
 ```text
 EXA_API_KEY
@@ -89,33 +43,29 @@ TELEGRAM_ADMIN_CHAT_ID
 CEREBRAS_MODEL
 ```
 
-3. Push this project to the repository.
-4. Enable GitHub Actions.
-5. Run **Entertainment Newsroom Bot → Run workflow** once manually.
+The workflow defaults to:
 
-The workflow then runs every 3 hours at minute 17 UTC. Change the cron expression in `.github/workflows/newbot.yml` to your preferred cadence.
-
-## Local run
-
-```bash
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-
-export EXA_API_KEY="..."
-export CEREBRAS_API_KEY="..."
-export TELEGRAM_BOT_TOKEN="..."
-export TELEGRAM_CHANNEL="@EntertainmentNewsroom"
-
-python main.py --self-test
-python main.py
+```text
+TELEGRAM_CHANNEL=@EntertainmentNewsroom
+NEWS_MODE=update
+CEREBRAS_MODEL=gpt-oss-120b
 ```
 
-## Operational notes
+## Local checks
 
-- `news_state.json` stores a rolling list of published events and last-run metadata.
-- `posted_urls.txt` provides URL-level duplicate prevention across GitHub Action executions.
-- The workflow commits those two files back to the repository after a run.
-- If image extraction fails, the bot generates a branded fallback card.
-- If verification fails or article text cannot be extracted, the candidate is skipped rather than published.
-- Exa and Cerebras failures are handled per stage so one failed candidate or one search call does not crash the entire run.
+```bash
+python -m py_compile main.py
+EXA_API_KEY=dummy CEREBRAS_API_KEY=dummy TELEGRAM_BOT_TOKEN=dummy python main.py --self-test
+```
+
+## Scheduling
+
+The included GitHub Actions workflow runs hourly from **07:00 through 23:00 Asia/Dhaka** and also supports manual execution. GitHub Actions cron is expressed in UTC.
+
+## Notes
+
+- Persistent state is stored in `news_state.json`.
+- Published URL memory is stored in `posted_urls.txt`.
+- The ranking call uses the official `cerebras_cloud_sdk` client and a strict JSON schema.
+- The article pipeline uses local extraction first and Exa content retrieval as a fallback.
+- Failed verification rejects the story instead of publishing unsupported claims.
