@@ -2097,6 +2097,28 @@ STORY_SCHEMA = {
             "items": {"type": "string"},
             "maxItems": 16,
         },
+        "template_type": {
+            "type": "string",
+            "enum": [
+                "general",
+                "release",
+                "breaking",
+                "trailer",
+                "renewal",
+                "cancellation",
+                "box_office",
+                "spoiler",
+            ],
+        },
+        "platform": {"type": "string"},
+        "episodes": {"type": "string"},
+        "languages": {"type": "string"},
+        "status": {"type": "string"},
+        "release_date": {"type": "string"},
+        "action_url": {"type": "string"},
+        "action_label": {"type": "string"},
+        "note": {"type": "string"},
+        "spoiler_text": {"type": "string"},
     },
     "required": [
         "headline",
@@ -2105,6 +2127,16 @@ STORY_SCHEMA = {
         "the_context",
         "bottom_line",
         "bold_terms",
+        "template_type",
+        "platform",
+        "episodes",
+        "languages",
+        "status",
+        "release_date",
+        "action_url",
+        "action_label",
+        "note",
+        "spoiler_text",
     ],
     "additionalProperties": False,
 }
@@ -2182,9 +2214,19 @@ or casting details that are not supported by the article.
 PUBLIC CONTENT:
 - Headline: 6-16 words, accurate and newspaper-style.
 - Summary: exactly ONE complete sentence.
-- Highlights: 2-5 short factual points, chosen dynamically.
+- Highlights: 3-5 short factual points, chosen dynamically.
 - The Context: 2-4 complete sentences only when useful.
 - Bottom Line: exactly ONE complete sentence.
+- Choose template_type from: general, release, breaking, trailer, renewal, cancellation, box_office, spoiler.
+- Use release for new streaming/theatrical availability.
+- Use trailer for a trailer/teaser/first-look drop.
+- Use renewal or cancellation only when that is the actual news.
+- Use box_office for a material box-office result or milestone.
+- Use breaking for major developing news where a release/trailer/renewal/cancellation template does not fit.
+- Use spoiler only when the source contains a meaningful plot/ending/post-credit reveal.
+- Optional metadata fields must be empty when unsupported. Never invent values.
+- For action_url, use the source URL only if it is genuinely useful for the reader; otherwise return an empty string.
+- action_label should be one of: Watch Now, Watch Trailer, Source, Read More, or empty.
 - No repetition, no clickbait, no rumor presented as fact.
 - No hashtags in generated fields.
 
@@ -2272,6 +2314,14 @@ The public post is aimed at readers who want major movie, OTT and scripted-serie
             ):
                 raise ValueError("Incomplete story")
 
+            template_type = safe_text(data.get("template_type")).lower() or "general"
+            allowed_templates = {
+                "general", "release", "breaking", "trailer",
+                "renewal", "cancellation", "box_office", "spoiler",
+            }
+            if template_type not in allowed_templates:
+                raise ValueError(f"Unsupported template_type: {template_type}")
+
             story = {
                 **item,
                 "headline": trim_source_text(headline, 110),
@@ -2280,6 +2330,16 @@ The public post is aimed at readers who want major movie, OTT and scripted-serie
                 "the_context": trim_source_text(the_context, 520),
                 "bottom_line": trim_source_text(bottom_line, 220),
                 "bold_terms": [safe_text(x) for x in data.get("bold_terms", []) if safe_text(x)],
+                "template_type": template_type,
+                "platform": trim_source_text(data.get("platform", ""), 80),
+                "episodes": trim_source_text(data.get("episodes", ""), 40),
+                "languages": trim_source_text(data.get("languages", ""), 120),
+                "status": trim_source_text(data.get("status", ""), 60),
+                "release_date": trim_source_text(data.get("release_date", ""), 80),
+                "action_url": safe_text(data.get("action_url", "")),
+                "action_label": trim_source_text(data.get("action_label", ""), 30),
+                "note": trim_source_text(data.get("note", ""), 240),
+                "spoiler_text": trim_source_text(data.get("spoiler_text", ""), 500),
             }
 
             return story
@@ -2643,38 +2703,141 @@ def bold_terms_html(
 # ============================================================
 
 def dynamic_rich_html(story):
+    """Render a dynamic Telegram Rich HTML card based on the news event type.
+
+    The visual semantics mirror telegram_news_template.md:
+    bold hook/title, italic metadata, code-style factual badges, expandable
+    context/disclaimer blocks, clickable action/source links, and optional spoiler.
+    """
     terms = derive_bold_terms(story)
-    parts = [
-        '<img src="tg://photo?id=newsphoto">',
-        "<h1>" + escape_rich_html(story["headline"]) + "</h1>",
-        "<p>" + bold_terms_html(story["summary"], terms) + "</p>",
-        "<h2>KEY HIGHLIGHTS</h2>",
-        "<p>" + "<br>".join(
-            "• " + bold_terms_html(point, terms)
-            for point in story.get("highlights", [])
-        ) + "</p>",
-        "<blockquote expandable><b>THE CONTEXT</b><br>"
-        + bold_terms_html(story.get("the_context", ""), terms)
-        + "</blockquote>",
-        "<blockquote expandable><b>BOTTOM LINE</b><br>"
-        + bold_terms_html(story.get("bottom_line", ""), terms)
-        + "</blockquote>",
-    ]
+    template = safe_text(story.get("template_type", "general")).lower()
+
+    hook_map = {
+        "general": "📌 UPDATE",
+        "release": "🔥 NOW STREAMING",
+        "breaking": "🚨 BREAKING",
+        "trailer": "🎞️ TRAILER DROP",
+        "renewal": "⚡ RENEWED",
+        "cancellation": "❌ CANCELLED",
+        "box_office": "💰 BOX OFFICE",
+        "spoiler": "⭐ EXCLUSIVE",
+    }
+    hook = hook_map.get(template, "📌 UPDATE")
+
+    region = safe_text(story.get("region", ""))
+    topic = safe_text(story.get("topic", ""))
+    platform = safe_text(story.get("platform", ""))
+    episodes = safe_text(story.get("episodes", ""))
+    languages = safe_text(story.get("languages", ""))
+    status = safe_text(story.get("status", ""))
+    release_date = safe_text(story.get("release_date", ""))
+    note = safe_text(story.get("note", ""))
+    action_url = safe_text(story.get("action_url", ""))
+    action_label = safe_text(story.get("action_label", ""))
+    spoiler_text = safe_text(story.get("spoiler_text", ""))
+
+    meta_bits = []
+    if region:
+        meta_bits.append(region)
+    if topic:
+        meta_bits.append(topic)
+    if meta_bits:
+        metadata = " • ".join(meta_bits)
+    else:
+        metadata = ""
+
+    parts = ['<img src="tg://photo?id=newsphoto">']
+    parts.append("<p><b>" + escape_rich_html(hook) + "</b></p>")
+    parts.append("<h1>🎬 " + escape_rich_html(story["headline"]) + "</h1>")
+
+    if metadata:
+        parts.append("<p><i>" + escape_rich_html(metadata) + "</i></p>")
+
+    if story.get("summary"):
+        parts.append("<p>" + bold_terms_html(story["summary"], terms) + "</p>")
+
+    # Dynamic highlights. Never show an empty section.
+    highlights = [safe_text(x) for x in story.get("highlights", []) if safe_text(x)]
+    if highlights:
+        label = {
+            "trailer": "What The Trailer Reveals",
+            "box_office": "Key Numbers",
+            "renewal": "Renewal Details",
+            "cancellation": "Cancellation Details",
+        }.get(template, "What's New")
+        parts.append("<h2>📌 " + escape_rich_html(label) + "</h2>")
+        parts.append(
+            "<p>" + "<br>".join(
+                "• " + bold_terms_html(point, terms) for point in highlights
+            ) + "</p>"
+        )
+
+    # Availability block for releases or whenever meaningful metadata exists.
+    availability_lines = []
+    if platform:
+        availability_lines.append("• Platform: <code>" + escape_rich_html(platform) + "</code>")
+    if episodes:
+        availability_lines.append("• Episodes: <code>" + escape_rich_html(episodes) + "</code>")
+    if languages:
+        availability_lines.append("• Language: <code>" + escape_rich_html(languages) + "</code>")
+    if status:
+        availability_lines.append("• Status: <code>" + escape_rich_html(status) + "</code>")
+
+    if availability_lines:
+        parts.append("<h2>📺 Availability</h2>")
+        parts.append("<p>" + "<br>".join(availability_lines) + "</p>")
+
+    if release_date:
+        parts.append(
+            "<p>📅 <b>Release:</b> " + escape_rich_html(release_date) + "</p>"
+        )
+
+    # Box-office events can have a dedicated compact section from highlights,
+    # while renewal/cancellation can show a note without manufacturing fields.
+    if action_url and action_label:
+        safe_url = html.escape(action_url, quote=True)
+        parts.append(
+            "<p>🔗 "
+            f'<a href="{safe_url}">{escape_rich_html(action_label)}</a>'
+            "</p>"
+        )
+
+    if spoiler_text:
+        parts.append("<p>🙈 <b>Tap to reveal:</b></p>")
+        parts.append("<p><tg-spoiler>" + escape_rich_html(spoiler_text) + "</tg-spoiler></p>")
+
+    if note:
+        parts.append("<blockquote><b>ℹ️ Note</b><br>" + escape_rich_html(note) + "</blockquote>")
+
+    context = safe_text(story.get("the_context", ""))
+    if context:
+        parts.append(
+            "<blockquote expandable><b>THE CONTEXT</b><br>"
+            + bold_terms_html(context, terms)
+            + "</blockquote>"
+        )
+
+    bottom = safe_text(story.get("bottom_line", ""))
+    if bottom:
+        parts.append(
+            "<blockquote expandable><b>BOTTOM LINE</b><br>"
+            + bold_terms_html(bottom, terms)
+            + "</blockquote>"
+        )
 
     hashtags = " ".join(category_hashtags(story))
     if hashtags:
         parts.append("<p>" + escape_rich_html(hashtags) + "</p>")
 
     source = escape_rich_html(story["source"])
-    url = html.escape(story["url"], quote=True)
+    source_url = html.escape(story["url"], quote=True)
     parts.append(
         "<footer><b>Source:</b> "
-        f'<a href="{url}">{source}</a>'
+        f'<a href="{source_url}">{source}</a>'
         "</footer>"
     )
 
     return "\n".join(parts)
-
 
 def rich_visible_length(text):
     """Return Telegram-visible character count for Rich HTML text.
@@ -3889,8 +4052,25 @@ def self_test():
         "region": "International",
         "topic": "Korean Drama",
         "institution": "Netflix",
+        "template_type": "release",
+        "platform": "Netflix",
+        "episodes": "8",
+        "languages": "Korean, English",
+        "status": "Available Now",
+        "release_date": "August 28, 2026",
+        "action_url": "https://www.netflix.com/",
+        "action_label": "Watch Now",
+        "note": "International streaming availability is confirmed.",
+        "spoiler_text": "",
+
     }
     rendered = dynamic_rich_html(sample)
+    assert "<h1>🎬 " in rendered
+    assert "🔥 NOW STREAMING" in rendered
+    assert "<h2>📺 Availability</h2>" in rendered
+    assert "<code>Netflix</code>" in rendered
+    assert "<a href=" in rendered
+    assert "<tg-spoiler>" not in rendered
     assert complete_text("A normal sentence.")
     assert complete_text("An incomplete sentence—") is False
     assert "<h1>Netflix Announces Major New Korean Thriller Series</h1>" in rendered
@@ -3926,6 +4106,21 @@ def self_test():
     rendered_five = dynamic_rich_html(sample_five)
     assert rendered_five.count("• ") == 5
 
+    sample_trailer = dict(sample)
+    sample_trailer["template_type"] = "trailer"
+    sample_trailer["action_label"] = "Watch Trailer"
+    sample_trailer["action_url"] = "https://example.com/trailer"
+    trailer_html = dynamic_rich_html(sample_trailer)
+    assert "🎞️ TRAILER DROP" in trailer_html
+    assert "Watch Trailer" in trailer_html
+
+    sample_spoiler = dict(sample)
+    sample_spoiler["template_type"] = "spoiler"
+    sample_spoiler["spoiler_text"] = "A major post-credit reveal occurs."
+    spoiler_html = dynamic_rich_html(sample_spoiler)
+    assert "⭐ EXCLUSIVE" in spoiler_html
+    assert "<tg-spoiler>" in spoiler_html
+
     clustered = cluster_ranked_events([
         {"title": "Netflix announces major Korean thriller series", "source": "Netflix", "url": "https://netflix.com/a", "published_date": now_iso(), "region": "International", "event_key": "netflix_korean_thriller"},
         {"title": "Netflix announces major Korean thriller series", "source": "Netflix", "url": "https://netflix.com/b", "published_date": now_iso(), "region": "International", "event_key": "netflix_korean_thriller"},
@@ -3957,3 +4152,6 @@ def main():
         self_test()
     else:
         run()
+
+if __name__ == "__main__":
+    main()

@@ -387,3 +387,23 @@ python main.py
 > **@EntertainmentNewsroom publishes the entertainment news that matters, not all entertainment news that exists.**
 
 The system is intentionally comfortable with a quiet run when no story clears the bar.
+
+
+# Dynamic Telegram Template
+
+The bot uses a dynamic Rich HTML renderer based on the project's Telegram template specification.
+
+Supported event templates:
+
+- Release / streaming
+- Breaking
+- Trailer / teaser
+- Renewal
+- Cancellation
+- Box office
+- Spoiler-sensitive
+- General update
+
+The renderer adapts the post to the event rather than forcing every story into one fixed layout. It uses bold hooks/titles, italic metadata, code-style factual badges, expandable context, clickable source/action links, and optional spoiler formatting.
+
+`telegram_news_template.md` documents the intended visual semantics and reusable template variants.
