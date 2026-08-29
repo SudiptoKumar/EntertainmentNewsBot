@@ -1,142 +1,224 @@
 {
   "feeds": {
     "https://deadline.com/feed/": {
-      "etag": "W/\"8ebc98d6b2d92c0da8348ee03b89e81d\"",
-      "last_modified": "Fri, 28 Aug 2026 14:48:10 GMT",
-      "last_checked": "2026-08-29T19:01:54.786236+06:00",
+      "etag": "W/\"8686c73ca3a7de788c9328a2a9b1d0e8\"",
+      "last_modified": "Sat, 29 Aug 2026 17:32:58 GMT",
+      "last_checked": "2026-08-29T23:34:01.408692+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://variety.com/feed/": {
-      "etag": "W/\"bd828cc72747561f37bef9b5e796bc10\"",
-      "last_modified": "Sat, 29 Aug 2026 12:51:27 GMT",
-      "last_checked": "2026-08-29T19:01:54.899520+06:00",
+      "etag": "W/\"2a7cdb442806951a4d0e645c4ad4288c\"",
+      "last_modified": "Sat, 29 Aug 2026 17:26:36 GMT",
+      "last_checked": "2026-08-29T23:34:01.570555+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.hollywoodreporter.com/feed/": {
-      "etag": "W/\"4d19c17bc5ac05137f1c5943fa623c30\"",
-      "last_modified": "Sat, 29 Aug 2026 05:33:39 GMT",
-      "last_checked": "2026-08-29T19:01:55.072796+06:00",
+      "etag": "W/\"c9931183d38e5c511ed088e9056c107e\"",
+      "last_modified": "Sat, 29 Aug 2026 17:32:31 GMT",
+      "last_checked": "2026-08-29T23:34:01.817030+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.thewrap.com/feed/": {
-      "etag": "\"f225f0df63221f09532e019fe9ae2407\"",
-      "last_modified": "Sat, 29 Aug 2026 05:44:03 GMT",
-      "last_checked": "2026-08-29T19:01:55.142803+06:00",
+      "etag": "\"e53bc50a8d3ef454f13bd201e5d89b9d\"",
+      "last_modified": "Sat, 29 Aug 2026 17:32:11 GMT",
+      "last_checked": "2026-08-29T23:34:01.925814+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.indiewire.com/feed/": {
-      "etag": "W/\"db9663853f102a83e6348b710fd0a1cc\"",
-      "last_modified": "Sat, 29 Aug 2026 04:02:38 GMT",
-      "last_checked": "2026-08-29T19:01:55.291894+06:00",
+      "etag": "W/\"ca0c39bedfe4adb3c4d797278a174463\"",
+      "last_modified": "Sat, 29 Aug 2026 17:32:16 GMT",
+      "last_checked": "2026-08-29T23:34:03.100156+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://collider.com/feed/": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-08-29T19:01:55.654730+06:00",
+      "last_checked": "2026-08-29T23:34:03.457156+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://tvline.com/feed/": {
-      "etag": "\"913e4c0493b7d4db7723fb77514c9e25\"",
-      "last_modified": "Sat, 29 Aug 2026 12:30:00 GMT",
-      "last_checked": "2026-08-29T19:01:56.059441+06:00",
+      "etag": "\"b623a01ae4d3604db4b148b50781e7d2\"",
+      "last_modified": "Sat, 29 Aug 2026 17:12:00 GMT",
+      "last_checked": "2026-08-29T23:34:04.020715+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.ottplay.com/rss": {
       "etag": "\"b5496c89c58ff0f5d07d64a68d4efe07\"",
       "last_modified": "Thu, 27 May 2021 12:38:49 GMT",
-      "last_checked": "2026-08-29T19:01:57.058569+06:00",
+      "last_checked": "2026-08-29T23:34:05.230796+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.filmibeat.com/rss/feeds/filmibeat-news.xml": {
       "etag": null,
-      "last_modified": "Sat, 29 Aug 2026 12:55:24 GMT",
-      "last_checked": "2026-08-29T19:01:58.217677+06:00",
+      "last_modified": "Sat, 29 Aug 2026 17:34:06 GMT",
+      "last_checked": "2026-08-29T23:34:06.308155+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.pinkvilla.com/rss": {
-      "last_checked": "2026-08-29T19:01:58.495479+06:00",
+      "last_checked": "2026-08-29T23:34:06.799431+06:00",
       "fail_count": 1
     },
     "https://www.bollywoodhungama.com/feed/": {
-      "etag": "\"bd828cc72747561f37bef9b5e796bc10\"",
-      "last_modified": "Sat, 29 Aug 2026 12:51:27 GMT",
-      "last_checked": "2026-08-29T19:01:58.715108+06:00",
+      "etag": "\"a79a96cca48579e294cde8dd4d9c19c9\"",
+      "last_modified": "Sat, 29 Aug 2026 16:35:18 GMT",
+      "last_checked": "2026-08-29T23:34:07.175492+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.gadgets360.com/entertainment/rss": {
-      "last_checked": "2026-08-29T19:01:58.881783+06:00",
+      "last_checked": "2026-08-29T23:34:07.331319+06:00",
       "fail_count": 1
     },
     "https://www.soompi.com/feed": {
-      "etag": "W/\"297186977302b3bccfddf0cea34f3125\"",
-      "last_modified": "Sat, 29 Aug 2026 06:18:45 GMT",
-      "last_checked": "2026-08-29T19:01:59.172330+06:00",
+      "etag": "W/\"01765bd3b40fa3c1d2cae58cb601d2a4\"",
+      "last_modified": "Sat, 29 Aug 2026 15:31:05 GMT",
+      "last_checked": "2026-08-29T23:34:07.608779+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.whats-on-netflix.com/feed/": {
       "etag": null,
-      "last_modified": "Fri, 28 Aug 2026 18:55:51 GMT",
-      "last_checked": "2026-08-29T19:02:00.061708+06:00",
+      "last_modified": "Sat, 29 Aug 2026 17:03:19 GMT",
+      "last_checked": "2026-08-29T23:34:08.435131+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.netflix.com/tudum/rss.xml": {
-      "last_checked": "2026-08-29T19:02:01.137709+06:00",
+      "last_checked": "2026-08-29T23:34:09.149010+06:00",
       "fail_count": 1
     },
     "https://press.wbd.com/us/en/rss": {
-      "last_checked": "2026-08-29T19:02:01.610871+06:00",
+      "last_checked": "2026-08-29T23:34:09.514610+06:00",
       "fail_count": 1
     },
     "https://www.apple.com/tv-pr/newsroom/feed/": {
-      "last_checked": "2026-08-29T19:02:02.105604+06:00",
+      "last_checked": "2026-08-29T23:34:10.166432+06:00",
       "fail_count": 1
     },
     "https://www.aboutamazon.com/rss": {
-      "last_checked": "2026-08-29T19:02:02.553494+06:00",
+      "last_checked": "2026-08-29T23:34:12.871887+06:00",
       "fail_count": 1
     },
     "https://www.marvel.com/articles/feed": {
-      "last_checked": "2026-08-29T19:02:02.737917+06:00",
+      "last_checked": "2026-08-29T23:34:13.491827+06:00",
       "fail_count": 1
     },
     "https://www.dc.com/blog/rss.xml": {
-      "last_checked": "2026-08-29T19:02:03.805023+06:00",
+      "last_checked": "2026-08-29T23:34:14.389471+06:00",
       "fail_count": 1
     },
     "https://www.sonypictures.com/rss": {
-      "last_checked": "2026-08-29T19:02:04.394370+06:00",
+      "last_checked": "2026-08-29T23:34:14.906543+06:00",
       "fail_count": 1
     },
     "https://www.paramount.com/rss": {
-      "last_checked": "2026-08-29T19:02:04.502918+06:00",
+      "last_checked": "2026-08-29T23:34:15.062668+06:00",
       "fail_count": 1
     },
     "https://www.universalpictures.com/rss": {
-      "last_checked": "2026-08-29T19:02:04.858493+06:00",
+      "last_checked": "2026-08-29T23:34:15.524786+06:00",
       "fail_count": 1
     }
   },
   "queue": {
     "example.com/story": {
       "region": "Entertainment",
-      "published_date": "2026-08-29T19:01:52.912830+06:00",
-      "last_seen": "2026-08-29T19:01:52.912843+06:00",
+      "published_date": "2026-08-29T23:33:59.684528+06:00",
+      "last_seen": "2026-08-29T23:33:59.684541+06:00",
       "status": "pending",
       "title": "Example",
       "url": "https://example.com/story"
+    },
+    "deadline.com/2026/08/anne-hathaway-tom-cruise-days-of-thunder-2-1237062516": {
+      "title": "Anne Hathaway Joins Tom Cruise In ‘Days Of Thunder 2’ At Paramount",
+      "url": "https://deadline.com/2026/08/anne-hathaway-tom-cruise-days-of-thunder-2-1237062516/",
+      "canonical": "deadline.com/2026/08/anne-hathaway-tom-cruise-days-of-thunder-2-1237062516",
+      "published_dt": "2026-08-29T22:59:44+06:00",
+      "published_date": "2026-08-29T22:59:44+06:00",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "excerpt": "Paramount Pictures is really revving its engines on the upcoming Days of Thunder 2 starring Tom Cruise as Anne Hathaway is set to join Cruise in the sequel. Cruise announced the news on his social platforms featuring a picture of the two A-listers leaning against a Nascar race car in Daytona. The picture also announced […]",
+      "image": "https://deadline.com/wp-content/uploads/2026/08/days-of-thunder.jpeg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-08-29T23:34:01.507800+06:00",
+      "last_seen": "2026-08-29T23:34:01.507806+06:00"
+    },
+    "deadline.com/2026/08/liza-minnelli-dolly-parton-1237062623": {
+      "title": "Liza Minnelli Pays Tribute To Friend Dolly Parton: “When I Was In Trouble? Dolly Knew It.”",
+      "url": "https://deadline.com/2026/08/liza-minnelli-dolly-parton-1237062623/",
+      "canonical": "deadline.com/2026/08/liza-minnelli-dolly-parton-1237062623",
+      "published_dt": "2026-08-29T22:54:24+06:00",
+      "published_date": "2026-08-29T22:54:24+06:00",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "excerpt": "Liza Minnelli has added herself to the fans and friends paying tribute to the late Dolly Parton, posting an emotional message on Instagram saying this week’s news was “devastating.” Beginning the message with her signature “Hey Kids,” Minnelli notes that she and the country music icon once shared an agent, Sam Haskell. “Sam brought Dolly […]",
+      "image": "https://deadline.com/wp-content/uploads/2026/08/dolly-liza.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-08-29T23:34:01.508045+06:00",
+      "last_seen": "2026-08-29T23:34:01.508049+06:00"
+    },
+    "deadline.com/2026/08/box-office-coyote-vs-acme-dog-stars-spider-man-1237061934": {
+      "title": "‘Spider-Man’ Nearing $900M; ‘Coyote Vs. Acme’ Solid $14M Debut & ‘A’ CinemaScore, ‘Dog Stars’ Going To The Dogs – Box Office Update",
+      "url": "https://deadline.com/2026/08/box-office-coyote-vs-acme-dog-stars-spider-man-1237061934/",
+      "canonical": "deadline.com/2026/08/box-office-coyote-vs-acme-dog-stars-spider-man-1237061934",
+      "published_dt": "2026-08-29T21:46:00+06:00",
+      "published_date": "2026-08-29T21:46:00+06:00",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "excerpt": "SATURDAY AM WRITETHRU after Friday afternoon post: It’s Spidey’s world, and Jacob Elordi and Wile E. Coyote are just living in it. But let’s not ignore the pace we’re seeing on Ketchup Entertainment’s release of the abandoned Warner Bros Looney Tunes title, Coyote Vs. Acme, which is eyeing third place now with $14M. Coyote vs. […]",
+      "image": "https://deadline.com/wp-content/uploads/2026/08/Spider-Man-Brand-New-Day-Coyote-vs-Acme-The-Dog-Stars.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "posted",
+      "first_seen": "2026-08-29T23:34:01.508198+06:00",
+      "last_seen": "2026-08-29T23:34:01.508200+06:00",
+      "posted_at": "2026-08-30T00:05:33.723178+06:00"
+    },
+    "deadline.com/2026/08/alma-harel-wet-movie-tiff-market-a-list-cast-circling-1237062594": {
+      "title": "Alma Har’el’s Family Drama ‘Wet’ Heading To TIFF Market With 193; A-List Cast Circling",
+      "url": "https://deadline.com/2026/08/alma-harel-wet-movie-tiff-market-a-list-cast-circling-1237062594/",
+      "canonical": "deadline.com/2026/08/alma-harel-wet-movie-tiff-market-a-list-cast-circling-1237062594",
+      "published_dt": "2026-08-29T20:17:50+06:00",
+      "published_date": "2026-08-29T20:17:50+06:00",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "excerpt": "Honey Boy director Alma Har’el’s next project Wet is heading to the TIFF market with Patrick Wachsberger’s 193 and is attracting what could be a killer cast. News of the project broke online last month via Page Six who reported that Oscar winner Javier Bardem was in talks. Bardem remains in early talks for the […]",
+      "image": "https://deadline.com/wp-content/uploads/2026/08/Alma-Harel.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-08-29T23:34:01.508314+06:00",
+      "last_seen": "2026-08-29T23:34:01.508316+06:00"
+    },
+    "deadline.com/2026/08/paranormal-activity-broadway-review-1237061077": {
+      "title": "‘Paranormal Activity’ Broadway Review: Stage Adaptation Of Film Franchise Is A Frightfully Good Time",
+      "url": "https://deadline.com/2026/08/paranormal-activity-broadway-review-1237061077/",
+      "canonical": "deadline.com/2026/08/paranormal-activity-broadway-review-1237061077",
+      "published_dt": "2026-08-29T20:00:00+06:00",
+      "published_date": "2026-08-29T20:00:00+06:00",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "excerpt": "There are plenty of laughs in Paranormal Activity, a play that just might be Broadway’s scariest horror story ever, but they’re not the lighthearted jolly chuckles of, say, Titanique or the gut-bucket guffaws of Oh, Mary! No, the laughs in Levi Holloway’s chiller are more along the lines of those recalled from sharing a movie […]",
+      "image": "https://deadline.com/wp-content/uploads/2026/08/PARANORMAL_ACTIVITY_BOSTON_1381_PJZEDIT_v001_06bbb0-e1787853739513.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "posted",
+      "first_seen": "2026-08-29T23:34:01.508445+06:00",
+      "last_seen": "2026-08-29T23:34:01.508447+06:00",
+      "posted_at": "2026-08-30T00:04:30.665057+06:00"
     },
     "deadline.com/2026/08/alex-winter-incident-at-vichy-off-broadway-1237061879": {
       "title": "Alex Winter Bringing Arthur Miller’s ‘Incident At Vichy’ Revival To Off Broadway Next Year",
@@ -151,8 +233,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-08-29T19:01:54.812513+06:00",
-      "last_seen": "2026-08-29T19:01:54.812518+06:00"
+      "first_seen": "2026-08-29T23:34:01.508559+06:00",
+      "last_seen": "2026-08-29T23:34:01.508562+06:00"
     },
     "deadline.com/2026/08/galliano-met-gala-possible-date-change-1237062587": {
       "title": "Amid Growing Galliano Backlash, Met Gala Mulls Date Change – Report",
@@ -167,8 +249,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-08-29T19:01:54.812684+06:00",
-      "last_seen": "2026-08-29T19:01:54.812687+06:00"
+      "first_seen": "2026-08-29T23:34:01.508669+06:00",
+      "last_seen": "2026-08-29T23:34:01.508671+06:00"
     },
     "deadline.com/2026/08/inside-great-british-bake-off-fight-sky-love-productions-1237062324": {
       "title": "Inside ‘The Great British Bake Off’ Bun Fight: How Sky & Love Productions Came To Blows Over The UK’s Biggest Cooking Series",
@@ -183,8 +265,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-08-29T19:01:54.812804+06:00",
-      "last_seen": "2026-08-29T19:01:54.812806+06:00"
+      "first_seen": "2026-08-29T23:34:01.508771+06:00",
+      "last_seen": "2026-08-29T23:34:01.508772+06:00"
     },
     "deadline.com/2026/08/real-time-bill-maher-boob-joke-dolly-parton-tribute-1237062527": {
       "title": "‘Real Time’: Bill Maher Goes For A Boob Joke With Dolly Parton Tribute",
@@ -199,8 +281,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-08-29T19:01:54.812920+06:00",
-      "last_seen": "2026-08-29T19:01:54.812922+06:00"
+      "first_seen": "2026-08-29T23:34:01.508895+06:00",
+      "last_seen": "2026-08-29T23:34:01.508897+06:00"
     },
     "deadline.com/2026/08/judge-jackie-glass-dead-swift-justice-tv-host-1237062523": {
       "title": "Judge Jackie Glass Dead: ‘Swift Justice’ TV Host Was 70",
@@ -215,8 +297,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-08-29T19:01:54.813035+06:00",
-      "last_seen": "2026-08-29T19:01:54.813036+06:00"
+      "first_seen": "2026-08-29T23:34:01.509020+06:00",
+      "last_seen": "2026-08-29T23:34:01.509022+06:00"
     },
     "deadline.com/2026/08/california-film-industry-corporate-tax-credit-cap-bill-1237062494": {
       "title": "California Lawmakers Introduce Compromise For Film Industry On Corporate Tax Credit Cap",
@@ -231,8 +313,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-08-29T19:01:54.813126+06:00",
-      "last_seen": "2026-08-29T19:01:54.813127+06:00"
+      "first_seen": "2026-08-29T23:34:01.509119+06:00",
+      "last_seen": "2026-08-29T23:34:01.509121+06:00"
     },
     "deadline.com/2026/08/tennessee-governor-rename-nashville-airport-dolly-parton-1237062498": {
       "title": "Tennessee Governor Proposes Renaming Nashville Airport In Honor Of Dolly Parton",
@@ -247,72 +329,58 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-08-29T19:01:54.813215+06:00",
-      "last_seen": "2026-08-29T19:01:54.813216+06:00"
+      "first_seen": "2026-08-29T23:34:01.509232+06:00",
+      "last_seen": "2026-08-29T23:34:01.509234+06:00"
     },
-    "deadline.com/2026/08/nicole-kidman-spontaneous-appearance-troye-sivan-video-1237062469": {
-      "title": "Nicole Kidman Explains “Spontaneous” Appearance In Troye Sivan Video: “I Didn’t Need Any Information”",
-      "url": "https://deadline.com/2026/08/nicole-kidman-spontaneous-appearance-troye-sivan-video-1237062469/",
-      "canonical": "deadline.com/2026/08/nicole-kidman-spontaneous-appearance-troye-sivan-video-1237062469",
-      "published_dt": "2026-08-29T05:57:47+06:00",
-      "published_date": "2026-08-29T05:57:47+06:00",
-      "source": "Deadline",
+    "variety.com/2026/film/news/anne-hathaway-tom-cruise-days-of-thunder-sequel-1236839347": {
+      "title": "Anne Hathaway Joins Tom Cruise in ‘Days of Thunder’ Follow-Up; Paramount Sets Release Date (EXCLUSIVE)",
+      "url": "https://variety.com/2026/film/news/anne-hathaway-tom-cruise-days-of-thunder-sequel-1236839347/",
+      "canonical": "variety.com/2026/film/news/anne-hathaway-tom-cruise-days-of-thunder-sequel-1236839347",
+      "published_dt": "2026-08-29T22:58:07+06:00",
+      "published_date": "2026-08-29T22:58:07+06:00",
+      "source": "Variety",
       "region": "Entertainment",
-      "excerpt": "Nicole Kidman seems to be popping up onscreen everywhere the past few years, and Troye Sivan’s latest music video was no exception. After the Oscar-winning actress made a surprise appearance in the 3x Grammy-nominated artist’s “She’s the Best” music video earlier this month, she recently explained the “spontaneous” decision. “I love him. I’ve known him […]",
-      "image": "https://deadline.com/wp-content/uploads/2026/08/Troye-Sivan-Nicole-Kidman.png",
+      "excerpt": "Anne Hathaway will star opposite Tom Cruise in the next chapter of “Days of Thunder,” Variety has learned exclusively. Paramount Pictures has dated the feature film sequel for June 2, 2028, when Cruise and Hathaway will hit the road almost 40 years after the original Tony Scott film was released. The project will be shot […]",
+      "image": "https://variety.com/wp-content/uploads/2026/08/SHOT_01_00565RTFv2cropHREZ.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "posted",
+      "first_seen": "2026-08-29T23:34:01.580752+06:00",
+      "last_seen": "2026-08-29T23:34:01.580757+06:00",
+      "posted_at": "2026-08-30T00:04:25.601009+06:00"
+    },
+    "variety.com/2026/film/news/box-office-the-dog-stars-spider-man-brand-new-day-1236846559": {
+      "title": "Box Office: ‘The Dog Stars’ Struggles With Just $3 Million on Friday; ‘Spider-Man: Brand New Day’ to Win Weekend Again",
+      "url": "https://variety.com/2026/film/news/box-office-the-dog-stars-spider-man-brand-new-day-1236846559/",
+      "canonical": "variety.com/2026/film/news/box-office-the-dog-stars-spider-man-brand-new-day-1236846559",
+      "published_dt": "2026-08-29T22:20:00+06:00",
+      "published_date": "2026-08-29T22:20:00+06:00",
+      "source": "Variety",
+      "region": "Entertainment",
+      "excerpt": "20th Century’s “The Dog Stars” and Keylight Pictures’ “Coyote vs. Acme” both debuted in theaters on Friday, but Sony and Marvel’s “Spider-Man: Brand New Day” will once again win the weekend. “Coyote vs. Acme” fared best of the two major newcomers, landing in second place with an estimated $5.2 million domestically on Friday from 3,575 […]",
+      "image": "https://variety.com/wp-content/uploads/2026/08/dog-stars.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "posted",
+      "first_seen": "2026-08-29T23:34:01.580913+06:00",
+      "last_seen": "2026-08-29T23:34:01.580916+06:00",
+      "posted_at": "2026-08-30T00:05:24.123952+06:00"
+    },
+    "variety.com/2026/shopping/news/how-to-watch-moses-vs-hrgovic-boxing-ppv-live-online-1236845973": {
+      "title": "Here’s How to Watch Moses Itauma vs. Filip Hrgovic Boxing Pay-Per-View Live Online",
+      "url": "https://variety.com/2026/shopping/news/how-to-watch-moses-vs-hrgovic-boxing-ppv-live-online-1236845973/",
+      "canonical": "variety.com/2026/shopping/news/how-to-watch-moses-vs-hrgovic-boxing-ppv-live-online-1236845973",
+      "published_dt": "2026-08-29T21:00:00+06:00",
+      "published_date": "2026-08-29T21:00:00+06:00",
+      "source": "Variety",
+      "region": "Entertainment",
+      "excerpt": "The best boxers in the world travel to London this weekend, where English fighter Moses Itauma (14-0-0) takes on Albanian Filip Hrgovic (20-2-0) in the heavyweight title main event on Saturday, Aug. 29. For Queensberry Promotions, the Itauma vs. Hrgovic pay-per-view event takes place at The O2 Arena in London, England. Coverage and prelims begin […]",
+      "image": "https://variety.com/wp-content/uploads/2026/08/Boxing-Moses-Itauma-vs.-Filip-Hrgovic-Getty-VR-Featured.jpg",
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-08-29T19:01:54.813340+06:00",
-      "last_seen": "2026-08-29T19:01:54.813342+06:00"
-    },
-    "deadline.com/2026/08/attack-of-the-killer-tomatoes-organic-intelligence-release-date-1237062456": {
-      "title": "‘Attack Of The Killer Tomatoes: Organic Intelligence’ Sets Fall PVOD Release",
-      "url": "https://deadline.com/2026/08/attack-of-the-killer-tomatoes-organic-intelligence-release-date-1237062456/",
-      "canonical": "deadline.com/2026/08/attack-of-the-killer-tomatoes-organic-intelligence-release-date-1237062456",
-      "published_dt": "2026-08-29T05:36:39+06:00",
-      "published_date": "2026-08-29T05:36:39+06:00",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "excerpt": "EXCLUSIVE: The fifth installment of Attack of the Killer Tomatoes, titled Attack of the Killer Tomatoes: Organic Intelligence, is coming to VOD platforms on October 6. This is following a theatrical release that began on August 7 for the David Ferino-directed comedy. The release comes via a strategic distribution partnership between Starboard Entertainment and Stonecutter […]",
-      "image": "https://deadline.com/wp-content/uploads/2026/08/image0-2-e1787958828468.jpeg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-08-29T19:01:54.813426+06:00",
-      "last_seen": "2026-08-29T19:01:54.813427+06:00"
-    },
-    "deadline.com/2026/08/box-office-coyote-vs-acme-dog-stars-spider-man-1237061934": {
-      "title": "‘Spider-Man’ Still Swinging To No. 1; ‘Coyote Vs. Acme’ $12M-$14M Debut, ‘Dog Stars’ Going To The Dogs – Box Office Update",
-      "url": "https://deadline.com/2026/08/box-office-coyote-vs-acme-dog-stars-spider-man-1237061934/",
-      "canonical": "deadline.com/2026/08/box-office-coyote-vs-acme-dog-stars-spider-man-1237061934",
-      "published_dt": "2026-08-29T05:04:00+06:00",
-      "published_date": "2026-08-29T05:04:00+06:00",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "excerpt": "FRIDAY PM: It’s Spidey’s world, and Jacob Elordi and Wile E. Coyote are just living in it. But let’s not ignore the pace we’re seeing on Ketchup Entertainment theatrical release of the abandoned Warner Bros’ Looney Tunes title, Coyote Vs. Acme, which is eyeing third place with $12M-$14M.  That’s a record domestic start for indie […]",
-      "image": "https://deadline.com/wp-content/uploads/2026/08/Spider-Man-Brand-New-Day-Coyote-vs-Acme-The-Dog-Stars.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-08-29T19:01:54.813529+06:00",
-      "last_seen": "2026-08-29T19:01:54.813531+06:00"
-    },
-    "deadline.com/2026/08/shailene-woodley-recalls-getting-cut-amazing-spider-man-2-1237062407": {
-      "title": "Shailene Woodley Recalls Getting Cut From ‘The Amazing Spider-Man 2’: “That Was A Fun Phone Call”",
-      "url": "https://deadline.com/2026/08/shailene-woodley-recalls-getting-cut-amazing-spider-man-2-1237062407/",
-      "canonical": "deadline.com/2026/08/shailene-woodley-recalls-getting-cut-amazing-spider-man-2-1237062407",
-      "published_dt": "2026-08-29T04:41:02+06:00",
-      "published_date": "2026-08-29T04:41:02+06:00",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "excerpt": "Although the MCU has expanded the multiverse to bring back multiple Spider-Men, Shailene Woodley’s Mary Jane Watson remains lost on the cutting room floor. The 2x Golden Globe nominee recently recalled her performance as Mary Jane Watson being cut from 2014’s The Amazing Spider-Man 2 after filming scenes with Andrew Garfield’s Peter Parker. “Oh, we […]",
-      "image": "https://deadline.com/wp-content/uploads/2026/08/P107OLM4-e1787956226582.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-08-29T19:01:54.813626+06:00",
-      "last_seen": "2026-08-29T19:01:54.813627+06:00"
+      "first_seen": "2026-08-29T23:34:01.581031+06:00",
+      "last_seen": "2026-08-29T23:34:01.581033+06:00"
     },
     "variety.com/2026/shopping/news/how-to-watch-college-football-season-online-free-1235703850": {
       "title": "Here’s How to Watch the 2026-2027 NCAA College Football Season Live Online",
@@ -327,42 +395,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-08-29T19:01:54.907241+06:00",
-      "last_seen": "2026-08-29T19:01:54.907244+06:00"
-    },
-    "variety.com/2026/shopping/news/how-to-watch-chantelle-cameron-vs-mikaela-mayer-boxing-live-online-free-1236846060": {
-      "title": "Chantelle Cameron vs. Mikaela Mayer Livestream: Here’s Where to Watch the Unification Title Bout Online for Free",
-      "url": "https://variety.com/2026/shopping/news/how-to-watch-chantelle-cameron-vs-mikaela-mayer-boxing-live-online-free-1236846060/",
-      "canonical": "variety.com/2026/shopping/news/how-to-watch-chantelle-cameron-vs-mikaela-mayer-boxing-live-online-free-1236846060",
-      "published_dt": "2026-08-29T18:00:00+06:00",
-      "published_date": "2026-08-29T18:00:00+06:00",
-      "source": "Variety",
-      "region": "Entertainment",
-      "excerpt": "The best boxers in the world travel to England for the Most Valuable Promotions Women (MVPW) boxing event. For the main event, English Chantelle Cameron (22-1-0) takes on American boxer Mikaela Mayer (22-2-0). The unification title bout is scheduled for 10 rounds. Cameron’s WBO belt, as well as Mayer’s WBA and WBC champion titles are […]",
-      "image": "https://variety.com/wp-content/uploads/2026/08/Boxing-Chantelle-Cameron-vs.-Mikaela-Mayer-Getty-VR-Featured.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "posted",
-      "first_seen": "2026-08-29T19:01:54.907396+06:00",
-      "last_seen": "2026-08-29T19:01:54.907398+06:00",
-      "posted_at": "2026-08-29T19:05:14.446479+06:00"
-    },
-    "variety.com/2026/film/news/anup-singh-lasya-the-gentle-dance-mumbai-film-1236846494": {
-      "title": "‘The Song of Scorpions,’ ‘Qissa’ Director Anup Singh Sets Mumbai Film ‘Lasya: The Gentle Dance’ (EXCLUSIVE)",
-      "url": "https://variety.com/2026/film/news/anup-singh-lasya-the-gentle-dance-mumbai-film-1236846494/",
-      "canonical": "variety.com/2026/film/news/anup-singh-lasya-the-gentle-dance-mumbai-film-1236846494",
-      "published_dt": "2026-08-29T13:06:14+06:00",
-      "published_date": "2026-08-29T13:06:14+06:00",
-      "source": "Variety",
-      "region": "Entertainment",
-      "excerpt": "Anup Singh, director of “Qissa” and “The Song of Scorpions,” is directing a new short film, “Lasya: The Gentle Dance,” shot on Mumbai’s streets, produced by Mumbai-based Pretty Pictures. “The Gentle Dance” follows a father and son, beggars on Mumbai’s roadside, over the course of a day in their lives. Monsoon rains repeatedly destroy their […]",
-      "image": "https://variety.com/wp-content/uploads/2026/08/Anup-Singh-Zeeshan-Ahmad.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "posted",
-      "first_seen": "2026-08-29T19:01:54.907533+06:00",
-      "last_seen": "2026-08-29T19:01:54.907535+06:00",
-      "posted_at": "2026-08-29T19:05:24.410025+06:00"
+      "first_seen": "2026-08-29T23:34:01.581135+06:00",
+      "last_seen": "2026-08-29T23:34:01.581137+06:00"
     },
     "variety.com/2026/film/news/shailene-woodley-amazing-spider-man-2-mary-jane-cut-a-year-after-filming-1236846453": {
       "title": "Shailene Woodley Was Crushed When She Found Out Her Scenes in ‘Amazing Spider-Man 2’ Were Cut: The Role of Mary Jane Was ‘My Dream’",
@@ -377,8 +411,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-08-29T19:01:54.907645+06:00",
-      "last_seen": "2026-08-29T19:01:54.907647+06:00"
+      "first_seen": "2026-08-29T23:34:01.622619+06:00",
+      "last_seen": "2026-08-29T23:34:01.622629+06:00"
     },
     "variety.com/2026/biz/news/naomi-osaka-luxury-brand-uncharted-fame-to-fortune-summit-1236846357": {
       "title": "Naomi Osaka Debuts a Luxury Accessories Brand at Uncharted’s Fame to Fortune Summit in the Hamptons",
@@ -393,8 +427,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-08-29T19:01:54.907837+06:00",
-      "last_seen": "2026-08-29T19:01:54.907838+06:00"
+      "first_seen": "2026-08-29T23:34:01.623019+06:00",
+      "last_seen": "2026-08-29T23:34:01.623022+06:00"
     },
     "variety.com/2026/tv/news/bill-maher-lamest-dolly-parton-tribute-real-time-hbo-1236846445": {
       "title": "Bill Maher Delivers Lamest Dolly Parton Tribute Yet",
@@ -409,59 +443,44 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-08-29T19:01:54.943611+06:00",
-      "last_seen": "2026-08-29T19:01:54.943621+06:00"
+      "first_seen": "2026-08-29T23:34:01.623154+06:00",
+      "last_seen": "2026-08-29T23:34:01.623157+06:00"
     },
-    "variety.com/2026/music/album-reviews/sara-bareilles-album-review-good-grief-1236846038": {
-      "title": "Sara Bareilles Sings About Loss — and It’s Our Gain — in the Beautifully Bittersweet ‘Good Grief’: Album Review",
-      "url": "https://variety.com/2026/music/album-reviews/sara-bareilles-album-review-good-grief-1236846038/",
-      "canonical": "variety.com/2026/music/album-reviews/sara-bareilles-album-review-good-grief-1236846038",
-      "published_dt": "2026-08-29T07:46:46+06:00",
-      "published_date": "2026-08-29T07:46:46+06:00",
-      "source": "Variety",
+    "hollywoodreporter.com/movies/movie-news/days-of-thunder-2-anne-hathaway-tom-cruise-release-date-1236684845": {
+      "title": "‘Days of Thunder’ Sequel: Anne Hathaway Joins Tom Cruise, Release Date Set at Paramount",
+      "url": "https://www.hollywoodreporter.com/movies/movie-news/days-of-thunder-2-anne-hathaway-tom-cruise-release-date-1236684845/",
+      "canonical": "hollywoodreporter.com/movies/movie-news/days-of-thunder-2-anne-hathaway-tom-cruise-release-date-1236684845",
+      "published_dt": "2026-08-29T23:32:31+06:00",
+      "published_date": "2026-08-29T23:32:31+06:00",
+      "source": "The Hollywood Reporter",
       "region": "Entertainment",
-      "excerpt": "Well, just how good can grief be? That’s a question raised by Sara Bareilles’ “Good Grief,” which, true to its promissory title, deals primarily with loss and death and the kind of tough stuff that folks in a marketing meeting might suggest slightly downplaying when one is releasing one’s first studio album in seven years. […]",
-      "image": "https://variety.com/wp-content/uploads/2026/08/Album-Cover-Treatment-7-1.jpg",
+      "excerpt": "The follow-up to the 1990 racing drama will be released in theaters on June 2, 2028.",
+      "image": "",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "posted",
+      "first_seen": "2026-08-29T23:34:01.822429+06:00",
+      "last_seen": "2026-08-29T23:34:01.822432+06:00",
+      "posted_at": "2026-08-30T00:05:12.967172+06:00"
+    },
+    "hollywoodreporter.com/tv/tv-news/watch-tcu-vs-unc-college-football-streams-free-aug-29-2026-1236684631": {
+      "title": "TCU vs. UNC: Where to Watch the 2026 College Football Season Opener Online",
+      "url": "https://www.hollywoodreporter.com/tv/tv-news/watch-tcu-vs-unc-college-football-streams-free-aug-29-2026-1236684631/",
+      "canonical": "hollywoodreporter.com/tv/tv-news/watch-tcu-vs-unc-college-football-streams-free-aug-29-2026-1236684631",
+      "published_dt": "2026-08-29T19:30:00+06:00",
+      "published_date": "2026-08-29T19:30:00+06:00",
+      "source": "The Hollywood Reporter",
+      "region": "Entertainment",
+      "excerpt": "NCAA football is back. Here's how to livestream the Aug. 29 game between the North Carolina Tar Heels and TCU Horned Frogs.",
+      "image": "",
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-08-29T19:01:54.943789+06:00",
-      "last_seen": "2026-08-29T19:01:54.943792+06:00"
-    },
-    "variety.com/2026/music/news/zak-starkey-the-who-reconcile-rehearsal-1236846409": {
-      "title": "Zak Starkey and the Who Have Kissed and Made Up, as Rehearsal Reunion Is Revealed",
-      "url": "https://variety.com/2026/music/news/zak-starkey-the-who-reconcile-rehearsal-1236846409/",
-      "canonical": "variety.com/2026/music/news/zak-starkey-the-who-reconcile-rehearsal-1236846409",
-      "published_dt": "2026-08-29T06:43:17+06:00",
-      "published_date": "2026-08-29T06:43:17+06:00",
-      "source": "Variety",
-      "region": "Entertainment",
-      "excerpt": "Apparently the deep and much-talked-about rift between the Who and former (and future?) drummer Zak Starkey was not quite a hell-freezes-over situation after all. Starkey, who was famously revealed to have been unceremoniously handed his walking orders in April 2025, is now back with Roger Daltrey and Pete Townshend … or at least he has […]",
-      "image": "https://variety.com/wp-content/uploads/2025/07/GettyImages-824379852.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-08-29T19:01:54.943907+06:00",
-      "last_seen": "2026-08-29T19:01:54.943908+06:00"
-    },
-    "variety.com/2026/film/news/california-partial-film-carveout-tax-credit-cap-1236845354": {
-      "title": "California Lawmakers Settle on Partial Film Carveout From Tax Credit Cap",
-      "url": "https://variety.com/2026/film/news/california-partial-film-carveout-tax-credit-cap-1236845354/",
-      "canonical": "variety.com/2026/film/news/california-partial-film-carveout-tax-credit-cap-1236845354",
-      "published_dt": "2026-08-29T06:32:51+06:00",
-      "published_date": "2026-08-29T06:32:51+06:00",
-      "source": "Variety",
-      "region": "Entertainment",
-      "excerpt": "California lawmakers have agreed on a partial carveout for the film and TV industry from a state cap on tax credits. The bill, AB 186, was unveiled on Friday evening. It addresses concerns raised in June by the Motion Picture Association and a coalition of entertainment unions, who argued that the cap threatened to undermine […]",
-      "image": "https://variety.com/wp-content/uploads/2016/08/california-state-capitol-e1471542323414.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-08-29T19:01:54.943998+06:00",
-      "last_seen": "2026-08-29T19:01:54.944000+06:00"
+      "first_seen": "2026-08-29T23:34:01.822538+06:00",
+      "last_seen": "2026-08-29T23:34:01.822540+06:00"
     },
     "hollywoodreporter.com/tv/tv-news/bill-maher-dolly-parton-death-tribute-1236684800": {
-      "title": "Bill Maher Gives Unsavory Dolly Parton Tribute While Criticizing Media Coverage of Her Death",
+      "title": "Bill Maher Pays Tribute to Dolly Parton With Nipple Joke",
       "url": "https://www.hollywoodreporter.com/tv/tv-news/bill-maher-dolly-parton-death-tribute-1236684800/",
       "canonical": "hollywoodreporter.com/tv/tv-news/bill-maher-dolly-parton-death-tribute-1236684800",
       "published_dt": "2026-08-29T11:33:39+06:00",
@@ -473,8 +492,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-08-29T19:01:55.077464+06:00",
-      "last_seen": "2026-08-29T19:01:55.077468+06:00"
+      "first_seen": "2026-08-29T23:34:01.822629+06:00",
+      "last_seen": "2026-08-29T23:34:01.822631+06:00"
     },
     "hollywoodreporter.com/music/music-news/olivia-rodrigo-daisy-chain-fields-festival-staff-photos-1236684785": {
       "title": "Olivia Rodrigo’s Inaugural Daisy Chain Fields Will Be a Showing of Unity — Even for Photographers",
@@ -489,8 +508,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-08-29T19:01:55.077566+06:00",
-      "last_seen": "2026-08-29T19:01:55.077568+06:00"
+      "first_seen": "2026-08-29T23:34:01.822717+06:00",
+      "last_seen": "2026-08-29T23:34:01.822718+06:00"
     },
     "hollywoodreporter.com/tv/tv-news/jackie-glass-dead-swift-justice-host-oj-simpson-1236684783": {
       "title": "Jackie Glass, ‘Swift Justice’ Host, Dies at 70",
@@ -505,8 +524,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-08-29T19:01:55.077648+06:00",
-      "last_seen": "2026-08-29T19:01:55.077649+06:00"
+      "first_seen": "2026-08-29T23:34:01.822804+06:00",
+      "last_seen": "2026-08-29T23:34:01.822806+06:00"
     },
     "hollywoodreporter.com/news/general-news/milo-yiannopoulos-ice-custody-tip-off-1236684770": {
       "title": "Milo Yiannopoulos in ICE Custody After Feud-Fueled Tip-Off",
@@ -521,8 +540,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-08-29T19:01:55.077725+06:00",
-      "last_seen": "2026-08-29T19:01:55.077727+06:00"
+      "first_seen": "2026-08-29T23:34:01.822902+06:00",
+      "last_seen": "2026-08-29T23:34:01.822904+06:00"
     },
     "hollywoodreporter.com/business/business-news/california-budget-trailer-bill-hollywood-tax-credit-issue-1236678209": {
       "title": "California Tries Offering Hollywood New Perks to Make Up for Catch in $750 Million Incentive Program",
@@ -537,8 +556,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-08-29T19:01:55.077807+06:00",
-      "last_seen": "2026-08-29T19:01:55.077809+06:00"
+      "first_seen": "2026-08-29T23:34:01.822984+06:00",
+      "last_seen": "2026-08-29T23:34:01.822985+06:00"
     },
     "hollywoodreporter.com/music/music-news/jelly-roll-clarifies-political-views-after-grammys-1236684749": {
       "title": "Jelly Roll Clarifies Political Views, Regrets Not Taking “Opportunity to Speak Up” at Grammys",
@@ -553,8 +572,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-08-29T19:01:55.077881+06:00",
-      "last_seen": "2026-08-29T19:01:55.077883+06:00"
+      "first_seen": "2026-08-29T23:34:01.823069+06:00",
+      "last_seen": "2026-08-29T23:34:01.823071+06:00"
     },
     "hollywoodreporter.com/movies/movie-news/coyote-vs-acme-will-forte-director-celebrate-release-1236684609": {
       "title": "‘Coyote vs. Acme’ Star Will Forte, Director Celebrate Film Finally Hitting Theaters After Being Shelved by Warner Bros.: “Proof Movies Don’t Just Go Away”",
@@ -569,8 +588,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-08-29T19:01:55.077953+06:00",
-      "last_seen": "2026-08-29T19:01:55.077954+06:00"
+      "first_seen": "2026-08-29T23:34:01.823150+06:00",
+      "last_seen": "2026-08-29T23:34:01.823151+06:00"
     },
     "hollywoodreporter.com/news/general-news/shelley-fabares-cause-of-death-1236684687": {
       "title": "Shelley Fabares’ Cause of Death Revealed",
@@ -585,40 +604,41 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-08-29T19:01:55.078022+06:00",
-      "last_seen": "2026-08-29T19:01:55.078024+06:00"
+      "first_seen": "2026-08-29T23:34:01.823226+06:00",
+      "last_seen": "2026-08-29T23:34:01.823227+06:00"
     },
-    "hollywoodreporter.com/music/music-news/olivia-rodrigo-daisy-chain-fields-raises-10-million-1236684633": {
-      "title": "Olivia Rodrigo’s Daisy Chain Fields Raises $10 Million  for Women-Focused Nonprofits",
-      "url": "https://www.hollywoodreporter.com/music/music-news/olivia-rodrigo-daisy-chain-fields-raises-10-million-1236684633/",
-      "canonical": "hollywoodreporter.com/music/music-news/olivia-rodrigo-daisy-chain-fields-raises-10-million-1236684633",
-      "published_dt": "2026-08-29T04:50:35+06:00",
-      "published_date": "2026-08-29T04:50:35+06:00",
-      "source": "The Hollywood Reporter",
+    "thewrap.com/creative-content/movies/anne-hathaway-to-star-days-of-thunder-2-tom-cruise": {
+      "title": "Anne Hathaway to Star in ‘Days of Thunder 2’ With Tom Cruise",
+      "url": "https://www.thewrap.com/creative-content/movies/anne-hathaway-to-star-days-of-thunder-2-tom-cruise/",
+      "canonical": "thewrap.com/creative-content/movies/anne-hathaway-to-star-days-of-thunder-2-tom-cruise",
+      "published_dt": "2026-08-29T23:15:41+06:00",
+      "published_date": "2026-08-29T23:15:41+06:00",
+      "source": "TheWrap",
       "region": "Entertainment",
-      "excerpt": "“Daisy Chain Fields was created to celebrate the power of what can happen when we come together to support one another,\" Rodrigo said.",
+      "excerpt": "Paramount sets the sequel to hit theaters in June 2028 The post Anne Hathaway to Star in ‘Days of Thunder 2’ With Tom Cruise appeared first on TheWrap .",
       "image": "",
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-08-29T19:01:55.078094+06:00",
-      "last_seen": "2026-08-29T19:01:55.078095+06:00"
+      "first_seen": "2026-08-29T23:34:01.953168+06:00",
+      "last_seen": "2026-08-29T23:34:01.953172+06:00"
     },
-    "hollywoodreporter.com/music/music-news/gladys-knight-fewer-performances-next-stage-career-1236684667": {
-      "title": "Gladys Knight Announces She’ll Partake in “Fewer Performances” Amid “Next Stage” of Career and Life",
-      "url": "https://www.hollywoodreporter.com/music/music-news/gladys-knight-fewer-performances-next-stage-career-1236684667/",
-      "canonical": "hollywoodreporter.com/music/music-news/gladys-knight-fewer-performances-next-stage-career-1236684667",
-      "published_dt": "2026-08-29T04:38:14+06:00",
-      "published_date": "2026-08-29T04:38:14+06:00",
-      "source": "The Hollywood Reporter",
+    "thewrap.com/creative-content/movies/spider-man-brand-new-day-takes-fifth-no-1-as-coyote-vs-acme-takes-14-million-opening": {
+      "title": "‘Spider-Man: Brand New Day’ Takes Fifth No. 1 As ‘Coyote vs. Acme’ Takes $14 Million Opening",
+      "url": "https://www.thewrap.com/creative-content/movies/spider-man-brand-new-day-takes-fifth-no-1-as-coyote-vs-acme-takes-14-million-opening/",
+      "canonical": "thewrap.com/creative-content/movies/spider-man-brand-new-day-takes-fifth-no-1-as-coyote-vs-acme-takes-14-million-opening",
+      "published_dt": "2026-08-29T21:54:22+06:00",
+      "published_date": "2026-08-29T21:54:22+06:00",
+      "source": "TheWrap",
       "region": "Entertainment",
-      "excerpt": "\"I’ll be spending more time on projects with my husband and visiting with my grandbabies and am looking forward to this new era,\" the singer wrote in an Instagram post.",
+      "excerpt": "Ketchup Entertainment nearly quintuples its opening weekend record while 20th Century's \"The Dog Stars\" bombs with $7 million launch The post ‘Spider-Man: Brand New Day’ Takes Fifth No. 1 As ‘Coyote vs. Acme’ Takes $14 Million Opening appeared first on TheWrap .",
       "image": "",
       "discovery": "rss",
       "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-08-29T19:01:55.078167+06:00",
-      "last_seen": "2026-08-29T19:01:55.078168+06:00"
+      "status": "posted",
+      "first_seen": "2026-08-29T23:34:01.953399+06:00",
+      "last_seen": "2026-08-29T23:34:01.953401+06:00",
+      "posted_at": "2026-08-30T00:05:28.921536+06:00"
     },
     "thewrap.com/creative-content/movies/shailene-woodley-explains-why-she-was-cut-from-amazing-spider-man-2": {
       "title": "Shailene Woodley Explains Why She Was Cut From ‘Amazing Spider-Man 2’: ‘That Was a Fun Phone Call’",
@@ -633,8 +653,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-08-29T19:01:55.172658+06:00",
-      "last_seen": "2026-08-29T19:01:55.172664+06:00"
+      "first_seen": "2026-08-29T23:34:01.953609+06:00",
+      "last_seen": "2026-08-29T23:34:01.953611+06:00"
     },
     "thewrap.com/culture-lifestyle/culture/jamie-foxx-reflects-stroke-struggles-rehab": {
       "title": "Jamie Foxx Reveals ‘Frustrating’ Struggle to Make Sense of His Stroke",
@@ -649,8 +669,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-08-29T19:01:55.172932+06:00",
-      "last_seen": "2026-08-29T19:01:55.172935+06:00"
+      "first_seen": "2026-08-29T23:34:01.953803+06:00",
+      "last_seen": "2026-08-29T23:34:01.953805+06:00"
     },
     "thewrap.com/creative-content/tv-shows/bill-maher-calls-out-dolly-parton-death-dominating-the-news": {
       "title": "Bill Maher Gripes Dolly Parton’s Death Dominated the Week’s News: ‘All This Is Going On’",
@@ -665,8 +685,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-08-29T19:01:55.173189+06:00",
-      "last_seen": "2026-08-29T19:01:55.173191+06:00"
+      "first_seen": "2026-08-29T23:34:01.954013+06:00",
+      "last_seen": "2026-08-29T23:34:01.954015+06:00"
     },
     "thewrap.com/creative-content/movies/practical-magic-2-star-maisie-williams-etsy-witch-career": {
       "title": "‘Practical Magic 2’ Star Maisie Williams Admits She Once Paid an Etsy Witch to Help With Her Career",
@@ -681,8 +701,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-08-29T19:01:55.173426+06:00",
-      "last_seen": "2026-08-29T19:01:55.173429+06:00"
+      "first_seen": "2026-08-29T23:34:01.954195+06:00",
+      "last_seen": "2026-08-29T23:34:01.954197+06:00"
     },
     "thewrap.com/media-platforms/journalism/longtime-wnbc-investigative-reporter-position-eliminated": {
       "title": "Longtime WNBC Investigative Reporter Reveals Network Eliminated Her Position, Cites Changing Media Landscape",
@@ -697,8 +717,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-08-29T19:01:55.173641+06:00",
-      "last_seen": "2026-08-29T19:01:55.173644+06:00"
+      "first_seen": "2026-08-29T23:34:01.954379+06:00",
+      "last_seen": "2026-08-29T23:34:01.954381+06:00"
     },
     "thewrap.com/culture-lifestyle/culture/tennessee-renames-nashville-airport-after-dolly-parton": {
       "title": "Nashville Honors Dolly Parton by Renaming Airport in Her Memory",
@@ -713,8 +733,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-08-29T19:01:55.173871+06:00",
-      "last_seen": "2026-08-29T19:01:55.173873+06:00"
+      "first_seen": "2026-08-29T23:34:01.954550+06:00",
+      "last_seen": "2026-08-29T23:34:01.954552+06:00"
     },
     "thewrap.com/industry-news/public-policy-legal/california-tax-incentive-changes-sb-122": {
       "title": "California Lawmakers Reach Deal to Amend Production Tax Incentive Ahead of Deadline",
@@ -729,8 +749,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-08-29T19:01:55.174084+06:00",
-      "last_seen": "2026-08-29T19:01:55.174086+06:00"
+      "first_seen": "2026-08-29T23:34:01.954722+06:00",
+      "last_seen": "2026-08-29T23:34:01.954723+06:00"
     },
     "thewrap.com/creative-content/movies/boorman-and-the-devil-director-david-kittredge-interview": {
       "title": "How ‘Boorman and the Devil’ Director David Kittredge Makes a Case for ‘Exorcist II’",
@@ -745,40 +765,40 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-08-29T19:01:55.174305+06:00",
-      "last_seen": "2026-08-29T19:01:55.174308+06:00"
+      "first_seen": "2026-08-29T23:34:01.954913+06:00",
+      "last_seen": "2026-08-29T23:34:01.954916+06:00"
     },
-    "thewrap.com/creative-content/music/gladys-knight-cut-back-live-shows-dementia-concerns": {
-      "title": "Gladys Knight Says She Will Cut Back on Live Shows Amid Dementia Concerns",
-      "url": "https://www.thewrap.com/creative-content/music/gladys-knight-cut-back-live-shows-dementia-concerns/",
-      "canonical": "thewrap.com/creative-content/music/gladys-knight-cut-back-live-shows-dementia-concerns",
-      "published_dt": "2026-08-29T05:30:48+06:00",
-      "published_date": "2026-08-29T05:30:48+06:00",
-      "source": "TheWrap",
+    "indiewire.com/news/breaking-news/tom-cruise-days-of-thunder-sequel-release-anne-hathaway-1235213534": {
+      "title": "Tom Cruise’s ‘Days of Thunder’ Sequel Set for June 2028 with Anne Hathaway Joining",
+      "url": "https://www.indiewire.com/news/breaking-news/tom-cruise-days-of-thunder-sequel-release-anne-hathaway-1235213534/",
+      "canonical": "indiewire.com/news/breaking-news/tom-cruise-days-of-thunder-sequel-release-anne-hathaway-1235213534",
+      "published_dt": "2026-08-29T23:11:38+06:00",
+      "published_date": "2026-08-29T23:11:38+06:00",
+      "source": "IndieWire",
       "region": "Entertainment",
-      "excerpt": "\"I’ll be spending more time on projects with my husband and visiting with my grandbabies,” the 82-year-old Empress of Soul says The post Gladys Knight Says She Will Cut Back on Live Shows Amid Dementia Concerns appeared first on TheWrap .",
+      "excerpt": "Jonathan Levine is directing the sequel to the 1990 NASCAR film.",
       "image": "",
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-08-29T19:01:55.174513+06:00",
-      "last_seen": "2026-08-29T19:01:55.174516+06:00"
+      "first_seen": "2026-08-29T23:34:03.106379+06:00",
+      "last_seen": "2026-08-29T23:34:03.106383+06:00"
     },
-    "thewrap.com/media-platforms/tv/jerry-seinfeld-american-express-black-card-origin-story": {
-      "title": "Jerry Seinfeld Adds Another Layer to Infamous AmEx Black Card Invention",
-      "url": "https://www.thewrap.com/media-platforms/tv/jerry-seinfeld-american-express-black-card-origin-story/",
-      "canonical": "thewrap.com/media-platforms/tv/jerry-seinfeld-american-express-black-card-origin-story",
-      "published_dt": "2026-08-29T05:26:02+06:00",
-      "published_date": "2026-08-29T05:26:02+06:00",
-      "source": "TheWrap",
+    "indiewire.com/features/craft/ridley-scott-the-dog-stars-crafts-team-collaboration-1235212739": {
+      "title": "Ridley Scott Casts His Crews as Carefully as His Movies So That He ‘Can Just Play Tennis’",
+      "url": "https://www.indiewire.com/features/craft/ridley-scott-the-dog-stars-crafts-team-collaboration-1235212739/",
+      "canonical": "indiewire.com/features/craft/ridley-scott-the-dog-stars-crafts-team-collaboration-1235212739",
+      "published_dt": "2026-08-29T20:00:00+06:00",
+      "published_date": "2026-08-29T20:00:00+06:00",
+      "source": "IndieWire",
       "region": "Entertainment",
-      "excerpt": "The comedian has long said he convinced American Express to create – and was the first to receive – the coveted credit card for the ultra-rich and famous The post Jerry Seinfeld Adds Another Layer to Infamous AmEx Black Card Invention appeared first on TheWrap .",
+      "excerpt": "Scott and several of his department heads tell IndieWire about their ongoing collaboration and their work together on the director's latest film, \"The Dog Stars.\"",
       "image": "",
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-08-29T19:01:55.174719+06:00",
-      "last_seen": "2026-08-29T19:01:55.174721+06:00"
+      "first_seen": "2026-08-29T23:34:03.106476+06:00",
+      "last_seen": "2026-08-29T23:34:03.106478+06:00"
     },
     "indiewire.com/news/general-news/new-jack-city-riot-westwood-los-angeles-1991-1235213357": {
       "title": "Tonight’s After Dark: ‘New Jack City,’ the Gangster Classic That Became a Westwood Flashpoint",
@@ -793,11 +813,11 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-08-29T19:01:55.298521+06:00",
-      "last_seen": "2026-08-29T19:01:55.298526+06:00"
+      "first_seen": "2026-08-29T23:34:03.106558+06:00",
+      "last_seen": "2026-08-29T23:34:03.106559+06:00"
     },
     "indiewire.com/features/podcast/who-should-play-james-bond-screen-talk-1235213389": {
-      "title": "Who Should Be the Next James Bond? Probably Not Jacob Elordi or Harris Dickinson",
+      "title": "Who Should Be the Next James Bond?",
       "url": "https://www.indiewire.com/features/podcast/who-should-play-james-bond-screen-talk-1235213389/",
       "canonical": "indiewire.com/features/podcast/who-should-play-james-bond-screen-talk-1235213389",
       "published_dt": "2026-08-29T03:30:00+06:00",
@@ -809,8 +829,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-08-29T19:01:55.298653+06:00",
-      "last_seen": "2026-08-29T19:01:55.298655+06:00"
+      "first_seen": "2026-08-29T23:34:03.106632+06:00",
+      "last_seen": "2026-08-29T23:34:03.106633+06:00"
     },
     "indiewire.com/news/trailers/isaac-mizrahi-90s-documentary-unzipped-trailer-watch-1235213394": {
       "title": "The Isaac Mizrahi Documentary ‘Unzipped’ Is the Ultimate ’90s Fashion Portrait — Watch the Trailer",
@@ -825,8 +845,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-08-29T19:01:55.298780+06:00",
-      "last_seen": "2026-08-29T19:01:55.298782+06:00"
+      "first_seen": "2026-08-29T23:34:03.106706+06:00",
+      "last_seen": "2026-08-29T23:34:03.106708+06:00"
     },
     "indiewire.com/features/podcast/ridley-scott-the-dog-stars-cameras-love-stories-interview-1235212528": {
       "title": "Ridley Scott on Telling Love Stories from ‘Thelma and Louise’ to ‘The Dog Stars,’ Shooting With 11 Cameras, and Why Silence Is the Best Sound Effect",
@@ -841,8 +861,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-08-29T19:01:55.298882+06:00",
-      "last_seen": "2026-08-29T19:01:55.298884+06:00"
+      "first_seen": "2026-08-29T23:34:03.106782+06:00",
+      "last_seen": "2026-08-29T23:34:03.106784+06:00"
     },
     "indiewire.com/features/general/the-uprising-history-robin-hood-explained-1235213318": {
       "title": "‘The Uprising’ Thinks It Needs Robin Hood, but the Peasants’ Revolt Was Already Exciting Enough",
@@ -857,8 +877,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-08-29T19:01:55.298973+06:00",
-      "last_seen": "2026-08-29T19:01:55.298975+06:00"
+      "first_seen": "2026-08-29T23:34:03.106867+06:00",
+      "last_seen": "2026-08-29T23:34:03.106870+06:00"
     },
     "indiewire.com/news/general-news/kane-parsons-alex-ullom-discuss-liminal-horror-watch-1235213008": {
       "title": "‘The World Is a Lot Right Now’: Watch Kane Parsons and ‘It Ends’ Director Alex Ullom Try to Explain the Liminal Horror Craze",
@@ -872,9 +892,10 @@
       "image": "",
       "discovery": "rss",
       "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-08-29T19:01:55.299062+06:00",
-      "last_seen": "2026-08-29T19:01:55.299064+06:00"
+      "status": "posted",
+      "first_seen": "2026-08-29T23:34:03.106946+06:00",
+      "last_seen": "2026-08-29T23:34:03.106948+06:00",
+      "posted_at": "2026-08-30T00:04:57.644445+06:00"
     },
     "indiewire.com/criticism/shows/dark-matter-season-2-review-apple-tv-sci-fi-obsession-1235212989": {
       "title": "‘Dark Matter’ Season 2 Tests the Limits of Apple TV’s Sci-Fi Obsession",
@@ -889,233 +910,329 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-08-29T19:01:55.299144+06:00",
-      "last_seen": "2026-08-29T19:01:55.299146+06:00"
+      "first_seen": "2026-08-29T23:34:03.107018+06:00",
+      "last_seen": "2026-08-29T23:34:03.107020+06:00"
     },
-    "indiewire.com/news/box-office/2026-indie-box-office-winners-losers-backrooms-obsession-1235213229": {
-      "title": "Indie Box Office Report Card: From ‘Backrooms’ and ‘Obsession’ to ‘I Want Your Sex,’ Breaking Down the Summer’s Winners and Losers",
-      "url": "https://www.indiewire.com/news/box-office/2026-indie-box-office-winners-losers-backrooms-obsession-1235213229/",
-      "canonical": "indiewire.com/news/box-office/2026-indie-box-office-winners-losers-backrooms-obsession-1235213229",
-      "published_dt": "2026-08-28T23:00:00+06:00",
-      "published_date": "2026-08-28T23:00:00+06:00",
-      "source": "IndieWire",
-      "region": "Entertainment",
-      "excerpt": "\"The Invite\" and \"Maddie's Secret\" surprised, while some like \"Gail Daughtry\" and \"I Love Boosters\" left us wanting more.",
-      "image": "",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-08-29T19:01:55.299233+06:00",
-      "last_seen": "2026-08-29T19:01:55.299235+06:00"
-    },
-    "indiewire.com/features/commentary/frank-sinatra-first-deadly-sin-last-great-vigilante-movie-1235213085": {
-      "title": "Frank Sinatra’s Last Great Performance Served as the Bridge Between ‘Dirty Harry’ and ‘Se7en,’ but Was Bleaker Than Either",
-      "url": "https://www.indiewire.com/features/commentary/frank-sinatra-first-deadly-sin-last-great-vigilante-movie-1235213085/",
-      "canonical": "indiewire.com/features/commentary/frank-sinatra-first-deadly-sin-last-great-vigilante-movie-1235213085",
-      "published_dt": "2026-08-28T22:00:00+06:00",
-      "published_date": "2026-08-28T22:00:00+06:00",
-      "source": "IndieWire",
-      "region": "Entertainment",
-      "excerpt": "Released in 1980, \"The First Deadly Sin\" features a Sinatra with no ego and no vanity, and looks back to one era of vigilante filmmaking while setting the stage for another.",
-      "image": "",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-08-29T19:01:55.299416+06:00",
-      "last_seen": "2026-08-29T19:01:55.299418+06:00"
-    },
-    "indiewire.com/features/craft/atli-orvarsson-composer-apple-tv-silo-1235210391": {
-      "title": "Composer Atli Örvarsson Brings Scandinavian Loneliness — and Techno Flair — to ‘Silo’",
-      "url": "https://www.indiewire.com/features/craft/atli-orvarsson-composer-apple-tv-silo-1235210391/",
-      "canonical": "indiewire.com/features/craft/atli-orvarsson-composer-apple-tv-silo-1235210391",
-      "published_dt": "2026-08-28T21:00:00+06:00",
-      "published_date": "2026-08-28T21:00:00+06:00",
-      "source": "IndieWire",
-      "region": "Entertainment",
-      "excerpt": "The composer of the dystopian Apple TV series tells IndieWire about developing the show's musical language over several seasons, and now, two parallel storylines.",
-      "image": "",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-08-29T19:01:55.299501+06:00",
-      "last_seen": "2026-08-29T19:01:55.299502+06:00"
-    },
-    "indiewire.com/news/events/dave-franco-nicholas-braun-idiots-the-shitheads-sundance-1235175049": {
-      "title": "Dave Franco and Nicholas Braun Explain Why They Waited Eight Years to Make ‘Idiots’",
-      "url": "https://www.indiewire.com/news/events/dave-franco-nicholas-braun-idiots-the-shitheads-sundance-1235175049/",
-      "canonical": "indiewire.com/news/events/dave-franco-nicholas-braun-idiots-the-shitheads-sundance-1235175049",
-      "published_dt": "2026-08-28T20:00:00+06:00",
-      "published_date": "2026-08-28T20:00:00+06:00",
-      "source": "IndieWire",
-      "region": "Entertainment",
-      "excerpt": "Director Macon Blair and his cast, which also includes Kiernan Shipka and O'Shea Jackson Jr., stopped by the IndieWire Studio, presented by Dropbox, to recall the long road to their new comedy.",
-      "image": "",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-08-29T19:01:55.299584+06:00",
-      "last_seen": "2026-08-29T19:01:55.299586+06:00"
-    },
-    "collider.com/ya-books-essential-ranked": {
-      "title": "8 Essential Young Adult Books, Ranked",
-      "url": "https://collider.com/ya-books-essential-ranked/",
-      "canonical": "collider.com/ya-books-essential-ranked",
-      "published_dt": "2026-08-29T18:46:11+06:00",
-      "published_date": "2026-08-29T18:46:11+06:00",
+    "collider.com/gangster-movies-perfect-first-scene-to-last": {
+      "title": "10 Gangster Movies That Are Perfect From the First Scene to the Last",
+      "url": "https://collider.com/gangster-movies-perfect-first-scene-to-last/",
+      "canonical": "collider.com/gangster-movies-perfect-first-scene-to-last",
+      "published_dt": "2026-08-29T23:28:11+06:00",
+      "published_date": "2026-08-29T23:28:11+06:00",
       "source": "Collider",
       "region": "Entertainment",
-      "excerpt": "The Hunger Games by Suzanne Collins and The Golden Compass by Philip Pullman are among the best, most essential young adult books.",
-      "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2026/07/his-dark-materials_-northern-lights-1995-book-cover.jpg",
+      "excerpt": "From the original Scarface to the seminal Goodfellas, these gangster movies are virtually perfect from the moment they start to their very last scene.",
+      "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2026/08/the-long-good-friday-bob-hoskins.jpg",
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-08-29T19:01:55.663238+06:00",
-      "last_seen": "2026-08-29T19:01:55.663242+06:00"
+      "first_seen": "2026-08-29T23:34:03.466967+06:00",
+      "last_seen": "2026-08-29T23:34:03.466972+06:00"
     },
-    "collider.com/nicolas-cage-the-carpenters-son-streaming-plex-september-2026": {
-      "title": "Nicolas Cage’s Bizarre Historical Horror Is Officially Streaming for Free",
-      "url": "https://collider.com/nicolas-cage-the-carpenters-son-streaming-plex-september-2026/",
-      "canonical": "collider.com/nicolas-cage-the-carpenters-son-streaming-plex-september-2026",
-      "published_dt": "2026-08-29T18:45:11+06:00",
-      "published_date": "2026-08-29T18:45:11+06:00",
+    "collider.com/tom-cruise-days-of-thunder-2-cast-anne-hathaway": {
+      "title": "Tom Cruise's 'Days of Thunder' Sequel Officially Casts 2026's Biggest Movie Star",
+      "url": "https://collider.com/tom-cruise-days-of-thunder-2-cast-anne-hathaway/",
+      "canonical": "collider.com/tom-cruise-days-of-thunder-2-cast-anne-hathaway",
+      "published_dt": "2026-08-29T23:21:41+06:00",
+      "published_date": "2026-08-29T23:21:41+06:00",
       "source": "Collider",
       "region": "Entertainment",
-      "excerpt": "Nicolas Cage's bizarre biblical horror film alongside FKA Twigs, The Carpenter's Son, is streaming for free. Find out more below.",
-      "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2025/10/nicolas-cage-1.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-08-29T19:01:55.663365+06:00",
-      "last_seen": "2026-08-29T19:01:55.663367+06:00"
-    },
-    "collider.com/godzilla-minus-one-streaming-netflix-august-2026": {
-      "title": "Netflix's 10/10 Sci-Fi Masterpiece Is Officially a Streaming Juggernaut Ahead of the Sequel",
-      "url": "https://collider.com/godzilla-minus-one-streaming-netflix-august-2026/",
-      "canonical": "collider.com/godzilla-minus-one-streaming-netflix-august-2026",
-      "published_dt": "2026-08-29T18:30:11+06:00",
-      "published_date": "2026-08-29T18:30:11+06:00",
-      "source": "Collider",
-      "region": "Entertainment",
-      "excerpt": "Oscar-winning sci-fi epic Godzilla Minus One is streaming on Netflix after earning near-universal acclaim from critics.",
-      "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2024/07/godzilla-minus-one-hidetaka-yoshioka.jpg",
+      "excerpt": "Days of Thunder 2 is officially a go, with Tom Cruise and Anne Hathaway confirmed to star. Read on for more details.",
+      "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2026/04/days-of-thunder-tom-cruise-2.jpg",
       "discovery": "rss",
       "date_estimated": false,
       "status": "posted",
-      "first_seen": "2026-08-29T19:01:55.663463+06:00",
-      "last_seen": "2026-08-29T19:01:55.663465+06:00",
-      "posted_at": "2026-08-29T19:05:19.972462+06:00"
+      "first_seen": "2026-08-29T23:34:03.467113+06:00",
+      "last_seen": "2026-08-29T23:34:03.467116+06:00",
+      "posted_at": "2026-08-30T00:04:14.585733+06:00"
     },
-    "collider.com/best-techno-thriller-books-all-time-ranked": {
-      "title": "The 10 Greatest Techno-Thriller Books of All Time, Ranked",
-      "url": "https://collider.com/best-techno-thriller-books-all-time-ranked/",
-      "canonical": "collider.com/best-techno-thriller-books-all-time-ranked",
-      "published_dt": "2026-08-29T18:21:11+06:00",
-      "published_date": "2026-08-29T18:21:11+06:00",
+    "collider.com/my-life-with-the-walter-boys-romantic-scenes-ranked": {
+      "title": "The 9 Most Romantic Scenes in 'My Life with the Walter Boys,' Ranked",
+      "url": "https://collider.com/my-life-with-the-walter-boys-romantic-scenes-ranked/",
+      "canonical": "collider.com/my-life-with-the-walter-boys-romantic-scenes-ranked",
+      "published_dt": "2026-08-29T23:19:11+06:00",
+      "published_date": "2026-08-29T23:19:11+06:00",
       "source": "Collider",
       "region": "Entertainment",
-      "excerpt": "From foundational works like Jurassic Park to more recent hits like Dark Matter, these are the best books in the riveting techno-thriller subgenre.",
-      "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2026/08/the-martian-book-cover.jpg",
+      "excerpt": "The Netflix teen drama My Life with the Walter Boys has no shortage of swoonworthy moments in its three seasons, but which is the most romantic?",
+      "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2025/09/my_life_with_the_walter_boys_n_s2_e1_00_00_11_19r.jpg",
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-08-29T19:01:55.663560+06:00",
-      "last_seen": "2026-08-29T19:01:55.663562+06:00"
+      "first_seen": "2026-08-29T23:34:03.467229+06:00",
+      "last_seen": "2026-08-29T23:34:03.467231+06:00"
     },
-    "collider.com/blood-sacrifice-netflix-crime-thriller-rotten-tomatoes": {
-      "title": "Netflix’s 5-Episode Crime Thriller Deserves Even More Than Its 86% on Rotten Tomatoes",
-      "url": "https://collider.com/blood-sacrifice-netflix-crime-thriller-rotten-tomatoes/",
-      "canonical": "collider.com/blood-sacrifice-netflix-crime-thriller-rotten-tomatoes",
-      "published_dt": "2026-08-29T18:18:11+06:00",
-      "published_date": "2026-08-29T18:18:11+06:00",
+    "collider.com/reacher-season-4-chris-rodriguez-marquette-interview": {
+      "title": "A 15-Minute Late-Night Audition Landed This 'Reacher' Season 4 Star the Role of a Lifetime",
+      "url": "https://collider.com/reacher-season-4-chris-rodriguez-marquette-interview/",
+      "canonical": "collider.com/reacher-season-4-chris-rodriguez-marquette-interview",
+      "published_dt": "2026-08-29T23:14:31+06:00",
+      "published_date": "2026-08-29T23:14:31+06:00",
       "source": "Collider",
       "region": "Entertainment",
-      "excerpt": "A father-son detective duo finds a dangerous way to bond in Netflix’s bingeable Swedish crime drama, Blood Sacrifice.",
-      "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2026/08/blood-sacrifice-jakob-oftebro.jpg",
+      "excerpt": "Christopher Rodriguez-Marquette discusses joining Prime Video's number-one series Reacher, working with Alan Ritchson, and his 30-year career to date.",
+      "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2026/08/reacher-season-4-1.jpg",
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-08-29T19:01:55.663649+06:00",
-      "last_seen": "2026-08-29T19:01:55.663650+06:00"
+      "first_seen": "2026-08-29T23:34:03.467345+06:00",
+      "last_seen": "2026-08-29T23:34:03.467347+06:00"
     },
-    "collider.com/best-selling-fantasy-books-all-time-ranked": {
-      "title": "The 10 Best-Selling Fantasy Books of All Time, Ranked",
-      "url": "https://collider.com/best-selling-fantasy-books-all-time-ranked/",
-      "canonical": "collider.com/best-selling-fantasy-books-all-time-ranked",
-      "published_dt": "2026-08-29T18:14:11+06:00",
-      "published_date": "2026-08-29T18:14:11+06:00",
+    "collider.com/addictive-sci-fi-shows-impossible-to-stop-watching": {
+      "title": "10 Addictive Sci-Fi Shows That Are Impossible To Stop Watching",
+      "url": "https://collider.com/addictive-sci-fi-shows-impossible-to-stop-watching/",
+      "canonical": "collider.com/addictive-sci-fi-shows-impossible-to-stop-watching",
+      "published_dt": "2026-08-29T23:04:11+06:00",
+      "published_date": "2026-08-29T23:04:11+06:00",
       "source": "Collider",
       "region": "Entertainment",
-      "excerpt": "Harry Potter and the Sorcerer's Stone, The Little Prince, and The Lord of the Rings are among the best-selling fantasy books in history.",
-      "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2026/05/harry-potter-and-the-philosopher-s-stone-book-cover.jpg",
+      "excerpt": "Discover binge-worthy sci-fi series that captivate with unforgettable plots and characters, including Battlestar Galactica, Dark, and Severance.",
+      "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2026/02/silo-season-2-rebecca-ferguson-2.JPG",
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-08-29T19:01:55.663738+06:00",
-      "last_seen": "2026-08-29T19:01:55.663740+06:00"
+      "first_seen": "2026-08-29T23:34:03.467452+06:00",
+      "last_seen": "2026-08-29T23:34:03.467454+06:00"
     },
-    "collider.com/stone-temple-pilots-how-grunge-band-went-from-hated-to-huge": {
-      "title": "How This Unforgettable '90s Grunge Band Went From Hated to Huge",
-      "url": "https://collider.com/stone-temple-pilots-how-grunge-band-went-from-hated-to-huge/",
-      "canonical": "collider.com/stone-temple-pilots-how-grunge-band-went-from-hated-to-huge",
-      "published_dt": "2026-08-29T18:02:12+06:00",
-      "published_date": "2026-08-29T18:02:12+06:00",
+    "collider.com/gal-gadot-action-thriller-the-runner-release-date-prime-video-september-2026": {
+      "title": "Gal Gadot’s 'Taken' Meets 'The Equalizer' Thriller Officially Arrives this Week",
+      "url": "https://collider.com/gal-gadot-action-thriller-the-runner-release-date-prime-video-september-2026/",
+      "canonical": "collider.com/gal-gadot-action-thriller-the-runner-release-date-prime-video-september-2026",
+      "published_dt": "2026-08-29T23:00:11+06:00",
+      "published_date": "2026-08-29T23:00:11+06:00",
       "source": "Collider",
       "region": "Entertainment",
-      "excerpt": "Stone Temple Pilots were the grunge band the critics loved to hate, but music fans didn't really care and embraced them anyway.",
-      "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2026/08/stone-temple-pilots.jpg",
+      "excerpt": "Gal Gadot officially returns to the action genre this week with the new Prime Video thriller, The Runner. Read on for more.",
+      "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2024/08/gal-gadot-date-night.jpeg",
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-08-29T19:01:55.663827+06:00",
-      "last_seen": "2026-08-29T19:01:55.663828+06:00"
+      "first_seen": "2026-08-29T23:34:03.467560+06:00",
+      "last_seen": "2026-08-29T23:34:03.467562+06:00"
     },
-    "collider.com/dark-matter-season-2-premiere-joel-edgerton-jennifer-connelly-apple-tv": {
-      "title": "Apple TV’s ‘Dark Matter’ Stars React to Season 2’s Shocking Sci-Fi Death",
-      "url": "https://collider.com/dark-matter-season-2-premiere-joel-edgerton-jennifer-connelly-apple-tv/",
-      "canonical": "collider.com/dark-matter-season-2-premiere-joel-edgerton-jennifer-connelly-apple-tv",
-      "published_dt": "2026-08-29T18:00:15+06:00",
-      "published_date": "2026-08-29T18:00:15+06:00",
+    "collider.com/books-masterpieces-first-10-pages": {
+      "title": "10 Books That I Knew Would Be Masterpieces From the First 10 Pages",
+      "url": "https://collider.com/books-masterpieces-first-10-pages/",
+      "canonical": "collider.com/books-masterpieces-first-10-pages",
+      "published_dt": "2026-08-29T22:36:11+06:00",
+      "published_date": "2026-08-29T22:36:11+06:00",
       "source": "Collider",
       "region": "Entertainment",
-      "excerpt": "Joel Edgerton and Jennifer Connelly explore the aftermath of the shocking death in the Dark Matter Season 2 premiere.",
-      "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2026/08/dark-matter-season-2-interview-feature.jpg",
+      "excerpt": "Some books, like Moby-Dick and The Secret History, feature incredible opening pages that all but guarantee the entire work will be outright masterful.",
+      "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2026/08/the-name-of-the-wind-1.avif",
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-08-29T19:01:55.663912+06:00",
-      "last_seen": "2026-08-29T19:01:55.663913+06:00"
+      "first_seen": "2026-08-29T23:34:03.467664+06:00",
+      "last_seen": "2026-08-29T23:34:03.467666+06:00"
     },
-    "collider.com/jason-statham-hobbs-and-shaw-fast-and-furious-leaving-peacock-september-2026": {
-      "title": "Jason Statham's Biggest Blockbuster Ever Officially Races Off Streaming",
-      "url": "https://collider.com/jason-statham-hobbs-and-shaw-fast-and-furious-leaving-peacock-september-2026/",
-      "canonical": "collider.com/jason-statham-hobbs-and-shaw-fast-and-furious-leaving-peacock-september-2026",
-      "published_dt": "2026-08-29T18:00:15+06:00",
-      "published_date": "2026-08-29T18:00:15+06:00",
+    "collider.com/worst-animated-movies-film-history": {
+      "title": "The 10 Worst Animated Movies in Film History",
+      "url": "https://collider.com/worst-animated-movies-film-history/",
+      "canonical": "collider.com/worst-animated-movies-film-history",
+      "published_dt": "2026-08-29T22:18:11+06:00",
+      "published_date": "2026-08-29T22:18:11+06:00",
       "source": "Collider",
       "region": "Entertainment",
-      "excerpt": "Jason Statham's highest-grossing hit as a leading man is about to be removed from Peacock, amid Mutiny's underperformance at the box office.",
-      "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2026/03/shelter-jason-statham.jpg",
+      "excerpt": "There have been many exceptionally awful animated movies released over the years, including The Emoji Movie, Foodfight, and Animal Farm.",
+      "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2024/02/finding-jesus.jpg",
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-08-29T19:01:55.664000+06:00",
-      "last_seen": "2026-08-29T19:01:55.664001+06:00"
+      "first_seen": "2026-08-29T23:34:03.467766+06:00",
+      "last_seen": "2026-08-29T23:34:03.467768+06:00"
     },
-    "collider.com/classic-rock-songs-iconic-movie-scenes-unforgettable": {
-      "title": "10 Classic Rock Songs That Made These Iconic Movie Scenes Unforgettable",
-      "url": "https://collider.com/classic-rock-songs-iconic-movie-scenes-unforgettable/",
-      "canonical": "collider.com/classic-rock-songs-iconic-movie-scenes-unforgettable",
-      "published_dt": "2026-08-29T17:55:20+06:00",
-      "published_date": "2026-08-29T17:55:20+06:00",
+    "collider.com/guy-ritchie-the-gentlemen-season-2-release-date-september-2026": {
+      "title": "Guy Ritchie’s Gangster Saga Officially Returns this Week",
+      "url": "https://collider.com/guy-ritchie-the-gentlemen-season-2-release-date-september-2026/",
+      "canonical": "collider.com/guy-ritchie-the-gentlemen-season-2-release-date-september-2026",
+      "published_dt": "2026-08-29T22:15:11+06:00",
+      "published_date": "2026-08-29T22:15:11+06:00",
       "source": "Collider",
       "region": "Entertainment",
-      "excerpt": "Classic rock songs have transformed unforgettable movie scenes, including iconic moments from Iron Man, Shrek and other beloved films.",
-      "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2025/12/robert-downey-jr-tony-stark-iron-man-1.jpg",
+      "excerpt": "At long last, Guy Ritchie’s The Gentlemen is finally returning for Season 2 this week after a 2-year wait. Read on for more details.",
+      "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2026/02/guy-ritchie.jpg",
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-08-29T19:01:55.664082+06:00",
-      "last_seen": "2026-08-29T19:01:55.664084+06:00"
+      "first_seen": "2026-08-29T23:34:03.467882+06:00",
+      "last_seen": "2026-08-29T23:34:03.467885+06:00"
+    },
+    "collider.com/best-james-cameron-movie-according-to-michael-biehn": {
+      "title": "Frequent James Cameron Star Officially Names Director's Greatest Sci-Fi Masterpiece [Exclusive]",
+      "url": "https://collider.com/best-james-cameron-movie-according-to-michael-biehn/",
+      "canonical": "collider.com/best-james-cameron-movie-according-to-michael-biehn",
+      "published_dt": "2026-08-29T22:07:11+06:00",
+      "published_date": "2026-08-29T22:07:11+06:00",
+      "source": "Collider",
+      "region": "Entertainment",
+      "excerpt": "Michael Biehn names Aliens as James Cameron’s best movie, even after starring in The Terminator and The Abyss.",
+      "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2026/02/terminator.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-08-29T23:34:03.467988+06:00",
+      "last_seen": "2026-08-29T23:34:03.467991+06:00"
+    },
+    "tvline.com/2244327/hugh-laurie-house-most-important-relationship-wilson": {
+      "title": "Hugh Laurie Believes This Was House's Most Important Relationship",
+      "url": "https://www.tvline.com/2244327/hugh-laurie-house-most-important-relationship-wilson/",
+      "canonical": "tvline.com/2244327/hugh-laurie-house-most-important-relationship-wilson",
+      "published_dt": "2026-08-29T23:12:00+06:00",
+      "published_date": "2026-08-29T23:12:00+06:00",
+      "source": "TVLine",
+      "region": "Entertainment",
+      "excerpt": "Hugh Laurie singled out one House relationship as the show's most important, with an off-screen friendship adding another layer to the bond.",
+      "image": "https://www.tvline.com/img/gallery/hugh-laurie-believes-this-was-houses-most-important-relationship/l-intro-1787015362.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-08-29T23:34:04.030950+06:00",
+      "last_seen": "2026-08-29T23:34:04.030954+06:00"
+    },
+    "tvline.com/2242867/best-tv-shows-like-ride-or-die": {
+      "title": "10 Best TV Shows Like Ride Or Die",
+      "url": "https://www.tvline.com/2242867/best-tv-shows-like-ride-or-die/",
+      "canonical": "tvline.com/2242867/best-tv-shows-like-ride-or-die",
+      "published_dt": "2026-08-29T23:02:00+06:00",
+      "published_date": "2026-08-29T23:02:00+06:00",
+      "source": "TVLine",
+      "region": "Entertainment",
+      "excerpt": "Only a few shows can approximate Hannah Waddingham and Octavia Spencer's combination of laughs, heart, and action on Prime Video.",
+      "image": "https://www.tvline.com/img/gallery/best-tv-shows-like-ride-or-die/l-intro-1788018170.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-08-29T23:34:04.031056+06:00",
+      "last_seen": "2026-08-29T23:34:04.031058+06:00"
+    },
+    "tvline.com/2245925/zach-gilford-not-appearing-mike-flanagan-prime-video-carrie": {
+      "title": "Zach Gilford On Whether He'll Appear In Carrie, Working With Mike Flanagan: 'I Learned So Much From Him'",
+      "url": "https://www.tvline.com/2245925/zach-gilford-not-appearing-mike-flanagan-prime-video-carrie/",
+      "canonical": "tvline.com/2245925/zach-gilford-not-appearing-mike-flanagan-prime-video-carrie",
+      "published_dt": "2026-08-29T23:00:00+06:00",
+      "published_date": "2026-08-29T23:00:00+06:00",
+      "source": "TVLine",
+      "region": "Entertainment",
+      "excerpt": "Zach Gilford talks to TVLine about working with Mike Flanagan and whether he'll guest-star in the writer-director's upcoming Carrie series.",
+      "image": "https://www.tvline.com/img/gallery/zach-gilfords-mike-flanagan-comments/l-intro-1787862751.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-08-29T23:34:04.031148+06:00",
+      "last_seen": "2026-08-29T23:34:04.031150+06:00"
+    },
+    "tvline.com/2244326/american-horror-story-best-villains-ranked": {
+      "title": "5 Best American Horror Story Villains, Ranked",
+      "url": "https://www.tvline.com/2244326/american-horror-story-best-villains-ranked/",
+      "canonical": "tvline.com/2244326/american-horror-story-best-villains-ranked",
+      "published_dt": "2026-08-29T22:12:00+06:00",
+      "published_date": "2026-08-29T22:12:00+06:00",
+      "source": "TVLine",
+      "region": "Entertainment",
+      "excerpt": "\"American Horror Story\" has introduced viewers to some truly memorable villains over the years. We've narrowed down and ranked the cream of the crop.",
+      "image": "https://www.tvline.com/img/gallery/5-best-american-horror-story-villains-ranked/l-intro-1787332486.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-08-29T23:34:04.031233+06:00",
+      "last_seen": "2026-08-29T23:34:04.031235+06:00"
+    },
+    "tvline.com/2243704/netflix-ceo-nothing-data-predict-biggest-show-squid-game": {
+      "title": "Netflix CEO Says 'Nothing In The Data' Could Have Predicted One Of The Streamer's Biggest Shows",
+      "url": "https://www.tvline.com/2243704/netflix-ceo-nothing-data-predict-biggest-show-squid-game/",
+      "canonical": "tvline.com/2243704/netflix-ceo-nothing-data-predict-biggest-show-squid-game",
+      "published_dt": "2026-08-29T21:12:00+06:00",
+      "published_date": "2026-08-29T21:12:00+06:00",
+      "source": "TVLine",
+      "region": "Entertainment",
+      "excerpt": "Data drives everything these days - but, according to Netflix's CEO, one show proved that you can't base creative decisions on numbers alone.",
+      "image": "https://www.tvline.com/img/gallery/netflix-ceo-says-nothing-in-the-data-could-have-predicted-one-of-the-streamers-biggest-shows/l-intro-1787670494.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-08-29T23:34:04.031316+06:00",
+      "last_seen": "2026-08-29T23:34:04.031317+06:00"
+    },
+    "tvline.com/2242807/best-tv-shows-like-the-americans": {
+      "title": "15 Best TV Shows Like The Americans",
+      "url": "https://www.tvline.com/2242807/best-tv-shows-like-the-americans/",
+      "canonical": "tvline.com/2242807/best-tv-shows-like-the-americans",
+      "published_dt": "2026-08-29T21:02:00+06:00",
+      "published_date": "2026-08-29T21:02:00+06:00",
+      "source": "TVLine",
+      "region": "Entertainment",
+      "excerpt": "If clips of The Americans have been popping up on your feed lately, here are 15 shows to watch next if you loved the KGB spy drama's twists.",
+      "image": "https://www.tvline.com/img/gallery/15-best-tv-shows-like-the-americans/l-intro-1787337294.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-08-29T23:34:04.031394+06:00",
+      "last_seen": "2026-08-29T23:34:04.031396+06:00"
+    },
+    "tvline.com/2246620/how-watch-2026-coke-zero-sugar-400-daytona": {
+      "title": "How To Watch The 2026 Coke Zero Sugar 400 At Daytona",
+      "url": "https://www.tvline.com/2246620/how-watch-2026-coke-zero-sugar-400-daytona/",
+      "canonical": "tvline.com/2246620/how-watch-2026-coke-zero-sugar-400-daytona",
+      "published_dt": "2026-08-29T20:00:00+06:00",
+      "published_date": "2026-08-29T20:00:00+06:00",
+      "source": "TVLine",
+      "region": "Entertainment",
+      "excerpt": "The regular season of the 2026 NASCAR Cup Series is nearly at an end, with one final race before the postseason begins - the Coke Zero Sugar 400.",
+      "image": "https://www.tvline.com/img/gallery/how-to-watch-the-2026-coke-zero-sugar-400-at-daytona/l-intro-1787941813.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-08-29T23:34:04.031475+06:00",
+      "last_seen": "2026-08-29T23:34:04.031477+06:00"
+    },
+    "tvline.com/2246640/lucy-freyer-billie-adults-season-2-episode-2-performance": {
+      "title": "TVLine's Performer Of The Week: Lucy Freyer",
+      "url": "https://www.tvline.com/2246640/lucy-freyer-billie-adults-season-2-episode-2-performance/",
+      "canonical": "tvline.com/2246640/lucy-freyer-billie-adults-season-2-episode-2-performance",
+      "published_dt": "2026-08-29T20:00:00+06:00",
+      "published_date": "2026-08-29T20:00:00+06:00",
+      "source": "TVLine",
+      "region": "Entertainment",
+      "excerpt": "Lucy Freyer was a riot as Billie faced the harsh reality of getting older in Season 2 of Adults - see why she's TVLine's Performer of the Week.",
+      "image": "https://www.tvline.com/img/gallery/lucy-freyer-billie-adults-season-2-episode-2-performance/l-intro-1787966483.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-08-29T23:34:04.031555+06:00",
+      "last_seen": "2026-08-29T23:34:04.031557+06:00"
+    },
+    "tvline.com/2246068/tv-shows-betty-white-guest-star": {
+      "title": "5 TV Shows You Probably Didn't Know Betty White Guest-Starred On",
+      "url": "https://www.tvline.com/2246068/tv-shows-betty-white-guest-star/",
+      "canonical": "tvline.com/2246068/tv-shows-betty-white-guest-star",
+      "published_dt": "2026-08-29T19:12:00+06:00",
+      "published_date": "2026-08-29T19:12:00+06:00",
+      "source": "TVLine",
+      "region": "Entertainment",
+      "excerpt": "Everyone remembers Betty White on The Golden Girls, and even Hot in Cleveland, but what about her more obscure TV guest appearances?",
+      "image": "https://www.tvline.com/img/gallery/5-tv-shows-you-probably-didnt-know-betty-white-guest-starred-on/l-intro-1787871045.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-08-29T23:34:04.031639+06:00",
+      "last_seen": "2026-08-29T23:34:04.031641+06:00"
+    },
+    "tvline.com/2242609/prison-break-fox-thriller-series-debut-21-year-anniversary": {
+      "title": "21 Years Ago Today: A Fox Thriller Debuted To 10.5 Million Viewers And Earned An Immediate Full Season",
+      "url": "https://www.tvline.com/2242609/prison-break-fox-thriller-series-debut-21-year-anniversary/",
+      "canonical": "tvline.com/2242609/prison-break-fox-thriller-series-debut-21-year-anniversary",
+      "published_dt": "2026-08-29T19:06:00+06:00",
+      "published_date": "2026-08-29T19:06:00+06:00",
+      "source": "TVLine",
+      "region": "Entertainment",
+      "excerpt": "In 2005, this new show became an instant hit with its two-hour premiere, prompting the initial episode run to be extended from 13 to 22 episodes.",
+      "image": "https://www.tvline.com/img/gallery/21-years-ago-today-a-fox-thriller-debuted-to-10-5-million-viewers-and-earned-an-immediate-full-season/l-intro-1787579463.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-08-29T23:34:04.031721+06:00",
+      "last_seen": "2026-08-29T23:34:04.031723+06:00"
     },
     "tvline.com/2246415/how-watch-2026-aer-lingus-college-football-classic": {
       "title": "How To Watch The 2026 Aer Lingus College Football Classic",
@@ -1130,8 +1247,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-08-29T19:01:56.070412+06:00",
-      "last_seen": "2026-08-29T19:01:56.070416+06:00"
+      "first_seen": "2026-08-29T23:34:04.031802+06:00",
+      "last_seen": "2026-08-29T23:34:04.031804+06:00"
     },
     "tvline.com/2243643/melissa-gilbert-guest-star-hit-sci-fi-series-babylon-5-then-husband-bruce-boxleitner": {
       "title": "Melissa Gilbert Guest-Starred On A Hit Sci-Fi Show With Then-Husband Bruce Boxleitner",
@@ -1146,8 +1263,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-08-29T19:01:56.070514+06:00",
-      "last_seen": "2026-08-29T19:01:56.070515+06:00"
+      "first_seen": "2026-08-29T23:34:04.031893+06:00",
+      "last_seen": "2026-08-29T23:34:04.031896+06:00"
     },
     "tvline.com/2245387/what-to-watch-august-29-2026-tv-shows-movies": {
       "title": "What To Watch Saturday: Melissa O'Neil's Lifetime Movie, HIMYM Star's Much Ado Redo, And More",
@@ -1162,8 +1279,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-08-29T19:01:56.070605+06:00",
-      "last_seen": "2026-08-29T19:01:56.070607+06:00"
+      "first_seen": "2026-08-29T23:34:04.031978+06:00",
+      "last_seen": "2026-08-29T23:34:04.031980+06:00"
     },
     "tvline.com/2246807/quote-of-the-day-dolly-parton-confidence": {
       "title": "Quote Of The Day By Dolly Parton: 'I Often Say I'm Comfortable In My Own Skin No Matter How...'",
@@ -1178,8 +1295,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-08-29T19:01:56.070689+06:00",
-      "last_seen": "2026-08-29T19:01:56.070691+06:00"
+      "first_seen": "2026-08-29T23:34:04.032059+06:00",
+      "last_seen": "2026-08-29T23:34:04.032061+06:00"
     },
     "tvline.com/2246831/dark-matter-season-2-premiere-recap-apple-tv": {
       "title": "Dark Matter Season 2 Premiere Recap: An Unwelcome Visitor Puts The Dessens On The Run... Again!",
@@ -1194,8 +1311,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-08-29T19:01:56.070771+06:00",
-      "last_seen": "2026-08-29T19:01:56.070773+06:00"
+      "first_seen": "2026-08-29T23:34:04.032140+06:00",
+      "last_seen": "2026-08-29T23:34:04.032142+06:00"
     },
     "tvline.com/2246239/ted-lasso-jamie-tartt-phil-dunster-british-spy-series-strike-back": {
       "title": "Before Becoming Ted Lasso's Jamie Tartt, Phil Dunster Was In A Popular British Spy Series",
@@ -1210,8 +1327,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-08-29T19:01:56.070857+06:00",
-      "last_seen": "2026-08-29T19:01:56.070859+06:00"
+      "first_seen": "2026-08-29T23:34:04.032224+06:00",
+      "last_seen": "2026-08-29T23:34:04.032226+06:00"
     },
     "tvline.com/2243560/why-picard-borg-name-locutus-star-trek-the-next-generation": {
       "title": "What Was The Significance Of Picard's Borg Name In Star Trek: The Next Generation?",
@@ -1225,9 +1342,10 @@
       "image": "https://www.tvline.com/img/gallery/what-was-the-significance-of-picards-borg-name-in-star-trek-the-next-generation/l-intro-1787663977.jpg",
       "discovery": "rss",
       "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-08-29T19:01:56.070940+06:00",
-      "last_seen": "2026-08-29T19:01:56.070942+06:00"
+      "status": "posted",
+      "first_seen": "2026-08-29T23:34:04.032308+06:00",
+      "last_seen": "2026-08-29T23:34:04.032310+06:00",
+      "posted_at": "2026-08-30T00:04:46.694227+06:00"
     },
     "tvline.com/2246360/bobby-lioness-actress-jill-wagner": {
       "title": "Why Bobby From Lioness Looks So Familiar",
@@ -1241,9 +1359,10 @@
       "image": "https://www.tvline.com/img/gallery/why-bobby-from-lioness-looks-so-familiar/l-intro-1787929387.jpg",
       "discovery": "rss",
       "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-08-29T19:01:56.071022+06:00",
-      "last_seen": "2026-08-29T19:01:56.071024+06:00"
+      "status": "posted",
+      "first_seen": "2026-08-29T23:34:04.032387+06:00",
+      "last_seen": "2026-08-29T23:34:04.032388+06:00",
+      "posted_at": "2026-08-30T00:04:52.722945+06:00"
     },
     "tvline.com/2246614/emmys-2026-supporting-actor-comedy-series-nominees-vote-poll": {
       "title": "Emmys 2026 Poll: Who Should Win For Supporting Actor In A Comedy Series?",
@@ -1257,9 +1376,10 @@
       "image": "https://www.tvline.com/img/gallery/emmys-2026-poll-who-should-win-for-supporting-actor-in-a-comedy-series/l-intro-1787932942.jpg",
       "discovery": "rss",
       "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-08-29T19:01:56.071104+06:00",
-      "last_seen": "2026-08-29T19:01:56.071106+06:00"
+      "status": "posted",
+      "first_seen": "2026-08-29T23:34:04.032472+06:00",
+      "last_seen": "2026-08-29T23:34:04.032474+06:00",
+      "posted_at": "2026-08-30T00:05:03.186955+06:00"
     },
     "tvline.com/2246582/best-tv-shows-like-ransom-canyon": {
       "title": "10 Best TV Shows Like Ransom Canyon",
@@ -1273,138 +1393,106 @@
       "image": "https://www.tvline.com/img/gallery/10-best-tv-shows-like-ransom-canyon/l-intro-1787941249.jpg",
       "discovery": "rss",
       "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-08-29T19:01:56.071184+06:00",
-      "last_seen": "2026-08-29T19:01:56.071186+06:00"
-    },
-    "tvline.com/2246518/the-pitt-season-3-night-shift-dancing-with-the-stars-the-next-pro-furious-tv-questions": {
-      "title": "TVLine Asks: Is The Pitt Season 3 Set During The Night Shift? Who Should Win DWTS: The Next Pro? Did Furious Nail That Needle Drop? And More",
-      "url": "https://www.tvline.com/2246518/the-pitt-season-3-night-shift-dancing-with-the-stars-the-next-pro-furious-tv-questions/",
-      "canonical": "tvline.com/2246518/the-pitt-season-3-night-shift-dancing-with-the-stars-the-next-pro-furious-tv-questions",
-      "published_dt": "2026-08-29T00:00:00+06:00",
-      "published_date": "2026-08-29T00:00:00+06:00",
-      "source": "TVLine",
-      "region": "Entertainment",
-      "excerpt": "We tackle the biggest questions from the week in TV: The Pitt, Dancing With the Stars: The Next Pro, Furious, and more!",
-      "image": "https://www.tvline.com/img/gallery/the-pitt-season-3-night-shift-dancing-with-the-stars-the-next-pro-furious-tv-questions/l-intro-1787940351.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-08-29T19:01:56.071277+06:00",
-      "last_seen": "2026-08-29T19:01:56.071280+06:00"
-    },
-    "tvline.com/2245767/tim-curry-star-forgotten-series-will-shakespeare-impressive-cast": {
-      "title": "Tim Curry Starred In A Forgotten Series About Shakespeare With An Impressive Cast",
-      "url": "https://www.tvline.com/2245767/tim-curry-star-forgotten-series-will-shakespeare-impressive-cast/",
-      "canonical": "tvline.com/2245767/tim-curry-star-forgotten-series-will-shakespeare-impressive-cast",
-      "published_dt": "2026-08-28T23:12:00+06:00",
-      "published_date": "2026-08-28T23:12:00+06:00",
-      "source": "TVLine",
-      "region": "Entertainment",
-      "excerpt": "Tim Curry starred in a little-remembered 1970s biographical series alongside a notable ensemble of British stage and screen actors.",
-      "image": "https://www.tvline.com/img/gallery/tim-curry-starred-in-a-forgotten-series-about-shakespeare-with-an-impressive-cast/l-intro-1787855937.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-08-29T19:01:56.071361+06:00",
-      "last_seen": "2026-08-29T19:01:56.071363+06:00"
-    },
-    "tvline.com/2246431/manifest-spin-off-arrivals-series-order-netflix-reboot": {
-      "title": "Manifest Spin-Off Arrivals Ordered At Netflix — But Will The Original Cast Return?",
-      "url": "https://www.tvline.com/2246431/manifest-spin-off-arrivals-series-order-netflix-reboot/",
-      "canonical": "tvline.com/2246431/manifest-spin-off-arrivals-series-order-netflix-reboot",
-      "published_dt": "2026-08-28T21:52:18+06:00",
-      "published_date": "2026-08-28T21:52:18+06:00",
-      "source": "TVLine",
-      "region": "Entertainment",
-      "excerpt": "The Manifest universe is taking flight again - and, naturally, it's being announced on 8/28.",
-      "image": "https://www.tvline.com/img/gallery/manifest-spin-off-arrivals-series-order-netflix-reboot/l-intro-1787933650.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
       "status": "posted",
-      "first_seen": "2026-08-29T19:01:56.071450+06:00",
-      "last_seen": "2026-08-29T19:01:56.071451+06:00",
-      "posted_at": "2026-08-29T19:05:29.856105+06:00"
+      "first_seen": "2026-08-29T23:34:04.032550+06:00",
+      "last_seen": "2026-08-29T23:34:04.032551+06:00",
+      "posted_at": "2026-08-30T00:05:08.007746+06:00"
     },
-    "tvline.com/2243492/the-twilight-zone-original-pilot-rejected-depressing": {
-      "title": "The Original Twilight Zone Pilot Pitch Was Rejected For Being Too Depressing",
-      "url": "https://www.tvline.com/2243492/the-twilight-zone-original-pilot-rejected-depressing/",
-      "canonical": "tvline.com/2243492/the-twilight-zone-original-pilot-rejected-depressing",
-      "published_dt": "2026-08-28T21:13:00+06:00",
-      "published_date": "2026-08-28T21:13:00+06:00",
-      "source": "TVLine",
+    "bollywoodhungama.com/news/bollywood/breaking-mirzapur-the-movie-passed-with-a-certificate-has-a-run-time-of-3-hours-and-17-minutes-goes-the-animal-dhurandhar-the-revenge-way": {
+      "title": "BREAKING: Mirzapur The Movie passed with ‘A’ certificate; has a run time of 3 hours and 17 minutes; goes the Animal, Dhurandhar The Revenge way",
+      "url": "https://www.bollywoodhungama.com/news/bollywood/breaking-mirzapur-the-movie-passed-with-a-certificate-has-a-run-time-of-3-hours-and-17-minutes-goes-the-animal-dhurandhar-the-revenge-way/",
+      "canonical": "bollywoodhungama.com/news/bollywood/breaking-mirzapur-the-movie-passed-with-a-certificate-has-a-run-time-of-3-hours-and-17-minutes-goes-the-animal-dhurandhar-the-revenge-way",
+      "published_dt": "2026-08-29T22:01:46+06:00",
+      "published_date": "2026-08-29T22:01:46+06:00",
+      "source": "Bollywood Hungama",
       "region": "Entertainment",
-      "excerpt": "The Twilight Zone was never afraid of an unhappy ending - but CBS executives feared that Rod Serling's original pilot script took things too far.",
-      "image": "https://www.tvline.com/img/gallery/the-original-twilight-zone-pilot-pitch-was-rejected-for-being-too-depressing/l-intro-1787658232.jpg",
+      "excerpt": "Next week will see the release of Mirzapur: The Movie and the trade and industry are looking forward to its fate. This is because this is a rare instance in India where a web series has been made into a film. Meanwhile, the producers of the film, Excel Entertainment, headed by Farhan Akhtar and Ritesh Read More The post BREAKING: Mirzapur The Movie passed with ‘A’ certificate; has a run time of 3 hours and 17 minutes; goes the Animal, Dhurandhar The Revenge way appeared first on Bollywood Hungama .",
+      "image": "",
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-08-29T19:01:56.071531+06:00",
-      "last_seen": "2026-08-29T19:01:56.071534+06:00"
+      "first_seen": "2026-08-29T23:34:07.203376+06:00",
+      "last_seen": "2026-08-29T23:34:07.203380+06:00"
     },
-    "tvline.com/2246343/apple-tv-price-increase-august-2026-subscription-cost": {
-      "title": "Apple TV Is Hiking Its Prices Again — Find Out How Much It'll Cost You To Stream Ted Lasso, Silo, Dark Matter, And More",
-      "url": "https://www.tvline.com/2246343/apple-tv-price-increase-august-2026-subscription-cost/",
-      "canonical": "tvline.com/2246343/apple-tv-price-increase-august-2026-subscription-cost",
-      "published_dt": "2026-08-28T20:50:00+06:00",
-      "published_date": "2026-08-28T20:50:00+06:00",
-      "source": "TVLine",
+    "bollywoodhungama.com/news/features/18-years-of-rock-on-abhishek-kapoor-reflects-on-farhan-akhtar-arjun-rampal-starrer-and-its-lasting-impact": {
+      "title": "18 Years of Rock On!! Abhishek Kapoor reflects on Farhan Akhtar, Arjun Rampal starrer and its lasting impact",
+      "url": "https://www.bollywoodhungama.com/news/features/18-years-of-rock-on-abhishek-kapoor-reflects-on-farhan-akhtar-arjun-rampal-starrer-and-its-lasting-impact/",
+      "canonical": "bollywoodhungama.com/news/features/18-years-of-rock-on-abhishek-kapoor-reflects-on-farhan-akhtar-arjun-rampal-starrer-and-its-lasting-impact",
+      "published_dt": "2026-08-29T20:16:56+06:00",
+      "published_date": "2026-08-29T20:16:56+06:00",
+      "source": "Bollywood Hungama",
       "region": "Entertainment",
-      "excerpt": "Apple has announced a price hike for Apple TV, with the new rates taking effect Friday, August 28 for new subscribers.",
-      "image": "https://www.tvline.com/img/gallery/apple-tv-is-hiking-its-prices-again-find-out-how-much-itll-cost-you-to-stream-ted-lasso-silo-dark-matter-and-more/l-intro-1787928263.jpg",
+      "excerpt": "It has been 18 years since the release of Rock On!!, the musical drama directed by Abhishek Kapoor that brought together Farhan Akhtar, Arjun Rampal, Purab Kohli and Luke Kenny. Released in 2008, the film went on to become a commercial success and earned recognition at the National Film Awards, while its music and portrayal Read More The post 18 Years of Rock On!! Abhishek Kapoor reflects on Farhan Akhtar, Arjun Rampal starrer and its lasting impact appeared first on Bollywood Hungama .",
+      "image": "",
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-08-29T19:01:56.071617+06:00",
-      "last_seen": "2026-08-29T19:01:56.071619+06:00"
+      "first_seen": "2026-08-29T23:34:07.203625+06:00",
+      "last_seen": "2026-08-29T23:34:07.203627+06:00"
     },
-    "tvline.com/2246300/hbo-max-fall-2026-schedule-movies-tv-shows": {
-      "title": "HBO Max Fall 2026 Schedule: All The New Movies And TV Shows Coming Soon",
-      "url": "https://www.tvline.com/2246300/hbo-max-fall-2026-schedule-movies-tv-shows/",
-      "canonical": "tvline.com/2246300/hbo-max-fall-2026-schedule-movies-tv-shows",
-      "published_dt": "2026-08-28T20:03:42+06:00",
-      "published_date": "2026-08-28T20:03:42+06:00",
-      "source": "TVLine",
+    "bollywoodhungama.com/news/south-cinema/raaja-trance-ilaiyaraaja-steps-into-a-new-electronic-sound-with-muthumani-from-karthik-subbarajs-dorothy": {
+      "title": "‘Raaja Trance’: Ilaiyaraaja steps into a new electronic sound with ‘Muthumani’ from Karthik Subbaraj’s Dorothy",
+      "url": "https://www.bollywoodhungama.com/news/south-cinema/raaja-trance-ilaiyaraaja-steps-into-a-new-electronic-sound-with-muthumani-from-karthik-subbarajs-dorothy/",
+      "canonical": "bollywoodhungama.com/news/south-cinema/raaja-trance-ilaiyaraaja-steps-into-a-new-electronic-sound-with-muthumani-from-karthik-subbarajs-dorothy",
+      "published_dt": "2026-08-29T20:15:22+06:00",
+      "published_date": "2026-08-29T20:15:22+06:00",
+      "source": "Bollywood Hungama",
       "region": "Entertainment",
-      "excerpt": "Whether you're looking for true crime documentaries, comedies, or drama series, HBO Max has new and returning titles to tune in for this fall.",
-      "image": "https://www.tvline.com/img/gallery/hbo-max-fall-2026-schedule-all-the-new-movies-and-tv-shows-coming-soon/l-intro-1787925272.jpg",
+      "excerpt": "What happens when one of the most revered voices in Indian music meets a duo at the forefront of experimental electronic sound? For Karthik Subbaraj’s Dorothy, Ilaiyaraaja joins forces with Basel-based electronic duo Twerking Class Heroes in a striking collision of Indian film music and electronic influences, creating a sound that pushes Indian cinema into Read More The post ‘Raaja Trance’: Ilaiyaraaja steps into a new electronic sound with ‘Muthumani’ from Karthik Subbaraj’s Dorothy appeared first on Bollywood Hungama .",
+      "image": "",
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-08-29T19:01:56.071698+06:00",
-      "last_seen": "2026-08-29T19:01:56.071700+06:00"
+      "first_seen": "2026-08-29T23:34:07.203887+06:00",
+      "last_seen": "2026-08-29T23:34:07.203890+06:00"
     },
-    "tvline.com/2246252/sharon-horgan-youth-hbo-toy-story-5-disney-plus-release-dates": {
-      "title": "Save The Dates: Sharon Horgan's Youth, Toy Story 5 On Disney+, And More",
-      "url": "https://www.tvline.com/2246252/sharon-horgan-youth-hbo-toy-story-5-disney-plus-release-dates/",
-      "canonical": "tvline.com/2246252/sharon-horgan-youth-hbo-toy-story-5-disney-plus-release-dates",
-      "published_dt": "2026-08-28T19:30:00+06:00",
-      "published_date": "2026-08-28T19:30:00+06:00",
-      "source": "TVLine",
+    "bollywoodhungama.com/news/bollywood/emraan-hashmi-diagnosed-with-influenza-a-and-swine-flu-postpones-bengaluru-event": {
+      "title": "Emraan Hashmi diagnosed with Influenza A and Swine Flu; postpones Bengaluru event",
+      "url": "https://www.bollywoodhungama.com/news/bollywood/emraan-hashmi-diagnosed-with-influenza-a-and-swine-flu-postpones-bengaluru-event/",
+      "canonical": "bollywoodhungama.com/news/bollywood/emraan-hashmi-diagnosed-with-influenza-a-and-swine-flu-postpones-bengaluru-event",
+      "published_dt": "2026-08-29T19:42:08+06:00",
+      "published_date": "2026-08-29T19:42:08+06:00",
+      "source": "Bollywood Hungama",
       "region": "Entertainment",
-      "excerpt": "HBO has set a Sunday, September 20 premiere date for Sharon Horgan's new comedy Youth - watch a newly released trailer.",
-      "image": "https://www.tvline.com/img/gallery/save-the-dates-sharon-horgans-youth-toy-story-5-on-disney-and-more/l-intro-1787923348.jpg",
+      "excerpt": "Emraan Hashmi has been diagnosed with Influenza A virus and Swine Flu, as per a medical test report available. The actor, who has been in the news following the success of Awarapan 2, was expected to attend an event in Bengaluru but had to pull out after falling unwell. The medical report states that Emraan Read More The post Emraan Hashmi diagnosed with Influenza A and Swine Flu; postpones Bengaluru event appeared first on Bollywood Hungama .",
+      "image": "",
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-08-29T19:01:56.071781+06:00",
-      "last_seen": "2026-08-29T19:01:56.071782+06:00"
+      "first_seen": "2026-08-29T23:34:07.204116+06:00",
+      "last_seen": "2026-08-29T23:34:07.204118+06:00"
     },
-    "tvline.com/2241863/william-shatner-alfred-hitchcock-presents-episode-the-glass-eye": {
-      "title": "William Shatner Starred In One Of The Best Episodes Of Alfred Hitchcock Presents",
-      "url": "https://www.tvline.com/2241863/william-shatner-alfred-hitchcock-presents-episode-the-glass-eye/",
-      "canonical": "tvline.com/2241863/william-shatner-alfred-hitchcock-presents-episode-the-glass-eye",
-      "published_dt": "2026-08-28T19:12:00+06:00",
-      "published_date": "2026-08-28T19:12:00+06:00",
-      "source": "TVLine",
+    "bollywoodhungama.com/news/south-cinema/the-paradise-nani-and-anirudh-ravichander-create-a-stir-in-dallas-as-yesha-nagula-lyrical-video-is-unveiled-at-us-concert": {
+      "title": "The Paradise: Nani and Anirudh Ravichander create a stir in Dallas as ‘Yesha Nagula’ lyrical video is unveiled at US concert",
+      "url": "https://www.bollywoodhungama.com/news/south-cinema/the-paradise-nani-and-anirudh-ravichander-create-a-stir-in-dallas-as-yesha-nagula-lyrical-video-is-unveiled-at-us-concert/",
+      "canonical": "bollywoodhungama.com/news/south-cinema/the-paradise-nani-and-anirudh-ravichander-create-a-stir-in-dallas-as-yesha-nagula-lyrical-video-is-unveiled-at-us-concert",
+      "published_dt": "2026-08-29T19:34:20+06:00",
+      "published_date": "2026-08-29T19:34:20+06:00",
+      "source": "Bollywood Hungama",
       "region": "Entertainment",
-      "excerpt": "William Shatner made an already great episode of Alfred Hitchcock Presents into one of the series' absolute best thanks to his performance.",
-      "image": "https://www.tvline.com/img/gallery/william-shatner-starred-in-one-of-the-best-episodes-of-alfred-hitchcock-presents/l-intro-1787339566.jpg",
+      "excerpt": "The makers of The Paradise have unveiled the much-awaited second single ‘Yesha Nagula’, giving fans another glimpse into the musical world of the upcoming Nani starrer. In a unique launch, the lyrical video was released live on-stage during composer Anirudh Ravichander’s ongoing US music concert in Dallas, where Nani joined him for the special moment. Read More The post The Paradise: Nani and Anirudh Ravichander create a stir in Dallas as ‘Yesha Nagula’ lyrical video is unveiled at US concert appeared first on Bollywood Hungama .",
+      "image": "",
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-08-29T19:01:56.071863+06:00",
-      "last_seen": "2026-08-29T19:01:56.071864+06:00"
+      "first_seen": "2026-08-29T23:34:07.204336+06:00",
+      "last_seen": "2026-08-29T23:34:07.204338+06:00"
+    },
+    "bollywoodhungama.com/news/box-office-special-features/toxic-hindi-box-office-yash-starrer-fails-to-jump-on-saturday-headed-for-a-shocking-finish": {
+      "title": "Toxic (Hindi) Box Office: Yash starrer FAILS to JUMP on Saturday; Headed for a SHOCKING finish",
+      "url": "https://www.bollywoodhungama.com/news/box-office-special-features/toxic-hindi-box-office-yash-starrer-fails-to-jump-on-saturday-headed-for-a-shocking-finish/",
+      "canonical": "bollywoodhungama.com/news/box-office-special-features/toxic-hindi-box-office-yash-starrer-fails-to-jump-on-saturday-headed-for-a-shocking-finish",
+      "published_dt": "2026-08-29T19:30:08+06:00",
+      "published_date": "2026-08-29T19:30:08+06:00",
+      "source": "Bollywood Hungama",
+      "region": "Entertainment",
+      "excerpt": "The Yash led Toxic is heading toward a major disaster as collections drop sharply after a strong opening day. If the present trends are anything to go by, the Geethu Mohandas directorial could end at a number as low as Rs. 150 crore in Hindi, and that’s largely due to the Rs. 53 crore opening Read More The post Toxic (Hindi) Box Office: Yash starrer FAILS to JUMP on Saturday; Headed for a SHOCKING finish appeared first on Bollywood Hungama .",
+      "image": "",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-08-29T23:34:07.204559+06:00",
+      "last_seen": "2026-08-29T23:34:07.204561+06:00"
     },
     "bollywoodhungama.com/news/bollywood/scoop-before-karna-with-salman-khan-rakeysh-omprakash-mehra-to-direct-vikrant-massey-in-a-love-story": {
       "title": "SCOOP: Before Karna with Salman Khan, Rakeysh Omprakash Mehra to direct Vikrant Massey in a Love Story",
@@ -1418,9 +1506,10 @@
       "image": "",
       "discovery": "rss",
       "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-08-29T19:01:58.753218+06:00",
-      "last_seen": "2026-08-29T19:01:58.753222+06:00"
+      "status": "posted",
+      "first_seen": "2026-08-29T23:34:07.204766+06:00",
+      "last_seen": "2026-08-29T23:34:07.204768+06:00",
+      "posted_at": "2026-08-30T00:04:20.322701+06:00"
     },
     "bollywoodhungama.com/news/south-cinema/toxic-a-fairy-tale-for-grown-ups-bts-jj-perry-reveals-how-yash-pulled-off-the-vicious-fight-action-sequence": {
       "title": "Toxic – A Fairy Tale For Grown-Ups BTS: JJ Perry reveals how Yash pulled off the vicious fight action sequence",
@@ -1434,9 +1523,10 @@
       "image": "",
       "discovery": "rss",
       "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-08-29T19:01:58.753531+06:00",
-      "last_seen": "2026-08-29T19:01:58.753534+06:00"
+      "status": "posted",
+      "first_seen": "2026-08-29T23:34:07.205036+06:00",
+      "last_seen": "2026-08-29T23:34:07.205039+06:00",
+      "posted_at": "2026-08-30T00:05:18.603030+06:00"
     },
     "bollywoodhungama.com/news/parties-and-events/photos-aisha-sharma-snapped-outside-a-salon-in-bandra-6": {
       "title": "Photos: Aisha Sharma snapped outside a salon in Bandra",
@@ -1451,8 +1541,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-08-29T19:01:58.753733+06:00",
-      "last_seen": "2026-08-29T19:01:58.753735+06:00"
+      "first_seen": "2026-08-29T23:34:07.205206+06:00",
+      "last_seen": "2026-08-29T23:34:07.205208+06:00"
     },
     "bollywoodhungama.com/news/parties-and-events/photos-riteish-deshmukh-snapped-with-wife-genelia-deshmukh-and-brother-dhiraj-deshmukh-at-a-restaurant-in-bandra": {
       "title": "Photos: Riteish Deshmukh snapped with wife Genelia Deshmukh and brother Dhiraj Deshmukh at a restaurant in Bandra",
@@ -1467,104 +1557,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-08-29T19:01:58.753925+06:00",
-      "last_seen": "2026-08-29T19:01:58.753927+06:00"
-    },
-    "bollywoodhungama.com/news/features/tiger-shroff-gets-hands-on-with-prowl-gives-a-glimpse-into-his-role-as-entrepreneur-and-brand-founder": {
-      "title": "Tiger Shroff gets hands-on with Prowl; gives a glimpse into his role as entrepreneur and brand founder",
-      "url": "https://www.bollywoodhungama.com/news/features/tiger-shroff-gets-hands-on-with-prowl-gives-a-glimpse-into-his-role-as-entrepreneur-and-brand-founder/",
-      "canonical": "bollywoodhungama.com/news/features/tiger-shroff-gets-hands-on-with-prowl-gives-a-glimpse-into-his-role-as-entrepreneur-and-brand-founder",
-      "published_dt": "2026-08-29T17:05:44+06:00",
-      "published_date": "2026-08-29T17:05:44+06:00",
-      "source": "Bollywood Hungama",
-      "region": "Entertainment",
-      "excerpt": "Tiger Shroff is giving audiences a glimpse into his involvement with Prowl, his men’s personal care and active lifestyle brand. In a newly released video, the actor is seen taking an active role in the product development process, including testing, discussing and fine-tuning products intended for everyday use. The video, shared by Prowl, carries the Read More The post Tiger Shroff gets hands-on with Prowl; gives a glimpse into his role as entrepreneur and brand founder appeared first on Bollywood Hungama .",
-      "image": "",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-08-29T19:01:58.754172+06:00",
-      "last_seen": "2026-08-29T19:01:58.754174+06:00"
-    },
-    "bollywoodhungama.com/news/bollywood/reports-of-kareena-kapoor-khan-doing-arati-kadavs-film-produced-by-harman-baweja-are-untrue-source": {
-      "title": "Reports of Kareena Kapoor Khan doing Arati Kadav’s film produced by Harman Baweja are untrue: Source",
-      "url": "https://www.bollywoodhungama.com/news/bollywood/reports-of-kareena-kapoor-khan-doing-arati-kadavs-film-produced-by-harman-baweja-are-untrue-source/",
-      "canonical": "bollywoodhungama.com/news/bollywood/reports-of-kareena-kapoor-khan-doing-arati-kadavs-film-produced-by-harman-baweja-are-untrue-source",
-      "published_dt": "2026-08-29T16:48:57+06:00",
-      "published_date": "2026-08-29T16:48:57+06:00",
-      "source": "Bollywood Hungama",
-      "region": "Entertainment",
-      "excerpt": "There have been reports suggesting that Kareena Kapoor Khan is set to be a part of filmmaker Arati Kadav’s upcoming film, which is being produced by Harman Baweja. However, the reports are not true. Clarifying the speculation surrounding the project, a source stated, “The news of Kareena Kapoor being a part of Aarti Kadav’s film, Read More The post Reports of Kareena Kapoor Khan doing Arati Kadav’s film produced by Harman Baweja are untrue: Source appeared first on Bollywood Hungama .",
-      "image": "",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-08-29T19:01:58.754432+06:00",
-      "last_seen": "2026-08-29T19:01:58.754435+06:00"
-    },
-    "bollywoodhungama.com/news/features/abhishek-banerjee-insists-that-ranveer-singh-as-hamza-was-one-of-his-best-performances-says-it-is-more-difficult-than-khilji": {
-      "title": "Abhishek Banerjee insists that Ranveer Singh as Hamza was “one of his best performances”; says, “It is more difficult than Khilji”",
-      "url": "https://www.bollywoodhungama.com/news/features/abhishek-banerjee-insists-that-ranveer-singh-as-hamza-was-one-of-his-best-performances-says-it-is-more-difficult-than-khilji/",
-      "canonical": "bollywoodhungama.com/news/features/abhishek-banerjee-insists-that-ranveer-singh-as-hamza-was-one-of-his-best-performances-says-it-is-more-difficult-than-khilji",
-      "published_dt": "2026-08-29T16:43:00+06:00",
-      "published_date": "2026-08-29T16:43:00+06:00",
-      "source": "Bollywood Hungama",
-      "region": "Entertainment",
-      "excerpt": "Months after the release of the Dhurandhar duology, the portrayal of Ranveer Singh as Hamza continues to be discussed within the film industry. Actor Abhishek Banerjee has now shared his assessment of the performance, calling it one of the best he has seen and describing the role as more challenging for an actor than Ranveer’s Read More The post Abhishek Banerjee insists that Ranveer Singh as Hamza was “one of his best performances”; says, “It is more difficult than Khilji” appeared first on Bollywood Hungama .",
-      "image": "",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-08-29T19:01:58.754688+06:00",
-      "last_seen": "2026-08-29T19:01:58.754690+06:00"
-    },
-    "bollywoodhungama.com/news/features/raksha-bandhan-2026-from-family-moments-to-festive-celebrations-bollywood-stars-give-a-glimpse-into-their-sibling-bond": {
-      "title": "Raksha Bandhan 2026: From family moments to festive celebrations, Bollywood stars give a glimpse into their sibling bond",
-      "url": "https://www.bollywoodhungama.com/news/features/raksha-bandhan-2026-from-family-moments-to-festive-celebrations-bollywood-stars-give-a-glimpse-into-their-sibling-bond/",
-      "canonical": "bollywoodhungama.com/news/features/raksha-bandhan-2026-from-family-moments-to-festive-celebrations-bollywood-stars-give-a-glimpse-into-their-sibling-bond",
-      "published_dt": "2026-08-29T15:30:30+06:00",
-      "published_date": "2026-08-29T15:30:30+06:00",
-      "source": "Bollywood Hungama",
-      "region": "Entertainment",
-      "excerpt": "Raksha Bandhan 2026 brought with it a wave of festive cheer as families across the country came together to celebrate the bond between brothers and sisters. Bollywood celebrities, too, joined in the celebrations on August 28, giving fans a glimpse into their personal moments with siblings and loved ones. While several Bollywood stars had started Read More The post Raksha Bandhan 2026: From family moments to festive celebrations, Bollywood stars give a glimpse into their sibling bond appeared first on Bollywood Hungama .",
-      "image": "",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-08-29T19:01:58.754928+06:00",
-      "last_seen": "2026-08-29T19:01:58.754930+06:00"
-    },
-    "bollywoodhungama.com/news/parties-and-events/photos-nimrat-kaur-snapped-outside-the-gym-in-bandra": {
-      "title": "Photos: Nimrat Kaur snapped outside the gym in Bandra",
-      "url": "https://www.bollywoodhungama.com/news/parties-and-events/photos-nimrat-kaur-snapped-outside-the-gym-in-bandra/",
-      "canonical": "bollywoodhungama.com/news/parties-and-events/photos-nimrat-kaur-snapped-outside-the-gym-in-bandra",
-      "published_dt": "2026-08-29T15:13:49+06:00",
-      "published_date": "2026-08-29T15:13:49+06:00",
-      "source": "Bollywood Hungama",
-      "region": "Entertainment",
-      "excerpt": "The post Photos: Nimrat Kaur snapped outside the gym in Bandra appeared first on Bollywood Hungama .",
-      "image": "",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-08-29T19:01:58.755110+06:00",
-      "last_seen": "2026-08-29T19:01:58.755112+06:00"
-    },
-    "bollywoodhungama.com/news/parties-and-events/photos-giorgia-andriani-snapped-outside-her-residence-in-bandra": {
-      "title": "Photos: Giorgia Andriani snapped outside her residence in Bandra",
-      "url": "https://www.bollywoodhungama.com/news/parties-and-events/photos-giorgia-andriani-snapped-outside-her-residence-in-bandra/",
-      "canonical": "bollywoodhungama.com/news/parties-and-events/photos-giorgia-andriani-snapped-outside-her-residence-in-bandra",
-      "published_dt": "2026-08-29T15:11:48+06:00",
-      "published_date": "2026-08-29T15:11:48+06:00",
-      "source": "Bollywood Hungama",
-      "region": "Entertainment",
-      "excerpt": "The post Photos: Giorgia Andriani snapped outside her residence in Bandra appeared first on Bollywood Hungama .",
-      "image": "",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-08-29T19:01:58.755301+06:00",
-      "last_seen": "2026-08-29T19:01:58.755303+06:00"
+      "first_seen": "2026-08-29T23:34:07.205502+06:00",
+      "last_seen": "2026-08-29T23:34:07.205505+06:00"
     },
     "soompi.com/article/1866551wpp/watch-lee-jun-young-is-a-prodigy-who-hears-everything-as-music-in-four-hands-two-sonatas-preview": {
       "title": "Watch: Lee Jun Young Is A Prodigy Who Hears Everything As Music In “Four Hands, Two Sonatas” Preview",
@@ -1579,8 +1573,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-08-29T19:01:59.235630+06:00",
-      "last_seen": "2026-08-29T19:01:59.235635+06:00"
+      "first_seen": "2026-08-29T23:34:07.666678+06:00",
+      "last_seen": "2026-08-29T23:34:07.666683+06:00"
     },
     "soompi.com/article/1865703wpp/6-new-k-pop-songs-bringing-2010s-party-tracks-back": {
       "title": "6 New K-Pop Songs Bringing 2010s Party Tracks Back",
@@ -1595,8 +1589,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-08-29T19:01:59.235964+06:00",
-      "last_seen": "2026-08-29T19:01:59.235967+06:00"
+      "first_seen": "2026-08-29T23:34:07.667019+06:00",
+      "last_seen": "2026-08-29T23:34:07.667022+06:00"
     },
     "soompi.com/article/1866547wpp/jung-chaeyeon-aims-a-gun-at-her-father-heo-sung-tae-in-flex-x-cop-2": {
       "title": "Jung Chaeyeon Aims A Gun At Her Father Heo Sung Tae In “Flex X Cop 2”",
@@ -1610,9 +1604,10 @@
       "image": "",
       "discovery": "rss",
       "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-08-29T19:01:59.236291+06:00",
-      "last_seen": "2026-08-29T19:01:59.236294+06:00"
+      "status": "posted",
+      "first_seen": "2026-08-29T23:34:07.667357+06:00",
+      "last_seen": "2026-08-29T23:34:07.667360+06:00",
+      "posted_at": "2026-08-30T00:04:36.329651+06:00"
     },
     "soompi.com/article/1866543wpp/newbeat-reveals-1st-glimpse-of-official-light-stick": {
       "title": "NEWBEAT Reveals 1st Glimpse Of Official Light Stick",
@@ -1626,9 +1621,10 @@
       "image": "",
       "discovery": "rss",
       "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-08-29T19:01:59.236520+06:00",
-      "last_seen": "2026-08-29T19:01:59.236522+06:00"
+      "status": "posted",
+      "first_seen": "2026-08-29T23:34:07.667590+06:00",
+      "last_seen": "2026-08-29T23:34:07.667592+06:00",
+      "posted_at": "2026-08-30T00:04:41.777388+06:00"
     },
     "soompi.com/article/1866531wpp/flex-x-cop-2-heads-into-2nd-half-on-its-highest-friday-ratings-yet-a-bona-fide-killer-remains-no-1": {
       "title": "“Flex X Cop 2” Heads Into 2nd Half On Its Highest Friday Ratings Yet + “A Bona Fide Killer” Remains No. 1",
@@ -1643,8 +1639,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-08-29T19:01:59.237146+06:00",
-      "last_seen": "2026-08-29T19:01:59.237149+06:00"
+      "first_seen": "2026-08-29T23:34:07.668246+06:00",
+      "last_seen": "2026-08-29T23:34:07.668249+06:00"
     },
     "soompi.com/article/1866524wpp/august-star-brand-reputation-rankings-announced-4": {
       "title": "August Star Brand Reputation Rankings Announced",
@@ -1659,8 +1655,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-08-29T19:01:59.237569+06:00",
-      "last_seen": "2026-08-29T19:01:59.237573+06:00"
+      "first_seen": "2026-08-29T23:34:07.668548+06:00",
+      "last_seen": "2026-08-29T23:34:07.668550+06:00"
     },
     "soompi.com/article/1866520wpp/boynextdoors-sungho-confirmed-as-new-music-core-mc": {
       "title": "BOYNEXTDOOR’s Sungho Confirmed As New “Music Core” MC",
@@ -1675,8 +1671,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-08-29T19:01:59.237891+06:00",
-      "last_seen": "2026-08-29T19:01:59.237894+06:00"
+      "first_seen": "2026-08-29T23:34:07.668877+06:00",
+      "last_seen": "2026-08-29T23:34:07.668880+06:00"
     },
     "soompi.com/article/1865069wpp/5-must-watch-meta-bls-for-a-deep-dive-into-the-genre": {
       "title": "5 Must-Watch Meta BLs For A Deep‑Dive Into The Genre",
@@ -1691,254 +1687,662 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-08-29T19:01:59.238176+06:00",
-      "last_seen": "2026-08-29T19:01:59.238179+06:00"
+      "first_seen": "2026-08-29T23:34:07.669164+06:00",
+      "last_seen": "2026-08-29T23:34:07.669166+06:00"
     },
-    "whats-on-netflix.com/news/forever-season-2-wraps-filming-at-netflix-scheduled-to-release-in-2027": {
-      "title": "‘Forever’ Season 2 Wraps Filming at Netflix; Scheduled to Release in 2027",
-      "url": "https://www.whats-on-netflix.com/news/forever-season-2-wraps-filming-at-netflix-scheduled-to-release-in-2027/",
-      "canonical": "whats-on-netflix.com/news/forever-season-2-wraps-filming-at-netflix-scheduled-to-release-in-2027",
-      "published_dt": "2026-08-29T00:45:41+06:00",
-      "published_date": "2026-08-29T00:45:41+06:00",
+    "whats-on-netflix.com/whats-new/new-releases-on-netflix-this-week-and-top-10-movies-series-august-29th-2026": {
+      "title": "New Releases on Netflix This Week and Top 10 Movies & Series: August 29, 2026",
+      "url": "https://www.whats-on-netflix.com/whats-new/new-releases-on-netflix-this-week-and-top-10-movies-series-august-29th-2026/",
+      "canonical": "whats-on-netflix.com/whats-new/new-releases-on-netflix-this-week-and-top-10-movies-series-august-29th-2026",
+      "published_dt": "2026-08-29T23:03:02+06:00",
+      "published_date": "2026-08-29T23:03:02+06:00",
       "source": "What's on Netflix",
       "region": "Entertainment",
-      "excerpt": "It’s officially a wrap on the second season of Mara Brock Akil’s YA romance drama Forever. After an extensive multi-city shoot over the summer, the series is now heading into post-production. Here’s a quick update on...",
-      "image": "https://www.whats-on-netflix.com/wp-content/uploads/2026/08/forever-season-2-wraps-filming-1.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "posted",
-      "first_seen": "2026-08-29T19:02:00.351256+06:00",
-      "last_seen": "2026-08-29T19:02:00.351270+06:00",
-      "posted_at": "2026-08-29T19:05:39.788069+06:00"
-    },
-    "whats-on-netflix.com/news/netflix-options-over-25-books-for-tv-series-movie-development-for-2026-and-beyond": {
-      "title": "Netflix Options Over 25 Books for TV Series & Movie Development for 2026 and Beyond",
-      "url": "https://www.whats-on-netflix.com/news/netflix-options-over-25-books-for-tv-series-movie-development-for-2026-and-beyond/",
-      "canonical": "whats-on-netflix.com/news/netflix-options-over-25-books-for-tv-series-movie-development-for-2026-and-beyond",
-      "published_dt": "2026-08-29T00:12:12+06:00",
-      "published_date": "2026-08-29T00:12:12+06:00",
-      "source": "What's on Netflix",
-      "region": "Entertainment",
-      "excerpt": "A deep dive into dozens of newly optioned books, memoirs, and comic books Netflix has quietly secured the rights to for future film and television adaptations.",
-      "image": "https://www.whats-on-netflix.com/wp-content/uploads/2026/08/netflix-book-option-list-2026.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "posted",
-      "first_seen": "2026-08-29T19:02:00.351377+06:00",
-      "last_seen": "2026-08-29T19:02:00.351379+06:00",
-      "posted_at": "2026-08-29T19:05:35.266962+06:00"
-    },
-    "whats-on-netflix.com/news/netflix-manifest-spinoff-arrivals-a-new-manifest-mystery-announcement": {
-      "title": "Netflix Announces ‘Manifest’ Spinoff Series ‘Arrivals: A New Manifest Mystery’",
-      "url": "https://www.whats-on-netflix.com/news/netflix-manifest-spinoff-arrivals-a-new-manifest-mystery-announcement/",
-      "canonical": "whats-on-netflix.com/news/netflix-manifest-spinoff-arrivals-a-new-manifest-mystery-announcement",
-      "published_dt": "2026-08-28T21:48:43+06:00",
-      "published_date": "2026-08-28T21:48:43+06:00",
-      "source": "What's on Netflix",
-      "region": "Entertainment",
-      "excerpt": "Jeff Rake returns to lead Arrivals: A New Manifest Mystery, a thrilling new puzzle-box spinoff series ordered at Netflix.",
-      "image": "https://www.whats-on-netflix.com/wp-content/uploads/2026/08/manifest-spinoff-set-at-netflix.jpg",
+      "excerpt": "Netflix closes out August with 37 new additions, headlined by thrilling new originals and blockbuster library hits.",
+      "image": "https://www.whats-on-netflix.com/wp-content/uploads/2026/08/Dungeons-Dragons-Honor-Among-Thieves.jpg",
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-08-29T19:02:00.351467+06:00",
-      "last_seen": "2026-08-29T19:02:00.351468+06:00"
+      "first_seen": "2026-08-29T23:34:08.722281+06:00",
+      "last_seen": "2026-08-29T23:34:08.722287+06:00"
     },
-    "whats-on-netflix.com/news/delusion-netflix-release-date-cast-plot": {
-      "title": "Thai Crime Thriller ‘Delusion’ Sets September 2026 Netflix Release Date",
-      "url": "https://www.whats-on-netflix.com/news/delusion-netflix-release-date-cast-plot/",
-      "canonical": "whats-on-netflix.com/news/delusion-netflix-release-date-cast-plot",
-      "published_dt": "2026-08-28T21:28:41+06:00",
-      "published_date": "2026-08-28T21:28:41+06:00",
+    "whats-on-netflix.com/what-to-watch/all-the-truth-in-my-lies-netflix-review": {
+      "title": "‘All The Truth In My Lies’ Netflix Review: Is Elísabet Benavent’s Road Trip Dramedy Worth Watching?",
+      "url": "https://www.whats-on-netflix.com/what-to-watch/all-the-truth-in-my-lies-netflix-review/",
+      "canonical": "whats-on-netflix.com/what-to-watch/all-the-truth-in-my-lies-netflix-review",
+      "published_dt": "2026-08-29T22:49:49+06:00",
+      "published_date": "2026-08-29T22:49:49+06:00",
       "source": "What's on Netflix",
       "region": "Entertainment",
-      "excerpt": "Thai mystery thriller 'Delusion' is officially heading to Netflix in September 2026. Here is what you need to know about the plot, cast, and trailer.",
-      "image": "https://www.whats-on-netflix.com/wp-content/uploads/2026/08/delusion-thai-drama-netflix-preview.jpg",
+      "excerpt": "Based on the best-selling Elísabet Benavent novel, does Netflix's new Spanish road trip dramedy 'All The Truth In My Lies' live up to the hype?",
+      "image": "https://www.whats-on-netflix.com/wp-content/uploads/2026/08/all-the-truth-in-my-lies-netflix-series-review.jpg",
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-08-29T19:02:00.351553+06:00",
-      "last_seen": "2026-08-29T19:02:00.351554+06:00"
+      "first_seen": "2026-08-29T23:34:08.722395+06:00",
+      "last_seen": "2026-08-29T23:34:08.722397+06:00"
     }
   },
   "events": {
-    "cameron_vs_mayer_livestream_availability": {
-      "event_id": "cameron_vs_mayer_livestream_availability",
-      "canonical_url": "variety.com/2026/shopping/news/how-to-watch-chantelle-cameron-vs-mikaela-mayer-boxing-live-online-free-1236846060",
-      "original_url": "https://variety.com/2026/shopping/news/how-to-watch-chantelle-cameron-vs-mikaela-mayer-boxing-live-online-free-1236846060/",
-      "source": "Variety",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "Variety",
-      "event_cluster_id": "evt_384ec1daf7",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Chantelle Cameron vs. Mikaela Mayer",
-      "summary": "The unification women's super welterweight title bout streams live on ESPN Unlimited on Aug.",
-      "highlights": [
-        "Live on ESPN Unlimited at 11 a.m. ET/8 a.m. PT",
-        "Cameron’s WBO belt and Mayer’s WBA/WBC titles are on the line"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-08-29T18:00:00+06:00",
-      "selected_at": "2026-08-29T19:05:14.446607+06:00",
-      "status": "published",
-      "message_id": 71
-    },
-    "scifi_masterpiece_streaming_july2026": {
-      "event_id": "scifi_masterpiece_streaming_july2026",
-      "canonical_url": "collider.com/godzilla-minus-one-streaming-netflix-august-2026",
-      "original_url": "https://collider.com/godzilla-minus-one-streaming-netflix-august-2026/",
+    "daysofthunder2_instagram": {
+      "event_id": "daysofthunder2_instagram",
+      "canonical_url": "collider.com/tom-cruise-days-of-thunder-2-cast-anne-hathaway",
+      "original_url": "https://collider.com/tom-cruise-days-of-thunder-2-cast-anne-hathaway/",
       "source": "Collider",
       "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "Collider",
-      "event_cluster_id": "evt_fcbea1bd23",
+      "topic": "Franchises and IP",
+      "institution": "Paramount Pictures",
+      "event_cluster_id": "evt_c89fe0dab0",
       "event_confidence": 0.6,
       "event_source_count": 1,
-      "headline": "Godzilla Minus One",
-      "summary": "Takashi Yamazaki's post‑war Godzilla film is now streaming on Netflix and earned $110 million worldwide while winning the Oscar for Best Visual Effects.",
+      "headline": "Days of Thunder 2",
+      "summary": "Tom Cruise returns to headline the sequel with Anne Hathaway joining the cast.",
       "highlights": [
-        "Now streaming on Netflix",
-        "Grossed over $110 million globally",
-        "Won Academy Award for Best Visual Effects"
+        "Tom Cruise confirmed to reprise his role",
+        "Anne Hathaway added as co‑star",
+        "Scheduled for a summer 2028 release"
       ],
       "concepts": [],
       "key_numbers": [],
-      "published_at": "2026-08-29T18:30:11+06:00",
-      "selected_at": "2026-08-29T19:05:19.972496+06:00",
+      "published_at": "2026-08-29T23:21:41+06:00",
+      "selected_at": "2026-08-30T00:04:14.585951+06:00",
       "status": "published",
-      "message_id": 72
+      "message_id": 77
     },
-    "lasya_the_gentle_dance_announcement": {
-      "event_id": "lasya_the_gentle_dance_announcement",
-      "canonical_url": "variety.com/2026/film/news/anup-singh-lasya-the-gentle-dance-mumbai-film-1236846494",
-      "original_url": "https://variety.com/2026/film/news/anup-singh-lasya-the-gentle-dance-mumbai-film-1236846494/",
+    "karna_2027_salman_khan_cast": {
+      "event_id": "karna_2027_salman_khan_cast",
+      "canonical_url": "bollywoodhungama.com/news/bollywood/scoop-before-karna-with-salman-khan-rakeysh-omprakash-mehra-to-direct-vikrant-massey-in-a-love-story",
+      "original_url": "https://www.bollywoodhungama.com/news/bollywood/scoop-before-karna-with-salman-khan-rakeysh-omprakash-mehra-to-direct-vikrant-massey-in-a-love-story/",
+      "source": "Bollywood Hungama",
+      "region": "Entertainment",
+      "topic": "Major Film Announcements",
+      "institution": "Excel Entertainment",
+      "event_cluster_id": "evt_2c67a10ddd",
+      "event_confidence": 0.6,
+      "event_source_count": 1,
+      "headline": "Karna",
+      "summary": "Salman Khan will star as Karna in Rakeysh Omprakash Mehra's upcoming two‑part Mahabharata epic slated for August 2027.",
+      "highlights": [
+        "Karna is a two‑part film backed by Excel Entertainment",
+        "Salman Khan confirmed as the titular lead",
+        "Pre‑production continues while Mehra directs a separate love story with Vikrant Massey"
+      ],
+      "concepts": [],
+      "key_numbers": [],
+      "published_at": "2026-08-29T18:30:12+06:00",
+      "selected_at": "2026-08-30T00:04:20.322740+06:00",
+      "status": "published",
+      "message_id": 78
+    },
+    "daysofthunder2_releasedate": {
+      "event_id": "daysofthunder2_releasedate",
+      "canonical_url": "variety.com/2026/film/news/anne-hathaway-tom-cruise-days-of-thunder-sequel-1236839347",
+      "original_url": "https://variety.com/2026/film/news/anne-hathaway-tom-cruise-days-of-thunder-sequel-1236839347/",
+      "source": "Variety",
+      "region": "Entertainment",
+      "topic": "Franchises and IP",
+      "institution": "Paramount Pictures",
+      "event_cluster_id": "evt_787b40bcd0",
+      "event_confidence": 0.6,
+      "event_source_count": 1,
+      "headline": "Days of Thunder",
+      "summary": "Anne Hathaway joins Tom Cruise for the sequel, set for a June 2, 2028 theatrical release.",
+      "highlights": [
+        "Paramount schedules the sequel for June 2, 2028",
+        "The film will shoot in IMAX and debut in Dolby Cinema and 4DX",
+        "Jonathan Levine confirmed as director"
+      ],
+      "concepts": [],
+      "key_numbers": [],
+      "published_at": "2026-08-29T22:58:07+06:00",
+      "selected_at": "2026-08-30T00:04:25.601042+06:00",
+      "status": "published",
+      "message_id": 79
+    },
+    "paranormal_activity_broadway_opening": {
+      "event_id": "paranormal_activity_broadway_opening",
+      "canonical_url": "deadline.com/2026/08/paranormal-activity-broadway-review-1237061077",
+      "original_url": "https://deadline.com/2026/08/paranormal-activity-broadway-review-1237061077/",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "topic": "Franchises and IP",
+      "institution": "Broadway (New York)",
+      "event_cluster_id": "evt_166b2a8faa",
+      "event_confidence": 0.6,
+      "event_source_count": 1,
+      "headline": "Paranormal Activity",
+      "summary": "Broadway’s stage adaptation of the horror franchise opens to strong scares and dark humor.",
+      "highlights": [
+        "Levi Holloway’s play debuts at the August Wilson Theatre",
+        "Directed by Felix Barrett of Sleep No More fame",
+        "Stars Cher Álvarez and Travis A. Knight in lead roles"
+      ],
+      "concepts": [],
+      "key_numbers": [],
+      "published_at": "2026-08-29T20:00:00+06:00",
+      "selected_at": "2026-08-30T00:04:30.665090+06:00",
+      "status": "published",
+      "message_id": 80
+    },
+    "flex_x_cop_2_suspense_confrontation_teaser": {
+      "event_id": "flex_x_cop_2_suspense_confrontation_teaser",
+      "canonical_url": "soompi.com/article/1866547wpp/jung-chaeyeon-aims-a-gun-at-her-father-heo-sung-tae-in-flex-x-cop-2",
+      "original_url": "https://www.soompi.com/article/1866547wpp/jung-chaeyeon-aims-a-gun-at-her-father-heo-sung-tae-in-flex-x-cop-2",
+      "source": "Soompi",
+      "region": "Entertainment",
+      "topic": "Trailers and First Looks",
+      "institution": "SBS",
+      "event_cluster_id": "evt_00f45c606b",
+      "event_confidence": 0.6,
+      "event_source_count": 1,
+      "headline": "Flex x Cop 2",
+      "summary": "Jung Chaeyeon’s special appearance sees her point a gun at her mob‑boss father in the upcoming episode.",
+      "highlights": [
+        "Jung Chaeyeon joins the cast as Ham Soo Jung",
+        "A tense gun‑point scene with her father Heo Sung Tae is teased",
+        "Next episode airs August 29 at 9:50 p.m. KST"
+      ],
+      "concepts": [],
+      "key_numbers": [],
+      "published_at": "2026-08-29T11:44:16+06:00",
+      "selected_at": "2026-08-30T00:04:36.329684+06:00",
+      "status": "published",
+      "message_id": 81
+    },
+    "official_light_stick_teaser": {
+      "event_id": "official_light_stick_teaser",
+      "canonical_url": "soompi.com/article/1866543wpp/newbeat-reveals-1st-glimpse-of-official-light-stick",
+      "original_url": "https://www.soompi.com/article/1866543wpp/newbeat-reveals-1st-glimpse-of-official-light-stick",
+      "source": "Soompi",
+      "region": "Entertainment",
+      "topic": "Trailers and First Looks",
+      "institution": "NEWBEAT (BEAT Interactive)",
+      "event_cluster_id": "evt_5ad1d35c5c",
+      "event_confidence": 0.6,
+      "event_source_count": 1,
+      "headline": "NEWBEAT",
+      "summary": "NEWBEAT unveiled a teaser of its official light stick, confirming its upcoming release.",
+      "highlights": [
+        "First glimpse of the light stick shown",
+        "Group says the light stick is \"coming soon\"",
+        "Teaser video posted on social media"
+      ],
+      "concepts": [],
+      "key_numbers": [],
+      "published_at": "2026-08-29T11:05:42+06:00",
+      "selected_at": "2026-08-30T00:04:41.777428+06:00",
+      "status": "published",
+      "message_id": 82
+    },
+    "picard_borg_name_analysis": {
+      "event_id": "picard_borg_name_analysis",
+      "canonical_url": "tvline.com/2243560/why-picard-borg-name-locutus-star-trek-the-next-generation",
+      "original_url": "https://www.tvline.com/2243560/why-picard-borg-name-locutus-star-trek-the-next-generation/",
+      "source": "TVLine",
+      "region": "Entertainment",
+      "topic": "Casting",
+      "institution": "TVLine",
+      "event_cluster_id": "evt_0b60976920",
+      "event_confidence": 0.6,
+      "event_source_count": 1,
+      "headline": "Star Trek: The Next Generation",
+      "summary": "Jean-Luc Picard’s Borg name, Locutus, was chosen for its Latin meaning and narrative role.",
+      "highlights": [
+        "Picard is renamed Locutus after assimilation in the Season 3 finale",
+        "Locutus comes from Latin “loquor,” meaning “to speak”",
+        "Writer Michael Piller selected the name from a dictionary entry"
+      ],
+      "concepts": [],
+      "key_numbers": [],
+      "published_at": "2026-08-29T02:12:00+06:00",
+      "selected_at": "2026-08-30T00:04:46.694258+06:00",
+      "status": "published",
+      "message_id": 83
+    },
+    "jill_wagner_career_profile": {
+      "event_id": "jill_wagner_career_profile",
+      "canonical_url": "tvline.com/2246360/bobby-lioness-actress-jill-wagner",
+      "original_url": "https://www.tvline.com/2246360/bobby-lioness-actress-jill-wagner/",
+      "source": "TVLine",
+      "region": "Entertainment",
+      "topic": "Major Film Announcements",
+      "institution": "TVLine",
+      "event_cluster_id": "evt_8c71c5d0dd",
+      "event_confidence": 0.6,
+      "event_source_count": 1,
+      "headline": "Lioness",
+      "summary": "Jill Wagner appears as Bobby, the Quick Reaction Force leader, in Paramount+’s action‑thriller series Lioness.",
+      "highlights": [
+        "Wagner, former co‑host of ABC’s Wipeout, plays Bobby in Lioness",
+        "She also executive‑produced the show after pitching it to Taylor Sheridan"
+      ],
+      "concepts": [],
+      "key_numbers": [],
+      "published_at": "2026-08-29T01:12:00+06:00",
+      "selected_at": "2026-08-30T00:04:52.722980+06:00",
+      "status": "published",
+      "message_id": 84
+    },
+    "genz_horror_trends_discussion": {
+      "event_id": "genz_horror_trends_discussion",
+      "canonical_url": "indiewire.com/news/general-news/kane-parsons-alex-ullom-discuss-liminal-horror-watch-1235213008",
+      "original_url": "https://www.indiewire.com/news/general-news/kane-parsons-alex-ullom-discuss-liminal-horror-watch-1235213008/",
+      "source": "IndieWire",
+      "region": "Entertainment",
+      "topic": "Major Film Announcements",
+      "institution": "IndieWire",
+      "event_cluster_id": "evt_c1e7dd174e",
+      "event_confidence": 0.6,
+      "event_source_count": 1,
+      "headline": "It Ends",
+      "summary": "Alex Ullom’s liminal horror film “It Ends” expands to more theaters on Aug 28.",
+      "highlights": [
+        "Premiered at SXSW 2025",
+        "Now playing in select theaters, expanding on Aug 28",
+        "IndieWire released exclusive Q&A with directors"
+      ],
+      "concepts": [],
+      "key_numbers": [],
+      "published_at": "2026-08-29T01:00:00+06:00",
+      "selected_at": "2026-08-30T00:04:57.644475+06:00",
+      "status": "published",
+      "message_id": 85
+    },
+    "emmys_2026_supporting_actor_poll": {
+      "event_id": "emmys_2026_supporting_actor_poll",
+      "canonical_url": "tvline.com/2246614/emmys-2026-supporting-actor-comedy-series-nominees-vote-poll",
+      "original_url": "https://www.tvline.com/2246614/emmys-2026-supporting-actor-comedy-series-nominees-vote-poll/",
+      "source": "TVLine",
+      "region": "Entertainment",
+      "topic": "Casting",
+      "institution": "TVLine",
+      "event_cluster_id": "evt_ca1f1c7a5e",
+      "event_confidence": 0.6,
+      "event_source_count": 1,
+      "headline": "Emmys 2026 Poll",
+      "summary": "Seven actors vie for the Outstanding Supporting Actor in a Comedy Emmy this year.",
+      "highlights": [
+        "Harrison Ford and Michael Urie return for Apple TV's \"Shrinking\"",
+        "Colman Domingo nominated again for Netflix's \"The Four Seasons\"",
+        "Tyler James Williams gets his fourth nomination for ABC's \"Abbott Elementary\""
+      ],
+      "concepts": [],
+      "key_numbers": [],
+      "published_at": "2026-08-29T01:00:00+06:00",
+      "selected_at": "2026-08-30T00:05:03.186988+06:00",
+      "status": "published",
+      "message_id": 86
+    },
+    "ransom_canyon_similar_shows_list": {
+      "event_id": "ransom_canyon_similar_shows_list",
+      "canonical_url": "tvline.com/2246582/best-tv-shows-like-ransom-canyon",
+      "original_url": "https://www.tvline.com/2246582/best-tv-shows-like-ransom-canyon/",
+      "source": "TVLine",
+      "region": "Entertainment",
+      "topic": "Major Film Announcements",
+      "institution": "TVLine",
+      "event_cluster_id": "evt_a571a7f20c",
+      "event_confidence": 0.6,
+      "event_source_count": 1,
+      "headline": "Ransom Canyon",
+      "summary": "TVLine lists 10 shows similar to Netflix’s neo‑Western series Ransom Canyon for fans seeking more brooding romance and land‑dispute drama.",
+      "highlights": [
+        "The CW’s Walker was cancelled after four seasons in 2024",
+        "Netflix’s Territory is a six‑episode Australian neo‑Western",
+        "Yellowstone remains the flagship neo‑Western series"
+      ],
+      "concepts": [],
+      "key_numbers": [],
+      "published_at": "2026-08-29T00:23:25+06:00",
+      "selected_at": "2026-08-30T00:05:08.007778+06:00",
+      "status": "published",
+      "message_id": 87
+    },
+    "daysofthunder2_casting": {
+      "event_id": "daysofthunder2_casting",
+      "canonical_url": "hollywoodreporter.com/movies/movie-news/days-of-thunder-2-anne-hathaway-tom-cruise-release-date-1236684845",
+      "original_url": "https://www.hollywoodreporter.com/movies/movie-news/days-of-thunder-2-anne-hathaway-tom-cruise-release-date-1236684845/",
+      "source": "The Hollywood Reporter",
+      "region": "Entertainment",
+      "topic": "Casting",
+      "institution": "Paramount Pictures",
+      "event_cluster_id": "evt_1e5b61e01e",
+      "event_confidence": 0.6,
+      "event_source_count": 1,
+      "headline": "Days of Thunder",
+      "summary": "Anne Hathaway joins Tom Cruise for the Days of Thunder sequel with a June 2, 2028 release date.",
+      "highlights": [
+        "Anne Hathaway added to the cast",
+        "Release set for June 2, 2028",
+        "Film will shoot in IMAX"
+      ],
+      "concepts": [],
+      "key_numbers": [],
+      "published_at": "2026-08-29T23:32:31+06:00",
+      "selected_at": "2026-08-30T00:05:12.967202+06:00",
+      "status": "published",
+      "message_id": 88
+    },
+    "behind_the_scenes_of_vicious_fight_sequence": {
+      "event_id": "behind_the_scenes_of_vicious_fight_sequence",
+      "canonical_url": "bollywoodhungama.com/news/south-cinema/toxic-a-fairy-tale-for-grown-ups-bts-jj-perry-reveals-how-yash-pulled-off-the-vicious-fight-action-sequence",
+      "original_url": "https://www.bollywoodhungama.com/news/south-cinema/toxic-a-fairy-tale-for-grown-ups-bts-jj-perry-reveals-how-yash-pulled-off-the-vicious-fight-action-sequence/",
+      "source": "Bollywood Hungama",
+      "region": "Entertainment",
+      "topic": "Major Film Announcements",
+      "institution": "Toxic – A Fairy Tale For Grown‑Ups",
+      "event_cluster_id": "evt_bc1885fe32",
+      "event_confidence": 0.6,
+      "event_source_count": 1,
+      "headline": "Toxic – A Fairy Tale for Grown-Ups",
+      "summary": "A new BTS video reveals how stunt coordinator JJ Perry and Yash crafted the film’s ‘Vicious Fight’ circus sequence.",
+      "highlights": [
+        "Stunt coordinator JJ Perry discusses using everyday objects as targets in the fight choreography",
+        "Yash’s physicality and ideas helped shape the demanding action sequence",
+        "Director Geetu Mohandas gave the team creative freedom for the stunt design"
+      ],
+      "concepts": [],
+      "key_numbers": [],
+      "published_at": "2026-08-29T17:28:18+06:00",
+      "selected_at": "2026-08-30T00:05:18.603068+06:00",
+      "status": "published",
+      "message_id": 89
+    },
+    "boxoffice_day1_spiderman_brandnewday": {
+      "event_id": "boxoffice_day1_spiderman_brandnewday",
+      "canonical_url": "variety.com/2026/film/news/box-office-the-dog-stars-spider-man-brand-new-day-1236846559",
+      "original_url": "https://variety.com/2026/film/news/box-office-the-dog-stars-spider-man-brand-new-day-1236846559/",
       "source": "Variety",
       "region": "Entertainment",
       "topic": "Major Film Announcements",
       "institution": "Variety",
-      "event_cluster_id": "evt_fa8b13362b",
+      "event_cluster_id": "evt_bbbc83d0d5",
       "event_confidence": 0.6,
       "event_source_count": 1,
-      "headline": "Lasya: The Gentle Dance",
-      "summary": "Anup Singh is directing the short film “Lasya: The Gentle Dance,” set on Mumbai’s streets.",
+      "headline": "Spider-Man: Brand New Day",
+      "summary": "Sony-Marvel’s Spider-Man: Brand New Day tops the domestic box office for a fifth straight weekend.",
       "highlights": [
-        "Directed by Anup Singh, known for “Qissa” and “The Song of Scorpions”",
-        "Produced by Mumbai‑based Pretty Pictures",
-        "Follows a father‑son duo of beggars amid monsoon‑soaked Mumbai"
+        "Added $5.5 million on Friday",
+        "Projected $21 million total for the weekend",
+        "Domestic total now $890 million"
       ],
       "concepts": [],
       "key_numbers": [],
-      "published_at": "2026-08-29T13:06:14+06:00",
-      "selected_at": "2026-08-29T19:05:24.410057+06:00",
+      "published_at": "2026-08-29T22:20:00+06:00",
+      "selected_at": "2026-08-30T00:05:24.123987+06:00",
       "status": "published",
-      "message_id": 73
+      "message_id": 90
     },
-    "arrivals_a_new_manifest_mystery_announcement": {
-      "event_id": "arrivals_a_new_manifest_mystery_announcement",
-      "canonical_url": "tvline.com/2246431/manifest-spin-off-arrivals-series-order-netflix-reboot",
-      "original_url": "https://www.tvline.com/2246431/manifest-spin-off-arrivals-series-order-netflix-reboot/",
-      "source": "TVLine",
-      "region": "Entertainment",
-      "topic": "Franchises and IP",
-      "institution": "Netflix",
-      "event_cluster_id": "evt_6fb4e37b7a",
-      "event_confidence": 1.0,
-      "event_source_count": 2,
-      "headline": "Arrivals: A New Manifest Mystery",
-      "summary": "Netflix has ordered a new sci‑fi series set in the Manifest universe.",
-      "highlights": [
-        "Original creator Jeff Rake returns as co‑showrunner",
-        "Co‑creators Margaret Easley and Laura Putney also attached",
-        "Series will follow a mysterious plane crash in Denver"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-08-28T21:52:18+06:00",
-      "selected_at": "2026-08-29T19:05:29.856138+06:00",
-      "status": "published",
-      "message_id": 74
-    },
-    "netflix_book_options_2026": {
-      "event_id": "netflix_book_options_2026",
-      "canonical_url": "whats-on-netflix.com/news/netflix-options-over-25-books-for-tv-series-movie-development-for-2026-and-beyond",
-      "original_url": "https://www.whats-on-netflix.com/news/netflix-options-over-25-books-for-tv-series-movie-development-for-2026-and-beyond/",
-      "source": "What's on Netflix",
+    "boxoffice_opening_coyotevsacme": {
+      "event_id": "boxoffice_opening_coyotevsacme",
+      "canonical_url": "thewrap.com/creative-content/movies/spider-man-brand-new-day-takes-fifth-no-1-as-coyote-vs-acme-takes-14-million-opening",
+      "original_url": "https://www.thewrap.com/creative-content/movies/spider-man-brand-new-day-takes-fifth-no-1-as-coyote-vs-acme-takes-14-million-opening/",
+      "source": "TheWrap",
       "region": "Entertainment",
       "topic": "Major Film Announcements",
-      "institution": "Netflix",
-      "event_cluster_id": "evt_45a2834318",
+      "institution": "TheWrap",
+      "event_cluster_id": "evt_fb164d1650",
       "event_confidence": 0.6,
       "event_source_count": 1,
-      "headline": "We Solve Murders",
-      "summary": "Netflix has optioned Richard Osman’s new mystery series We Solve Murders for potential development.",
+      "headline": "Spider-Man: Brand New Day",
+      "summary": "The Marvel film logged its fifth weekend at No. 1 with a $22 million weekend, edging toward the all‑time domestic record.",
       "highlights": [
-        "Option secured in January 2026",
-        "Targets expansion of the Thursday Murder Club franchise",
-        "Series format expected"
+        "Earned $22 million this weekend",
+        "Domestic total now $891 million, $43 million shy of the all‑time record",
+        "Held the No. 1 spot for every day of August except one"
       ],
       "concepts": [],
       "key_numbers": [],
-      "published_at": "2026-08-29T00:12:12+06:00",
-      "selected_at": "2026-08-29T19:05:35.266995+06:00",
+      "published_at": "2026-08-29T21:54:22+06:00",
+      "selected_at": "2026-08-30T00:05:28.921567+06:00",
       "status": "published",
-      "message_id": 75
+      "message_id": 91
     },
-    "forever_s2_wrap": {
-      "event_id": "forever_s2_wrap",
-      "canonical_url": "whats-on-netflix.com/news/forever-season-2-wraps-filming-at-netflix-scheduled-to-release-in-2027",
-      "original_url": "https://www.whats-on-netflix.com/news/forever-season-2-wraps-filming-at-netflix-scheduled-to-release-in-2027/",
-      "source": "What's on Netflix",
+    "boxoffice_spiderman_cumulative": {
+      "event_id": "boxoffice_spiderman_cumulative",
+      "canonical_url": "deadline.com/2026/08/box-office-coyote-vs-acme-dog-stars-spider-man-1237061934",
+      "original_url": "https://deadline.com/2026/08/box-office-coyote-vs-acme-dog-stars-spider-man-1237061934/",
+      "source": "Deadline",
       "region": "Entertainment",
       "topic": "Major Film Announcements",
-      "institution": "Netflix",
-      "event_cluster_id": "evt_4062b628bc",
+      "institution": "Deadline",
+      "event_cluster_id": "evt_d5a6c3f5df",
       "event_confidence": 0.6,
       "event_source_count": 1,
-      "headline": "Forever",
-      "summary": "Season 2 of the Netflix YA romance drama has wrapped filming and is slated for a 2027 release.",
+      "headline": "Coyote vs. Acme",
+      "summary": "Ketchup Entertainment's \"Coyote vs.",
       "highlights": [
-        "Filming concluded on August 28, 2026 after an 80‑day shoot across LA, New York and Martha’s Vineyard",
-        "Season 2 will consist of 8 episodes and returns Lovie Simone and Michael Cooper Jr.",
-        "The new season is expected to debut in spring or summer 2027 on Netflix"
+        "Opened in 3,575 theaters with a $14 M domestic debut",
+        "Received an A CinemaScore and 95% critic rating",
+        "Indie distributor spent roughly $10 M on P&A"
       ],
       "concepts": [],
       "key_numbers": [],
-      "published_at": "2026-08-29T00:45:41+06:00",
-      "selected_at": "2026-08-29T19:05:39.788096+06:00",
+      "published_at": "2026-08-29T21:46:00+06:00",
+      "selected_at": "2026-08-30T00:05:33.723211+06:00",
       "status": "published",
-      "message_id": 76
+      "message_id": 92
     }
   },
   "event_clusters": {
-    "evt_384ec1daf7": {
-      "event_id": "evt_384ec1daf7",
-      "topic": "Major Film Announcements",
-      "region": "Entertainment",
-      "sources": [
-        "Variety"
-      ],
-      "source_count": 1,
-      "confidence": 0.6,
-      "last_seen": "2026-08-29T19:03:13.102632+06:00",
-      "headline": "Chantelle Cameron vs. Mikaela Mayer Livestream: Here’s Where to Watch the Unification Title Bout Online for Free"
-    },
-    "evt_fcbea1bd23": {
-      "event_id": "evt_fcbea1bd23",
-      "topic": "Major Film Announcements",
+    "evt_c89fe0dab0": {
+      "event_id": "evt_c89fe0dab0",
+      "topic": "Franchises and IP",
       "region": "Entertainment",
       "sources": [
         "Collider"
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-08-29T19:03:13.102646+06:00",
-      "headline": "Netflix's 10/10 Sci-Fi Masterpiece Is Officially a Streaming Juggernaut Ahead of the Sequel"
+      "last_seen": "2026-08-29T23:39:23.320774+06:00",
+      "headline": "Tom Cruise's 'Days of Thunder' Sequel Officially Casts 2026's Biggest Movie Star"
     },
-    "evt_fa8b13362b": {
-      "event_id": "evt_fa8b13362b",
+    "evt_2c67a10ddd": {
+      "event_id": "evt_2c67a10ddd",
+      "topic": "Major Film Announcements",
+      "region": "Entertainment",
+      "sources": [
+        "Bollywood Hungama"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-08-29T23:39:23.320790+06:00",
+      "headline": "SCOOP: Before Karna with Salman Khan, Rakeysh Omprakash Mehra to direct Vikrant Massey in a Love Story"
+    },
+    "evt_787b40bcd0": {
+      "event_id": "evt_787b40bcd0",
+      "topic": "Franchises and IP",
+      "region": "Entertainment",
+      "sources": [
+        "Variety"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-08-29T23:39:23.320794+06:00",
+      "headline": "Anne Hathaway Joins Tom Cruise in ‘Days of Thunder’ Follow-Up; Paramount Sets Release Date (EXCLUSIVE)"
+    },
+    "evt_166b2a8faa": {
+      "event_id": "evt_166b2a8faa",
+      "topic": "Franchises and IP",
+      "region": "Entertainment",
+      "sources": [
+        "Deadline"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-08-29T23:39:23.320796+06:00",
+      "headline": "‘Paranormal Activity’ Broadway Review: Stage Adaptation Of Film Franchise Is A Frightfully Good Time"
+    },
+    "evt_9122c12740": {
+      "event_id": "evt_9122c12740",
+      "topic": "Trailers and First Looks",
+      "region": "Entertainment",
+      "sources": [
+        "Soompi"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-08-29T23:39:23.320798+06:00",
+      "headline": "Watch: Lee Jun Young Is A Prodigy Who Hears Everything As Music In “Four Hands, Two Sonatas” Preview"
+    },
+    "evt_00f45c606b": {
+      "event_id": "evt_00f45c606b",
+      "topic": "Trailers and First Looks",
+      "region": "Entertainment",
+      "sources": [
+        "Soompi"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-08-29T23:39:23.320799+06:00",
+      "headline": "Jung Chaeyeon Aims A Gun At Her Father Heo Sung Tae In “Flex X Cop 2”"
+    },
+    "evt_5ad1d35c5c": {
+      "event_id": "evt_5ad1d35c5c",
+      "topic": "Trailers and First Looks",
+      "region": "Entertainment",
+      "sources": [
+        "Soompi"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-08-29T23:39:23.320801+06:00",
+      "headline": "NEWBEAT Reveals 1st Glimpse Of Official Light Stick"
+    },
+    "evt_0b60976920": {
+      "event_id": "evt_0b60976920",
+      "topic": "Casting",
+      "region": "Entertainment",
+      "sources": [
+        "TVLine"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-08-29T23:39:23.320803+06:00",
+      "headline": "What Was The Significance Of Picard's Borg Name In Star Trek: The Next Generation?"
+    },
+    "evt_ede762a869": {
+      "event_id": "evt_ede762a869",
+      "topic": "Major Film Announcements",
+      "region": "Entertainment",
+      "sources": [
+        "IndieWire"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-08-29T23:39:23.320805+06:00",
+      "headline": "Ridley Scott on Telling Love Stories from ‘Thelma and Louise’ to ‘The Dog Stars,’ Shooting With 11 Cameras, and Why Silence Is the Best Sound Effect"
+    },
+    "evt_e7884e1c1c": {
+      "event_id": "evt_e7884e1c1c",
+      "topic": "Major Film Announcements",
+      "region": "Entertainment",
+      "sources": [
+        "IndieWire"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-08-29T23:39:23.320806+06:00",
+      "headline": "‘The Uprising’ Thinks It Needs Robin Hood, but the Peasants’ Revolt Was Already Exciting Enough"
+    },
+    "evt_8c71c5d0dd": {
+      "event_id": "evt_8c71c5d0dd",
+      "topic": "Major Film Announcements",
+      "region": "Entertainment",
+      "sources": [
+        "TVLine"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-08-29T23:39:23.320808+06:00",
+      "headline": "Why Bobby From Lioness Looks So Familiar"
+    },
+    "evt_c1e7dd174e": {
+      "event_id": "evt_c1e7dd174e",
+      "topic": "Major Film Announcements",
+      "region": "Entertainment",
+      "sources": [
+        "IndieWire"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-08-29T23:39:23.320810+06:00",
+      "headline": "‘The World Is a Lot Right Now’: Watch Kane Parsons and ‘It Ends’ Director Alex Ullom Try to Explain the Liminal Horror Craze"
+    },
+    "evt_ca1f1c7a5e": {
+      "event_id": "evt_ca1f1c7a5e",
+      "topic": "Casting",
+      "region": "Entertainment",
+      "sources": [
+        "TVLine"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-08-29T23:39:23.320811+06:00",
+      "headline": "Emmys 2026 Poll: Who Should Win For Supporting Actor In A Comedy Series?"
+    },
+    "evt_a571a7f20c": {
+      "event_id": "evt_a571a7f20c",
+      "topic": "Major Film Announcements",
+      "region": "Entertainment",
+      "sources": [
+        "TVLine"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-08-29T23:39:23.320813+06:00",
+      "headline": "10 Best TV Shows Like Ransom Canyon"
+    },
+    "evt_e3c23ada03": {
+      "event_id": "evt_e3c23ada03",
+      "topic": "Streaming Platform News",
+      "region": "Entertainment",
+      "sources": [
+        "IndieWire"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-08-29T23:39:23.320815+06:00",
+      "headline": "‘Dark Matter’ Season 2 Tests the Limits of Apple TV’s Sci-Fi Obsession"
+    },
+    "evt_e5384223c5": {
+      "event_id": "evt_e5384223c5",
+      "topic": "Major Film Announcements",
+      "region": "Entertainment",
+      "sources": [
+        "IndieWire"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-08-29T23:39:23.320816+06:00",
+      "headline": "Ridley Scott Casts His Crews as Carefully as His Movies So That He ‘Can Just Play Tennis’"
+    },
+    "evt_1e5b61e01e": {
+      "event_id": "evt_1e5b61e01e",
+      "topic": "Casting",
+      "region": "Entertainment",
+      "sources": [
+        "The Hollywood Reporter"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-08-29T23:39:23.320818+06:00",
+      "headline": "‘Days of Thunder’ Sequel: Anne Hathaway Joins Tom Cruise, Release Date Set at Paramount"
+    },
+    "evt_bc1885fe32": {
+      "event_id": "evt_bc1885fe32",
+      "topic": "Major Film Announcements",
+      "region": "Entertainment",
+      "sources": [
+        "Bollywood Hungama"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-08-29T23:39:23.320820+06:00",
+      "headline": "Toxic – A Fairy Tale For Grown-Ups BTS: JJ Perry reveals how Yash pulled off the vicious fight action sequence"
+    },
+    "evt_bbbc83d0d5": {
+      "event_id": "evt_bbbc83d0d5",
       "topic": "Major Film Announcements",
       "region": "Entertainment",
       "sources": [
@@ -1946,65 +2350,74 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-08-29T19:03:13.102648+06:00",
-      "headline": "‘The Song of Scorpions,’ ‘Qissa’ Director Anup Singh Sets Mumbai Film ‘Lasya: The Gentle Dance’ (EXCLUSIVE)"
+      "last_seen": "2026-08-29T23:39:23.320821+06:00",
+      "headline": "Box Office: ‘The Dog Stars’ Struggles With Just $3 Million on Friday; ‘Spider-Man: Brand New Day’ to Win Weekend Again"
     },
-    "evt_6fb4e37b7a": {
-      "event_id": "evt_6fb4e37b7a",
-      "topic": "Franchises and IP",
-      "region": "Entertainment",
-      "sources": [
-        "TVLine",
-        "What's on Netflix"
-      ],
-      "source_count": 2,
-      "confidence": 1.0,
-      "last_seen": "2026-08-29T19:03:13.102650+06:00",
-      "headline": "Manifest Spin-Off Arrivals Ordered At Netflix — But Will The Original Cast Return?"
-    },
-    "evt_45a2834318": {
-      "event_id": "evt_45a2834318",
+    "evt_fb164d1650": {
+      "event_id": "evt_fb164d1650",
       "topic": "Major Film Announcements",
       "region": "Entertainment",
       "sources": [
-        "What's on Netflix"
+        "TheWrap"
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-08-29T19:03:13.102652+06:00",
-      "headline": "Netflix Options Over 25 Books for TV Series & Movie Development for 2026 and Beyond"
+      "last_seen": "2026-08-29T23:39:23.320823+06:00",
+      "headline": "‘Spider-Man: Brand New Day’ Takes Fifth No. 1 As ‘Coyote vs. Acme’ Takes $14 Million Opening"
     },
-    "evt_4062b628bc": {
-      "event_id": "evt_4062b628bc",
+    "evt_d5a6c3f5df": {
+      "event_id": "evt_d5a6c3f5df",
       "topic": "Major Film Announcements",
       "region": "Entertainment",
       "sources": [
-        "What's on Netflix"
+        "Deadline"
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-08-29T19:03:13.102654+06:00",
-      "headline": "‘Forever’ Season 2 Wraps Filming at Netflix; Scheduled to Release in 2027"
+      "last_seen": "2026-08-29T23:39:23.320824+06:00",
+      "headline": "‘Spider-Man’ Nearing $900M; ‘Coyote Vs. Acme’ Solid $14M Debut & ‘A’ CinemaScore, ‘Dog Stars’ Going To The Dogs – Box Office Update"
     }
   },
   "posted_event_ids": [
-    "evt_384ec1daf7",
-    "evt_fcbea1bd23",
-    "evt_fa8b13362b",
-    "evt_6fb4e37b7a",
-    "evt_45a2834318",
-    "evt_4062b628bc"
+    "evt_c89fe0dab0",
+    "evt_2c67a10ddd",
+    "evt_787b40bcd0",
+    "evt_166b2a8faa",
+    "evt_00f45c606b",
+    "evt_5ad1d35c5c",
+    "evt_0b60976920",
+    "evt_8c71c5d0dd",
+    "evt_c1e7dd174e",
+    "evt_ca1f1c7a5e",
+    "evt_a571a7f20c",
+    "evt_1e5b61e01e",
+    "evt_bc1885fe32",
+    "evt_bbbc83d0d5",
+    "evt_fb164d1650",
+    "evt_d5a6c3f5df"
   ],
   "recent_titles": [
-    "chantelle cameron vs mikaela mayer",
-    "godzilla minus one",
-    "lasya the gentle dance",
-    "arrivals a new manifest mystery",
-    "we solve murders",
-    "forever"
+    "days of thunder 2",
+    "karna",
+    "days of thunder",
+    "paranormal activity",
+    "flex x cop 2",
+    "newbeat",
+    "star trek the next generation",
+    "lioness",
+    "it ends",
+    "emmys 2026 poll",
+    "ransom canyon",
+    "days of thunder",
+    "toxic a fairy tale for grown ups",
+    "spider man brand new day",
+    "spider man brand new day",
+    "coyote vs acme"
   ],
   "category_coverage": {
-    "Major Film Announcements": "2026-08-29T19:05:39.788103+06:00",
-    "Franchises and IP": "2026-08-29T19:05:29.856147+06:00"
+    "Franchises and IP": "2026-08-30T00:04:30.665096+06:00",
+    "Major Film Announcements": "2026-08-30T00:05:33.723218+06:00",
+    "Trailers and First Looks": "2026-08-30T00:04:41.777435+06:00",
+    "Casting": "2026-08-30T00:05:12.967209+06:00"
   }
 }
