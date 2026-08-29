@@ -63,6 +63,40 @@ BD_TZ = ZoneInfo("Asia/Dhaka")
 PUBLISH_THRESHOLD = 80
 RANKING_BATCH_SIZE = 15
 MAX_RANK_CANDIDATES = 120
+NEWS_PRIORITY = {
+    "OTT / Streaming Availability": (1, 1),
+    "Hindi Dub / Language Availability": (1, 2),
+    "Upcoming OTT Releases": (1, 3),
+    "Release Date Confirmations": (1, 4),
+    "New Movie / Series Announcements": (2, 5),
+    "Season Renewals / New Season Updates": (2, 6),
+    "Trailer Releases": (2, 7),
+    "First Look / First Glimpse / Posters": (2, 8),
+    "Cast / Character Announcements": (3, 9),
+    "Theatrical Releases / Re-releases": (3, 10),
+    "Production / Filming Updates": (3, 11),
+    "OTT Platform Acquisition / Streaming Rights": (3, 12),
+    "Box Office Updates": (3, 13),
+}
+NEWS_TYPE_TO_PRIORITY = {
+    "Now Streaming": "OTT / Streaming Availability",
+    "Hindi Dub": "Hindi Dub / Language Availability",
+    "Upcoming OTT": "Upcoming OTT Releases",
+    "Release Date": "Release Date Confirmations",
+    "Announcement": "New Movie / Series Announcements",
+    "Renewal": "Season Renewals / New Season Updates",
+    "Cancellation": "Season Renewals / New Season Updates",
+    "Trailer": "Trailer Releases",
+    "First Look": "First Look / First Glimpse / Posters",
+    "Casting": "Cast / Character Announcements",
+    "Theatrical": "Theatrical Releases / Re-releases",
+    "Production": "Production / Filming Updates",
+    "Distribution": "OTT Platform Acquisition / Streaming Rights",
+    "Box Office": "Box Office Updates",
+    "Industry": "New Movie / Series Announcements",
+    "Confirmed": "New Movie / Series Announcements",
+    "Reported": "New Movie / Series Announcements",
+}
 DISCOVERY_LOOKBACK_HOURS = 24
 
 # Reliability / quality
@@ -1404,46 +1438,89 @@ def enrich_thin_excerpts(regional):
 # VERSION 1 EDITORIAL RANKING
 # ============================================================
 
-RANK_SCHEMA={"type":"object","properties":{"ranked":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer"},"rank":{"type":"integer","minimum":1},"sector":{"type":"string","enum":SECTORS},"source_class":{"type":"string","enum":["official","reported","rumor"]},"significance":{"type":"integer","minimum":0,"maximum":20},"reach":{"type":"integer","minimum":0,"maximum":15},"event_magnitude":{"type":"integer","minimum":0,"maximum":15},"platform_ip_strength":{"type":"integer","minimum":0,"maximum":10},"source_authority":{"type":"integer","minimum":0,"maximum":15},"evidence_strength":{"type":"integer","minimum":0,"maximum":10},"international_relevance":{"type":"integer","minimum":0,"maximum":5},"recency":{"type":"integer","minimum":0,"maximum":5},"audience_anticipation":{"type":"integer","minimum":0,"maximum":5},"topic":{"type":"string"},"institution":{"type":"string"},"event_key":{"type":"string"},"reason":{"type":"string"}},"required":["id","rank","sector","source_class","significance","reach","event_magnitude","platform_ip_strength","source_authority","evidence_strength","international_relevance","recency","audience_anticipation","topic","institution","event_key","reason"],"additionalProperties":False}}},"required":["ranked"],"additionalProperties":False}
+RANK_COMPONENTS = [
+    "significance","reach","event_magnitude","platform_ip_strength",
+    "source_authority","evidence_strength","international_relevance",
+    "recency","audience_anticipation",
+]
+RANK_SCHEMA={
+    "type":"object",
+    "properties":{
+        "ranked":{
+            "type":"array",
+            "items":{
+                "type":"object",
+                "properties":{
+                    "id":{"type":"integer"},
+                    "rank":{"type":"integer","minimum":1},
+                    "sector":{"type":"string","enum":SECTORS},
+                    "source_class":{"type":"string","enum":["official","reported","rumor"]},
+                    **{k:{"type":"integer","minimum":0,"maximum":m} for k,m in {
+                        "significance":20,"reach":15,"event_magnitude":15,"platform_ip_strength":10,
+                        "source_authority":15,"evidence_strength":10,"international_relevance":5,
+                        "recency":5,"audience_anticipation":5}.items()},
+                    "topic":{"type":"string"},"institution":{"type":"string"},
+                    "event_key":{"type":"string"},"reason":{"type":"string"},
+                    "priority_type":{"type":"string","enum":list(NEWS_PRIORITY.keys())},
+                },
+                "required":["id","rank","sector","source_class",*RANK_COMPONENTS,"topic","institution","event_key","reason","priority_type"],
+                "additionalProperties":False,
+            },
+        }
+    },
+    "required":["ranked"],
+    "additionalProperties":False,
+}
+
 def rank_score(row):
-    score=sum(int(row.get(k,0)) for k in ["significance","reach","event_magnitude","platform_ip_strength","source_authority","evidence_strength","international_relevance","recency","audience_anticipation"])
-    if safe_text(row.get("source_class")).lower()=="rumor":score=min(score,69)
+    score=sum(int(row.get(k,0)) for k in RANK_COMPONENTS)
+    if safe_text(row.get("source_class")).lower()=="rumor":
+        score=min(score,69)
     return max(0,min(100,score))
+
 def rank_candidates(candidates,region):
     if not candidates:return []
     regional=sorted(candidates,key=lambda x:parse_datetime(x.get("published_date")) or datetime.min.replace(tzinfo=timezone.utc),reverse=True)[:MAX_RANK_CANDIDATES]
-    regional=enrich_thin_excerpts(regional); rows=[]
+    regional=enrich_thin_excerpts(regional)
+    rows=[]
+    priority_list="\n".join(f"{i}. {name}" for i,name in enumerate(NEWS_PRIORITY,1))
     for offset in range(0,len(regional),RANKING_BATCH_SIZE):
-        batch=regional[offset:offset+RANKING_BATCH_SIZE]; lines=[]
+        batch=regional[offset:offset+RANKING_BATCH_SIZE]
+        lines=[]
         for idx,item in enumerate(batch,1):
             dt=parse_datetime(item.get("published_date")); age=f"Age: {max(0.0,(NOW_BD-dt).total_seconds()/3600):.1f} hours" if dt else ""
-            lines.append("\n".join([f"ID: {idx}",f"Title: {item.get('title','')}",f"Source: {item.get('source','')}",f"Published: {item.get('published_date','')}",age,f"Excerpt: {trim_source_text(item.get('excerpt',''),850)}",""]))
-        prompt=f"""You are the senior editor of @EntertainmentNewsroom. Rank these entertainment candidates using a strict 0-100 model.
-Sectors: Hollywood, Indian, International. Hollywood means primarily US/Hollywood entertainment; Indian means India-led cinema/series/OTT; International means major non-Indian, non-Hollywood global entertainment and cross-border developments.
-Judge the underlying event, not headline excitement. Routine celebrity lifestyle, gossip, fashion, generic interviews, minor casting, routine catalog additions, weak promotions, unsupported rumors and duplicates are low priority. Rumor/speculation may be classified but must never reach a publishable score. Official confirmation is stronger than reputable reporting.
-Scoring components must sum to exactly 100: significance 0-20; reach 0-15; event_magnitude 0-15; platform_ip_strength 0-10; source_authority 0-15; evidence_strength 0-10; international_relevance 0-5; recency 0-5; audience_anticipation 0-5.
-Return EVERY candidate with exactly one sector and source_class, plus topic, institution, event_key and reason. Do not invent values beyond the supplied metadata."""
+            lines.append("\n".join([f"ID: {idx}",f"Title: {item.get('title','')}",f"Source: {item.get('source','')}",f"Published: {item.get('published_date','')}",age,f"Excerpt: {trim_source_text(item.get('excerpt',''),850)},",""]))
+        prompt=f"""You are the senior editor of @EntertainmentNewsroom. Rank entertainment news candidates using the exact component scoring model below.
+Sectors: Hollywood, Indian, International.
+Priority list, from highest to lowest:
+{priority_list}
+Assign exactly one priority_type. Priority tiers are strong ordering preferences: Tier 1 ahead of Tier 2, Tier 2 ahead of Tier 3. This is not a quota. The final raw score remains the publication gate: only score >= 80 is publishable.
+Score components must sum to exactly 100: significance 0-20; reach 0-15; event_magnitude 0-15; platform_ip_strength 0-10; source_authority 0-15; evidence_strength 0-10; international_relevance 0-5; recency 0-5; audience_anticipation 0-5.
+Judge the underlying event, not headline excitement. Strongly deprioritize celebrity lifestyle, gossip, fashion, generic interviews, minor casting, routine catalog additions, weak promotions, unsupported rumors, opinion-only pieces, and duplicates.
+Official confirmation is stronger than reputable reporting. Rumor/speculation is never publishable and must be scored below 80.
+Do not invent information not present in the candidate metadata. Return EVERY candidate."""
         try:
-            response=cerebras.chat.completions.create(model=CEREBRAS_MODEL,messages=[{"role":"system","content":prompt},{"role":"user","content":"\n".join(lines)}],response_format={"type":"json_schema","json_schema":{"name":"entertainment_news_v11_rank","strict":True,"schema":RANK_SCHEMA}},reasoning_effort="low",temperature=0.0,max_completion_tokens=3600)
-            data=json.loads(safe_text(response.choices[0].message.content)); by_id={i:x for i,x in enumerate(batch,1)}; returned=set(); scored=[]
+            response=cerebras.chat.completions.create(model=CEREBRAS_MODEL,messages=[{"role":"system","content":prompt},{"role":"user","content":"\n".join(lines)}],response_format={"type":"json_schema","json_schema":{"name":"entertainment_news_v1_rank","strict":True,"schema":RANK_SCHEMA}},reasoning_effort="low",temperature=0.0,max_completion_tokens=4200)
+            data=json.loads(safe_text(response.choices[0].message.content)); by_id={i:x for i,x in enumerate(batch,1)}; returned=set()
             for r in data.get("ranked",[]):
                 idx=int(r.get("id",0))
                 if idx not in by_id:continue
-                item=dict(by_id[idx]); score=rank_score(r); scored.append((score,int(r.get("rank",9999)),r,item)); returned.add(safe_text(item.get("canonical")))
-            scored.sort(key=lambda x:(-x[0],x[1]))
-            for local,(score,_,r,item) in enumerate(scored,1):
-                item.update({"editor_rank":offset+local,"importance_score":score,"important":score>=PUBLISH_THRESHOLD,"sector":normalize_sector(r.get("sector")),"source_class":safe_text(r.get("source_class")) or "reported","topic":canonical_topic(safe_text(r.get("topic")),region),"institution":safe_text(r.get("institution")),"event_key":safe_text(r.get("event_key")),"rank_reason":safe_text(r.get("reason")),"score_components":{k:int(r.get(k,0)) for k in ["significance","reach","event_magnitude","platform_ip_strength","source_authority","evidence_strength","international_relevance","recency","audience_anticipation"]}}); rows.append(item)
+                item=dict(by_id[idx]); ptype=safe_text(r.get("priority_type"))
+                if ptype not in NEWS_PRIORITY: ptype="New Movie / Series Announcements"
+                score=rank_score(r)
+                item.update({"importance_score":score,"important":score>=PUBLISH_THRESHOLD,"sector":normalize_sector(r.get("sector")),"source_class":safe_text(r.get("source_class")) or "reported","topic":canonical_topic(safe_text(r.get("topic")),region),"institution":safe_text(r.get("institution")),"event_key":safe_text(r.get("event_key")),"rank_reason":safe_text(r.get("reason")),"priority_type":ptype,"priority_tier":NEWS_PRIORITY[ptype][0],"priority_rank":NEWS_PRIORITY[ptype][1],"score_components":{k:int(r.get(k,0)) for k in RANK_COMPONENTS}})
+                rows.append(item); returned.add(safe_text(item.get("canonical")))
             for idx,item in enumerate(batch,1):
                 if safe_text(item.get("canonical")) not in returned:
-                    fallback=dict(item); fallback.update({"editor_rank":offset+RANKING_BATCH_SIZE+idx,"importance_score":0,"important":False,"sector":"International","source_class":"reported","topic":canonical_topic(item.get("topic",""),region),"institution":"","event_key":"","rank_reason":"Unscored fallback; withheld from publication."}); rows.append(fallback)
+                    fallback=dict(item); fallback.update({"importance_score":0,"important":False,"sector":"International","source_class":"reported","topic":canonical_topic(item.get("topic",""),region),"institution":"","event_key":"","rank_reason":"Unscored fallback; withheld from publication.","priority_type":"New Movie / Series Announcements","priority_tier":2,"priority_rank":5,"score_components":{k:0 for k in RANK_COMPONENTS}}); rows.append(fallback)
         except Exception as exc:
             logger.error("Editorial ranking batch failed for %s: %s",region,exc)
-            for idx,item in enumerate(batch,offset+1):
-                row=dict(item); row.update({"editor_rank":idx,"importance_score":0,"important":False,"sector":"International","source_class":"reported","topic":canonical_topic(item.get("topic",""),region),"institution":"","event_key":"","rank_reason":"Ranking-service failure; candidate withheld."}); rows.append(row)
-    rows.sort(key=lambda x:(-int(x.get("importance_score",0)), -(parse_datetime(x.get("published_date")).timestamp() if parse_datetime(x.get("published_date")) else 0)))
-    for global_rank, row in enumerate(rows, 1):
-        row["editor_rank"] = global_rank
-        row["important"] = int(row.get("importance_score",0)) >= PUBLISH_THRESHOLD
+            for item in batch:
+                row=dict(item); row.update({"importance_score":0,"important":False,"sector":"International","source_class":"reported","topic":canonical_topic(item.get("topic",""),region),"institution":"","event_key":"","rank_reason":"Ranking-service failure; candidate withheld.","priority_type":"New Movie / Series Announcements","priority_tier":2,"priority_rank":5,"score_components":{k:0 for k in RANK_COMPONENTS}}); rows.append(row)
+    rows.sort(key=lambda x:(int(x.get("priority_tier",2)),int(x.get("priority_rank",5)),-int(x.get("importance_score",0)),-(parse_datetime(x.get("published_date")).timestamp() if parse_datetime(x.get("published_date")) else 0)))
+    for global_rank,row in enumerate(rows,1):
+        row["editor_rank"]=global_rank
+        row["important"]=int(row.get("importance_score",0))>=PUBLISH_THRESHOLD
     return rows
 
 
@@ -1648,6 +1725,8 @@ def extract_article(
 
         if response.status_code < 400:
             page_html = response.text
+            image_candidates = _extract_image_candidates_from_html(page_html, response.url, item.get("title", ""))
+            item["image_candidates"] = image_candidates[:20]
 
             text = trafilatura.extract(
                 page_html,
@@ -1731,7 +1810,7 @@ def extract_article(
 # STORY + KNOWLEDGE GENERATION
 # ============================================================
 
-STORY_SCHEMA={"type":"object","properties":{"headline":{"type":"string"},"year":{"type":"string"},"summary":{"type":"string"},"sector":{"type":"string","enum":SECTORS},"format":{"type":"string","enum":["Film","Series","Streaming","Industry"]},"news_type":{"type":"string","enum":["Confirmed","Reported","Now Streaming","Trailer","Renewal","Cancellation","Release Date","Box Office","Industry","Casting","Production","Distribution","Announcement"]},"highlights":{"type":"array","items":{"type":"string"},"minItems":3,"maxItems":5},"platform":{"type":"string"},"episodes":{"type":"string"},"languages":{"type":"string"},"status":{"type":"string"},"release_date":{"type":"string"},"expected_date":{"type":"string"},"season":{"type":"string"},"amount":{"type":"string"},"domestic_amount":{"type":"string"},"worldwide_amount":{"type":"string"},"days_since_release":{"type":"string"},"reported_details":{"type":"array","items":{"type":"string"},"maxItems":4},"framing_line":{"type":"string"},"spoiler":{"type":"string"},"note":{"type":"string"},"bold_terms":{"type":"array","items":{"type":"string"},"maxItems":18}},"required":["headline","year","summary","sector","format","news_type","highlights","platform","episodes","languages","status","release_date","expected_date","season","amount","domestic_amount","worldwide_amount","days_since_release","reported_details","framing_line","spoiler","note","bold_terms"],"additionalProperties":False}
+STORY_SCHEMA={"type":"object","properties":{"headline":{"type":"string"},"year":{"type":"string"},"summary":{"type":"string"},"sector":{"type":"string","enum":SECTORS},"format":{"type":"string","enum":["Film","Series","Streaming","Industry"]},"news_type":{"type":"string","enum":["Confirmed","Reported","Now Streaming","Hindi Dub","Upcoming OTT","Release Date","Trailer","First Look","Renewal","Cancellation","Box Office","Theatrical","Industry","Casting","Production","Distribution","Announcement"]},"priority_type":{"type":"string","enum":list(NEWS_PRIORITY.keys())},"highlights":{"type":"array","items":{"type":"string"},"minItems":2,"maxItems":3},"platform":{"type":"string"},"episodes":{"type":"string"},"languages":{"type":"string"},"status":{"type":"string"},"release_date":{"type":"string"},"expected_date":{"type":"string"},"season":{"type":"string"},"amount":{"type":"string"},"domestic_amount":{"type":"string"},"worldwide_amount":{"type":"string"},"days_since_release":{"type":"string"},"reported_details":{"type":"array","items":{"type":"string"},"maxItems":4},"framing_line":{"type":"string"},"spoiler":{"type":"string"},"note":{"type":"string"},"bold_terms":{"type":"array","items":{"type":"string"},"maxItems":18}},"required":["headline","year","summary","sector","format","news_type","priority_type","highlights","platform","episodes","languages","status","release_date","expected_date","season","amount","domestic_amount","worldwide_amount","days_since_release","reported_details","framing_line","spoiler","note","bold_terms"],"additionalProperties":False}
 
 
 def first_sentence(text):
@@ -1786,18 +1865,21 @@ def first_sentence(text):
 def generate_story(item,article_text):
     sector=normalize_sector(item.get("sector"))
     prompt=f"""You are the senior newspaper entertainment editor for @EntertainmentNewsroom. Create a factual Telegram news card. Sector: {sector}. Editorial score: {item.get('importance_score',0)}/100.
-Rules: headline 6-14 words; year should be the relevant release/production year when clearly supported, otherwise empty; summary exactly one sentence; sector exactly Hollywood/Indian/International; format Film/Series/Streaming/Industry; choose a precise news_type; 3-5 factual highlights. Populate only the template fields supported by the source; leave irrelevant dynamic fields empty. Use the exact Telegram template variant matching news_type. Spoiler is empty unless a real plot/finale/twist reveal is central. No unsupported facts, numbers, dates, cast, platforms or status claims. No hashtags, Markdown or HTML inside JSON.
+Rules: headline 6-14 words; year should be the relevant release/production year when clearly supported, otherwise empty; summary 1-2 short sentences; sector exactly Hollywood/Indian/International; format Film/Series/Streaming/Industry; choose a precise news_type and priority_type from the fixed 13-item list; 2-3 factual highlights; keep the copy compact enough to understand in under 10 seconds. Populate only the template fields supported by the source; leave irrelevant dynamic fields empty. Use the exact Telegram template variant matching news_type. Spoiler is empty unless a real plot/finale/twist reveal is central. No unsupported facts, numbers, dates, cast, platforms or status claims. No hashtags, Markdown or HTML inside JSON.
 Return only valid JSON matching the schema."""
     user=f"REGION: Entertainment\nSECTOR: {sector}\nSOURCE: {item['source']}\nSOURCE CLASS: {item.get('source_class','reported')}\nTITLE: {item['title']}\nDATE: {item['published_date']}\n\nARTICLE:\n{article_text[:14000]}"
     for attempt in range(3):
         try:
             response=cerebras.chat.completions.create(model=CEREBRAS_MODEL,messages=[{"role":"system","content":prompt},{"role":"user","content":user}],response_format={"type":"json_schema","json_schema":{"name":"entertainment_news_story_v11","strict":True,"schema":STORY_SCHEMA}},reasoning_effort="low",temperature=0.15,max_completion_tokens=1700)
             data=json.loads(safe_text(response.choices[0].message.content)); headline=clean_generated_text(data.get("headline")); year=clean_generated_text(data.get("year")); summary=first_sentence(data.get("summary")); highlights=[clean_generated_text(x) for x in data.get("highlights",[]) if clean_generated_text(x)]; spoiler=clean_generated_text(data.get("spoiler")); note=clean_generated_text(data.get("note")); fmt=safe_text(data.get("format")); news_type=safe_text(data.get("news_type")); out_sector=normalize_sector(data.get("sector"));
-            allowed_types={"Confirmed","Reported","Now Streaming","Trailer","Renewal","Cancellation","Release Date","Box Office","Industry","Casting","Production","Distribution","Announcement"}
-            if not headline or not summary or not complete_text(headline) or not complete_text(summary) or fmt not in {"Film","Series","Streaming","Industry"} or news_type not in allowed_types or not (3<=len(highlights)<=5) or any(not complete_text(x) for x in highlights) or (spoiler and not complete_text(spoiler)): raise ValueError("Invalid story structure")
+            allowed_types={"Confirmed","Reported","Now Streaming","Hindi Dub","Upcoming OTT","Release Date","Trailer","First Look","Renewal","Cancellation","Box Office","Theatrical","Industry","Casting","Production","Distribution","Announcement"}
+            if not headline or not summary or not complete_text(headline) or not complete_text(summary) or fmt not in {"Film","Series","Streaming","Industry"} or news_type not in allowed_types or not (2<=len(highlights)<=3) or any(not complete_text(x) for x in highlights) or (spoiler and not complete_text(spoiler)): raise ValueError("Invalid story structure")
             dynamic_fields={k:trim_source_text(clean_generated_text(data.get(k)),700) for k in ["platform","episodes","languages","status","release_date","expected_date","season","amount","domestic_amount","worldwide_amount","days_since_release","framing_line","note"]}
             dynamic_fields["reported_details"]=[trim_source_text(clean_generated_text(x),180) for x in data.get("reported_details",[]) if clean_generated_text(x)][:4]
-            return {**item,"headline":trim_source_text(headline,120),"year":trim_source_text(year,10),"summary":trim_source_text(summary,300),"sector":out_sector,"format":fmt,"news_type":news_type,"highlights":[trim_source_text(x,150) for x in highlights],**dynamic_fields,"spoiler":trim_source_text(spoiler,700),"bold_terms":[safe_text(x) for x in data.get("bold_terms",[]) if safe_text(x)]}
+            priority_type = safe_text(data.get("priority_type")) or NEWS_TYPE_TO_PRIORITY.get(news_type, "New Movie / Series Announcements")
+            if priority_type not in NEWS_PRIORITY:
+                priority_type = NEWS_TYPE_TO_PRIORITY.get(news_type, "New Movie / Series Announcements")
+            return {**item,"headline":trim_source_text(headline,120),"year":trim_source_text(year,10),"summary":trim_source_text(summary,300),"sector":out_sector,"format":fmt,"news_type":news_type,"priority_type":priority_type,"highlights":[trim_source_text(x,150) for x in highlights],**dynamic_fields,"spoiler":trim_source_text(spoiler,700),"bold_terms":[safe_text(x) for x in data.get("bold_terms",[]) if safe_text(x)]}
         except Exception as exc:
             logger.warning("Story generation attempt %d failed: %s",attempt+1,exc)
             if attempt<2:time.sleep(1)
@@ -2120,64 +2202,102 @@ def add_media_reference():
     return '<img src="tg://photo?id=newsphoto">'
 
 
-def dynamic_rich_html(story):
-    """Render the final Entertainment template using Telegram Rich HTML.
+def _story_priority_label(story):
+    direct = safe_text(story.get("priority_type"))
+    if direct in NEWS_PRIORITY:
+        return direct
+    return NEWS_TYPE_TO_PRIORITY.get(safe_text(story.get("news_type")), "New Movie / Series Announcements")
 
-    Rich formatting is produced deterministically by Python. The LLM only
-    supplies structured story fields. This mirrors the working Business
-    Newsroom implementation and avoids leaking Markdown syntax into Telegram.
+
+def _hook_for_story(story):
+    news_type = safe_text(story.get("news_type"))
+    status = safe_text(story.get("status")).lower()
+    if news_type == "Now Streaming" or status in {"streaming", "available now", "now streaming"}:
+        return "🔥 NOW STREAMING"
+    if news_type == "Hindi Dub":
+        return "🇮🇳 HINDI DUB NOW AVAILABLE"
+    if news_type == "Upcoming OTT":
+        return "📺 OTT RELEASE ANNOUNCED"
+    if news_type == "Release Date":
+        return "📅 RELEASE DATE CONFIRMED"
+    if news_type == "Trailer":
+        return "🎞️ TRAILER RELEASED"
+    if news_type == "First Look":
+        return "👀 FIRST LOOK"
+    if news_type == "Renewal":
+        return "🔄 SEASON RENEWED"
+    if news_type == "Cancellation":
+        return "❌ CANCELLED"
+    if news_type == "Casting":
+        return "🎭 CAST ANNOUNCEMENT"
+    if news_type == "Theatrical":
+        return "🎬 THEATRICAL UPDATE"
+    if news_type == "Production":
+        return "🎥 PRODUCTION UPDATE"
+    if news_type == "Distribution":
+        return "🌍 STREAMING RIGHTS UPDATE"
+    if news_type == "Box Office":
+        return "💰 BOX OFFICE UPDATE"
+    if news_type == "Reported":
+        return "📰 REPORTED"
+    return "📢 CONFIRMED"
+
+
+def _display_release_date(story):
+    return safe_text(story.get("release_date")) or safe_text(story.get("expected_date"))
+
+
+def _availability_lines(story):
+    lines = []
+    platform = safe_text(story.get("platform"))
+    episodes = safe_text(story.get("episodes"))
+    languages = safe_text(story.get("languages"))
+    status = safe_text(story.get("status"))
+    release_date = _display_release_date(story)
+    if platform:
+        lines.append(f"• Platform: <code>{escape_rich_html(platform)}</code>")
+    if episodes:
+        lines.append(f"• Episodes: <code>{escape_rich_html(episodes)}</code>")
+    if languages:
+        lines.append(f"• Language: <code>{escape_rich_html(languages)}</code>")
+    if status:
+        lines.append(f"• Status: <code>{escape_rich_html(status)}</code>")
+    # If a platform is present, place the date inside Availability to avoid repetition.
+    if platform and release_date:
+        lines.append(f"• 📅 Release: {escape_rich_html(release_date)}")
+    return lines
+
+
+def dynamic_rich_html(story):
+    """Render the single V1 reader-first Entertainment template.
+
+    Public structure is intentionally compact. News type only determines the
+    content and hook; Python owns the exact layout and Telegram Rich HTML.
     """
     terms = derive_bold_terms(story)
-    sector = safe_text(story.get("sector")) or "International"
-    country = sector
-    fmt = safe_text(story.get("format")) or "Film"
-    news_type = safe_text(story.get("news_type")) or "Confirmed"
     title = escape_rich_html(story.get("headline", ""))
     year = safe_text(story.get("year"))
     summary = bold_terms_html(story.get("summary", ""), terms)
-    lines = [add_media_reference()]
-
-    hook_map = {
-        "Confirmed": "📢 CONFIRMED",
-        "Reported": "🚨 BREAKING",
-        "Now Streaming": "🔥 NOW STREAMING",
-        "Trailer": "🎞️ TRAILER DROP",
-        "Renewal": "⚡ RENEWED",
-        "Cancellation": "❌ CANCELLED",
-        "Release Date": "📅 RELEASE UPDATE",
-        "Box Office": "💰 BOX OFFICE",
-        "Industry": "🏢 INDUSTRY UPDATE",
-        "Casting": "🎭 CASTING UPDATE",
-        "Production": "🎬 PRODUCTION UPDATE",
-        "Distribution": "🌍 DISTRIBUTION UPDATE",
-        "Announcement": "📢 CONFIRMED",
-    }
-    hook = hook_map.get(news_type, "📢 CONFIRMED")
-    lines.append(f"<p><b>{escape_rich_html(hook)}</b></p>")
+    lines = [add_media_reference(), f"<p><b>{escape_rich_html(_hook_for_story(story))}</b></p>"]
     lines.append(f"<h1><b>🎬 {title}" + (f" ({escape_rich_html(year)})" if year else "") + "</b></h1>")
-    lines.append(f"<p><i>{escape_rich_html(country)} • {escape_rich_html(fmt)} • {escape_rich_html(news_type)}</i></p>")
-    lines.append(f"<blockquote>📖 {summary}</blockquote>")
 
-    lines.append("<h2>📌 <b>What's New:</b></h2>")
-    for detail in story.get("highlights", [])[:5]:
-        lines.append(f"<p>• {bold_terms_html(detail, terms)}</p>")
-
-    # Availability fields are conditional. Never fabricate missing values.
-    availability = []
-    if safe_text(story.get("platform")):
-        availability.append(f"• Platform: <code>{escape_rich_html(story.get('platform'))}</code>")
-    if safe_text(story.get("episodes")):
-        availability.append(f"• Episodes: <code>{escape_rich_html(story.get('episodes'))}</code>")
-    if safe_text(story.get("languages")):
-        availability.append(f"• Language: <code>{escape_rich_html(story.get('languages'))}</code>")
-    if safe_text(story.get("status")):
-        availability.append(f"• Status: <code>{escape_rich_html(story.get('status'))}</code>")
+    availability = _availability_lines(story)
     if availability:
         lines.append("<h2>📺 <b>Availability</b></h2>")
-        lines.extend(f"<p>{x}</p>" for x in availability)
+        lines.extend(f"<p>{line}</p>" for line in availability)
 
-    if safe_text(story.get("release_date")):
-        lines.append(f"<p>📅 <b>Release:</b> {escape_rich_html(story.get('release_date'))}</p>")
+    if summary:
+        lines.append(f"<blockquote>📖 {summary}</blockquote>")
+
+    highlights = [bold_terms_html(x, terms) for x in story.get("highlights", []) if safe_text(x)][:3]
+    if highlights:
+        lines.append("<h2>📌 <b>What's New:</b></h2>")
+        lines.extend(f"<p>• {x}</p>" for x in highlights)
+
+    # Only repeat a release line when there was no platform field to attach it to.
+    release_date = _display_release_date(story)
+    if release_date and not safe_text(story.get("platform")):
+        lines.append(f"<p>📅 <b>Release:</b> {escape_rich_html(release_date)}</p>")
 
     spoiler = safe_text(story.get("spoiler"))
     if spoiler:
@@ -2186,13 +2306,13 @@ def dynamic_rich_html(story):
 
     note = safe_text(story.get("note"))
     if note:
-        # Collapsible block, replacing the old What to Know/Vocabulary design.
+        # Telegram Bot API Rich Messages support collapsible detail blocks.
         lines.append(
             "<details><summary>ℹ️ More to Know</summary>"
             f"<p>{bold_terms_html(note, terms)}</p></details>"
         )
 
-    hashtags = " ".join(category_hashtags({**story, "sector": sector}))
+    hashtags = " ".join(category_hashtags(story))
     if hashtags:
         lines.append(f"<p>{escape_rich_html(hashtags)}</p>")
 
@@ -2202,7 +2322,6 @@ def dynamic_rich_html(story):
         lines.append(f"<footer><b>Source:</b> <a href=\"{url}\">{source}</a></footer>")
     else:
         lines.append(f"<footer><b>Source:</b> {source}</footer>")
-
     return "\n".join(lines)
 
 
@@ -2221,7 +2340,7 @@ def fit_rich_html(story):
     raise ValueError("Unable to fit Rich Message within Telegram limits")
 
 # ============================================================
-# IMAGE BRANDING: ONLY @EntertainmentNewsroom
+# IMAGE HANDLING: NORMAL PHOTOS BRANDED; POSTERS/FALLBACKS UNBRANDED
 # ============================================================
 
 def find_font(
@@ -2323,240 +2442,182 @@ def download_image(
         return None
 
 
-def crop_cover(
-    image,
-    size=(1200, 675),
-):
+def crop_cover(image, size=(1200, 675)):
     target_w, target_h = size
-
-    ratio = max(
-        target_w / image.width,
-        target_h / image.height,
-    )
-
-    resized = image.resize(
-        (
-            int(
-                image.width
-                * ratio
-            ),
-            int(
-                image.height
-                * ratio
-            ),
-        ),
-        Image.Resampling.LANCZOS,
-    )
-
-    left = (
-        resized.width
-        - target_w
-    ) // 2
-
-    top = (
-        resized.height
-        - target_h
-    ) // 2
-
-    return resized.crop(
-        (
-            left,
-            top,
-            left + target_w,
-            top + target_h,
-        )
-    )
+    ratio = max(target_w / image.width, target_h / image.height)
+    resized = image.resize((int(image.width * ratio), int(image.height * ratio)), Image.Resampling.LANCZOS)
+    left = (resized.width - target_w) // 2
+    top = (resized.height - target_h) // 2
+    return resized.crop((left, top, left + target_w, top + target_h))
 
 
-def image_average_brightness(
-    image,
-):
-    small = image.resize(
-        (1, 1)
-    ).convert(
-        "L"
-    )
-    return small.getpixel(
-        (0, 0)
-    )
+def fit_full_poster(image, size=(1200, 675), background=(24, 34, 46)):
+    """Fit a portrait/tall poster completely inside 1200x675 without cropping."""
+    target_w, target_h = size
+    ratio = min(target_w / image.width, target_h / image.height)
+    new_size = (max(1, int(image.width * ratio)), max(1, int(image.height * ratio)))
+    resized = image.resize(new_size, Image.Resampling.LANCZOS)
+    canvas = Image.new("RGB", size, background)
+    left = (target_w - resized.width) // 2
+    top = (target_h - resized.height) // 2
+    canvas.paste(resized.convert("RGB"), (left, top))
+    return canvas
 
 
-def branded_card(
-    photo,
-):
-    base = crop_cover(
-        photo
-    ).convert(
-        "RGBA"
-    )
+def image_average_brightness(image):
+    return image.resize((1, 1)).convert("L").getpixel((0, 0))
 
-    brightness = image_average_brightness(
-        base
-    )
 
-    # Adaptive personal-brand chip:
-    # light chip on dark images, dark chip on light images.
-    if brightness < 125:
-        bg = (
-            245,
-            245,
-            245,
-            225,
-        )
-        fg = (
-            20,
-            24,
-            28,
-            255,
-        )
-    else:
-        bg = (
-            18,
-            22,
-            28,
-            205,
-        )
-        fg = (
-            245,
-            245,
-            245,
-            255,
-        )
-
-    overlay = Image.new(
-        "RGBA",
-        base.size,
-        (0, 0, 0, 0),
-    )
-
-    draw = ImageDraw.Draw(
-        overlay
-    )
-
-    font_path = find_font(
-        bold=True
-    )
-
-    if font_path:
-        font = ImageFont.truetype(
-            font_path,
-            24,
-        )
-    else:
-        font = ImageFont.load_default()
-
+def branded_card(photo):
+    """Normal editorial-image branding. Poster/fallback images bypass this."""
+    base = crop_cover(photo).convert("RGBA")
+    brightness = image_average_brightness(base)
+    bg = (245, 245, 245, 225) if brightness < 125 else (18, 22, 28, 205)
+    fg = (20, 24, 28, 255) if brightness < 125 else (245, 245, 245, 255)
+    overlay = Image.new("RGBA", base.size, (0, 0, 0, 0))
+    draw = ImageDraw.Draw(overlay)
+    font_path = find_font(bold=True)
+    font = ImageFont.truetype(font_path, 24) if font_path else ImageFont.load_default()
     text = "@EntertainmentNewsroom"
-
-    bbox = draw.textbbox(
-        (0, 0),
-        text,
-        font=font,
-    )
-
-    text_w = bbox[2] - bbox[0]
-    text_h = bbox[3] - bbox[1]
-
-    padding_x = 22
-    padding_y = 10
-
-    chip_w = (
-        text_w
-        + padding_x * 2
-    )
-    chip_h = (
-        text_h
-        + padding_y * 2
-    )
-
-    x2 = 1200 - 28
-    y2 = 675 - 24
-    x1 = x2 - chip_w
-    y1 = y2 - chip_h
-
-    draw.rounded_rectangle(
-        (
-            x1,
-            y1,
-            x2,
-            y2,
-        ),
-        radius=18,
-        fill=bg,
-    )
-
-    draw.text(
-        (
-            x1 + padding_x,
-            y1 + padding_y - 1,
-        ),
-        text,
-        font=font,
-        fill=fg,
-    )
-
-    return Image.alpha_composite(
-        base,
-        overlay,
-    ).convert(
-        "RGB"
-    )
+    bbox = draw.textbbox((0, 0), text, font=font)
+    text_w, text_h = bbox[2] - bbox[0], bbox[3] - bbox[1]
+    padding_x, padding_y = 22, 10
+    chip_w, chip_h = text_w + padding_x * 2, text_h + padding_y * 2
+    x2, y2 = 1200 - 28, 675 - 24
+    x1, y1 = x2 - chip_w, y2 - chip_h
+    draw.rounded_rectangle((x1, y1, x2, y2), radius=18, fill=bg)
+    draw.text((x1 + padding_x, y1 + padding_y - 1), text, font=font, fill=fg)
+    return Image.alpha_composite(base, overlay).convert("RGB")
 
 
-def prepare_image(
-    story,
-    index,
-):
-    image = download_image(
-        story.get(
-            "image_url",
-            "",
-        ),
-        story["url"],
-    )
+def _is_poster_priority(story):
+    priority = _story_priority_label(story)
+    return priority in {
+        "OTT / Streaming Availability",
+        "Upcoming OTT Releases",
+        "Hindi Dub / Language Availability",
+    }
 
-    if image is None:
-        image = Image.new(
-            "RGB",
-            (1200, 675),
-            (28, 38, 50),
-        )
 
-        font_path = find_font(
-            bold=True
-        )
+def _extract_image_candidates_from_html(page_html, base_url, title):
+    candidates = []
+    try:
+        soup = BeautifulSoup(page_html, "html.parser")
+        for tag in soup.find_all("meta"):
+            prop = safe_text(tag.get("property") or tag.get("name")).lower()
+            content = safe_text(tag.get("content"))
+            if content and prop in {"og:image", "og:image:url", "twitter:image"}:
+                candidates.append(urljoin(base_url, content))
+        needle = normalize_title(title)
+        for img in soup.find_all("img")[:60]:
+            src = safe_text(img.get("src") or img.get("data-src") or img.get("data-lazy-src"))
+            if not src:
+                srcset = safe_text(img.get("srcset") or img.get("data-srcset"))
+                if srcset:
+                    src = safe_text(srcset.split(",")[0].strip().split(" ")[0])
+            if not src:
+                continue
+            alt = normalize_title(img.get("alt", ""))
+            full = urljoin(base_url, src)
+            score = 0
+            if "poster" in alt or "key art" in alt or (needle and needle in alt):
+                score += 5
+            if any(token in safe_text(src).lower() for token in ("poster", "key-art", "keyart")):
+                score += 4
+            candidates.append((score, full))
+        scored = []
+        for x in candidates:
+            if isinstance(x, tuple): scored.append(x)
+            else: scored.append((0, x))
+        scored.sort(key=lambda x: x[0], reverse=True)
+        return [u for _, u in scored if u]
+    except Exception:
+        return candidates
 
-        if font_path:
-            font = ImageFont.truetype(
-                font_path,
-                48,
-            )
-        else:
-            font = ImageFont.load_default()
 
-        draw = ImageDraw.Draw(
-            image
-        )
+def _download_source_logo(source_url, article_url):
+    """Best-effort official-site logo/icon fetch. Used only as image fallback."""
+    try:
+        parsed = urlparse(source_url or article_url)
+        if not parsed.netloc:
+            return None
+        home = f"https://{parsed.netloc}/"
+        response = session.get(home, headers={**HEADERS, "Referer": article_url or home}, timeout=15)
+        if response.status_code >= 400:
+            return None
+        soup = BeautifulSoup(response.text, "html.parser")
+        candidates = []
+        for link in soup.find_all("link"):
+            rel = " ".join(link.get("rel", [])).lower()
+            href = safe_text(link.get("href"))
+            if href and ("icon" in rel or "logo" in rel):
+                candidates.append(urljoin(response.url, href))
+        # JSON-LD logo is preferable when present.
+        for script in soup.find_all("script", type="application/ld+json"):
+            try:
+                data = json.loads(script.string or script.get_text())
+                records = data if isinstance(data, list) else [data]
+                for record in records:
+                    if isinstance(record, dict):
+                        logo = record.get("logo")
+                        if isinstance(logo, dict): logo = logo.get("url")
+                        if logo: candidates.insert(0, urljoin(response.url, safe_text(logo)))
+            except Exception:
+                pass
+        for url in candidates:
+            logo = download_image(url, home)
+            if logo:
+                return logo
+    except Exception:
+        return None
+    return None
 
-        draw.text(
-            (50, 50),
-            "Entertainment News",
-            font=font,
-            fill="white",
-        )
 
-    branded = branded_card(
-        image
-    )
+def _source_logo_card(logo):
+    canvas = Image.new("RGB", (1200, 675), (24, 34, 46))
+    if logo is None:
+        return canvas
+    max_w, max_h = 500, 250
+    ratio = min(max_w / logo.width, max_h / logo.height)
+    resized = logo.resize((max(1, int(logo.width * ratio)), max(1, int(logo.height * ratio))), Image.Resampling.LANCZOS)
+    canvas.paste(resized, ((1200 - resized.width) // 2, (675 - resized.height) // 2), resized if resized.mode == "RGBA" else None)
+    return canvas
 
+
+def prepare_image(story, index):
+    is_poster = False
+    image_urls = []
+    primary = safe_text(story.get("image_url"))
+    if primary:
+        image_urls.append(primary)
+    for candidate in story.get("image_candidates", [])[:20]:
+        if candidate and candidate not in image_urls:
+            image_urls.append(candidate)
+
+    # For OTT/language/release stories, inspect several candidates and keep a
+    # full portrait poster when one is available. Otherwise use normal cover crop.
+    if _is_poster_priority(story):
+        for url in image_urls:
+            image = download_image(url, story.get("url", ""))
+            if image and image.height > image.width * 1.15:
+                poster = fit_full_poster(image)
+                path = f"/tmp/news_{index}.jpg"
+                poster.save(path, "JPEG", quality=90, optimize=True)
+                return path
+
+    for url in image_urls:
+        image = download_image(url, story.get("url", ""))
+        if image:
+            branded = branded_card(image)
+            path = f"/tmp/news_{index}.jpg"
+            branded.save(path, "JPEG", quality=88, optimize=True)
+            return path
+
+    # No usable article image. Prefer official publication logo in the center.
+    logo = _download_source_logo(story.get("source", ""), story.get("url", ""))
+    fallback = _source_logo_card(logo)
     path = f"/tmp/news_{index}.jpg"
-
-    branded.save(
-        path,
-        "JPEG",
-        quality=88,
-        optimize=True,
-    )
-
+    fallback.save(path, "JPEG", quality=90, optimize=True)
     return path
 
 
@@ -3066,7 +3127,7 @@ def process_ranked_region(region,ranked):
 
 
 def run():
-    logger.info("ENTERTAINMENTNEWSROOM V1.1 UPDATE-ONLY")
+    logger.info("ENTERTAINMENTNEWSROOM V1 UPDATE-ONLY | 3 sectors | 80/100 gate")
     logger.info("Channel=%s Mode=%s Threshold=%d/100",TELEGRAM_CHANNEL,NEWS_MODE,PUBLISH_THRESHOLD)
     logger.info("LOOKBACK=%d hours | %s -> %s",DISCOVERY_LOOKBACK_HOURS,DISCOVERY_START.isoformat(),DISCOVERY_END.isoformat())
     prune_state(); refresh_category_coverage(); collect_rss()
@@ -3106,7 +3167,7 @@ def self_test():
     sample={
         "headline":"Major Series Locks New Release Date",
         "summary":"The production has confirmed a new release date for the major series.",
-        "sector":"Hollywood","format":"Series","news_type":"Release Date",
+        "sector":"Hollywood","format":"Series","news_type":"Release Date","priority_type":"Release Date Confirmations",
         "highlights":["The new date has been confirmed.","The series is a major production.","The announcement changes the launch schedule."],
         "platform":"Netflix","episodes":"8","languages":"English","status":"Coming Soon",
         "release_date":"October 10, 2026","expected_date":"","season":"","amount":"","domestic_amount":"","worldwide_amount":"","days_since_release":"",
@@ -3120,7 +3181,6 @@ def self_test():
     assert "What to Know" not in rendered and "Vocabulary" not in rendered
     assert "📌" in rendered and "What's New:" in rendered
     assert "📺" in rendered and "Availability" in rendered
-    assert "Hollywood" in rendered and "Deadline" in rendered
     assert "<details>" in rendered and "<summary>ℹ️ More to Know</summary>" in rendered
     assert "<a href=\"https://deadline.com/example/story\">Deadline</a>" in rendered
     assert rich_visible_length(rendered) <= MAX_RICH_CHARACTERS
@@ -3228,7 +3288,7 @@ def self_test():
             @staticmethod
             def create(**kwargs):
                 ids=[int(x.split("ID: ")[1].split("\n")[0]) for x in kwargs["messages"][1]["content"].split("\n") if x.startswith("ID: ")]
-                return FakeResponse({"ranked":[{"id":i,"rank":1,"sector":"Hollywood","source_class":"official","significance":20,"reach":15,"event_magnitude":15,"platform_ip_strength":10,"source_authority":15,"evidence_strength":10,"international_relevance":5,"recency":5,"audience_anticipation":5,"topic":"Major Film Announcements","institution":"Netflix","event_key":f"event_{i}","reason":"major"} for i in ids]})
+                return FakeResponse({"ranked":[{"id":i,"rank":1,"sector":"Hollywood","source_class":"official","significance":20,"reach":15,"event_magnitude":15,"platform_ip_strength":10,"source_authority":15,"evidence_strength":10,"international_relevance":5,"recency":5,"audience_anticipation":5,"topic":"Major Film Announcements","institution":"Netflix","event_key":f"event_{i}","priority_type":("OTT / Streaming Availability" if i == 1 else ("Trailer Releases" if i == 2 else "Box Office Updates")),"reason":"major"} for i in ids]})
     original_c=globals()["cerebras"]; original_e=globals()["enrich_thin_excerpts"]
     globals()["cerebras"]=type("FakeCerebras",(),{"chat":FakeChat()})(); globals()["enrich_thin_excerpts"]=lambda xs:xs
     try:
@@ -3237,6 +3297,26 @@ def self_test():
         assert len(ranked_test)==16 and [x["editor_rank"] for x in ranked_test]==list(range(1,17))
     finally:
         globals()["cerebras"]=original_c; globals()["enrich_thin_excerpts"]=original_e
+
+    # Image framing regression: complete portrait poster fits to 1200x675 without crop.
+    poster = Image.new("RGB", (800, 1200), (40, 50, 60))
+    framed = fit_full_poster(poster)
+    assert framed.size == (1200, 675)
+
+    # Poster path must bypass normal channel branding.
+    original_download = globals()["download_image"]
+    original_brand = globals()["branded_card"]
+    try:
+        globals()["download_image"] = lambda url, ref: poster
+        globals()["branded_card"] = lambda image: (_ for _ in ()).throw(AssertionError("poster branding path used"))
+        poster_path = prepare_image(dict(sample, image_url="https://example.com/poster.jpg", priority_type="OTT / Streaming Availability"), 99)
+        assert Image.open(poster_path).size == (1200, 675)
+    finally:
+        globals()["download_image"] = original_download
+        globals()["branded_card"] = original_brand
+
+    fallback_card = _source_logo_card(Image.new("RGBA", (600, 200), (255, 255, 255, 255)))
+    assert fallback_card.size == (1200, 675)
 
     logger.info("EntertainmentNewsroom V1 self-test passed.")
 
