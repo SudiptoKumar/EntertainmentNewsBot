@@ -59,9 +59,9 @@ BD_TZ = ZoneInfo("Asia/Dhaka")
 
 # Version 1 editorial target: up to six entertainment stories whenever enough
 # eligible news exists. All entertainment stories compete in one ranked pool.
-STORIES_PER_RUN = 6
-MAX_STORIES_PER_RUN = STORIES_PER_RUN
-RANKING_POOL_SIZE = 24
+PUBLISH_THRESHOLD = 80
+RANKING_BATCH_SIZE = 15
+MAX_RANK_CANDIDATES = 120
 DISCOVERY_LOOKBACK_HOURS = 24
 
 # Reliability / quality
@@ -121,15 +121,36 @@ RSS_FEEDS = [
 # ============================================================
 # TAXONOMY: ENTERTAINMENT NEWS
 # ============================================================
-TOPICS={"Entertainment":["Major Film Announcements","Major Series Announcements","Casting","Trailers and First Looks","Production Starts","Production Wraps","Release Dates","Renewals and Cancellations","Streaming Premieres","Streaming Platform News","OTT Rights and Distribution","Franchises and IP","Hollywood","Indian Cinema","Korean Drama","Chinese Drama","International Distribution","Studio Business","Platform Business","Acquisitions and Mergers","Cinema Industry","Production Deals","Major Awards and Recognition"]}
+SECTORS=["Hollywood","Indian","International"]
+TOPICS={"Entertainment":["Major Film Announcements","Major Series Announcements","Casting","Trailers and First Looks","Production Starts","Production Wraps","Release Dates","Renewals and Cancellations","Streaming Premieres","Streaming Platform News","OTT Rights and Distribution","Franchises and IP","Studio Business","Platform Business","Acquisitions and Mergers","Cinema Industry","Production Deals","Major Awards and Recognition","Box Office","International Distribution"]}
 INSTITUTIONS=["Netflix","Amazon","Prime Video","HBO","HBO Max","Warner Bros.","Warner Bros. Discovery","Disney","Disney+","Hulu","Apple TV+","Paramount","Paramount+","Universal Pictures","Sony Pictures","Marvel","DC","JioHotstar","SonyLIV","Viki","TVING","iQIYI","Tencent Video","Youku","Yash Raj Films","Dharma Productions","A24","Lionsgate","MGM"]
 SOURCE_NAMES={"deadline.com":"Deadline","variety.com":"Variety","hollywoodreporter.com":"The Hollywood Reporter","thewrap.com":"TheWrap","indiewire.com":"IndieWire","collider.com":"Collider","tvline.com":"TVLine","ottplay.com":"OTTplay","filmibeat.com":"Filmibeat","pinkvilla.com":"Pinkvilla","bollywoodhungama.com":"Bollywood Hungama","gadgets360.com":"Gadgets 360","soompi.com":"Soompi","dramazoom.com":"DramaZOOM","mydramalist.com":"MyDramaList","asianwiki.com":"AsianWiki","whats-on-netflix.com":"What's on Netflix","netflix.com":"Netflix Tudum","press.wbd.com":"Warner Bros. Discovery / HBO Max Pressroom","apple.com":"Apple TV Press","aboutamazon.com":"Prime Video / Amazon News","aboutamazon.in":"Prime Video / Amazon News","marvel.com":"Marvel","dc.com":"DC","sonypictures.com":"Sony Pictures","paramount.com":"Paramount","universalpictures.com":"Universal Pictures"}
+CATEGORY_HASHTAGS={"Major Film Announcements":["#Movies","#Film"],"Major Series Announcements":["#Series","#Streaming"],"Casting":["#Casting"],"Trailers and First Looks":["#Trailer"],"Production Starts":["#Production"],"Production Wraps":["#Production"],"Release Dates":["#ReleaseDate"],"Renewals and Cancellations":["#Streaming"],"Streaming Premieres":["#Streaming"],"Streaming Platform News":["#Streaming"],"OTT Rights and Distribution":["#OTT"],"Franchises and IP":["#Franchise"],"Studio Business":["#FilmIndustry"],"Platform Business":["#Streaming"],"Acquisitions and Mergers":["#MediaBusiness"],"Cinema Industry":["#Cinema"],"Production Deals":["#Production"],"Major Awards and Recognition":["#Awards"],"Box Office":["#BoxOffice"],"International Distribution":["#Distribution"]}
+TOPIC_ALIASES={"casting":"Casting","cast":"Casting","trailer":"Trailers and First Looks","teaser":"Trailers and First Looks","release date":"Release Dates","release":"Release Dates","renewed":"Renewals and Cancellations","renewal":"Renewals and Cancellations","cancelled":"Renewals and Cancellations","canceled":"Renewals and Cancellations","streaming":"Streaming Platform News","ott":"Streaming Platform News","distribution":"OTT Rights and Distribution","rights":"OTT Rights and Distribution","franchise":"Franchises and IP","bollywood":"Indian Cinema","acquisition":"Acquisitions and Mergers","merger":"Acquisitions and Mergers","studio":"Studio Business","box office":"Box Office"}
+def canonical_topic(topic,region="Entertainment"):
+    key=safe_text(topic).lower().strip()
+    if key in TOPIC_ALIASES:return TOPIC_ALIASES[key]
+    for item in TOPICS["Entertainment"]:
+        if key==item.lower():return item
+    patterns=[(("cast","actor","actress","star"),"Casting"),(("trailer","teaser","first look","poster"),"Trailers and First Looks"),(("release date","premiere date","release"),"Release Dates"),(("renew","cancel","cancellation"),"Renewals and Cancellations"),(("streaming premiere","premieres","debut"),"Streaming Premieres"),(("netflix","prime video","hbo","disney+","apple tv","streaming platform"),"Streaming Platform News"),(("rights","distribution","international release"),"OTT Rights and Distribution"),(("franchise","sequel","spinoff","spin-off","adaptation"),"Franchises and IP"),(("bollywood","indian cinema","pan-indian","telugu","tamil","malayalam","hindi cinema"),"Indian Cinema"),(("acquisition","acquires","merger"),"Acquisitions and Mergers"),(("production starts","begins production","starts filming"),"Production Starts"),(("wraps production","production wrapped","wraps filming"),"Production Wraps"),(("box office","opening weekend","gross"),"Box Office"),(("studio","layoff","jobs","business"),"Studio Business")]
+    for needles,canon in patterns:
+        if any(n in key for n in needles):return canon
+    return "Major Film Announcements"
+def normalize_sector(value):
+    raw=safe_text(value).strip().lower(); aliases={"indian cinema":"Indian","india":"Indian","bollywood":"Indian","international":"International","global":"International","hollywood":"Hollywood","us":"Hollywood","u.s.":"Hollywood"}
+    if raw in aliases:return aliases[raw]
+    if safe_text(value) in SECTORS:return safe_text(value)
+    return "International"
+def sector_hashtag(sector):
+    return {"Hollywood":"#Hollywood","Indian":"#IndianCinema","International":"#International"}.get(normalize_sector(sector),"#International")
+def category_hashtags(story):
+    tags=[]
+    for tag in CATEGORY_HASHTAGS.get(safe_text(story.get("topic")),[]):
+        if tag not in tags:tags.append(tag)
+    for tag in [sector_hashtag(story.get("sector")),"#Entertainment"]:
+        if tag not in tags:tags.append(tag)
+    return tags[:3]
 
-# ============================================================
-# CATEGORY METADATA
-CATEGORY_HASHTAGS={"Major Film Announcements":["#Movies","#Film"],"Major Series Announcements":["#Series","#Streaming"],"Casting":["#Casting","#Movies"],"Trailers and First Looks":["#Trailer","#Movies"],"Production Starts":["#Production","#Film"],"Production Wraps":["#Production","#Film"],"Release Dates":["#ReleaseDate","#Movies"],"Renewals and Cancellations":["#Streaming","#TV"],"Streaming Premieres":["#Streaming","#Series"],"Streaming Platform News":["#Streaming","#OTT"],"OTT Rights and Distribution":["#OTT","#Distribution"],"Franchises and IP":["#Franchise","#Movies"],"Hollywood":["#Hollywood","#Movies"],"Indian Cinema":["#IndianCinema","#Bollywood"],"Korean Drama":["#KDrama","#KoreanDrama"],"Chinese Drama":["#CDrama","#ChineseDrama"],"International Distribution":["#Distribution","#Streaming"],"Studio Business":["#FilmIndustry","#Studios"],"Platform Business":["#Streaming","#MediaBusiness"],"Acquisitions and Mergers":["#MediaBusiness","#Mergers"],"Cinema Industry":["#Cinema","#FilmIndustry"],"Production Deals":["#Production","#FilmIndustry"],"Major Awards and Recognition":["#Awards","#Entertainment"]}
-CATEGORY_GROUPS={"Film":{"Major Film Announcements","Casting","Trailers and First Looks","Production Starts","Production Wraps","Release Dates","Franchises and IP","Hollywood","Indian Cinema","Cinema Industry"},"Series":{"Major Series Announcements","Renewals and Cancellations","Streaming Premieres","Korean Drama","Chinese Drama"},"Streaming":{"Streaming Platform News","OTT Rights and Distribution","International Distribution","Platform Business"},"Industry":{"Studio Business","Acquisitions and Mergers","Production Deals","Major Awards and Recognition"}}
-TOPIC_ALIASES={"casting":"Casting","cast":"Casting","trailer":"Trailers and First Looks","teaser":"Trailers and First Looks","release date":"Release Dates","release":"Release Dates","renewed":"Renewals and Cancellations","renewal":"Renewals and Cancellations","cancelled":"Renewals and Cancellations","canceled":"Renewals and Cancellations","streaming":"Streaming Platform News","ott":"Streaming Platform News","distribution":"OTT Rights and Distribution","rights":"OTT Rights and Distribution","franchise":"Franchises and IP","bollywood":"Indian Cinema","k-drama":"Korean Drama","korean drama":"Korean Drama","c-drama":"Chinese Drama","chinese drama":"Chinese Drama","acquisition":"Acquisitions and Mergers","merger":"Acquisitions and Mergers","studio":"Studio Business"}
 def canonical_topic(topic,region="Entertainment"):
     key=safe_text(topic).lower().strip()
     if key in TOPIC_ALIASES:return TOPIC_ALIASES[key]
@@ -1346,96 +1367,43 @@ def queue_candidates_for_region(
 # VERSION 1 EDITORIAL RANKING
 # ============================================================
 
-RANK_SCHEMA = {
-    "type": "object",
-    "properties": {
-        "ranked": {
-            "type": "array",
-            "items": {
-                "type": "object",
-                "properties": {
-                    "id": {"type": "integer"},
-                    "rank": {"type": "integer", "minimum": 1},
-                    "score": {"type": "integer", "minimum": 0, "maximum": 10},
-                    "important": {"type": "boolean"},
-                    "topic": {"type": "string"},
-                    "institution": {"type": "string"},
-                    "event_key": {"type": "string"},
-                    "reason": {"type": "string"},
-                },
-                "required": ["id", "rank", "score", "important", "topic", "institution", "event_key", "reason"],
-                "additionalProperties": False,
-            },
-        }
-    },
-    "required": ["ranked"],
-    "additionalProperties": False,
-}
-
-
-def enrich_thin_excerpt(item):
-    """Best-effort article enrichment. Failure never removes a candidate."""
-    try:
-        downloaded = trafilatura.fetch_url(item["url"])
-        if not downloaded:
-            return None
-        text = trafilatura.extract(downloaded)
-        return safe_text(text)[:1200] if text else None
-    except Exception:
-        return None
-
-
-def enrich_thin_excerpts(regional):
-    enriched = 0
-    for item in regional:
-        if enriched >= MAX_EXCERPT_ENRICH:
-            break
-        excerpt = safe_text(item.get("excerpt", ""))
-        if len(excerpt) >= THIN_EXCERPT_CHARS:
-            continue
-        fuller = enrich_thin_excerpt(item)
-        if fuller and len(fuller) > len(excerpt):
-            item["excerpt"] = fuller
-            enriched += 1
-    return regional
-
-
-def rank_candidates(candidates, region):
-    """Rank all usable candidates in bounded batches of 15."""
+RANK_SCHEMA={"type":"object","properties":{"ranked":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer"},"rank":{"type":"integer","minimum":1},"sector":{"type":"string","enum":SECTORS},"source_class":{"type":"string","enum":["official","reported","rumor"]},"significance":{"type":"integer","minimum":0,"maximum":20},"reach":{"type":"integer","minimum":0,"maximum":15},"event_magnitude":{"type":"integer","minimum":0,"maximum":15},"platform_ip_strength":{"type":"integer","minimum":0,"maximum":10},"source_authority":{"type":"integer","minimum":0,"maximum":15},"evidence_strength":{"type":"integer","minimum":0,"maximum":10},"international_relevance":{"type":"integer","minimum":0,"maximum":5},"recency":{"type":"integer","minimum":0,"maximum":5},"audience_anticipation":{"type":"integer","minimum":0,"maximum":5},"topic":{"type":"string"},"institution":{"type":"string"},"event_key":{"type":"string"},"reason":{"type":"string"}},"required":["id","rank","sector","source_class","significance","reach","event_magnitude","platform_ip_strength","source_authority","evidence_strength","international_relevance","recency","audience_anticipation","topic","institution","event_key","reason"],"additionalProperties":False}}},"required":["ranked"],"additionalProperties":False}
+def rank_score(row):
+    score=sum(int(row.get(k,0)) for k in ["significance","reach","event_magnitude","platform_ip_strength","source_authority","evidence_strength","international_relevance","recency","audience_anticipation"])
+    if safe_text(row.get("source_class")).lower()=="rumor":score=min(score,69)
+    return max(0,min(100,score))
+def rank_candidates(candidates,region):
     if not candidates:return []
-    regional=sorted(candidates,key=lambda x:parse_datetime(x.get("published_date")) or datetime.min.replace(tzinfo=timezone.utc),reverse=True)[:60]
-    regional=enrich_thin_excerpts(regional)
-    rows=[]
-    for offset in range(0,len(regional),15):
-        batch=regional[offset:offset+15]
-        lines=[]
+    regional=sorted(candidates,key=lambda x:parse_datetime(x.get("published_date")) or datetime.min.replace(tzinfo=timezone.utc),reverse=True)[:MAX_RANK_CANDIDATES]
+    regional=enrich_thin_excerpts(regional); rows=[]
+    for offset in range(0,len(regional),RANKING_BATCH_SIZE):
+        batch=regional[offset:offset+RANKING_BATCH_SIZE]; lines=[]
         for idx,item in enumerate(batch,1):
             dt=parse_datetime(item.get("published_date")); age=f"Age: {max(0.0,(NOW_BD-dt).total_seconds()/3600):.1f} hours" if dt else ""
-            lines.append("\n".join([f"ID: {idx}",f"Title: {item.get('title','')}",f"Source: {item.get('source','')}",f"Published: {item.get('published_date','')}",age,f"Excerpt: {trim_source_text(item.get('excerpt',''),700)}",""]))
-        prompt=f"""You are the editor-in-chief of @EntertainmentNewsroom.
-Rank these entertainment news candidates from MOST IMPORTANT to LEAST IMPORTANT.
-Use the previous 24 hours. Prioritize major film/series developments, flagship streaming platforms, major franchises/IP, marquee casting, trailers, production starts/wraps, release-date changes, renewals/cancellations, rights acquisitions, international distribution, and significant Hollywood, Indian, Korean and Chinese productions.
-Deprioritize routine promotion, generic interviews, minor updates, low-profile casting, unsupported rumors/leaks/speculation, duplicates and niche stories.
-Score EVERY candidate 0-10: 9-10 exceptional; 7-8 clearly important and publishable; 4-6 interesting but normally not publishable; 0-3 low-value/routine/promotional/unsupported/niche. important MUST be true only when score >= 7. Do not inflate scores to fill six slots. Return EVERY candidate with rank, score, important, topic, institution, event_key and reason.
-Allowed topics: {', '.join(TOPICS['Entertainment'])}"""
+            lines.append("\n".join([f"ID: {idx}",f"Title: {item.get('title','')}",f"Source: {item.get('source','')}",f"Published: {item.get('published_date','')}",age,f"Excerpt: {trim_source_text(item.get('excerpt',''),850)}",""]))
+        prompt=f"""You are the senior editor of @EntertainmentNewsroom. Rank these entertainment candidates using a strict 0-100 model.
+Sectors: Hollywood, Indian, International. Hollywood means primarily US/Hollywood entertainment; Indian means India-led cinema/series/OTT; International means major non-Indian, non-Hollywood global entertainment and cross-border developments.
+Judge the underlying event, not headline excitement. Routine celebrity lifestyle, gossip, fashion, generic interviews, minor casting, routine catalog additions, weak promotions, unsupported rumors and duplicates are low priority. Rumor/speculation may be classified but must never reach a publishable score. Official confirmation is stronger than reputable reporting.
+Scoring components must sum to exactly 100: significance 0-20; reach 0-15; event_magnitude 0-15; platform_ip_strength 0-10; source_authority 0-15; evidence_strength 0-10; international_relevance 0-5; recency 0-5; audience_anticipation 0-5.
+Return EVERY candidate with exactly one sector and source_class, plus topic, institution, event_key and reason. Do not invent values beyond the supplied metadata."""
         try:
-            response=cerebras.chat.completions.create(model=CEREBRAS_MODEL,messages=[{"role":"system","content":prompt},{"role":"user","content":"\n".join(lines)}],response_format={"type":"json_schema","json_schema":{"name":"entertainment_news_v1_rank","strict":True,"schema":RANK_SCHEMA}},reasoning_effort="low",temperature=0.0,max_completion_tokens=1800)
-            data=json.loads(safe_text(response.choices[0].message.content)); by_id={i:x for i,x in enumerate(batch,1)}; returned=set()
+            response=cerebras.chat.completions.create(model=CEREBRAS_MODEL,messages=[{"role":"system","content":prompt},{"role":"user","content":"\n".join(lines)}],response_format={"type":"json_schema","json_schema":{"name":"entertainment_news_v11_rank","strict":True,"schema":RANK_SCHEMA}},reasoning_effort="low",temperature=0.0,max_completion_tokens=3600)
+            data=json.loads(safe_text(response.choices[0].message.content)); by_id={i:x for i,x in enumerate(batch,1)}; returned=set(); scored=[]
             for r in data.get("ranked",[]):
                 idx=int(r.get("id",0))
                 if idx not in by_id:continue
-                item=dict(by_id[idx]); score=max(0,min(10,int(r.get("score",0))))
-                item.update({"editor_rank":offset+int(r.get("rank",idx)),"importance_score":score,"important":bool(r.get("important")) and score>=7,"topic":canonical_topic(safe_text(r.get("topic")),region),"institution":safe_text(r.get("institution")),"event_key":safe_text(r.get("event_key")),"rank_reason":safe_text(r.get("reason"))})
-                rows.append(item); returned.add(safe_text(item.get("canonical")))
+                item=dict(by_id[idx]); score=rank_score(r); scored.append((score,int(r.get("rank",9999)),r,item)); returned.add(safe_text(item.get("canonical")))
+            scored.sort(key=lambda x:(-x[0],x[1]))
+            for local,(score,_,r,item) in enumerate(scored,1):
+                item.update({"editor_rank":offset+local,"importance_score":score,"important":score>=PUBLISH_THRESHOLD,"sector":normalize_sector(r.get("sector")),"source_class":safe_text(r.get("source_class")) or "reported","topic":canonical_topic(safe_text(r.get("topic")),region),"institution":safe_text(r.get("institution")),"event_key":safe_text(r.get("event_key")),"rank_reason":safe_text(r.get("reason")),"score_components":{k:int(r.get(k,0)) for k in ["significance","reach","event_magnitude","platform_ip_strength","source_authority","evidence_strength","international_relevance","recency","audience_anticipation"]}}); rows.append(item)
             for idx,item in enumerate(batch,1):
                 if safe_text(item.get("canonical")) not in returned:
-                    fallback=dict(item); fallback.update({"editor_rank":offset+15+idx,"importance_score":0,"important":False,"topic":canonical_topic(item.get("topic",""),region),"institution":"","event_key":"","rank_reason":"Unscored recovery candidate; withheld from publication."}); rows.append(fallback)
+                    fallback=dict(item); fallback.update({"editor_rank":offset+RANKING_BATCH_SIZE+idx,"importance_score":0,"important":False,"sector":"International","source_class":"reported","topic":canonical_topic(item.get("topic",""),region),"institution":"","event_key":"","rank_reason":"Unscored fallback; withheld from publication."}); rows.append(fallback)
         except Exception as exc:
             logger.error("Editorial ranking batch failed for %s: %s",region,exc)
             for idx,item in enumerate(batch,offset+1):
-                row=dict(item); row.update({"editor_rank":idx,"importance_score":0,"important":False,"topic":canonical_topic(item.get("topic",""),region),"institution":"","event_key":"","rank_reason":"Ranking-service failure; candidate withheld."}); rows.append(row)
+                row=dict(item); row.update({"editor_rank":idx,"importance_score":0,"important":False,"sector":"International","source_class":"reported","topic":canonical_topic(item.get("topic",""),region),"institution":"","event_key":"","rank_reason":"Ranking-service failure; candidate withheld."}); rows.append(row)
     return sorted(rows,key=lambda x:(x.get("editor_rank",9999),-(parse_datetime(x.get("published_date")).timestamp() if parse_datetime(x.get("published_date")) else 0)))
-
 
 
 def extract_entities(text):
@@ -1722,37 +1690,7 @@ def extract_article(
 # STORY + KNOWLEDGE GENERATION
 # ============================================================
 
-STORY_SCHEMA = {
-    "type": "object",
-    "properties": {
-        "headline": {"type": "string"},
-        "summary": {"type": "string"},
-        "format": {"type":"string","enum":["Film","Series","Streaming","Industry"]},
-        "highlights": {
-            "type": "array",
-            "items": {"type": "string"},
-            "minItems": 3,
-            "maxItems": 5,
-        },
-        "why_it_matters": {"type": "string"},
-        "whats_next": {"type": "string"},
-        "bold_terms": {
-            "type": "array",
-            "items": {"type": "string"},
-            "maxItems": 16,
-        },
-    },
-    "required": [
-        "headline",
-        "summary",
-        "format",
-        "highlights",
-        "why_it_matters",
-        "whats_next",
-        "bold_terms",
-    ],
-    "additionalProperties": False,
-}
+STORY_SCHEMA={"type":"object","properties":{"headline":{"type":"string"},"summary":{"type":"string"},"sector":{"type":"string","enum":SECTORS},"format":{"type":"string","enum":["Film","Series","Streaming","Industry"]},"news_type":{"type":"string","enum":["Confirmed","Reported","Now Streaming","Trailer","Renewal","Cancellation","Release Date","Box Office","Industry","Casting","Production","Distribution","Announcement"]},"highlights":{"type":"array","items":{"type":"string"},"minItems":3,"maxItems":5},"platform":{"type":"string"},"episodes":{"type":"string"},"languages":{"type":"string"},"status":{"type":"string"},"release_date":{"type":"string"},"expected_date":{"type":"string"},"season":{"type":"string"},"amount":{"type":"string"},"domestic_amount":{"type":"string"},"worldwide_amount":{"type":"string"},"days_since_release":{"type":"string"},"reported_details":{"type":"array","items":{"type":"string"},"maxItems":4},"framing_line":{"type":"string"},"spoiler":{"type":"string"},"note":{"type":"string"},"bold_terms":{"type":"array","items":{"type":"string"},"maxItems":18}},"required":["headline","summary","sector","format","news_type","highlights","platform","episodes","languages","status","release_date","expected_date","season","amount","domestic_amount","worldwide_amount","days_since_release","reported_details","framing_line","spoiler","note","bold_terms"],"additionalProperties":False}
 
 
 def first_sentence(text):
@@ -1804,40 +1742,25 @@ def first_sentence(text):
     )
 
 
-def generate_story(item, article_text):
-    topic_hint=item.get("topic","")
-    prompt=f"""You are a senior newspaper entertainment editor and entertainment knowledge editor for @EntertainmentNewsroom.
-Create a compact Telegram entertainment news card from the source article.
-Primary topic: {topic_hint}
-Return ONLY valid JSON matching the schema.
-PUBLIC CONTENT:
-- Headline: 6-14 words, accurate, newspaper style.
-- Summary: exactly ONE complete sentence, about 18-28 words.
-- Format: exactly one of Film, Series, Streaming, Industry.
-- Highlights: 3-5 short factual points.
-- Why it Matters: 2-4 complete sentences explaining audience, platform, industry or business significance.
-- What's Next: 1-2 complete sentences stating what audiences, platforms, studios or the industry should watch for next.
-- No repetition, ellipses, hashtags, Markdown or HTML in generated fields.
-BOLD TERMS: include important film/series titles, actors, directors, studios, platforms, figures, prices, dates and release details appearing in the headline, summary or highlights.
-The public post order is: Photo, # HEADLINE, 1-sentence summary, Format line, KEY HIGHLIGHTS, WHY IT MATTERS, WHAT'S NEXT, hashtags, Source."""
-    user=f"REGION: {item['region']}\nSOURCE: {item['source']}\nTITLE: {item['title']}\nDATE: {item['published_date']}\n\nARTICLE:\n{article_text[:12000]}"
+def generate_story(item,article_text):
+    sector=normalize_sector(item.get("sector"))
+    prompt=f"""You are the senior newspaper entertainment editor for @EntertainmentNewsroom. Create a factual Telegram news card. Sector: {sector}. Editorial score: {item.get('importance_score',0)}/100.
+Rules: headline 6-14 words; summary exactly one sentence; sector exactly Hollywood/Indian/International; format Film/Series/Streaming/Industry; choose a precise news_type; 3-5 factual highlights. Populate only the template fields supported by the source; leave irrelevant dynamic fields empty. Use the exact Telegram template variant matching news_type. Spoiler is empty unless a real plot/finale/twist reveal is central. No unsupported facts, numbers, dates, cast, platforms or status claims. No hashtags, Markdown or HTML inside JSON.
+Return only valid JSON matching the schema."""
+    user=f"REGION: Entertainment\nSECTOR: {sector}\nSOURCE: {item['source']}\nSOURCE CLASS: {item.get('source_class','reported')}\nTITLE: {item['title']}\nDATE: {item['published_date']}\n\nARTICLE:\n{article_text[:14000]}"
     for attempt in range(3):
         try:
-            response=cerebras.chat.completions.create(model=CEREBRAS_MODEL,messages=[{"role":"system","content":prompt},{"role":"user","content":user}],response_format={"type":"json_schema","json_schema":{"name":"entertainment_news_story_v10","strict":True,"schema":STORY_SCHEMA}},reasoning_effort="low",temperature=0.2,max_completion_tokens=1400)
-            data=json.loads(safe_text(response.choices[0].message.content)); headline=clean_generated_text(data.get("headline")); summary=first_sentence(data.get("summary")); format_label=safe_text(data.get("format"))
-            if format_label not in {"Film","Series","Streaming","Industry"}:raise ValueError("Invalid entertainment format")
-            highlights=[clean_generated_text(x) for x in data.get("highlights",[]) if clean_generated_text(x)]
-            if not 3<=len(highlights)<=5:raise ValueError("Highlights must contain 3-5 points")
-            why=clean_generated_text(data.get("why_it_matters")); nxt=clean_generated_text(data.get("whats_next"))
-            why_count=len(re.findall(r"(?<=[.!?])\s+",why))+(1 if why and why[-1] in ".!?" else 0)
-            next_count=len(re.findall(r"(?<=[.!?])\s+",nxt))+(1 if nxt and nxt[-1] in ".!?" else 0)
-            if not headline or not summary or not complete_text(headline) or not complete_text(summary) or any(not complete_text(x) for x in highlights) or not complete_text(why) or not complete_text(nxt) or not (2<=why_count<=4) or not (1<=next_count<=2):raise ValueError("Incomplete or invalid story structure")
-            return {**item,"headline":trim_source_text(headline,110),"summary":trim_source_text(summary,260),"format":format_label,"highlights":[trim_source_text(x,130) for x in highlights],"why_it_matters":trim_source_text(why,520),"whats_next":trim_source_text(nxt,260),"bold_terms":[safe_text(x) for x in data.get("bold_terms",[]) if safe_text(x)]}
+            response=cerebras.chat.completions.create(model=CEREBRAS_MODEL,messages=[{"role":"system","content":prompt},{"role":"user","content":user}],response_format={"type":"json_schema","json_schema":{"name":"entertainment_news_story_v11","strict":True,"schema":STORY_SCHEMA}},reasoning_effort="low",temperature=0.15,max_completion_tokens=1700)
+            data=json.loads(safe_text(response.choices[0].message.content)); headline=clean_generated_text(data.get("headline")); summary=first_sentence(data.get("summary")); highlights=[clean_generated_text(x) for x in data.get("highlights",[]) if clean_generated_text(x)]; spoiler=clean_generated_text(data.get("spoiler")); note=clean_generated_text(data.get("note")); fmt=safe_text(data.get("format")); news_type=safe_text(data.get("news_type")); out_sector=normalize_sector(data.get("sector"));
+            allowed_types={"Confirmed","Reported","Now Streaming","Trailer","Renewal","Cancellation","Release Date","Box Office","Industry","Casting","Production","Distribution","Announcement"}
+            if not headline or not summary or not complete_text(headline) or not complete_text(summary) or fmt not in {"Film","Series","Streaming","Industry"} or news_type not in allowed_types or not (3<=len(highlights)<=5) or any(not complete_text(x) for x in highlights) or (spoiler and not complete_text(spoiler)): raise ValueError("Invalid story structure")
+            dynamic_fields={k:trim_source_text(clean_generated_text(data.get(k)),700) for k in ["platform","episodes","languages","status","release_date","expected_date","season","amount","domestic_amount","worldwide_amount","days_since_release","framing_line","note"]}
+            dynamic_fields["reported_details"]=[trim_source_text(clean_generated_text(x),180) for x in data.get("reported_details",[]) if clean_generated_text(x)][:4]
+            return {**item,"headline":trim_source_text(headline,120),"summary":trim_source_text(summary,300),"sector":out_sector,"format":fmt,"news_type":news_type,"highlights":[trim_source_text(x,150) for x in highlights],**dynamic_fields,"spoiler":trim_source_text(spoiler,700),"bold_terms":[safe_text(x) for x in data.get("bold_terms",[]) if safe_text(x)]}
         except Exception as exc:
             logger.warning("Story generation attempt %d failed: %s",attempt+1,exc)
-            if attempt==0:time.sleep(1)
+            if attempt<2:time.sleep(1)
     return None
-
 
 
 # ============================================================
@@ -2147,52 +2070,110 @@ def bold_terms_html(
 # ============================================================
 
 def dynamic_rich_html(story):
-    terms=derive_bold_terms(story); format_label=safe_text(story.get("format","Film"))
-    if format_label not in {"Film","Series","Streaming","Industry"}:format_label="Film"
-    parts=['<img src="tg://photo?id=newsphoto">',"<h1>"+escape_rich_html(story["headline"])+"</h1>","<p>"+bold_terms_html(story["summary"],terms)+"</p>","<aside>"+escape_rich_html(format_label)+"</aside>","<h2>KEY HIGHLIGHTS</h2>","<p>"+"<br>".join("• "+bold_terms_html(p,terms) for p in story.get("highlights",[]))+"</p>","<h2>WHY IT MATTERS</h2>","<p>"+bold_terms_html(story.get("why_it_matters",""),terms)+"</p>","<blockquote expandable><b>WHAT'S NEXT</b><br>"+bold_terms_html(story.get("whats_next",""),terms)+"</blockquote>"]
-    hashtags=" ".join(category_hashtags(story))
-    if hashtags:parts.append("<p>"+escape_rich_html(hashtags)+"</p>")
-    source=escape_rich_html(story["source"]); url=html.escape(story["url"],quote=True)
-    parts.append("<footer><b>Source:</b> "+f'<a href="{url}">{source}</a>'+"</footer>")
+    """Render exactly one of the approved Template.md variants.
+
+    No THE CONTEXT or BOTTOM LINE blocks are generated. The selected
+    structure depends on the verified news_type.
+    """
+    terms = derive_bold_terms(story)
+    sector = normalize_sector(story.get("sector"))
+    fmt = safe_text(story.get("format", "Film"))
+    news_type = safe_text(story.get("news_type", "Confirmed"))
+    title = escape_rich_html(story.get("headline", ""))
+    summary = bold_terms_html(story.get("summary", ""), terms)
+    source = escape_rich_html(story.get("source", ""))
+    url = html.escape(story.get("url", ""), quote=True)
+    hashtag_text = " ".join(category_hashtags(story))
+
+    hooks = {
+        "Now Streaming": "*🔥 NOW STREAMING*",
+        "Trailer": f"*🎞️ TRAILER DROP: {title}*",
+        "Renewal": f"*⚡ RENEWED: {title}*",
+        "Cancellation": f"*❌ CANCELLED: {title}*",
+        "Box Office": f"*💰 BOX OFFICE: {title}*",
+        "Reported": f"*🚨 BREAKING: _{title}_ UPDATE!*",
+        "Confirmed": "*📢 CONFIRMED*",
+        "Release Date": "*📅 RELEASE UPDATE*",
+        "Distribution": "*🌍 DISTRIBUTION UPDATE*",
+        "Casting": "*🎭 CASTING UPDATE*",
+        "Production": "*🎬 PRODUCTION UPDATE*",
+        "Industry": "*🏢 INDUSTRY UPDATE*",
+        "Announcement": "*📢 CONFIRMED*",
+    }
+    hook = hooks.get(news_type, "*📢 CONFIRMED*")
+    meta = f"_{escape_rich_html(sector)} • {escape_rich_html(fmt)} • {escape_rich_html(news_type)}_"
+    parts = ['<img src="tg://photo?id=newsphoto">', hook, f"*🎬 {title}*", meta]
+
+    if news_type == "Now Streaming":
+        parts += [f"> 📖 {summary}", "📺 *Availability*",
+                  f"• Platform: `{escape_rich_html(story.get('platform',''))}`",
+                  f"• Episodes: `{escape_rich_html(story.get('episodes',''))}`",
+                  f"• Language: `{escape_rich_html(story.get('languages',''))}`",
+                  f"• Status: `{escape_rich_html(story.get('status','Available Now'))}`",
+                  f"📅 *Release:* {escape_rich_html(story.get('release_date',''))}"]
+        link_label = "Watch Now"
+    elif news_type == "Reported":
+        parts += [f"📌 *Reported Details:*", *[f"• {bold_terms_html(x,terms)}" for x in story.get("reported_details",[])]]
+        if story.get("expected_date"): parts.append(f"📅 *Expected:* {escape_rich_html(story.get('expected_date'))}")
+        if story.get("note"): parts.append(f"> ℹ️ {bold_terms_html(story.get('note'),terms)}")
+        link_label = "Source"
+    elif news_type == "Trailer":
+        parts += [f"📌 {summary}", f"📅 *Releases:* {escape_rich_html(story.get('release_date',''))}"]
+        link_label = "Watch Trailer"
+    elif news_type in {"Renewal", "Cancellation"}:
+        season = story.get("season")
+        if season: parts.append(f"📌 {escape_rich_html(title)} {('renewed' if news_type=='Renewal' else 'cancelled')} for Season `{escape_rich_html(season)}`")
+        else: parts.append(f"📌 {summary}")
+        if story.get("platform"): parts.append(f"📺 Platform: `{escape_rich_html(story.get('platform'))}`")
+        if story.get("note"): parts.append(f"> ℹ️ {bold_terms_html(story.get('note'),terms)}")
+        link_label = "Source"
+    elif news_type == "Box Office":
+        if story.get("amount"): parts.append(f"📌 *{bold_terms_html(story.get('amount'),terms)}*")
+        if story.get("domestic_amount"): parts.append(f"• Domestic: `{escape_rich_html(story.get('domestic_amount'))}`")
+        if story.get("worldwide_amount"): parts.append(f"• Worldwide: `{escape_rich_html(story.get('worldwide_amount'))}`")
+        if story.get("days_since_release"): parts.append(f"📅 Days since release: `{escape_rich_html(story.get('days_since_release'))}`")
+        link_label = "Source"
+    elif story.get("spoiler"):
+        parts += [f"📌 {summary}", "🙈 *Tap to reveal:*", f"||{bold_terms_html(story.get('spoiler'),terms)}||"]
+        if story.get("note"): parts.append(f"> ℹ️ {bold_terms_html(story.get('note'),terms)}")
+        link_label = "Source"
+    else:
+        parts += [f"> 📖 {summary}", "📌 *What's New:"]
+        parts += [f"• {bold_terms_html(x,terms)}" for x in story.get("highlights",[])]
+        if story.get("platform"): parts.append(f"📺 Platform: `{escape_rich_html(story.get('platform'))}`")
+        if story.get("release_date"): parts.append(f"📅 *Release:* {escape_rich_html(story.get('release_date'))}")
+        link_label = "Source"
+
+    # For generic variants, the summary is already used above; for the
+    # core template it is the synopsis block. Avoid duplicate summary text.
+    if news_type not in {"Now Streaming", "Reported", "Trailer", "Renewal", "Cancellation", "Box Office"} and not story.get("spoiler"):
+        pass
+
+    if story.get("spoiler") and news_type not in {"Reported"} and "Tap to reveal:" not in "\n".join(parts):
+        parts += ["🙈 *Spoiler*", f"||{bold_terms_html(story.get('spoiler'),terms)}||"]
+    if hashtag_text:
+        parts.append(escape_rich_html(hashtag_text))
+    parts.append(f"🔗 [{source}]({url})" if link_label == "Source" else f"🔗 [{link_label}]({url})")
     return "\n".join(parts)
 
 
-
 def rich_visible_length(text):
-    """Return Telegram-visible character count for Rich HTML text.
-
-    Telegram limits the rendered text, not the raw HTML markup, so strip
-    tags and decode HTML entities before counting characters.
-    """
     no_tags = re.sub(r"<[^>]+>", "", text)
-    no_attrs = re.sub(
-        r"\[[^\]]+\]\([^)]+\)",
-        lambda m: m.group(0).split("]")[0][1:],
-        no_tags,
-    )
-    return len(html.unescape(no_attrs))
+    return len(html.unescape(no_tags))
 
 
 def fit_rich_html(story):
-    variants = [
-        (260, 130, 520, 260),
-        (220, 115, 440, 220),
-        (190, 100, 380, 200),
-        (160, 85, 320, 170),
-    ]
-
-    for summary_len, highlight_len, why_len, next_len in variants:
+    variants = [300, 240, 190, 160]
+    for limit in variants:
         candidate = dict(story)
-        candidate["summary"] = trim_source_text(story["summary"], summary_len)
-        candidate["highlights"] = [trim_source_text(x, highlight_len) for x in story.get("highlights", [])]
-        candidate["why_it_matters"] = trim_source_text(story.get("why_it_matters", ""), why_len)
-        candidate["whats_next"] = trim_source_text(story.get("whats_next", ""), next_len)
-        html_text = dynamic_rich_html(candidate)
-        if rich_visible_length(html_text) <= MAX_RICH_CHARACTERS:
-            return html_text
-
+        candidate["summary"] = trim_source_text(story.get("summary", ""), limit)
+        candidate["highlights"] = [trim_source_text(x, 150) for x in story.get("highlights", [])]
+        candidate["reported_details"] = [trim_source_text(x, 150) for x in story.get("reported_details", [])]
+        candidate["spoiler"] = trim_source_text(story.get("spoiler", ""), 500)
+        rendered = dynamic_rich_html(candidate)
+        if rich_visible_length(rendered) <= MAX_RICH_CHARACTERS:
+            return rendered
     return dynamic_rich_html(story)
-
 
 
 # ============================================================
@@ -2798,12 +2779,8 @@ def store_event(
 # VERSION 1 FALLBACK POOLS
 # ============================================================
 
-def build_candidate_pool(ranked, needed):
-    """Keep a generous ranked recovery pool for downstream failures."""
-    if not ranked:
-        return []
-    pool_size = max(RANKING_POOL_SIZE, needed * 2)
-    return [dict(item) for item in ranked[:pool_size]]
+def build_candidate_pool(ranked,threshold=PUBLISH_THRESHOLD):
+    return [dict(item) for item in ranked if int(item.get("importance_score",0))>=threshold and bool(item.get("important"))]
 
 
 VERIFY_SCHEMA = {
@@ -3116,81 +3093,39 @@ def prepare_ranked_region(region, candidates):
     return ranked
 
 
-def process_ranked_region(region, ranked):
-    pool = build_candidate_pool(ranked, STORIES_PER_RUN)
-    valid = []
-    attempted = 0
-    rejected = 0
-
+def process_ranked_region(region,ranked):
+    pool=build_candidate_pool(ranked); valid=[]; attempted=0; rejected=0
     for item in pool:
-        if len(valid) >= STORIES_PER_RUN:
-            break
-        attempted += 1
-        story = process_story_candidate(item)
-        if not story:
-            rejected += 1
-            continue
-
-        # Final duplicate check after generation.
-        if is_already_published_candidate({**item, "title": story.get("headline", item.get("title"))}):
-            logger.info("DROP already published event: %s", story.get("headline", ""))
-            rejected += 1
-            continue
-
-        story["topic"] = canonical_topic(story.get("topic"), region)
-        story["category_hashtags"] = category_hashtags(story)
-        valid.append(story)
-        logger.info(
-            "ACCEPT %s #%d: rank=%s title=%s",
-            region,
-            len(valid),
-            item.get("editor_rank", "?"),
-            story.get("headline", ""),
-        )
-
-    logger.info(
-        "%s FINAL VALID: %d/%d | pool=%d attempted=%d rejected=%d",
-        region,
-        len(valid),
-        STORIES_PER_RUN,
-        len(pool),
-        attempted,
-        rejected,
-    )
+        attempted+=1; story=process_story_candidate(item)
+        if not story:rejected+=1; continue
+        if is_already_published_candidate({**item,"title":story.get("headline",item.get("title"))}):rejected+=1; continue
+        story["sector"]=normalize_sector(story.get("sector") or item.get("sector")); story["topic"]=canonical_topic(story.get("topic") or item.get("topic"),region); story["category_hashtags"]=category_hashtags(story); valid.append(story)
+    logger.info("FINAL VALID: %d | threshold=%d/100 | pool=%d attempted=%d rejected=%d",len(valid),PUBLISH_THRESHOLD,len(pool),attempted,rejected)
     return valid
 
 
 def run():
-    logger.info("ENTERTAINMENTNEWSROOM V1 UPDATE-ONLY")
-    logger.info("Channel=%s Mode=%s",TELEGRAM_CHANNEL,NEWS_MODE)
+    logger.info("ENTERTAINMENTNEWSROOM V1.1 UPDATE-ONLY")
+    logger.info("Channel=%s Mode=%s Threshold=%d/100",TELEGRAM_CHANNEL,NEWS_MODE,PUBLISH_THRESHOLD)
     logger.info("LOOKBACK=%d hours | %s -> %s",DISCOVERY_LOOKBACK_HOURS,DISCOVERY_START.isoformat(),DISCOVERY_END.isoformat())
     prune_state(); refresh_category_coverage(); collect_rss()
-    count=queue_candidates_for_region("Entertainment")
-    count+=google_news_gap_fill("Entertainment",count,DISCOVERY_TARGET_PER_REGION)
-    exa_gap_fill("Entertainment",count,DISCOVERY_TARGET_PER_REGION)
-    save_state(STATE)
-    candidates=available_candidates("Entertainment",source_pool="primary")
-    logger.info("DISCOVERY CANDIDATES: ENTERTAINMENT=%d",len(candidates))
-    ranked=prepare_ranked_region("Entertainment",candidates)
-    logger.info("UNIQUE EVENTS: ENTERTAINMENT=%d",len(ranked))
-    stories=process_ranked_region("Entertainment",ranked)
-    logger.info("FINAL: ENTERTAINMENT=%d/%d",len(stories),STORIES_PER_RUN)
-    published_count=0
+    count=queue_candidates_for_region("Entertainment"); count+=google_news_gap_fill("Entertainment",count,DISCOVERY_TARGET_PER_REGION); exa_gap_fill("Entertainment",count,DISCOVERY_TARGET_PER_REGION); save_state(STATE)
+    candidates=available_candidates("Entertainment",source_pool="primary"); logger.info("DISCOVERY CANDIDATES: %d",len(candidates))
+    ranked=prepare_ranked_region("Entertainment",candidates); logger.info("PUBLISHABLE RANKED CANDIDATES: %d",len(ranked))
+    stories=process_ranked_region("Entertainment",ranked); published_count=0
     for index,story in enumerate(stories,1):
         rich_html=fit_rich_html(story)
         if rich_visible_length(rich_html)>MAX_RICH_CHARACTERS:logger.error("Rich message exceeds Telegram limit: %s",story["headline"]);continue
         image_path=prepare_image(story,index); result=send_rich_photo(image_path,rich_html)
-        if not result.get("ok"):
-            logger.warning("Rich Message publish failed; trying Bot API fallback: %s",result.get("description"));result=send_bot_api_fallback(image_path,rich_html)
+        if not result.get("ok"):result=send_bot_api_fallback(image_path,rich_html)
         if result.get("ok"):
-            published_count+=1; message=result.get("result",{}); message_id=message.get("message_id") if isinstance(message,dict) else None; canonical=story["canonical"]; POSTED_URLS.add(canonical); save_posted_url(canonical)
-            qi=STATE["queue"].get(canonical)
+            published_count+=1; message=result.get("result",{}); message_id=message.get("message_id") if isinstance(message,dict) else None; canonical=story["canonical"]; POSTED_URLS.add(canonical); save_posted_url(canonical); qi=STATE["queue"].get(canonical);
             if qi:qi["status"]="posted";qi["posted_at"]=now_iso()
-            store_event(story,published=True,message_id=message_id);remember_posted_event(story);update_category_coverage(story);STATE["recent_titles"].append(normalize_title(story["headline"]))
-            logger.info("Published %d/%d: %s",published_count,MAX_STORIES_PER_RUN,story["headline"])
+            store_event(story,published=True,message_id=message_id); remember_posted_event(story); update_category_coverage(story); STATE["recent_titles"].append(normalize_title(story["headline"]))
+            logger.info("Published #%d score=%s sector=%s: %s",published_count,story.get("importance_score",0),story.get("sector"),story["headline"])
         else:logger.error("Telegram failed: %s",result.get("description"))
-        save_state(STATE);time.sleep(POST_DELAY_SECONDS)
-    save_state(STATE);logger.info("Finished. Published=%d/%d",published_count,MAX_STORIES_PER_RUN)
+        save_state(STATE); time.sleep(POST_DELAY_SECONDS)
+    save_state(STATE); logger.info("Finished. Published=%d",published_count)
 
 
 # ============================================================
@@ -3198,22 +3133,21 @@ def run():
 # ============================================================
 
 def self_test():
-    sample={"headline":"Netflix Sets Release Date For Major New Series","summary":"Netflix has announced the release date for a major new scripted series with a global streaming rollout.","format":"Series","highlights":["Netflix confirmed the series release date.","The title is planned for a global streaming rollout.","The announcement establishes the next major launch milestone.","The series is positioned as a significant platform release."],"why_it_matters":"The announcement gives viewers a concrete launch date for a major scripted project. It also creates a clear milestone for Netflix.","whats_next":"Audiences should watch for the final trailer, episode details and additional launch information.","bold_terms":["Netflix","release date"],"source":"Deadline","url":"https://deadline.com/example/story","region":"Entertainment","topic":"Streaming Premieres","institution":"Netflix"}
+    sample={"headline":"Major Series Locks New Release Date","summary":"The production has confirmed a new release date for the major series.","sector":"Hollywood","format":"Series","news_type":"Release Date","highlights":["The new date has been confirmed.","The series is a major production.","The announcement changes the launch schedule."],"platform":"Netflix","episodes":"8","languages":"English","status":"Coming Soon","release_date":"October 10, 2026","expected_date":"","season":"","amount":"","domestic_amount":"","worldwide_amount":"","days_since_release":"","reported_details":[],"framing_line":"","spoiler":"","note":"","bold_terms":["Netflix","release date"],"source":"Deadline","url":"https://deadline.com/example/story","region":"Entertainment","topic":"Release Dates","institution":"Netflix","importance_score":88,"important":True,"event_key":"major_series_release_date","source_class":"reported"}
     rendered=dynamic_rich_html(sample)
-    assert "WHY IT MATTERS" in rendered and "WHAT'S NEXT" in rendered and "<aside>Series</aside>" in rendered
-    assert rendered.count("• ")==4 and "#Entertainment" in rendered and "@EntertainmentNewsroom" in __import__("inspect").getsource(branded_card)
-    assert canonical_url("https://www.example.com/story/?utm_source=x")=="example.com/story"
-    clustered=cluster_ranked_events([{**sample,"title":"Netflix announces new series","published_date":now_iso()},{**sample,"title":"Netflix announces new series","published_date":now_iso()}])
-    assert clustered and clustered[0]["event_cluster_size"]>=1
-    assert canonical_topic("Netflix streaming")=="Streaming Platform News" and "#Netflix" in category_hashtags(sample)
-    test_state=default_state();test_state["queue"]["example.com/story"]={"region":"Entertainment","published_date":now_iso(),"last_seen":now_iso(),"status":"pending","title":"Example","url":"https://example.com/story"}
-    original=globals()["STATE"];globals()["STATE"]=test_state
+    assert "THE CONTEXT" not in rendered and "BOTTOM LINE" not in rendered
+    assert "Release Date" in rendered and "KEY HIGHLIGHTS" not in rendered
+    assert "Hollywood" in rendered and "Source" in rendered
+    assert rank_score({"significance":20,"reach":15,"event_magnitude":15,"platform_ip_strength":10,"source_authority":15,"evidence_strength":10,"international_relevance":5,"recency":5,"audience_anticipation":5,"source_class":"official"})==100
+    assert normalize_sector("Bollywood")=="Indian"
+    test_state=default_state(); test_state["queue"]["example.com/story"]={"region":"Entertainment","published_date":now_iso(),"last_seen":now_iso(),"status":"pending","title":"Example","url":"https://example.com/story"}
+    original=globals()["STATE"]; globals()["STATE"]=test_state
     try:
         save_state(test_state)
         with open(STATE_FILE,encoding="utf-8") as f:loaded=json.load(f)
         assert loaded["queue"]["example.com/story"]["region"]=="Entertainment"
     finally:globals()["STATE"]=original
-    logger.info("EntertainmentNewsroom V1 self-test passed.")
+    logger.info("EntertainmentNewsroom V1.1.1 self-test passed.")
 
 
 def visible_text_for_test(
