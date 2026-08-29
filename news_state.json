@@ -1,7 +1,17 @@
 {
   "feeds": {},
-  "queue": {},
+  "queue": {
+    "example.com/story": {
+      "region": "Entertainment",
+      "published_date": "2026-08-29T12:16:34.360691+06:00",
+      "last_seen": "2026-08-29T12:16:34.360697+06:00",
+      "status": "pending",
+      "title": "Example",
+      "url": "https://example.com/story"
+    }
+  },
   "events": {},
-  "recent_titles": [],
-  "last_run": null
+  "event_clusters": {},
+  "posted_event_ids": [],
+  "recent_titles": []
 }

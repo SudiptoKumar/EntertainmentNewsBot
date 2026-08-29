@@ -1,74 +1,205 @@
-#!/usr/bin/env python3
-"""EntertainmentNewsroom V1.
-
-RSS/Google News/Exa discovery -> source validation -> event dedupe ->
-Cerebras editorial ranking -> article extraction -> story generation ->
-claim verification -> 1200x675 branded image -> Telegram -> persistent state.
-"""
-from __future__ import annotations
-
-import argparse
-import html
-import json
-import logging
 import os
 import re
+import json
 import time
+import html
+import argparse
+import logging
+import hashlib
 from datetime import datetime, timedelta, timezone
+from zoneinfo import ZoneInfo
+from urllib.parse import urlparse, urljoin, quote
 from difflib import SequenceMatcher
 from email.utils import parsedate_to_datetime
-from pathlib import Path
-from zoneinfo import ZoneInfo
-from urllib.parse import quote_plus, urljoin, urlparse
+from io import BytesIO
 
 import requests
+import feedparser
 import trafilatura
 from bs4 import BeautifulSoup
-from cerebras.cloud.sdk import Cerebras
-from exa_py import Exa
 from PIL import Image, ImageDraw, ImageFont, ImageFile
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
-ROOT = Path(__file__).resolve().parent
-STATE_FILE = ROOT / "news_state.json"
-POSTED_FILE = ROOT / "posted_urls.txt"
+from exa_py import Exa
+from cerebras.cloud.sdk import Cerebras
+
+
+# ============================================================
+# CONFIGURATION
+# ============================================================
 
 EXA_API_KEY = os.environ["EXA_API_KEY"]
 CEREBRAS_API_KEY = os.environ["CEREBRAS_API_KEY"]
 TELEGRAM_BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
-TELEGRAM_CHANNEL = (os.environ.get("TELEGRAM_CHANNEL") or "@EntertainmentNewsroom").strip()
-TELEGRAM_ADMIN_CHAT_ID = (os.environ.get("TELEGRAM_ADMIN_CHAT_ID") or "").strip()
-NEWS_MODE = (os.environ.get("NEWS_MODE") or "update").strip().lower()
-CEREBRAS_MODEL = os.environ.get("CEREBRAS_MODEL", "gpt-oss-120b")
 
-if NEWS_MODE != "update":
-    raise ValueError(f"Invalid NEWS_MODE={NEWS_MODE!r}; expected 'update'")
+TELEGRAM_CHANNEL = (os.environ.get("TELEGRAM_CHANNEL") or "@EntertainmentNewsroom").strip()
+
+# Optional. If set, feed-down alerts go here (a private chat/DM with the
+# bot, not the public channel). If empty, alerts only go to the run log.
+TELEGRAM_ADMIN_CHAT_ID = (os.environ.get("TELEGRAM_ADMIN_CHAT_ID") or "").strip()
+
+NEWS_MODE = (os.environ.get("NEWS_MODE") or "update").strip().lower()
+
+VALID_NEWS_MODES = {"update"}
+if NEWS_MODE not in VALID_NEWS_MODES:
+    raise ValueError(
+        f"Invalid NEWS_MODE={NEWS_MODE!r}; expected one of {sorted(VALID_NEWS_MODES)}"
+    )
+
+CEREBRAS_MODEL = os.environ.get(
+    "CEREBRAS_MODEL",
+    "gpt-oss-120b",
+)
+
+POSTED_FILE = "posted_urls.txt"
+STATE_FILE = "news_state.json"
 
 BD_TZ = ZoneInfo("Asia/Dhaka")
+
+# Version 1 editorial target: up to six entertainment stories whenever enough
+# eligible news exists. All entertainment stories compete in one ranked pool.
 STORIES_PER_RUN = 6
-RECOVERY_POOL_SIZE = 24
-RANK_MAX_CANDIDATES = 60
-LOOKBACK_HOURS = 24
+MAX_STORIES_PER_RUN = STORIES_PER_RUN
+RANKING_POOL_SIZE = 24
+DISCOVERY_LOOKBACK_HOURS = 24
+
+# Reliability / quality
+POST_DELAY_SECONDS = 3.5
+ROLLING_DISCOVERY_HOURS = DISCOVERY_LOOKBACK_HOURS
 FUTURE_TOLERANCE_MINUTES = 10
 QUEUE_RETENTION_DAYS = 4
 EVENT_RETENTION_DAYS = 30
-POST_DELAY_SECONDS = 3.0
-FEED_FAIL_ALERT_THRESHOLD = 3
-MAX_EXA_CANDIDATES = 60
-MAX_GOOGLE_CANDIDATES = 40
 MAX_RSS_CANDIDATES = 240
+MAX_EXA_CANDIDATES = 60
+MAX_GOOGLE_NEWS_CANDIDATES = 40
+THIN_EXCERPT_CHARS = 150
+MAX_EXCERPT_ENRICH = 12
+MAX_SOURCE_PER_RUN = 99
+MAX_RICH_CHARACTERS = 32768
 
-logging.basicConfig(level=logging.INFO, format="%(asctime)s | %(levelname)s | %(message)s")
+# Lightweight English stopwords used only by the conservative event/entity
+# deduplication layer. This is deliberately small so legitimate game entities
+# and meaningful terms are not filtered out.
+STOPWORDS = {
+    "the", "a", "an", "and", "or", "of", "to", "in", "on", "for",
+    "from", "with", "by", "at", "as", "is", "are", "was", "were",
+    "be", "been", "being", "has", "have", "had", "do", "does", "did",
+    "will", "would", "could", "should", "may", "might", "can",
+    "this", "that", "these", "those", "it", "its", "their", "they",
+    "them", "he", "she", "his", "her", "we", "our", "you", "your",
+    "new", "after", "before", "over", "into", "than", "about", "from",
+}
+
+# RSS-first sources. Google News and Exa remain gap-fill discovery.
+RSS_FEEDS = [
+    {"name":"Deadline","region":"Entertainment","url":"https://deadline.com/feed/"},
+    {"name":"Variety","region":"Entertainment","url":"https://variety.com/feed/"},
+    {"name":"The Hollywood Reporter","region":"Entertainment","url":"https://www.hollywoodreporter.com/feed/"},
+    {"name":"TheWrap","region":"Entertainment","url":"https://www.thewrap.com/feed/"},
+    {"name":"IndieWire","region":"Entertainment","url":"https://www.indiewire.com/feed/"},
+    {"name":"Collider","region":"Entertainment","url":"https://collider.com/feed/"},
+    {"name":"TVLine","region":"Entertainment","url":"https://tvline.com/feed/"},
+    {"name":"OTTplay","region":"Entertainment","url":"https://www.ottplay.com/rss"},
+    {"name":"Filmibeat","region":"Entertainment","url":"https://www.filmibeat.com/rss/feeds/filmibeat-news.xml"},
+    {"name":"Pinkvilla","region":"Entertainment","url":"https://www.pinkvilla.com/rss"},
+    {"name":"Bollywood Hungama","region":"Entertainment","url":"https://www.bollywoodhungama.com/feed/"},
+    {"name":"Gadgets 360 Entertainment","region":"Entertainment","url":"https://www.gadgets360.com/entertainment/rss"},
+    {"name":"Soompi","region":"Entertainment","url":"https://www.soompi.com/feed"},
+    {"name":"What's on Netflix","region":"Entertainment","url":"https://www.whats-on-netflix.com/feed/"},
+    {"name":"Netflix Tudum","region":"Entertainment","url":"https://www.netflix.com/tudum/rss.xml"},
+    {"name":"Warner Bros. Discovery / HBO Max Pressroom","region":"Entertainment","url":"https://press.wbd.com/us/en/rss"},
+    {"name":"Apple TV Press","region":"Entertainment","url":"https://www.apple.com/tv-pr/newsroom/feed/"},
+    {"name":"Prime Video / Amazon News","region":"Entertainment","url":"https://www.aboutamazon.com/rss"},
+    {"name":"Marvel","region":"Entertainment","url":"https://www.marvel.com/articles/feed"},
+    {"name":"DC","region":"Entertainment","url":"https://www.dc.com/blog/rss.xml"},
+    {"name":"Sony Pictures","region":"Entertainment","url":"https://www.sonypictures.com/rss"},
+    {"name":"Paramount","region":"Entertainment","url":"https://www.paramount.com/rss"},
+    {"name":"Universal Pictures","region":"Entertainment","url":"https://www.universalpictures.com/rss"},
+]
+
+# ============================================================
+# TAXONOMY: ENTERTAINMENT NEWS
+# ============================================================
+TOPICS={"Entertainment":["Major Film Announcements","Major Series Announcements","Casting","Trailers and First Looks","Production Starts","Production Wraps","Release Dates","Renewals and Cancellations","Streaming Premieres","Streaming Platform News","OTT Rights and Distribution","Franchises and IP","Hollywood","Indian Cinema","Korean Drama","Chinese Drama","International Distribution","Studio Business","Platform Business","Acquisitions and Mergers","Cinema Industry","Production Deals","Major Awards and Recognition"]}
+INSTITUTIONS=["Netflix","Amazon","Prime Video","HBO","HBO Max","Warner Bros.","Warner Bros. Discovery","Disney","Disney+","Hulu","Apple TV+","Paramount","Paramount+","Universal Pictures","Sony Pictures","Marvel","DC","JioHotstar","SonyLIV","Viki","TVING","iQIYI","Tencent Video","Youku","Yash Raj Films","Dharma Productions","A24","Lionsgate","MGM"]
+SOURCE_NAMES={"deadline.com":"Deadline","variety.com":"Variety","hollywoodreporter.com":"The Hollywood Reporter","thewrap.com":"TheWrap","indiewire.com":"IndieWire","collider.com":"Collider","tvline.com":"TVLine","ottplay.com":"OTTplay","filmibeat.com":"Filmibeat","pinkvilla.com":"Pinkvilla","bollywoodhungama.com":"Bollywood Hungama","gadgets360.com":"Gadgets 360","soompi.com":"Soompi","dramazoom.com":"DramaZOOM","mydramalist.com":"MyDramaList","asianwiki.com":"AsianWiki","whats-on-netflix.com":"What's on Netflix","netflix.com":"Netflix Tudum","press.wbd.com":"Warner Bros. Discovery / HBO Max Pressroom","apple.com":"Apple TV Press","aboutamazon.com":"Prime Video / Amazon News","aboutamazon.in":"Prime Video / Amazon News","marvel.com":"Marvel","dc.com":"DC","sonypictures.com":"Sony Pictures","paramount.com":"Paramount","universalpictures.com":"Universal Pictures"}
+
+# ============================================================
+# CATEGORY METADATA
+CATEGORY_HASHTAGS={"Major Film Announcements":["#Movies","#Film"],"Major Series Announcements":["#Series","#Streaming"],"Casting":["#Casting","#Movies"],"Trailers and First Looks":["#Trailer","#Movies"],"Production Starts":["#Production","#Film"],"Production Wraps":["#Production","#Film"],"Release Dates":["#ReleaseDate","#Movies"],"Renewals and Cancellations":["#Streaming","#TV"],"Streaming Premieres":["#Streaming","#Series"],"Streaming Platform News":["#Streaming","#OTT"],"OTT Rights and Distribution":["#OTT","#Distribution"],"Franchises and IP":["#Franchise","#Movies"],"Hollywood":["#Hollywood","#Movies"],"Indian Cinema":["#IndianCinema","#Bollywood"],"Korean Drama":["#KDrama","#KoreanDrama"],"Chinese Drama":["#CDrama","#ChineseDrama"],"International Distribution":["#Distribution","#Streaming"],"Studio Business":["#FilmIndustry","#Studios"],"Platform Business":["#Streaming","#MediaBusiness"],"Acquisitions and Mergers":["#MediaBusiness","#Mergers"],"Cinema Industry":["#Cinema","#FilmIndustry"],"Production Deals":["#Production","#FilmIndustry"],"Major Awards and Recognition":["#Awards","#Entertainment"]}
+CATEGORY_GROUPS={"Film":{"Major Film Announcements","Casting","Trailers and First Looks","Production Starts","Production Wraps","Release Dates","Franchises and IP","Hollywood","Indian Cinema","Cinema Industry"},"Series":{"Major Series Announcements","Renewals and Cancellations","Streaming Premieres","Korean Drama","Chinese Drama"},"Streaming":{"Streaming Platform News","OTT Rights and Distribution","International Distribution","Platform Business"},"Industry":{"Studio Business","Acquisitions and Mergers","Production Deals","Major Awards and Recognition"}}
+TOPIC_ALIASES={"casting":"Casting","cast":"Casting","trailer":"Trailers and First Looks","teaser":"Trailers and First Looks","release date":"Release Dates","release":"Release Dates","renewed":"Renewals and Cancellations","renewal":"Renewals and Cancellations","cancelled":"Renewals and Cancellations","canceled":"Renewals and Cancellations","streaming":"Streaming Platform News","ott":"Streaming Platform News","distribution":"OTT Rights and Distribution","rights":"OTT Rights and Distribution","franchise":"Franchises and IP","bollywood":"Indian Cinema","k-drama":"Korean Drama","korean drama":"Korean Drama","c-drama":"Chinese Drama","chinese drama":"Chinese Drama","acquisition":"Acquisitions and Mergers","merger":"Acquisitions and Mergers","studio":"Studio Business"}
+def canonical_topic(topic,region="Entertainment"):
+    key=safe_text(topic).lower().strip()
+    if key in TOPIC_ALIASES:return TOPIC_ALIASES[key]
+    for item in TOPICS["Entertainment"]:
+        if key==item.lower():return item
+    patterns=[(("cast","actor","actress","star"),"Casting"),(("trailer","teaser","first look","poster"),"Trailers and First Looks"),(("release date","premiere date","release"),"Release Dates"),(("renew","cancel","cancellation"),"Renewals and Cancellations"),(("streaming premiere","premieres","debut"),"Streaming Premieres"),(("netflix","prime video","hbo","disney+","apple tv","streaming platform"),"Streaming Platform News"),(("rights","distribution","international release"),"OTT Rights and Distribution"),(("franchise","sequel","spinoff","spin-off","adaptation"),"Franchises and IP"),(("bollywood","indian cinema","pan-indian"),"Indian Cinema"),(("k-drama","korean drama","korea"),"Korean Drama"),(("c-drama","chinese drama","china"),"Chinese Drama"),(("acquisition","acquires","merger"),"Acquisitions and Mergers"),(("production starts","begins production","starts filming"),"Production Starts"),(("wraps production","production wrapped","wraps filming"),"Production Wraps"),(("studio","layoff","jobs","business"),"Studio Business")]
+    for needles,canon in patterns:
+        if any(n in key for n in needles):return canon
+    return "Major Film Announcements"
+def category_hashtags(story):
+    tags=[]
+    for tag in CATEGORY_HASHTAGS.get(safe_text(story.get("topic")),[]):
+        if tag not in tags:tags.append(tag)
+    im={"Netflix":"#Netflix","Prime Video":"#PrimeVideo","Disney+":"#DisneyPlus","HBO Max":"#HBOMax","Marvel":"#Marvel","DC":"#DC","Sony Pictures":"#SonyPictures","Paramount+":"#ParamountPlus","Universal Pictures":"#UniversalPictures"}
+    inst=safe_text(story.get("institution"))
+    if inst in im and im[inst] not in tags:tags.append(im[inst])
+    if "#Entertainment" not in tags:
+        if len(tags) >= 3:
+            tags = [tags[0], tags[-1], "#Entertainment"]
+        else:
+            tags.append("#Entertainment")
+    return tags[:3]
+
+def coverage_state():
+    return STATE.setdefault("category_coverage", {})
+
+
+def update_category_coverage(story):
+    topic = safe_text(story.get("topic"))
+    if topic:
+        coverage_state()[topic] = now_iso()
+
+
+def refresh_category_coverage():
+    coverage = coverage_state()
+    for event in STATE.get("events", {}).values():
+        if event.get("status") != "published":
+            continue
+        published_at = parse_datetime(event.get("published_at"))
+        if not published_at or published_at.date() != NOW_BD.date():
+            continue
+        topic = safe_text(event.get("topic"))
+        if topic:
+            coverage[topic] = event.get("selected_at", published_at.isoformat())
+
+
+# ============================================================
+# LOGGING + HTTP
+# ============================================================
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s | %(levelname)s | %(message)s",
+)
 logger = logging.getLogger("entertainment-news-bot")
+
 ImageFile.LOAD_TRUNCATED_IMAGES = True
 Image.MAX_IMAGE_PIXELS = 50_000_000
 
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (compatible; EntertainmentNewsroomBot/1.0; +https://github.com/)"
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/125.0 Safari/537.36"
+    )
 }
+
 session = requests.Session()
 session.headers.update(HEADERS)
+
 retry_policy = Retry(
     total=4,
     connect=4,
@@ -78,183 +209,320 @@ retry_policy = Retry(
     allowed_methods=["GET"],
     respect_retry_after_header=True,
 )
-adapter = HTTPAdapter(max_retries=retry_policy, pool_connections=20, pool_maxsize=20)
-session.mount("https://", adapter)
-session.mount("http://", adapter)
-retry_policy = Retry(
-    total=4,
-    connect=4,
-    read=4,
-    backoff_factor=1.5,
-    status_forcelist=[429, 500, 502, 503, 504],
-    allowed_methods=["GET"],
-    respect_retry_after_header=True,
+
+adapter = HTTPAdapter(
+    max_retries=retry_policy,
+    pool_connections=20,
+    pool_maxsize=20,
 )
-adapter = HTTPAdapter(max_retries=retry_policy, pool_connections=20, pool_maxsize=20)
+
 session.mount("https://", adapter)
 session.mount("http://", adapter)
 
-exa = Exa(api_key=EXA_API_KEY)
-cerebras = Cerebras(api_key=CEREBRAS_API_KEY)
 
-RSS_FEEDS = [
-    {"name": "Deadline", "url": "https://deadline.com/feed/"},
-    {"name": "Variety", "url": "https://variety.com/feed/"},
-    {"name": "The Hollywood Reporter", "url": "https://www.hollywoodreporter.com/feed/"},
-    {"name": "TheWrap", "url": "https://www.thewrap.com/feed/"},
-    {"name": "IndieWire", "url": "https://www.indiewire.com/feed/"},
-    {"name": "Collider", "url": "https://collider.com/feed/"},
-    {"name": "TVLine", "url": "https://tvline.com/feed/"},
-    {"name": "OTTplay", "url": "https://www.ottplay.com/rss"},
-    {"name": "Filmibeat", "url": "https://www.filmibeat.com/rss/feeds/filmibeat-news.xml"},
-    {"name": "Pinkvilla", "url": "https://www.pinkvilla.com/rss"},
-    {"name": "Bollywood Hungama", "url": "https://www.bollywoodhungama.com/rss/"},
-    {"name": "Gadgets 360 Entertainment", "url": "https://www.gadgets360.com/rss/entertainment"},
-    {"name": "Soompi", "url": "https://www.soompi.com/feed"},
-]
+# ============================================================
+# HELPERS
+# ============================================================
 
-ALLOWED_DOMAINS = {
-    "deadline.com", "variety.com", "hollywoodreporter.com", "thewrap.com", "indiewire.com",
-    "collider.com", "tvline.com", "ottplay.com", "filmibeat.com", "pinkvilla.com",
-    "bollywoodhungama.com", "gadgets360.com", "soompi.com", "dramazoom.com", "mydramalist.com",
-    "asianwiki.com", "whats-on-netflix.com", "netflix.com", "press.wbd.com", "apple.com",
-    "aboutamazon.com", "aboutamazon.in", "press.disneyplus.com", "marvel.com", "dc.com",
-    "sonypictures.com", "paramount.com", "universalpictures.com",
-}
-OFFICIAL_DOMAINS = {
-    "netflix.com", "press.wbd.com", "apple.com", "aboutamazon.com", "aboutamazon.in",
-    "press.disneyplus.com", "marvel.com", "dc.com", "sonypictures.com", "paramount.com",
-    "universalpictures.com",
-}
-
-TOPICS = [
-    "Major Film", "Major Series", "Streaming Platform", "Casting", "Trailer / First Look",
-    "Release Date", "Renewal / Cancellation", "Production", "Rights / Distribution",
-    "Indian Cinema", "Korean Drama", "Chinese Drama", "Franchise / IP", "Industry Business",
-]
-
-BAD_PATH_RE = re.compile(r"/(opinion|editorial|sponsored|tag|topic|live-blog|liveblog|photos?|video)(/|$)", re.I)
-BAD_TITLE_RE = re.compile(r"\b(sponsored|advertisement|promo|opinion|editorial)\b", re.I)
-
-DISCOVERY_END = datetime.now(BD_TZ) + timedelta(minutes=FUTURE_TOLERANCE_MINUTES)
-DISCOVERY_START = DISCOVERY_END - timedelta(hours=LOOKBACK_HOURS)
-
-
-def now_iso() -> str:
-    return datetime.now(BD_TZ).isoformat()
-
-
-def safe_text(value) -> str:
+def safe_text(value):
     return "" if value is None else str(value).strip()
+
+
+def canonical_url(url):
+    raw = safe_text(url)
+    if not raw:
+        return ""
+
+    parsed = urlparse(raw)
+
+    host = (
+        parsed.netloc.lower()
+        .removeprefix("www.")
+        .removeprefix("amp.")
+    )
+
+    path = parsed.path or "/"
+    path = path.rstrip("/")
+    path = re.sub(r"/amp$", "", path, flags=re.I)
+    path = re.sub(r"\.amp$", "", path, flags=re.I)
+
+    return f"{host}{path}"
+
+
+def normalize_title(title):
+    text = safe_text(title).lower()
+    text = re.sub(r"[^a-z0-9\s]", " ", text)
+    return re.sub(r"\s+", " ", text).strip()
+
+
+def title_tokens(text):
+    text = normalize_title(text)
+    return {
+        token
+        for token in text.split()
+        if len(token) >= 3
+    }
+
+
+def token_jaccard(a, b):
+    aa = title_tokens(a)
+    bb = title_tokens(b)
+    if not aa or not bb:
+        return 0.0
+    return len(aa & bb) / max(1, len(aa | bb))
+
+
+def title_similarity(a, b):
+    na = normalize_title(a)
+    nb = normalize_title(b)
+    if not na or not nb:
+        return 0.0
+    sequence = SequenceMatcher(None, na, nb).ratio()
+    jaccard = token_jaccard(na, nb)
+    return max(sequence, jaccard)
+
+
+def event_similarity(a, b):
+    """Cheap event-level similarity without an embedding dependency."""
+    sequence = SequenceMatcher(None, normalize_title(a), normalize_title(b)).ratio()
+    jaccard = token_jaccard(a, b)
+    return (0.55 * sequence) + (0.45 * jaccard)
+
+
+def likely_same_event(a, b):
+    return (
+        title_similarity(a, b) >= 0.90
+        or event_similarity(a, b) >= 0.80
+    )
 
 
 def parse_datetime(value):
     raw = safe_text(value)
     if not raw:
         return None
+
     try:
-        parsed = datetime.fromisoformat(raw.replace("Z", "+00:00"))
-        if parsed.tzinfo is None:
-            parsed = parsed.replace(tzinfo=timezone.utc)
-        return parsed.astimezone(BD_TZ)
+        dt = datetime.fromisoformat(
+            raw.replace("Z", "+00:00")
+        )
+        if dt.tzinfo is None:
+            dt = dt.replace(
+                tzinfo=timezone.utc
+            )
+        return dt.astimezone(BD_TZ)
     except Exception:
         pass
+
     try:
-        parsed = parsedate_to_datetime(raw)
-        if parsed.tzinfo is None:
-            parsed = parsed.replace(tzinfo=timezone.utc)
-        return parsed.astimezone(BD_TZ)
+        dt = parsedate_to_datetime(raw)
+        if dt.tzinfo is None:
+            dt = dt.replace(
+                tzinfo=timezone.utc
+            )
+        return dt.astimezone(BD_TZ)
     except Exception:
         return None
 
 
-def canonical_url(url: str) -> str:
-    raw = safe_text(url)
+def feed_entry_datetime(entry):
+    for key in (
+        "published_parsed",
+        "updated_parsed",
+        "created_parsed",
+    ):
+        parsed = entry.get(key)
+        if parsed:
+            try:
+                return datetime(
+                    *parsed[:6],
+                    tzinfo=timezone.utc,
+                ).astimezone(BD_TZ)
+            except Exception:
+                pass
+
+    for key in (
+        "published",
+        "updated",
+        "created",
+    ):
+        dt = parse_datetime(
+            entry.get(key)
+        )
+        if dt:
+            return dt
+
+    return None
+
+
+def trim_source_text(text, limit):
+    """Trim source text before rendering. Never appends ellipses."""
+    text = safe_text(text)
+    if len(text) <= limit:
+        return text
+
+    trimmed = text[:limit].rstrip()
+    if " " in trimmed:
+        trimmed = trimmed.rsplit(" ", 1)[0]
+
+    return trimmed.rstrip(" ,:;-/—")
+
+
+def clean_generated_text(text):
+    text = safe_text(text)
+
+    # Prevent visible truncation artifacts.
+    text = re.sub(r"\.{2,}", ".", text)
+    text = text.replace("\u2026", "")
+
+    # Remove incomplete endings.
+    text = re.sub(
+        r"\s*[,;:]\s*$",
+        "",
+        text,
+    )
+    text = re.sub(
+        r"\s*[-—]\s*$",
+        "",
+        text,
+    )
+
+    return text.strip()
+
+
+def complete_text(text):
+    raw = safe_text(text)
     if not raw:
-        return ""
-    p = urlparse(raw)
-    host = p.netloc.lower().removeprefix("www.").removeprefix("amp.")
-    path = re.sub(r"/amp$|\.amp$", "", p.path.rstrip("/"), flags=re.I)
-    return f"{host}{path}"
+        return False
+
+    # A text that clean_generated_text() would mutilate
+    # (trailing dash/comma/colon) is INCOMPLETE.
+    if re.search(r"[\s,;:\-—…]+$", raw):
+        return False
+
+    text = clean_generated_text(raw)
+    if not text:
+        return False
+
+    return not text.endswith(
+        (",", ";", ":", "-", "—", "…")
+    )
 
 
-def domain_of(url: str) -> str:
-    return urlparse(url).netloc.lower().removeprefix("www.").split(":")[0]
+def source_name(url):
+    domain = (
+        urlparse(
+            safe_text(url)
+        )
+        .netloc
+        .lower()
+        .removeprefix("www.")
+    )
+
+    return SOURCE_NAMES.get(
+        domain,
+        domain or "Source",
+    )
 
 
-def allowed_domain(url: str) -> bool:
-    domain = domain_of(url)
-    return any(domain == d or domain.endswith("." + d) for d in ALLOWED_DOMAINS)
+def article_region(url):
+    return "Entertainment"
 
 
-def source_name(url: str) -> str:
-    mapping = {
-        "deadline.com": "Deadline", "variety.com": "Variety", "hollywoodreporter.com": "The Hollywood Reporter",
-        "thewrap.com": "TheWrap", "indiewire.com": "IndieWire", "collider.com": "Collider", "tvline.com": "TVLine",
-        "ottplay.com": "OTTplay", "filmibeat.com": "Filmibeat", "pinkvilla.com": "Pinkvilla",
-        "bollywoodhungama.com": "Bollywood Hungama", "gadgets360.com": "Gadgets 360", "soompi.com": "Soompi",
-        "whats-on-netflix.com": "What's on Netflix", "netflix.com": "Netflix", "press.wbd.com": "Warner Bros. Discovery",
-        "apple.com": "Apple TV Press", "aboutamazon.com": "Amazon", "aboutamazon.in": "Amazon India",
-        "press.disneyplus.com": "Disney+ Press", "marvel.com": "Marvel", "dc.com": "DC",
-        "sonypictures.com": "Sony Pictures", "paramount.com": "Paramount", "universalpictures.com": "Universal Pictures",
-    }
-    return mapping.get(domain_of(url), domain_of(url) or "Source")
+def now_iso():
+    return datetime.now(
+        BD_TZ
+    ).isoformat()
 
 
-def normalize_title(title: str) -> str:
-    return re.sub(r"\s+", " ", re.sub(r"[^a-z0-9\s]", " ", safe_text(title).lower())).strip()
-
-
-def title_tokens(title: str) -> set[str]:
-    return {x for x in normalize_title(title).split() if len(x) >= 3}
-
-
-def title_similarity(a: str, b: str) -> float:
-    na, nb = normalize_title(a), normalize_title(b)
-    if not na or not nb:
-        return 0.0
-    seq = SequenceMatcher(None, na, nb).ratio()
-    ta, tb = title_tokens(na), title_tokens(nb)
-    jac = len(ta & tb) / max(1, len(ta | tb))
-    return max(seq, jac)
-
+# ============================================================
+# STATE: QUEUE + EVENTS + KNOWLEDGE
+# ============================================================
 
 def default_state():
-    return {"feeds": {}, "queue": {}, "events": {}, "recent_titles": [], "last_run": None}
+    return {
+        "feeds": {},
+        "queue": {},
+        "events": {},
+        "event_clusters": {},
+        "posted_event_ids": [],
+        "recent_titles": [],
+    }
 
 
 def load_state():
-    if not STATE_FILE.exists():
-        return default_state()
     try:
-        data = json.loads(STATE_FILE.read_text(encoding="utf-8"))
+        with open(
+            STATE_FILE,
+            "r",
+            encoding="utf-8",
+        ) as f:
+            data = json.load(f)
+
+        if not isinstance(
+            data,
+            dict,
+        ):
+            return default_state()
+
         base = default_state()
-        if isinstance(data, dict):
-            base.update(data)
+        base.update(data)
+
         return base
+
     except Exception:
         return default_state()
 
 
-def save_state():
-    STATE["last_run"] = now_iso()
-    tmp = STATE_FILE.with_suffix(".json.tmp")
-    tmp.write_text(json.dumps(STATE, ensure_ascii=False, indent=2), encoding="utf-8")
-    os.replace(tmp, STATE_FILE)
+def save_state(state):
+    tmp = STATE_FILE + ".tmp"
+
+    with open(
+        tmp,
+        "w",
+        encoding="utf-8",
+    ) as f:
+        json.dump(
+            state,
+            f,
+            ensure_ascii=False,
+            indent=2,
+        )
+
+    os.replace(
+        tmp,
+        STATE_FILE,
+    )
 
 
 def load_posted_urls():
-    if not POSTED_FILE.exists():
+    try:
+        with open(
+            POSTED_FILE,
+            "r",
+            encoding="utf-8",
+        ) as f:
+            return {
+                canonical_url(line)
+                for line in f
+                if safe_text(line)
+            }
+    except FileNotFoundError:
         return set()
-    return {canonical_url(x) for x in POSTED_FILE.read_text(encoding="utf-8").splitlines() if safe_text(x)}
 
 
-def save_posted_url(url: str):
-    value = canonical_url(url)
-    if not value:
+def save_posted_url(canonical):
+    if not canonical:
         return
-    with POSTED_FILE.open("a", encoding="utf-8") as f:
-        f.write(value + "\n")
+
+    with open(
+        POSTED_FILE,
+        "a",
+        encoding="utf-8",
+    ) as f:
+        f.write(
+            canonical
+            + "\n"
+        )
 
 
 STATE = load_state()
@@ -262,178 +530,746 @@ POSTED_URLS = load_posted_urls()
 
 
 def prune_state():
-    queue_cutoff = datetime.now(BD_TZ) - timedelta(days=QUEUE_RETENTION_DAYS)
-    event_cutoff = datetime.now(BD_TZ) - timedelta(days=EVENT_RETENTION_DAYS)
-    STATE["queue"] = {
-        k: v for k, v in STATE.get("queue", {}).items()
-        if not parse_datetime(v.get("last_seen") or v.get("published_date"))
-        or parse_datetime(v.get("last_seen") or v.get("published_date")) >= queue_cutoff
-    }
-    STATE["events"] = {
-        k: v for k, v in STATE.get("events", {}).items()
-        if not parse_datetime(v.get("published_at") or v.get("selected_at"))
-        or parse_datetime(v.get("published_at") or v.get("selected_at")) >= event_cutoff
-    }
-    STATE["recent_titles"] = STATE.get("recent_titles", [])[-400:]
+    cutoff_queue = (
+        datetime.now(BD_TZ)
+        - timedelta(
+            days=QUEUE_RETENTION_DAYS
+        )
+    )
+
+    cutoff_events = (
+        datetime.now(BD_TZ)
+        - timedelta(
+            days=EVENT_RETENTION_DAYS
+        )
+    )
+
+    queue = STATE.get(
+        "queue",
+        {},
+    )
+
+    keep_queue = {}
+
+    for key, item in queue.items():
+        dt = parse_datetime(
+            item.get("last_seen")
+            or item.get("published_date")
+        )
+
+        if (
+            dt
+            and dt >= cutoff_queue
+        ):
+            keep_queue[key] = item
+
+    STATE["queue"] = keep_queue
+
+    events = STATE.get(
+        "events",
+        {},
+    )
+
+    keep_events = {}
+
+    for key, event in events.items():
+        dt = parse_datetime(
+            event.get("published_at")
+            or event.get("selected_at")
+        )
+
+        if (
+            dt
+            and dt >= cutoff_events
+        ):
+            keep_events[key] = event
+
+    STATE["events"] = keep_events
+
+    titles = STATE.get(
+        "recent_titles",
+        [],
+    )
+
+    STATE["recent_titles"] = titles[-400:]
 
 
-def candidate_basic_allowed(item: dict) -> bool:
-    url = safe_text(item.get("url"))
-    title = safe_text(item.get("title"))
-    published = item.get("published_dt") or parse_datetime(item.get("published_date"))
-    if not url or not title or not published:
+# ============================================================
+# TIME WINDOWS
+# ============================================================
+
+NOW_BD = datetime.now(
+    BD_TZ
+)
+
+TODAY_START = NOW_BD.replace(
+    hour=0,
+    minute=0,
+    second=0,
+    microsecond=0,
+)
+
+YESTERDAY_START = (
+    TODAY_START
+    - timedelta(days=1)
+)
+
+DISCOVERY_START = (
+    NOW_BD
+    - timedelta(
+        hours=ROLLING_DISCOVERY_HOURS
+    )
+)
+DISCOVERY_END = (
+    NOW_BD
+    + timedelta(
+        minutes=FUTURE_TOLERANCE_MINUTES
+    )
+)
+
+DISCOVERY_TARGET_PER_REGION = 18
+
+
+# ============================================================
+# CLIENTS
+# ============================================================
+
+exa = Exa(
+    api_key=EXA_API_KEY
+)
+
+cerebras = Cerebras(
+    api_key=CEREBRAS_API_KEY
+)
+
+
+# ============================================================
+# CANDIDATE FILTERING
+# ============================================================
+
+BAD_PATH_RE = re.compile(
+    r"/(opinion|editorial|sponsored|"
+    r"tag|topic|live-blog|liveblog|"
+    r"photo|photos|video)(/|$)",
+    re.I,
+)
+
+BAD_TITLE_RE = re.compile(
+    r"\b(sponsored|advertisement|"
+    r"promo|opinion|editorial)\b",
+    re.I,
+)
+
+
+def candidate_basic_allowed(item):
+    url = safe_text(
+        item.get("url")
+    )
+    title = safe_text(
+        item.get("title")
+    )
+    published = item.get(
+        "published_dt"
+    )
+
+    if (
+        not url
+        or not title
+        or not published
+    ):
         return False
-    if BAD_PATH_RE.search(urlparse(url).path) or BAD_TITLE_RE.search(title):
+
+    if BAD_PATH_RE.search(
+        urlparse(url).path
+    ):
         return False
-    if not (DISCOVERY_START <= published <= DISCOVERY_END):
+
+    if BAD_TITLE_RE.search(
+        title
+    ):
         return False
-    return allowed_domain(url)
+
+    if not (
+        DISCOVERY_START
+        <= published
+        <= DISCOVERY_END
+    ):
+        return False
+
+    region = safe_text(item.get("region"))
+    if region and not allowed_source_for_region(url, region):
+        return False
+
+    canonical = canonical_url(
+        url
+    )
+
+    return bool(
+        canonical
+    )
 
 
-def queue_candidate(item: dict):
-    canonical = canonical_url(item.get("url"))
-    if not canonical or canonical in POSTED_URLS:
-        return False
-    existing = STATE["queue"].get(canonical)
-    if existing:
-        existing.update({"last_seen": now_iso()})
-        if not existing.get("image") and item.get("image"):
-            existing["image"] = item["image"]
-        return False
-    item = dict(item)
-    item["canonical"] = canonical
-    item["first_seen"] = now_iso()
-    item["last_seen"] = now_iso()
-    item["status"] = "pending"
-    STATE["queue"][canonical] = item
-    return True
+def title_duplicate_against_state(title):
+    for previous in STATE.get(
+        "recent_titles",
+        [],
+    )[-250:]:
+        if title_similarity(
+            title,
+            previous,
+        ) >= 0.88:
+            return True
+
+    return False
 
 
-def feed_entry_image(entry, page_url):
-    for media in entry.get("media_content", []) or []:
-        url = safe_text(media.get("url"))
-        if url:
-            return url
-    for media in entry.get("media_thumbnail", []) or []:
-        url = safe_text(media.get("url"))
-        if url:
-            return url
-    for link in entry.get("links", []) or []:
-        if safe_text(link.get("type")).startswith("image/") and safe_text(link.get("href")):
-            return urljoin(page_url, link["href"])
+def title_duplicate_against_list(
+    title,
+    candidates,
+    threshold=0.88,
+):
+    for candidate in candidates:
+        if title_similarity(
+            title,
+            candidate["title"],
+        ) >= threshold:
+            return True
+
+    return False
+
+
+# ============================================================
+# RSS INGESTION + PERSISTENT QUEUE
+# ============================================================
+
+def extract_entry_image(
+    entry,
+    page_url,
+):
+    for key in (
+        "media_content",
+        "media_thumbnail",
+    ):
+        for item in entry.get(
+            key,
+            [],
+        ):
+            image_url = safe_text(
+                item.get("url")
+            )
+
+            if image_url:
+                return urljoin(
+                    page_url,
+                    image_url,
+                )
+
+    for enclosure in entry.get(
+        "enclosures",
+        [],
+    ):
+        href = safe_text(
+            enclosure.get("href")
+        )
+
+        mime = safe_text(
+            enclosure.get("type")
+        ).lower()
+
+        if (
+            href
+            and (
+                not mime
+                or mime.startswith(
+                    "image/"
+                )
+            )
+        ):
+            return urljoin(
+                page_url,
+                href,
+            )
+
     return ""
 
 
-def feed_entry_datetime(entry):
-    for key in ("published_parsed", "updated_parsed", "created_parsed"):
-        parsed = entry.get(key)
-        if parsed:
-            try:
-                return datetime(*parsed[:6], tzinfo=timezone.utc).astimezone(BD_TZ)
-            except Exception:
-                pass
-    for key in ("published", "updated", "created", "pubDate"):
-        parsed = parse_datetime(entry.get(key))
-        if parsed:
-            return parsed
-    return None
+def queue_candidate(item):
+    canonical = item["canonical"]
+
+    existing = STATE["queue"].get(
+        canonical
+    )
+
+    if existing:
+        existing.update(
+            {
+                "last_seen": now_iso(),
+                "image": (
+                    item.get("image")
+                    or existing.get("image", "")
+                ),
+            }
+        )
+        return
+
+    STATE["queue"][canonical] = {
+        **item,
+        "status": "pending",
+        "first_seen": now_iso(),
+        "last_seen": now_iso(),
+    }
 
 
-def fetch_rss_feed(feed_def):
+def fetch_rss_feed(
+    feed_def,
+):
     url = feed_def["url"]
-    old = STATE["feeds"].get(url, {})
+
+    old = STATE["feeds"].get(
+        url,
+        {},
+    )
+
+    headers = dict(
+        HEADERS
+    )
+
+    if old.get("etag"):
+        headers["If-None-Match"] = old[
+            "etag"
+        ]
+
+    if old.get(
+        "last_modified"
+    ):
+        headers["If-Modified-Since"] = old[
+            "last_modified"
+        ]
+
     try:
-        response = session.get(url, timeout=25)
-        response.raise_for_status()
-        import feedparser
-        parsed = feedparser.parse(response.content)
+        response = session.get(
+            url,
+            headers=headers,
+            timeout=20,
+        )
+
+        # 304 means the queue remains intact. The feed is reachable,
+        # so this counts as healthy and clears any fail streak.
+        if response.status_code == 304:
+            logger.info(
+                "RSS 304: %s",
+                feed_def["name"],
+            )
+            mark_feed_healthy(feed_def, old)
+            return 0
+
+        if response.status_code >= 400:
+            logger.warning(
+                "RSS %s returned %s",
+                feed_def["name"],
+                response.status_code,
+            )
+            mark_feed_failed(feed_def, old)
+            return 0
+
+        STATE["feeds"][url] = {
+            "etag": response.headers.get(
+                "ETag",
+                old.get("etag"),
+            ),
+            "last_modified": response.headers.get(
+                "Last-Modified",
+                old.get("last_modified"),
+            ),
+            "last_checked": now_iso(),
+            "fail_count": 0,
+            "alerted": False,
+        }
+
+        parsed = feedparser.parse(
+            response.content
+        )
+
         added = 0
+
         for entry in parsed.entries:
-            published_dt = feed_entry_datetime(entry) or datetime.now(BD_TZ)
-            link = urljoin(url, safe_text(entry.get("link")))
-            title = safe_text(entry.get("title"))
-            if not link or not title:
+            published_dt = feed_entry_datetime(
+                entry
+            )
+
+            date_estimated = False
+
+            if not published_dt:
+                # Some feeds send a date format we cannot parse.
+                # Do not throw the story away: use fetch time instead,
+                # and mark it so downstream code knows it is a guess.
+                published_dt = datetime.now(
+                    BD_TZ
+                )
+                date_estimated = True
+
+            article_url = urljoin(
+                url,
+                safe_text(
+                    entry.get("link")
+                ),
+            )
+
+            title = safe_text(
+                entry.get("title")
+            )
+
+            if not article_url or not title:
                 continue
-            summary = BeautifulSoup(safe_text(entry.get("summary") or entry.get("description")), "html.parser").get_text(" ", strip=True)
+
             item = {
                 "title": title,
-                "url": link,
-                "published_dt": published_dt,
+                "url": article_url,
+                "canonical": canonical_url(
+                    article_url
+                ),
+                "published_dt": published_dt.isoformat(),
                 "published_date": published_dt.isoformat(),
                 "source": feed_def["name"],
-                "region": "Global Entertainment",
-                "excerpt": summary[:2200],
-                "image": feed_entry_image(entry, link),
+                "region": feed_def["region"],
+                "excerpt": BeautifulSoup(
+                    safe_text(
+                        entry.get(
+                            "summary"
+                        )
+                        or entry.get(
+                            "description"
+                        )
+                    ),
+                    "html.parser",
+                ).get_text(
+                    " ",
+                    strip=True,
+                )[:2000],
+                "image": extract_entry_image(
+                    entry,
+                    article_url,
+                ),
                 "discovery": "rss",
+                "date_estimated": date_estimated,
             }
-            if not candidate_basic_allowed(item):
+
+            if not candidate_basic_allowed(
+                {
+                    **item,
+                    "published_dt": published_dt,
+                }
+            ):
                 continue
-            if queue_candidate(item):
+
+            if (
+                item["canonical"]
+                in POSTED_URLS
+            ):
+                continue
+
+            before = item["canonical"] in STATE[
+                "queue"
+            ]
+
+            queue_candidate(
+                item
+            )
+
+            if not before:
                 added += 1
-        STATE["feeds"][url] = {**old, "last_checked": now_iso(), "fail_count": 0, "alerted": False}
+
         return added
+
     except Exception as exc:
-        failures = int(old.get("fail_count", 0)) + 1
-        STATE["feeds"][url] = {**old, "last_checked": now_iso(), "fail_count": failures}
-        logger.warning("RSS failed %s: %s", feed_def["name"], exc)
-        if failures >= FEED_FAIL_ALERT_THRESHOLD and not old.get("alerted"):
-            STATE["feeds"][url]["alerted"] = True
-            alert = f"Feed down: {feed_def['name']}\nFailed {failures} runs.\n{url}"
-            logger.error(alert)
-            if TELEGRAM_ADMIN_CHAT_ID:
-                telegram_call("sendMessage", data={"chat_id": TELEGRAM_ADMIN_CHAT_ID, "text": alert})
+        logger.warning(
+            "RSS failed %s: %s",
+            feed_def["name"],
+            exc,
+        )
+        mark_feed_failed(feed_def, old)
         return 0
 
 
-def google_news_rss(query: str) -> int:
-    url = f"https://news.google.com/rss/search?q={quote_plus(query)}&hl=en-US&gl=US&ceid=US:en"
+# Consecutive failed runs before we alert about a broken feed.
+FEED_FAIL_ALERT_THRESHOLD = 3
+
+
+def mark_feed_healthy(feed_def, old):
+    STATE["feeds"][feed_def["url"]] = {
+        **old,
+        "last_checked": now_iso(),
+        "fail_count": 0,
+        "alerted": False,
+    }
+
+
+def mark_feed_failed(feed_def, old):
+    fail_count = int(old.get("fail_count", 0)) + 1
+
+    STATE["feeds"][feed_def["url"]] = {
+        **old,
+        "last_checked": now_iso(),
+        "fail_count": fail_count,
+    }
+
+    if fail_count >= FEED_FAIL_ALERT_THRESHOLD and not old.get("alerted"):
+        alert_feed_down(feed_def, fail_count)
+        STATE["feeds"][feed_def["url"]]["alerted"] = True
+
+
+def alert_feed_down(feed_def, fail_count):
+    """Tell the admin a source has gone quiet, instead of failing silently forever."""
+    message = (
+        f"Feed down: {feed_def['name']} ({feed_def['region']})\n"
+        f"Failed {fail_count} runs in a row.\n"
+        f"URL: {feed_def['url']}\n"
+        f"It will keep retrying, but this source is not feeding the bot right now."
+    )
+
+    if TELEGRAM_ADMIN_CHAT_ID:
+        try:
+            telegram_call(
+                "sendMessage",
+                data={
+                    "chat_id": TELEGRAM_ADMIN_CHAT_ID,
+                    "text": message,
+                },
+            )
+        except Exception as exc:
+            logger.warning(
+                "Feed-down alert failed to send: %s",
+                exc,
+            )
+
+    logger.error(message)
+
+
+def collect_rss():
     added = 0
-    try:
-        response = session.get(url, timeout=25)
-        response.raise_for_status()
-        import feedparser
-        parsed = feedparser.parse(response.content)
-        for entry in parsed.entries:
-            published_dt = feed_entry_datetime(entry)
-            link = safe_text(entry.get("link"))
-            title = safe_text(entry.get("title"))
-            if not published_dt or not link or not title:
-                continue
-            if not allowed_domain(link) or not (DISCOVERY_START <= published_dt <= DISCOVERY_END):
-                continue
-            item = {
-                "title": title, "url": link, "published_dt": published_dt, "published_date": published_dt.isoformat(),
-                "source": source_name(link), "region": "Global Entertainment",
-                "excerpt": BeautifulSoup(safe_text(entry.get("summary")), "html.parser").get_text(" ", strip=True)[:2000],
-                "image": "", "discovery": "google_news",
-            }
-            if candidate_basic_allowed(item) and queue_candidate(item):
-                added += 1
-            if added >= MAX_GOOGLE_CANDIDATES:
-                break
-    except Exception as exc:
-        logger.warning("Google News discovery failed: %s", exc)
+
+    for feed_def in RSS_FEEDS:
+        added += fetch_rss_feed(
+            feed_def
+        )
+
+    # Critical: queue is saved together with feed validators.
+    # A later 304 cannot erase unposted queued stories.
+    save_state(
+        STATE
+    )
+
+    logger.info(
+        "RSS queue additions: %d",
+        added,
+    )
+
     return added
 
 
-def exa_gap_fill():
-    queries = [
-        "major Hollywood movie casting trailer release date franchise announcement",
-        "major Netflix HBO Disney Apple Prime Video scripted series news renewal cancellation",
-        "major Bollywood Indian Pan-Indian film casting trailer OTT rights release date",
-        "major Korean drama Netflix Disney TVING Viki casting trailer release distribution",
-        "major Chinese drama iQIYI Tencent Youku Netflix casting trailer release distribution",
-        "major streaming rights acquisition international distribution entertainment industry",
+# ============================================================
+# EXA GAP-FILL DISCOVERY
+# ============================================================
+
+# ============================================================
+# SOURCE UNIVERSE
+# ============================================================
+PRIMARY_ENTERTAINMENT_DOMAINS=["deadline.com","variety.com","hollywoodreporter.com","thewrap.com","indiewire.com","collider.com","tvline.com","ottplay.com","filmibeat.com","pinkvilla.com","bollywoodhungama.com","gadgets360.com","soompi.com","dramazoom.com","mydramalist.com","asianwiki.com","whats-on-netflix.com","netflix.com","press.wbd.com","apple.com","aboutamazon.com","aboutamazon.in","disneyplus.com","press.disneyplus.com","marvel.com","dc.com","sonypictures.com","paramount.com","universalpictures.com"]
+FALLBACK_ENTERTAINMENT_DOMAINS=[]
+ALL_PRIMARY_DOMAINS=PRIMARY_ENTERTAINMENT_DOMAINS
+ALL_FALLBACK_DOMAINS=FALLBACK_ENTERTAINMENT_DOMAINS
+ALL_ALLOWED_DOMAINS=ALL_PRIMARY_DOMAINS
+def normalized_domain(url_or_source):
+    raw=safe_text(url_or_source).lower()
+    if "://" in raw:raw=urlparse(raw).netloc
+    return raw.split(":")[0].removeprefix("www.").strip().rstrip("/")
+def is_domain_allowed(url,domains):
+    d=normalized_domain(url); return any(d==x or d.endswith("."+x) for x in domains)
+def primary_domain_allowed(url,region=None):return is_domain_allowed(url,ALL_PRIMARY_DOMAINS)
+def fallback_domain_allowed(url,region=None):return is_domain_allowed(url,ALL_FALLBACK_DOMAINS)
+def allowed_source_for_region(url,region=None):return primary_domain_allowed(url,region) or fallback_domain_allowed(url,region)
+
+# ============================================================
+# GOOGLE NEWS RSS: FREE GAP FILL
+# ============================================================
+
+GOOGLE_NEWS_QUERIES={"Entertainment":["major Hollywood movie series news Netflix HBO Disney Prime Video","major Indian cinema Bollywood pan-Indian film streaming news","Korean drama film major streaming platform news","Chinese drama film major streaming platform news","major entertainment studio acquisition production release casting news","major OTT rights international distribution streaming deal news"]}
+GOOGLE_NEWS_LOCALE={"Entertainment":("en-US","US","US:en")}
+
+def resolve_google_news_url(link):
+    """Google News RSS gives a redirect link, not the publisher URL.
+    Follow it once (without downloading the full page) to get the
+    real article URL. Return "" if it cannot be resolved safely."""
+    try:
+        response = session.get(
+            link,
+            timeout=10,
+            allow_redirects=True,
+            headers=HEADERS,
+            stream=True,
+        )
+        real_url = safe_text(response.url)
+        response.close()
+
+        if not real_url or "news.google.com" in real_url:
+            return ""
+
+        return real_url
+
+    except Exception:
+        return ""
+
+
+def google_news_gap_fill(
+    region,
+    existing_count,
+    needed,
+):
+    # Same thin-coverage trigger as Exa, tried first because it is free.
+    if existing_count >= max(
+        6,
+        needed * 3,
+    ):
+        return 0
+
+    queries = GOOGLE_NEWS_QUERIES.get("Entertainment", [])
+    hl, gl, ceid = GOOGLE_NEWS_LOCALE.get("Entertainment", ("en-US", "US", "US:en"))
+
+    added = 0
+
+    for query in queries:
+        try:
+            feed_url = (
+                "https://news.google.com/rss/search?q="
+                + quote(f"{query} when:2d")
+                + f"&hl={hl}&gl={gl}&ceid={ceid}"
+            )
+
+            response = session.get(
+                feed_url,
+                timeout=15,
+                headers=HEADERS,
+            )
+
+            if response.status_code >= 400:
+                continue
+
+            parsed = feedparser.parse(
+                response.content
+            )
+
+            for entry in parsed.entries[:6]:
+                title = safe_text(
+                    entry.get("title")
+                )
+                link = safe_text(
+                    entry.get("link")
+                )
+
+                if not title or not link:
+                    continue
+
+                real_url = resolve_google_news_url(
+                    link
+                )
+
+                if not real_url:
+                    continue
+
+                published_dt = feed_entry_datetime(
+                    entry
+                )
+                date_estimated = False
+
+                if not published_dt:
+                    published_dt = datetime.now(
+                        BD_TZ
+                    )
+                    date_estimated = True
+
+                item = {
+                    "title": title,
+                    "url": real_url,
+                    "canonical": canonical_url(
+                        real_url
+                    ),
+                    "published_dt": published_dt.isoformat(),
+                    "published_date": published_dt.isoformat(),
+                    "source": source_name(
+                        real_url
+                    ),
+                    "region": region,
+                    "excerpt": BeautifulSoup(
+                        safe_text(
+                            entry.get("summary")
+                        ),
+                        "html.parser",
+                    ).get_text(
+                        " ",
+                        strip=True,
+                    )[:2000],
+                    "image": "",
+                    "discovery": "google_news",
+                    "date_estimated": date_estimated,
+                }
+
+                if not primary_domain_allowed(real_url, region):
+                    continue
+
+                if not candidate_basic_allowed(
+                    {
+                        **item,
+                        "published_dt": published_dt,
+                    }
+                ):
+                    continue
+
+                if item["canonical"] in POSTED_URLS:
+                    continue
+
+                if item["canonical"] in STATE["queue"]:
+                    continue
+
+                queue_candidate(
+                    item
+                )
+                added += 1
+
+                if added >= MAX_GOOGLE_NEWS_CANDIDATES:
+                    return added
+
+        except Exception as exc:
+            logger.warning(
+                "Google News gap fill failed %s: %s",
+                region,
+                exc,
+            )
+
+    return added
+
+
+def exa_gap_fill(region, existing_count, needed, fallback=False):
+    if existing_count >= max(12, needed * 3):
+        return 0
+
+    domains = FALLBACK_ENTERTAINMENT_DOMAINS if fallback else PRIMARY_ENTERTAINMENT_DOMAINS
+    if not domains:
+        return 0
+    queries=[
+        "latest major Hollywood movie and series news",
+        "latest major Netflix HBO Disney Prime Video entertainment news",
+        "latest major Indian cinema Bollywood streaming news",
+        "latest major Korean drama Chinese drama news",
+        "latest major entertainment studio platform business distribution news",
+        "latest major film casting trailer release franchise news",
     ]
+
     added = 0
     for query in queries:
         try:
             results = exa.search_and_contents(
-                query,
-                type="auto",
-                category="news",
-                num_results=10,
-                include_domains=sorted(ALLOWED_DOMAINS),
+                query, type="auto", category="news", num_results=8,
+                include_domains=domains,
                 start_published_date=DISCOVERY_START.isoformat(),
                 end_published_date=DISCOVERY_END.isoformat(),
                 contents={"highlights": {"max_characters": 900}},
@@ -441,67 +1277,74 @@ def exa_gap_fill():
             for result in results.results:
                 url = safe_text(getattr(result, "url", ""))
                 title = safe_text(getattr(result, "title", ""))
-                published = parse_datetime(getattr(result, "published_date", ""))
-                if not url or not title or not published or not allowed_domain(url):
+                published_dt = parse_datetime(getattr(result, "published_date", ""))
+                if not url or not title or not published_dt:
                     continue
-                highlights = getattr(result, "highlights", [])
-                if isinstance(highlights, list):
-                    excerpt = " ".join(map(str, highlights))
-                else:
-                    excerpt = safe_text(highlights)
+                if fallback:
+                    if not fallback_domain_allowed(url, region):
+                        continue
+                elif not primary_domain_allowed(url, region):
+                    continue
                 item = {
-                    "title": title, "url": url, "published_dt": published, "published_date": published.isoformat(),
-                    "source": source_name(url), "region": "Global Entertainment", "excerpt": excerpt[:2200],
-                    "image": safe_text(getattr(result, "image", "")), "discovery": "exa",
+                    "title": title, "url": url, "canonical": canonical_url(url),
+                    "published_dt": published_dt.isoformat(), "published_date": published_dt.isoformat(),
+                    "source": source_name(url), "region": "Entertainment",
+                    "excerpt": safe_text(" ".join(getattr(result, "highlights", []) if isinstance(getattr(result, "highlights", []), list) else str(getattr(result, "highlights", ""))))[:2000],
+                    "image": safe_text(getattr(result, "image", "")),
+                    "discovery": "exa_fallback" if fallback else "exa",
+                    "source_pool": "fallback" if fallback else "primary",
                 }
-                if candidate_basic_allowed(item) and queue_candidate(item):
-                    added += 1
+                if not candidate_basic_allowed({**item, "published_dt": published_dt}):
+                    continue
+                if item["canonical"] in POSTED_URLS or item["canonical"] in STATE["queue"]:
+                    continue
+                queue_candidate(item)
+                added += 1
                 if added >= MAX_EXA_CANDIDATES:
                     return added
         except Exception as exc:
-            logger.warning("Exa discovery failed for query=%r: %s", query, exc)
+            logger.warning("Exa %s discovery failed: %s", "fallback" if fallback else "primary", exc)
     return added
 
 
-def event_key(title: str) -> str:
-    text = normalize_title(title)
-    words = [w for w in text.split() if w not in {"the", "a", "an", "is", "of", "to", "and", "for", "in", "on", "with", "new"}]
-    return " ".join(words[:18])
+def queue_candidates_for_region(
+    region,
+):
+    count = 0
+
+    for item in STATE[
+        "queue"
+    ].values():
+        if (
+            item.get("region")
+            == region
+            and item.get("status")
+            == "pending"
+        ):
+            published = parse_datetime(
+                item.get(
+                    "published_date"
+                )
+            )
+
+            if (
+                published
+                and DISCOVERY_START
+                <= published
+                <= DISCOVERY_END
+            ):
+                count += 1
+
+    return count
 
 
-def already_published_event(title: str) -> bool:
-    for event in STATE.get("events", {}).values():
-        if event.get("status") != "published":
-            continue
-        if title_similarity(title, event.get("headline", "")) >= 0.88:
-            return True
-        old_key = safe_text(event.get("event_key"))
-        if old_key and title_similarity(event_key(title), old_key) >= 0.82:
-            return True
-    return False
+# ============================================================
+# CANDIDATE NORMALIZATION
+# ============================================================
 
-
-def available_candidates() -> list[dict]:
-    candidates = []
-    seen = set()
-    for item in STATE["queue"].values():
-        if item.get("status") not in {"pending", "selected"}:
-            continue
-        published = parse_datetime(item.get("published_date"))
-        if not published or not (DISCOVERY_START <= published <= DISCOVERY_END):
-            continue
-        canonical = safe_text(item.get("canonical"))
-        if not canonical or canonical in seen or canonical in POSTED_URLS:
-            continue
-        if already_published_event(item.get("title", "")):
-            continue
-        if any(title_similarity(item.get("title", ""), x.get("title", "")) >= 0.94 for x in candidates):
-            continue
-        candidates.append(dict(item))
-        seen.add(canonical)
-    candidates.sort(key=lambda x: parse_datetime(x.get("published_date")) or datetime.min.replace(tzinfo=timezone.utc), reverse=True)
-    return candidates[:RANK_MAX_CANDIDATES]
-
+# ============================================================
+# VERSION 1 EDITORIAL RANKING
+# ============================================================
 
 RANK_SCHEMA = {
     "type": "object",
@@ -511,15 +1354,16 @@ RANK_SCHEMA = {
             "items": {
                 "type": "object",
                 "properties": {
-                    "id": {"type": "integer", "minimum": 1},
+                    "id": {"type": "integer"},
                     "rank": {"type": "integer", "minimum": 1},
                     "score": {"type": "integer", "minimum": 0, "maximum": 10},
                     "important": {"type": "boolean"},
                     "topic": {"type": "string"},
+                    "institution": {"type": "string"},
                     "event_key": {"type": "string"},
                     "reason": {"type": "string"},
                 },
-                "required": ["id", "rank", "score", "important", "topic", "event_key", "reason"],
+                "required": ["id", "rank", "score", "important", "topic", "institution", "event_key", "reason"],
                 "additionalProperties": False,
             },
         }
@@ -529,498 +1373,1872 @@ RANK_SCHEMA = {
 }
 
 
-def rank_candidates(candidates: list[dict]) -> list[dict]:
-    if not candidates:
-        return []
-    recent = [x.get("headline", "") for x in STATE.get("events", {}).values() if x.get("status") == "published"][-40:]
-    regional = candidates[:RANK_MAX_CANDIDATES]
-    blocks = []
-    for idx, item in enumerate(regional, 1):
-        published = parse_datetime(item.get("published_date"))
-        age = f"Age: {max(0, (DISCOVERY_END - published).total_seconds() / 3600):.1f} hours" if published else ""
-        blocks.append("\n".join([
-            f"ID: {idx}", f"Title: {item.get('title','')}", f"Source: {item.get('source','')}",
-            f"Published: {item.get('published_date','')}", age,
-            f"Excerpt: {safe_text(item.get('excerpt',''))[:900]}", ""
-        ]))
-    prompt = f"""
-You are the editor-in-chief of @EntertainmentNewsroom.
-
-Rank these candidates from MOST IMPORTANT to LEAST IMPORTANT using only their supplied metadata.
-The channel covers major movie, streaming and scripted-series news. Publishable means score >= 7.
-All candidates compete in one global pool. Do not fill quotas.
-
-Prioritize:
-- major Hollywood movies, franchises and high-profile scripted series
-- major Netflix, Prime Video, HBO/Max, Apple TV+, Disney+, Hulu, Paramount+, Peacock, SonyLIV,
-  JioHotstar, Viki, TVING, iQIYI, Tencent Video and Youku developments
-- major Indian / Bollywood / Pan-Indian projects
-- important Korean and Chinese drama productions with strong international relevance
-- major casting, trailers, first looks, production starts/wraps, release-date changes,
-  renewals, cancellations, rights acquisitions, international distribution and platform deals
-- developments with meaningful audience, franchise, platform or industry impact
-
-Deprioritize:
-- celebrity lifestyle, dating, fashion, birthdays and social posts
-- unsupported rumors, speculation and leaks presented as fact
-- minor casting, routine catalog additions, generic interviews and promotional fluff
-- reviews, rankings and opinion pieces without a concrete news event
-- duplicate or repetitive coverage
-
-9-10 = exceptional global importance
-7-8 = clearly important and publishable
-4-6 = interesting but normally not publishable
-0-3 = low-value, routine, repetitive, promotional, rumor/speculation or niche
-
-important MUST be true only when score >= 7. When in doubt, score lower.
-Return EVERY candidate. Allowed topics: {', '.join(TOPICS)}
-Recently published headlines: {json.dumps(recent[-20:], ensure_ascii=False)}
-"""
+def enrich_thin_excerpt(item):
+    """Best-effort article enrichment. Failure never removes a candidate."""
     try:
-        response = cerebras.chat.completions.create(
-            model=CEREBRAS_MODEL,
-            messages=[
-                {"role": "system", "content": prompt},
-                {"role": "user", "content": "\n".join(blocks)},
-            ],
-            response_format={"type": "json_schema", "json_schema": {"name": "entertainment_news_rank", "strict": True, "schema": RANK_SCHEMA}},
-            reasoning_effort="low",
-            temperature=0.0,
-            max_completion_tokens=6500,
-        )
-        data = json.loads(safe_text(response.choices[0].message.content))
-        by_id = {i: item for i, item in enumerate(regional, 1)}
-        rows = []
-        for row in data.get("ranked", []):
-            idx = int(row.get("id", 0))
-            if idx not in by_id:
-                continue
-            item = dict(by_id[idx])
-            score = max(0, min(10, int(row.get("score", 0))))
-            item.update({
-                "editor_rank": int(row.get("rank", 999)),
-                "importance_score": score,
-                "important": bool(row.get("important")) and score >= 7,
-                "topic": safe_text(row.get("topic")) or "Major Series",
-                "event_key": safe_text(row.get("event_key")) or event_key(item.get("title", "")),
-                "rank_reason": safe_text(row.get("reason")),
+        downloaded = trafilatura.fetch_url(item["url"])
+        if not downloaded:
+            return None
+        text = trafilatura.extract(downloaded)
+        return safe_text(text)[:1200] if text else None
+    except Exception:
+        return None
+
+
+def enrich_thin_excerpts(regional):
+    enriched = 0
+    for item in regional:
+        if enriched >= MAX_EXCERPT_ENRICH:
+            break
+        excerpt = safe_text(item.get("excerpt", ""))
+        if len(excerpt) >= THIN_EXCERPT_CHARS:
+            continue
+        fuller = enrich_thin_excerpt(item)
+        if fuller and len(fuller) > len(excerpt):
+            item["excerpt"] = fuller
+            enriched += 1
+    return regional
+
+
+def rank_candidates(candidates, region):
+    """Rank all usable candidates in bounded batches of 15."""
+    if not candidates:return []
+    regional=sorted(candidates,key=lambda x:parse_datetime(x.get("published_date")) or datetime.min.replace(tzinfo=timezone.utc),reverse=True)[:60]
+    regional=enrich_thin_excerpts(regional)
+    rows=[]
+    for offset in range(0,len(regional),15):
+        batch=regional[offset:offset+15]
+        lines=[]
+        for idx,item in enumerate(batch,1):
+            dt=parse_datetime(item.get("published_date")); age=f"Age: {max(0.0,(NOW_BD-dt).total_seconds()/3600):.1f} hours" if dt else ""
+            lines.append("\n".join([f"ID: {idx}",f"Title: {item.get('title','')}",f"Source: {item.get('source','')}",f"Published: {item.get('published_date','')}",age,f"Excerpt: {trim_source_text(item.get('excerpt',''),700)}",""]))
+        prompt=f"""You are the editor-in-chief of @EntertainmentNewsroom.
+Rank these entertainment news candidates from MOST IMPORTANT to LEAST IMPORTANT.
+Use the previous 24 hours. Prioritize major film/series developments, flagship streaming platforms, major franchises/IP, marquee casting, trailers, production starts/wraps, release-date changes, renewals/cancellations, rights acquisitions, international distribution, and significant Hollywood, Indian, Korean and Chinese productions.
+Deprioritize routine promotion, generic interviews, minor updates, low-profile casting, unsupported rumors/leaks/speculation, duplicates and niche stories.
+Score EVERY candidate 0-10: 9-10 exceptional; 7-8 clearly important and publishable; 4-6 interesting but normally not publishable; 0-3 low-value/routine/promotional/unsupported/niche. important MUST be true only when score >= 7. Do not inflate scores to fill six slots. Return EVERY candidate with rank, score, important, topic, institution, event_key and reason.
+Allowed topics: {', '.join(TOPICS['Entertainment'])}"""
+        try:
+            response=cerebras.chat.completions.create(model=CEREBRAS_MODEL,messages=[{"role":"system","content":prompt},{"role":"user","content":"\n".join(lines)}],response_format={"type":"json_schema","json_schema":{"name":"entertainment_news_v1_rank","strict":True,"schema":RANK_SCHEMA}},reasoning_effort="low",temperature=0.0,max_completion_tokens=1800)
+            data=json.loads(safe_text(response.choices[0].message.content)); by_id={i:x for i,x in enumerate(batch,1)}; returned=set()
+            for r in data.get("ranked",[]):
+                idx=int(r.get("id",0))
+                if idx not in by_id:continue
+                item=dict(by_id[idx]); score=max(0,min(10,int(r.get("score",0))))
+                item.update({"editor_rank":offset+int(r.get("rank",idx)),"importance_score":score,"important":bool(r.get("important")) and score>=7,"topic":canonical_topic(safe_text(r.get("topic")),region),"institution":safe_text(r.get("institution")),"event_key":safe_text(r.get("event_key")),"rank_reason":safe_text(r.get("reason"))})
+                rows.append(item); returned.add(safe_text(item.get("canonical")))
+            for idx,item in enumerate(batch,1):
+                if safe_text(item.get("canonical")) not in returned:
+                    fallback=dict(item); fallback.update({"editor_rank":offset+15+idx,"importance_score":0,"important":False,"topic":canonical_topic(item.get("topic",""),region),"institution":"","event_key":"","rank_reason":"Unscored recovery candidate; withheld from publication."}); rows.append(fallback)
+        except Exception as exc:
+            logger.error("Editorial ranking batch failed for %s: %s",region,exc)
+            for idx,item in enumerate(batch,offset+1):
+                row=dict(item); row.update({"editor_rank":idx,"importance_score":0,"important":False,"topic":canonical_topic(item.get("topic",""),region),"institution":"","event_key":"","rank_reason":"Ranking-service failure; candidate withheld."}); rows.append(row)
+    return sorted(rows,key=lambda x:(x.get("editor_rank",9999),-(parse_datetime(x.get("published_date")).timestamp() if parse_datetime(x.get("published_date")) else 0)))
+
+
+
+def extract_entities(text):
+    words = re.findall(r"[A-Za-z][A-Za-z&'-]{2,}", safe_text(text).lower())
+    return {w for w in words if w not in STOPWORDS}
+
+
+def entity_overlap(a, b):
+    ea = extract_entities(f"{a.get('title','')} {a.get('excerpt','')}")
+    eb = extract_entities(f"{b.get('title','')} {b.get('excerpt','')}")
+    if not ea or not eb:
+        return 0.0
+    return len(ea & eb) / max(1, min(len(ea), len(eb)))
+
+
+def event_similarity_v04(a, b):
+    title_score = title_similarity(a.get("title", ""), b.get("title", ""))
+    entity_score = entity_overlap(a, b)
+    return (0.75 * title_score) + (0.25 * entity_score)
+
+
+def same_event_window(a, b, hours=30):
+    da = parse_datetime(a.get("published_date"))
+    db = parse_datetime(b.get("published_date"))
+    if not da or not db:
+        return False
+    return abs((da - db).total_seconds()) <= hours * 3600
+
+
+def cluster_ranked_events(ranked):
+    """Conservative event clustering. Uncertain items are always kept."""
+    clusters = []
+    ordered = sorted(
+        ranked,
+        key=lambda x: x.get("editor_rank", 9999),
+    )
+    for item in ordered:
+        placed = False
+        for cluster in clusters:
+            representative = cluster[0]
+            same_key = bool(
+                safe_text(item.get("event_key"))
+                and safe_text(item.get("event_key")) == safe_text(representative.get("event_key"))
+            )
+            if same_key or (
+                same_event_window(item, representative)
+                and event_similarity_v04(item, representative) >= 0.88
+            ):
+                cluster.append(item)
+                placed = True
+                break
+        if not placed:
+            clusters.append([item])
+
+    output = []
+    for index, cluster in enumerate(clusters, start=1):
+        representative = cluster[0]
+        stable_key = normalize_title(representative.get("title", "")) or representative.get("canonical", "")
+        digest = hashlib.sha1(stable_key.encode("utf-8")).hexdigest()[:10]
+        cluster_id = f"evt_{digest}"
+        sources = sorted({safe_text(x.get("source")) for x in cluster if safe_text(x.get("source"))})
+        for member in cluster:
+            row = dict(member)
+            row.update({
+                "event_cluster_id": cluster_id,
+                "event_cluster_size": len(cluster),
+                "event_sources": sources,
+                "event_source_count": len(sources),
+                "event_confidence": 1.0 if len(cluster) > 1 else 0.6,
             })
-            rows.append(item)
-        rows.sort(key=lambda x: (x.get("editor_rank", 999), -x.get("importance_score", 0)))
-        return [x for x in rows if x.get("important") and x.get("importance_score", 0) >= 7]
-    except Exception as exc:
-        logger.error("Editorial ranking failed: %s", exc)
-        return []
+            output.append(row)
+    return output
 
 
-def collapse_events(ranked: list[dict]) -> list[dict]:
-    out = []
+def collapse_event_clusters(ranked):
+    clustered = cluster_ranked_events(ranked)
+    winners = {}
+    for item in clustered:
+        key = item.get("event_cluster_id") or item.get("canonical")
+        old = winners.get(key)
+        if old is None:
+            winners[key] = item
+            continue
+        # Preserve the highest editorial rank, then newest story.
+        item_key = (
+            item.get("editor_rank", 9999),
+            -(parse_datetime(item.get("published_date")).timestamp() if parse_datetime(item.get("published_date")) else 0),
+        )
+        old_key = (
+            old.get("editor_rank", 9999),
+            -(parse_datetime(old.get("published_date")).timestamp() if parse_datetime(old.get("published_date")) else 0),
+        )
+        if item_key < old_key:
+            winners[key] = item
+    return sorted(winners.values(), key=lambda x: x.get("editor_rank", 9999))
+
+
+def persist_event_cluster_state(ranked):
+    clusters = STATE.setdefault("event_clusters", {})
     for item in ranked:
-        duplicate = False
-        for existing in out:
-            if title_similarity(item.get("title", ""), existing.get("title", "")) >= 0.82:
-                duplicate = True
-                break
-            if item.get("event_key") and existing.get("event_key") and title_similarity(item["event_key"], existing["event_key"]) >= 0.80:
-                duplicate = True
-                break
-        if not duplicate:
-            out.append(item)
-    return out
+        event_id = item.get("event_cluster_id")
+        if not event_id:
+            continue
+        clusters[event_id] = {
+            "event_id": event_id,
+            "topic": item.get("topic", ""),
+            "region": item.get("region", ""),
+            "sources": item.get("event_sources", []),
+            "source_count": item.get("event_source_count", 0),
+            "confidence": item.get("event_confidence", 0),
+            "last_seen": now_iso(),
+            "headline": item.get("title", ""),
+        }
 
 
-def extract_article(item: dict):
+def remember_posted_event(story):
+    event_id = story.get("event_cluster_id") or make_event_id(story)
+    ids = STATE.setdefault("posted_event_ids", [])
+    if event_id and event_id not in ids:
+        ids.append(event_id)
+    STATE["posted_event_ids"] = ids[-500:]
+    return event_id
+
+
+# ============================================================
+# ARTICLE EXTRACTION
+# ============================================================
+
+def find_og_image(
+    url,
+    page_html=None,
+    final_url=None,
+):
+    try:
+        base_url = (
+            final_url
+            or url
+        )
+
+        if page_html is None:
+            response = session.get(
+                url,
+                headers={
+                    **HEADERS,
+                    "Referer": url,
+                },
+                timeout=20,
+            )
+
+            if response.status_code >= 400:
+                return ""
+
+            page_html = response.text
+            base_url = response.url
+
+        soup = BeautifulSoup(
+            page_html,
+            "html.parser",
+        )
+
+        for attrs in (
+            {"property": "og:image"},
+            {"property": "og:image:url"},
+            {"name": "twitter:image"},
+        ):
+            tag = soup.find(
+                "meta",
+                attrs=attrs,
+            )
+
+            if tag and tag.get(
+                "content"
+            ):
+                return urljoin(
+                    base_url,
+                    safe_text(
+                        tag["content"]
+                    ),
+                )
+
+    except Exception:
+        pass
+
+    return ""
+
+
+def extract_article(
+    item,
+):
     url = item["url"]
+
     try:
-        response = session.get(url, headers={**HEADERS, "Referer": url}, timeout=30)
-        response.raise_for_status()
-        text = trafilatura.extract(response.text, include_comments=False, include_tables=False, favor_precision=True)
-        image_url = item.get("image") or find_og_image(response.text, response.url)
-        if text and len(text.strip()) >= 500:
-            return text.strip(), image_url
+        response = session.get(
+            url,
+            headers={
+                **HEADERS,
+                "Referer": url,
+            },
+            timeout=25,
+        )
+
+        if response.status_code < 400:
+            page_html = response.text
+
+            text = trafilatura.extract(
+                page_html,
+                include_comments=False,
+                include_tables=False,
+                favor_precision=True,
+            )
+
+            image_url = (
+                item.get("image")
+                or find_og_image(
+                    url,
+                    page_html,
+                    response.url,
+                )
+            )
+
+            if text and len(safe_text(text)) >= 500:
+                return (
+                    safe_text(text),
+                    image_url,
+                )
+
     except Exception as exc:
-        logger.warning("Local extraction failed %s: %s", url, exc)
+        logger.warning(
+            "Local extraction failed %s: %s",
+            url,
+            exc,
+        )
+
     try:
-        result = exa.get_contents([url], text={"max_characters": 12000})
-        if result.results:
-            first = result.results[0]
-            text = safe_text(getattr(first, "text", ""))
-            image_url = item.get("image") or safe_text(getattr(first, "image", ""))
+        result_set = exa.get_contents(
+            [url],
+            text={
+                "max_characters": 12000,
+            },
+        )
+
+        if result_set.results:
+            result = result_set.results[0]
+
+            text = safe_text(
+                getattr(
+                    result,
+                    "text",
+                    "",
+                )
+            )
+
+            image_url = (
+                item.get("image")
+                or safe_text(
+                    getattr(
+                        result,
+                        "image",
+                        "",
+                    )
+                )
+            )
+
             if text:
-                return text, image_url
+                return (
+                    text,
+                    image_url,
+                )
+
     except Exception as exc:
-        logger.warning("Exa article fallback failed %s: %s", url, exc)
-    return "", item.get("image", "")
+        logger.warning(
+            "Exa article fallback failed %s: %s",
+            url,
+            exc,
+        )
+
+    return (
+        "",
+        item.get("image", ""),
+    )
 
 
-def find_og_image(page_html: str, base_url: str) -> str:
-    soup = BeautifulSoup(page_html, "html.parser")
-    tag = soup.find("meta", attrs={"property": "og:image"}) or soup.find("meta", attrs={"name": "twitter:image"})
-    return urljoin(base_url, safe_text(tag.get("content"))) if tag else ""
-
+# ============================================================
+# STORY + KNOWLEDGE GENERATION
+# ============================================================
 
 STORY_SCHEMA = {
     "type": "object",
     "properties": {
         "headline": {"type": "string"},
         "summary": {"type": "string"},
-        "highlights": {"type": "array", "items": {"type": "string"}, "minItems": 3, "maxItems": 5},
-        "context": {"type": "string"},
-        "bottom_line": {"type": "string"},
-        "hashtags": {"type": "array", "items": {"type": "string"}, "minItems": 2, "maxItems": 4},
-        "source_name": {"type": "string"},
+        "format": {"type":"string","enum":["Film","Series","Streaming","Industry"]},
+        "highlights": {
+            "type": "array",
+            "items": {"type": "string"},
+            "minItems": 3,
+            "maxItems": 5,
+        },
+        "why_it_matters": {"type": "string"},
+        "whats_next": {"type": "string"},
+        "bold_terms": {
+            "type": "array",
+            "items": {"type": "string"},
+            "maxItems": 16,
+        },
     },
-    "required": ["headline", "summary", "highlights", "context", "bottom_line", "hashtags", "source_name"],
+    "required": [
+        "headline",
+        "summary",
+        "format",
+        "highlights",
+        "why_it_matters",
+        "whats_next",
+        "bold_terms",
+    ],
     "additionalProperties": False,
 }
 
 
-def first_sentence(text: str) -> str:
-    clean = re.sub(r"\s+", " ", safe_text(text)).strip()
-    m = re.search(r"^(.+?[.!?])(?:\s|$)", clean)
-    return m.group(1).strip() if m else clean
+def first_sentence(text):
+    text = clean_generated_text(
+        text
+    )
+
+    # Conservative sentence extraction. Avoids common entertainment
+    # abbreviations and decimals splitting incorrectly.
+    protected = {
+        "U.S.": "US_SENTINEL",
+        "U.K.": "UK_SENTINEL",
+        "E.U.": "EU_SENTINEL",
+        "No.": "NO_SENTINEL",
+        "Inc.": "INC_SENTINEL",
+        "Ltd.": "LTD_SENTINEL",
+        "Dr.": "DR_SENTINEL",
+        "Mr.": "MR_SENTINEL",
+        "Mrs.": "MRS_SENTINEL",
+        "Ms.": "MS_SENTINEL",
+    }
+
+    working = text
+
+    for old, marker in protected.items():
+        working = working.replace(
+            old,
+            marker,
+        )
+
+    match = re.search(
+        r"(.+?[.!?])(?:\s|$)",
+        working,
+    )
+
+    if match:
+        sentence = match.group(1)
+    else:
+        sentence = working
+
+    for old, marker in protected.items():
+        sentence = sentence.replace(
+            marker,
+            old,
+        )
+
+    return clean_generated_text(
+        sentence
+    )
 
 
-def complete_text(text: str) -> bool:
-    text = safe_text(text)
-    return bool(text) and not re.search(r"[,;:\-—…]\s*$", text)
-
-
-def clean_generated(text: str) -> str:
-    text = safe_text(text)
-    text = text.replace("\u2026", "")
-    text = re.sub(r"\.{2,}", ".", text)
-    return re.sub(r"\s+", " ", text).strip()
-
-
-def generate_story(item: dict, article_text: str):
-    prompt = """
-You are a senior entertainment-news editor. Write one publishable Telegram post using ONLY the supplied article.
-Do not invent, infer or strengthen claims beyond the source.
-
-Rules:
-- Headline: 6-14 words, specific and newspaper-style.
-- Summary: exactly one complete sentence.
-- Highlights: 3-5 concise factual points with no repetition.
-- Context: 2-4 complete sentences explaining why the project/development matters.
-- Bottom line: exactly one complete sentence stating the central takeaway.
-- Hashtags: 2-4 relevant tags without # in the JSON values.
-- No Markdown/HTML in any JSON field.
-- Do not turn rumors/speculation into confirmed facts.
-"""
-    user = f"SOURCE: {item.get('source')}\nTITLE: {item.get('title')}\nDATE: {item.get('published_date')}\nARTICLE:\n{article_text[:12000]}"
+def generate_story(item, article_text):
+    topic_hint=item.get("topic","")
+    prompt=f"""You are a senior newspaper entertainment editor and entertainment knowledge editor for @EntertainmentNewsroom.
+Create a compact Telegram entertainment news card from the source article.
+Primary topic: {topic_hint}
+Return ONLY valid JSON matching the schema.
+PUBLIC CONTENT:
+- Headline: 6-14 words, accurate, newspaper style.
+- Summary: exactly ONE complete sentence, about 18-28 words.
+- Format: exactly one of Film, Series, Streaming, Industry.
+- Highlights: 3-5 short factual points.
+- Why it Matters: 2-4 complete sentences explaining audience, platform, industry or business significance.
+- What's Next: 1-2 complete sentences stating what audiences, platforms, studios or the industry should watch for next.
+- No repetition, ellipses, hashtags, Markdown or HTML in generated fields.
+BOLD TERMS: include important film/series titles, actors, directors, studios, platforms, figures, prices, dates and release details appearing in the headline, summary or highlights.
+The public post order is: Photo, # HEADLINE, 1-sentence summary, Format line, KEY HIGHLIGHTS, WHY IT MATTERS, WHAT'S NEXT, hashtags, Source."""
+    user=f"REGION: {item['region']}\nSOURCE: {item['source']}\nTITLE: {item['title']}\nDATE: {item['published_date']}\n\nARTICLE:\n{article_text[:12000]}"
     for attempt in range(3):
         try:
-            response = cerebras.chat.completions.create(
-                model=CEREBRAS_MODEL,
-                messages=[{"role": "system", "content": prompt}, {"role": "user", "content": user}],
-                response_format={"type": "json_schema", "json_schema": {"name": "entertainment_story_v1", "strict": True, "schema": STORY_SCHEMA}},
-                reasoning_effort="low",
-                temperature=0.2,
-                max_completion_tokens=1500,
-            )
-            data = json.loads(safe_text(response.choices[0].message.content))
-            if not all(k in data for k in STORY_SCHEMA["required"]):
-                raise ValueError("missing story fields")
-            data["headline"] = clean_generated(data["headline"])
-            data["summary"] = first_sentence(data["summary"])
-            data["highlights"] = [clean_generated(x) for x in data["highlights"] if clean_generated(x)]
-            data["context"] = clean_generated(data["context"])
-            data["bottom_line"] = clean_generated(data["bottom_line"])
-            data["hashtags"] = [re.sub(r"[^A-Za-z0-9]", "", safe_text(x).lstrip("#")) for x in data["hashtags"] if safe_text(x)]
-            if not 6 <= len(data["headline"].split()) <= 14 or not (3 <= len(data["highlights"]) <= 5):
-                raise ValueError("story format validation failed")
-            if not all(complete_text(x) for x in [data["summary"], data["context"], data["bottom_line"]]):
-                raise ValueError("incomplete generated text")
-            return data
+            response=cerebras.chat.completions.create(model=CEREBRAS_MODEL,messages=[{"role":"system","content":prompt},{"role":"user","content":user}],response_format={"type":"json_schema","json_schema":{"name":"entertainment_news_story_v10","strict":True,"schema":STORY_SCHEMA}},reasoning_effort="low",temperature=0.2,max_completion_tokens=1400)
+            data=json.loads(safe_text(response.choices[0].message.content)); headline=clean_generated_text(data.get("headline")); summary=first_sentence(data.get("summary")); format_label=safe_text(data.get("format"))
+            if format_label not in {"Film","Series","Streaming","Industry"}:raise ValueError("Invalid entertainment format")
+            highlights=[clean_generated_text(x) for x in data.get("highlights",[]) if clean_generated_text(x)]
+            if not 3<=len(highlights)<=5:raise ValueError("Highlights must contain 3-5 points")
+            why=clean_generated_text(data.get("why_it_matters")); nxt=clean_generated_text(data.get("whats_next"))
+            why_count=len(re.findall(r"(?<=[.!?])\s+",why))+(1 if why and why[-1] in ".!?" else 0)
+            next_count=len(re.findall(r"(?<=[.!?])\s+",nxt))+(1 if nxt and nxt[-1] in ".!?" else 0)
+            if not headline or not summary or not complete_text(headline) or not complete_text(summary) or any(not complete_text(x) for x in highlights) or not complete_text(why) or not complete_text(nxt) or not (2<=why_count<=4) or not (1<=next_count<=2):raise ValueError("Incomplete or invalid story structure")
+            return {**item,"headline":trim_source_text(headline,110),"summary":trim_source_text(summary,260),"format":format_label,"highlights":[trim_source_text(x,130) for x in highlights],"why_it_matters":trim_source_text(why,520),"whats_next":trim_source_text(nxt,260),"bold_terms":[safe_text(x) for x in data.get("bold_terms",[]) if safe_text(x)]}
         except Exception as exc:
-            logger.warning("Story generation attempt %d failed: %s", attempt + 1, exc)
-            time.sleep(attempt + 1)
+            logger.warning("Story generation attempt %d failed: %s",attempt+1,exc)
+            if attempt==0:time.sleep(1)
     return None
+
+
+
+# ============================================================
+# NUMERIC GROUNDING
+# ============================================================
+
+NUMBER_RE = re.compile(
+    r"""
+    (?:
+        (?:US|U\.S\.|HK|HK\$|Tk|BDT|USD|EUR|GBP|JPY|CNY|INR|৳|\$|€|£|¥)
+        \s*
+    )?
+    \d[\d,]*(?:\.\d+)?
+    \s*
+    (?:
+        million|billion|trillion|
+        crore|lakh|bn|mn|b|m|k|%
+    )?
+    """,
+    re.I | re.X,
+)
+
+YEAR_RE = re.compile(
+    r"^(?:19|20)\d{2}$"
+)
+
+
+def normalize_number(
+    raw,
+):
+    text = (
+        safe_text(raw)
+        .lower()
+        .replace(",", "")
+        .replace("৳", "tk")
+        .replace("$", "usd")
+    )
+
+    return re.sub(
+        r"\s+",
+        "",
+        text,
+    )
+
+
+def numeric_tokens(text):
+    tokens = []
+
+    for match in NUMBER_RE.finditer(
+        safe_text(text)
+    ):
+        token = safe_text(
+            match.group(0)
+        )
+
+        stripped = re.sub(
+            r"[^\d.]",
+            "",
+            token,
+        )
+
+        if (
+            YEAR_RE.match(
+                stripped
+            )
+            and not any(
+                x in token.lower()
+                for x in (
+                    "tk",
+                    "usd",
+                    "bdt",
+                    "$",
+                    "€",
+                    "£",
+                    "¥",
+                    "%",
+                    "million",
+                    "billion",
+                    "crore",
+                    "lakh",
+                )
+            )
+        ):
+            continue
+
+        if token:
+            tokens.append(
+                token
+            )
+
+    return tokens
+
+
+def numeric_grounded(
+    story,
+    article_text,
+):
+    source_numbers = [
+        normalize_number(x)
+        for x in numeric_tokens(
+            article_text
+        )
+    ]
+
+    generated_text = " ".join(
+        [
+            story.get(
+                "headline",
+                "",
+            ),
+            story.get(
+                "summary",
+                "",
+            ),
+            *story.get(
+                "highlights",
+                [],
+            ),
+        ]
+    )
+
+    for token in numeric_tokens(
+        generated_text
+    ):
+        normalized = normalize_number(
+            token
+        )
+
+        if not normalized:
+            continue
+
+        # Require either exact normalized occurrence or a sufficiently
+        # close numeric token from source.
+        if normalized not in source_numbers:
+            return False, token
+
+    return True, ""
+
+
+# ============================================================
+# BOLD TERMS
+# ============================================================
+
+def derive_bold_terms(
+    story,
+):
+    terms = [
+        safe_text(x)
+        for x in story.get(
+            "bold_terms",
+            [],
+        )
+        if safe_text(x)
+    ]
+
+    combined = " ".join(
+        [
+            story.get(
+                "summary",
+                "",
+            ),
+            *story.get(
+                "highlights",
+                [],
+            ),
+        ]
+    )
+
+    # Financial figures, but do not bold bare years.
+    for match in NUMBER_RE.finditer(
+        combined
+    ):
+        token = safe_text(
+            match.group(0)
+        )
+
+        numeric_only = re.sub(
+            r"[^\d.]",
+            "",
+            token,
+        )
+
+        if (
+            YEAR_RE.match(
+                numeric_only
+            )
+            and not re.search(
+                r"(Tk|BDT|USD|EUR|GBP|JPY|CNY|INR|৳|\$|€|£|¥|%|million|billion|crore|lakh)",
+                token,
+                re.I,
+            )
+        ):
+            continue
+
+        if token:
+            terms.append(
+                token
+            )
+
+    unique = []
+    seen = set()
+
+    for term in sorted(
+        terms,
+        key=len,
+        reverse=True,
+    ):
+        key = term.lower()
+
+        if (
+            len(term) >= 2
+            and key not in seen
+        ):
+            seen.add(key)
+            unique.append(term)
+
+    return unique[:16]
+
+
+def escape_rich_html(
+    text,
+):
+    return html.escape(
+        clean_generated_text(text),
+        quote=False,
+    )
+
+
+def bold_terms_html(
+    text,
+    terms,
+):
+    text = clean_generated_text(
+        text
+    )
+
+    if not text:
+        return ""
+
+    result = text
+
+    # Use letter-only markers to avoid collisions with numeric terms.
+    replacements = []
+
+    for index, term in enumerate(
+        sorted(
+            {
+                safe_text(x)
+                for x in terms
+                if safe_text(x)
+            },
+            key=len,
+            reverse=True,
+        )
+    ):
+        marker = (
+            f"__RICHBOLD_{chr(65 + (index % 26))}"
+            f"{index // 26}__"
+        )
+
+        pattern = re.compile(
+            re.escape(term),
+            re.I,
+        )
+
+        match = pattern.search(
+            result
+        )
+
+        if match:
+            original = match.group(
+                0
+            )
+            result = (
+                result[:match.start()]
+                + marker
+                + result[match.end():]
+            )
+            replacements.append(
+                (
+                    marker,
+                    original,
+                )
+            )
+
+    escaped = html.escape(
+        result,
+        quote=False,
+    )
+
+    for marker, original in replacements:
+        escaped = escaped.replace(
+            marker,
+            "<b>"
+            + html.escape(
+                original,
+                quote=False,
+            )
+            + "</b>",
+        )
+
+    return escaped
+
+
+# ============================================================
+# DYNAMIC RICH MESSAGE HTML
+# ============================================================
+
+def dynamic_rich_html(story):
+    terms=derive_bold_terms(story); format_label=safe_text(story.get("format","Film"))
+    if format_label not in {"Film","Series","Streaming","Industry"}:format_label="Film"
+    parts=['<img src="tg://photo?id=newsphoto">',"<h1>"+escape_rich_html(story["headline"])+"</h1>","<p>"+bold_terms_html(story["summary"],terms)+"</p>","<aside>"+escape_rich_html(format_label)+"</aside>","<h2>KEY HIGHLIGHTS</h2>","<p>"+"<br>".join("• "+bold_terms_html(p,terms) for p in story.get("highlights",[]))+"</p>","<h2>WHY IT MATTERS</h2>","<p>"+bold_terms_html(story.get("why_it_matters",""),terms)+"</p>","<blockquote expandable><b>WHAT'S NEXT</b><br>"+bold_terms_html(story.get("whats_next",""),terms)+"</blockquote>"]
+    hashtags=" ".join(category_hashtags(story))
+    if hashtags:parts.append("<p>"+escape_rich_html(hashtags)+"</p>")
+    source=escape_rich_html(story["source"]); url=html.escape(story["url"],quote=True)
+    parts.append("<footer><b>Source:</b> "+f'<a href="{url}">{source}</a>'+"</footer>")
+    return "\n".join(parts)
+
+
+
+def rich_visible_length(text):
+    """Return Telegram-visible character count for Rich HTML text.
+
+    Telegram limits the rendered text, not the raw HTML markup, so strip
+    tags and decode HTML entities before counting characters.
+    """
+    no_tags = re.sub(r"<[^>]+>", "", text)
+    no_attrs = re.sub(
+        r"\[[^\]]+\]\([^)]+\)",
+        lambda m: m.group(0).split("]")[0][1:],
+        no_tags,
+    )
+    return len(html.unescape(no_attrs))
+
+
+def fit_rich_html(story):
+    variants = [
+        (260, 130, 520, 260),
+        (220, 115, 440, 220),
+        (190, 100, 380, 200),
+        (160, 85, 320, 170),
+    ]
+
+    for summary_len, highlight_len, why_len, next_len in variants:
+        candidate = dict(story)
+        candidate["summary"] = trim_source_text(story["summary"], summary_len)
+        candidate["highlights"] = [trim_source_text(x, highlight_len) for x in story.get("highlights", [])]
+        candidate["why_it_matters"] = trim_source_text(story.get("why_it_matters", ""), why_len)
+        candidate["whats_next"] = trim_source_text(story.get("whats_next", ""), next_len)
+        html_text = dynamic_rich_html(candidate)
+        if rich_visible_length(html_text) <= MAX_RICH_CHARACTERS:
+            return html_text
+
+    return dynamic_rich_html(story)
+
+
+
+# ============================================================
+# IMAGE BRANDING: ONLY @EntertainmentNewsroom
+# ============================================================
+
+def find_font(
+    bold=False,
+):
+    candidates = (
+        [
+            "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
+            "/usr/share/fonts/truetype/liberation2/LiberationSans-Bold.ttf",
+        ]
+        if bold
+        else [
+            "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+            "/usr/share/fonts/truetype/liberation2/LiberationSans-Regular.ttf",
+        ]
+    )
+
+    for path in candidates:
+        if os.path.exists(path):
+            return path
+
+    return None
+
+
+def download_image(
+    url,
+    referer,
+):
+    if not url:
+        return None
+
+    try:
+        response = session.get(
+            url,
+            headers={
+                **HEADERS,
+                "Referer": referer,
+            },
+            timeout=20,
+            stream=True,
+        )
+
+        if response.status_code >= 400:
+            return None
+
+        content_type = (
+            response.headers.get(
+                "content-type",
+                "",
+            )
+            .lower()
+        )
+
+        if (
+            content_type
+            and not content_type.startswith(
+                "image/"
+            )
+        ):
+            return None
+
+        buf = BytesIO()
+
+        for chunk in response.iter_content(
+            65536
+        ):
+            if not chunk:
+                continue
+
+            buf.write(
+                chunk
+            )
+
+            if buf.tell() > 8_000_000:
+                return None
+
+        buf.seek(0)
+
+        image = Image.open(
+            buf
+        )
+        image.load()
+
+        if (
+            image.width < 400
+            or image.height < 250
+        ):
+            return None
+
+        return image.convert(
+            "RGB"
+        )
+
+    except Exception as exc:
+        logger.warning(
+            "Image download failed: %s",
+            exc,
+        )
+        return None
+
+
+def crop_cover(
+    image,
+    size=(1200, 675),
+):
+    target_w, target_h = size
+
+    ratio = max(
+        target_w / image.width,
+        target_h / image.height,
+    )
+
+    resized = image.resize(
+        (
+            int(
+                image.width
+                * ratio
+            ),
+            int(
+                image.height
+                * ratio
+            ),
+        ),
+        Image.Resampling.LANCZOS,
+    )
+
+    left = (
+        resized.width
+        - target_w
+    ) // 2
+
+    top = (
+        resized.height
+        - target_h
+    ) // 2
+
+    return resized.crop(
+        (
+            left,
+            top,
+            left + target_w,
+            top + target_h,
+        )
+    )
+
+
+def image_average_brightness(
+    image,
+):
+    small = image.resize(
+        (1, 1)
+    ).convert(
+        "L"
+    )
+    return small.getpixel(
+        (0, 0)
+    )
+
+
+def branded_card(
+    photo,
+):
+    base = crop_cover(
+        photo
+    ).convert(
+        "RGBA"
+    )
+
+    brightness = image_average_brightness(
+        base
+    )
+
+    # Adaptive personal-brand chip:
+    # light chip on dark images, dark chip on light images.
+    if brightness < 125:
+        bg = (
+            245,
+            245,
+            245,
+            225,
+        )
+        fg = (
+            20,
+            24,
+            28,
+            255,
+        )
+    else:
+        bg = (
+            18,
+            22,
+            28,
+            205,
+        )
+        fg = (
+            245,
+            245,
+            245,
+            255,
+        )
+
+    overlay = Image.new(
+        "RGBA",
+        base.size,
+        (0, 0, 0, 0),
+    )
+
+    draw = ImageDraw.Draw(
+        overlay
+    )
+
+    font_path = find_font(
+        bold=True
+    )
+
+    if font_path:
+        font = ImageFont.truetype(
+            font_path,
+            24,
+        )
+    else:
+        font = ImageFont.load_default()
+
+    text = "@EntertainmentNewsroom"
+
+    bbox = draw.textbbox(
+        (0, 0),
+        text,
+        font=font,
+    )
+
+    text_w = bbox[2] - bbox[0]
+    text_h = bbox[3] - bbox[1]
+
+    padding_x = 22
+    padding_y = 10
+
+    chip_w = (
+        text_w
+        + padding_x * 2
+    )
+    chip_h = (
+        text_h
+        + padding_y * 2
+    )
+
+    x2 = 1200 - 28
+    y2 = 675 - 24
+    x1 = x2 - chip_w
+    y1 = y2 - chip_h
+
+    draw.rounded_rectangle(
+        (
+            x1,
+            y1,
+            x2,
+            y2,
+        ),
+        radius=18,
+        fill=bg,
+    )
+
+    draw.text(
+        (
+            x1 + padding_x,
+            y1 + padding_y - 1,
+        ),
+        text,
+        font=font,
+        fill=fg,
+    )
+
+    return Image.alpha_composite(
+        base,
+        overlay,
+    ).convert(
+        "RGB"
+    )
+
+
+def prepare_image(
+    story,
+    index,
+):
+    image = download_image(
+        story.get(
+            "image_url",
+            "",
+        ),
+        story["url"],
+    )
+
+    if image is None:
+        image = Image.new(
+            "RGB",
+            (1200, 675),
+            (28, 38, 50),
+        )
+
+        font_path = find_font(
+            bold=True
+        )
+
+        if font_path:
+            font = ImageFont.truetype(
+                font_path,
+                48,
+            )
+        else:
+            font = ImageFont.load_default()
+
+        draw = ImageDraw.Draw(
+            image
+        )
+
+        draw.text(
+            (50, 50),
+            "Entertainment News",
+            font=font,
+            fill="white",
+        )
+
+    branded = branded_card(
+        image
+    )
+
+    path = f"/tmp/news_{index}.jpg"
+
+    branded.save(
+        path,
+        "JPEG",
+        quality=88,
+        optimize=True,
+    )
+
+    return path
+
+
+# ============================================================
+# TELEGRAM RICH MESSAGES
+# ============================================================
+
+def telegram_call(
+    method,
+    data=None,
+    files=None,
+):
+    url = (
+        f"https://api.telegram.org/"
+        f"bot{TELEGRAM_BOT_TOKEN}/"
+        f"{method}"
+    )
+
+    last = {
+        "ok": False,
+        "description": "Unknown error",
+    }
+
+    for attempt in range(
+        1,
+        6,
+    ):
+        try:
+            response = session.post(
+                url,
+                data=data or {},
+                files=files,
+                timeout=90,
+            )
+
+            result = response.json()
+
+            if result.get(
+                "ok"
+            ):
+                return result
+
+            last = result
+
+            if response.status_code == 429:
+                retry_after = int(
+                    result.get(
+                        "parameters",
+                        {},
+                    ).get(
+                        "retry_after",
+                        5,
+                    )
+                )
+
+                logger.warning(
+                    "Telegram 429; waiting %ss",
+                    retry_after,
+                )
+
+                time.sleep(
+                    max(
+                        1,
+                        retry_after,
+                    )
+                )
+                continue
+
+            if response.status_code >= 500:
+                time.sleep(
+                    2 * attempt
+                )
+                continue
+
+            break
+
+        except Exception as exc:
+            last = {
+                "ok": False,
+                "description": str(exc),
+            }
+
+            time.sleep(
+                2 * attempt
+            )
+
+    return last
+
+
+
+def send_bot_api_fallback(image_path, rich_html):
+    """Last-resort Bot API photo send with a safe caption length."""
+    text = re.sub(r"<br\s*/?>", "\n", rich_html, flags=re.I)
+    text = re.sub(r"</(p|h1|h2|h3|footer|summary|details|tr|td)>", "\n", text, flags=re.I)
+    text = re.sub(r"<[^>]+>", "", text)
+    text = html.unescape(text)
+    text = re.sub(r"\n{3,}", "\n\n", text).strip()
+    if len(text) > 900:
+        text = text[:900].rsplit(" ", 1)[0].rstrip() + "..."
+
+    url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendPhoto"
+    try:
+        with open(image_path, "rb") as photo:
+            response = session.post(
+                url,
+                data={"chat_id": TELEGRAM_CHANNEL, "caption": text},
+                files={"photo": photo},
+                timeout=90,
+            )
+        return response.json()
+    except Exception as exc:
+        return {"ok": False, "description": str(exc)}
+
+def send_rich_photo(
+    image_path,
+    rich_html,
+):
+    rich_message = {
+        "html": rich_html,
+        "media": [
+            {
+                "id": "newsphoto",
+                "media": {
+                    "type": "photo",
+                    "media": "attach://photo",
+                },
+            }
+        ],
+        "skip_entity_detection": False,
+    }
+
+    with open(
+        image_path,
+        "rb",
+    ) as photo:
+
+        return telegram_call(
+            "sendRichMessage",
+            data={
+                "chat_id": TELEGRAM_CHANNEL,
+                "rich_message": json.dumps(
+                    rich_message,
+                    ensure_ascii=False,
+                ),
+            },
+            files={
+                "photo": photo
+            },
+        )
+
+
+# ============================================================
+# KNOWLEDGE / EVENT RECORD
+# ============================================================
+
+def make_event_id(
+    story,
+):
+    event_key = safe_text(
+        story.get(
+            "event_key"
+        )
+    )
+
+    if event_key:
+        return (
+            re.sub(
+                r"[^a-z0-9]+",
+                "_",
+                event_key.lower(),
+            ).strip("_")
+        )
+
+    return canonical_url(
+        story["url"]
+    )
+
+
+def store_event(
+    story,
+    published=False,
+    message_id=None,
+):
+    event_id = make_event_id(
+        story
+    )
+
+    event = {
+        "event_id": event_id,
+        "canonical_url": story[
+            "canonical"
+        ],
+        "original_url": story[
+            "url"
+        ],
+        "source": story[
+            "source"
+        ],
+        "region": story[
+            "region"
+        ],
+        "topic": story.get(
+            "topic",
+            "",
+        ),
+        "institution": story.get(
+            "institution",
+            "",
+        ),
+        "event_cluster_id": story.get(
+            "event_cluster_id",
+            event_id,
+        ),
+        "event_confidence": story.get(
+            "event_confidence",
+            0,
+        ),
+        "event_source_count": story.get(
+            "event_source_count",
+            0,
+        ),
+        "headline": story[
+            "headline"
+        ],
+        "summary": story[
+            "summary"
+        ],
+        "highlights": story[
+            "highlights"
+        ],
+        "concepts": story.get(
+            "concepts",
+            [],
+        ),
+        "key_numbers": story.get(
+            "key_numbers",
+            [],
+        ),
+        "published_at": story[
+            "published_date"
+        ],
+        "selected_at": now_iso(),
+        "status": (
+            "published"
+            if published
+            else "selected"
+        ),
+        "message_id": message_id,
+    }
+
+    STATE["events"][
+        event_id
+    ] = event
+
+    return event_id
+
+
+# ============================================================
+# ============================================================
+
+
+
+# ============================================================
+# VERSION 1 FALLBACK POOLS
+# ============================================================
+
+def build_candidate_pool(ranked, needed):
+    """Keep a generous ranked recovery pool for downstream failures."""
+    if not ranked:
+        return []
+    pool_size = max(RANKING_POOL_SIZE, needed * 2)
+    return [dict(item) for item in ranked[:pool_size]]
 
 
 VERIFY_SCHEMA = {
     "type": "object",
     "properties": {
         "supported": {"type": "boolean"},
-        "unsupported_claims": {"type": "array", "items": {"type": "string"}, "maxItems": 5},
+        "unsupported_claims": {
+            "type": "array",
+            "items": {"type": "string"},
+            "maxItems": 3,
+        },
     },
     "required": ["supported", "unsupported_claims"],
     "additionalProperties": False,
 }
 
 
-def verify_story(story: dict, article_text: str) -> bool:
-    claims = [story.get("headline", ""), story.get("summary", ""), *story.get("highlights", [])]
+def claims_grounded(story, article_text):
+    """Second-pass editorial verification for non-numeric factual claims."""
+    claims = [
+        story.get("headline", ""),
+        story.get("summary", ""),
+        *story.get("highlights", []),
+    ]
+    claims = [safe_text(x) for x in claims if safe_text(x)]
+
     prompt = """
-Act as a strict fact-checking editor. Mark supported=true ONLY when every material factual claim in the headline,
-summary and highlights is directly supported by the supplied article or is a faithful paraphrase.
-Reject invented facts, wrong people, wrong dates, wrong figures, unsupported status claims, causal claims, and
-claims stronger than the source. Return only the JSON schema.
+You are a strict fact-checking editor. Compare the generated claims with the source article.
+Mark supported=true only if every material factual claim in the headline, summary and highlights
+is directly supported by the source article, either explicitly or by a faithful paraphrase.
+Do not reject normal wording changes. Reject invented facts, unsupported causal claims, wrong dates,
+wrong institutions, wrong people, wrong figures, exaggerated rankings, or claims stronger than the source.
+Return only the JSON schema.
 """
-    user = "SOURCE ARTICLE:\n" + article_text[:12000] + "\n\nCLAIMS:\n- " + "\n- ".join(claims)
+
+    user = (
+        "SOURCE ARTICLE:\n" + article_text[:12000]
+        + "\n\nGENERATED CLAIMS:\n- " + "\n- ".join(claims)
+    )
+
     try:
         response = cerebras.chat.completions.create(
             model=CEREBRAS_MODEL,
-            messages=[{"role": "system", "content": prompt}, {"role": "user", "content": user}],
-            response_format={"type": "json_schema", "json_schema": {"name": "entertainment_claim_verify", "strict": True, "schema": VERIFY_SCHEMA}},
+            messages=[
+                {"role": "system", "content": prompt},
+                {"role": "user", "content": user},
+            ],
+            response_format={
+                "type": "json_schema",
+                "json_schema": {
+                    "name": "story_claim_verification",
+                    "strict": True,
+                    "schema": VERIFY_SCHEMA,
+                },
+            },
             reasoning_effort="low",
             temperature=0.0,
             max_completion_tokens=500,
         )
         data = json.loads(safe_text(response.choices[0].message.content))
-        return bool(data.get("supported"))
+        return bool(data.get("supported")), data.get("unsupported_claims", [])
     except Exception as exc:
         logger.warning("Claim verification failed: %s", exc)
+        # Verification infrastructure failure must not silently become a hard drop.
+        # Numeric grounding remains mandatory; this pass is advisory on verifier outage.
+        return True, []
+
+
+def event_status_verified(story,article_text):
+    claims="\n".join([story.get("headline",""),story.get("summary",""),*story.get("highlights",[])])
+    status_terms=re.findall(r"\b(?:confirmed|announced|renewed|cancelled|canceled|coming to|premieres|released|in theaters|production started|production wrapped|acquired|acquires|rights)\b[^.?!]{0,120}",claims,re.I)
+    if not status_terms:return True,[]
+    schema={"type":"object","properties":{"supported":{"type":"boolean"},"unsupported_claims":{"type":"array","items":{"type":"string"},"maxItems":3}},"required":["supported","unsupported_claims"],"additionalProperties":False}
+    prompt="You are a strict entertainment status verifier. Check whether status claims in the generated story are directly supported by the source article. Reject upgrades from speculation to confirmation and misstatements of release, renewal, cancellation, production, rights, platform availability or theatrical status. Return only JSON."
+    try:
+        r=cerebras.chat.completions.create(model=CEREBRAS_MODEL,messages=[{"role":"system","content":prompt},{"role":"user","content":"SOURCE ARTICLE:\n"+article_text[:12000]+"\n\nSTATUS CLAIMS:\n- "+"\n- ".join(status_terms)}],response_format={"type":"json_schema","json_schema":{"name":"entertainment_status_check","strict":True,"schema":schema}},reasoning_effort="low",temperature=0.0,max_completion_tokens=350)
+        d=json.loads(safe_text(r.choices[0].message.content));return bool(d.get("supported")),d.get("unsupported_claims",[])
+    except Exception as exc:
+        logger.warning("Event-status verification failed: %s",exc);return False,["verification infrastructure failure"]
+
+
+def process_story_candidate(item):
+    """
+    Extract, generate, ground and normalize one candidate.
+    Returns a publishable story or None.
+    """
+    article_text, image_url = extract_article(item)
+
+    if not article_text:
+        logger.warning(
+            "DROP extraction: %s",
+            item.get("title"),
+        )
+        return None
+
+    story = generate_story(
+        item,
+        article_text,
+    )
+
+    if not story:
+        logger.warning(
+            "DROP generation: %s",
+            item.get("title"),
+        )
+        return None
+
+    region = item.get(
+        "region",
+        "Entertainment",
+    )
+
+    story["topic"] = canonical_topic(
+        story.get("topic") or item.get("topic"),
+        region,
+    )
+
+    story["image_url"] = (
+        image_url
+        or item.get("image")
+    )
+
+    grounded, bad_number = numeric_grounded(
+        story,
+        article_text,
+    )
+
+    if not grounded:
+        logger.warning(
+            "Numeric grounding failed: %s (%s)",
+            story.get("headline"),
+            bad_number,
+        )
+
+        retry_story = generate_story(
+            {
+                **item,
+                "grounding_warning": bad_number,
+            },
+            article_text,
+        )
+
+        if not retry_story:
+            return None
+
+        retry_story["topic"] = canonical_topic(
+            retry_story.get("topic") or item.get("topic"),
+            region,
+        )
+        retry_story["image_url"] = (
+            image_url
+            or item.get("image")
+        )
+
+        grounded_retry, _ = numeric_grounded(
+            retry_story,
+            article_text,
+        )
+
+        if not grounded_retry:
+            logger.warning(
+                "DROP numeric grounding: %s",
+                story.get("headline"),
+            )
+            return None
+
+        story = retry_story
+
+    verified, unsupported_claims = claims_grounded(story, article_text)
+    if not verified:
+        logger.warning(
+            "Claim verification failed: %s | claims=%s",
+            story.get("headline"),
+            unsupported_claims,
+        )
+
+        retry_story = generate_story(
+            {**item, "grounding_warning": ", ".join(unsupported_claims[:3])},
+            article_text,
+        )
+        if not retry_story:
+            return None
+
+        retry_story["topic"] = canonical_topic(
+            retry_story.get("topic") or item.get("topic"),
+            region,
+        )
+        retry_story["image_url"] = image_url or item.get("image")
+
+        grounded_retry, _ = numeric_grounded(retry_story, article_text)
+        if not grounded_retry:
+            return None
+
+        verified_retry, _ = claims_grounded(retry_story, article_text)
+        if not verified_retry:
+            logger.warning("DROP claim grounding: %s", story.get("headline"))
+            return None
+        story = retry_story
+
+    status_verified, status_claims = event_status_verified(story, article_text)
+    if not status_verified:
+        logger.warning("DROP event-status verification: %s | claims=%s", story.get("headline"), status_claims)
+        return None
+
+    story["topic"] = canonical_topic(
+        story.get("topic") or item.get("topic"),
+        region,
+    )
+    story["institution"] = item.get(
+        "institution",
+        "",
+    )
+    story["event_key"] = item.get(
+        "event_key",
+        "",
+    )
+    story["event_cluster_id"] = item.get(
+        "event_cluster_id",
+        "",
+    )
+    story["event_confidence"] = item.get(
+        "event_confidence",
+        0,
+    )
+    story["event_source_count"] = item.get(
+        "event_source_count",
+        0,
+    )
+    story["category_hashtags"] = category_hashtags(
+        story
+    )
+
+    return story
+
+
+# ============================================================
+# MAIN
+# ============================================================
+
+def is_already_published_candidate(item):
+    canonical = safe_text(item.get("canonical"))
+    if canonical and canonical in POSTED_URLS:
+        return True
+
+    title = safe_text(item.get("title"))
+    if not title:
         return False
 
+    for event in STATE.get("events", {}).values():
+        if event.get("status") != "published":
+            continue
+        if event.get("region") != item.get("region"):
+            continue
+        published_at = parse_datetime(event.get("published_at"))
+        if not published_at or (NOW_BD - published_at).total_seconds() > EVENT_RETENTION_DAYS * 86400:
+            continue
+        previous_title = safe_text(event.get("headline"))
+        if previous_title and title_similarity(title, previous_title) >= 0.90:
+            return True
+    return False
 
-def download_image(url: str):
-    if not url:
-        return None
+
+def available_candidates(region, source_pool=None):
+    candidates = []
+    seen = set()
+
+    for item in STATE.get("queue", {}).values():
+        if item.get("region") != region:
+            continue
+        if item.get("status") not in {"pending", "selected"}:
+            continue
+
+        published = parse_datetime(item.get("published_date"))
+        if not published or not (DISCOVERY_START <= published <= DISCOVERY_END):
+            continue
+
+        url = safe_text(item.get("url"))
+        canonical = safe_text(item.get("canonical"))
+        if not canonical or canonical in seen:
+            continue
+
+        if source_pool == "primary" and not primary_domain_allowed(url, region):
+            continue
+        if source_pool == "fallback" and not fallback_domain_allowed(url, region):
+            continue
+        if source_pool is None and not allowed_source_for_region(url, region):
+            continue
+
+        if is_already_published_candidate(item):
+            continue
+        if title_duplicate_against_list(item.get("title", ""), candidates, threshold=0.94):
+            continue
+
+        candidates.append(dict(item))
+        seen.add(canonical)
+
+    candidates.sort(
+        key=lambda x: parse_datetime(x.get("published_date"))
+        or datetime.min.replace(tzinfo=timezone.utc),
+        reverse=True,
+    )
+    return candidates[:MAX_RSS_CANDIDATES]
+
+
+def prepare_ranked_region(region, candidates):
+    ranked = rank_candidates(candidates, region)
+    ranked = collapse_event_clusters(ranked)
+    ranked = [item for item in ranked if item.get("importance_score", 0) >= 7 and item.get("important") is True]
+    persist_event_cluster_state(ranked)
+    return ranked
+
+
+def process_ranked_region(region, ranked):
+    pool = build_candidate_pool(ranked, STORIES_PER_RUN)
+    valid = []
+    attempted = 0
+    rejected = 0
+
+    for item in pool:
+        if len(valid) >= STORIES_PER_RUN:
+            break
+        attempted += 1
+        story = process_story_candidate(item)
+        if not story:
+            rejected += 1
+            continue
+
+        # Final duplicate check after generation.
+        if is_already_published_candidate({**item, "title": story.get("headline", item.get("title"))}):
+            logger.info("DROP already published event: %s", story.get("headline", ""))
+            rejected += 1
+            continue
+
+        story["topic"] = canonical_topic(story.get("topic"), region)
+        story["category_hashtags"] = category_hashtags(story)
+        valid.append(story)
+        logger.info(
+            "ACCEPT %s #%d: rank=%s title=%s",
+            region,
+            len(valid),
+            item.get("editor_rank", "?"),
+            story.get("headline", ""),
+        )
+
+    logger.info(
+        "%s FINAL VALID: %d/%d | pool=%d attempted=%d rejected=%d",
+        region,
+        len(valid),
+        STORIES_PER_RUN,
+        len(pool),
+        attempted,
+        rejected,
+    )
+    return valid
+
+
+def run():
+    logger.info("ENTERTAINMENTNEWSROOM V1 UPDATE-ONLY")
+    logger.info("Channel=%s Mode=%s",TELEGRAM_CHANNEL,NEWS_MODE)
+    logger.info("LOOKBACK=%d hours | %s -> %s",DISCOVERY_LOOKBACK_HOURS,DISCOVERY_START.isoformat(),DISCOVERY_END.isoformat())
+    prune_state(); refresh_category_coverage(); collect_rss()
+    count=queue_candidates_for_region("Entertainment")
+    count+=google_news_gap_fill("Entertainment",count,DISCOVERY_TARGET_PER_REGION)
+    exa_gap_fill("Entertainment",count,DISCOVERY_TARGET_PER_REGION)
+    save_state(STATE)
+    candidates=available_candidates("Entertainment",source_pool="primary")
+    logger.info("DISCOVERY CANDIDATES: ENTERTAINMENT=%d",len(candidates))
+    ranked=prepare_ranked_region("Entertainment",candidates)
+    logger.info("UNIQUE EVENTS: ENTERTAINMENT=%d",len(ranked))
+    stories=process_ranked_region("Entertainment",ranked)
+    logger.info("FINAL: ENTERTAINMENT=%d/%d",len(stories),STORIES_PER_RUN)
+    published_count=0
+    for index,story in enumerate(stories,1):
+        rich_html=fit_rich_html(story)
+        if rich_visible_length(rich_html)>MAX_RICH_CHARACTERS:logger.error("Rich message exceeds Telegram limit: %s",story["headline"]);continue
+        image_path=prepare_image(story,index); result=send_rich_photo(image_path,rich_html)
+        if not result.get("ok"):
+            logger.warning("Rich Message publish failed; trying Bot API fallback: %s",result.get("description"));result=send_bot_api_fallback(image_path,rich_html)
+        if result.get("ok"):
+            published_count+=1; message=result.get("result",{}); message_id=message.get("message_id") if isinstance(message,dict) else None; canonical=story["canonical"]; POSTED_URLS.add(canonical); save_posted_url(canonical)
+            qi=STATE["queue"].get(canonical)
+            if qi:qi["status"]="posted";qi["posted_at"]=now_iso()
+            store_event(story,published=True,message_id=message_id);remember_posted_event(story);update_category_coverage(story);STATE["recent_titles"].append(normalize_title(story["headline"]))
+            logger.info("Published %d/%d: %s",published_count,MAX_STORIES_PER_RUN,story["headline"])
+        else:logger.error("Telegram failed: %s",result.get("description"))
+        save_state(STATE);time.sleep(POST_DELAY_SECONDS)
+    save_state(STATE);logger.info("Finished. Published=%d/%d",published_count,MAX_STORIES_PER_RUN)
+
+
+# ============================================================
+# SELF TEST
+# ============================================================
+
+def self_test():
+    sample={"headline":"Netflix Sets Release Date For Major New Series","summary":"Netflix has announced the release date for a major new scripted series with a global streaming rollout.","format":"Series","highlights":["Netflix confirmed the series release date.","The title is planned for a global streaming rollout.","The announcement establishes the next major launch milestone.","The series is positioned as a significant platform release."],"why_it_matters":"The announcement gives viewers a concrete launch date for a major scripted project. It also creates a clear milestone for Netflix.","whats_next":"Audiences should watch for the final trailer, episode details and additional launch information.","bold_terms":["Netflix","release date"],"source":"Deadline","url":"https://deadline.com/example/story","region":"Entertainment","topic":"Streaming Premieres","institution":"Netflix"}
+    rendered=dynamic_rich_html(sample)
+    assert "WHY IT MATTERS" in rendered and "WHAT'S NEXT" in rendered and "<aside>Series</aside>" in rendered
+    assert rendered.count("• ")==4 and "#Entertainment" in rendered and "@EntertainmentNewsroom" in __import__("inspect").getsource(branded_card)
+    assert canonical_url("https://www.example.com/story/?utm_source=x")=="example.com/story"
+    clustered=cluster_ranked_events([{**sample,"title":"Netflix announces new series","published_date":now_iso()},{**sample,"title":"Netflix announces new series","published_date":now_iso()}])
+    assert clustered and clustered[0]["event_cluster_size"]>=1
+    assert canonical_topic("Netflix streaming")=="Streaming Platform News" and "#Netflix" in category_hashtags(sample)
+    test_state=default_state();test_state["queue"]["example.com/story"]={"region":"Entertainment","published_date":now_iso(),"last_seen":now_iso(),"status":"pending","title":"Example","url":"https://example.com/story"}
+    original=globals()["STATE"];globals()["STATE"]=test_state
     try:
-        response = session.get(url, headers=HEADERS, timeout=25)
-        response.raise_for_status()
-        return Image.open(__import__("io").BytesIO(response.content)).convert("RGB")
-    except Exception:
-        return None
+        save_state(test_state)
+        with open(STATE_FILE,encoding="utf-8") as f:loaded=json.load(f)
+        assert loaded["queue"]["example.com/story"]["region"]=="Entertainment"
+    finally:globals()["STATE"]=original
+    logger.info("EntertainmentNewsroom V1 self-test passed.")
 
 
-def safe_font(size: int, bold: bool = False):
-    candidates = [
-        "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf" if bold else "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
-        "/usr/share/fonts/truetype/liberation2/LiberationSans-Bold.ttf" if bold else "/usr/share/fonts/truetype/liberation2/LiberationSans-Regular.ttf",
-    ]
-    for path in candidates:
-        if Path(path).exists():
-            return ImageFont.truetype(path, size)
-    return ImageFont.load_default()
-
-
-def create_branded_image(item: dict, story: dict):
-    image = download_image(item.get("image", ""))
-    if image is None:
-        image = Image.new("RGB", (1200, 675), (24, 28, 38))
-        draw = ImageDraw.Draw(image)
-        draw.text((55, 55), "ENTERTAINMENT NEWS", font=safe_font(36, True), fill="white")
-        headline = story["headline"]
-        words = headline.split()
-        lines, line = [], ""
-        for word in words:
-            test = (line + " " + word).strip()
-            if draw.textbbox((0, 0), test, font=safe_font(52, True))[2] > 1060 and line:
-                lines.append(line)
-                line = word
-            else:
-                line = test
-        if line:
-            lines.append(line)
-        y = 150
-        for line in lines[:5]:
-            draw.text((55, y), line, font=safe_font(52, True), fill="white")
-            y += 65
-    else:
-        image.thumbnail((1200, 675), Image.Resampling.LANCZOS)
-        canvas = Image.new("RGB", (1200, 675), (12, 12, 12))
-        canvas.paste(image, ((1200 - image.width) // 2, (675 - image.height) // 2))
-        image = canvas
-        draw = ImageDraw.Draw(image)
-    draw.rectangle((0, 625, 1200, 675), fill=(8, 8, 8))
-    source = source_name(item.get("url", ""))[:32]
-    draw.rounded_rectangle((24, 636, 24 + max(120, len(source) * 13), 668), radius=10, fill=(38, 38, 38))
-    draw.text((38, 642), source, font=safe_font(18, True), fill="white")
-    brand = "@EntertainmentNewsroom"
-    bw = draw.textbbox((0, 0), brand, font=safe_font(19, True))[2]
-    draw.rounded_rectangle((1174 - bw, 636, 1174, 668), radius=10, fill=(38, 38, 38))
-    draw.text((1188 - bw, 642), brand, font=safe_font(18, True), fill="white")
-    path = "/tmp/entertainment_story.jpg"
-    image.save(path, "JPEG", quality=90, optimize=True)
-    return path
-
-
-def format_rich_message(story: dict, item: dict) -> str:
-    esc = lambda x: html.escape(safe_text(x), quote=False)
-    tags = " ".join("#" + re.sub(r"[^A-Za-z0-9]", "", x.lstrip("#")) for x in story.get("hashtags", []))
-    highlights = "\n".join(f"• {esc(x)}" for x in story["highlights"])
-    return (
-        f"<b>{esc(story['headline'])}</b>\n\n"
-        f"{esc(story['summary'])}\n\n"
-        f"<b>KEY HIGHLIGHTS</b>\n{highlights}\n\n"
-        f"<blockquote expandable><b>THE CONTEXT</b>\n{esc(story['context'])}</blockquote>\n"
-        f"<blockquote expandable><b>BOTTOM LINE</b>\n{esc(story['bottom_line'])}</blockquote>\n\n"
-        f"{tags}\n\n"
-        f"<b>Source:</b> <a href=\"{html.escape(item['url'], quote=True)}\">{esc(story.get('source_name') or source_name(item['url']))}</a>"
+def visible_text_for_test(
+    rendered,
+):
+    text = re.sub(
+        r"<[^>]+>",
+        "",
+        rendered,
+    )
+    return html.unescape(
+        text
     )
 
 
-def telegram_call(method, data=None, files=None):
-    url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/{method}"
-    last = {"ok": False, "description": "unknown"}
-    for attempt in range(1, 6):
-        try:
-            response = session.post(url, data=data or {}, files=files, timeout=90)
-            result = response.json()
-            if result.get("ok"):
-                return result
-            last = result
-            if response.status_code == 429:
-                wait = int(result.get("parameters", {}).get("retry_after", 5))
-                time.sleep(max(1, wait))
-                continue
-            if response.status_code >= 500:
-                time.sleep(2 * attempt)
-                continue
-            break
-        except Exception as exc:
-            last = {"ok": False, "description": str(exc)}
-            time.sleep(2 * attempt)
-    return last
-
-
-def send_rich_photo(image_path: str, rich_html: str):
-    rich_message = {
-        "html": rich_html,
-        "media": [{"id": "newsphoto", "media": {"type": "photo", "media": "attach://photo"}}],
-        "skip_entity_detection": False,
-    }
-    with open(image_path, "rb") as photo:
-        result = telegram_call(
-            "sendRichMessage",
-            data={"chat_id": TELEGRAM_CHANNEL, "rich_message": json.dumps(rich_message, ensure_ascii=False)},
-            files={"photo": photo},
-        )
-    if result.get("ok"):
-        return result
-    # Compatibility fallback for standard Bot API environments.
-    plain = re.sub(r"<[^>]+>", "", html.unescape(rich_html))
-    plain = re.sub(r"\n{3,}", "\n\n", plain).strip()
-    if len(plain) > 950:
-        plain = plain[:950].rsplit(" ", 1)[0] + "..."
-    with open(image_path, "rb") as photo:
-        return telegram_call("sendPhoto", data={"chat_id": TELEGRAM_CHANNEL, "caption": plain}, files={"photo": photo})
-
-
-def persist_published(item: dict, story: dict, message_id=None):
-    event_id = hashlib_sha1(item.get("url", ""))
-    STATE["events"][event_id] = {
-        "event_key": item.get("event_key") or event_key(item.get("title", "")),
-        "headline": story.get("headline", ""),
-        "source": story.get("source_name") or source_name(item.get("url", "")),
-        "url": item.get("url", ""),
-        "importance_score": item.get("importance_score", 0),
-        "topic": item.get("topic", ""),
-        "published_at": now_iso(),
-        "selected_at": now_iso(),
-        "status": "published",
-        "message_id": message_id,
-    }
-    STATE["recent_titles"].append(story.get("headline", ""))
-    STATE["queue"].pop(item.get("canonical", ""), None)
-
-
-def hashlib_sha1(value: str) -> str:
-    import hashlib
-    return hashlib.sha1(value.encode("utf-8")).hexdigest()
-
-
-def process_candidate(item: dict):
-    article_text, image_url = extract_article(item)
-    if not article_text:
-        logger.warning("DROP extraction: %s", item.get("title"))
-        return None
-    item = dict(item)
-    if image_url:
-        item["image"] = image_url
-    story = generate_story(item, article_text)
-    if not story:
-        return None
-    if not verify_story(story, article_text):
-        logger.warning("DROP claim verification: %s", story.get("headline", ""))
-        return None
-    return item, story
-
-
-def self_test() -> int:
-    assert STORIES_PER_RUN == 6
-    assert 7 <= 10
-    assert allowed_domain("https://deadline.com/feature/x")
-    assert not allowed_domain("https://example.com/x")
-    assert title_similarity("Netflix announces Stranger Things 5", "Netflix Announces Stranger Things Season 5") > 0.7
-    sample_item = {"url": "https://variety.com/example"}
-    sample_story = {
-        "headline": "Netflix Announces Major New Series Release Date",
-        "summary": "Netflix confirmed a new release date for the series.",
-        "highlights": ["Release date confirmed", "Netflix is the platform", "Production remains active"],
-        "context": "The project is a major scripted series with broad audience interest.",
-        "bottom_line": "The announcement changes the rollout timing for viewers.",
-        "hashtags": ["Netflix", "Series"],
-        "source_name": "Variety",
-    }
-    assert "THE CONTEXT" in format_rich_message(sample_story, sample_item)
-    assert "BOTTOM LINE" in format_rich_message(sample_story, sample_item)
-    print("self-test: PASS")
-    return 0
-
-
-def run() -> int:
-    logger.info("ENTERTAINMENTNEWSROOM V1")
-    logger.info("Channel=%s Mode=%s", TELEGRAM_CHANNEL, NEWS_MODE)
-    prune_state()
-    for feed in RSS_FEEDS:
-        fetch_rss_feed(feed)
-    google_news_rss("major movie series streaming entertainment news")
-    google_news_rss("Bollywood Pan India Netflix Korean Chinese drama entertainment news")
-    exa_gap_fill()
-    save_state()
-
-    candidates = available_candidates()
-    logger.info("eligible=%d", len(candidates))
-    if not candidates:
-        return 0
-
-    ranked = collapse_events(rank_candidates(candidates))
-    logger.info("ranked_publishable=%d", len(ranked))
-    pool = ranked[:RECOVERY_POOL_SIZE]
-    published = 0
-    attempted = 0
-
-    for item in pool:
-        if published >= STORIES_PER_RUN:
-            break
-        attempted += 1
-        result = process_candidate(item)
-        if not result:
-            continue
-        final_item, story = result
-        if already_published_event(story["headline"]):
-            logger.info("DROP duplicate event: %s", story["headline"])
-            continue
-        image_path = create_branded_image(final_item, story)
-        rich_html = format_rich_message(story, final_item)
-        response = send_rich_photo(image_path, rich_html)
-        if not response.get("ok"):
-            logger.error("Telegram publish failed: %s", response)
-            continue
-        message_id = response.get("result", {}).get("message_id")
-        persist_published(final_item, story, message_id)
-        POSTED_URLS.add(canonical_url(final_item["url"]))
-        save_posted_url(final_item["url"])
-        save_state()
-        published += 1
-        logger.info("ACCEPT #%d rank=%s score=%s title=%s", published, final_item.get("editor_rank"), final_item.get("importance_score"), story.get("headline"))
-        time.sleep(POST_DELAY_SECONDS)
-
-    save_state()
-    logger.info("done published=%d attempted=%d", published, attempted)
-    return 0
-
-
-def main() -> int:
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--self-test", action="store_true")
-    args = parser.parse_args()
-    return self_test() if args.self_test else run()
-
-
 if __name__ == "__main__":
-    raise SystemExit(main())
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--self-test",
+        action="store_true",
+    )
+
+    args = parser.parse_args()
+
+    if args.self_test:
+        self_test()
+    else:
+        run()
