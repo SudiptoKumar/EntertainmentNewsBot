@@ -83,6 +83,8 @@ Telegram formatting follows the uploaded template: bold hooks/titles, italic met
 EXA_API_KEY
 CEREBRAS_API_KEY
 TELEGRAM_BOT_TOKEN
+TELEGRAM_API_ID
+TELEGRAM_API_HASH
 ```
 
 Optional:
@@ -117,3 +119,17 @@ The self-test covers scoring, the 80-point gate, all supported dynamic template 
 ## Deployment note
 
 The code can be syntax-tested and mock-integrated locally, but live Exa, Cerebras, image, and Telegram delivery must be exercised by GitHub Actions with the real secrets.
+
+### Telegram delivery
+
+The production publisher uses Telethon MTProto with native Telegram message entities. The post is built as plain text plus `MessageEntityBold`, `MessageEntityItalic`, `MessageEntityCode`, `MessageEntityTextUrl`, `MessageEntitySpoiler`, and `MessageEntityBlockquote` objects rather than sending Markdown/HTML markup. Telethon's `send_file()` supports `formatting_entities`, so the branded image and rich caption are sent together.
+
+Required Telegram secrets:
+
+```text
+TELEGRAM_BOT_TOKEN
+TELEGRAM_API_ID
+TELEGRAM_API_HASH
+```
+
+`TELEGRAM_API_ID` and `TELEGRAM_API_HASH` come from `my.telegram.org`. The bot token comes from BotFather.

@@ -1,6 +1,6 @@
 # Telegram Entertainment News — Dynamic Template System 
 
-Updated to use Telegram's **actual** supported formatting instead of generic markdown. Everything below renders correctly when typed directly in Telegram or sent via Bot API with `parse_mode: Markdown`/`MarkdownV2`.
+This file is the **content/layout specification**. Production delivery uses Telethon native `MessageEntity*` objects rather than sending Markdown/HTML markup. The visual rules below map to bold, italic, code, text-url, spoiler, and blockquote entities.
 
 ---
 

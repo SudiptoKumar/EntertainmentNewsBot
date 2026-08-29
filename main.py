@@ -4,6 +4,7 @@ import json
 import time
 import html
 import argparse
+import asyncio
 import logging
 import hashlib
 from datetime import datetime, timedelta, timezone
@@ -24,6 +25,16 @@ from urllib3.util.retry import Retry
 from exa_py import Exa
 from cerebras.cloud.sdk import Cerebras
 
+try:
+    from telethon import TelegramClient
+    from telethon.tl import types as tg_types
+    from telethon.errors import FloodWaitError, RPCError
+except ImportError:
+    TelegramClient = None
+    tg_types = None
+    FloodWaitError = Exception
+    RPCError = Exception
+
 
 # ============================================================
 # CONFIGURATION
@@ -32,8 +43,12 @@ from cerebras.cloud.sdk import Cerebras
 EXA_API_KEY = os.environ["EXA_API_KEY"]
 CEREBRAS_API_KEY = os.environ["CEREBRAS_API_KEY"]
 TELEGRAM_BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
+TELEGRAM_API_ID = int(os.environ.get("TELEGRAM_API_ID", "0") or 0)
+TELEGRAM_API_HASH = (os.environ.get("TELEGRAM_API_HASH") or "").strip()
+TELETHON_SESSION = (os.environ.get("TELETHON_SESSION") or "entertainment_newsroom_bot").strip()
 
 TELEGRAM_CHANNEL = (os.environ.get("TELEGRAM_CHANNEL") or "@EntertainmentNewsroom").strip()
+CHANNEL_TAG = TELEGRAM_CHANNEL if TELEGRAM_CHANNEL.startswith("@") else ""
 
 # Optional. If set, feed-down alerts go here (a private chat/DM with the
 # bot, not the public channel). If empty, alerts only go to the run log.
@@ -77,6 +92,7 @@ THIN_EXCERPT_CHARS = 150
 MAX_EXCERPT_ENRICH = 12
 MAX_SOURCE_PER_RUN = 99
 MAX_RICH_CHARACTERS = 32768
+MAX_TELEGRAM_CAPTION_CHARACTERS = 1024
 
 # Lightweight English stopwords used only by the conservative event/entity
 # deduplication layer. This is deliberately small so legitimate game entities
@@ -1059,13 +1075,7 @@ def alert_feed_down(feed_def, fail_count):
 
     if TELEGRAM_ADMIN_CHAT_ID:
         try:
-            telegram_call(
-                "sendMessage",
-                data={
-                    "chat_id": TELEGRAM_ADMIN_CHAT_ID,
-                    "text": message,
-                },
-            )
+            send_telethon_message(TELEGRAM_ADMIN_CHAT_ID, message)
         except Exception as exc:
             logger.warning(
                 "Feed-down alert failed to send: %s",
@@ -1734,7 +1744,7 @@ def extract_article(
 # STORY + KNOWLEDGE GENERATION
 # ============================================================
 
-STORY_SCHEMA={"type":"object","properties":{"headline":{"type":"string"},"summary":{"type":"string"},"sector":{"type":"string","enum":SECTORS},"format":{"type":"string","enum":["Film","Series","Streaming","Industry"]},"news_type":{"type":"string","enum":["Confirmed","Reported","Now Streaming","Trailer","Renewal","Cancellation","Release Date","Box Office","Industry","Casting","Production","Distribution","Announcement"]},"highlights":{"type":"array","items":{"type":"string"},"minItems":3,"maxItems":5},"platform":{"type":"string"},"episodes":{"type":"string"},"languages":{"type":"string"},"status":{"type":"string"},"release_date":{"type":"string"},"expected_date":{"type":"string"},"season":{"type":"string"},"amount":{"type":"string"},"domestic_amount":{"type":"string"},"worldwide_amount":{"type":"string"},"days_since_release":{"type":"string"},"reported_details":{"type":"array","items":{"type":"string"},"maxItems":4},"framing_line":{"type":"string"},"spoiler":{"type":"string"},"note":{"type":"string"},"bold_terms":{"type":"array","items":{"type":"string"},"maxItems":18}},"required":["headline","summary","sector","format","news_type","highlights","platform","episodes","languages","status","release_date","expected_date","season","amount","domestic_amount","worldwide_amount","days_since_release","reported_details","framing_line","spoiler","note","bold_terms"],"additionalProperties":False}
+STORY_SCHEMA={"type":"object","properties":{"headline":{"type":"string"},"year":{"type":"string"},"summary":{"type":"string"},"sector":{"type":"string","enum":SECTORS},"format":{"type":"string","enum":["Film","Series","Streaming","Industry"]},"news_type":{"type":"string","enum":["Confirmed","Reported","Now Streaming","Trailer","Renewal","Cancellation","Release Date","Box Office","Industry","Casting","Production","Distribution","Announcement"]},"highlights":{"type":"array","items":{"type":"string"},"minItems":3,"maxItems":5},"platform":{"type":"string"},"episodes":{"type":"string"},"languages":{"type":"string"},"status":{"type":"string"},"release_date":{"type":"string"},"expected_date":{"type":"string"},"season":{"type":"string"},"amount":{"type":"string"},"domestic_amount":{"type":"string"},"worldwide_amount":{"type":"string"},"days_since_release":{"type":"string"},"reported_details":{"type":"array","items":{"type":"string"},"maxItems":4},"framing_line":{"type":"string"},"spoiler":{"type":"string"},"note":{"type":"string"},"bold_terms":{"type":"array","items":{"type":"string"},"maxItems":18}},"required":["headline","year","summary","sector","format","news_type","highlights","platform","episodes","languages","status","release_date","expected_date","season","amount","domestic_amount","worldwide_amount","days_since_release","reported_details","framing_line","spoiler","note","bold_terms"],"additionalProperties":False}
 
 
 def first_sentence(text):
@@ -1789,18 +1799,18 @@ def first_sentence(text):
 def generate_story(item,article_text):
     sector=normalize_sector(item.get("sector"))
     prompt=f"""You are the senior newspaper entertainment editor for @EntertainmentNewsroom. Create a factual Telegram news card. Sector: {sector}. Editorial score: {item.get('importance_score',0)}/100.
-Rules: headline 6-14 words; summary exactly one sentence; sector exactly Hollywood/Indian/International; format Film/Series/Streaming/Industry; choose a precise news_type; 3-5 factual highlights. Populate only the template fields supported by the source; leave irrelevant dynamic fields empty. Use the exact Telegram template variant matching news_type. Spoiler is empty unless a real plot/finale/twist reveal is central. No unsupported facts, numbers, dates, cast, platforms or status claims. No hashtags, Markdown or HTML inside JSON.
+Rules: headline 6-14 words; year should be the relevant release/production year when clearly supported, otherwise empty; summary exactly one sentence; sector exactly Hollywood/Indian/International; format Film/Series/Streaming/Industry; choose a precise news_type; 3-5 factual highlights. Populate only the template fields supported by the source; leave irrelevant dynamic fields empty. Use the exact Telegram template variant matching news_type. Spoiler is empty unless a real plot/finale/twist reveal is central. No unsupported facts, numbers, dates, cast, platforms or status claims. No hashtags, Markdown or HTML inside JSON.
 Return only valid JSON matching the schema."""
     user=f"REGION: Entertainment\nSECTOR: {sector}\nSOURCE: {item['source']}\nSOURCE CLASS: {item.get('source_class','reported')}\nTITLE: {item['title']}\nDATE: {item['published_date']}\n\nARTICLE:\n{article_text[:14000]}"
     for attempt in range(3):
         try:
             response=cerebras.chat.completions.create(model=CEREBRAS_MODEL,messages=[{"role":"system","content":prompt},{"role":"user","content":user}],response_format={"type":"json_schema","json_schema":{"name":"entertainment_news_story_v11","strict":True,"schema":STORY_SCHEMA}},reasoning_effort="low",temperature=0.15,max_completion_tokens=1700)
-            data=json.loads(safe_text(response.choices[0].message.content)); headline=clean_generated_text(data.get("headline")); summary=first_sentence(data.get("summary")); highlights=[clean_generated_text(x) for x in data.get("highlights",[]) if clean_generated_text(x)]; spoiler=clean_generated_text(data.get("spoiler")); note=clean_generated_text(data.get("note")); fmt=safe_text(data.get("format")); news_type=safe_text(data.get("news_type")); out_sector=normalize_sector(data.get("sector"));
+            data=json.loads(safe_text(response.choices[0].message.content)); headline=clean_generated_text(data.get("headline")); year=clean_generated_text(data.get("year")); summary=first_sentence(data.get("summary")); highlights=[clean_generated_text(x) for x in data.get("highlights",[]) if clean_generated_text(x)]; spoiler=clean_generated_text(data.get("spoiler")); note=clean_generated_text(data.get("note")); fmt=safe_text(data.get("format")); news_type=safe_text(data.get("news_type")); out_sector=normalize_sector(data.get("sector"));
             allowed_types={"Confirmed","Reported","Now Streaming","Trailer","Renewal","Cancellation","Release Date","Box Office","Industry","Casting","Production","Distribution","Announcement"}
             if not headline or not summary or not complete_text(headline) or not complete_text(summary) or fmt not in {"Film","Series","Streaming","Industry"} or news_type not in allowed_types or not (3<=len(highlights)<=5) or any(not complete_text(x) for x in highlights) or (spoiler and not complete_text(spoiler)): raise ValueError("Invalid story structure")
             dynamic_fields={k:trim_source_text(clean_generated_text(data.get(k)),700) for k in ["platform","episodes","languages","status","release_date","expected_date","season","amount","domestic_amount","worldwide_amount","days_since_release","framing_line","note"]}
             dynamic_fields["reported_details"]=[trim_source_text(clean_generated_text(x),180) for x in data.get("reported_details",[]) if clean_generated_text(x)][:4]
-            return {**item,"headline":trim_source_text(headline,120),"summary":trim_source_text(summary,300),"sector":out_sector,"format":fmt,"news_type":news_type,"highlights":[trim_source_text(x,150) for x in highlights],**dynamic_fields,"spoiler":trim_source_text(spoiler,700),"bold_terms":[safe_text(x) for x in data.get("bold_terms",[]) if safe_text(x)]}
+            return {**item,"headline":trim_source_text(headline,120),"year":trim_source_text(year,10),"summary":trim_source_text(summary,300),"sector":out_sector,"format":fmt,"news_type":news_type,"highlights":[trim_source_text(x,150) for x in highlights],**dynamic_fields,"spoiler":trim_source_text(spoiler,700),"bold_terms":[safe_text(x) for x in data.get("bold_terms",[]) if safe_text(x)]}
         except Exception as exc:
             logger.warning("Story generation attempt %d failed: %s",attempt+1,exc)
             if attempt<2:time.sleep(1)
@@ -2113,111 +2123,318 @@ def bold_terms_html(
 # DYNAMIC RICH MESSAGE HTML
 # ============================================================
 
-def dynamic_rich_html(story):
-    """Render exactly one of the approved Template.md variants.
+class TelethonMessageBuilder:
+    """Build Telegram text plus native MessageEntity objects.
 
-    No THE CONTEXT or BOTTOM LINE blocks are generated. The selected
-    structure depends on the verified news_type.
+    Offsets are measured in UTF-16 code units because that is what Telegram's
+    MTProto message entities use. No Markdown/HTML parser is involved.
     """
+    def __init__(self):
+        self.text = ""
+        self.entities = []
+
+    @staticmethod
+    def _u16len(value):
+        return len(value.encode("utf-16-le")) // 2
+
+    def add(self, value="", entity=None, url=None):
+        # Preserve intentional spaces/newlines used by the template. Field
+        # normalization happens at the call site, not inside the renderer.
+        if value is None:
+            return
+        value = str(value)
+        if value == "":
+            return
+        offset = self._u16len(self.text)
+        self.text += value
+        length = self._u16len(value)
+        if entity:
+            if entity == "text_url":
+                self.entities.append(tg_types.MessageEntityTextUrl(offset=offset, length=length, url=url or ""))
+            else:
+                cls = getattr(tg_types, f"MessageEntity{entity}")
+                self.entities.append(cls(offset=offset, length=length))
+
+    def newline(self, count=1):
+        if self.text and not self.text.endswith("\n" * count):
+            self.text += "\n" * count
+
+    def line(self, value="", entity=None, url=None):
+        self.add(value, entity=entity, url=url)
+        self.newline()
+
+    def add_bold_terms(self, value, terms):
+        value = safe_text(value)
+        terms = sorted({safe_text(t) for t in terms if safe_text(t)}, key=len, reverse=True)
+        if not value or not terms:
+            self.add(value)
+            return
+        pattern = re.compile("|".join(re.escape(t) for t in terms), re.I)
+        pos = 0
+        for match in pattern.finditer(value):
+            if match.start() > pos:
+                self.add(value[pos:match.start()])
+            self.add(match.group(0), entity="Bold")
+            pos = match.end()
+        if pos < len(value):
+            self.add(value[pos:])
+
+
+def _add_code_line(builder, label, value):
+    value = safe_text(value)
+    if not value:
+        return False
+    builder.add("• " + label + ": ")
+    builder.add(value, entity="Code")
+    builder.newline()
+    return True
+
+
+def _add_source(builder, story, label="Source"):
+    source = safe_text(story.get("source", "Source"))
+    url = safe_text(story.get("url", ""))
+    builder.newline()
+    builder.add(label + ": ")
+    if url:
+        builder.add(source or "Source", entity="text_url", url=url)
+    else:
+        builder.add(source or "Source")
+    builder.newline()
+
+
+def render_telethon_message(story):
+    """Render the supplied Template.md variants using native Telethon entities."""
+    if TelegramClient is None or tg_types is None:
+        raise RuntimeError("Telethon is required for rich Telegram rendering")
+
+    b = TelethonMessageBuilder()
     terms = derive_bold_terms(story)
     sector = normalize_sector(story.get("sector"))
     fmt = safe_text(story.get("format", "Film"))
     news_type = safe_text(story.get("news_type", "Confirmed"))
-    title = escape_rich_html(story.get("headline", ""))
-    summary = bold_terms_html(story.get("summary", ""), terms)
-    source = escape_rich_html(story.get("source", ""))
-    url = html.escape(story.get("url", ""), quote=True)
-    hashtag_text = " ".join(category_hashtags(story))
+    title = safe_text(story.get("headline", ""))
+    year = safe_text(story.get("year", ""))
+    summary = safe_text(story.get("summary", ""))
+    hashtags = category_hashtags(story)
 
-    hooks = {
-        "Now Streaming": "*🔥 NOW STREAMING*",
-        "Trailer": f"*🎞️ TRAILER DROP: {title}*",
-        "Renewal": f"*⚡ RENEWED: {title}*",
-        "Cancellation": f"*❌ CANCELLED: {title}*",
-        "Box Office": f"*💰 BOX OFFICE: {title}*",
-        "Reported": f"*🚨 BREAKING: _{title}_ UPDATE!*",
-        "Confirmed": "*📢 CONFIRMED*",
-        "Release Date": "*📅 RELEASE UPDATE*",
-        "Distribution": "*🌍 DISTRIBUTION UPDATE*",
-        "Casting": "*🎭 CASTING UPDATE*",
-        "Production": "*🎬 PRODUCTION UPDATE*",
-        "Industry": "*🏢 INDUSTRY UPDATE*",
-        "Announcement": "*📢 CONFIRMED*",
-    }
-    hook = hooks.get(news_type, "*📢 CONFIRMED*")
-    meta = f"_{escape_rich_html(sector)} • {escape_rich_html(fmt)} • {escape_rich_html(news_type)}_"
-    parts = ['<img src="tg://photo?id=newsphoto">', hook, f"*🎬 {title}*", meta]
+    def add_title_block(include_meta=True):
+        b.line(f"🎬 {title}" + (f" ({year})" if year else ""), entity="Bold")
+        if include_meta:
+            b.line()
+            b.line(f"{sector} • {fmt} • {news_type}", entity="Italic")
 
-    if news_type == "Now Streaming":
-        parts += [f"> 📖 {summary}", "📺 *Availability*",
-                  f"• Platform: `{escape_rich_html(story.get('platform',''))}`",
-                  f"• Episodes: `{escape_rich_html(story.get('episodes',''))}`",
-                  f"• Language: `{escape_rich_html(story.get('languages',''))}`",
-                  f"• Status: `{escape_rich_html(story.get('status','Available Now'))}`",
-                  f"📅 *Release:* {escape_rich_html(story.get('release_date',''))}"]
-        link_label = "Watch Now"
-    elif news_type == "Reported":
-        parts += [f"📌 *Reported Details:*", *[f"• {bold_terms_html(x,terms)}" for x in story.get("reported_details",[])]]
-        if story.get("expected_date"): parts.append(f"📅 *Expected:* {escape_rich_html(story.get('expected_date'))}")
-        if story.get("note"): parts.append(f"> ℹ️ {bold_terms_html(story.get('note'),terms)}")
-        link_label = "Source"
+    def add_synopsis():
+        b.newline()
+        start = b._u16len(b.text)
+        b.add("📖 ")
+        b.add_bold_terms(summary, terms)
+        length = b._u16len(b.text) - start
+        b.entities.append(tg_types.MessageEntityBlockquote(offset=start, length=length))
+        b.newline()
+
+    def add_note():
+        if not story.get("note"):
+            return
+        b.newline()
+        start = b._u16len(b.text)
+        b.add("ℹ️ ")
+        b.add_bold_terms(story.get("note"), terms)
+        length = b._u16len(b.text) - start
+        b.entities.append(tg_types.MessageEntityBlockquote(offset=start, length=length))
+        b.newline()
+
+    if news_type == "Reported":
+        # Template variant 2: hook/title-inline, reported details, expected, note.
+        b.line(f"🚨 BREAKING: {title} UPDATE!", entity="Bold")
+        b.newline()
+        b.line("📌 Reported Details:", entity="Bold")
+        for detail in story.get("reported_details", [])[:4]:
+            b.add("• ")
+            b.add_bold_terms(detail, terms)
+            b.newline()
+        if story.get("expected_date"):
+            b.add("📅 Expected: ")
+            b.add(safe_text(story.get("expected_date")))
+            b.newline()
+        add_note()
+
     elif news_type == "Trailer":
-        parts += [f"📌 {summary}", f"📅 *Releases:* {escape_rich_html(story.get('release_date',''))}"]
-        link_label = "Watch Trailer"
+        # Template variant 3.
+        b.line(f"🎞️ TRAILER DROP: {title}", entity="Bold")
+        b.newline()
+        add_title_block(include_meta=False)
+        b.newline()
+        b.add("📌 ")
+        b.add_bold_terms(summary, terms)
+        b.newline(2)
+        if story.get("release_date"):
+            b.add("📅 Releases: ")
+            b.add(safe_text(story.get("release_date")))
+            b.newline()
+
     elif news_type in {"Renewal", "Cancellation"}:
-        season = story.get("season")
-        if season: parts.append(f"📌 {escape_rich_html(title)} {('renewed' if news_type=='Renewal' else 'cancelled')} for Season `{escape_rich_html(season)}`")
-        else: parts.append(f"📌 {summary}")
-        if story.get("platform"): parts.append(f"📺 Platform: `{escape_rich_html(story.get('platform'))}`")
-        if story.get("note"): parts.append(f"> ℹ️ {bold_terms_html(story.get('note'),terms)}")
-        link_label = "Source"
+        # Template variant 4.
+        hook = "⚡ RENEWED" if news_type == "Renewal" else "❌ CANCELLED"
+        b.line(f"{hook}: {title}", entity="Bold")
+        b.newline()
+        season = safe_text(story.get("season"))
+        if season:
+            action = "renewed" if news_type == "Renewal" else "cancelled"
+            b.add("📌 ")
+            b.add(f"{title} {action} for Season ")
+            b.add(season, entity="Code")
+            b.newline()
+        else:
+            b.add("📌 ")
+            b.add_bold_terms(summary, terms)
+            b.newline()
+        if story.get("platform"):
+            b.newline()
+            _add_code_line(b, "Platform", story.get("platform"))
+        add_note()
+
     elif news_type == "Box Office":
-        if story.get("amount"): parts.append(f"📌 *{bold_terms_html(story.get('amount'),terms)}*")
-        if story.get("domestic_amount"): parts.append(f"• Domestic: `{escape_rich_html(story.get('domestic_amount'))}`")
-        if story.get("worldwide_amount"): parts.append(f"• Worldwide: `{escape_rich_html(story.get('worldwide_amount'))}`")
-        if story.get("days_since_release"): parts.append(f"📅 Days since release: `{escape_rich_html(story.get('days_since_release'))}`")
-        link_label = "Source"
-    elif story.get("spoiler"):
-        parts += [f"📌 {summary}", "🙈 *Tap to reveal:*", f"||{bold_terms_html(story.get('spoiler'),terms)}||"]
-        if story.get("note"): parts.append(f"> ℹ️ {bold_terms_html(story.get('note'),terms)}")
-        link_label = "Source"
+        # Template variant 5.
+        b.line(f"💰 BOX OFFICE: {title}", entity="Bold")
+        b.newline()
+        add_title_block(include_meta=False)
+        b.newline()
+        amount = safe_text(story.get("amount"))
+        if amount:
+            b.add("📌 ")
+            b.add(amount, entity="Bold")
+            b.newline()
+        _add_code_line(b, "Domestic", story.get("domestic_amount"))
+        _add_code_line(b, "Worldwide", story.get("worldwide_amount"))
+        if story.get("days_since_release"):
+            _add_code_line(b, "Days since release", story.get("days_since_release"))
+
+    elif story.get("spoiler") and news_type not in {"Now Streaming"}:
+        # Template variant 6.
+        b.line(f"⭐ EXCLUSIVE: {title} ENDING DETAILS", entity="Bold")
+        b.newline()
+        add_title_block(include_meta=False)
+        b.newline()
+        b.add("📌 ")
+        b.add_bold_terms(story.get("framing_line") or summary, terms)
+        b.newline(2)
+        b.line("🙈 Tap to reveal:", entity="Bold")
+        start = b._u16len(b.text)
+        b.add_bold_terms(story.get("spoiler"), terms)
+        length = b._u16len(b.text) - start
+        b.entities.append(tg_types.MessageEntitySpoiler(offset=start, length=length))
+        add_note()
+
+    elif news_type == "Now Streaming":
+        # Template variant 1.
+        b.line("🔥 NOW STREAMING", entity="Bold")
+        b.newline()
+        add_title_block(include_meta=True)
+        add_synopsis()
+        b.line("📺 Availability", entity="Bold")
+        _add_code_line(b, "Platform", story.get("platform"))
+        _add_code_line(b, "Episodes", story.get("episodes"))
+        _add_code_line(b, "Language", story.get("languages"))
+        _add_code_line(b, "Status", story.get("status") or "Available Now")
+        if story.get("release_date"):
+            b.newline()
+            b.add("📅 Release: ")
+            b.add(safe_text(story.get("release_date")))
+            b.newline()
+        if story.get("spoiler"):
+            b.newline()
+            b.line("🙈 Spoiler", entity="Bold")
+            start = b._u16len(b.text)
+            b.add_bold_terms(story.get("spoiler"), terms)
+            length = b._u16len(b.text) - start
+            b.entities.append(tg_types.MessageEntitySpoiler(offset=start, length=length))
+        add_note()
+
     else:
-        parts += [f"> 📖 {summary}", "📌 *What's New:"]
-        parts += [f"• {bold_terms_html(x,terms)}" for x in story.get("highlights",[])]
-        if story.get("platform"): parts.append(f"📺 Platform: `{escape_rich_html(story.get('platform'))}`")
-        if story.get("release_date"): parts.append(f"📅 *Release:* {escape_rich_html(story.get('release_date'))}")
-        link_label = "Source"
+        # Core template for confirmed announcements, release-date, industry,
+        # casting, production and distribution stories.
+        hook_map = {
+            "Confirmed": "📢 CONFIRMED",
+            "Release Date": "📅 RELEASE UPDATE",
+            "Distribution": "🌍 DISTRIBUTION UPDATE",
+            "Casting": "🎭 CASTING UPDATE",
+            "Production": "🎬 PRODUCTION UPDATE",
+            "Industry": "🏢 INDUSTRY UPDATE",
+            "Announcement": "📢 CONFIRMED",
+        }
+        b.line(hook_map.get(news_type, "📢 CONFIRMED"), entity="Bold")
+        b.newline()
+        add_title_block(include_meta=True)
+        add_synopsis()
+        b.line("📌 What's New:", entity="Bold")
+        for detail in story.get("highlights", [])[:5]:
+            b.add("• ")
+            b.add_bold_terms(detail, terms)
+            b.newline()
+        if story.get("platform"):
+            b.newline()
+            _add_code_line(b, "Platform", story.get("platform"))
+        if story.get("episodes"):
+            _add_code_line(b, "Episodes", story.get("episodes"))
+        if story.get("languages"):
+            _add_code_line(b, "Language", story.get("languages"))
+        if story.get("status"):
+            _add_code_line(b, "Status", story.get("status"))
+        if story.get("release_date"):
+            b.newline()
+            b.add("📅 Release: ")
+            b.add(safe_text(story.get("release_date")))
+            b.newline()
+        if story.get("spoiler"):
+            b.newline()
+            b.line("🙈 Spoiler", entity="Bold")
+            start = b._u16len(b.text)
+            b.add_bold_terms(story.get("spoiler"), terms)
+            length = b._u16len(b.text) - start
+            b.entities.append(tg_types.MessageEntitySpoiler(offset=start, length=length))
+        add_note()
 
-    # For generic variants, the summary is already used above; for the
-    # core template it is the synopsis block. Avoid duplicate summary text.
-    if news_type not in {"Now Streaming", "Reported", "Trailer", "Renewal", "Cancellation", "Box Office"} and not story.get("spoiler"):
-        pass
+    if CHANNEL_TAG or hashtags:
+        b.newline()
+        footer = " ".join([x for x in [CHANNEL_TAG, *hashtags] if x])
+        b.line(footer)
 
-    if story.get("spoiler") and news_type not in {"Reported"} and "Tap to reveal:" not in "\n".join(parts):
-        parts += ["🙈 *Spoiler*", f"||{bold_terms_html(story.get('spoiler'),terms)}||"]
-    if hashtag_text:
-        parts.append(escape_rich_html(hashtag_text))
-    parts.append(f"🔗 [{source}]({url})" if link_label == "Source" else f"🔗 [{link_label}]({url})")
-    return "\n".join(parts)
+    _add_source(b, story, "Source")
 
+    if len(b.text) > MAX_TELEGRAM_CAPTION_CHARACTERS:
+        raise ValueError(f"Telegram photo caption exceeds {MAX_TELEGRAM_CAPTION_CHARACTERS} characters")
+    return b.text.rstrip(), b.entities
+
+def dynamic_rich_html(story):
+    """Compatibility representation for tests; production delivery uses Telethon entities."""
+    text, _ = render_telethon_message(story)
+    return html.escape(text, quote=False)
 
 def rich_visible_length(text):
-    no_tags = re.sub(r"<[^>]+>", "", text)
-    return len(html.unescape(no_tags))
+    return len(html.unescape(re.sub(r"<[^>]+>", "", safe_text(text))))
 
 
 def fit_rich_html(story):
-    variants = [300, 240, 190, 160]
-    for limit in variants:
-        candidate = dict(story)
-        candidate["summary"] = trim_source_text(story.get("summary", ""), limit)
-        candidate["highlights"] = [trim_source_text(x, 150) for x in story.get("highlights", [])]
-        candidate["reported_details"] = [trim_source_text(x, 150) for x in story.get("reported_details", [])]
-        candidate["spoiler"] = trim_source_text(story.get("spoiler", ""), 500)
-        rendered = dynamic_rich_html(candidate)
-        if rich_visible_length(rendered) <= MAX_RICH_CHARACTERS:
-            return rendered
-    return dynamic_rich_html(story)
+    """Compatibility wrapper returning the deterministic Telethon text."""
+    text, _ = render_telethon_message(story)
+    return text
+
+
+def fit_telethon_message(story):
+    """Trim dynamic fields conservatively until the photo caption fits."""
+    candidates = [
+        dict(story),
+        dict(story, summary=trim_source_text(story.get("summary", ""), 220)),
+        dict(story, summary=trim_source_text(story.get("summary", ""), 180), highlights=[trim_source_text(x, 110) for x in story.get("highlights", [])[:4]], reported_details=[trim_source_text(x, 120) for x in story.get("reported_details", [])[:3]], spoiler=trim_source_text(story.get("spoiler", ""), 300), note=trim_source_text(story.get("note", ""), 180)),
+    ]
+    last_error = None
+    for candidate in candidates:
+        try:
+            text, entities = render_telethon_message(candidate)
+            return text, entities
+        except ValueError as exc:
+            last_error = exc
+    raise last_error or ValueError("Unable to fit Telegram message")
 
 
 # ============================================================
@@ -2564,148 +2781,80 @@ def prepare_image(
 # TELEGRAM RICH MESSAGES
 # ============================================================
 
-def telegram_call(
-    method,
-    data=None,
-    files=None,
-):
-    url = (
-        f"https://api.telegram.org/"
-        f"bot{TELEGRAM_BOT_TOKEN}/"
-        f"{method}"
-    )
-
-    last = {
-        "ok": False,
-        "description": "Unknown error",
-    }
-
-    for attempt in range(
-        1,
-        6,
-    ):
-        try:
-            response = session.post(
-                url,
-                data=data or {},
-                files=files,
-                timeout=90,
-            )
-
-            result = response.json()
-
-            if result.get(
-                "ok"
-            ):
-                return result
-
-            last = result
-
-            if response.status_code == 429:
-                retry_after = int(
-                    result.get(
-                        "parameters",
-                        {},
-                    ).get(
-                        "retry_after",
-                        5,
-                    )
-                )
-
-                logger.warning(
-                    "Telegram 429; waiting %ss",
-                    retry_after,
-                )
-
-                time.sleep(
-                    max(
-                        1,
-                        retry_after,
-                    )
-                )
-                continue
-
-            if response.status_code >= 500:
-                time.sleep(
-                    2 * attempt
-                )
-                continue
-
-            break
-
-        except Exception as exc:
-            last = {
-                "ok": False,
-                "description": str(exc),
-            }
-
-            time.sleep(
-                2 * attempt
-            )
-
-    return last
+def _require_telethon_config():
+    if TelegramClient is None or tg_types is None:
+        raise RuntimeError("Telethon is not installed")
+    if not TELEGRAM_API_ID or not TELEGRAM_API_HASH:
+        raise RuntimeError("TELEGRAM_API_ID and TELEGRAM_API_HASH are required for Telethon")
+    if not TELEGRAM_BOT_TOKEN:
+        raise RuntimeError("TELEGRAM_BOT_TOKEN is required")
 
 
+def send_telethon_message(entity, text):
+    """Send a plain admin message through the same Telethon transport."""
+    _require_telethon_config()
 
-def send_bot_api_fallback(image_path, rich_html):
-    """Last-resort Bot API photo send with a safe caption length."""
-    text = re.sub(r"<br\s*/?>", "\n", rich_html, flags=re.I)
-    text = re.sub(r"</(p|h1|h2|h3|footer|summary|details|tr|td)>", "\n", text, flags=re.I)
-    text = re.sub(r"<[^>]+>", "", text)
-    text = html.unescape(text)
-    text = re.sub(r"\n{3,}", "\n\n", text).strip()
-    if len(text) > 900:
-        text = text[:900].rsplit(" ", 1)[0].rstrip() + "..."
-
-    url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendPhoto"
-    try:
-        with open(image_path, "rb") as photo:
-            response = session.post(
-                url,
-                data={"chat_id": TELEGRAM_CHANNEL, "caption": text},
-                files={"photo": photo},
-                timeout=90,
-            )
-        return response.json()
-    except Exception as exc:
-        return {"ok": False, "description": str(exc)}
-
-def send_rich_photo(
-    image_path,
-    rich_html,
-):
-    rich_message = {
-        "html": rich_html,
-        "media": [
-            {
-                "id": "newsphoto",
-                "media": {
-                    "type": "photo",
-                    "media": "attach://photo",
-                },
-            }
-        ],
-        "skip_entity_detection": False,
-    }
-
-    with open(
-        image_path,
-        "rb",
-    ) as photo:
-
-        return telegram_call(
-            "sendRichMessage",
-            data={
-                "chat_id": TELEGRAM_CHANNEL,
-                "rich_message": json.dumps(
-                    rich_message,
-                    ensure_ascii=False,
-                ),
-            },
-            files={
-                "photo": photo
-            },
+    async def _send():
+        client = TelegramClient(
+            TELETHON_SESSION,
+            TELEGRAM_API_ID,
+            TELEGRAM_API_HASH,
+            request_retries=5,
+            connection_retries=5,
+            retry_delay=2,
+            flood_sleep_threshold=60,
         )
+        try:
+            await client.start(bot_token=TELEGRAM_BOT_TOKEN)
+            return await client.send_message(entity, text, parse_mode=None)
+        finally:
+            await client.disconnect()
+
+    return asyncio.run(_send())
+
+
+def send_telethon_photo(image_path, story):
+    """Send the branded image and native Telethon entities as one caption."""
+    _require_telethon_config()
+    text, entities = fit_telethon_message(story)
+
+    async def _send():
+        client = TelegramClient(
+            TELETHON_SESSION,
+            TELEGRAM_API_ID,
+            TELEGRAM_API_HASH,
+            request_retries=5,
+            connection_retries=5,
+            retry_delay=2,
+            flood_sleep_threshold=60,
+        )
+        try:
+            await client.start(bot_token=TELEGRAM_BOT_TOKEN)
+            return await client.send_file(
+                TELEGRAM_CHANNEL,
+                image_path,
+                caption=text,
+                formatting_entities=entities,
+                parse_mode=None,
+                silent=False,
+            )
+        finally:
+            await client.disconnect()
+
+    last_error = None
+    for attempt in range(1, 6):
+        try:
+            return asyncio.run(_send())
+        except FloodWaitError as exc:
+            last_error = exc
+            wait_for = int(getattr(exc, "seconds", 5))
+            logger.warning("Telethon flood wait: %ss", wait_for)
+            time.sleep(wait_for)
+        except (RPCError, OSError, RuntimeError) as exc:
+            last_error = exc
+            logger.warning("Telethon send attempt %d failed: %s", attempt, exc)
+            time.sleep(min(2 * attempt, 10))
+    raise RuntimeError(f"Telethon publication failed: {last_error}")
 
 
 # ============================================================
@@ -3131,7 +3280,7 @@ def available_candidates(region, source_pool=None):
 def prepare_ranked_region(region, candidates):
     ranked = rank_candidates(candidates, region)
     ranked = collapse_event_clusters(ranked)
-    ranked = [item for item in ranked if item.get("importance_score", 0) >= 7 and item.get("important") is True]
+    ranked = [item for item in ranked if item.get("importance_score", 0) >= PUBLISH_THRESHOLD and item.get("important") is True]
     persist_event_cluster_state(ranked)
     return ranked
 
@@ -3157,16 +3306,19 @@ def run():
     ranked=prepare_ranked_region("Entertainment",candidates); logger.info("PUBLISHABLE RANKED CANDIDATES: %d",len(ranked))
     stories=process_ranked_region("Entertainment",ranked); published_count=0
     for index,story in enumerate(stories,1):
-        rich_html=fit_rich_html(story)
-        if rich_visible_length(rich_html)>MAX_RICH_CHARACTERS:logger.error("Rich message exceeds Telegram limit: %s",story["headline"]);continue
-        image_path=prepare_image(story,index); result=send_rich_photo(image_path,rich_html)
-        if not result.get("ok"):result=send_bot_api_fallback(image_path,rich_html)
-        if result.get("ok"):
-            published_count+=1; message=result.get("result",{}); message_id=message.get("message_id") if isinstance(message,dict) else None; canonical=story["canonical"]; POSTED_URLS.add(canonical); save_posted_url(canonical); qi=STATE["queue"].get(canonical);
+        try:
+            text, entities = fit_telethon_message(story)
+            logger.info("Telegram caption prepared: chars=%d entities=%d type=%s", len(text), len(entities), story.get("news_type"))
+            image_path=prepare_image(story,index)
+            message=send_telethon_photo(image_path,story)
+            published_count+=1
+            message_id=getattr(message,"id",None)
+            canonical=story["canonical"]; POSTED_URLS.add(canonical); save_posted_url(canonical); qi=STATE["queue"].get(canonical)
             if qi:qi["status"]="posted";qi["posted_at"]=now_iso()
             store_event(story,published=True,message_id=message_id); remember_posted_event(story); update_category_coverage(story); STATE["recent_titles"].append(normalize_title(story["headline"]))
-            logger.info("Published #%d score=%s sector=%s: %s",published_count,story.get("importance_score",0),story.get("sector"),story["headline"])
-        else:logger.error("Telegram failed: %s",result.get("description"))
+            logger.info("Published #%d score=%s sector=%s type=%s: %s",published_count,story.get("importance_score",0),story.get("sector"),story.get("news_type"),story["headline"])
+        except Exception as exc:
+            logger.error("Telegram publication failed for %s: %s",story.get("headline"),exc)
         save_state(STATE); time.sleep(POST_DELAY_SECONDS)
     save_state(STATE); logger.info("Finished. Published=%d",published_count)
 
@@ -3180,15 +3332,22 @@ def self_test():
     rendered=dynamic_rich_html(sample)
     assert "THE CONTEXT" not in rendered and "BOTTOM LINE" not in rendered
     assert "Release Date" in rendered and "KEY HIGHLIGHTS" not in rendered
-    assert "Hollywood" in rendered and "[Deadline]" in rendered
+    assert "Hollywood" in rendered and "Deadline" in rendered
+    plain_text, entities = render_telethon_message(sample)
+    assert "[Deadline]" not in plain_text and "https://deadline.com/example/story" not in plain_text
+    assert any(entity.__class__.__name__ == "MessageEntityBold" for entity in entities)
+    assert any(entity.__class__.__name__ == "MessageEntityItalic" for entity in entities)
+    assert any(entity.__class__.__name__ == "MessageEntityTextUrl" and getattr(entity, "url", "") == sample["url"] for entity in entities)
     assert rank_score({"significance":20,"reach":15,"event_magnitude":15,"platform_ip_strength":10,"source_authority":15,"evidence_strength":10,"international_relevance":5,"recency":5,"audience_anticipation":5,"source_class":"official"})==100
     assert rank_score({"significance":20,"reach":15,"event_magnitude":15,"platform_ip_strength":10,"source_authority":15,"evidence_strength":10,"international_relevance":5,"recency":5,"audience_anticipation":5,"source_class":"rumor"})==69
+    assert prepare_ranked_region.__name__ == "prepare_ranked_region"
+    assert build_candidate_pool([{"importance_score":79,"important":False},{"importance_score":80,"important":True}]) == [{"importance_score":80,"important":True}]
     for variant in ["Now Streaming","Reported","Trailer","Renewal","Cancellation","Box Office","Release Date"]:
         probe=dict(sample, news_type=variant)
         out=dynamic_rich_html(probe)
         assert "THE CONTEXT" not in out and "BOTTOM LINE" not in out
-        assert "@EntertainmentNewsroom" not in out
-        assert "https://deadline.com/example/story" in out
+        assert "@EntertainmentNewsroom" in out
+        assert "https://deadline.com/example/story" not in out
     assert normalize_sector("Bollywood")=="Indian"
     test_state=default_state(); test_state["queue"]["example.com/story"]={"region":"Entertainment","published_date":now_iso(),"last_seen":now_iso(),"status":"pending","title":"Example","url":"https://example.com/story"}
     original=globals()["STATE"]; globals()["STATE"]=test_state
@@ -3202,18 +3361,19 @@ def self_test():
     # Dynamic template contract: every supported news variant renders without
     # the removed CONTEXT/BOTTOM LINE blocks and preserves a source/watch link.
     variants = {
-        "Now Streaming": "Watch Now",
-        "Reported": "Deadline",
-        "Trailer": "Watch Trailer",
-        "Renewal": "Deadline",
-        "Cancellation": "Deadline",
-        "Box Office": "Deadline",
-        "Release Date": "Deadline",
-        "Confirmed": "Deadline",
-        "Casting": "Deadline",
-        "Production": "Deadline",
-        "Industry": "Deadline",
-        "Distribution": "Deadline",
+        "Now Streaming": "Source",
+        "Reported": "Source",
+        "Trailer": "Source",
+        "Renewal": "Source",
+        "Cancellation": "Source",
+        "Box Office": "Source",
+        "Release Date": "Source",
+        "Confirmed": "Source",
+        "Casting": "Source",
+        "Production": "Source",
+        "Industry": "Source",
+        "Distribution": "Source",
+        "Announcement": "Source",
     }
     for variant, expected_link in variants.items():
         probe = dict(sample, news_type=variant)
@@ -3229,8 +3389,27 @@ def self_test():
             probe["status"] = "Available Now"
         out = dynamic_rich_html(probe)
         assert "THE CONTEXT" not in out and "BOTTOM LINE" not in out
-        assert "https://deadline.com/example/story" in out
+        assert "Deadline" in out
         assert expected_link in out
+
+    # Native entity contract for spoiler and blockquote rendering.
+    spoiler_probe = dict(sample, news_type="Confirmed", spoiler="A major ending reveal.", note="This detail is source-confirmed.")
+    spoiler_text, spoiler_entities = render_telethon_message(spoiler_probe)
+    assert "A major ending reveal." in spoiler_text
+    assert any(entity.__class__.__name__ == "MessageEntitySpoiler" for entity in spoiler_entities)
+    assert any(entity.__class__.__name__ == "MessageEntityBlockquote" for entity in spoiler_entities)
+    assert len(spoiler_text) <= MAX_TELEGRAM_CAPTION_CHARACTERS
+
+    # No Markdown/HTML control syntax may leak into the production caption.
+    for variant in ["Now Streaming", "Reported", "Trailer", "Renewal", "Cancellation", "Box Office", "Confirmed"]:
+        probe = dict(sample, news_type=variant, year="2026")
+        if variant == "Reported": probe["reported_details"] = ["A confirmed report detail."]
+        if variant in {"Renewal", "Cancellation"}: probe["season"] = "2"
+        if variant == "Box Office": probe.update({"amount":"$100 million","domestic_amount":"$60 million","worldwide_amount":"$100 million","days_since_release":"3"})
+        if variant == "Trailer": probe["release_date"] = "October 10, 2026"
+        text, entities = render_telethon_message(probe)
+        assert "*" not in text and "_" not in text and "`" not in text and "[" not in text and "](" not in text
+        assert len(text) <= MAX_TELEGRAM_CAPTION_CHARACTERS
 
     # Numeric grounding: source-supported values pass; invented values fail.
     grounded_story = dict(sample, headline="Major Series Has 8 Episodes", summary="The series has 8 episodes.", highlights=["The series has 8 episodes.", "The production is major.", "The release date is confirmed."])
