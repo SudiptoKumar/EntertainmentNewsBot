@@ -57,8 +57,8 @@ STATE_FILE = "news_state.json"
 
 BD_TZ = ZoneInfo("Asia/Dhaka")
 
-# Version 1 editorial target: up to six entertainment stories whenever enough
-# eligible news exists. All entertainment stories compete in one ranked pool.
+# Editorial target: publish every verified candidate that clears the 80/100 gate.
+# There is no fixed post quota and no sector quota.
 PUBLISH_THRESHOLD = 80
 RANKING_BATCH_SIZE = 15
 MAX_RANK_CANDIDATES = 120
@@ -494,6 +494,14 @@ def load_state():
         return default_state()
 
 
+def json_default(value):
+    if isinstance(value, datetime):
+        return value.isoformat()
+    if isinstance(value, set):
+        return sorted(value)
+    raise TypeError(f"Object of type {type(value).__name__} is not JSON serializable")
+
+
 def save_state(state):
     tmp = STATE_FILE + ".tmp"
 
@@ -507,6 +515,7 @@ def save_state(state):
             f,
             ensure_ascii=False,
             indent=2,
+            default=json_default,
         )
 
     os.replace(
@@ -1364,6 +1373,37 @@ def queue_candidates_for_region(
 # ============================================================
 
 # ============================================================
+# ARTICLE ENRICHMENT FOR THIN FEED EXCERPTS
+# ============================================================
+
+def enrich_thin_excerpt(item):
+    """Best-effort article enrichment. Failure never removes a candidate."""
+    try:
+        downloaded = trafilatura.fetch_url(item["url"])
+        if not downloaded:
+            return None
+        text = trafilatura.extract(downloaded)
+        return safe_text(text)[:1200] if text else None
+    except Exception:
+        return None
+
+
+def enrich_thin_excerpts(regional):
+    enriched = 0
+    for item in regional:
+        if enriched >= MAX_EXCERPT_ENRICH:
+            break
+        excerpt = safe_text(item.get("excerpt", ""))
+        if len(excerpt) >= THIN_EXCERPT_CHARS:
+            continue
+        fuller = enrich_thin_excerpt(item)
+        if fuller and len(fuller) > len(excerpt):
+            item["excerpt"] = fuller
+            enriched += 1
+    return regional
+
+
+# ============================================================
 # VERSION 1 EDITORIAL RANKING
 # ============================================================
 
@@ -1403,7 +1443,11 @@ Return EVERY candidate with exactly one sector and source_class, plus topic, ins
             logger.error("Editorial ranking batch failed for %s: %s",region,exc)
             for idx,item in enumerate(batch,offset+1):
                 row=dict(item); row.update({"editor_rank":idx,"importance_score":0,"important":False,"sector":"International","source_class":"reported","topic":canonical_topic(item.get("topic",""),region),"institution":"","event_key":"","rank_reason":"Ranking-service failure; candidate withheld."}); rows.append(row)
-    return sorted(rows,key=lambda x:(x.get("editor_rank",9999),-(parse_datetime(x.get("published_date")).timestamp() if parse_datetime(x.get("published_date")) else 0)))
+    rows.sort(key=lambda x:(-int(x.get("importance_score",0)), -(parse_datetime(x.get("published_date")).timestamp() if parse_datetime(x.get("published_date")) else 0)))
+    for global_rank, row in enumerate(rows, 1):
+        row["editor_rank"] = global_rank
+        row["important"] = int(row.get("importance_score",0)) >= PUBLISH_THRESHOLD
+    return rows
 
 
 def extract_entities(text):
@@ -2844,9 +2888,8 @@ Return only the JSON schema.
         return bool(data.get("supported")), data.get("unsupported_claims", [])
     except Exception as exc:
         logger.warning("Claim verification failed: %s", exc)
-        # Verification infrastructure failure must not silently become a hard drop.
-        # Numeric grounding remains mandatory; this pass is advisory on verifier outage.
-        return True, []
+        # Verification is a publication gate. Infrastructure failure is not evidence.
+        return False, ["verification infrastructure failure"]
 
 
 def event_status_verified(story,article_text):
@@ -3137,17 +3180,102 @@ def self_test():
     rendered=dynamic_rich_html(sample)
     assert "THE CONTEXT" not in rendered and "BOTTOM LINE" not in rendered
     assert "Release Date" in rendered and "KEY HIGHLIGHTS" not in rendered
-    assert "Hollywood" in rendered and "Source" in rendered
+    assert "Hollywood" in rendered and "[Deadline]" in rendered
     assert rank_score({"significance":20,"reach":15,"event_magnitude":15,"platform_ip_strength":10,"source_authority":15,"evidence_strength":10,"international_relevance":5,"recency":5,"audience_anticipation":5,"source_class":"official"})==100
+    assert rank_score({"significance":20,"reach":15,"event_magnitude":15,"platform_ip_strength":10,"source_authority":15,"evidence_strength":10,"international_relevance":5,"recency":5,"audience_anticipation":5,"source_class":"rumor"})==69
+    for variant in ["Now Streaming","Reported","Trailer","Renewal","Cancellation","Box Office","Release Date"]:
+        probe=dict(sample, news_type=variant)
+        out=dynamic_rich_html(probe)
+        assert "THE CONTEXT" not in out and "BOTTOM LINE" not in out
+        assert "@EntertainmentNewsroom" not in out
+        assert "https://deadline.com/example/story" in out
     assert normalize_sector("Bollywood")=="Indian"
     test_state=default_state(); test_state["queue"]["example.com/story"]={"region":"Entertainment","published_date":now_iso(),"last_seen":now_iso(),"status":"pending","title":"Example","url":"https://example.com/story"}
     original=globals()["STATE"]; globals()["STATE"]=test_state
     try:
+        test_state["queue"]["example.com/story"]["runtime_datetime"] = datetime.now(timezone.utc)
         save_state(test_state)
         with open(STATE_FILE,encoding="utf-8") as f:loaded=json.load(f)
         assert loaded["queue"]["example.com/story"]["region"]=="Entertainment"
+        assert isinstance(loaded["queue"]["example.com/story"]["runtime_datetime"], str)
     finally:globals()["STATE"]=original
-    logger.info("EntertainmentNewsroom V1.1.1 self-test passed.")
+    # Dynamic template contract: every supported news variant renders without
+    # the removed CONTEXT/BOTTOM LINE blocks and preserves a source/watch link.
+    variants = {
+        "Now Streaming": "Watch Now",
+        "Reported": "Deadline",
+        "Trailer": "Watch Trailer",
+        "Renewal": "Deadline",
+        "Cancellation": "Deadline",
+        "Box Office": "Deadline",
+        "Release Date": "Deadline",
+        "Confirmed": "Deadline",
+        "Casting": "Deadline",
+        "Production": "Deadline",
+        "Industry": "Deadline",
+        "Distribution": "Deadline",
+    }
+    for variant, expected_link in variants.items():
+        probe = dict(sample, news_type=variant)
+        if variant in {"Renewal", "Cancellation"}:
+            probe["season"] = "2"
+        if variant == "Box Office":
+            probe.update({"amount":"$100 million", "domestic_amount":"$60 million", "worldwide_amount":"$100 million", "days_since_release":"3"})
+        if variant == "Reported":
+            probe["reported_details"] = ["The report contains the announced development."]
+        if variant == "Trailer":
+            probe["release_date"] = "October 10, 2026"
+        if variant == "Now Streaming":
+            probe["status"] = "Available Now"
+        out = dynamic_rich_html(probe)
+        assert "THE CONTEXT" not in out and "BOTTOM LINE" not in out
+        assert "https://deadline.com/example/story" in out
+        assert expected_link in out
+
+    # Numeric grounding: source-supported values pass; invented values fail.
+    grounded_story = dict(sample, headline="Major Series Has 8 Episodes", summary="The series has 8 episodes.", highlights=["The series has 8 episodes.", "The production is major.", "The release date is confirmed."])
+    assert numeric_grounded(grounded_story, "The series will have 8 episodes and release on October 10, 2026.")[0] is True
+    bad_story = dict(grounded_story, headline="Major Series Has 12 Episodes")
+    assert numeric_grounded(bad_story, "The series will have 8 episodes and release on October 10, 2026.")[0] is False
+
+    # Event deduplication: two highly similar reports collapse to one event.
+    a = dict(sample, canonical="https://deadline.com/a", title="Major Series Locks New Release Date", editor_rank=1, importance_score=92, event_key="series_release_date")
+    b = dict(sample, canonical="https://variety.com/b", title="Major Series Locks Its New Release Date", editor_rank=2, importance_score=88, event_key="series_release_date")
+    collapsed = collapse_event_clusters([a,b])
+    assert len(collapsed) == 1
+
+    # Global ranking must sort across batches, not preserve batch order.
+    class FakeMessage:
+        def __init__(self, payload): self.content = json.dumps(payload)
+    class FakeChoice:
+        def __init__(self, payload): self.message = FakeMessage(payload)
+    class FakeResponse:
+        def __init__(self, payload): self.choices = [FakeChoice(payload)]
+    class FakeChat:
+        class completions:
+            @staticmethod
+            def create(**kwargs):
+                ids = [int(x.split("ID: ")[1].split("\n")[0]) for x in kwargs["messages"][1]["content"].split("\n") if x.startswith("ID: ")]
+                return FakeResponse({"ranked":[{"id":i,"rank":1,"sector":"Hollywood","source_class":"official","significance":20,"reach":15,"event_magnitude":15,"platform_ip_strength":10,"source_authority":15,"evidence_strength":10,"international_relevance":5,"recency":5,"audience_anticipation":5,"topic":"Major Film Announcements","institution":"Netflix","event_key":f"event_{i}","reason":"major"} for i in ids]})
+    original_c = globals()["cerebras"]
+    original_e = globals()["enrich_thin_excerpts"]
+    original_n = globals()["NOW_BD"]
+    globals()["cerebras"] = type("FakeCerebras", (), {"chat": FakeChat()})()
+    globals()["enrich_thin_excerpts"] = lambda xs: xs
+    try:
+        test_candidates=[]
+        for i in range(16):
+            test_candidates.append({"canonical":f"https://example.com/{i}","url":f"https://example.com/{i}","title":f"Story {i}","excerpt":"major entertainment event","source":"Deadline","published_date":now_iso(),"region":"Entertainment"})
+        ranked_test = rank_candidates(test_candidates, "Entertainment")
+        assert len(ranked_test) == 16
+        assert [x["editor_rank"] for x in ranked_test] == list(range(1,17))
+        assert all(x["importance_score"] == 100 for x in ranked_test)
+    finally:
+        globals()["cerebras"] = original_c
+        globals()["enrich_thin_excerpts"] = original_e
+        globals()["NOW_BD"] = original_n
+
+    logger.info("EntertainmentNewsroom V1.1.2 self-test passed.")
 
 
 def visible_text_for_test(
