@@ -4,7 +4,7 @@
 from pathlib import Path
 import json
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parent
 DATA_DIR = ROOT / "data"
 
 DEFAULTS = {
@@ -82,7 +82,7 @@ SECTORS = {
         ],
         "domains": [
             "soompi.com", "asianwiki.com", "mydramalist.com", "dramazoom.com",
-            "koreaherald.com", "koreajoongangdaily.joins.com", "thehindu.com",
+            "koreaherald.com", "koreajoongangdaily.joins.com",
             "scmp.com", "cdramasquare.com", "chinesedrama.info", "netflix.com",
             "about.netflix.com", "tudum.com", "disneyplus.com", "press.disneyplus.com",
             "viki.com", "tving.com", "iq.com", "iqiyi.com", "wetv.vip",
@@ -258,12 +258,12 @@ STATE_FILE = os.environ.get("STATE_FILE", "news_state.json")
 
 BD_TZ = ZoneInfo("Asia/Dhaka")
 
-# Version 1 editorial target: publish only clearly important tech stories.
-# All tech stories compete in one ranked pool. Six is a safety cap, not a quota.
-MAX_STORIES_PER_RUN = int(os.environ.get("TELEGRAM_PUBLISH_LIMIT", DEFAULTS["max_stories_per_run"]))
+# Editorial target: publish only clearly important entertainment stories.
+# Stories compete within three independent sector leaderboards; the cap is a safety fuse, not a quota.
+MAX_STORIES_PER_RUN = int(os.environ.get("MAX_POSTS_PER_RUN", os.environ.get("TELEGRAM_PUBLISH_LIMIT", DEFAULTS["max_stories_per_run"])))
 RANKING_POOL_SIZE = int(os.environ.get("RANKING_POOL_SIZE", DEFAULTS["ranking_pool_size"]))
 DISCOVERY_LOOKBACK_HOURS = int(os.environ.get("DISCOVERY_LOOKBACK_HOURS", DEFAULTS["lookback_hours"]))
-PUBLISH_THRESHOLD = int(os.environ.get("PUBLISH_THRESHOLD", RANK_PUBLISH_THRESHOLD))
+PUBLISH_THRESHOLD = int(os.environ.get("PUBLISH_THRESHOLD", DEFAULTS["publish_threshold"]))
 
 # Reliability / quality
 POST_DELAY_SECONDS = 3.5
@@ -316,7 +316,7 @@ RSS_FEEDS = [
 SECTOR_NAMES = list(SECTORS.keys())
 TOPICS = {k: v["topics"] for k, v in SECTORS.items()}
 
-# Source universe comes from config.py / data/sources.json-compatible structure.
+# Source universe is kept in this single-file architecture for easy maintenance.
 SOURCE_NAMES = {}
 for _sector_name, _cfg in SECTORS.items():
     for _domain in _cfg["domains"]:
@@ -331,30 +331,37 @@ GOOGLE_NEWS_LOCALE = {"Hollywood": ("en-US", "US", "US:en"), "Indian": ("en-IN",
 INSTITUTIONS = []
 
 CATEGORY_HASHTAGS = {
-    "Consumer Technology": ["#Tech", "#ConsumerTech"],
-    "AI Models and Products": ["#AI", "#ArtificialIntelligence"],
-    "Smartphones": ["#Smartphones", "#MobileTech"],
-    "Operating Systems": ["#OperatingSystems", "#Tech"],
-    "Browsers": ["#Browsers", "#Internet"],
-    "Search": ["#Search", "#Tech"],
-    "Social Platforms": ["#SocialMedia", "#Tech"],
-    "Cloud Platforms": ["#Cloud", "#Tech"],
-    "App Stores": ["#AppStores", "#Tech"],
-    "Cybersecurity": ["#Cybersecurity", "#Security"],
-    "Privacy": ["#Privacy", "#Tech"],
-    "Major Tech Companies": ["#BigTech", "#Tech"],
-    "New Products": ["#Tech", "#NewProduct"],
-    "Technology Industry": ["#TechIndustry", "#Tech"],
-    "Open Source": ["#OpenSource", "#Tech"],
-    "GitHub Trends": ["#GitHub", "#OpenSource"],
-    "Startups": ["#Startups", "#Tech"],
-    "Y Combinator": ["#YC", "#Startups"],
-    "Hugging Face": ["#HuggingFace", "#AI"],
-    "Major Outages": ["#Tech", "#Outage"],
-    "Acquisitions and Mergers": ["#TechIndustry", "#Mergers"],
-    "Layoffs and Restructuring": ["#TechIndustry", "#Layoffs"],
-    "Pricing and Subscriptions": ["#Tech", "#Subscriptions"],
+    "Major Hollywood Movies": ["#Hollywood", "#Movies"],
+    "Major Hollywood Series": ["#Hollywood", "#Series"],
+    "Franchise and IP": ["#Hollywood", "#Franchise"],
+    "Streaming Originals": ["#Streaming", "#Series"],
+    "Major Casting": ["#Casting", "#Movies"],
+    "Trailers and First Looks": ["#Trailer", "#Movies"],
+    "Release Dates": ["#ReleaseDate", "#Movies"],
+    "Renewals and Cancellations": ["#Renewal", "#Series"],
+    "Distribution Rights": ["#OTT", "#Streaming"],
+    "Studio and Platform Strategy": ["#OTT", "#Streaming"],
+    "Major Production Developments": ["#Production", "#Movies"],
+    "Bollywood": ["#Bollywood", "#IndianCinema"],
+    "Pan-Indian Cinema": ["#PanIndian", "#IndianCinema"],
+    "Telugu Cinema": ["#TeluguCinema", "#IndianCinema"],
+    "Tamil Cinema": ["#TamilCinema", "#IndianCinema"],
+    "Malayalam Cinema": ["#MalayalamCinema", "#IndianCinema"],
+    "Kannada Cinema": ["#KannadaCinema", "#IndianCinema"],
+    "Major Indian OTT": ["#IndianOTT", "#OTT"],
+    "Major Indian Casting": ["#IndianCinema", "#Casting"],
+    "Indian Franchises": ["#IndianCinema", "#Franchise"],
+    "Production and Distribution": ["#IndianCinema", "#Production"],
+    "International OTT Deals": ["#OTT", "#International"],
+    "Korean Drama": ["#KDrama", "#KoreanDrama"],
+    "Korean Film": ["#KoreanCinema", "#Movies"],
+    "Chinese Drama": ["#CDrama", "#ChineseDrama"],
+    "Chinese Film": ["#ChineseCinema", "#Movies"],
+    "Japanese Film and Series": ["#JapaneseCinema", "#Series"],
+    "International Streaming Originals": ["#Streaming", "#International"],
+    "Major Asian Production": ["#AsianCinema", "#International"],
 }
+
 
 CATEGORY_GROUPS = {
     "AI": {"AI Models and Products", "Hugging Face"},
@@ -394,23 +401,21 @@ def canonical_topic(topic, region="Hollywood"):
 def category_hashtags(story):
     tags = []
     topic = safe_text(story.get("topic"))
-    institution = safe_text(story.get("institution"))
+    region = safe_text(story.get("region"))
     for tag in CATEGORY_HASHTAGS.get(topic, []):
         if tag not in tags:
             tags.append(tag)
-    inst_map = {
-        "Apple": "#Apple", "Google": "#Google", "Microsoft": "#Microsoft",
-        "OpenAI": "#OpenAI", "Meta": "#Meta", "Amazon": "#Amazon",
-        "Anthropic": "#Anthropic", "NVIDIA": "#NVIDIA", "Samsung": "#Samsung",
-        "GitHub": "#GitHub", "Hugging Face": "#HuggingFace",
-    }
-    if institution in inst_map and inst_map[institution] not in tags:
-        tags.append(inst_map[institution])
-    if "#Tech" not in tags:
-        tags.append("#Tech")
-    if "#Tech" not in tags[:3]:
-        tags = tags[:2] + ["#Tech"]
+    region_tag = {
+        "Hollywood": "#Hollywood",
+        "Indian": "#IndianCinema",
+        "International": "#International",
+    }.get(region)
+    if region_tag and region_tag not in tags:
+        tags.append(region_tag)
+    if "#Entertainment" not in tags:
+        tags.append("#Entertainment")
     return tags[:3]
+
 
 def coverage_state():
     return STATE.setdefault("category_coverage", {})
@@ -684,7 +689,7 @@ def source_name(url):
 
 
 def article_region(url):
-    return "Tech"
+    return "Entertainment"
 
 
 def now_iso():
@@ -1374,22 +1379,6 @@ FALLBACK_DOMAINS_BY_SECTOR = {k: [] for k in SECTORS}
 # GOOGLE NEWS RSS: FREE GAP FILL
 # ============================================================
 
-GOOGLE_NEWS_QUERIES = {
-    "Tech": [
-        "major consumer technology news AI smartphones operating systems",
-        "major AI model product launch technology",
-        "major cybersecurity privacy breach technology outage",
-        "Apple Google Microsoft OpenAI Meta Amazon major news",
-        "major technology industry acquisition layoffs startup unicorn",
-        "GitHub trending new tool capability technology",
-        "Hugging Face major open model leaderboard technology",
-        "Y Combinator major product launch milestone",
-    ],
-}
-
-GOOGLE_NEWS_LOCALE = {"Tech": ("en-US", "US", "US:en")}
-
-
 def resolve_google_news_url(link):
     """Google News RSS gives a redirect link, not the publisher URL.
     Follow it once (without downloading the full page) to get the
@@ -1720,7 +1709,7 @@ def _rank_batch(batch, region, batch_no):
             response_format={
                 "type": "json_schema",
                 "json_schema": {
-                    "name": f"tech_news_rank_batch_{batch_no}",
+                    "name": f"entertainment_news_rank_batch_{batch_no}",
                     "strict": True,
                     "schema": RANK_SCHEMA,
                 },
@@ -2227,7 +2216,7 @@ The public post is aimed at readers who want major movie, OTT and scripted-serie
                 response_format={
                     "type": "json_schema",
                     "json_schema": {
-                        "name": "tech_news_story_v1_0",
+                        "name": "entertainment_news_story_v1_0",
                         "strict": True,
                         "schema": STORY_SCHEMA,
                     },
@@ -3030,7 +3019,7 @@ def prepare_image(
 
         draw.text(
             (50, 50),
-            "Tech News",
+            "Entertainment News",
             font=font,
             fill="white",
         )
@@ -3140,22 +3129,92 @@ def telegram_call(
 
 
 
+def rich_html_to_legacy_html(rich_html):
+    """Downgrade Rich HTML to standard Bot API HTML for the emergency fallback."""
+    text = safe_text(rich_html)
+
+    # The uploaded photo is sent by sendPhoto, so remove the rich-media element.
+    text = re.sub(r"<img\b[^>]*?/?>", "", text, flags=re.I)
+
+    # Convert Rich-only structural tags into standard HTML + line breaks.
+    text = re.sub(r"<h[1-6]>(.*?)</h[1-6]>", r"<b>\1</b><br/>", text, flags=re.I | re.S)
+    text = re.sub(r"<p>(.*?)</p>", r"\1<br/>", text, flags=re.I | re.S)
+    text = re.sub(r"<footer>(.*?)</footer>", r"\1<br/>", text, flags=re.I | re.S)
+    text = re.sub(r"<blockquote(?:\s+expandable)?>(.*?)</blockquote>", r"<br/><b>\1</b><br/>", text, flags=re.I | re.S)
+    text = re.sub(r"<br\s*/?>", "<br/>", text, flags=re.I)
+
+    # Remove Rich-only tags/attributes while retaining standard inline HTML.
+    text = re.sub(r"</?(?:details|summary|cite|aside|figure|figcaption|tg-[^ >]+)(?:\s[^>]*)?>", "", text, flags=re.I)
+    text = re.sub(r"<[^>]+>", lambda m: m.group(0) if re.fullmatch(r"</?(?:b|strong|i|em|u|ins|s|strike|del|code|a)(?:\s[^>]*)?/?>", m.group(0), flags=re.I) else "", text)
+    text = re.sub(r"(?:<br/>){3,}", "<br/><br/>", text)
+    return text.strip()
+
+
+def truncate_html_safe(html_text, max_visible=1000):
+    """Truncate HTML by visible characters without cutting markup."""
+    source = safe_text(html_text)
+    if not source:
+        return ""
+
+    out = []
+    stack = []
+    visible = 0
+    pos = 0
+    tag_re = re.compile(r"<[^>]+>")
+
+    for match in tag_re.finditer(source):
+        chunk = source[pos:match.start()]
+        if chunk:
+            remaining = max_visible - visible
+            if len(chunk) > remaining:
+                if remaining > 0:
+                    piece = chunk[:remaining].rsplit(" ", 1)[0].rstrip() if " " in chunk[:remaining] else chunk[:remaining].rstrip()
+                    out.append(piece)
+                    visible += len(piece)
+                break
+            out.append(chunk)
+            visible += len(chunk)
+
+        tag = match.group(0)
+        out.append(tag)
+        if re.match(r"<a\b", tag, re.I) or re.match(r"<b\b", tag, re.I) or re.match(r"<strong\b", tag, re.I) or re.match(r"<i\b", tag, re.I) or re.match(r"<em\b", tag, re.I) or re.match(r"<u\b", tag, re.I) or re.match(r"<ins\b", tag, re.I) or re.match(r"<s\b", tag, re.I) or re.match(r"<strike\b", tag, re.I) or re.match(r"<del\b", tag, re.I) or re.match(r"<code\b", tag, re.I):
+            if not tag.startswith("</") and not tag.endswith("/>"):
+                stack.append(re.match(r"<([A-Za-z0-9]+)", tag).group(1))
+            elif tag.startswith("</") and stack:
+                stack.pop()
+        pos = match.end()
+        if visible >= max_visible:
+            break
+    else:
+        tail = source[pos:]
+        remaining = max_visible - visible
+        if remaining > 0:
+            out.append(tail[:remaining])
+
+    result = "".join(out).rstrip()
+    if visible >= max_visible:
+        result += "…"
+    for tag in reversed(stack):
+        result += f"</{tag}>"
+    return result
+
+
 def send_bot_api_fallback(image_path, rich_html):
-    """Last-resort Bot API photo send with a safe caption length."""
-    text = re.sub(r"<br\s*/?>", "\n", rich_html, flags=re.I)
-    text = re.sub(r"</(p|h1|h2|h3|footer|summary|details|tr|td)>", "\n", text, flags=re.I)
-    text = re.sub(r"<[^>]+>", "", text)
-    text = html.unescape(text)
-    text = re.sub(r"\n{3,}", "\n\n", text).strip()
-    if len(text) > 900:
-        text = text[:900].rsplit(" ", 1)[0].rstrip() + "..."
+    """Last-resort sendPhoto fallback preserving basic HTML formatting."""
+    caption = rich_html_to_legacy_html(rich_html)
+    caption = re.sub(r"(?:<br/>\s*){3,}", "<br/><br/>", caption, flags=re.I).strip()
+    caption = truncate_html_safe(caption, 1000)
 
     url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendPhoto"
     try:
         with open(image_path, "rb") as photo:
             response = session.post(
                 url,
-                data={"chat_id": TELEGRAM_CHANNEL, "caption": text},
+                data={
+                    "chat_id": TELEGRAM_CHANNEL,
+                    "caption": caption,
+                    "parse_mode": "HTML",
+                },
                 files={"photo": photo},
                 timeout=90,
             )
@@ -3163,10 +3222,13 @@ def send_bot_api_fallback(image_path, rich_html):
     except Exception as exc:
         return {"ok": False, "description": str(exc)}
 
+
 def send_rich_photo(
     image_path,
     rich_html,
 ):
+    # Telegram Rich HTML maps an embedded uploaded photo through a media id.
+    # The <img> reference and the media attachment id MUST match exactly.
     rich_message = {
         "html": rich_html,
         "media": [
@@ -3181,11 +3243,7 @@ def send_rich_photo(
         "skip_entity_detection": False,
     }
 
-    with open(
-        image_path,
-        "rb",
-    ) as photo:
-
+    with open(image_path, "rb") as photo:
         return telegram_call(
             "sendRichMessage",
             data={
@@ -3195,9 +3253,7 @@ def send_rich_photo(
                     ensure_ascii=False,
                 ),
             },
-            files={
-                "photo": photo
-            },
+            files={"photo": photo},
         )
 
 
@@ -3424,7 +3480,7 @@ def process_story_candidate(item):
 
     region = item.get(
         "region",
-        "Tech",
+        "Entertainment",
     )
 
     story["topic"] = canonical_topic(
@@ -3722,8 +3778,25 @@ def select_balanced_candidates(ranked_by_sector):
             seen_events.add(key)
         pool.remove(best)
 
-    selected.sort(key=lambda x: (-x.get("importance_score", 0), x.get("region", ""), x.get("editor_rank", 9999)))
-    return selected
+    # Final cross-sector event dedupe. The same story can be discovered in more
+    # than one sector because some major sources/platforms overlap. Prefer the
+    # highest-scoring instance so one event produces at most one post per run.
+    deduped = []
+    seen_event_signatures = []
+    for item in sorted(selected, key=lambda x: (-x.get("importance_score", 0), x.get("editor_rank", 9999))):
+        signature = normalize_title(item.get("title", ""))
+        duplicate = False
+        for previous in seen_event_signatures:
+            if likely_same_event(signature, previous):
+                duplicate = True
+                break
+        if duplicate:
+            continue
+        seen_event_signatures.append(signature)
+        deduped.append(item)
+
+    deduped.sort(key=lambda x: (-x.get("importance_score", 0), x.get("region", ""), x.get("editor_rank", 9999)))
+    return deduped
 
 
 def run():
@@ -3800,29 +3873,48 @@ def run():
 
 def self_test():
     sample = {
-        "headline": "Major AI Platform Launches New Tool for Millions",
-        "summary": "The platform launched a new AI tool that adds a major capability for users across its widely used technology ecosystem.",
+        "headline": "Netflix Announces Major New Korean Thriller Series",
+        "summary": "Netflix announced a major Korean thriller series with an internationally recognized cast.",
         "highlights": [
-            "The new tool is now available to users of the platform.",
-            "The launch adds a major capability to the existing AI product.",
-            "The company positioned the release as a significant expansion of its product offering.",
-            "Availability begins immediately in supported markets.",
+            "Netflix confirmed the series as part of its upcoming scripted slate.",
+            "The production features an established Korean cast.",
+            "The series is planned for international streaming on Netflix.",
+            "The announcement expands the platform's Korean scripted lineup.",
         ],
-        "the_context": "The launch follows the company's broader push to expand AI capabilities across its technology platform. The move builds on earlier product work and extends those capabilities to more users.",
-        "bottom_line": "The release matters because it expands a major AI capability to a broader technology audience.",
-        "bold_terms": ["AI", "tool", "platform"],
-        "source": "TechCrunch", "url": "https://example.com/story", "region": "Hollywood",
-        "topic": "AI Models and Products", "institution": "OpenAI",
+        "the_context": "The announcement comes as Netflix continues to invest in Korean scripted productions for global audiences. The project is positioned as a major international streaming title.",
+        "bottom_line": "The project is significant because it combines a major Korean production with Netflix's global distribution.",
+        "bold_terms": ["Netflix", "Korean", "series"],
+        "source": "Netflix",
+        "url": "https://www.netflix.com/",
+        "region": "International",
+        "topic": "Korean Drama",
+        "institution": "Netflix",
     }
     rendered = dynamic_rich_html(sample)
     assert complete_text("A normal sentence.")
     assert complete_text("An incomplete sentence—") is False
+    assert "<h1>Netflix Announces Major New Korean Thriller Series</h1>" in rendered
+    assert "KEY HIGHLIGHTS" in rendered
     assert "THE CONTEXT" in rendered
     assert "BOTTOM LINE" in rendered
     assert rendered.count('<blockquote expandable>') == 2
-    assert "<aside>" not in rendered
+    assert '<img src="tg://photo?id=newsphoto">' in rendered
+    assert "• " in rendered
     assert rendered.count("• ") == 4
-    assert rendered.index("<h1>Major AI Platform") < rendered.index("KEY HIGHLIGHTS") < rendered.index("THE CONTEXT") < rendered.index("BOTTOM LINE")
+    assert rendered.index("KEY HIGHLIGHTS") < rendered.index("THE CONTEXT") < rendered.index("BOTTOM LINE")
+    assert "#KDrama" in rendered and "#International" in rendered
+    assert "<footer><b>Source:</b>" in rendered
+    assert '<img src="tg://photo?id=newsphoto">' in rendered
+    legacy = rich_html_to_legacy_html(rendered)
+    assert "<h1>" not in legacy and "<blockquote" not in legacy
+    assert "<b>Netflix</b>" in legacy
+    assert "<br/>" in legacy
+    assert len(re.sub(r"<[^>]+>", "", legacy)) <= 1000
+    import inspect
+    assert "@EntertainmentNewsroom" in inspect.getsource(branded_card)
+    assert likely_same_event("Netflix announces major Korean thriller series", "Netflix announces major Korean thriller series")
+    assert canonical_url("https://www.netflix.com/story/?utm_source=x") == "netflix.com/story"
+    assert "netflix" in extract_entities("Netflix announces a major update")
 
     sample_three = dict(sample)
     sample_three["highlights"] = sample_three["highlights"][:3]
@@ -3830,26 +3922,17 @@ def self_test():
     assert rendered_three.count("• ") == 3
 
     sample_five = dict(sample)
-    sample_five["highlights"] = sample_five["highlights"] + ["The release continues the company's broader AI strategy."]
+    sample_five["highlights"] = sample_five["highlights"] + ["The project expands Netflix's international scripted slate."]
     rendered_five = dynamic_rich_html(sample_five)
     assert rendered_five.count("• ") == 5
-    assert rendered.index("#AI") > rendered.index("BOTTOM LINE")
-    assert "<footer><b>Source:</b>" in rendered
-    import inspect
-    assert "@EntertainmentNewsroom" in inspect.getsource(branded_card)
-    assert "display_source_name" not in inspect.getsource(branded_card)
-    assert "source_text =" not in inspect.getsource(branded_card)
-    assert likely_same_event("AI platform launches major tool", "AI platform launches major tool")
-    assert canonical_url("https://www.example.com/story/?utm_source=x") == "example.com/story"
-    assert "ai" in extract_entities("AI platform launches a major update")
+
     clustered = cluster_ranked_events([
-        {"title": "AI platform launches major tool", "source": "TechCrunch", "url": "https://techcrunch.com/a", "published_date": now_iso(), "region": "Tech"},
-        {"title": "AI platform launches major tool", "source": "The Verge", "url": "https://theverge.com/a", "published_date": now_iso(), "region": "Tech"},
+        {"title": "Netflix announces major Korean thriller series", "source": "Netflix", "url": "https://netflix.com/a", "published_date": now_iso(), "region": "International", "event_key": "netflix_korean_thriller"},
+        {"title": "Netflix announces major Korean thriller series", "source": "Netflix", "url": "https://netflix.com/b", "published_date": now_iso(), "region": "International", "event_key": "netflix_korean_thriller"},
     ])
     assert len(clustered) >= 1
     assert clustered[0]["event_cluster_size"] >= 1
     logger.info("EntertainmentNewsBot self-test passed.")
-
 
 def visible_text_for_test(
     rendered,

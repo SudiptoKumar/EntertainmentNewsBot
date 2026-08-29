@@ -324,29 +324,17 @@ EntertainmentNewsBot/
 │
 ├── .github/
 │   └── workflows/
-│       └── news.yml
-│
-├── src/
-│   ├── __init__.py
-│   ├── app.py
-│   ├── config.py
-│   └── ranking.py
-│
-├── data/
-│   └── sources.json
-│
-├── tests/
-│   └── test_ranking.py
+│       └── newbot.yml
 │
 ├── main.py
 ├── requirements.txt
-├── README.md
-├── .gitignore
 ├── news_state.json
-└── posted_urls.txt
+├── posted_urls.txt
+├── README.md
+└── .gitignore
 ```
 
-`app.py` contains the shared discovery, extraction, image, Telegram and state machinery adapted from the previous bot architecture. `ranking.py` contains the entertainment-specific scoring model, while `config.py` defines the three editorial sectors and their source/query universe.
+`main.py` contains the complete discovery, extraction, ranking, verification, image, Telegram and state machinery. The repository intentionally stays single-file for easy maintenance. The three editorial sectors and their source/query universe are defined near the top of `main.py`.
 
 ## Environment
 
@@ -381,8 +369,11 @@ TELEGRAM_PUBLISH_LIMIT=12
 ## Local Checks
 
 ```bash
-python -m py_compile main.py src/app.py src/config.py src/ranking.py
+python -m py_compile main.py
 
+EXA_API_KEY=dummy \
+CEREBRAS_API_KEY=dummy \
+TELEGRAM_BOT_TOKEN=dummy \
 EXA_API_KEY=dummy \
 CEREBRAS_API_KEY=dummy \
 TELEGRAM_BOT_TOKEN=dummy \
