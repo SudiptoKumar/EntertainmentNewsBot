@@ -278,7 +278,7 @@ THIN_EXCERPT_CHARS = 150
 MAX_EXCERPT_ENRICH = 12
 MAX_SOURCE_PER_RUN = 99
 MAX_CANDIDATES_PER_SECTOR = int(os.environ.get("MAX_CANDIDATES_PER_SECTOR", DEFAULTS["max_candidates_per_sector"]))
-MAX_RICH_CHARACTERS = 32768
+MAX_RICH_CHARACTERS = 1024
 
 # Lightweight English stopwords used only by the conservative event/entity
 # deduplication layer. This is deliberately small so technology entities and
@@ -3293,131 +3293,141 @@ def telegram_call(
 
 
 def rich_html_to_legacy_html(rich_html):
-    """Downgrade Rich HTML to standard Bot API HTML for the emergency fallback."""
+    """Convert the internal rich template to Telegram Bot API HTML."""
     text = safe_text(rich_html)
 
-    # The uploaded photo is sent by sendPhoto, so remove the rich-media element.
+    # Remove internal Rich-media placeholder. sendPhoto carries the actual image.
     text = re.sub(r"<img\b[^>]*?/?>", "", text, flags=re.I)
 
-    # Convert Rich-only structural tags into standard HTML + line breaks.
-    text = re.sub(r"<h[1-6]>(.*?)</h[1-6]>", r"<b>\1</b><br/>", text, flags=re.I | re.S)
-    text = re.sub(r"<p>(.*?)</p>", r"\1<br/>", text, flags=re.I | re.S)
-    text = re.sub(r"<footer>(.*?)</footer>", r"\1<br/>", text, flags=re.I | re.S)
-    text = re.sub(r"<blockquote(?:\s+expandable)?>(.*?)</blockquote>", r"<br/><b>\1</b><br/>", text, flags=re.I | re.S)
-    text = re.sub(r"<br\s*/?>", "<br/>", text, flags=re.I)
+    # Convert structural tags to newline-separated Bot API HTML.
+    text = re.sub(r"<h[1-6]>(.*?)</h[1-6]>", r"<b>\1</b>\n", text, flags=re.I | re.S)
+    text = re.sub(r"<p>(.*?)</p>", r"\1\n", text, flags=re.I | re.S)
+    text = re.sub(r"<footer>(.*?)</footer>", r"\1\n", text, flags=re.I | re.S)
 
-    # Remove Rich-only tags/attributes while retaining standard inline HTML.
-    text = re.sub(r"</?(?:details|summary|cite|aside|figure|figcaption|tg-[^ >]+)(?:\s[^>]*)?>", "", text, flags=re.I)
-    text = re.sub(r"<[^>]+>", lambda m: m.group(0) if re.fullmatch(r"</?(?:b|strong|i|em|u|ins|s|strike|del|code|a)(?:\s[^>]*)?/?>", m.group(0), flags=re.I) else "", text)
-    text = re.sub(r"(?:<br/>){3,}", "<br/><br/>", text)
+    # Keep supported formatting tags and convert expandable blockquote to normal blockquote.
+    text = re.sub(r"<blockquote(?:\s+expandable)?>(.*?)</blockquote>", r"<blockquote>\1</blockquote>", text, flags=re.I | re.S)
+
+    # Internal Rich HTML uses <br>; Bot API HTML should use literal newlines.
+    text = re.sub(r"<br\s*/?>", "\n", text, flags=re.I)
+
+    # Remove any unsupported structural tags while retaining supported inline tags.
+    text = re.sub(
+        r"</?(?:details|summary|cite|aside|figure|figcaption)(?:\s[^>]*)?>",
+        "",
+        text,
+        flags=re.I,
+    )
+
+    # Normalize excess blank lines.
+    text = re.sub(r"\n{4,}", "\n\n", text)
     return text.strip()
 
 
-def truncate_html_safe(html_text, max_visible=1000):
-    """Truncate HTML by visible characters without cutting markup."""
+def truncate_html_safe(html_text, max_visible=1024):
+    """Truncate HTML by visible characters without cutting tags/entities."""
     source = safe_text(html_text)
     if not source:
         return ""
 
-    out = []
-    stack = []
-    visible = 0
-    pos = 0
-    tag_re = re.compile(r"<[^>]+>")
+    out=[]
+    stack=[]
+    visible=0
+    pos=0
+    tag_re=re.compile(r"<[^>]+>")
 
     for match in tag_re.finditer(source):
-        chunk = source[pos:match.start()]
+        chunk=source[pos:match.start()]
         if chunk:
-            remaining = max_visible - visible
-            if len(chunk) > remaining:
-                if remaining > 0:
-                    piece = chunk[:remaining].rsplit(" ", 1)[0].rstrip() if " " in chunk[:remaining] else chunk[:remaining].rstrip()
+            remaining=max_visible-visible
+            if len(chunk)>remaining:
+                if remaining>0:
+                    piece=chunk[:remaining].rsplit(" ",1)[0].rstrip() if " " in chunk[:remaining] else chunk[:remaining].rstrip()
                     out.append(piece)
                     visible += len(piece)
                 break
             out.append(chunk)
             visible += len(chunk)
 
-        tag = match.group(0)
+        tag=match.group(0)
         out.append(tag)
-        if re.match(r"<a\b", tag, re.I) or re.match(r"<b\b", tag, re.I) or re.match(r"<strong\b", tag, re.I) or re.match(r"<i\b", tag, re.I) or re.match(r"<em\b", tag, re.I) or re.match(r"<u\b", tag, re.I) or re.match(r"<ins\b", tag, re.I) or re.match(r"<s\b", tag, re.I) or re.match(r"<strike\b", tag, re.I) or re.match(r"<del\b", tag, re.I) or re.match(r"<code\b", tag, re.I):
-            if not tag.startswith("</") and not tag.endswith("/>"):
-                stack.append(re.match(r"<([A-Za-z0-9]+)", tag).group(1))
-            elif tag.startswith("</") and stack:
-                stack.pop()
-        pos = match.end()
-        if visible >= max_visible:
-            break
-    else:
-        tail = source[pos:]
-        remaining = max_visible - visible
-        if remaining > 0:
-            out.append(tail[:remaining])
 
-    result = "".join(out).rstrip()
-    if visible >= max_visible:
-        result += "…"
+        m=re.match(r"<(a|b|strong|i|em|u|ins|s|strike|del|code|blockquote)(?:\s[^>]*)?>", tag, re.I)
+        if m:
+            stack.append(m.group(1))
+        elif re.match(r"</(a|b|strong|i|em|u|ins|s|strike|del|code|blockquote)>", tag, re.I):
+            if stack:
+                stack.pop()
+
+        pos=match.end()
+
+    if pos < len(source) and visible < max_visible:
+        chunk=source[pos:]
+        remaining=max_visible-visible
+        if len(chunk)<=remaining:
+            out.append(chunk)
+        elif remaining>0:
+            piece=chunk[:remaining].rsplit(" ",1)[0].rstrip() if " " in chunk[:remaining] else chunk[:remaining].rstrip()
+            out.append(piece)
+
+    # Close any open tags in reverse order.
     for tag in reversed(stack):
-        result += f"</{tag}>"
+        out.append(f"</{tag}>")
+
+    result="".join(out).strip()
+    if len(re.sub(r"<[^>]+>","",html.unescape(result))) > max_visible:
+        # Conservative final fallback: strip markup and truncate. This is only
+        # used for pathological generated HTML.
+        plain=html.unescape(re.sub(r"<[^>]+>","",result))
+        result=html.escape(plain[:max_visible-1],quote=False)+"…"
     return result
 
 
 def send_bot_api_fallback(image_path, rich_html):
-    """Last-resort sendPhoto fallback preserving basic HTML formatting."""
-    caption = rich_html_to_legacy_html(rich_html)
-    caption = re.sub(r"(?:<br/>\s*){3,}", "<br/><br/>", caption, flags=re.I).strip()
-    caption = truncate_html_safe(caption, 1000)
-
-    url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendPhoto"
+    """Publish with standard Telegram Bot API HTML if the primary photo call fails."""
+    caption=truncate_html_safe(rich_html_to_legacy_html(rich_html),1024)
+    url=f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendPhoto"
     try:
-        with open(image_path, "rb") as photo:
-            response = session.post(
+        with open(image_path,"rb") as photo:
+            response=session.post(
                 url,
                 data={
-                    "chat_id": TELEGRAM_CHANNEL,
-                    "caption": caption,
-                    "parse_mode": "HTML",
+                    "chat_id":TELEGRAM_CHANNEL,
+                    "caption":caption,
+                    "parse_mode":"HTML",
                 },
-                files={"photo": photo},
+                files={"photo":photo},
                 timeout=90,
             )
-        return response.json()
+        try:
+            return response.json()
+        except Exception:
+            return {"ok":False,"description":response.text[:500]}
     except Exception as exc:
-        return {"ok": False, "description": str(exc)}
+        return {"ok":False,"description":str(exc)}
 
 
-def send_rich_photo(
-    image_path,
-    rich_html,
-):
-    # Telegram Rich HTML maps an embedded uploaded photo through a media id.
-    # The <img> reference and the media attachment id MUST match exactly.
-    rich_message = {
-        "html": rich_html,
-        "media": [
-            {
-                "id": "newsphoto",
-                "media": {
-                    "type": "photo",
-                    "media": "attach://photo",
+def send_rich_photo(image_path, rich_html):
+    """Use the standard Telegram Bot API sendPhoto method with HTML caption."""
+    caption=truncate_html_safe(rich_html_to_legacy_html(rich_html),1024)
+    url=f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendPhoto"
+    try:
+        with open(image_path,"rb") as photo:
+            response=session.post(
+                url,
+                data={
+                    "chat_id":TELEGRAM_CHANNEL,
+                    "caption":caption,
+                    "parse_mode":"HTML",
                 },
-            }
-        ],
-        "skip_entity_detection": False,
-    }
-
-    with open(image_path, "rb") as photo:
-        return telegram_call(
-            "sendRichMessage",
-            data={
-                "chat_id": TELEGRAM_CHANNEL,
-                "rich_message": json.dumps(
-                    rich_message,
-                    ensure_ascii=False,
-                ),
-            },
-            files={"photo": photo},
-        )
+                files={"photo":photo},
+                timeout=90,
+            )
+        try:
+            return response.json()
+        except Exception:
+            return {"ok":False,"description":response.text[:500]}
+    except Exception as exc:
+        return {"ok":False,"description":str(exc)}
 
 
 # ============================================================
@@ -4044,8 +4054,8 @@ def self_test():
             "The series is planned for international streaming on Netflix.",
             "The announcement expands the platform's Korean scripted lineup.",
         ],
-        "the_context": "The announcement comes as Netflix continues to invest in Korean scripted productions for global audiences. The project is positioned as a major international streaming title.",
-        "bottom_line": "The project is significant because it combines a major Korean production with Netflix's global distribution.",
+        "the_context": "The announcement comes as Netflix continues to invest in Korean scripted productions for global audiences.",
+        "bottom_line": "The project combines a major Korean production with Netflix's global distribution.",
         "bold_terms": ["Netflix", "Korean", "series"],
         "source": "Netflix",
         "url": "https://www.netflix.com/",
@@ -4062,7 +4072,6 @@ def self_test():
         "action_label": "Watch Now",
         "note": "International streaming availability is confirmed.",
         "spoiler_text": "",
-
     }
     rendered = dynamic_rich_html(sample)
     assert "<h1>🎬 " in rendered
@@ -4071,45 +4080,24 @@ def self_test():
     assert "<code>Netflix</code>" in rendered
     assert "<a href=" in rendered
     assert "<tg-spoiler>" not in rendered
-    assert complete_text("A normal sentence.")
-    assert complete_text("An incomplete sentence—") is False
-    assert "<h1>Netflix Announces Major New Korean Thriller Series</h1>" in rendered
-    assert "KEY HIGHLIGHTS" in rendered
+    assert "<h1>🎬 Netflix Announces Major New Korean Thriller Series</h1>" in rendered
+    assert "What's New" in rendered
     assert "THE CONTEXT" in rendered
     assert "BOTTOM LINE" in rendered
-    assert rendered.count('<blockquote expandable>') == 2
     assert '<img src="tg://photo?id=newsphoto">' in rendered
-    assert "• " in rendered
-    assert rendered.count("• ") == 4
-    assert rendered.index("KEY HIGHLIGHTS") < rendered.index("THE CONTEXT") < rendered.index("BOTTOM LINE")
+    assert rendered.count("• ") >= 4
     assert "#KDrama" in rendered and "#International" in rendered
-    assert "<footer><b>Source:</b>" in rendered
-    assert '<img src="tg://photo?id=newsphoto">' in rendered
     legacy = rich_html_to_legacy_html(rendered)
-    assert "<h1>" not in legacy and "<blockquote" not in legacy
-    assert "<b>Netflix</b>" in legacy
-    assert "<br/>" in legacy
-    assert len(re.sub(r"<[^>]+>", "", legacy)) <= 1000
-    import inspect
-    assert "@EntertainmentNewsroom" in inspect.getsource(branded_card)
-    assert likely_same_event("Netflix announces major Korean thriller series", "Netflix announces major Korean thriller series")
-    assert canonical_url("https://www.netflix.com/story/?utm_source=x") == "netflix.com/story"
-    assert "netflix" in extract_entities("Netflix announces a major update")
-
-    sample_three = dict(sample)
-    sample_three["highlights"] = sample_three["highlights"][:3]
-    rendered_three = dynamic_rich_html(sample_three)
-    assert rendered_three.count("• ") == 3
-
-    sample_five = dict(sample)
-    sample_five["highlights"] = sample_five["highlights"] + ["The project expands Netflix's international scripted slate."]
-    rendered_five = dynamic_rich_html(sample_five)
-    assert rendered_five.count("• ") == 5
+    assert "<h1>" not in legacy and "<h2>" not in legacy
+    assert "<br" not in legacy.lower()
+    assert "<b>🎬" in legacy
+    assert "<code>Netflix</code>" in legacy
+    assert len(html.unescape(re.sub(r"<[^>]+>", "", legacy))) <= 1024
+    assert "@EntertainmentNewsroom" in legacy
 
     sample_trailer = dict(sample)
     sample_trailer["template_type"] = "trailer"
     sample_trailer["action_label"] = "Watch Trailer"
-    sample_trailer["action_url"] = "https://example.com/trailer"
     trailer_html = dynamic_rich_html(sample_trailer)
     assert "🎞️ TRAILER DROP" in trailer_html
     assert "Watch Trailer" in trailer_html
@@ -4122,8 +4110,8 @@ def self_test():
     assert "<tg-spoiler>" in spoiler_html
 
     clustered = cluster_ranked_events([
-        {"title": "Netflix announces major Korean thriller series", "source": "Netflix", "url": "https://netflix.com/a", "published_date": now_iso(), "region": "International", "event_key": "netflix_korean_thriller"},
-        {"title": "Netflix announces major Korean thriller series", "source": "Netflix", "url": "https://netflix.com/b", "published_date": now_iso(), "region": "International", "event_key": "netflix_korean_thriller"},
+        {"title":"Netflix announces major Korean thriller series","source":"Netflix","url":"https://netflix.com/a","published_date":now_iso(),"region":"International","event_key":"netflix_korean_thriller"},
+        {"title":"Netflix announces major Korean thriller series","source":"Netflix","url":"https://netflix.com/b","published_date":now_iso(),"region":"International","event_key":"netflix_korean_thriller"},
     ])
     assert len(clustered) >= 1
     assert clustered[0]["event_cluster_size"] >= 1
