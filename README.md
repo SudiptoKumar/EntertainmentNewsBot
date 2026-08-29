@@ -1,26 +1,32 @@
-# Entertainment Newsroom V1
+# EntertainmentNewsBot V1
 
-Automated update-only entertainment news for Telegram. The technical framework follows the proven BusinessNewsroom Bot API Rich Message architecture. The editorial system is entertainment-specific.
+EntertainmentNewsBot V1 is an update-only entertainment newsroom using the same proven execution framework as the working BusinessNewsroom project, with Entertainment-specific editorial scoring and presentation.
 
-## Telegram credentials
-
-Only these Telegram credentials are required:
+## Required secrets
 
 ```text
+EXA_API_KEY
+CEREBRAS_API_KEY
 TELEGRAM_BOT_TOKEN
 ```
 
-No Telethon account session, `TELEGRAM_API_ID`, or `TELEGRAM_API_HASH` is required.
+No `TELEGRAM_API_ID` or `TELEGRAM_API_HASH` is required. Telegram publishing uses the Bot API Rich Message path already proven by the working BusinessNewsroom implementation.
 
 ## Editorial sectors
 
-Every candidate belongs to one of three sectors:
+Exactly three sectors:
 
 - Hollywood
 - Indian
 - International
 
-These are classification sectors, not quotas.
+There is no sector quota.
+
+## Publication gate
+
+A candidate must score **80/100 or higher** and pass all factual and publication checks.
+
+There is no fixed six-post quota.
 
 ## News priority
 
@@ -43,13 +49,9 @@ These are classification sectors, not quotas.
 12. OTT Platform Acquisition / Streaming Rights
 13. Box Office Updates
 
-Priority determines editorial ordering. It is not a publishing quota.
+Priority is an editorial preference, not a quota. Higher-priority qualifying stories are preferred when scores are otherwise competitive. The 80/100 gate is always required.
 
-## Publication gate
-
-The final editorial score is 0-100. A candidate is publishable only at **80/100 or higher** and only after all verification gates pass.
-
-The score is calculated from explicit components:
+## 100-point editorial score
 
 - Significance: 20
 - Audience / industry reach: 15
@@ -61,91 +63,121 @@ The score is calculated from explicit components:
 - Recency: 5
 - Audience anticipation: 5
 
-Rumor/speculation is hard-capped below the publication threshold.
+The model returns the bounded components; Python calculates the final score.
 
-## Discovery and editorial pipeline
+## Discovery and publishing pipeline
 
 ```text
 RSS
-→ Google News RSS gap fill
-→ Exa gap fill
-→ source validation
-→ 24-hour rolling window
-→ URL deduplication
-→ event/entity deduplication
-→ thin-excerpt enrichment
-→ Cerebras ranking in batches of 15
-→ global merge using priority tier/rank, then score
-→ 80+ publication gate
-→ ranked recovery candidates
-→ article extraction
-→ structured story generation
-→ numeric grounding
-→ claim verification
-→ event-status verification
-→ image selection
-→ deterministic Rich HTML rendering
-→ Telegram sendRichMessage + attached photo
-→ Bot API sendPhoto fallback
-→ persistent state
+  ↓
+Google News gap fill
+  ↓
+Exa gap fill
+  ↓
+Source validation
+  ↓
+24-hour window
+  ↓
+URL deduplication
+  ↓
+Event/entity deduplication
+  ↓
+Thin-excerpt enrichment
+  ↓
+Cerebras ranking in batches of 15
+  ↓
+Priority-aware global ordering
+  ↓
+80+ gate
+  ↓
+Article extraction
+  ↓
+Structured story generation
+  ↓
+Numeric grounding
+  ↓
+Claim verification
+  ↓
+Event-status verification
+  ↓
+Image selection
+  ↓
+Telegram Rich Message
+  ↓
+sendPhoto fallback
+  ↓
+Persistent state
 ```
 
-## Telegram content model
+## Final Telegram V1 structure
 
-The public message uses one clean reader-first design. News type changes the content and hook, not the overall visual language.
+The visible post deliberately has no section headings such as `Availability` or `What's New`.
 
 ```text
 Photo
-Hook
-🎬 Title (Year)
-📺 Availability when supported
-📖 Short synopsis
-📌 What's New
-🙈 Optional spoiler
-⌄ Optional expandable caveat
-@channel #tags
-Source: Name (clickable)
+
+{HOOK}
+
+🎬 {TITLE} ({YEAR})
+
+✦ Platform: ...
+✦ Episodes: ...
+✦ Language: ...
+✦ Status: ...
+✦ Release: ...
+
+📖 Short synopsis.
+
+✦ Important fact
+✦ Important fact
+✦ Important fact
+
+(optional expandable note)
+
+@EntertainmentNewsroom #tag #tag
+
+Source: Publication
 ```
 
-No `What to Know`, `Vocabulary`, `THE CONTEXT`, or `BOTTOM LINE` sections are generated.
+Only supported fields are shown. Empty or unsupported fields disappear.
 
-## Rich Message implementation
+### Rich formatting
 
-The message is assembled by Python from structured Cerebras output. The model never writes Markdown or HTML into the final message.
+Python builds the Rich HTML deterministically. The model does not write Markdown or HTML.
 
-The working BusinessNewsroom architecture uses Telegram Bot API `sendRichMessage` with Rich HTML and an attached photo. The Entertainment bot uses the same transport pattern.
+- Hook: bold
+- Title: bold, large heading
+- `Platform`, `Episodes`, `Language`, `Status`, `Release`: bold labels
+- Details: `✦`
+- Synopsis: blockquote
+- Optional spoiler: native `<tg-spoiler>`
+- Optional caveat/dub/availability note: expandable `<details>` block
+- Source publication name: bold label + clickable publication name
 
-## Image policy
+## Image pipeline
 
-For OTT/streaming/language/upcoming-release stories, the image selector prefers the official full poster and preserves the poster without cropping.
+### OTT / streaming / Hindi-dub / upcoming OTT priority
 
-Normal editorial photos may use the standard 1200×675 branded card.
+1. Official full poster
+2. Official alternate poster
+3. Official platform/studio artwork
+4. Article image
+5. Official source logo fallback
+6. Source-name fallback
 
-Posters and source-logo fallback cards do **not** contain `@EntertainmentNewsroom` branding.
+Portrait posters are sent as portrait images with their original aspect ratio preserved. They are never forced into a 16:9 crop or padded into a landscape frame.
 
-## Required secrets
+**Posters do not receive `@EntertainmentNewsroom` branding.**
 
-```text
-EXA_API_KEY
-CEREBRAS_API_KEY
-TELEGRAM_BOT_TOKEN
-```
+Normal editorial photos may receive the channel branding chip.
 
-Optional:
-
-```text
-TELEGRAM_ADMIN_CHAT_ID
-CEREBRAS_MODEL
-```
-
-## Scheduling
-
-The GitHub Actions workflow runs hourly from 07:00 through 23:00 Asia/Dhaka and supports manual execution.
-
-## Local checks
+## Local validation
 
 ```bash
 python -m py_compile main.py
-EXA_API_KEY=dummy CEREBRAS_API_KEY=dummy TELEGRAM_BOT_TOKEN=dummy python main.py --self-test
-python main.py
+EXA_API_KEY=dummy CEREBRAS_API_KEY=dummy TELEGRAM_BOT_TOKEN=dummy TELEGRAM_CHANNEL=@EntertainmentNewsroom PYTHONPATH=../teststubs python main.py --self-test
 ```
+
+## GitHub Actions
+
+The included workflow supports manual execution and hourly scheduled runs from 07:00 through 23:00 Asia/Dhaka.

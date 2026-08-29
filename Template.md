@@ -1,136 +1,196 @@
-# Entertainment Newsroom V1 Telegram Template
+# Entertainment News Telegram V1 Template
 
-## Master reader-first structure
+This file is the authoritative **visible post structure** for V1.
+
+## Master structure
 
 ```text
 Photo
 
 *{HOOK}*
 
-*🎬 {TITLE} ({YEAR})*
+# 🎬 {TITLE} ({YEAR})
 
-📺 *Availability*
-• Platform: `{Platform}`
-• Episodes: `{count}`
-• Language: `{languages}`
-• Status: `{status}`
-• 📅 Release: {date}
+✦ *Platform:* {Platform}
+✦ *Episodes:* {count}
+✦ *Language:* {languages}
+✦ *Status:* {status}
+✦ *Release:* {date}
 
-> 📖 {short 1-2 sentence synopsis}
+> 📖 {short synopsis}
 
-📌 *What's New:*
-• {most important new fact}
-• {second important new fact}
-• {third important new fact, optional}
+✦ {important fact}
+✦ {important fact}
+✦ {important fact}
 
-🙈 *Spoiler* (optional, only if genuinely relevant)
-||{plot twist / ending / post-credit detail}||
+{optional expandable caveat / unconfirmed note / dub or regional note}
 
-> ℹ️ {optional caveat, unconfirmed note, dub/language note}
+@channel #tag #tag
 
-@EntertainmentNewsroom #tag #tag
-*Source:* Name (Name is the clickable URL)
+*Source:* Name (Name URL attached)
 ```
 
-## Rendering rules
+The `#` above is only documentation notation for a heading. It must not be emitted in the Telegram message.
 
-- Do not print `What to Know`, `Vocabulary`, `THE CONTEXT`, or `BOTTOM LINE`.
-- Do not print `Hollywood • Industry • Industry` or any generic sector/genre/format header.
-- The title is the primary visual element after the hook and must be clear and bold.
-- The year belongs immediately after the title when supported.
-- Availability is placed immediately after the title whenever platform, status, episode count, language, or release information is known.
-- Only supported availability fields are shown. Empty/unknown fields are omitted.
-- If a release date already appears inside Availability, do not repeat it below.
-- The synopsis is short and useful. It should not read like a blog paragraph.
-- `What's New` contains 2-3 current, factual developments and does not repeat the synopsis.
-- Spoiler is optional and rare.
-- The caveat is an optional expandable Rich Message block and replaces the old knowledge/vocabulary blocks.
-- The source name is clickable. Never display a raw URL.
-- The LLM supplies structured content only. Python generates all Rich HTML deterministically.
+## Rules
 
-## Hook rules
+- Movie or series name must be the clear title line followed by `(Year)` when the year is source-supported.
+- Do not add `Hollywood • Industry • Industry`, `Availability`, `What's New`, `What to Know`, `Vocabulary`, `THE CONTEXT`, or `BOTTOM LINE` as visible section headings.
+- Availability information is represented directly as `✦` rows.
+- Release information is represented directly as `✦ *Release:* ...` and should not be duplicated.
+- Details always use `✦`, not `•`.
+- Synopsis uses the `📖` blockquote.
+- Spoiler is optional and uses Telegram Rich HTML spoiler markup.
+- Caveats such as unconfirmed status, regional availability, or dub information use an expandable Rich HTML block only when genuinely useful.
+- Source is `*Source:* Name`, where `Name` is a clickable link.
+- No raw URL is displayed.
+- No Markdown or HTML is produced by the LLM. Python renders all formatting.
+
+## Priority-aware ordering
+
+The same visual grammar is used for all stories, but the information order reflects the story type.
+
+### OTT / Streaming Availability
 
 ```text
-OTT / Streaming Availability        → 🔥 NOW STREAMING
-Hindi Dub / Language Availability   → 🇮🇳 HINDI DUB NOW AVAILABLE
-Upcoming OTT Releases               → 📺 OTT RELEASE ANNOUNCED
-Release Date Confirmations          → 📅 RELEASE DATE CONFIRMED
-New Movie / Series Announcements    → 🎬 NEW ANNOUNCEMENT
-Season Renewals / New Season        → 🔄 SEASON UPDATE
-Trailer Releases                    → 🎞️ TRAILER RELEASED
-First Look / Posters                → 👀 FIRST LOOK
-Cast / Character Announcements      → 🎭 CAST ANNOUNCEMENT
-Theatrical / Re-release              → 🎬 THEATRICAL UPDATE
-Production / Filming                 → 🎥 PRODUCTION UPDATE
-OTT Rights / Distribution            → 🌍 STREAMING RIGHTS UPDATE
-Box Office Updates                   → 💰 BOX OFFICE UPDATE
+🔥 NOW STREAMING
+
+🎬 Title (Year)
+
+✦ Platform: Netflix
+✦ Status: Streaming 🔥
+
+📖 Short synopsis.
+
+✦ Added to Netflix today
+✦ Hindi and English audio available
+✦ 4K available
+
+@channel #Netflix #Streaming
+
+*Source:* Name
 ```
 
-## Dynamic availability examples
-
-### Streaming now
+### Hindi Dub / Language Availability
 
 ```text
-📺 Availability
-• Platform: `Paramount+`
-• Status: `Streaming 🔥`
+🇮🇳 HINDI DUB AVAILABLE
+
+🎬 Title (Year)
+
+✦ Platform: Netflix
+✦ Language: Hindi, English
+✦ Status: Streaming 🔥
+
+📖 Short synopsis.
+
+✦ Hindi dub is now available
+✦ English audio remains available
+
+@channel #HindiDub #Netflix
+
+*Source:* Name
 ```
 
-### Upcoming release
+### Upcoming OTT Release
 
 ```text
-📺 Availability
-• Platform: `Apple TV+`
-• 📅 Release: September 9, 2026
+📺 UPCOMING OTT RELEASE
+
+🎬 Title (Year)
+
+✦ Platform: Apple TV+
+✦ Release: September 9, 2026
+
+📖 Short synopsis.
+
+✦ Platform confirmed the premiere
+✦ Season 1 will contain 8 episodes
+
+@channel #AppleTV #Streaming
+
+*Source:* Name
 ```
 
-### Series with episode count
+### Release Date Confirmation
 
 ```text
-📺 Availability
-• Platform: `Netflix`
-• Episodes: `8`
-• Status: `Coming Soon`
-• 📅 Release: September 24, 2026
+📅 RELEASE DATE CONFIRMED
+
+🎬 Title (Year)
+
+✦ Platform: Apple TV+
+✦ Release: September 9, 2026
+
+📖 Short synopsis.
+
+✦ Apple TV+ confirmed the premiere date
+✦ Season 1 will contain 8 episodes
+
+@channel #AppleTV #Streaming
+
+*Source:* Name
 ```
 
-### Language update
+### Trailer
 
 ```text
-📺 Availability
-• Platform: `Netflix`
-• Language: `Hindi, English`
-• Status: `Streaming 🔥`
+🎞️ TRAILER RELEASED
+
+🎬 Title (Year)
+
+📖 Short synopsis.
+
+✦ First trailer has been released
+✦ The trailer reveals ...
+✦ The film/series arrives on ...
+
+@channel #Trailer #Movies
+
+*Source:* Name
 ```
 
-### No platform information
+### Renewal / New Season
 
-If the story is a film production or casting update and no platform information is supported, omit the Availability section entirely.
+```text
+🔄 SEASON UPDATE
 
-## Image rules
+🎬 Title (Year)
 
-### Normal editorial image
+✦ Platform: Netflix
+✦ Status: Renewed for Season 2
 
-A usable article/editorial image is cropped to the standard 1200×675 card and carries the `@EntertainmentNewsroom` brand chip at bottom-right.
+📖 Short synopsis.
 
-### OTT / streaming / language / upcoming-release poster
+✦ Season 2 has been officially confirmed
+✦ Production timing is ...
 
-Prefer an official full poster/key art.
+@channel #Netflix #Series
 
-- Preserve the complete poster.
-- Never crop a portrait poster into 16:9.
-- Fit the full poster inside the 1200×675 canvas with neutral side padding when necessary.
-- Do **not** place `@EntertainmentNewsroom` on the poster.
+*Source:* Name
+```
 
-### Image fallback
+### Box Office
 
-If no usable article image or poster exists:
+```text
+💰 BOX OFFICE
 
-1. Try the official publication/source logo.
-2. Center the logo on the fallback card.
-3. Do **not** place `@EntertainmentNewsroom` on the fallback card.
-4. If no logo is available, use the source-name fallback without the channel handle.
+🎬 Title (Year)
 
-## Objective
+✦ Worldwide: $500 million
+✦ Domestic: $200 million
+✦ Status: Day 10
 
-The reader should understand what happened, where it is available, and the key new information in under 10 seconds.
+📖 Short synopsis.
+
+✦ The film crossed the latest milestone
+✦ International markets contributed ...
+
+@channel #BoxOffice #Movies
+
+*Source:* Name
+```
+
+## Image rule
+
+For OTT-related stories, use the complete official poster whenever available. Preserve the original poster ratio. Do not add the channel username to a poster.
