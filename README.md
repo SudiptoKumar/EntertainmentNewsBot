@@ -181,3 +181,9 @@ EXA_API_KEY=dummy CEREBRAS_API_KEY=dummy TELEGRAM_BOT_TOKEN=dummy TELEGRAM_CHANN
 ## GitHub Actions
 
 The included workflow supports manual execution and hourly scheduled runs from 07:00 through 23:00 Asia/Dhaka.
+
+## V1 strong filtration and repeat protection
+
+The channel is strictly film/TV/OTT entertainment. Candidates that are clearly sports, music, concerts, podcasts, books, gaming/esports, celebrity lifestyle/gossip, fashion, or other unrelated verticals are hard-rejected before ranking. The ranking schema also requires `content_scope=film_tv_ott`; anything else scores 0 and cannot publish.
+
+The bot also maintains a 72-hour work-family cooldown to stop repeated updates about the same movie or series from flooding the channel. A fresh Tier-1 development may replace an older Tier-2/3 post for the same work. Multiple articles about the same event are collapsed before publication, and only one representative work-family candidate is allowed per run.

@@ -727,6 +727,39 @@ BAD_TITLE_RE = re.compile(
     re.I,
 )
 
+# Strict channel-scope exclusion. EntertainmentNewsroom is limited to
+# film/series/OTT/theatrical entertainment. Sports, music, gaming, lifestyle,
+# gossip and other unrelated verticals are hard-rejected before ranking.
+NON_ENTERTAINMENT_RE = re.compile(
+    r"(?:"
+    r"\b(?:u\.?s\.?\s+open|wimbledon|australian\s+open|french\s+open)\b"
+    r"|\b(?:where\s+to\s+watch|live\s+coverage|sports\s+lineup|sports\s+schedule|sports\s+results|sports\s+coverage|sports\s+stream|college\s+football|tennis\s+tournament|boxing\s+match|wrestling\s+match|football\s+season|fight\s+night|fight\s+card|pay[- ]per[- ]view)\b"
+    r"|\b(?:tennis|football|soccer|basketball|baseball|hockey|cricket|golf|rugby|boxing|wrestling|mma|ufc|wwe|aew)\b.{0,45}\b(?:match|tournament|championship|playoff|schedule|live|coverage|score|results|season\s+opener)\b"
+    r"|\b(?:concert|tour\s+dates?|album|single|music\s+festival|grammy|podcast|book\s+launch|gaming|video\s+game|esports|fashion\s+week|red\s+carpet|paparazzi|celebrity\s+gossip)\b"
+    r")",
+    re.I,
+)
+NON_ENTERTAINMENT_PHRASES = (
+    "sports lineup", "sports schedule", "live sports", "sports coverage",
+    "sports stream", "college football", "tennis tournament",
+    "boxing match", "wrestling match", "football season",
+)
+WORK_NOISE_RE = re.compile(
+    r"\b(?:the|a|an|new|latest|major|announces?|announcement|confirmed?|"
+    r"report(?:ed)?|release|released|release\s+date|date|set|for|to|on|at|in|"
+    r"streaming|stream|now|coming|available|availability|library|adds?|added|"
+    r"returns?|returning|season|renewed?|renewal|cancelled?|canceled|cancellation|"
+    r"trailer|teaser|first|look|poster|cast|casting|character|joins?|stars?|starring|"
+    r"production|filming|wrapped?|wraps?|starts?|started|acquired?|acquisition|"
+    r"rights?|platform|series|movie|film|thriller|drama|comedy|sequel|spinoff|"
+    r"spin[- ]off|episode|episodes|global|worldwide|international|hollywood|"
+    r"india|indian|korean|chinese|japanese|thai|uk|u\.?s\.?|netflix|"
+    r"prime|amazon|disney|hbo|max|apple|paramount|sony|universal|marvel|dc)\b",
+    re.I,
+)
+WORK_REPEAT_HOURS = 72
+WORK_SIMILARITY_THRESHOLD = 0.72
+
 
 def candidate_basic_allowed(item):
     url = safe_text(
@@ -756,6 +789,9 @@ def candidate_basic_allowed(item):
     ):
         return False
 
+    if not content_scope_allowed(item):
+        return False
+
     if not (
         DISCOVERY_START
         <= published
@@ -774,6 +810,48 @@ def candidate_basic_allowed(item):
     return bool(
         canonical
     )
+
+
+def content_scope_allowed(item):
+    """Hard gate clearly off-topic verticals without blocking entertainment works about sports/music."""
+    title = safe_text(item.get("title"))
+    excerpt = safe_text(item.get("excerpt"))
+    if not title:
+        return False
+    if NON_ENTERTAINMENT_RE.search(title):
+        return False
+    combined = " ".join([title, excerpt]).lower()
+    if any(phrase in combined for phrase in NON_ENTERTAINMENT_PHRASES):
+        return False
+    return True
+
+
+def normalize_work_key(text):
+    raw = safe_text(text).lower()
+    raw = re.sub(r"\b(?:19|20)\d{2}\b", " ", raw)
+    raw = re.sub(r"season\s+\d+", " ", raw, flags=re.I)
+    raw = WORK_NOISE_RE.sub(" ", raw)
+    raw = re.sub(r"[^a-z0-9]+", " ", raw)
+    tokens = [t for t in raw.split() if len(t) >= 3 and not t.isdigit()]
+    return " ".join(tokens[:10])
+
+
+def work_similarity(a, b):
+    ka = normalize_work_key(a)
+    kb = normalize_work_key(b)
+    if not ka or not kb:
+        return 0.0
+    seq = SequenceMatcher(None, ka, kb).ratio()
+    sa, sb = set(ka.split()), set(kb.split())
+    jac = len(sa & sb) / max(1, len(sa | sb))
+    contain = len(sa & sb) / max(1, min(len(sa), len(sb)))
+    return max(seq, jac, contain)
+
+
+def same_work_family(a, b):
+    aw = safe_text(a.get("work_title")) or safe_text(a.get("title"))
+    bw = safe_text(b.get("work_title")) or safe_text(b.get("title"))
+    return work_similarity(aw, bw) >= WORK_SIMILARITY_THRESHOLD
 
 
 def title_duplicate_against_state(title):
@@ -1438,8 +1516,10 @@ def enrich_thin_excerpts(regional):
 # VERSION 1 EDITORIAL RANKING
 # ============================================================
 
-RANK_SCHEMA={"type":"object","properties":{"ranked":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer"},"rank":{"type":"integer","minimum":1},"sector":{"type":"string","enum":SECTORS},"source_class":{"type":"string","enum":["official","reported","rumor"]},"significance":{"type":"integer","minimum":0,"maximum":20},"reach":{"type":"integer","minimum":0,"maximum":15},"event_magnitude":{"type":"integer","minimum":0,"maximum":15},"platform_ip_strength":{"type":"integer","minimum":0,"maximum":10},"source_authority":{"type":"integer","minimum":0,"maximum":15},"evidence_strength":{"type":"integer","minimum":0,"maximum":10},"international_relevance":{"type":"integer","minimum":0,"maximum":5},"recency":{"type":"integer","minimum":0,"maximum":5},"audience_anticipation":{"type":"integer","minimum":0,"maximum":5},"topic":{"type":"string"},"institution":{"type":"string"},"event_key":{"type":"string"},"reason":{"type":"string"},"priority_type":{"type":"string","enum":list(NEWS_PRIORITY.keys())}},"required":["id","rank","sector","source_class","significance","reach","event_magnitude","platform_ip_strength","source_authority","evidence_strength","international_relevance","recency","audience_anticipation","topic","institution","event_key","reason","priority_type"],"additionalProperties":False}}},"required":["ranked"],"additionalProperties":False}
+RANK_SCHEMA={"type":"object","properties":{"ranked":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer"},"rank":{"type":"integer","minimum":1},"sector":{"type":"string","enum":SECTORS},"content_scope":{"type":"string","enum":["film_tv_ott","not_entertainment"]},"work_title":{"type":"string"},"source_class":{"type":"string","enum":["official","reported","rumor"]},"significance":{"type":"integer","minimum":0,"maximum":20},"reach":{"type":"integer","minimum":0,"maximum":15},"event_magnitude":{"type":"integer","minimum":0,"maximum":15},"platform_ip_strength":{"type":"integer","minimum":0,"maximum":10},"source_authority":{"type":"integer","minimum":0,"maximum":15},"evidence_strength":{"type":"integer","minimum":0,"maximum":10},"international_relevance":{"type":"integer","minimum":0,"maximum":5},"recency":{"type":"integer","minimum":0,"maximum":5},"audience_anticipation":{"type":"integer","minimum":0,"maximum":5},"topic":{"type":"string"},"institution":{"type":"string"},"event_key":{"type":"string"},"reason":{"type":"string"},"priority_type":{"type":"string","enum":list(NEWS_PRIORITY.keys())}},"required":["id","rank","sector","content_scope","work_title","source_class","significance","reach","event_magnitude","platform_ip_strength","source_authority","evidence_strength","international_relevance","recency","audience_anticipation","topic","institution","event_key","reason","priority_type"],"additionalProperties":False}}},"required":["ranked"],"additionalProperties":False}
 def rank_score(row):
+    if safe_text(row.get("content_scope")).lower() != "film_tv_ott":
+        return 0
     score=sum(int(row.get(k,0)) for k in ["significance","reach","event_magnitude","platform_ip_strength","source_authority","evidence_strength","international_relevance","recency","audience_anticipation"])
     if safe_text(row.get("source_class")).lower()=="rumor":score=min(score,69)
     return max(0,min(100,score))
@@ -1454,6 +1534,7 @@ def rank_candidates(candidates,region):
             lines.append("\n".join([f"ID: {idx}",f"Title: {item.get('title','')}",f"Source: {item.get('source','')}",f"Published: {item.get('published_date','')}",age,f"Excerpt: {trim_source_text(item.get('excerpt',''),850)}",""]))
         prompt=f"""You are the senior editor of @EntertainmentNewsroom. Rank these entertainment candidates using a strict 0-100 model.
 Sectors: Hollywood, Indian, International. Hollywood means primarily US/Hollywood entertainment; Indian means India-led cinema/series/OTT; International means major non-Indian, non-Hollywood global entertainment and cross-border developments.
+HARD SCOPE: ONLY movies, scripted/unscripted series, OTT/streaming, theatrical film, production/filming, trailers/first looks/posters, casting/characters, release dates, OTT rights/distribution, renewals/cancellations, and film/series box office. Absolutely reject sports, music, concerts, podcasts, books, gaming, esports, celebrity lifestyle/gossip, fashion, awards-only stories and other unrelated content. Return content_scope=film_tv_ott only when clearly within scope, otherwise not_entertainment. Return work_title as the canonical movie/series/project being updated, without news wording.
 Judge the underlying event, not headline excitement. Routine celebrity lifestyle, gossip, fashion, generic interviews, minor casting, routine catalog additions, weak promotions, unsupported rumors and duplicates are low priority. Rumor/speculation may be classified but must never reach a publishable score. Official confirmation is stronger than reputable reporting.
 Scoring components must sum to exactly 100: significance 0-20; reach 0-15; event_magnitude 0-15; platform_ip_strength 0-10; source_authority 0-15; evidence_strength 0-10; international_relevance 0-5; recency 0-5; audience_anticipation 0-5.
 For each candidate, assign exactly one priority_type from this fixed list:
@@ -1480,14 +1561,14 @@ Priority is a ranking preference, not a quota. Return EVERY candidate with exact
                 item=dict(by_id[idx]); score=rank_score(r); scored.append((score,int(r.get("rank",9999)),r,item)); returned.add(safe_text(item.get("canonical")))
             scored.sort(key=lambda x:(-x[0],x[1]))
             for local,(score,_,r,item) in enumerate(scored,1):
-                item.update({"editor_rank":offset+local,"importance_score":score,"important":score>=PUBLISH_THRESHOLD,"sector":normalize_sector(r.get("sector")),"source_class":safe_text(r.get("source_class")) or "reported","topic":canonical_topic(safe_text(r.get("topic")),region),"institution":safe_text(r.get("institution")),"event_key":safe_text(r.get("event_key")),"rank_reason":safe_text(r.get("reason")),"priority_type":safe_text(r.get("priority_type")) if safe_text(r.get("priority_type")) in NEWS_PRIORITY else "New Movie / Series Announcements","priority_tier":NEWS_PRIORITY.get(safe_text(r.get("priority_type")), NEWS_PRIORITY["New Movie / Series Announcements"])[0],"priority_rank":NEWS_PRIORITY.get(safe_text(r.get("priority_type")), NEWS_PRIORITY["New Movie / Series Announcements"])[1],"score_components":{k:int(r.get(k,0)) for k in ["significance","reach","event_magnitude","platform_ip_strength","source_authority","evidence_strength","international_relevance","recency","audience_anticipation"]}}); rows.append(item)
+                item.update({"editor_rank":offset+local,"importance_score":score,"important":score>=PUBLISH_THRESHOLD,"content_scope":safe_text(r.get("content_scope")),"work_title":trim_source_text(safe_text(r.get("work_title")),100),"work_key":normalize_work_key(r.get("work_title")),"sector":normalize_sector(r.get("sector")),"source_class":safe_text(r.get("source_class")) or "reported","topic":canonical_topic(safe_text(r.get("topic")),region),"institution":safe_text(r.get("institution")),"event_key":safe_text(r.get("event_key")),"rank_reason":safe_text(r.get("reason")),"priority_type":safe_text(r.get("priority_type")) if safe_text(r.get("priority_type")) in NEWS_PRIORITY else "New Movie / Series Announcements","priority_tier":NEWS_PRIORITY.get(safe_text(r.get("priority_type")), NEWS_PRIORITY["New Movie / Series Announcements"])[0],"priority_rank":NEWS_PRIORITY.get(safe_text(r.get("priority_type")), NEWS_PRIORITY["New Movie / Series Announcements"])[1],"score_components":{k:int(r.get(k,0)) for k in ["significance","reach","event_magnitude","platform_ip_strength","source_authority","evidence_strength","international_relevance","recency","audience_anticipation"]}}); rows.append(item)
             for idx,item in enumerate(batch,1):
                 if safe_text(item.get("canonical")) not in returned:
-                    fallback=dict(item); fallback.update({"editor_rank":offset+RANKING_BATCH_SIZE+idx,"importance_score":0,"important":False,"sector":"International","source_class":"reported","topic":canonical_topic(item.get("topic",""),region),"institution":"","event_key":"","rank_reason":"Unscored fallback; withheld from publication."}); rows.append(fallback)
+                    fallback=dict(item); fallback.update({"editor_rank":offset+RANKING_BATCH_SIZE+idx,"importance_score":0,"important":False,"content_scope":"not_entertainment","work_title":"","work_key":"","sector":"International","source_class":"reported","topic":canonical_topic(item.get("topic",""),region),"institution":"","event_key":"","rank_reason":"Unscored fallback; withheld from publication."}); rows.append(fallback)
         except Exception as exc:
             logger.error("Editorial ranking batch failed for %s: %s",region,exc)
             for idx,item in enumerate(batch,offset+1):
-                row=dict(item); row.update({"editor_rank":idx,"importance_score":0,"important":False,"sector":"International","source_class":"reported","topic":canonical_topic(item.get("topic",""),region),"institution":"","event_key":"","rank_reason":"Ranking-service failure; candidate withheld."}); rows.append(row)
+                row=dict(item); row.update({"editor_rank":idx,"importance_score":0,"important":False,"content_scope":"not_entertainment","work_title":"","work_key":"","sector":"International","source_class":"reported","topic":canonical_topic(item.get("topic",""),region),"institution":"","event_key":"","rank_reason":"Ranking-service failure; candidate withheld."}); rows.append(row)
     rows.sort(key=lambda x:(int(x.get("priority_tier",2)), int(x.get("priority_rank",5)), -int(x.get("importance_score",0)), -(parse_datetime(x.get("published_date")).timestamp() if parse_datetime(x.get("published_date")) else 0)))
     for global_rank, row in enumerate(rows, 1):
         row["editor_rank"] = global_rank
@@ -1590,6 +1671,22 @@ def collapse_event_clusters(ranked):
     return sorted(winners.values(), key=lambda x: x.get("editor_rank", 9999))
 
 
+def collapse_work_family_duplicates(ranked):
+    """Keep one representative per movie/series family in a single run."""
+    winners = []
+    ordered = sorted(ranked, key=lambda x: (
+        int(x.get("priority_tier", 9)),
+        int(x.get("priority_rank", 99)),
+        -int(x.get("importance_score", 0)),
+        -(parse_datetime(x.get("published_date")).timestamp() if parse_datetime(x.get("published_date")) else 0),
+    ))
+    for item in ordered:
+        if any(same_work_family(item, existing) and same_event_window(item, existing, 72) for existing in winners):
+            continue
+        winners.append(item)
+    return sorted(winners, key=lambda x: x.get("editor_rank", 9999))
+
+
 def persist_event_cluster_state(ranked):
     clusters = STATE.setdefault("event_clusters", {})
     for item in ranked:
@@ -1605,6 +1702,10 @@ def persist_event_cluster_state(ranked):
             "confidence": item.get("event_confidence", 0),
             "last_seen": now_iso(),
             "headline": item.get("title", ""),
+            "work_title": item.get("work_title", ""),
+            "work_key": item.get("work_key", ""),
+            "priority_rank": item.get("priority_rank", 99),
+            "importance_score": item.get("importance_score", 0),
         }
 
 
@@ -1886,7 +1987,7 @@ Return only valid JSON matching the schema."""
             if not title or not summary or not complete_text(title) or not complete_text(summary) or fmt not in {"Film","Series","Streaming","Industry"} or news_type not in allowed_types or not (2<=len(highlights)<=3) or any(not complete_text(x) for x in highlights) or (spoiler and not complete_text(spoiler)): raise ValueError("Invalid story structure")
             dynamic_fields={k:trim_source_text(clean_generated_text(data.get(k)),300) for k in ["platform","episodes","languages","status","release_date"]}
             priority_type = NEWS_TYPE_TO_PRIORITY.get(news_type, "New Movie / Series Announcements")
-            return {**item,"title":trim_source_text(title,100),"headline":trim_source_text(title,100),"year":trim_source_text(year,10),"summary":trim_source_text(summary,220),"sector":out_sector,"format":fmt,"news_type":news_type,"priority_type":priority_type,"highlights":[trim_source_text(x,135) for x in highlights],**dynamic_fields,"spoiler":trim_source_text(spoiler,500),"note":trim_source_text(note,350),"bold_terms":[safe_text(x) for x in data.get("bold_terms",[]) if safe_text(x)]}
+            return {**item,"title":trim_source_text(title,100),"headline":trim_source_text(title,100),"year":trim_source_text(year,10),"summary":trim_source_text(summary,220),"sector":out_sector,"format":fmt,"news_type":news_type,"priority_type":priority_type,"work_title":trim_source_text(safe_text(item.get("work_title")) or title,100),"work_key":safe_text(item.get("work_key")) or normalize_work_key(safe_text(item.get("work_title")) or title),"highlights":[trim_source_text(x,135) for x in highlights],**dynamic_fields,"spoiler":trim_source_text(spoiler,500),"note":trim_source_text(note,350),"bold_terms":[safe_text(x) for x in data.get("bold_terms",[]) if safe_text(x)]}
         except Exception as exc:
             logger.warning("Story generation attempt %d failed: %s",attempt+1,exc)
             if attempt<2:time.sleep(1)
@@ -2725,6 +2826,11 @@ def store_event(
         "headline": story[
             "headline"
         ],
+        "work_title": story.get("work_title", ""),
+        "work_key": story.get("work_key") or normalize_work_key(story.get("title") or story.get("headline")),
+        "priority_type": story.get("priority_type", ""),
+        "priority_rank": story.get("priority_rank", 99),
+        "importance_score": story.get("importance_score", 0),
         "summary": story[
             "summary"
         ],
@@ -2996,6 +3102,10 @@ def process_story_candidate(item):
         "event_source_count",
         0,
     )
+    story["work_title"] = trim_source_text(safe_text(story.get("work_title")) or safe_text(item.get("work_title")) or safe_text(story.get("title")), 100)
+    story["work_key"] = safe_text(story.get("work_key")) or normalize_work_key(story.get("work_title") or story.get("title"))
+    story["priority_rank"] = int(item.get("priority_rank", NEWS_PRIORITY.get(story.get("priority_type"), (9, 99))[1]) or 99)
+    story["importance_score"] = int(item.get("importance_score", 0) or 0)
     story["category_hashtags"] = category_hashtags(
         story
     )
@@ -3007,26 +3117,41 @@ def process_story_candidate(item):
 # MAIN
 # ============================================================
 
-def is_already_published_candidate(item):
+def is_already_published_candidate(item, check_work=True):
     canonical = safe_text(item.get("canonical"))
     if canonical and canonical in POSTED_URLS:
         return True
-
     title = safe_text(item.get("title"))
     if not title:
         return False
+    current_work = safe_text(item.get("work_title")) or title
+    current_work_key = safe_text(item.get("work_key")) or normalize_work_key(current_work)
+    current_priority = int(item.get("priority_rank", 99) or 99)
 
     for event in STATE.get("events", {}).values():
         if event.get("status") != "published":
             continue
-        if event.get("region") != item.get("region"):
-            continue
         published_at = parse_datetime(event.get("published_at"))
-        if not published_at or (NOW_BD - published_at).total_seconds() > EVENT_RETENTION_DAYS * 86400:
+        if not published_at:
+            continue
+        age_hours = (NOW_BD - published_at).total_seconds() / 3600
+        if age_hours < 0 or age_hours > EVENT_RETENTION_DAYS * 24:
             continue
         previous_title = safe_text(event.get("headline"))
         if previous_title and title_similarity(title, previous_title) >= 0.90:
             return True
+        if not check_work:
+            continue
+        previous_work_key = safe_text(event.get("work_key")) or normalize_work_key(event.get("work_title") or previous_title)
+        if not current_work_key or not previous_work_key or age_hours > WORK_REPEAT_HOURS:
+            continue
+        if work_similarity(current_work_key, previous_work_key) < WORK_SIMILARITY_THRESHOLD:
+            continue
+        previous_priority = int(event.get("priority_rank", 99) or 99)
+        # A new Tier-1 development may replace an older Tier-2/3 update for the same work.
+        if current_priority <= 4 and previous_priority > 4:
+            continue
+        return True
     return False
 
 
@@ -3055,8 +3180,10 @@ def available_candidates(region, source_pool=None):
             continue
         if source_pool is None and not allowed_source_for_region(url, region):
             continue
+        if not content_scope_allowed(item):
+            continue
 
-        if is_already_published_candidate(item):
+        if is_already_published_candidate(item, check_work=False):
             continue
         if title_duplicate_against_list(item.get("title", ""), candidates, threshold=0.94):
             continue
@@ -3074,7 +3201,10 @@ def available_candidates(region, source_pool=None):
 
 def prepare_ranked_region(region, candidates):
     ranked = rank_candidates(candidates, region)
+    ranked = [item for item in ranked if safe_text(item.get("content_scope")) == "film_tv_ott"]
     ranked = collapse_event_clusters(ranked)
+    ranked = [item for item in ranked if not is_already_published_candidate(item)]
+    ranked = collapse_work_family_duplicates(ranked)
     ranked = [item for item in ranked if item.get("importance_score", 0) >= PUBLISH_THRESHOLD and item.get("important") is True]
     persist_event_cluster_state(ranked)
     return ranked
@@ -3085,7 +3215,8 @@ def process_ranked_region(region,ranked):
     for item in pool:
         attempted+=1; story=process_story_candidate(item)
         if not story:rejected+=1; continue
-        if is_already_published_candidate({**item,"title":story.get("headline",item.get("title"))}):rejected+=1; continue
+        if any(same_work_family(story, existing) for existing in valid):rejected+=1; continue
+        if is_already_published_candidate({**item,"title":story.get("headline",item.get("title")),"work_title":story.get("work_title"),"work_key":story.get("work_key"),"priority_rank":story.get("priority_rank",99)}):rejected+=1; continue
         story["sector"]=normalize_sector(story.get("sector") or item.get("sector")); story["topic"]=canonical_topic(story.get("topic") or item.get("topic"),region); story["category_hashtags"]=category_hashtags(story); valid.append(story)
     logger.info("FINAL VALID: %d | threshold=%d/100 | pool=%d attempted=%d rejected=%d",len(valid),PUBLISH_THRESHOLD,len(pool),attempted,rejected)
     return valid
@@ -3136,7 +3267,7 @@ def self_test():
         "platform":"Apple TV+","episodes":"8","languages":"English","status":"Coming Soon","release_date":"September 9, 2026",
         "spoiler":"","note":"Release timing is subject to the platform's published schedule.",
         "bold_terms":["Apple TV+","September 9, 2026"],"source":"Deadline","url":"https://deadline.com/example/story",
-        "region":"Entertainment","topic":"Release Dates","institution":"Apple TV+","importance_score":88,"important":True,
+        "region":"Entertainment","topic":"Release Dates","institution":"Apple TV+","importance_score":88,"important":True,"content_scope":"film_tv_ott","work_title":"Example Series","work_key":"example series",
         "event_key":"example_series_release_date","source_class":"reported","image_url":"","image_candidates":[]
     }
     rendered=dynamic_rich_html(sample)
@@ -3152,8 +3283,8 @@ def self_test():
     assert rich_visible_length(rendered) <= MAX_RICH_CHARACTERS
     assert likely_same_event("Netflix announces series release date","Netflix announces series release date")
     assert NEWS_PRIORITY["OTT / Streaming Availability"] < NEWS_PRIORITY["Trailer Releases"] < NEWS_PRIORITY["Box Office Updates"]
-    assert rank_score({"significance":20,"reach":15,"event_magnitude":15,"platform_ip_strength":10,"source_authority":15,"evidence_strength":10,"international_relevance":5,"recency":5,"audience_anticipation":5,"source_class":"official"}) == 100
-    assert rank_score({"significance":20,"reach":15,"event_magnitude":15,"platform_ip_strength":10,"source_authority":15,"evidence_strength":10,"international_relevance":5,"recency":5,"audience_anticipation":5,"source_class":"rumor"}) == 69
+    assert rank_score({"significance":20,"reach":15,"event_magnitude":15,"platform_ip_strength":10,"source_authority":15,"evidence_strength":10,"international_relevance":5,"recency":5,"audience_anticipation":5,"source_class":"official","content_scope":"film_tv_ott"}) == 100
+    assert rank_score({"significance":20,"reach":15,"event_magnitude":15,"platform_ip_strength":10,"source_authority":15,"evidence_strength":10,"international_relevance":5,"recency":5,"audience_anticipation":5,"source_class":"rumor","content_scope":"film_tv_ott"}) == 69
 
     # Every 13 priority types resolves to a hook and a valid priority tuple.
     for priority in NEWS_PRIORITY:
@@ -3193,6 +3324,26 @@ def self_test():
 
     # No channel branding on full-poster path.
     assert "@EntertainmentNewsroom" not in "".join([])
+
+    # Hard scope exclusions.
+    assert content_scope_allowed({"title":"U.S. Open 2026","excerpt":"Tennis tournament live coverage on ESPN"}) is False
+    assert content_scope_allowed({"title":"Disney+ Sports Lineup","excerpt":"College football and tennis stream this month"}) is False
+    assert content_scope_allowed({"title":"Singer Announces Tour Dates","excerpt":"The musician will perform at a concert"}) is False
+    assert content_scope_allowed({"title":"Netflix Announces New Thriller Series","excerpt":"The scripted series premieres globally"}) is True
+
+    # Same work must be cooled down across multiple news angles.
+    assert work_similarity("Days of Thunder", "Days of Thunder 2 release date") >= WORK_SIMILARITY_THRESHOLD
+    assert work_similarity("The Whisper Man", "Whisper Man") >= WORK_SIMILARITY_THRESHOLD
+
+    # Existing lower-tier post may be superseded by a fresh Tier-1 development.
+    test_state2=default_state()
+    test_state2["events"]["old"]={"status":"published","published_at":(NOW_BD-timedelta(hours=10)).isoformat(),"headline":"Example Series Trailer Released","work_key":"example series","priority_rank":7}
+    old_state=globals()["STATE"]; globals()["STATE"]=test_state2
+    try:
+        assert is_already_published_candidate({"canonical":"example.com/new","title":"Example Series Release Date Confirmed","work_key":"example series","priority_rank":4}) is False
+        assert is_already_published_candidate({"canonical":"example.com/new2","title":"Example Series Casting Update","work_key":"example series","priority_rank":9}) is True
+    finally:
+        globals()["STATE"]=old_state
 
     logger.info("EntertainmentNewsroom V1 self-test passed.")
 
