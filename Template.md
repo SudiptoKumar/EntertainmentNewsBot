@@ -1,15 +1,15 @@
-# Entertainment News Telegram V1 Template
+# Entertainment Newsroom V1 Template
 
-This file is the authoritative **visible post structure** for V1.
+## Public post structure
 
-## Master structure
+The public Telegram post uses one clean reader-first structure. Section labels such as `Availability` and `What's New` are not displayed.
 
 ```text
 Photo
 
 *{HOOK}*
 
-# 🎬 {TITLE} ({YEAR})
+*🎬 {TITLE} ({YEAR})*
 
 ✦ *Platform:* {Platform}
 ✦ *Episodes:* {count}
@@ -17,180 +17,47 @@ Photo
 ✦ *Status:* {status}
 ✦ *Release:* {date}
 
-> 📖 {short synopsis}
+📖 {1–2 sentence synopsis}
 
-✦ {important fact}
-✦ {important fact}
-✦ {important fact}
+✦ {detail}
+✦ {detail}
+✦ {detail}
 
-{optional expandable caveat / unconfirmed note / dub or regional note}
+🙈 *Spoiler:* ||{only when genuinely relevant}||
 
-@channel #tag #tag
+<expandable note when needed>
 
-*Source:* Name (Name URL attached)
+@EntertainmentNewsroom #tag #tag
+*Source:* {clickable source name}
 ```
 
-The `#` above is only documentation notation for a heading. It must not be emitted in the Telegram message.
+### Rendering rules
 
-## Rules
+- Hook: bold.
+- Title + year: bold and visually prominent. Do not prefix the title with Markdown heading symbols such as `#`.
+- Use `✦` for all ordinary detail bullets. Do not use `•`.
+- Field labels such as `Platform`, `Episodes`, `Language`, `Status`, and `Release` are bold. Their values are normal text.
+- Do not display `Availability` or `What's New` as section headings.
+- Synopsis is short and begins with `📖`.
+- Spoiler is optional and must use Telegram spoiler markup only when the actual news requires it.
+- Optional secondary caveat, dub limitation, or unconfirmed note goes in a collapsible Rich Message block.
+- Source label is bold and the source name is a clickable link.
+- Do not include `What to Know`, `Vocabulary`, `THE CONTEXT`, or `BOTTOM LINE`.
+- Omit unknown fields. Never publish placeholders such as `Unknown`.
 
-- Movie or series name must be the clear title line followed by `(Year)` when the year is source-supported.
-- Do not add `Hollywood • Industry • Industry`, `Availability`, `What's New`, `What to Know`, `Vocabulary`, `THE CONTEXT`, or `BOTTOM LINE` as visible section headings.
-- Availability information is represented directly as `✦` rows.
-- Release information is represented directly as `✦ *Release:* ...` and should not be duplicated.
-- Details always use `✦`, not `•`.
-- Synopsis uses the `📖` blockquote.
-- Spoiler is optional and uses Telegram Rich HTML spoiler markup.
-- Caveats such as unconfirmed status, regional availability, or dub information use an expandable Rich HTML block only when genuinely useful.
-- Source is `*Source:* Name`, where `Name` is a clickable link.
-- No raw URL is displayed.
-- No Markdown or HTML is produced by the LLM. Python renders all formatting.
+### Information priority
 
-## Priority-aware ordering
+Order content around what readers need first. For Tier 1 streaming/release stories, platform/status/release information comes immediately after the title. Avoid repeating the same release date in multiple places.
 
-The same visual grammar is used for all stories, but the information order reflects the story type.
+### Image rules
 
-### OTT / Streaming Availability
+For OTT, streaming, Hindi-dub, and upcoming OTT stories, prefer the official full poster/key art.
 
-```text
-🔥 NOW STREAMING
-
-🎬 Title (Year)
-
-✦ Platform: Netflix
-✦ Status: Streaming 🔥
-
-📖 Short synopsis.
-
-✦ Added to Netflix today
-✦ Hindi and English audio available
-✦ 4K available
-
-@channel #Netflix #Streaming
-
-*Source:* Name
-```
-
-### Hindi Dub / Language Availability
-
-```text
-🇮🇳 HINDI DUB AVAILABLE
-
-🎬 Title (Year)
-
-✦ Platform: Netflix
-✦ Language: Hindi, English
-✦ Status: Streaming 🔥
-
-📖 Short synopsis.
-
-✦ Hindi dub is now available
-✦ English audio remains available
-
-@channel #HindiDub #Netflix
-
-*Source:* Name
-```
-
-### Upcoming OTT Release
-
-```text
-📺 UPCOMING OTT RELEASE
-
-🎬 Title (Year)
-
-✦ Platform: Apple TV+
-✦ Release: September 9, 2026
-
-📖 Short synopsis.
-
-✦ Platform confirmed the premiere
-✦ Season 1 will contain 8 episodes
-
-@channel #AppleTV #Streaming
-
-*Source:* Name
-```
-
-### Release Date Confirmation
-
-```text
-📅 RELEASE DATE CONFIRMED
-
-🎬 Title (Year)
-
-✦ Platform: Apple TV+
-✦ Release: September 9, 2026
-
-📖 Short synopsis.
-
-✦ Apple TV+ confirmed the premiere date
-✦ Season 1 will contain 8 episodes
-
-@channel #AppleTV #Streaming
-
-*Source:* Name
-```
-
-### Trailer
-
-```text
-🎞️ TRAILER RELEASED
-
-🎬 Title (Year)
-
-📖 Short synopsis.
-
-✦ First trailer has been released
-✦ The trailer reveals ...
-✦ The film/series arrives on ...
-
-@channel #Trailer #Movies
-
-*Source:* Name
-```
-
-### Renewal / New Season
-
-```text
-🔄 SEASON UPDATE
-
-🎬 Title (Year)
-
-✦ Platform: Netflix
-✦ Status: Renewed for Season 2
-
-📖 Short synopsis.
-
-✦ Season 2 has been officially confirmed
-✦ Production timing is ...
-
-@channel #Netflix #Series
-
-*Source:* Name
-```
-
-### Box Office
-
-```text
-💰 BOX OFFICE
-
-🎬 Title (Year)
-
-✦ Worldwide: $500 million
-✦ Domestic: $200 million
-✦ Status: Day 10
-
-📖 Short synopsis.
-
-✦ The film crossed the latest milestone
-✦ International markets contributed ...
-
-@channel #BoxOffice #Movies
-
-*Source:* Name
-```
-
-## Image rule
-
-For OTT-related stories, use the complete official poster whenever available. Preserve the original poster ratio. Do not add the channel username to a poster.
+- Preserve the poster's original aspect ratio.
+- Do not crop it into 16:9.
+- Do not add blurred side panels.
+- Do not place the poster on a padded 1200×675 landscape canvas.
+- Do not add `@EntertainmentNewsroom` branding to posters.
+- If a source image is a wide composite containing a centered portrait poster with blurred side panels, extract the center poster rather than sending the composite.
+- If no usable article/poster image exists, prefer the official publication logo as the fallback visual.
+- Normal editorial photographs may use the branded 1200×675 treatment.
