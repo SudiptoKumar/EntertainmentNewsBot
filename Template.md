@@ -1,196 +1,192 @@
-# Entertainment News Telegram V1 Template
+# Telegram Entertainment News — Dynamic Template System 
 
-This file is the authoritative **visible post structure** for V1.
+This file is the **content/layout specification**. Production delivery uses Telethon native `MessageEntity*` objects rather than sending Markdown/HTML markup. The visual rules below map to bold, italic, code, text-url, spoiler, and blockquote entities.
 
-## Master structure
+---
 
-```text
-Photo
+## 🎨 Formatting Legend — what's used where, and why
 
+| Syntax | Renders as | Used for | Why |
+|---|---|---|---|
+| `*text*` | **Bold** | Hooks, titles, key numbers | Grabs the eye first |
+| `_text_` | *Italic* | Meta info (country/genre), show names in-line | Secondary emphasis, doesn't compete with bold |
+| `` `text` `` | `Code` | Status tags, episode counts, platform names | Monospace box makes it read like a **badge/chip** |
+| `[text](url)` | Clickable link | Source, watch links | No more bare "🔗 [Source]" — it's tappable |
+| `\|\|text\|\|` | Spoiler | Plot twists, post-credit scenes, endings | Reader taps to reveal — protects people from spoilers |
+| `> text` | Blockquote | Synopsis, disclaimers/notes | Visually separates it as a callout, not body text |
+| `*Bold _italic_*` | **Bold with *italic* inside** | Hook line + title combo | One line, two levels of emphasis |
+
+---
+
+## 🧩 Core Blocks (updated syntax)
+
+```
 *{HOOK}*
 
-# 🎬 {TITLE} ({YEAR})
+*🎬 {TITLE} ({YEAR})*
 
-✦ *Platform:* {Platform}
-✦ *Episodes:* {count}
-✦ *Language:* {languages}
-✦ *Status:* {status}
-✦ *Release:* {date}
+_{Country} • {Genre} • {Format}_
 
-> 📖 {short synopsis}
+> 📖 {1-3 sentence synopsis}
 
-✦ {important fact}
-✦ {important fact}
-✦ {important fact}
+📌 *What's New:*
+• {detail}
+• {detail}
 
-{optional expandable caveat / unconfirmed note / dub or regional note}
+📺 *Availability*
+• Platform: `{Platform}`
+• Episodes: `{count}`
+• Language: `{languages}`
+• Status: `{Available Now / Coming Soon / Renewed}`
 
-@channel #tag #tag
+📅 *Release:* {date}
 
-*Source:* Name (Name URL attached)
+🙈 *Spoiler* (optional, only if relevant)
+||{plot twist / ending / post-credit detail}||
+
+> ℹ️ {caveat, unconfirmed note, dub info}
+
+🔗 [{Source Name}]({URL})
+
+@channel #tag
 ```
 
-The `#` above is only documentation notation for a heading. It must not be emitted in the Telegram message.
+**Why the changes:**
+- `Status`, `Episodes`, `Platform` wrapped in `` `code` `` — they now look like little badges instead of blending into plain text.
+- Synopsis and Note are now `>` blockquotes — they visually separate from the "hard facts" blocks above/below them.
+- Source is a real markdown link, not just a label — one tap, no copy-pasting URLs.
+- Spoiler block is new — use it any time a detail would ruin the story for someone who hasn't watched yet.
 
-## Rules
+---
 
-- Movie or series name must be the clear title line followed by `(Year)` when the year is source-supported.
-- Do not add `Hollywood • Industry • Industry`, `Availability`, `What's New`, `What to Know`, `Vocabulary`, `THE CONTEXT`, or `BOTTOM LINE` as visible section headings.
-- Availability information is represented directly as `✦` rows.
-- Release information is represented directly as `✦ *Release:* ...` and should not be duplicated.
-- Details always use `✦`, not `•`.
-- Synopsis uses the `📖` blockquote.
-- Spoiler is optional and uses Telegram Rich HTML spoiler markup.
-- Caveats such as unconfirmed status, regional availability, or dub information use an expandable Rich HTML block only when genuinely useful.
-- Source is `*Source:* Name`, where `Name` is a clickable link.
-- No raw URL is displayed.
-- No Markdown or HTML is produced by the LLM. Python renders all formatting.
+## 🎯 Hook Legend (bold + italic combo)
 
-## Priority-aware ordering
+| News Type | Hook |
+|---|---|
+| Unconfirmed / rumor | `*🚨 BREAKING*` |
+| Officially confirmed | `*📢 CONFIRMED*` |
+| New streaming release | `*🔥 NOW STREAMING*` |
+| Trailer / teaser | `*🎞️ TRAILER DROP*` |
+| Renewed | `*⚡ RENEWED*` |
+| Cancelled | `*❌ CANCELLED*` |
+| Box office | `*💰 BOX OFFICE*` |
+| Exclusive | `*⭐ EXCLUSIVE*` |
+| Re-release | `*🎥 ENCORE RELEASE*` |
 
-The same visual grammar is used for all stories, but the information order reflects the story type.
+For a hook that names the show inline, combine bold + italic:
+`*🚨 BREAKING: _{TITLE}_ UPDATE!*`
 
-### OTT / Streaming Availability
+---
 
-```text
-🔥 NOW STREAMING
+## Ready-to-Use Variants
 
-🎬 Title (Year)
+### 1️⃣ New Release
+```
+*🔥 NOW STREAMING*
 
-✦ Platform: Netflix
-✦ Status: Streaming 🔥
+*🎬 {TITLE} ({YEAR})*
 
-📖 Short synopsis.
+_{Country} • {Genre} • {Format}_
 
-✦ Added to Netflix today
-✦ Hindi and English audio available
-✦ 4K available
+> 📖 {synopsis}
 
-@channel #Netflix #Streaming
+📺 *Availability*
+• Platform: `{name}`
+• Episodes: `{count}`
+• Language: `{languages}`
+• Status: `Available Now`
 
-*Source:* Name
+📅 *Release:* {date}
+
+🔗 [Watch Now]({url})
+
+@channel #NowStreaming
 ```
 
-### Hindi Dub / Language Availability
+### 2️⃣ Breaking / Rumor
+```
+*🚨 BREAKING: _{TITLE}_ UPDATE!*
 
-```text
-🇮🇳 HINDI DUB AVAILABLE
+📌 *Reported Details:*
+• {detail}
+• {detail}
 
-🎬 Title (Year)
+📅 *Expected:* {date/window}
 
-✦ Platform: Netflix
-✦ Language: Hindi, English
-✦ Status: Streaming 🔥
+> ℹ️ Not officially confirmed yet.
 
-📖 Short synopsis.
-
-✦ Hindi dub is now available
-✦ English audio remains available
-
-@channel #HindiDub #Netflix
-
-*Source:* Name
+@channel #Rumor
 ```
 
-### Upcoming OTT Release
+### 3️⃣ Trailer / Teaser Drop
+```
+*🎞️ TRAILER DROP: {TITLE}*
 
-```text
-📺 UPCOMING OTT RELEASE
+*🎬 {TITLE} ({YEAR})*
 
-🎬 Title (Year)
+📌 {what the trailer reveals}
 
-✦ Platform: Apple TV+
-✦ Release: September 9, 2026
+📅 *Releases:* {date}
 
-📖 Short synopsis.
+🔗 [Watch Trailer]({url})
 
-✦ Platform confirmed the premiere
-✦ Season 1 will contain 8 episodes
-
-@channel #AppleTV #Streaming
-
-*Source:* Name
+@channel #Trailer
 ```
 
-### Release Date Confirmation
+### 4️⃣ Renewal / Cancellation
+```
+*⚡ RENEWED: {TITLE}*
 
-```text
-📅 RELEASE DATE CONFIRMED
+📌 {Show} renewed for Season `{X}`
 
-🎬 Title (Year)
+📺 Platform: `{name}`
 
-✦ Platform: Apple TV+
-✦ Release: September 9, 2026
+> ℹ️ {production start / expected date, if known}
 
-📖 Short synopsis.
+🔗 [Source]({url})
 
-✦ Apple TV+ confirmed the premiere date
-✦ Season 1 will contain 8 episodes
-
-@channel #AppleTV #Streaming
-
-*Source:* Name
+@channel #Renewed
 ```
 
-### Trailer
+### 5️⃣ Box Office
+```
+*💰 BOX OFFICE: {TITLE}*
 
-```text
-🎞️ TRAILER RELEASED
+*🎬 {TITLE} ({YEAR})*
 
-🎬 Title (Year)
+📌 *{Day/Weekend} Collection:* `{amount}`
+• Domestic: `{amount}`
+• Worldwide: `{amount}`
 
-📖 Short synopsis.
+📅 Days since release: `{X}`
 
-✦ First trailer has been released
-✦ The trailer reveals ...
-✦ The film/series arrives on ...
+🔗 [Source]({url})
 
-@channel #Trailer #Movies
-
-*Source:* Name
+@channel #BoxOffice
 ```
 
-### Renewal / New Season
+### 6️⃣ Spoiler-Sensitive Update (new — for finale/twist news)
+```
+*⭐ EXCLUSIVE: {TITLE} ENDING DETAILS*
 
-```text
-🔄 SEASON UPDATE
+*🎬 {TITLE} ({YEAR})*
 
-🎬 Title (Year)
+📌 {non-spoiler framing line — what kind of news this is}
 
-✦ Platform: Netflix
-✦ Status: Renewed for Season 2
+🙈 *Tap to reveal:*
+||{the actual spoiler/twist/ending detail}||
 
-📖 Short synopsis.
+> ℹ️ Spoiler warning applies past this point.
 
-✦ Season 2 has been officially confirmed
-✦ Production timing is ...
-
-@channel #Netflix #Series
-
-*Source:* Name
+@channel #Spoiler
 ```
 
-### Box Office
+---
 
-```text
-💰 BOX OFFICE
-
-🎬 Title (Year)
-
-✦ Worldwide: $500 million
-✦ Domestic: $200 million
-✦ Status: Day 10
-
-📖 Short synopsis.
-
-✦ The film crossed the latest milestone
-✦ International markets contributed ...
-
-@channel #BoxOffice #Movies
-
-*Source:* Name
-```
-
-## Image rule
-
-For OTT-related stories, use the complete official poster whenever available. Preserve the original poster ratio. Do not add the channel username to a poster.
+## Quick Rules
+- **Single asterisks only** — `*bold*` not `**bold**`. Double asterisks show as literal stars in Telegram.
+- **Badge trick:** wrap any short factual tag (`Status`, `Episodes`, counts) in backticks — instant visual chip with zero extra effort.
+- **Blockquote = callout**, not decoration. Use `>` only for synopsis and disclaimer/note — overusing it flattens the effect.
+- **Always link the source** — `[Name](url)` beats a bare "🔗 Source" every time.
+- **Spoiler tag is opt-in per post** — only add the Spoiler block when the news genuinely contains a reveal; don't force it into every template.
+- **Length:** still 4096 chars for text posts, 1024 for photo captions.
