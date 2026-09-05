@@ -2,20 +2,6 @@
 
 EntertainmentNewsBot V1 is an update-only entertainment newsroom using the same proven execution framework as the working BusinessNewsroom project, with Entertainment-specific editorial scoring and presentation.
 
-## V1.1 Media Fix
-
-Movie and series images now use an **original-media mode** independent of editorial priority. The bot:
-
-- prefers portrait poster/key-art candidates when available
-- preserves the complete source image
-- preserves the original aspect ratio
-- performs proportional resize only when an image exceeds the configured maximum
-- never crops, blurs, pads, stretches, or adds `@EntertainmentNewsroom` branding to movie/series media
-- keeps the existing branded 16:9 treatment only for non-movie/series editorial photos
-- falls back to the official source logo, then centered source name, when no usable image can be downloaded
-
-This prevents portrait posters such as *Love and Monsters* from being routed through the 16:9 branded-card path.
-
 ## Required secrets
 
 ```text
@@ -79,6 +65,19 @@ Priority is an editorial preference, not a quota. Higher-priority qualifying sto
 
 The model returns the bounded components; Python calculates the final score.
 
+
+## Adaptive pre-Cerebras filter
+
+Python performs a deterministic screening pass before any candidate is sent to Cerebras. This is designed to reduce token usage and prevent obvious junk from reaching the ranking model.
+
+The pre-Cerebras gate rejects high-confidence sports/non-entertainment items, low-value editorial patterns, invalid source paths, already-published URLs, repeated work/event combinations, and learned low-value patterns. Ambiguous candidates are still allowed through to Cerebras.
+
+After each ranking pass, the bot stores compact score feedback in `news_state.json`: recent scores, detected low-value patterns, observation counts, average scores, and examples. A pattern is only promoted to an automatic Python block after repeated evidence (`5+` observations, at least `80%` low-score rate, and average score `<=55`). Learning data expires after 45 days.
+
+Work-level memory is also stored in `news_state.json`. A previously published work/event combination can therefore be rejected before Cerebras even when a new article uses different wording or comes from another publication. Work memory expires after 90 days.
+
+This is intentionally conservative: one low score never blacklists a topic, title, publication, actor, franchise, or platform.
+
 ## Discovery and publishing pipeline
 
 ```text
@@ -92,9 +91,13 @@ Source validation
   ↓
 24-hour window
   ↓
-URL deduplication
+Python hard entertainment filter
   ↓
-Event/entity deduplication
+Python learned low-value filter
+  ↓
+Python work/event duplicate filter
+  ↓
+URL + same-run deduplication
   ↓
 Thin-excerpt enrichment
   ↓
@@ -195,28 +198,3 @@ EXA_API_KEY=dummy CEREBRAS_API_KEY=dummy TELEGRAM_BOT_TOKEN=dummy TELEGRAM_CHANN
 ## GitHub Actions
 
 The included workflow supports manual execution and hourly scheduled runs from 07:00 through 23:00 Asia/Dhaka.
-
-
-## Telegram API architecture
-
-V1 uses the **Telegram Bot API Rich Message** transport already proven by the working BusinessNewsroom project. It does not use Telethon or Telegram MTProto.
-
-Required Telegram secret:
-
-```text
-TELEGRAM_BOT_TOKEN
-```
-
-Do **not** add `TELEGRAM_API_ID` or `TELEGRAM_API_HASH`. They are not used by this V1.
-
-The publishing path is:
-
-```text
-Python Rich HTML renderer
-        ↓
-Telegram Bot API `sendRichMessage`
-        ↓
-photo attachment + rich message
-        ↓
-`sendPhoto` fallback
-```

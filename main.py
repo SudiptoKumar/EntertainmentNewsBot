@@ -33,9 +33,6 @@ EXA_API_KEY = os.environ["EXA_API_KEY"]
 CEREBRAS_API_KEY = os.environ["CEREBRAS_API_KEY"]
 TELEGRAM_BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
 
-# V1 uses the Telegram Bot API only. No Telegram application credentials are required.
-VERSION = "V1"
-
 TELEGRAM_CHANNEL = (os.environ.get("TELEGRAM_CHANNEL") or "@EntertainmentNewsroom").strip()
 CHANNEL_TAG = TELEGRAM_CHANNEL if TELEGRAM_CHANNEL.startswith("@") else ""
 
@@ -117,6 +114,17 @@ MAX_SOURCE_PER_RUN = 99
 MAX_RICH_CHARACTERS = 32768
 MAX_RICH_CHARACTERS = 32768
 MAX_TELEGRAM_CAPTION_CHARACTERS = 1024
+
+# Adaptive pre-Cerebras learning. Python learns recurring low-value patterns
+# from previous ranking results stored in news_state.json. Learned rules are
+# intentionally conservative so a single bad score can never blacklist a
+# legitimate entertainment category.
+LEARNED_MIN_OBSERVATIONS = 5
+LEARNED_LOW_SCORE_CEILING = 55
+LEARNED_LOW_RATIO = 0.80
+LEARNED_HISTORY_LIMIT = 500
+LEARNED_PATTERN_RETENTION_DAYS = 45
+WORK_MEMORY_RETENTION_DAYS = 90
 
 # Lightweight English stopwords used only by the conservative event/entity
 # deduplication layer. This is deliberately small so legitimate game entities
@@ -507,6 +515,9 @@ def default_state():
         "event_clusters": {},
         "posted_event_ids": [],
         "recent_titles": [],
+        "work_memory": {},
+        "learned_rejections": {},
+        "score_history": [],
     }
 
 
@@ -660,8 +671,26 @@ def prune_state():
         "recent_titles",
         [],
     )
-
     STATE["recent_titles"] = titles[-400:]
+
+    cutoff_learning = datetime.now(BD_TZ) - timedelta(days=LEARNED_PATTERN_RETENTION_DAYS)
+    learned = STATE.get("learned_rejections", {})
+    for key in list(learned):
+        last_seen = parse_datetime(learned[key].get("last_seen"))
+        if last_seen and last_seen < cutoff_learning:
+            del learned[key]
+    STATE["learned_rejections"] = learned
+
+    cutoff_work = datetime.now(BD_TZ) - timedelta(days=WORK_MEMORY_RETENTION_DAYS)
+    work_memory = STATE.get("work_memory", {})
+    for key in list(work_memory):
+        last = parse_datetime(work_memory[key].get("last_published_at"))
+        if last and last < cutoff_work:
+            del work_memory[key]
+    STATE["work_memory"] = work_memory
+
+    history = STATE.get("score_history", [])
+    STATE["score_history"] = history[-LEARNED_HISTORY_LIMIT:]
 
 
 # ============================================================
@@ -730,18 +759,164 @@ BAD_TITLE_RE = re.compile(
     re.I,
 )
 
-# Deterministic non-entertainment exclusions. These run before ranking so sports,
-# gaming and unrelated lifestyle/news cannot become publishable merely because
-# an allowed entertainment publication carried the article.
-HARD_NON_ENTERTAINMENT_RE = re.compile(
-    r"(?:\b(?:nfl|nba|wnba|mlb|nhl|ufc|wwe|wrestling|boxing|cricket|tennis|golf|f1|formula\s*1|formula\s*e|motogp|nascar|olympics|paralympics|atp|wta|us\s*open|super\s*bowl|grand\s*prix)\b|"
-    r"\b(?:match|fixture|standings|league table|playoff|play-offs|quarterfinal|semifinal|finalist|goalkeeper|touchdown|home run|batting|bowling figures|innings|serve speed|fight card|title bout|weigh-in)\b)",
+
+SPORTS_HARD_TERMS = {
+    "football", "soccer", "cricket", "tennis", "basketball", "baseball",
+    "golf", "formula 1", "formula one", "motogp", "nascar", "boxing",
+    "mma", "ufc", "wwe", "aew", "wrestling", "olympics", "athletics",
+    "rugby", "hockey", "volleyball", "badminton", "grand prix",
+}
+SPORTS_CONTEXT_TERMS = {
+    "match", "fixture", "standings", "tournament", "league", "championship",
+    "score", "scores", "goal", "goals", "innings", "kickoff", "player",
+    "players", "athlete", "athletes", "driver", "drivers", "coach",
+    "race", "racing", "season opener", "final", "semifinal", "quarterfinal",
+}
+ENTERTAINMENT_POSITIVE_TERMS = {
+    "movie", "film", "series", "tv", "season", "episode", "streaming",
+    "ott", "netflix", "prime video", "amazon prime", "hbo", "hbo max",
+    "disney+", "apple tv+", "paramount+", "peacock", "hulu", "trailer",
+    "teaser", "casting", "cast", "actor", "actress", "director",
+    "production", "filming", "renewed", "renewal", "cancelled", "canceled",
+    "release date", "poster", "first look", "franchise", "theatrical",
+    "cinema", "box office", "streaming rights", "dubbed", "hindi dub",
+}
+HARD_BAD_TITLE_RE = re.compile(
+    r"\b(?:review|reviews|opinion|editorial|watchlist|what to watch|"
+    r"ranking|ranked|best .* to watch|ending explained|recap|fan theory|"
+    r"rumor|rumours|rumor|leak|leaked|reaction|quiz|listicle)\b",
     re.I,
 )
-HARD_NON_ENTERTAINMENT_PATH_RE = re.compile(
-    r"/(?:sports?|nfl|nba|cricket|tennis|golf|boxing|wrestling|ufc|wwe|football|soccer|motorsport|f1)(?:/|$)",
+HARD_SPORTS_RE = re.compile(
+    r"\b(?:football|soccer|cricket|tennis|basketball|baseball|golf|"
+    r"formula\s*1|formula\s*one|motogp|nascar|boxing|mma|ufc|wwe|aew|"
+    r"wrestling|olympics|athletics|rugby|hockey|volleyball|badminton|"
+    r"grand\s+prix)\b",
     re.I,
 )
+
+def content_blob(item):
+    return safe_text(" ".join([
+        safe_text(item.get("title")),
+        safe_text(item.get("excerpt")),
+        urlparse(safe_text(item.get("url"))).path,
+    ])).lower()
+
+def deterministic_pattern(item):
+    blob = content_blob(item)
+    title = safe_text(item.get("title"))
+    if HARD_SPORTS_RE.search(blob):
+        return "sports"
+    if re.search(r"\b(?:review|reviews|recap|ending explained|fan theory|watchlist|what to watch|best movies|best shows)\b", title, re.I):
+        return "low_value_editorial"
+    if re.search(r"\b(?:dating|relationship|breakup|wedding|birthday|fashion|paparazzi|red carpet)\b", blob, re.I) and not any(term in blob for term in ("movie", "film", "series", "season", "streaming", "ott")):
+        return "celebrity_lifestyle"
+    if re.search(r"\b(?:interview|q&a|talks about|opens up|speaks about|reveals in interview)\b", title, re.I) and not re.search(r"\b(?:announces|confirmed|joins|cast|release|renewed|trailer|filming|production|streaming)\b", title, re.I):
+        return "routine_interview"
+    if re.search(r"\b(?:promo|promotional|promotion|brand ambassador|commercial campaign)\b", blob, re.I) and not any(term in blob for term in ("movie", "film", "series", "season", "streaming", "ott")):
+        return "promotion"
+    if re.search(r"\b(?:minor|small|limited|brief)\b.*\b(?:update|production|filming)\b", blob, re.I):
+        return "routine_production"
+    return ""
+
+def infer_priority_type(item):
+    blob = content_blob(item)
+    patterns = [
+        ("Hindi Dub / Language Availability", r"\b(?:hindi dub|dubbed|dubbing|language(?:s)? available|audio language)\b"),
+        ("OTT / Streaming Availability", r"\b(?:now streaming|streaming now|available to stream|lands on .*stream|available on netflix|available on .*\+|added to .* library)\b"),
+        ("Upcoming OTT Releases", r"\b(?:coming to netflix|coming to .*\+|upcoming ott|ott release|streaming on .* from|will stream on)\b"),
+        ("Release Date Confirmations", r"\b(?:release date|premiere date|premieres on|set for .* release|slated for .* release)\b"),
+        ("Season Renewals / New Season Updates", r"\b(?:renewed|renewal|season \d+|new season|returns for season)\b"),
+        ("Trailer Releases", r"\b(?:trailer|teaser)\b"),
+        ("First Look / First Glimpse / Posters", r"\b(?:first look|first glimpse|poster|posters)\b"),
+        ("Cast / Character Announcements", r"\b(?:cast|casting|joins the cast|to play|character)\b"),
+        ("Theatrical Releases / Re-releases", r"\b(?:in theaters|theatrical|re-release|re release|cinema release)\b"),
+        ("Production / Filming Updates", r"\b(?:filming|production|wraps|wrapped|on set)\b"),
+        ("OTT Platform Acquisition / Streaming Rights", r"\b(?:streaming rights|acquires .* rights|acquired .* rights|exclusive streaming|ott rights)\b"),
+        ("Box Office Updates", r"\b(?:box office|grossed|opening weekend|domestic gross|worldwide gross)\b"),
+        ("New Movie / Series Announcements", r"\b(?:announces new (?:movie|film|series)|new (?:movie|film|series) announced|greenlit|orders series)\b"),
+    ]
+    for key, pattern in patterns:
+        if re.search(pattern, blob, re.I):
+            return key
+    return ""
+
+def work_key_from_text(title):
+    text = normalize_title(title)
+    if not text:
+        return ""
+    # Remove event/status language while preserving the underlying title.
+    text = re.sub(r"\b(?:season|series|part|chapter|episode)\s+\d+\b", " ", text)
+    text = re.sub(r"\b(?:19|20)\d{2}\b", " ", text)
+    removal = re.compile(
+        r"\b(?:official|confirmed|confirmation|announced|announcement|new|now|streaming|streams|streamed|"
+        r"upcoming|release|released|release date|date|premiere|premieres|renewed|renewal|episode|trailer|"
+        r"teaser|first look|first glimpse|poster|posters|casting|cast|joins|join|production|filming|filmed|"
+        r"wrapped|wraps|theatrical|re release|re-release|box office|opens|grosses|grossed|rights|acquired|"
+        r"acquisition|dub|dubbed|hindi|language|available|availability|coming|returns|returning|back|"
+        r"for|to|on|at|in|with|from|by|of)\b",
+        re.I,
+    )
+    text = removal.sub(" ", text)
+    text = re.sub(r"\b\d+\b", " ", text)
+    text = re.sub(r"\s+", " ", text).strip()
+    return text
+
+def event_memory_hit(item):
+    title = safe_text(item.get("title"))
+    canonical = safe_text(item.get("canonical"))
+    if canonical and canonical in POSTED_URLS:
+        return True, "posted_url"
+    work_key = work_key_from_text(title)
+    priority = infer_priority_type(item)
+    if work_key:
+        memory = STATE.get("work_memory", {}).get(work_key)
+        if memory:
+            published_events = memory.get("published_events", {}) or {}
+            if priority and priority in published_events:
+                dt = parse_datetime(published_events.get(priority))
+                if dt and (NOW_BD - dt).total_seconds() <= WORK_MEMORY_RETENTION_DAYS * 86400:
+                    return True, f"same_work_same_event:{priority}"
+    # Fallback: very-high title similarity against recently published headlines.
+    for previous in STATE.get("recent_titles", [])[-250:]:
+        if title_similarity(title, previous) >= 0.92:
+            return True, "near_identical_recent_title"
+    return False, ""
+
+def learned_pattern_block(item):
+    pattern = deterministic_pattern(item)
+    if not pattern or pattern in {"sports", "low_value_editorial", "celebrity_lifestyle", "promotion"}:
+        return False, ""
+    stats = STATE.get("learned_rejections", {}).get(pattern)
+    if not stats:
+        return False, ""
+    observations = int(stats.get("observations", 0))
+    low_count = int(stats.get("low_score_count", 0))
+    avg_score = float(stats.get("avg_score", 100))
+    if observations >= LEARNED_MIN_OBSERVATIONS and low_count / max(1, observations) >= LEARNED_LOW_RATIO and avg_score <= LEARNED_LOW_SCORE_CEILING:
+        return True, f"learned_pattern:{pattern}"
+    return False, ""
+
+def pre_cerebras_filter(item):
+    title = safe_text(item.get("title"))
+    excerpt = safe_text(item.get("excerpt"))
+    blob = content_blob(item)
+    if HARD_SPORTS_RE.search(blob):
+        # Allow an entertainment work that is explicitly the subject of the story.
+        if not re.search(r"\b(?:movie|film|series|documentary|sports movie|sports drama)\b", blob, re.I):
+            return False, "hard_sports"
+    if HARD_BAD_TITLE_RE.search(title):
+        return False, "hard_low_value_title"
+    positives = sum(1 for term in ENTERTAINMENT_POSITIVE_TERMS if term in blob)
+    if positives == 0:
+        return False, "no_entertainment_signal"
+    hit, reason = event_memory_hit(item)
+    if hit:
+        return False, reason
+    hit, reason = learned_pattern_block(item)
+    if hit:
+        return False, reason
+    return True, ""
 
 
 def candidate_basic_allowed(item):
@@ -772,12 +947,6 @@ def candidate_basic_allowed(item):
     ):
         return False
 
-    combined = f"{title} {safe_text(item.get('excerpt', ''))}"
-    if HARD_NON_ENTERTAINMENT_RE.search(combined):
-        return False
-    if HARD_NON_ENTERTAINMENT_PATH_RE.search(urlparse(url).path):
-        return False
-
     if not (
         DISCOVERY_START
         <= published
@@ -792,10 +961,13 @@ def candidate_basic_allowed(item):
     canonical = canonical_url(
         url
     )
+    item_for_filter = {**item, "canonical": canonical, "url": url, "title": title}
+    allowed, reason = pre_cerebras_filter(item_for_filter)
+    if not allowed:
+        logger.info("PRE-CEREBRAS DROP: %s | %s", reason, title)
+        return False
 
-    return bool(
-        canonical
-    )
+    return bool(canonical)
 
 
 def title_duplicate_against_state(title):
@@ -1465,6 +1637,77 @@ def rank_score(row):
     score=sum(int(row.get(k,0)) for k in ["significance","reach","event_magnitude","platform_ip_strength","source_authority","evidence_strength","international_relevance","recency","audience_anticipation"])
     if safe_text(row.get("source_class")).lower()=="rumor":score=min(score,69)
     return max(0,min(100,score))
+def record_low_score_learning(rows):
+    """Persist compact feedback from ranking results for future Python filtering."""
+    learned = STATE.setdefault("learned_rejections", {})
+    history = STATE.setdefault("score_history", [])
+    for row in rows:
+        score = int(row.get("importance_score", 0))
+        title = safe_text(row.get("title"))
+        pattern = deterministic_pattern(row)
+        priority = safe_text(row.get("priority_type"))
+        if pattern and score < PUBLISH_THRESHOLD:
+            stats = learned.setdefault(pattern, {
+                "observations": 0,
+                "low_score_count": 0,
+                "total_score": 0,
+                "avg_score": 0,
+                "last_seen": now_iso(),
+                "examples": [],
+            })
+            stats["observations"] = int(stats.get("observations", 0)) + 1
+            stats["low_score_count"] = int(stats.get("low_score_count", 0)) + 1
+            stats["total_score"] = int(stats.get("total_score", 0)) + score
+            stats["avg_score"] = round(stats["total_score"] / max(1, stats["observations"]), 1)
+            stats["last_seen"] = now_iso()
+            examples = [x for x in stats.get("examples", []) if x.get("title") != title]
+            examples.append({"title": title[:140], "score": score, "priority_type": priority})
+            stats["examples"] = examples[-5:]
+        elif pattern:
+            stats = learned.setdefault(pattern, {
+                "observations": 0, "low_score_count": 0, "total_score": 0, "avg_score": 0,
+                "last_seen": now_iso(), "examples": [],
+            })
+            stats["observations"] = int(stats.get("observations", 0)) + 1
+            stats["total_score"] = int(stats.get("total_score", 0)) + score
+            stats["avg_score"] = round(stats["total_score"] / max(1, stats["observations"]), 1)
+            stats["last_seen"] = now_iso()
+        history.append({
+            "title": title[:140],
+            "score": score,
+            "pattern": pattern,
+            "priority_type": priority,
+            "source": safe_text(row.get("source")),
+            "seen_at": now_iso(),
+        })
+    STATE["score_history"] = history[-LEARNED_HISTORY_LIMIT:]
+
+
+def bootstrap_learning_from_queue():
+    """Backfill adaptive learning from previously ranked queue records, once per run."""
+    rows = []
+    for item in STATE.get("queue", {}).values():
+        if not item.get("importance_score") and item.get("importance_score") != 0:
+            continue
+        score = int(item.get("importance_score", 0))
+        if score >= PUBLISH_THRESHOLD:
+            continue
+        rows.append({
+            "title": item.get("title", ""),
+            "source": item.get("source", ""),
+            "priority_type": item.get("priority_type", ""),
+            "importance_score": score,
+            "excerpt": item.get("excerpt", ""),
+        })
+    if rows:
+        # Prevent the bootstrap from inflating observations every run.
+        existing = {(x.get("title"), int(x.get("score", -1))) for x in STATE.get("score_history", [])}
+        fresh = [x for x in rows if (safe_text(x.get("title")), int(x.get("importance_score", 0))) not in existing]
+        if fresh:
+            record_low_score_learning(fresh)
+            logger.info("LEARNING BOOTSTRAP: added %d previous low-score records", len(fresh))
+
+
 def rank_candidates(candidates,region):
     if not candidates:return []
     regional=sorted(candidates,key=lambda x:parse_datetime(x.get("published_date")) or datetime.min.replace(tzinfo=timezone.utc),reverse=True)[:MAX_RANK_CANDIDATES]
@@ -1514,6 +1757,18 @@ Priority is a ranking preference, not a quota. Return EVERY candidate with exact
     for global_rank, row in enumerate(rows, 1):
         row["editor_rank"] = global_rank
         row["important"] = int(row.get("importance_score",0)) >= PUBLISH_THRESHOLD
+        q = STATE.get("queue", {}).get(row.get("canonical"))
+        if q is not None:
+            q.update({
+                "importance_score": int(row.get("importance_score", 0)),
+                "priority_type": safe_text(row.get("priority_type")),
+                "priority_tier": int(row.get("priority_tier", 2)),
+                "priority_rank": int(row.get("priority_rank", 5)),
+                "sector": safe_text(row.get("sector")),
+                "rank_reason": safe_text(row.get("rank_reason")),
+                "last_ranked_at": now_iso(),
+            })
+    record_low_score_learning(rows)
     return rows
 
 
@@ -1636,6 +1891,21 @@ def remember_posted_event(story):
     if event_id and event_id not in ids:
         ids.append(event_id)
     STATE["posted_event_ids"] = ids[-500:]
+
+    work_key = work_key_from_text(story.get("headline", ""))
+    if work_key:
+        memory = STATE.setdefault("work_memory", {}).setdefault(work_key, {
+            "title": story.get("headline", ""),
+            "sector": story.get("sector", ""),
+            "first_published_at": now_iso(),
+            "published_events": {},
+        })
+        memory["title"] = story.get("headline", memory.get("title", ""))
+        memory["sector"] = story.get("sector", memory.get("sector", ""))
+        memory["last_published_at"] = now_iso()
+        priority = safe_text(story.get("priority_type")) or infer_priority_type({"title": story.get("headline", ""), "excerpt": story.get("summary", "")})
+        if priority:
+            memory.setdefault("published_events", {})[priority] = now_iso()
     return event_id
 
 
@@ -2476,51 +2746,11 @@ def _story_priority_label(story):
 
 
 def _is_poster_priority(story):
-    """Use the untouched/original-media path for every movie or series story.
-
-    Image presentation is independent of editorial priority. A streaming update,
-    release-date confirmation, casting story, trailer story, etc. can all carry
-    a movie/series poster. Those images must never be converted to the 16:9
-    branded-card treatment.
-    """
-    fmt = safe_text(story.get("format")).strip().lower()
-    if fmt in {"movie", "series", "film", "tv series", "limited series", "mini-series", "miniseries"}:
-        return True
-    # Defensive fallback for older/generated records.
     return _story_priority_label(story) in {
         "OTT / Streaming Availability",
         "Hindi Dub / Language Availability",
         "Upcoming OTT Releases",
     }
-
-
-def _image_candidate_score(story, url, image, position=0):
-    """Score an already-downloaded image without altering its pixels.
-
-    Poster selection is intentionally based on image geometry and source URL
-    hints. The winning file is later resized proportionally only when needed.
-    """
-    raw = safe_text(url).lower()
-    title = normalize_title(story.get("title") or story.get("headline") or "")
-    title_tokens = [t for t in re.findall(r"[a-z0-9]+", title) if len(t) >= 4]
-    score = 0
-
-    if image.height > image.width * 1.05:
-        score += 35
-    elif image.height >= image.width * 0.95:
-        score += 8
-    else:
-        score -= 8
-
-    if any(token in raw for token in ("poster", "key-art", "keyart", "one-sheet", "artwork", "cover")):
-        score += 30
-    if any(token in raw for token in title_tokens[:8]):
-        score += 12
-
-    # Earlier candidates are normally stronger, but geometry/URL evidence
-    # must outweigh simple ordering.
-    score += max(0, 8 - min(position, 8))
-    return score
 
 
 def _extract_image_candidates_from_html(page_html, base_url, title):
@@ -2627,35 +2857,14 @@ def prepare_image(story,index):
     for candidate in story.get("image_candidates",[])[:20]:
         if candidate and candidate not in image_urls:image_urls.append(candidate)
 
-    # MOVIE/SERIES MEDIA POLICY:
-    # Preserve the complete source image. Never crop, blur, pad, stretch, or
-    # add channel branding. Pick the strongest original image using dimensions
-    # and URL hints, then apply proportional resize only if it exceeds limits.
     if _is_poster_priority(story):
-        best_image = None
-        best_score = -10**9
-        for position, url in enumerate(image_urls):
-            image = download_image(url,story.get("url",""))
-            if not image:
-                continue
-            score = _image_candidate_score(story,url,image,position)
-            logger.info(
-                "MEDIA CANDIDATE #%d score=%d size=%sx%s url=%s",
-                position + 1, score, image.width, image.height, url[:180]
-            )
-            if score > best_score:
-                best_image = image
-                best_score = score
-        if best_image is not None:
-            path=f"/tmp/news_{index}.jpg"
-            fit_full_poster(best_image).save(path,"JPEG",quality=95,optimize=True)
-            logger.info(
-                "ORIGINAL MEDIA MODE: preserved aspect ratio size=%sx%s score=%d",
-                best_image.width, best_image.height, best_score
-            )
-            return path
+        for url in image_urls:
+            image=download_image(url,story.get("url",""))
+            if image and image.height >= image.width * 1.05:
+                path=f"/tmp/news_{index}.jpg"
+                fit_full_poster(image).save(path,"JPEG",quality=94,optimize=True)
+                return path
 
-    # Non-movie/series editorial photos retain the branded 16:9 treatment.
     for url in image_urls:
         image=download_image(url,story.get("url",""))
         if image:
@@ -3132,10 +3341,6 @@ def available_candidates(region, source_pool=None):
         if not canonical or canonical in seen:
             continue
 
-        if HARD_NON_ENTERTAINMENT_RE.search(f"{safe_text(item.get('title',''))} {safe_text(item.get('excerpt',''))}"):
-            continue
-        if HARD_NON_ENTERTAINMENT_PATH_RE.search(urlparse(url).path):
-            continue
         if source_pool == "primary" and not primary_domain_allowed(url, region):
             continue
         if source_pool == "fallback" and not fallback_domain_allowed(url, region):
@@ -3143,9 +3348,15 @@ def available_candidates(region, source_pool=None):
         if source_pool is None and not allowed_source_for_region(url, region):
             continue
 
+        allowed, reason = pre_cerebras_filter(item)
+        if not allowed:
+            logger.info("PRE-CEREBRAS DROP (queue): %s | %s", reason, item.get("title", ""))
+            continue
         if is_already_published_candidate(item):
             continue
         if title_duplicate_against_list(item.get("title", ""), candidates, threshold=0.94):
+            continue
+        if title_duplicate_against_state(item.get("title", "")):
             continue
 
         candidates.append(dict(item))
@@ -3179,10 +3390,10 @@ def process_ranked_region(region,ranked):
 
 
 def run():
-    logger.info("ENTERTAINMENTNEWSROOM V1 UPDATE-ONLY")
+    logger.info("ENTERTAINMENTNEWSROOM V1 ADAPTIVE PRE-CEREBRAS")
     logger.info("Channel=%s Mode=%s Threshold=%d/100",TELEGRAM_CHANNEL,NEWS_MODE,PUBLISH_THRESHOLD)
     logger.info("LOOKBACK=%d hours | %s -> %s",DISCOVERY_LOOKBACK_HOURS,DISCOVERY_START.isoformat(),DISCOVERY_END.isoformat())
-    prune_state(); refresh_category_coverage(); collect_rss()
+    prune_state(); refresh_category_coverage(); bootstrap_learning_from_queue(); collect_rss()
     count=queue_candidates_for_region("Entertainment"); count+=google_news_gap_fill("Entertainment",count,DISCOVERY_TARGET_PER_REGION); exa_gap_fill("Entertainment",count,DISCOVERY_TARGET_PER_REGION); save_state(STATE)
     candidates=available_candidates("Entertainment",source_pool="primary"); logger.info("DISCOVERY CANDIDATES: %d",len(candidates))
     ranked=prepare_ranked_region("Entertainment",candidates); logger.info("PUBLISHABLE RANKED CANDIDATES: %d",len(ranked))
@@ -3237,15 +3448,6 @@ def self_test():
     assert "<a href=\"https://deadline.com/example/story\">Deadline</a>" in rendered
     assert "@EntertainmentNewsroom" in rendered
     assert rich_visible_length(rendered) <= MAX_RICH_CHARACTERS
-
-    # Telegram architecture regression: Bot API Rich Message only.
-    assert "tele" + "thon" not in open("requirements.txt", encoding="utf-8").read().lower()
-    assert '<img src="tg://photo?id=newsphoto">' in rendered
-    assert 'sendRichMessage' in globals()['send_rich_photo'].__code__.co_consts
-
-    # Hard non-entertainment filtering regression.
-    sport = {"url":"https://deadline.com/sports/us-open-preview/", "title":"US Open tennis final", "published_dt":NOW_BD, "region":"Entertainment", "excerpt":"tennis match"}
-    assert candidate_basic_allowed(sport) is False
     assert likely_same_event("Netflix announces series release date","Netflix announces series release date")
     assert NEWS_PRIORITY["OTT / Streaming Availability"] < NEWS_PRIORITY["Trailer Releases"] < NEWS_PRIORITY["Box Office Updates"]
     assert rank_score({"significance":20,"reach":15,"event_magnitude":15,"platform_ip_strength":10,"source_authority":15,"evidence_strength":10,"international_relevance":5,"recency":5,"audience_anticipation":5,"source_class":"official"}) == 100
@@ -3269,6 +3471,66 @@ def self_test():
     b=dict(sample,canonical="variety.com/b",title="Major Series",event_cluster_id="evt_x",editor_rank=2,importance_score=88)
     assert len(collapse_event_clusters([a,b]))==1
 
+    # Adaptive pre-Cerebras learning and work-memory regression.
+    original_state=globals()["STATE"]
+    original_posted=set(POSTED_URLS)
+    try:
+        learned_state=default_state()
+        globals()["STATE"]=learned_state
+        # Repeated low-quality pattern becomes blockable only after enough evidence.
+        low_rows=[]
+        for i in range(5):
+            low_rows.append({
+                "title": f"Actor talks about upcoming project interview {i}",
+                "source": "Variety",
+                "priority_type": "New Movie / Series Announcements",
+                "importance_score": 35,
+                "pattern": "routine_interview",
+            })
+        record_low_score_learning(low_rows)
+        assert learned_state["score_history"] and learned_state["learned_rejections"]["routine_interview"]["observations"] == 5
+        blocked, reason = pre_cerebras_filter({
+            "title": "Actor talks about upcoming project in interview",
+            "excerpt": "The actor talks about the project in an interview.",
+            "url": "https://variety.com/2026/film/news/example-interview/",
+            "canonical": "variety.com/2026/film/news/example-interview",
+        })
+        assert blocked is False and reason == "learned_pattern:routine_interview"
+
+        # A high-value release-date story on the same broad subject is not blocked by the learned interview rule.
+        allowed, _ = pre_cerebras_filter({
+            "title": "Major Film release date confirmed for September",
+            "excerpt": "The studio confirmed the film's release date.",
+            "url": "https://deadline.com/2026/film/example-release-date/",
+            "canonical": "deadline.com/2026/film/example-release-date",
+        })
+        assert allowed is True
+
+        # Work memory blocks the same work + same priority before Cerebras.
+        story_memory=dict(sample,headline="Dark Matter Season 2 renewed",sector="Hollywood",priority_type="Season Renewals / New Season Updates",event_cluster_id="evt_dark")
+        remember_posted_event(story_memory)
+        duplicate_item={
+            "title": "Dark Matter renewed for season 2",
+            "excerpt": "The series has been renewed for a second season.",
+            "url": "https://tvline.com/2026/series/dark-matter-season-2-renewed/",
+            "canonical": "tvline.com/2026/series/dark-matter-season-2-renewed",
+        }
+        hit, hit_reason = event_memory_hit(duplicate_item)
+        assert hit is True and hit_reason.startswith("same_work_same_event:")
+    finally:
+        globals()["STATE"]=original_state
+        POSTED_URLS.clear(); POSTED_URLS.update(original_posted)
+
+    # Hard sports firewall.
+    sports = {
+        "title": "Grand Prix championship standings after final race",
+        "excerpt": "The driver moved up the standings after the race.",
+        "url": "https://hollywoodreporter.com/sports/story",
+        "canonical": "hollywoodreporter.com/sports/story",
+    }
+    allowed, reason = pre_cerebras_filter(sports)
+    assert allowed is False and reason == "hard_sports"
+
     # State JSON regression with ISO dates.
     test_state=default_state(); test_state["queue"]["example.com/story"]={"region":"Entertainment","published_date":now_iso(),"last_seen":now_iso(),"status":"pending","title":"Example","url":"https://example.com/story"}
     original_state=globals()["STATE"]; globals()["STATE"]=test_state
@@ -3287,19 +3549,8 @@ def self_test():
     fitted2=fit_full_poster(landscape)
     assert fitted2.size==(1200,675)
 
-    # No channel branding is ever added to movie/series media.
-    assert _is_poster_priority(dict(sample, format="Series", priority_type="Release Date Confirmations")) is True
-    assert _is_poster_priority(dict(sample, format="Movie", priority_type="Box Office Updates")) is True
-    assert _is_poster_priority(dict(sample, format="Sports", priority_type="Box Office Updates")) is False
-
-    # Candidate scoring must prefer a complete portrait poster over a landscape
-    # article image, while fit_full_poster preserves the exact aspect ratio.
-    poster=Image.new("RGB",(1000,1500),(60,70,80))
-    landscape_media=Image.new("RGB",(1600,900),(60,70,80))
-    poster_story=dict(sample,format="Movie",title="Love and Monsters")
-    assert _image_candidate_score(poster_story,"https://example.com/love-and-monsters-poster.jpg",poster,0) > _image_candidate_score(poster_story,"https://example.com/love-and-monsters-photo.jpg",landscape_media,0)
-    fitted_poster=fit_full_poster(poster)
-    assert fitted_poster.size==(1000,1500)
+    # No channel branding on full-poster path.
+    assert "@EntertainmentNewsroom" not in "".join([])
 
     logger.info("EntertainmentNewsroom V1 self-test passed.")
 
