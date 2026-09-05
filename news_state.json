@@ -1,142 +1,239 @@
 {
   "feeds": {
     "https://deadline.com/feed/": {
-      "etag": "W/\"6d8fa0b417c12e8410b76ee6a6d53c6b\"",
-      "last_modified": "Sat, 05 Sep 2026 16:35:06 GMT",
-      "last_checked": "2026-09-05T22:37:53.523203+06:00",
+      "etag": "W/\"72c17b459ade959b838a48bc140d90fd\"",
+      "last_modified": "Sat, 05 Sep 2026 18:50:16 GMT",
+      "last_checked": "2026-09-06T00:52:18.042793+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://variety.com/feed/": {
-      "etag": "W/\"668337f3bf6bcd6841027da068c324c9\"",
-      "last_modified": "Sat, 05 Sep 2026 16:37:41 GMT",
-      "last_checked": "2026-09-05T22:37:55.054744+06:00",
+      "etag": "W/\"94a5f3addca16506662153586e8c4e60\"",
+      "last_modified": "Sat, 05 Sep 2026 18:41:05 GMT",
+      "last_checked": "2026-09-06T00:52:18.265604+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.hollywoodreporter.com/feed/": {
-      "etag": "W/\"6bb4f77435f3ae2301b18bd079ac633f\"",
-      "last_modified": "Sat, 05 Sep 2026 16:24:15 GMT",
-      "last_checked": "2026-09-05T22:37:55.198069+06:00",
+      "etag": "W/\"8c6c28e888af8fb0c937329d78c4d81e\"",
+      "last_modified": "Sat, 05 Sep 2026 18:35:42 GMT",
+      "last_checked": "2026-09-06T00:52:18.554503+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.thewrap.com/feed/": {
-      "etag": "\"c70ee886cd02cf6f5686bf1e04eef7c3\"",
-      "last_modified": "Sat, 05 Sep 2026 15:05:00 GMT",
-      "last_checked": "2026-09-05T22:37:55.272613+06:00",
+      "etag": "\"65655a663d56aff885d40464bbf8a6e5\"",
+      "last_modified": "Sat, 05 Sep 2026 18:47:48 GMT",
+      "last_checked": "2026-09-06T00:52:18.619247+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.indiewire.com/feed/": {
-      "etag": "W/\"40f331452e02a316e946c89b2981e8d7\"",
-      "last_modified": "Sat, 05 Sep 2026 16:26:55 GMT",
-      "last_checked": "2026-09-05T22:37:56.110184+06:00",
+      "etag": "W/\"d0677d0dd944d1e2fd94f00e3e07e454\"",
+      "last_modified": "Sat, 05 Sep 2026 18:30:16 GMT",
+      "last_checked": "2026-09-06T00:52:18.715543+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://collider.com/feed/": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-09-05T22:37:56.534811+06:00",
+      "last_checked": "2026-09-06T00:52:19.069813+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://tvline.com/feed/": {
-      "etag": "\"092493eb51cb0c3bf2bdcf7663c3f16d\"",
-      "last_modified": "Sat, 05 Sep 2026 16:12:00 GMT",
-      "last_checked": "2026-09-05T22:37:56.762315+06:00",
+      "etag": "\"6def070383fd4ca7349c971949d65061\"",
+      "last_modified": "Sat, 05 Sep 2026 17:12:00 GMT",
+      "last_checked": "2026-09-06T00:52:19.311006+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.ottplay.com/rss": {
       "etag": "\"b5496c89c58ff0f5d07d64a68d4efe07\"",
       "last_modified": "Thu, 27 May 2021 12:38:49 GMT",
-      "last_checked": "2026-09-05T22:37:56.982103+06:00",
+      "last_checked": "2026-09-06T00:52:20.365435+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.filmibeat.com/rss/feeds/filmibeat-news.xml": {
       "etag": null,
-      "last_modified": "Sat, 05 Sep 2026 16:37:57 GMT",
-      "last_checked": "2026-09-05T22:37:57.498547+06:00",
+      "last_modified": "Sat, 05 Sep 2026 18:49:34 GMT",
+      "last_checked": "2026-09-06T00:52:20.892734+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.pinkvilla.com/rss": {
-      "last_checked": "2026-09-05T22:37:58.000874+06:00",
+      "last_checked": "2026-09-06T00:52:21.134657+06:00",
       "fail_count": 1
     },
     "https://www.bollywoodhungama.com/feed/": {
-      "etag": "\"85a67b76f427219d3040c7361e83692d\"",
-      "last_modified": "Sat, 05 Sep 2026 16:16:09 GMT",
-      "last_checked": "2026-09-05T22:37:58.134154+06:00",
+      "etag": "\"4e1954a5860060e5b3f4d816ac7a45b6\"",
+      "last_modified": "Sat, 05 Sep 2026 17:18:50 GMT",
+      "last_checked": "2026-09-06T00:52:21.476761+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.gadgets360.com/entertainment/rss": {
-      "last_checked": "2026-09-05T22:37:58.265556+06:00",
+      "last_checked": "2026-09-06T00:52:21.618955+06:00",
       "fail_count": 1
     },
     "https://www.soompi.com/feed": {
-      "etag": "W/\"311ccb7a3485317d68b149a47fba9406\"",
-      "last_modified": "Sat, 05 Sep 2026 08:27:48 GMT",
-      "last_checked": "2026-09-05T22:37:58.555935+06:00",
+      "etag": "W/\"b2a9413a3ab4ad245d01e630be9f7157\"",
+      "last_modified": "Sat, 05 Sep 2026 16:46:16 GMT",
+      "last_checked": "2026-09-06T00:52:21.869888+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.whats-on-netflix.com/feed/": {
       "etag": null,
       "last_modified": "Fri, 04 Sep 2026 21:00:47 GMT",
-      "last_checked": "2026-09-05T22:37:59.463537+06:00",
+      "last_checked": "2026-09-06T00:52:22.758888+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.netflix.com/tudum/rss.xml": {
-      "last_checked": "2026-09-05T22:38:00.544342+06:00",
+      "last_checked": "2026-09-06T00:52:23.494681+06:00",
       "fail_count": 1
     },
     "https://press.wbd.com/us/en/rss": {
-      "last_checked": "2026-09-05T22:38:00.836880+06:00",
+      "last_checked": "2026-09-06T00:52:23.901800+06:00",
       "fail_count": 1
     },
     "https://www.apple.com/tv-pr/newsroom/feed/": {
-      "last_checked": "2026-09-05T22:38:01.454614+06:00",
+      "last_checked": "2026-09-06T00:52:24.732214+06:00",
       "fail_count": 1
     },
     "https://www.aboutamazon.com/rss": {
-      "last_checked": "2026-09-05T22:38:01.820690+06:00",
+      "last_checked": "2026-09-06T00:52:25.202491+06:00",
       "fail_count": 1
     },
     "https://www.marvel.com/articles/feed": {
-      "last_checked": "2026-09-05T22:38:01.979470+06:00",
+      "last_checked": "2026-09-06T00:52:25.384506+06:00",
       "fail_count": 1
     },
     "https://www.dc.com/blog/rss.xml": {
-      "last_checked": "2026-09-05T22:38:02.937842+06:00",
+      "last_checked": "2026-09-06T00:52:26.670299+06:00",
       "fail_count": 1
     },
     "https://www.sonypictures.com/rss": {
-      "last_checked": "2026-09-05T22:38:03.353121+06:00",
+      "last_checked": "2026-09-06T00:52:27.154571+06:00",
       "fail_count": 1
     },
     "https://www.paramount.com/rss": {
-      "last_checked": "2026-09-05T22:38:03.508710+06:00",
+      "last_checked": "2026-09-06T00:52:27.299913+06:00",
       "fail_count": 1
     },
     "https://www.universalpictures.com/rss": {
-      "last_checked": "2026-09-05T22:38:03.884886+06:00",
+      "last_checked": "2026-09-06T00:52:27.813706+06:00",
       "fail_count": 1
     }
   },
   "queue": {
     "example.com/story": {
       "region": "Entertainment",
-      "published_date": "2026-09-05T22:37:51.188830+06:00",
-      "last_seen": "2026-09-05T22:37:51.188845+06:00",
+      "published_date": "2026-09-06T00:52:16.635806+06:00",
+      "last_seen": "2026-09-06T00:52:16.635816+06:00",
       "status": "pending",
       "title": "Example",
       "url": "https://example.com/story"
+    },
+    "deadline.com/2026/09/bruce-campbell-cancer-prognosis-1237068998": {
+      "title": "‘Evil Dead’ Star Bruce Campbell Says His Cancer Carries Five-Year Prognosis",
+      "url": "https://deadline.com/2026/09/bruce-campbell-cancer-prognosis-1237068998/",
+      "canonical": "deadline.com/2026/09/bruce-campbell-cancer-prognosis-1237068998",
+      "published_dt": "2026-09-05T23:55:03+06:00",
+      "published_date": "2026-09-05T23:55:03+06:00",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "excerpt": "Evil Dead star Bruce Campbell says his previously announced cancer diagnosis will likely take his life within five years. In a candid interview on The Adam Carolla Show podcast, Campbell said, “I’m in a five-year prognosis. With the type of cancer that I have, which I don’t want to get into, the current thing is […]",
+      "image": "https://deadline.com/wp-content/uploads/2026/03/GettyImages-2179010103.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-09-06T00:52:18.140198+06:00",
+      "last_seen": "2026-09-06T00:52:18.140203+06:00"
+    },
+    "deadline.com/2026/09/coyote-vs-acme-ketchup-viqueens-1237069008": {
+      "title": "‘Coyote Vs. Acme’ Distributor Ketchup Entertainment Takes U.S. On Norwegian Animated Pic ‘ViQueens’",
+      "url": "https://deadline.com/2026/09/coyote-vs-acme-ketchup-viqueens-1237069008/",
+      "canonical": "deadline.com/2026/09/coyote-vs-acme-ketchup-viqueens-1237069008",
+      "published_dt": "2026-09-05T23:47:53+06:00",
+      "published_date": "2026-09-05T23:47:53+06:00",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "excerpt": "EXCLUSIVE: Ketchup Entertainment, hot off giving Warner Bros Animation’s Coyote Vs. Acme a theatrical release, has acquired U.S. distribution rights to Norwegian animated movie ViQueens from director Harald Zwart (The Karate Kid, The 12th Man, Agent Cody Banks).  The U.S. campaign for ViQueens will begin this weekend, with the launch of a teaser only in theaters on […]",
+      "image": "https://deadline.com/wp-content/uploads/2026/09/ViQueensFirstLook_PhotoCredit_ZwartArbeid.png",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "posted",
+      "first_seen": "2026-09-06T00:52:18.140358+06:00",
+      "last_seen": "2026-09-06T00:52:18.140360+06:00",
+      "posted_at": "2026-09-06T01:18:15.205526+06:00"
+    },
+    "deadline.com/2026/09/the-liberation-review-carrie-coon-lily-james-bella-ramsey-1237068931": {
+      "title": "‘The Liberation’ Review: Carrie Coon, Lily James, And Bella Ramsey Soar In Guy Nattiv’s Explosive Cult Thriller – Telluride Film Festival",
+      "url": "https://deadline.com/2026/09/the-liberation-review-carrie-coon-lily-james-bella-ramsey-1237068931/",
+      "canonical": "deadline.com/2026/09/the-liberation-review-carrie-coon-lily-james-bella-ramsey-1237068931",
+      "published_dt": "2026-09-05T23:25:53+06:00",
+      "published_date": "2026-09-05T23:25:53+06:00",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "excerpt": "The Liberation has the bones of every cult movie I have ever seen, yet somehow it feels apart, a completely different and, for this genre, surprisingly female-driven narrative that is at once edge-of-your-seat suspense thriller and achingly personal. That behind the scenes a man is at the heart of all of this, his own deeply […]",
+      "image": "https://deadline.com/wp-content/uploads/2026/09/Liberation.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-09-06T00:52:18.140482+06:00",
+      "last_seen": "2026-09-06T00:52:18.140483+06:00"
+    },
+    "deadline.com/2026/09/primetime-robert-pattinson-venice-reaction-chris-hansen-1237067852": {
+      "title": "A24’s ‘Primetime’, Starring Robert Pattinson As Chris Hansen, Lands 9-Minute Ovation At Venice World Premiere",
+      "url": "https://deadline.com/2026/09/primetime-robert-pattinson-venice-reaction-chris-hansen-1237067852/",
+      "canonical": "deadline.com/2026/09/primetime-robert-pattinson-venice-reaction-chris-hansen-1237067852",
+      "published_dt": "2026-09-05T23:21:47+06:00",
+      "published_date": "2026-09-05T23:21:47+06:00",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "excerpt": "The much-talked-about Chris Hansen close up Primetime, starring Robert Pattinson, has landed an enthusiastic nine-minute standing ovation this evening following its world premiere at the Venice Film Festival.  Among those in the audience to watch the film tonight were Chloé Zhao, Amanda Seyfried, Mona Fastvold and Pattinson’s partner Suki Waterhouse. The film has landed well […]",
+      "image": "https://deadline.com/wp-content/uploads/2026/09/Primetime.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-09-06T00:52:18.140601+06:00",
+      "last_seen": "2026-09-06T00:52:18.140602+06:00"
+    },
+    "deadline.com/2026/09/matt-gutman-lawsuit-abc-field-producer-1237042227": {
+      "title": "Matt Gutman Dropped From Former ABC News Field Producer’s Wrongful Termination Lawsuit; Disney, ABC Remain As Defendants",
+      "url": "https://deadline.com/2026/09/matt-gutman-lawsuit-abc-field-producer-1237042227/",
+      "canonical": "deadline.com/2026/09/matt-gutman-lawsuit-abc-field-producer-1237042227",
+      "published_dt": "2026-09-05T23:10:00+06:00",
+      "published_date": "2026-09-05T23:10:00+06:00",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "excerpt": "UPDATE: Three weeks after news correspondent Matt Gutman was named in a wrongful termination lawsuit filed by a former ABC field producer, Gutman, now a chief correspondent with CBS News, is being dropped from the legal action. In paperwork filed Friday in Los Angeles Superior Court, lawyers for the ex-ABC producer Samaira Said requested that […]",
+      "image": "https://deadline.com/wp-content/uploads/2025/12/GettyImages-2246112484.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-09-06T00:52:18.140712+06:00",
+      "last_seen": "2026-09-06T00:52:18.140713+06:00"
+    },
+    "deadline.com/2026/09/dolly-parton-stella-ai-social-media-1237068956": {
+      "title": "Dolly Parton’s Sister Stella Slams “Endless Garbage”, AI & Social Media Misinformation After Icon’s Death",
+      "url": "https://deadline.com/2026/09/dolly-parton-stella-ai-social-media-1237068956/",
+      "canonical": "deadline.com/2026/09/dolly-parton-stella-ai-social-media-1237068956",
+      "published_dt": "2026-09-05T22:45:53+06:00",
+      "published_date": "2026-09-05T22:45:53+06:00",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "excerpt": "Dolly Parton’s sister Stella Parton is lambasting the “tremendous amount of AI and endless garbage” on social media since the death of the country music icon. In an Instagram message yesterday, Stella Parton wrote, “Sadly, because of the way our lives have been lived in front of the public, we have no choice but to […]",
+      "image": "https://deadline.com/wp-content/uploads/2026/09/GettyImages-499682654.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-09-06T00:52:18.140824+06:00",
+      "last_seen": "2026-09-06T00:52:18.140825+06:00"
     },
     "deadline.com/2026/09/lainey-wilson-host-2026-cma-awards-1237068251": {
       "title": "Lainey Wilson To Return As Host Of 2026 CMA Awards",
@@ -151,8 +248,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-09-05T22:37:53.623708+06:00",
-      "last_seen": "2026-09-05T22:37:53.623716+06:00"
+      "first_seen": "2026-09-06T00:52:18.140974+06:00",
+      "last_seen": "2026-09-06T00:52:18.140975+06:00"
     },
     "deadline.com/2026/09/box-office-spider-man-brand-new-day-by-any-means-labor-day-1237068549": {
       "title": "‘Spider-Man: Brand New Day’ $22M Labor Day Take Powering Summer To Potential $4.76B All-Time Record – Update",
@@ -166,9 +263,10 @@
       "image": "https://deadline.com/wp-content/uploads/2026/09/MCDSPMA_SP130-e1788626096465.jpg",
       "discovery": "rss",
       "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-09-05T22:37:53.624035+06:00",
-      "last_seen": "2026-09-05T22:37:53.624041+06:00"
+      "status": "posted",
+      "first_seen": "2026-09-06T00:52:18.141100+06:00",
+      "last_seen": "2026-09-06T00:52:18.141102+06:00",
+      "posted_at": "2026-09-06T01:18:20.470477+06:00"
     },
     "deadline.com/2026/09/the-natural-states-interview-jane-campion-matt-dougherty-1237068829": {
       "title": "Director Matt Dougherty, E.P. Jane Campion Explore Riveting “Anti-Guru” U.G. Krishnamurti In ‘The Natural State’ – Telluride Film Festival",
@@ -182,9 +280,10 @@
       "image": "https://deadline.com/wp-content/uploads/2026/09/The-Natural-State_keystill-lU.G.-Krishnamurti-r-Julie-Thayer-photo-credit-Sine-Altera.jpg",
       "discovery": "rss",
       "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-09-05T22:37:53.624313+06:00",
-      "last_seen": "2026-09-05T22:37:53.624319+06:00"
+      "status": "posted",
+      "first_seen": "2026-09-06T00:52:18.141212+06:00",
+      "last_seen": "2026-09-06T00:52:18.141213+06:00",
+      "posted_at": "2026-09-06T01:17:00.335985+06:00"
     },
     "deadline.com/2026/09/robin-morgan-dead-1237068890": {
       "title": "Robin Morgan Dies: Former Ms. Magazine Editor, Women’s Media Center Co-Founder With Jane Fonda & Gloria Steinem Was 85",
@@ -199,8 +298,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-09-05T22:37:53.624560+06:00",
-      "last_seen": "2026-09-05T22:37:53.624564+06:00"
+      "first_seen": "2026-09-06T00:52:18.141322+06:00",
+      "last_seen": "2026-09-06T00:52:18.141323+06:00"
     },
     "deadline.com/2026/09/primetime-reviews-reaction-robert-pattinson-a24-film-1237068888": {
       "title": "‘Primetime’: What The Critics Are Saying About A24’s Chris Hansen Movie Starring Robert Pattinson",
@@ -214,9 +313,10 @@
       "image": "https://deadline.com/wp-content/uploads/2026/09/Primetime.webp",
       "discovery": "rss",
       "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-09-05T22:37:53.624808+06:00",
-      "last_seen": "2026-09-05T22:37:53.624813+06:00"
+      "status": "posted",
+      "first_seen": "2026-09-06T00:52:18.141437+06:00",
+      "last_seen": "2026-09-06T00:52:18.141439+06:00",
+      "posted_at": "2026-09-06T01:16:36.992580+06:00"
     },
     "deadline.com/2026/09/primetime-review-robert-pattinson-lance-oppenheim-venice-1237068867": {
       "title": "‘Primetime’ Review: Robert Pattinson Channels Jerry Maguire And Dracula For Lance Oppenheim’s Dark TV Morality Tale – Venice Film Festival",
@@ -230,108 +330,107 @@
       "image": "https://deadline.com/wp-content/uploads/2026/08/primetime.jpg",
       "discovery": "rss",
       "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-09-05T22:37:53.625146+06:00",
-      "last_seen": "2026-09-05T22:37:53.625153+06:00"
-    },
-    "deadline.com/2026/09/oasis-dont-look-back-in-anger-reconciliation-steven-knight-1237068861": {
-      "title": "‘Oasis: Don’t Look Back In Anger’ Is About “Reconciliation, Redemption, And Forgiveness”, Says Steven Knight, As Liam & Noel Hit The Lido — Venice",
-      "url": "https://deadline.com/2026/09/oasis-dont-look-back-in-anger-reconciliation-steven-knight-1237068861/",
-      "canonical": "deadline.com/2026/09/oasis-dont-look-back-in-anger-reconciliation-steven-knight-1237068861",
-      "published_dt": "2026-09-05T20:13:22+06:00",
-      "published_date": "2026-09-05T20:13:22+06:00",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "excerpt": "Oasis: Don’t Look Back In Anger creator-writer-producer Steven Knight says the film, which captures the rapprochement between feuding brothers Liam and Noel Gallagher, is about “reconciliation, redemption, and forgiveness.” The anticipated music documentary, which includes Noel and Liam’s first joint interviews in 20 years, captures the band’s hit reunion tour last year and sees the […]",
-      "image": "https://deadline.com/wp-content/uploads/2026/09/Oasis-Venice.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-09-05T22:37:53.625443+06:00",
-      "last_seen": "2026-09-05T22:37:53.625448+06:00"
-    },
-    "deadline.com/2026/09/broadway-fall-preview-2026-1237067438": {
-      "title": "Broadway Fall Preview: The Stars Rise In New York This Autumn As Julia Louis-Dreyfus, Billy Crystal, Bradley Whitford, Raúl Esparza, Tom Hiddleston & More Take The Stage",
-      "url": "https://deadline.com/2026/09/broadway-fall-preview-2026-1237067438/",
-      "canonical": "deadline.com/2026/09/broadway-fall-preview-2026-1237067438",
-      "published_dt": "2026-09-05T19:00:00+06:00",
-      "published_date": "2026-09-05T19:00:00+06:00",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "excerpt": "Although the recently opened Paranormal Activity offered up a fine and spooky soft launch for Broadway’s 2026 Fall Season, the usual autumn crunch of new productions is still some weeks off. But no point in waiting until the last minute to make your own plans and choices: A slew of intriguing shows are heading New […]",
-      "image": "https://deadline.com/wp-content/uploads/2026/09/Julia-Louis-Dreyfus-Billy-Crystal-Bradley-Whitford-Raul-Esparza-and-Tom-Hiddleston.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-09-05T22:37:53.625686+06:00",
-      "last_seen": "2026-09-05T22:37:53.625691+06:00"
-    },
-    "deadline.com/2026/09/lee-chang-dong-possible-love-venice-netflix-1237067951": {
-      "title": "Lee Chang-dong On His Eight-Year Hiatus & Confident Return With Venice Competition Title ‘Possible Love’",
-      "url": "https://deadline.com/2026/09/lee-chang-dong-possible-love-venice-netflix-1237067951/",
-      "canonical": "deadline.com/2026/09/lee-chang-dong-possible-love-venice-netflix-1237067951",
-      "published_dt": "2026-09-05T13:21:10+06:00",
-      "published_date": "2026-09-05T13:21:10+06:00",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "excerpt": "Lee Chang-dong has finally returned to feature filmmaking.  The Korean filmmaker has been on an extended eight-year hiatus, which he blames on his “pathological timidity.”  “Unless I have that conviction, I cannot make myself begin the work, no matter the external circumstances or what others around me say,” he tells Deadline via Zoom from his […]",
-      "image": "https://deadline.com/wp-content/uploads/2026/09/possible-Love_Still_R30_AAA08350_RT2.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
       "status": "posted",
-      "first_seen": "2026-09-05T22:37:53.626137+06:00",
-      "last_seen": "2026-09-05T22:37:53.626142+06:00",
-      "posted_at": "2026-09-05T22:47:01.792960+06:00"
+      "first_seen": "2026-09-06T00:52:18.141544+06:00",
+      "last_seen": "2026-09-06T00:52:18.141545+06:00",
+      "posted_at": "2026-09-06T01:17:33.921672+06:00"
     },
-    "deadline.com/2026/09/loco-films-venice-guria-georgian-oscar-trailer-1237068270": {
-      "title": "Loco Films Boards Venice Title ‘Guria’ As Drama Is Selected To Be Georgia’s Oscar Entry + First Trailer",
-      "url": "https://deadline.com/2026/09/loco-films-venice-guria-georgian-oscar-trailer-1237068270/",
-      "canonical": "deadline.com/2026/09/loco-films-venice-guria-georgian-oscar-trailer-1237068270",
-      "published_dt": "2026-09-05T12:29:44+06:00",
-      "published_date": "2026-09-05T12:29:44+06:00",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "excerpt": "EXCLUSIVE: Loco Films has boarded sales on Georgian filmmaker Levan Koguashvili’s drama Guria ahead of its world premiere in the Spotlight section of the Venice Film Festival and unveiled a first trailer. News of the acquisition follows hot on the heels of Georgia’s decision to submit the feature as its entry to the 99th Academy […]",
-      "image": "https://deadline.com/wp-content/uploads/2026/09/Giuria_c45631.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "posted",
-      "first_seen": "2026-09-05T22:37:53.626382+06:00",
-      "last_seen": "2026-09-05T22:37:53.626388+06:00",
-      "posted_at": "2026-09-05T22:47:07.783342+06:00"
-    },
-    "deadline.com/2026/09/mad-solutions-irth-pan-arab-strategic-partnership-venice-1237068800": {
-      "title": "MAD Solutions & IRTH Strike Pan-Arab Development & Production Strategic Partnership – Venice",
-      "url": "https://deadline.com/2026/09/mad-solutions-irth-pan-arab-strategic-partnership-venice-1237068800/",
-      "canonical": "deadline.com/2026/09/mad-solutions-irth-pan-arab-strategic-partnership-venice-1237068800",
-      "published_dt": "2026-09-05T12:00:02+06:00",
-      "published_date": "2026-09-05T12:00:02+06:00",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "excerpt": "Cairo-based film and talent group MAD Solutions has announced a strategic partnership with Egyptian author, screenwriter and producer Haitham Dabbour’s pan-Arab drama development and production company IRTH. The partnership will bring their complementary strengths together to develop, package and support film, TV drama and other entertainment projects from across the Arab world for regional and […]",
-      "image": "https://deadline.com/wp-content/uploads/2026/09/MixCollage-05-Sep-2026-07-55-AM-1020.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-09-05T22:37:53.626606+06:00",
-      "last_seen": "2026-09-05T22:37:53.626611+06:00"
-    },
-    "variety.com/2026/film/news/spider-man-brand-new-day-box-office-900-million-1236849789": {
-      "title": "‘Spider-Man: Brand New Day’ Is Fastest Film to Cross $900 Million at Domestic Box Office",
-      "url": "https://variety.com/2026/film/news/spider-man-brand-new-day-box-office-900-million-1236849789/",
-      "canonical": "variety.com/2026/film/news/spider-man-brand-new-day-box-office-900-million-1236849789",
-      "published_dt": "2026-09-05T22:31:43+06:00",
-      "published_date": "2026-09-05T22:31:43+06:00",
+    "variety.com/2026/film/awards/andrew-haigh-a-long-winter-telluride-oscars-1236852682": {
+      "title": "Telluride Toasts Andrew Haigh as ‘A Long Winter’ Hands Fred Hechinger and Caitríona Balfe Awards-Worthy Roles",
+      "url": "https://variety.com/2026/film/awards/andrew-haigh-a-long-winter-telluride-oscars-1236852682/",
+      "canonical": "variety.com/2026/film/awards/andrew-haigh-a-long-winter-telluride-oscars-1236852682",
+      "published_dt": "2026-09-06T00:34:34+06:00",
+      "published_date": "2026-09-06T00:34:34+06:00",
       "source": "Variety",
       "region": "Entertainment",
-      "excerpt": "Two action flicks, Paramount’s “By Any Means” and A24’s “Onslaught,” arrived in theaters on Friday. But neither could dethrone “Spider-Man: Brand New Day,” which remains No. 1 in its sixth weekend in theaters. “Spider-Man” added $3.9 million on Friday, pushing it past the mind-boggling milestone of $900 million domestically. It’s now the fastest movie to […]",
-      "image": "https://variety.com/wp-content/uploads/2026/07/MCDSPMA_SP138-e1785154645459.jpg",
+      "excerpt": "Andrew Haigh has built a career watching people at the precise moment their lives come apart — and finding, in the wreckage, something close to grace. At the 53rd Telluride Film Festival, the British writer-director received the Silver Medallion, the festival’s career tribute, alongside Sandra Hüller and John Malkovich. The honor recognizes a sensibility built […]",
+      "image": "https://variety.com/wp-content/uploads/2026/09/a-long-winter.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-09-06T00:52:18.271936+06:00",
+      "last_seen": "2026-09-06T00:52:18.271938+06:00"
+    },
+    "variety.com/2026/music/news/kid-cudi-kanye-west-end-feud-antisemitic-1236852747": {
+      "title": "Kid Cudi Defends Kanye West After Ending Feud: Kanye ‘Apologized and It Was Sincere’ After Antisemitic Outbursts",
+      "url": "https://variety.com/2026/music/news/kid-cudi-kanye-west-end-feud-antisemitic-1236852747/",
+      "canonical": "variety.com/2026/music/news/kid-cudi-kanye-west-end-feud-antisemitic-1236852747",
+      "published_dt": "2026-09-06T00:18:34+06:00",
+      "published_date": "2026-09-06T00:18:34+06:00",
+      "source": "Variety",
+      "region": "Entertainment",
+      "excerpt": "After feuding for the past few years, Kanye West and Kid Cudi have made up and reunited during West’s Chicago concert on Friday night. West performed the past two nights in his hometown of Chicago to promote his latest album, “Bully,” and welcomed several surprise guests to the stage. Cudi joined his longtime collaborator for […]",
+      "image": "https://variety.com/wp-content/uploads/2026/09/MixCollage-05-Sep-2026-01-33-PM-6920.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-09-06T00:52:18.272084+06:00",
+      "last_seen": "2026-09-06T00:52:18.272085+06:00"
+    },
+    "variety.com/2026/film/news/bruce-campbell-cancer-5-years-live-1236852722": {
+      "title": "‘Evil Dead’ Star Bruce Campbell Says He Has 5 Years to Live After Incurable Cancer Diagnosis: I’m ‘Dying’ but ‘I’m Moving On’",
+      "url": "https://variety.com/2026/film/news/bruce-campbell-cancer-5-years-live-1236852722/",
+      "canonical": "variety.com/2026/film/news/bruce-campbell-cancer-5-years-live-1236852722",
+      "published_dt": "2026-09-05T23:19:53+06:00",
+      "published_date": "2026-09-05T23:19:53+06:00",
+      "source": "Variety",
+      "region": "Entertainment",
+      "excerpt": "“Evil Dead” star Bruce Campbell is opening up about his battle with cancer, revealing that he’s been given about five years to live. Back in March, Campbell revealed he had been diagnosed with a cancer that was “treatable but not curable.” “These days, when someone is having a health issue, it’s referred to as an […]",
+      "image": "https://variety.com/wp-content/uploads/2026/09/Bruce-Campbell.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-09-06T00:52:18.272215+06:00",
+      "last_seen": "2026-09-06T00:52:18.272216+06:00"
+    },
+    "variety.com/2026/film/festivals/robert-pattinson-primetime-venice-premiere-1236837079": {
+      "title": "Robert Pattinson Kisses Suki Waterhouse as ‘Primetime’ Rocks Venice With 7-Minute Standing Ovation",
+      "url": "https://variety.com/2026/film/festivals/robert-pattinson-primetime-venice-premiere-1236837079/",
+      "canonical": "variety.com/2026/film/festivals/robert-pattinson-primetime-venice-premiere-1236837079",
+      "published_dt": "2026-09-05T23:17:20+06:00",
+      "published_date": "2026-09-05T23:17:20+06:00",
+      "source": "Variety",
+      "region": "Entertainment",
+      "excerpt": "“Primetime,” a thriller starring Robert Pattinson as “To Catch a Predator” host Chris Hansen, made its debut at the Venice Film Festival on Saturday to an enthusiastic seven-minute ovation. Venice went fully in for Pattinson’s immersive performance as Hansen, the “Dateline” journalist and host who sets out to make television history with “To Catch a […]",
+      "image": "https://variety.com/wp-content/uploads/2026/09/GIP_4743.jpg",
       "discovery": "rss",
       "date_estimated": false,
       "status": "posted",
-      "first_seen": "2026-09-05T22:37:55.065882+06:00",
-      "last_seen": "2026-09-05T22:37:55.065889+06:00",
-      "posted_at": "2026-09-05T22:47:34.093856+06:00"
+      "first_seen": "2026-09-06T00:52:18.272335+06:00",
+      "last_seen": "2026-09-06T00:52:18.272336+06:00",
+      "posted_at": "2026-09-06T01:16:43.090029+06:00"
+    },
+    "variety.com/2026/film/reviews/it-will-happen-tonight-review-1236852720": {
+      "title": "‘It Will Happen Tonight’ Review: Louis Garrel and Jasmine Trinca Follow Each Other Through the Years In a Light and Predictable Romcom",
+      "url": "https://variety.com/2026/film/reviews/it-will-happen-tonight-review-1236852720/",
+      "canonical": "variety.com/2026/film/reviews/it-will-happen-tonight-review-1236852720",
+      "published_dt": "2026-09-05T23:15:00+06:00",
+      "published_date": "2026-09-05T23:15:00+06:00",
+      "source": "Variety",
+      "region": "Entertainment",
+      "excerpt": "Not everything labeled “old-fashioned” needs to carry negative connotations. A handwritten letter, your grandma’s rice pudding, the cocktail — all nice old-fashioned things. But the moment Alberto Iglesias’ sweet music flows out of the speakers at the start of “It Will Happen Tonight,” “old-fashioned” starts veering perilously into dowdy territory. When the camera zooms out […]",
+      "image": "https://variety.com/wp-content/uploads/2026/09/It-Will-Happen-Tonight.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-09-06T00:52:18.272443+06:00",
+      "last_seen": "2026-09-06T00:52:18.272444+06:00"
+    },
+    "variety.com/2026/film/global/venice-queer-lion-tijuana-todavia-spotlight-gays-fleeing-1236850825": {
+      "title": "Mexico’s Venice Queer Lion Contender ‘Tijuana, Todavía’ Trains a Spotlight on the Plight of a Gay Refugee Fleeing Persecution",
+      "url": "https://variety.com/2026/film/global/venice-queer-lion-tijuana-todavia-spotlight-gays-fleeing-1236850825/",
+      "canonical": "variety.com/2026/film/global/venice-queer-lion-tijuana-todavia-spotlight-gays-fleeing-1236850825",
+      "published_dt": "2026-09-05T23:00:55+06:00",
+      "published_date": "2026-09-05T23:00:55+06:00",
+      "source": "Variety",
+      "region": "Entertainment",
+      "excerpt": "Nothing sharpens the mind like working within constraints. Made on a shoestring production grant of €200,000 ($234,000) and given three weeks to write a screenplay and outline a production schedule, ‘Tijuana, Todavía’ by Mexico’s Gabriel Gutiérrez Morales has been rewarded with a slot at the 83rd Venice Film Festival where it vies for the Queer […]",
+      "image": "https://variety.com/wp-content/uploads/2026/09/Fosfo-Producciones-credit.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-09-06T00:52:18.272552+06:00",
+      "last_seen": "2026-09-06T00:52:18.272553+06:00"
     },
     "variety.com/2026/film/awards/gyllenhaal-flesh-impact-marilyn-monroe-dakota-johnson-venice-1236852103": {
       "title": "How Maggie Gyllenhaal Used Dakota Johnson and Ellen Burstyn to Reimagine Marilyn Monroe at 100 in Venice Short ‘Flesh Impact’",
@@ -346,8 +445,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-09-05T22:37:55.066131+06:00",
-      "last_seen": "2026-09-05T22:37:55.066136+06:00"
+      "first_seen": "2026-09-06T00:52:18.272787+06:00",
+      "last_seen": "2026-09-06T00:52:18.272788+06:00"
     },
     "variety.com/2026/film/global/jannis-lenz-oasis-venice-1236852578": {
       "title": "Teens Seek to Heal Wounds Through Macabre Rituals in Jannis Lenz’s ‘Oasis,’ With Hints of the Influence of Jessica Hausner, Michael Haneke",
@@ -362,8 +461,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-09-05T22:37:55.066405+06:00",
-      "last_seen": "2026-09-05T22:37:55.066411+06:00"
+      "first_seen": "2026-09-06T00:52:18.272894+06:00",
+      "last_seen": "2026-09-06T00:52:18.272895+06:00"
     },
     "variety.com/2026/film/reviews/primetime-review-robert-pattinson-1236846988": {
       "title": "‘Primetime’ Review: Robert Pattinson Leads a Dazzling Cast in a Lurid Horror-Movie Portrait of a ‘Predator’-Hunter’s Predatory Instinct",
@@ -377,108 +476,107 @@
       "image": "https://variety.com/wp-content/uploads/2026/08/Primetime.jpg",
       "discovery": "rss",
       "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-09-05T22:37:55.066658+06:00",
-      "last_seen": "2026-09-05T22:37:55.066663+06:00"
-    },
-    "variety.com/2026/film/reviews/chronovisor-review-1236852515": {
-      "title": "‘Chronovisor’ Review: An Eerie, Fiendishly Clever Mystery for Lovers of Libraries and the Storied Smell of Old Books",
-      "url": "https://variety.com/2026/film/reviews/chronovisor-review-1236852515/",
-      "canonical": "variety.com/2026/film/reviews/chronovisor-review-1236852515",
-      "published_dt": "2026-09-05T20:19:52+06:00",
-      "published_date": "2026-09-05T20:19:52+06:00",
-      "source": "Variety",
-      "region": "Entertainment",
-      "excerpt": "For anyone whose happy place is an old-school library reading room, all aged dark wood and green-and-gold reading lamps casting warm islands of light in the velvety murk, “Chronovisor” will be a near-fetishistic delight — even as it makes quite unhappy places of such hallowed havens of learning. The first feature by U.S. writer-directors Jack […]",
-      "image": "https://variety.com/wp-content/uploads/2026/09/coverlg.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-09-05T22:37:55.066904+06:00",
-      "last_seen": "2026-09-05T22:37:55.066909+06:00"
-    },
-    "variety.com/2026/film/festivals/al-pacino-skips-father-joe-press-conference-venice-1236851487": {
-      "title": "Al Pacino Sends Video Message to Venice After Missing Press Conference for ‘Father Joe’: ‘I Wish I Was There, I Really Do’",
-      "url": "https://variety.com/2026/film/festivals/al-pacino-skips-father-joe-press-conference-venice-1236851487/",
-      "canonical": "variety.com/2026/film/festivals/al-pacino-skips-father-joe-press-conference-venice-1236851487",
-      "published_dt": "2026-09-05T20:04:33+06:00",
-      "published_date": "2026-09-05T20:04:33+06:00",
-      "source": "Variety",
-      "region": "Entertainment",
-      "excerpt": "Al Pacino didn’t travel to the Venice Film Festival for the premiere of “Father Joe,” but he sent a video message with well wishes to his collaborators on the movie. “I wish I was there with all of you in Venice, which is great and lovely. I’ve had films there. I’ve been there. I’ve experienced […]",
-      "image": "https://variety.com/wp-content/uploads/2026/09/GettyImages-2280788227.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-09-05T22:37:55.067163+06:00",
-      "last_seen": "2026-09-05T22:37:55.067167+06:00"
-    },
-    "variety.com/2026/film/festivals/liam-noel-gallagher-skip-oasis-doc-press-conference-venice-1236852403": {
-      "title": "Liam and Noel Gallagher Skip Oasis Documentary Press Conference at Venice Film Festival",
-      "url": "https://variety.com/2026/film/festivals/liam-noel-gallagher-skip-oasis-doc-press-conference-venice-1236852403/",
-      "canonical": "variety.com/2026/film/festivals/liam-noel-gallagher-skip-oasis-doc-press-conference-venice-1236852403",
-      "published_dt": "2026-09-05T19:28:18+06:00",
-      "published_date": "2026-09-05T19:28:18+06:00",
-      "source": "Variety",
-      "region": "Entertainment",
-      "excerpt": "In news that might not surprise anyone, Liam and Noel Gallagher skipped the Venice Film Festival press conference for their upcoming Disney+ documentary “Oasis: Don’t Look Back in Anger” on Saturday. The two brothers — who reunited last year for their massive “Live ’25” tour after a 15-year feud — arrived on the Lido in […]",
-      "image": "https://variety.com/wp-content/uploads/2026/09/GettyImages-2293640331.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-09-05T22:37:55.067832+06:00",
-      "last_seen": "2026-09-05T22:37:55.067837+06:00"
-    },
-    "variety.com/2026/tv/news/aflac-ben-affleck-commercials-artists-equity-duck-insurance-1236852321": {
-      "title": "Aflac Taps Affleck for Commercials to Keep Insurance Customers Quacking",
-      "url": "https://variety.com/2026/tv/news/aflac-ben-affleck-commercials-artists-equity-duck-insurance-1236852321/",
-      "canonical": "variety.com/2026/tv/news/aflac-ben-affleck-commercials-artists-equity-duck-insurance-1236852321",
-      "published_dt": "2026-09-05T18:30:00+06:00",
-      "published_date": "2026-09-05T18:30:00+06:00",
-      "source": "Variety",
-      "region": "Entertainment",
-      "excerpt": "It seems as simple as moving a few letters around, but a new collaboration between Aflac, the provider of supplemental insurance and Ben Affleck, the actor and director, has been years in the making. Pairing Aflac, which has thrived with commercials featuring an anthropomorphic duck squawking out its name, and Affleck. the star of “Good […]",
-      "image": "https://variety.com/wp-content/uploads/2026/09/e325c62e-fdcb-4f19-97dc-7e63c410882a.png",
-      "discovery": "rss",
-      "date_estimated": false,
       "status": "posted",
-      "first_seen": "2026-09-05T22:37:55.068047+06:00",
-      "last_seen": "2026-09-05T22:37:55.068052+06:00",
-      "posted_at": "2026-09-05T22:46:45.525675+06:00"
+      "first_seen": "2026-09-06T00:52:18.273008+06:00",
+      "last_seen": "2026-09-06T00:52:18.273009+06:00",
+      "posted_at": "2026-09-06T01:17:38.870384+06:00"
     },
-    "hollywoodreporter.com/movies/movie-news/spider-man-ruling-box-office-for-sixth-weekend-1236691340": {
-      "title": "‘Spider-Man: Brand New Day’ Topping Box Office for Sixth Weekend in a Row",
-      "url": "https://www.hollywoodreporter.com/movies/movie-news/spider-man-ruling-box-office-for-sixth-weekend-1236691340/",
-      "canonical": "hollywoodreporter.com/movies/movie-news/spider-man-ruling-box-office-for-sixth-weekend-1236691340",
-      "published_dt": "2026-09-05T21:48:04+06:00",
-      "published_date": "2026-09-05T21:48:04+06:00",
+    "hollywoodreporter.com/movies/movie-features/telluride-danny-boyle-jack-oconnell-james-graham-ink-maga-1236691197": {
+      "title": "Telluride: Danny Boyle, Jack O’Connell and James Graham on ‘Ink,’ Rupert Murdoch and MAGA (Exclusive)",
+      "url": "https://www.hollywoodreporter.com/movies/movie-features/telluride-danny-boyle-jack-oconnell-james-graham-ink-maga-1236691197/",
+      "canonical": "hollywoodreporter.com/movies/movie-features/telluride-danny-boyle-jack-oconnell-james-graham-ink-maga-1236691197",
+      "published_dt": "2026-09-06T00:35:42+06:00",
+      "published_date": "2026-09-06T00:35:42+06:00",
       "source": "The Hollywood Reporter",
       "region": "Entertainment",
-      "excerpt": "The Spider-Man feature is soon aiming to become the top grossing movie domestically of all time, as Tom Holland's other summer movie, 'The Odyssey,' comes in at No. 2.",
+      "excerpt": "\"We couldn't raise the money,\" the film's Oscar-winning director reveals. \"A lot of people thought theater plays don't really work in film, and they were all frightened of Murdoch and legal problems.\"",
+      "image": "",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-09-06T00:52:18.558317+06:00",
+      "last_seen": "2026-09-06T00:52:18.558319+06:00"
+    },
+    "hollywoodreporter.com/movies/movie-features/the-idiots-johnny-flynn-aimee-lou-wood-exclusive-1236691960": {
+      "title": "Johnny Flynn and Aimee Lou Wood on “Getting Whipped Naked” and “Embracing the Madness” of Their Deranged Literary Biopic",
+      "url": "https://www.hollywoodreporter.com/movies/movie-features/the-idiots-johnny-flynn-aimee-lou-wood-exclusive-1236691960/",
+      "canonical": "hollywoodreporter.com/movies/movie-features/the-idiots-johnny-flynn-aimee-lou-wood-exclusive-1236691960",
+      "published_dt": "2026-09-06T00:12:35+06:00",
+      "published_date": "2026-09-06T00:12:35+06:00",
+      "source": "The Hollywood Reporter",
+      "region": "Entertainment",
+      "excerpt": "'The Idiot(s),' which premiered Friday night in Telluride, is unlike anything else on the fall circuit: “There'd be days where they would say…‘Today you're going to be shitting on your landlady's doorstep.’”",
+      "image": "",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-09-06T00:52:18.558422+06:00",
+      "last_seen": "2026-09-06T00:52:18.558423+06:00"
+    },
+    "hollywoodreporter.com/movies/movie-news/robert-pattinson-primetime-a24-movie-venice-film-festival-1236691614": {
+      "title": "Robert Pattinson’s ‘Primetime’ Unveiled at Venice Film Festival to Nearly 8-Minute Standing Ovation",
+      "url": "https://www.hollywoodreporter.com/movies/movie-news/robert-pattinson-primetime-a24-movie-venice-film-festival-1236691614/",
+      "canonical": "hollywoodreporter.com/movies/movie-news/robert-pattinson-primetime-a24-movie-venice-film-festival-1236691614",
+      "published_dt": "2026-09-05T23:17:48+06:00",
+      "published_date": "2026-09-05T23:17:48+06:00",
+      "source": "The Hollywood Reporter",
+      "region": "Entertainment",
+      "excerpt": "Lance Oppenheim's A24 film — co-starring Merritt Wever, Skyler Gisondo, Phoebe Bridgers and Jeff Zucker playing himself — debuted with an electric screening inside Sala Grande Saturday night.",
       "image": "",
       "discovery": "rss",
       "date_estimated": false,
       "status": "posted",
-      "first_seen": "2026-09-05T22:37:55.205977+06:00",
-      "last_seen": "2026-09-05T22:37:55.205984+06:00",
-      "posted_at": "2026-09-05T22:47:39.906557+06:00"
+      "first_seen": "2026-09-06T00:52:18.558505+06:00",
+      "last_seen": "2026-09-06T00:52:18.558506+06:00",
+      "posted_at": "2026-09-06T01:16:31.697894+06:00"
     },
-    "hollywoodreporter.com/movies/movie-news/robert-pattinson-movies-2026-primetime-odyssey-dune-drama-1236691678": {
-      "title": "Robert Pattinson Says He Would’ve Been “Devastated” to Drop Any of His Big 2026 Films",
-      "url": "https://www.hollywoodreporter.com/movies/movie-news/robert-pattinson-movies-2026-primetime-odyssey-dune-drama-1236691678/",
-      "canonical": "hollywoodreporter.com/movies/movie-news/robert-pattinson-movies-2026-primetime-odyssey-dune-drama-1236691678",
-      "published_dt": "2026-09-05T21:26:53+06:00",
-      "published_date": "2026-09-05T21:26:53+06:00",
+    "hollywoodreporter.com/lifestyle/shopping/doordash-streaks-promo-2026-fall-football-saturday-deals-1236691356": {
+      "title": "DoorDash Taps Into Football Fandom With Saturday Savings All Fall Long",
+      "url": "https://www.hollywoodreporter.com/lifestyle/shopping/doordash-streaks-promo-2026-fall-football-saturday-deals-1236691356/",
+      "canonical": "hollywoodreporter.com/lifestyle/shopping/doordash-streaks-promo-2026-fall-football-saturday-deals-1236691356",
+      "published_dt": "2026-09-05T23:15:55+06:00",
+      "published_date": "2026-09-05T23:15:55+06:00",
       "source": "The Hollywood Reporter",
       "region": "Entertainment",
-      "excerpt": "The busy actor took a break from 'The Batman: Part II' filming to attend the Venice Film Festival world premiere of his Chris Hansen-inspired pic 'Primetime.'",
+      "excerpt": "The DoorDash Streaks campaign arrives on the heels of its World Cup-centered summer promotion.",
       "image": "",
       "discovery": "rss",
       "date_estimated": false,
-      "status": "posted",
-      "first_seen": "2026-09-05T22:37:55.206178+06:00",
-      "last_seen": "2026-09-05T22:37:55.206183+06:00",
-      "posted_at": "2026-09-05T22:46:54.990445+06:00"
+      "status": "pending",
+      "first_seen": "2026-09-06T00:52:18.558572+06:00",
+      "last_seen": "2026-09-06T00:52:18.558573+06:00"
+    },
+    "hollywoodreporter.com/movies/movie-reviews/it-will-happen-tonight-review-nanni-moretti-louis-garrel-1236691690": {
+      "title": "‘It Will Happen Tonight’ Review: Italian Auteur Nanni Moretti’s Searing and Sea-Sawing Romance Is Passionate to a Fault",
+      "url": "https://www.hollywoodreporter.com/movies/movie-reviews/it-will-happen-tonight-review-nanni-moretti-louis-garrel-1236691690/",
+      "canonical": "hollywoodreporter.com/movies/movie-reviews/it-will-happen-tonight-review-nanni-moretti-louis-garrel-1236691690",
+      "published_dt": "2026-09-05T23:15:00+06:00",
+      "published_date": "2026-09-05T23:15:00+06:00",
+      "source": "The Hollywood Reporter",
+      "region": "Entertainment",
+      "excerpt": "Louis Garrel and Jasmine Trinca play a pair of star-crossed lovers who keep putting off their affair until the coincidences (and hormones) take over.",
+      "image": "",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-09-06T00:52:18.558657+06:00",
+      "last_seen": "2026-09-06T00:52:18.558658+06:00"
+    },
+    "hollywoodreporter.com/movies/movie-reviews/queer-edward-ii-review-derek-jarman-documentary-1236691778": {
+      "title": "‘Queer Edward II’ Review: Footage of the Making of Derek Jarman’s ‘Edward II’ Finally Sees the Dark of Cinema in a Wondrous Documentary",
+      "url": "https://www.hollywoodreporter.com/movies/movie-reviews/queer-edward-ii-review-derek-jarman-documentary-1236691778/",
+      "canonical": "hollywoodreporter.com/movies/movie-reviews/queer-edward-ii-review-derek-jarman-documentary-1236691778",
+      "published_dt": "2026-09-05T23:14:34+06:00",
+      "published_date": "2026-09-05T23:14:34+06:00",
+      "source": "The Hollywood Reporter",
+      "region": "Entertainment",
+      "excerpt": "Theo Rollason's film offers a lesson on queer history and early-1990s film production on a budget, as well as the spectacle of Tilda Swinton looking impossibly beautiful in her early 30s.",
+      "image": "",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-09-06T00:52:18.558744+06:00",
+      "last_seen": "2026-09-06T00:52:18.558745+06:00"
     },
     "hollywoodreporter.com/news/general-news/bethenny-frankel-burning-man-tiktok-goggles-1236691488": {
       "title": "Bethenny Frankel Is Turning Burning Man Into Her Non-Reality Show",
@@ -492,9 +590,10 @@
       "image": "",
       "discovery": "rss",
       "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-09-05T22:37:55.206412+06:00",
-      "last_seen": "2026-09-05T22:37:55.206417+06:00"
+      "status": "posted",
+      "first_seen": "2026-09-06T00:52:18.559088+06:00",
+      "last_seen": "2026-09-06T00:52:18.559089+06:00",
+      "posted_at": "2026-09-06T01:17:18.274267+06:00"
     },
     "hollywoodreporter.com/movies/movie-reviews/primetime-review-robert-pattinson-chris-hansen-1236691706": {
       "title": "‘Primetime’ Review: You Might Feel the Need to Shower After Watching Robert Pattinson as ‘To Catch a Predator’ Host Chris Hansen",
@@ -509,104 +608,72 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-09-05T22:37:55.206595+06:00",
-      "last_seen": "2026-09-05T22:37:55.206599+06:00"
+      "first_seen": "2026-09-06T00:52:18.559173+06:00",
+      "last_seen": "2026-09-06T00:52:18.559174+06:00"
     },
-    "hollywoodreporter.com/tv/tv-features/adele-zaikman-winning-dwts-the-next-pro-interview-1236691366": {
-      "title": "Adele Zaikman on Winning ‘DWTS: The Next Pro’ and Daniella Karagach’s Advice for Season 35",
-      "url": "https://www.hollywoodreporter.com/tv/tv-features/adele-zaikman-winning-dwts-the-next-pro-interview-1236691366/",
-      "canonical": "hollywoodreporter.com/tv/tv-features/adele-zaikman-winning-dwts-the-next-pro-interview-1236691366",
-      "published_dt": "2026-09-05T20:49:45+06:00",
-      "published_date": "2026-09-05T20:49:45+06:00",
-      "source": "The Hollywood Reporter",
+    "thewrap.com/industry-news/awards/john-malkovich-tells-telluride-interview": {
+      "title": "John Malkovich Confesses He ‘Didn’t Like’ Doing Movies at First at Telluride Honors: ‘Later, I Fell in Love’",
+      "url": "https://www.thewrap.com/industry-news/awards/john-malkovich-tells-telluride-interview/",
+      "canonical": "thewrap.com/industry-news/awards/john-malkovich-tells-telluride-interview",
+      "published_dt": "2026-09-06T00:47:42+06:00",
+      "published_date": "2026-09-06T00:47:42+06:00",
+      "source": "TheWrap",
       "region": "Entertainment",
-      "excerpt": "The 24-year-old professional dancer reflects on winning the spinoff series, the advice Karagach offered her ahead of season 35’s premiere and her first partnership with ‘Secret Lives of Mormon Wives’ husband Conner Leavitt: “I couldn't ask for a better partner.”",
+      "excerpt": "The \"Wild Horse Nine\" star receives a standing ovation at the film festival The post John Malkovich Confesses He ‘Didn’t Like’ Doing Movies at First at Telluride Honors: ‘Later, I Fell in Love’ appeared first on TheWrap .",
       "image": "",
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-09-05T22:37:55.206787+06:00",
-      "last_seen": "2026-09-05T22:37:55.206790+06:00"
+      "first_seen": "2026-09-06T00:52:18.638917+06:00",
+      "last_seen": "2026-09-06T00:52:18.638920+06:00"
     },
-    "hollywoodreporter.com/news/general-news/pianist-actress-maureen-lipman-noisy-london-israel-1236691725": {
-      "title": "‘Pianist’ Actress Maureen Lipman Predicts “Noisy” Night in London Over Her Israel Views",
-      "url": "https://www.hollywoodreporter.com/news/general-news/pianist-actress-maureen-lipman-noisy-london-israel-1236691725/",
-      "canonical": "hollywoodreporter.com/news/general-news/pianist-actress-maureen-lipman-noisy-london-israel-1236691725",
-      "published_dt": "2026-09-05T20:34:30+06:00",
-      "published_date": "2026-09-05T20:34:30+06:00",
-      "source": "The Hollywood Reporter",
+    "thewrap.com/creative-content/movies/best-underrated-movies-summer-2026": {
+      "title": "The 10 Best Overlooked Movies of Summer 2026",
+      "url": "https://www.thewrap.com/creative-content/movies/best-underrated-movies-summer-2026/",
+      "canonical": "thewrap.com/creative-content/movies/best-underrated-movies-summer-2026",
+      "published_dt": "2026-09-06T00:00:00+06:00",
+      "published_date": "2026-09-06T00:00:00+06:00",
+      "source": "TheWrap",
       "region": "Entertainment",
-      "excerpt": "'Right Before I Go' playwright Stan Zimmerman calls the controversy and two cast departures an “unfortunate distraction” from his mission to raise awareness about suicide.",
+      "excerpt": "A terrifying horror movie overshadowed by the zeitgeist, an impressive indie made for $7,000 and more amazing films have flown under the radar The post The 10 Best Overlooked Movies of Summer 2026 appeared first on TheWrap .",
       "image": "",
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-09-05T22:37:55.206955+06:00",
-      "last_seen": "2026-09-05T22:37:55.206959+06:00"
+      "first_seen": "2026-09-06T00:52:18.639105+06:00",
+      "last_seen": "2026-09-06T00:52:18.639106+06:00"
     },
-    "hollywoodreporter.com/business/business-news/federal-film-tax-credit-1236691082": {
-      "title": "Congress Is About to Write a Federal Film Tax Credit: Just Don’t Call It a Hollywood Bill",
-      "url": "https://www.hollywoodreporter.com/business/business-news/federal-film-tax-credit-1236691082/",
-      "canonical": "hollywoodreporter.com/business/business-news/federal-film-tax-credit-1236691082",
-      "published_dt": "2026-09-05T20:25:00+06:00",
-      "published_date": "2026-09-05T20:25:00+06:00",
-      "source": "The Hollywood Reporter",
+    "thewrap.com/media-platforms/tv/scott-jennings-challenged-contact-mitch-mcconell-cnn": {
+      "title": "‘Pull Out Your Phone and Ask Mitch McConnell’: Scott Jennings Again Challenged to Contact Senator on CNN",
+      "url": "https://www.thewrap.com/media-platforms/tv/scott-jennings-challenged-contact-mitch-mcconell-cnn/",
+      "canonical": "thewrap.com/media-platforms/tv/scott-jennings-challenged-contact-mitch-mcconell-cnn",
+      "published_dt": "2026-09-05T23:49:23+06:00",
+      "published_date": "2026-09-05T23:49:23+06:00",
+      "source": "TheWrap",
       "region": "Entertainment",
-      "excerpt": "States outside of California and New York have seen the brunt of the production exodus. And it is those states that stand to benefit the most from a federal tax incentive.",
+      "excerpt": "Sen. McConnell has been absent from Congress for over three months The post ‘Pull Out Your Phone and Ask Mitch McConnell’: Scott Jennings Again Challenged to Contact Senator on CNN appeared first on TheWrap .",
       "image": "",
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-09-05T22:37:55.207126+06:00",
-      "last_seen": "2026-09-05T22:37:55.207129+06:00"
+      "first_seen": "2026-09-06T00:52:18.639277+06:00",
+      "last_seen": "2026-09-06T00:52:18.639278+06:00"
     },
-    "hollywoodreporter.com/movies/movie-reviews/the-liberation-review-carrie-coon-guy-nattiv-lily-james-1236690996": {
-      "title": "‘The Liberation’ Review: Carrie Coon, Bella Ramsey and Lily James in Guy Nattiv’s Devastatingly Empathetic Cult Drama",
-      "url": "https://www.hollywoodreporter.com/movies/movie-reviews/the-liberation-review-carrie-coon-guy-nattiv-lily-james-1236690996/",
-      "canonical": "hollywoodreporter.com/movies/movie-reviews/the-liberation-review-carrie-coon-guy-nattiv-lily-james-1236690996",
-      "published_dt": "2026-09-05T20:19:41+06:00",
-      "published_date": "2026-09-05T20:19:41+06:00",
-      "source": "The Hollywood Reporter",
+    "thewrap.com/creative-content/movies/spider-man-coyote-vs-acme-labor-day-box-office": {
+      "title": "‘Spider-Man’ Still on Top at Labor Day Box Office While ‘Coyote vs Acme’ Holds Strong",
+      "url": "https://www.thewrap.com/creative-content/movies/spider-man-coyote-vs-acme-labor-day-box-office/",
+      "canonical": "thewrap.com/creative-content/movies/spider-man-coyote-vs-acme-labor-day-box-office",
+      "published_dt": "2026-09-05T22:44:43+06:00",
+      "published_date": "2026-09-05T22:44:43+06:00",
+      "source": "TheWrap",
       "region": "Entertainment",
-      "excerpt": "Also starring Odessa Young and Tracy Letts, the film follows a suburban mother who leaves her family to follow a charismatic spiritual guru in 1980s New Jersey.",
+      "excerpt": "The Ketchup-released \"Looney Tunes\" film is set to drop only 27% from its opening weekend The post ‘Spider-Man’ Still on Top at Labor Day Box Office While ‘Coyote vs Acme’ Holds Strong appeared first on TheWrap .",
       "image": "",
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-09-05T22:37:55.207315+06:00",
-      "last_seen": "2026-09-05T22:37:55.207320+06:00"
-    },
-    "hollywoodreporter.com/movies/movie-news/gallaghers-skip-venice-press-conference-for-documentary-1236691644": {
-      "title": "Gallagher Brothers Skip Venice Press Conference for Concert Doc",
-      "url": "https://www.hollywoodreporter.com/movies/movie-news/gallaghers-skip-venice-press-conference-for-documentary-1236691644/",
-      "canonical": "hollywoodreporter.com/movies/movie-news/gallaghers-skip-venice-press-conference-for-documentary-1236691644",
-      "published_dt": "2026-09-05T19:26:35+06:00",
-      "published_date": "2026-09-05T19:26:35+06:00",
-      "source": "The Hollywood Reporter",
-      "region": "Entertainment",
-      "excerpt": "'Oasis: Don't Look Back in Anger' captures the brothers’ blockbuster Oasis Live ’25 reunion tour, their first live performances after their infamous falling out back in 2009.",
-      "image": "",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-09-05T22:37:55.207641+06:00",
-      "last_seen": "2026-09-05T22:37:55.207646+06:00"
-    },
-    "hollywoodreporter.com/movies/movie-news/robert-pattinson-primetime-movie-to-catch-a-predator-1236690719": {
-      "title": "Robert Pattinson on Chris Hansen’s Objections to ‘Primetime’: “I Hope He Likes the Movie”",
-      "url": "https://www.hollywoodreporter.com/movies/movie-news/robert-pattinson-primetime-movie-to-catch-a-predator-1236690719/",
-      "canonical": "hollywoodreporter.com/movies/movie-news/robert-pattinson-primetime-movie-to-catch-a-predator-1236690719",
-      "published_dt": "2026-09-05T18:05:26+06:00",
-      "published_date": "2026-09-05T18:05:26+06:00",
-      "source": "The Hollywood Reporter",
-      "region": "Entertainment",
-      "excerpt": "The actor touched down on the Lido this weekend for the Venice Film Festival world premiere of Lance Oppenheim's film, in which he stars as 'To Catch a Predator' host Chris Hansen.",
-      "image": "",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-09-05T22:37:55.207815+06:00",
-      "last_seen": "2026-09-05T22:37:55.207819+06:00"
+      "first_seen": "2026-09-06T00:52:18.639449+06:00",
+      "last_seen": "2026-09-06T00:52:18.639451+06:00"
     },
     "thewrap.com/creative-content/movies/primetime-review-robert-pattinson-chris-hansen": {
       "title": "‘Primetime’ Review: Robert Pattinson Is Delightfully Gonzo in Searing Exploitation Screed",
@@ -621,8 +688,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-09-05T22:37:55.308898+06:00",
-      "last_seen": "2026-09-05T22:37:55.308906+06:00"
+      "first_seen": "2026-09-06T00:52:18.639602+06:00",
+      "last_seen": "2026-09-06T00:52:18.639603+06:00"
     },
     "thewrap.com/creative-content/movies/robert-pattinson-chris-hansen-memes-reaction": {
       "title": "Robert Pattinson Hopes Chris Hansen Likes ‘Primetime’: ‘Something Magnetic About His Presence’",
@@ -636,9 +703,10 @@
       "image": "",
       "discovery": "rss",
       "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-09-05T22:37:55.309325+06:00",
-      "last_seen": "2026-09-05T22:37:55.309331+06:00"
+      "status": "posted",
+      "first_seen": "2026-09-06T00:52:18.639771+06:00",
+      "last_seen": "2026-09-06T00:52:18.639772+06:00",
+      "posted_at": "2026-09-06T01:17:54.683883+06:00"
     },
     "thewrap.com/creative-content/movies/elsinore-review-andrew-scott-hamlet": {
       "title": "‘Elsinore’ Review: Andrew Scott Shines in Yet Another Sign That Shakespeare Isn’t Done With Us Yet",
@@ -653,8 +721,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-09-05T22:37:55.309710+06:00",
-      "last_seen": "2026-09-05T22:37:55.309715+06:00"
+      "first_seen": "2026-09-06T00:52:18.639940+06:00",
+      "last_seen": "2026-09-06T00:52:18.639941+06:00"
     },
     "thewrap.com/creative-content/tv-shows/ben-mckenzie-willing-to-do-the-oc-revival": {
       "title": "Ben McKenzie Says He’d ‘Be Up For’ a Revival of ‘The O.C.’ Under ‘the Right Circumstances’",
@@ -669,8 +737,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-09-05T22:37:55.310072+06:00",
-      "last_seen": "2026-09-05T22:37:55.310078+06:00"
+      "first_seen": "2026-09-06T00:52:18.640105+06:00",
+      "last_seen": "2026-09-06T00:52:18.640107+06:00"
     },
     "thewrap.com/creative-content/movies/practical-magic-star-alexandra-artrip-responds-sequel-boycott-recasting": {
       "title": "Original ‘Practical Magic’ Star Addresses Fan Boycott of Sequel Over Recasting",
@@ -685,8 +753,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-09-05T22:37:55.310460+06:00",
-      "last_seen": "2026-09-05T22:37:55.310467+06:00"
+      "first_seen": "2026-09-06T00:52:18.640258+06:00",
+      "last_seen": "2026-09-06T00:52:18.640260+06:00"
     },
     "thewrap.com/commentary-analysis/columns/a-long-winter-review-andrew-haigh-ebon-moss-bachrach": {
       "title": "‘A Long Winter’ Review: Andrew Haigh Finds Love and Dread High in the Mountains",
@@ -701,72 +769,24 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-09-05T22:37:55.310815+06:00",
-      "last_seen": "2026-09-05T22:37:55.310820+06:00"
+      "first_seen": "2026-09-06T00:52:18.640412+06:00",
+      "last_seen": "2026-09-06T00:52:18.640413+06:00"
     },
-    "thewrap.com/creative-content/tv-shows/zooey-deschanel-dangerous-exhaustion-new-girl-filming": {
-      "title": "Zooey Deschanel Recalls the ‘Dangerous’ Levels of Exhaustion She Faced While Filming ‘New Girl’",
-      "url": "https://www.thewrap.com/creative-content/tv-shows/zooey-deschanel-dangerous-exhaustion-new-girl-filming/",
-      "canonical": "thewrap.com/creative-content/tv-shows/zooey-deschanel-dangerous-exhaustion-new-girl-filming",
-      "published_dt": "2026-09-05T08:21:42+06:00",
-      "published_date": "2026-09-05T08:21:42+06:00",
-      "source": "TheWrap",
+    "indiewire.com/news/festivals/robert-pattinson-primetime-cast-oscar-buzz-1235215073": {
+      "title": "Robert Pattinson Won’t Be the Only ‘Primetime’ Star to Generate Oscar Buzz",
+      "url": "https://www.indiewire.com/news/festivals/robert-pattinson-primetime-cast-oscar-buzz-1235215073/",
+      "canonical": "indiewire.com/news/festivals/robert-pattinson-primetime-cast-oscar-buzz-1235215073",
+      "published_dt": "2026-09-05T23:00:00+06:00",
+      "published_date": "2026-09-05T23:00:00+06:00",
+      "source": "IndieWire",
       "region": "Entertainment",
-      "excerpt": "\"The hours were insane,\" the actress adds The post Zooey Deschanel Recalls the ‘Dangerous’ Levels of Exhaustion She Faced While Filming ‘New Girl’ appeared first on TheWrap .",
+      "excerpt": "Outside of Pattinson's big swing as \"To Catch a Predator\" host Chris Hansen, Lance Oppenheim's feature debut \"Primetime\" serves as a showcase for stars Merritt Wever and Skyler Gisondo as well.",
       "image": "",
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-09-05T22:37:55.311145+06:00",
-      "last_seen": "2026-09-05T22:37:55.311151+06:00"
-    },
-    "thewrap.com/creative-content/reviews/pete-townshend-behind-blue-eyes-review-telluride": {
-      "title": "‘Pete Townshend: Behind Blue Eyes’ Review: Rock Doc Is Long on Talk",
-      "url": "https://www.thewrap.com/creative-content/reviews/pete-townshend-behind-blue-eyes-review-telluride/",
-      "canonical": "thewrap.com/creative-content/reviews/pete-townshend-behind-blue-eyes-review-telluride",
-      "published_dt": "2026-09-05T08:00:00+06:00",
-      "published_date": "2026-09-05T08:00:00+06:00",
-      "source": "TheWrap",
-      "region": "Entertainment",
-      "excerpt": "Telluride Film Festival: Directors Frank Marshall and Nigel Sinclair let The Who frontman pontificate, something he does very well The post ‘Pete Townshend: Behind Blue Eyes’ Review: Rock Doc Is Long on Talk appeared first on TheWrap .",
-      "image": "",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-09-05T22:37:55.311517+06:00",
-      "last_seen": "2026-09-05T22:37:55.311522+06:00"
-    },
-    "thewrap.com/creative-content/movies/tender-loving-care-review-mike-leigh-telluride": {
-      "title": "‘Tender Loving Care’ Review: Mike Leigh Delivers Another Gentle Gem",
-      "url": "https://www.thewrap.com/creative-content/movies/tender-loving-care-review-mike-leigh-telluride/",
-      "canonical": "thewrap.com/creative-content/movies/tender-loving-care-review-mike-leigh-telluride",
-      "published_dt": "2026-09-05T07:47:00+06:00",
-      "published_date": "2026-09-05T07:47:00+06:00",
-      "source": "TheWrap",
-      "region": "Entertainment",
-      "excerpt": "Telluride Film Festival: “Widow’s Bay” star Kate O’Flynn stars in another richly humanistic work from the veteran British director The post ‘Tender Loving Care’ Review: Mike Leigh Delivers Another Gentle Gem appeared first on TheWrap .",
-      "image": "",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-09-05T22:37:55.311857+06:00",
-      "last_seen": "2026-09-05T22:37:55.311862+06:00"
-    },
-    "thewrap.com/culture-lifestyle/culture/bruce-campbell-5-years-to-live-cancer-prognosis": {
-      "title": "Bruce Campbell Says He Has 5 Years to Live After Cancer Diagnosis: ‘Give or Take’",
-      "url": "https://www.thewrap.com/culture-lifestyle/culture/bruce-campbell-5-years-to-live-cancer-prognosis/",
-      "canonical": "thewrap.com/culture-lifestyle/culture/bruce-campbell-5-years-to-live-cancer-prognosis",
-      "published_dt": "2026-09-05T07:20:20+06:00",
-      "published_date": "2026-09-05T07:20:20+06:00",
-      "source": "TheWrap",
-      "region": "Entertainment",
-      "excerpt": "\"I've decided pretty specifically though to live with it, not die from it,\" the \"Evil Dead\" actor adds The post Bruce Campbell Says He Has 5 Years to Live After Cancer Diagnosis: ‘Give or Take’ appeared first on TheWrap .",
-      "image": "",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-09-05T22:37:55.312398+06:00",
-      "last_seen": "2026-09-05T22:37:55.312404+06:00"
+      "first_seen": "2026-09-06T00:52:18.719723+06:00",
+      "last_seen": "2026-09-06T00:52:18.719725+06:00"
     },
     "indiewire.com/awards/predictions/elsinore-the-liberation-andrew-scott-carrie-coon-oscar-race-1235215087": {
       "title": "‘Elsinore’ and ‘The Liberation’ Launch TV Stars Andrew Scott and Carrie Coon Into the Oscar Race",
@@ -780,9 +800,10 @@
       "image": "",
       "discovery": "rss",
       "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-09-05T22:37:56.119462+06:00",
-      "last_seen": "2026-09-05T22:37:56.119469+06:00"
+      "status": "posted",
+      "first_seen": "2026-09-06T00:52:18.719809+06:00",
+      "last_seen": "2026-09-06T00:52:18.719810+06:00",
+      "posted_at": "2026-09-06T01:16:49.175651+06:00"
     },
     "indiewire.com/features/interviews/the-difficult-bride-movie-rubaiyat-hossain-venice-1235214801": {
       "title": "‘The Difficult Bride’ Turns South Asia’s Beloved Wedding Tropes Into Feminist Folk Horror at Venice",
@@ -796,9 +817,10 @@
       "image": "",
       "discovery": "rss",
       "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-09-05T22:37:56.119680+06:00",
-      "last_seen": "2026-09-05T22:37:56.119686+06:00"
+      "status": "posted",
+      "first_seen": "2026-09-06T00:52:18.719902+06:00",
+      "last_seen": "2026-09-06T00:52:18.719903+06:00",
+      "posted_at": "2026-09-06T01:16:54.884126+06:00"
     },
     "indiewire.com/features/commentary/what-i-learned-watching-6-hours-gen-ai-short-films-reply-ai-1235206110": {
       "title": "What I Learned Watching Six Hours of Gen-AI Short Films for the Reply AI Film Festival",
@@ -813,8 +835,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-09-05T22:37:56.119856+06:00",
-      "last_seen": "2026-09-05T22:37:56.119861+06:00"
+      "first_seen": "2026-09-06T00:52:18.719980+06:00",
+      "last_seen": "2026-09-06T00:52:18.719981+06:00"
     },
     "indiewire.com/criticism/movies/a24-primetime-movie-review-robert-pattinson-chris-hansen-1235215068": {
       "title": "‘Primetime’ Review: Robert Pattinson Is Even Creepier Than IRL Chris Hansen in a Bleakly Invigorating ‘To Catch a Predator’ Thriller",
@@ -828,9 +850,10 @@
       "image": "",
       "discovery": "rss",
       "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-09-05T22:37:56.120046+06:00",
-      "last_seen": "2026-09-05T22:37:56.120051+06:00"
+      "status": "posted",
+      "first_seen": "2026-09-06T00:52:18.720076+06:00",
+      "last_seen": "2026-09-06T00:52:18.720077+06:00",
+      "posted_at": "2026-09-06T01:17:44.033225+06:00"
     },
     "indiewire.com/criticism/movies/citizen-osama-review-1235215076": {
       "title": "‘Citizen Osama’ Review: A Direct, Disarming View of Daily Horrors in Gaza from the POV of a Journalist and New Father",
@@ -845,8 +868,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-09-05T22:37:56.120276+06:00",
-      "last_seen": "2026-09-05T22:37:56.120283+06:00"
+      "first_seen": "2026-09-06T00:52:18.720159+06:00",
+      "last_seen": "2026-09-06T00:52:18.720160+06:00"
     },
     "indiewire.com/criticism/movies/the-row-review-telluride-documentary-1235215084": {
       "title": "‘The Row’ Review: One Man’s Tragedy-Inspired Voyages Across the Pacific Are Turned Into a Branding Exercise",
@@ -861,8 +884,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-09-05T22:37:56.120453+06:00",
-      "last_seen": "2026-09-05T22:37:56.120458+06:00"
+      "first_seen": "2026-09-06T00:52:18.720234+06:00",
+      "last_seen": "2026-09-06T00:52:18.720235+06:00"
     },
     "indiewire.com/criticism/movies/elsinore-movie-review-andrew-scott-1235214584": {
       "title": "‘Elsinore’ Review: Andrew Scott’s Towering Performance as a Dying Actor Can’t Overcome AIDS-Movie Awards Bait Clichés",
@@ -877,8 +900,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-09-05T22:37:56.120628+06:00",
-      "last_seen": "2026-09-05T22:37:56.120632+06:00"
+      "first_seen": "2026-09-06T00:52:18.720314+06:00",
+      "last_seen": "2026-09-06T00:52:18.720315+06:00"
     },
     "indiewire.com/criticism/movies/the-idiots-review-johnny-flynn-aimee-lou-wood-1235215061": {
       "title": "‘The Idiot(s)’ Review: Johnny Flynn and Aimee Lou Wood Suffer Rapturously in Surreal Russian Lit Biopic",
@@ -893,8 +916,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-09-05T22:37:56.120792+06:00",
-      "last_seen": "2026-09-05T22:37:56.120796+06:00"
+      "first_seen": "2026-09-06T00:52:18.720387+06:00",
+      "last_seen": "2026-09-06T00:52:18.720388+06:00"
     },
     "indiewire.com/news/general-news/robert-pattinson-remember-me-2010-september-11-twist-1235215031": {
       "title": "This September, ‘Remember Me’: The 2010 Robert Pattinson Film That Sounds Like Something He Made Up",
@@ -909,8 +932,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-09-05T22:37:56.120960+06:00",
-      "last_seen": "2026-09-05T22:37:56.120964+06:00"
+      "first_seen": "2026-09-06T00:52:18.720465+06:00",
+      "last_seen": "2026-09-06T00:52:18.720466+06:00"
     },
     "indiewire.com/criticism/movies/a-long-winter-movie-review-1235214822": {
       "title": "‘A Long Winter’ Review: Andrew Haigh Goes Cold with an Immaculately Crafted Coming-of-Age Story Too Restrained for Its Own Good",
@@ -925,8 +948,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-09-05T22:37:56.121127+06:00",
-      "last_seen": "2026-09-05T22:37:56.121131+06:00"
+      "first_seen": "2026-09-06T00:52:18.720543+06:00",
+      "last_seen": "2026-09-06T00:52:18.720544+06:00"
     },
     "indiewire.com/criticism/movies/tender-loving-care-review-mike-leigh-1235214666": {
       "title": "‘Tender Loving Care’ Review: Kate O’Flynn Astonishes in Mike Leigh’s Simple but Profoundly Moving Final Film",
@@ -941,24 +964,121 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-09-05T22:37:56.121312+06:00",
-      "last_seen": "2026-09-05T22:37:56.121317+06:00"
+      "first_seen": "2026-09-06T00:52:18.720618+06:00",
+      "last_seen": "2026-09-06T00:52:18.720619+06:00"
     },
-    "indiewire.com/awards/industry/inside-telluride-brunch-john-malkovich-carrie-coon-1235214989": {
-      "title": "Inside the Telluride Opening Day Brunch: John Malkovich, Carrie Coon, and the Questions on Everyone’s Minds",
-      "url": "https://www.indiewire.com/awards/industry/inside-telluride-brunch-john-malkovich-carrie-coon-1235214989/",
-      "canonical": "indiewire.com/awards/industry/inside-telluride-brunch-john-malkovich-carrie-coon-1235214989",
-      "published_dt": "2026-09-05T04:49:32+06:00",
-      "published_date": "2026-09-05T04:49:32+06:00",
-      "source": "IndieWire",
+    "collider.com/the-simpsons-season-37-disney-exclusive-yellow-mirror-anthology": {
+      "title": "'The Simpsons' Is Officially Changing Its Formula for the First Time in 36 Years",
+      "url": "https://collider.com/the-simpsons-season-37-disney-exclusive-yellow-mirror-anthology/",
+      "canonical": "collider.com/the-simpsons-season-37-disney-exclusive-yellow-mirror-anthology",
+      "published_dt": "2026-09-06T00:38:11+06:00",
+      "published_date": "2026-09-06T00:38:11+06:00",
+      "source": "Collider",
       "region": "Entertainment",
-      "excerpt": "We take you inside the opening-day brunch in the Colorado mountains with the stars and filmmakers behind this year's lineup.",
-      "image": "",
+      "excerpt": "The Simpsons attempts something new in its latest Season 37 special, using a format normally reserved for Treehouse of Horrors.",
+      "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2026/05/santa-s-little-helper-bart-simpson-lisa-simpson-maggie-simpson-marge-simpson-homer-simpson-in-the-simpsons.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "posted",
+      "first_seen": "2026-09-06T00:52:19.075617+06:00",
+      "last_seen": "2026-09-06T00:52:19.075619+06:00",
+      "posted_at": "2026-09-06T01:16:26.044589+06:00"
+    },
+    "collider.com/netflix-atypical-comedy-gets-better-every-season": {
+      "title": "Netflix's Forgotten 4-Part Comedy Only Gets Better With Every Season",
+      "url": "https://collider.com/netflix-atypical-comedy-gets-better-every-season/",
+      "canonical": "collider.com/netflix-atypical-comedy-gets-better-every-season",
+      "published_dt": "2026-09-06T00:27:11+06:00",
+      "published_date": "2026-09-06T00:27:11+06:00",
+      "source": "Collider",
+      "region": "Entertainment",
+      "excerpt": "Netflix's forgotten coming-of-age comedy Atypical is a series that gets better with every subsequent season.",
+      "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2021/07/atypical-season-4.jpg",
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-09-05T22:37:56.121474+06:00",
-      "last_seen": "2026-09-05T22:37:56.121478+06:00"
+      "first_seen": "2026-09-06T00:52:19.075710+06:00",
+      "last_seen": "2026-09-06T00:52:19.075711+06:00"
+    },
+    "collider.com/spider-man-into-the-spider-verse-streaming-hit-netflix-september-2026": {
+      "title": "The Best 'Spider-Man' Movie Is Officially a Netflix Smash Hit",
+      "url": "https://collider.com/spider-man-into-the-spider-verse-streaming-hit-netflix-september-2026/",
+      "canonical": "collider.com/spider-man-into-the-spider-verse-streaming-hit-netflix-september-2026",
+      "published_dt": "2026-09-06T00:00:11+06:00",
+      "published_date": "2026-09-06T00:00:11+06:00",
+      "source": "Collider",
+      "region": "Entertainment",
+      "excerpt": "As Spider-Man: Brand New Day swings to new heights at the box office, Spider-Man: Into the Spider-Verse is a smash on streaming.",
+      "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2026/06/netflix.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-09-06T00:52:19.075855+06:00",
+      "last_seen": "2026-09-06T00:52:19.075856+06:00"
+    },
+    "collider.com/near-perfect-sci-fi-movies-rewatch-immediately": {
+      "title": "10 Near-Perfect Sci-Fi Movies You'll Want to Rewatch Immediately",
+      "url": "https://collider.com/near-perfect-sci-fi-movies-rewatch-immediately/",
+      "canonical": "collider.com/near-perfect-sci-fi-movies-rewatch-immediately",
+      "published_dt": "2026-09-05T23:28:11+06:00",
+      "published_date": "2026-09-05T23:28:11+06:00",
+      "source": "Collider",
+      "region": "Entertainment",
+      "excerpt": "From Soylent Green to Nausicaä of the Valley of the Wind, these sci-fi movies are so good that you'll want to rewatch them as soon as they're over.",
+      "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2022/05/Teto-Nausicaa-Of-The-Valley-Of-The-Wind.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-09-06T00:52:19.075940+06:00",
+      "last_seen": "2026-09-06T00:52:19.075942+06:00"
+    },
+    "collider.com/thriller-shows-sleeper-hits-better-after-season-1": {
+      "title": "10 Thriller Sleeper Hits That Got So Much Better After Season 1",
+      "url": "https://collider.com/thriller-shows-sleeper-hits-better-after-season-1/",
+      "canonical": "collider.com/thriller-shows-sleeper-hits-better-after-season-1",
+      "published_dt": "2026-09-05T23:04:11+06:00",
+      "published_date": "2026-09-05T23:04:11+06:00",
+      "source": "Collider",
+      "region": "Entertainment",
+      "excerpt": "Discover gripping thriller TV series that evolved and elevated after their first season, from Tokyo Vice to The Old Man.",
+      "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2025/09/the-old-man-season-2-episode-4-jeff-bridges-john-lithgow-scene.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-09-06T00:52:19.076017+06:00",
+      "last_seen": "2026-09-06T00:52:19.076018+06:00"
+    },
+    "collider.com/netflix-bridgerton-replacement-the-doll-premiere-date-september-2026": {
+      "title": "Netflix's New 'Bridgerton' Replacement Officially Sets 2026 Release Date",
+      "url": "https://collider.com/netflix-bridgerton-replacement-the-doll-premiere-date-september-2026/",
+      "canonical": "collider.com/netflix-bridgerton-replacement-the-doll-premiere-date-september-2026",
+      "published_dt": "2026-09-05T23:00:11+06:00",
+      "published_date": "2026-09-05T23:00:11+06:00",
+      "source": "Collider",
+      "region": "Entertainment",
+      "excerpt": "Forget Bridgerton, Netflix's next romantic period drama has an official premiere date. Get all the details here.",
+      "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2026/09/the-doll-netflix-drama.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-09-06T00:52:19.076102+06:00",
+      "last_seen": "2026-09-06T00:52:19.076103+06:00"
+    },
+    "collider.com/masters-of-the-universe-skeletor-ate-my-homework": {
+      "title": "'Masters of the Universe' Officially Changes Genres for New He-Man Release",
+      "url": "https://collider.com/masters-of-the-universe-skeletor-ate-my-homework/",
+      "canonical": "collider.com/masters-of-the-universe-skeletor-ate-my-homework",
+      "published_dt": "2026-09-05T22:46:14+06:00",
+      "published_date": "2026-09-05T22:46:14+06:00",
+      "source": "Collider",
+      "region": "Entertainment",
+      "excerpt": "3 months after the release of Masters of the Universe, He-Man is officially changing genres for his next release.",
+      "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2026/04/masters-of-the-universe-1.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-09-06T00:52:19.076177+06:00",
+      "last_seen": "2026-09-06T00:52:19.076178+06:00"
     },
     "collider.com/conan-obrien-produced-sci-fi-series-people-of-earth-sitcom": {
       "title": "10 Years Later, Conan O’Brien’s Weirdest Sci-Fi Series Is Still a Masterpiece",
@@ -973,8 +1093,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-09-05T22:37:56.548460+06:00",
-      "last_seen": "2026-09-05T22:37:56.548469+06:00"
+      "first_seen": "2026-09-06T00:52:19.076262+06:00",
+      "last_seen": "2026-09-06T00:52:19.076263+06:00"
     },
     "collider.com/9-years-later-guy-ritchies-fantasy-flop-officially-gets-a-second-chance-on-hbo-max": {
       "title": "9 Years Later, Guy Ritchie’s Fantasy Flop Officially Gets a Second Chance on HBO Max",
@@ -989,121 +1109,56 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-09-05T22:37:56.548707+06:00",
-      "last_seen": "2026-09-05T22:37:56.548712+06:00"
+      "first_seen": "2026-09-06T00:52:19.076348+06:00",
+      "last_seen": "2026-09-06T00:52:19.076349+06:00"
     },
-    "collider.com/blade-runner-2049-hbo-max-number-one-streaming-hit-september-2026": {
-      "title": "The 10/10 Sci-Fi Gem That Ridley Scott Felt Was “Too Long” Is the #1 Hit on HBO Max",
-      "url": "https://collider.com/blade-runner-2049-hbo-max-number-one-streaming-hit-september-2026/",
-      "canonical": "collider.com/blade-runner-2049-hbo-max-number-one-streaming-hit-september-2026",
-      "published_dt": "2026-09-05T21:31:11+06:00",
-      "published_date": "2026-09-05T21:31:11+06:00",
-      "source": "Collider",
+    "tvline.com/2247670/classic-cartoons-deserve-x-men-97-style-revival": {
+      "title": "5 Classic Cartoons That Deserve An X-Men '97-Style Revival",
+      "url": "https://www.tvline.com/2247670/classic-cartoons-deserve-x-men-97-style-revival/",
+      "canonical": "tvline.com/2247670/classic-cartoons-deserve-x-men-97-style-revival",
+      "published_dt": "2026-09-05T23:12:00+06:00",
+      "published_date": "2026-09-05T23:12:00+06:00",
+      "source": "TVLine",
       "region": "Entertainment",
-      "excerpt": "Blade Runner 2049 is the No. 1 movie on HBO Max years after Ridley Scott famously criticized the sci-fi sequel’s lengthy runtime.",
-      "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2026/03/ridley-scott-1.jpg",
+      "excerpt": "X-Men '97 is continuing to soar on Disney+. Here are five other classic cartoons that deserve their own long-awaited animated revival.",
+      "image": "https://www.tvline.com/img/gallery/5-classic-cartoons-that-deserve-an-x-men-97-style-revival/l-intro-1787706300.jpg",
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-09-05T22:37:56.548917+06:00",
-      "last_seen": "2026-09-05T22:37:56.548922+06:00"
+      "first_seen": "2026-09-06T00:52:19.318089+06:00",
+      "last_seen": "2026-09-06T00:52:19.318091+06:00"
     },
-    "collider.com/glen-powell-confession-of-murder-american-remake": {
-      "title": "14 Years Later, Glen Powell Is Officially Remaking a Classic Action Thriller",
-      "url": "https://collider.com/glen-powell-confession-of-murder-american-remake/",
-      "canonical": "collider.com/glen-powell-confession-of-murder-american-remake",
-      "published_dt": "2026-09-05T21:29:03+06:00",
-      "published_date": "2026-09-05T21:29:03+06:00",
-      "source": "Collider",
+    "tvline.com/2249793/best-tv-shows-like-frasier": {
+      "title": "10 Best TV Shows Like Frasier",
+      "url": "https://www.tvline.com/2249793/best-tv-shows-like-frasier/",
+      "canonical": "tvline.com/2249793/best-tv-shows-like-frasier",
+      "published_dt": "2026-09-05T23:02:00+06:00",
+      "published_date": "2026-09-05T23:02:00+06:00",
+      "source": "TVLine",
       "region": "Entertainment",
-      "excerpt": "Glen Powell and Universal are officially teaming up for an American remake of a legendary action thriller. Read on for more",
-      "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2026/06/glen-powell-twisters-1.avif",
+      "excerpt": "Fans of Frasier have plenty of sitcoms to explore, especially if sharp dialogue, eccentric characters, and sophisticated humor are what keep you watching.",
+      "image": "https://www.tvline.com/img/gallery/10-best-tv-shows-like-frasier/l-intro-1788374831.jpg",
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-09-05T22:37:56.549102+06:00",
-      "last_seen": "2026-09-05T22:37:56.549106+06:00"
+      "first_seen": "2026-09-06T00:52:19.318178+06:00",
+      "last_seen": "2026-09-06T00:52:19.318179+06:00"
     },
-    "collider.com/normal-people-hulu-romance-streaming": {
-      "title": "Hulu's 91% RT Romance Is Quietly One of the Best Shows on Streaming",
-      "url": "https://collider.com/normal-people-hulu-romance-streaming/",
-      "canonical": "collider.com/normal-people-hulu-romance-streaming",
-      "published_dt": "2026-09-05T21:23:11+06:00",
-      "published_date": "2026-09-05T21:23:11+06:00",
-      "source": "Collider",
+    "tvline.com/2251698/im-a-celebrity-get-me-out-of-here-maura-higgins-rob-rausch-host-peacock": {
+      "title": "Peacock Orders New Take On I'm A Celebrity... Get Me Out Of Here, With Maura Higgins And Rob Rausch As Hosts",
+      "url": "https://www.tvline.com/2251698/im-a-celebrity-get-me-out-of-here-maura-higgins-rob-rausch-host-peacock/",
+      "canonical": "tvline.com/2251698/im-a-celebrity-get-me-out-of-here-maura-higgins-rob-rausch-host-peacock",
+      "published_dt": "2026-09-05T23:00:00+06:00",
+      "published_date": "2026-09-05T23:00:00+06:00",
+      "source": "TVLine",
       "region": "Entertainment",
-      "excerpt": "Hulu's Normal People, starring Daisy Edgar-Jones and Paul Mescal, remains a must-watch romantic drama.",
-      "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2026/09/normal-people-connell-marianne.jpg",
+      "excerpt": "Peacock has ordered a new U.S. adaptation of I'm a Celebrity... Get Me Out of Here, with Maura Higgins and Rob Rausch set to host.",
+      "image": "https://www.tvline.com/img/gallery/peacock-orders-new-take-on-im-a-celebrity-get-me-out-of-here-with-maura-higgins-and-rob-rausch-as-hosts/l-intro-1788624313.jpg",
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-09-05T22:37:56.549297+06:00",
-      "last_seen": "2026-09-05T22:37:56.549303+06:00"
-    },
-    "collider.com/zach-cregger-resident-evil-reboot-box-office-opening-weekend-record": {
-      "title": "‘Resident Evil’ Is Officially Coming Back Bigger Than Ever at the Box Office",
-      "url": "https://collider.com/zach-cregger-resident-evil-reboot-box-office-opening-weekend-record/",
-      "canonical": "collider.com/zach-cregger-resident-evil-reboot-box-office-opening-weekend-record",
-      "published_dt": "2026-09-05T20:45:11+06:00",
-      "published_date": "2026-09-05T20:45:11+06:00",
-      "source": "Collider",
-      "region": "Entertainment",
-      "excerpt": "Zach Cregger’s new Resident Evil movie is eyeing a franchise-record box office debut as the horror series returns to theaters.",
-      "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2026/04/resident-evil-1.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-09-05T22:37:56.549486+06:00",
-      "last_seen": "2026-09-05T22:37:56.549491+06:00"
-    },
-    "collider.com/ready-or-not-hbo-max-thriller-streaming-hit": {
-      "title": "HBO Max's 96-Minute Thriller Is One of the Biggest Streaming Hits in the World",
-      "url": "https://collider.com/ready-or-not-hbo-max-thriller-streaming-hit/",
-      "canonical": "collider.com/ready-or-not-hbo-max-thriller-streaming-hit",
-      "published_dt": "2026-09-05T20:04:11+06:00",
-      "published_date": "2026-09-05T20:04:11+06:00",
-      "source": "Collider",
-      "region": "Entertainment",
-      "excerpt": "Ready or Not is charting on streaming, bringing audiences back to this gripping thriller starring Samara Weaving.",
-      "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2022/12/samara-nesta.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-09-05T22:37:56.549801+06:00",
-      "last_seen": "2026-09-05T22:37:56.549806+06:00"
-    },
-    "collider.com/mayday-ryan-reynolds-apple-tv-streaming-hit-september-2026": {
-      "title": "Ryan Reynolds’ ‘Rush Hour’ in Russia Is Officially Apple TV’s Newest Blockbuster",
-      "url": "https://collider.com/mayday-ryan-reynolds-apple-tv-streaming-hit-september-2026/",
-      "canonical": "collider.com/mayday-ryan-reynolds-apple-tv-streaming-hit-september-2026",
-      "published_dt": "2026-09-05T20:00:11+06:00",
-      "published_date": "2026-09-05T20:00:11+06:00",
-      "source": "Collider",
-      "region": "Entertainment",
-      "excerpt": "Ryan Reynolds’ Mayday, a twisted new action-packed buddy comedy co-starring Kenneth Branagh, is a new Apple TV streaming hit.",
-      "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2026/05/ryan-reynolds.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "posted",
-      "first_seen": "2026-09-05T22:37:56.549982+06:00",
-      "last_seen": "2026-09-05T22:37:56.549986+06:00",
-      "posted_at": "2026-09-05T22:46:40.130361+06:00"
-    },
-    "collider.com/the-gentlemen-season-2-kaya-scodelario-benedetta-porcaroli-susie-bella": {
-      "title": "'The Gentlemen's Kaya Scodelario and Benedetta Porcaroli React to Season 2's Most Tragic Death",
-      "url": "https://collider.com/the-gentlemen-season-2-kaya-scodelario-benedetta-porcaroli-susie-bella/",
-      "canonical": "collider.com/the-gentlemen-season-2-kaya-scodelario-benedetta-porcaroli-susie-bella",
-      "published_dt": "2026-09-05T20:00:11+06:00",
-      "published_date": "2026-09-05T20:00:11+06:00",
-      "source": "Collider",
-      "region": "Entertainment",
-      "excerpt": "Kaya Scodelario and Benedetta Porcaroli discuss The Gentlemen and go deep into their characters in Season 2.",
-      "image": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2026/09/the-gentlemen-kaya-scodelario-benedetta-porcaroli.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-09-05T22:37:56.550152+06:00",
-      "last_seen": "2026-09-05T22:37:56.550156+06:00"
+      "first_seen": "2026-09-06T00:52:19.318268+06:00",
+      "last_seen": "2026-09-06T00:52:19.318269+06:00"
     },
     "tvline.com/2247669/andre-braugher-homicide-life-on-the-street-character-based-real-cop": {
       "title": "Andre Braugher's Breakout Homicide: Life On The Street Role Was Based On A Real Cop",
@@ -1118,8 +1173,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-09-05T22:37:56.777363+06:00",
-      "last_seen": "2026-09-05T22:37:56.777370+06:00"
+      "first_seen": "2026-09-06T00:52:19.318347+06:00",
+      "last_seen": "2026-09-06T00:52:19.318348+06:00"
     },
     "tvline.com/2247667/why-supernatural-creator-eric-kripke-quit-after-5-seasons": {
       "title": "Why Supernatural's Creator Quit The Hit Show After Just 5 Seasons",
@@ -1133,9 +1188,10 @@
       "image": "https://www.tvline.com/img/gallery/why-supernaturals-creator-quit-the-hit-show-after-just-5-seasons/l-intro-1787751728.jpg",
       "discovery": "rss",
       "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-09-05T22:37:56.777576+06:00",
-      "last_seen": "2026-09-05T22:37:56.777581+06:00"
+      "status": "posted",
+      "first_seen": "2026-09-06T00:52:19.318427+06:00",
+      "last_seen": "2026-09-06T00:52:19.318428+06:00",
+      "posted_at": "2026-09-06T01:17:13.267604+06:00"
     },
     "tvline.com/2243083/most-underrated-tv-shows-streaming-hbo-max": {
       "title": "15 Most Underrated TV Shows Streaming On HBO Max Right Now",
@@ -1149,9 +1205,10 @@
       "image": "https://www.tvline.com/img/gallery/15-most-underrated-tv-shows-streaming-on-hbo-max-right-now/l-intro-1788269697.jpg",
       "discovery": "rss",
       "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-09-05T22:37:56.777761+06:00",
-      "last_seen": "2026-09-05T22:37:56.777765+06:00"
+      "status": "posted",
+      "first_seen": "2026-09-06T00:52:19.318504+06:00",
+      "last_seen": "2026-09-06T00:52:19.318505+06:00",
+      "posted_at": "2026-09-06T01:17:28.765585+06:00"
     },
     "tvline.com/2251593/anson-mount-pike-star-trek-strange-new-worlds-season-4-episode-7-performance": {
       "title": "TVLine's Performer Of The Week: Anson Mount",
@@ -1165,9 +1222,10 @@
       "image": "https://www.tvline.com/img/gallery/tvlines-performer-of-the-week-anson-mount/l-intro-1788478248.jpg",
       "discovery": "rss",
       "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-09-05T22:37:56.777935+06:00",
-      "last_seen": "2026-09-05T22:37:56.777939+06:00"
+      "status": "posted",
+      "first_seen": "2026-09-06T00:52:19.318583+06:00",
+      "last_seen": "2026-09-06T00:52:19.318584+06:00",
+      "posted_at": "2026-09-06T01:17:49.561889+06:00"
     },
     "tvline.com/2241463/famous-actors-forgot-guest-starred-seinfeld": {
       "title": "5 Famous Actors You Forgot Guest-Starred On Seinfeld",
@@ -1181,9 +1239,10 @@
       "image": "https://www.tvline.com/img/gallery/5-famous-actors-you-forgot-guest-starred-on-seinfeld/l-intro-1786734111.jpg",
       "discovery": "rss",
       "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-09-05T22:37:56.778098+06:00",
-      "last_seen": "2026-09-05T22:37:56.778102+06:00"
+      "status": "posted",
+      "first_seen": "2026-09-06T00:52:19.318655+06:00",
+      "last_seen": "2026-09-06T00:52:19.318656+06:00",
+      "posted_at": "2026-09-06T01:18:01.630324+06:00"
     },
     "tvline.com/2240760/star-trek-john-de-lancie-guest-star-ann-jillian-sitcom-its-a-living": {
       "title": "Star Trek's John De Lancie Had A Big Guest Role On A Nearly Forgotten Ann Jillian Sitcom",
@@ -1197,9 +1256,10 @@
       "image": "https://www.tvline.com/img/gallery/star-treks-john-de-lancie-had-a-big-guest-role-on-a-nearly-forgotten-ann-jillian-sitcom/l-intro-1787234901.jpg",
       "discovery": "rss",
       "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-09-05T22:37:56.778320+06:00",
-      "last_seen": "2026-09-05T22:37:56.778325+06:00"
+      "status": "posted",
+      "first_seen": "2026-09-06T00:52:19.318736+06:00",
+      "last_seen": "2026-09-06T00:52:19.318736+06:00",
+      "posted_at": "2026-09-06T01:18:07.120119+06:00"
     },
     "tvline.com/2248702/what-to-watch-september-5-2026-tv-shows-movies": {
       "title": "What To Watch Saturday: New Haunted Harmony Mystery, Crossroad Springs Returns, And More",
@@ -1214,8 +1274,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-09-05T22:37:56.778513+06:00",
-      "last_seen": "2026-09-05T22:37:56.778518+06:00"
+      "first_seen": "2026-09-06T00:52:19.318817+06:00",
+      "last_seen": "2026-09-06T00:52:19.318818+06:00"
     },
     "tvline.com/2251563/quote-of-the-day-glen-powell-being-tested": {
       "title": "Quote Of The Day By Glen Powell: 'When You Go Out There And Things Inevitably Do Not Go According To Plan, Just Remember That's When Your Movie's Plot Is Just Getting Interesting...'",
@@ -1230,8 +1290,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-09-05T22:37:56.778704+06:00",
-      "last_seen": "2026-09-05T22:37:56.778708+06:00"
+      "first_seen": "2026-09-06T00:52:19.318904+06:00",
+      "last_seen": "2026-09-06T00:52:19.318905+06:00"
     },
     "tvline.com/2251575/wheel-of-fortune-announcer-fired-jim-thornton-investigation": {
       "title": "Wheel Of Fortune Announcer Jim Thornton Fired After Investigation Into Airplane Incident",
@@ -1246,8 +1306,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-09-05T22:37:56.779210+06:00",
-      "last_seen": "2026-09-05T22:37:56.779214+06:00"
+      "first_seen": "2026-09-06T00:52:19.319138+06:00",
+      "last_seen": "2026-09-06T00:52:19.319139+06:00"
     },
     "tvline.com/2251573/spider-noir-canceled-season-2-nicolas-cage-prime-video": {
       "title": "Spider-Noir, Starring Nicolas Cage, Canceled At Prime Video After 1 Season",
@@ -1262,8 +1322,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-09-05T22:37:56.779405+06:00",
-      "last_seen": "2026-09-05T22:37:56.779410+06:00"
+      "first_seen": "2026-09-06T00:52:19.319208+06:00",
+      "last_seen": "2026-09-06T00:52:19.319209+06:00"
     },
     "tvline.com/2247662/ways-house-of-the-dragon-better-than-game-of-thrones": {
       "title": "5 Ways House Of The Dragon Is Better Than Game Of Thrones",
@@ -1278,42 +1338,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-09-05T22:37:56.779577+06:00",
-      "last_seen": "2026-09-05T22:37:56.779581+06:00"
-    },
-    "tvline.com/2251351/timothy-olyphant-played-himself-rob-lowe-sitcom-the-grinder": {
-      "title": "Timothy Olyphant Played Himself On This Short-Lived Rob Lowe Sitcom",
-      "url": "https://www.tvline.com/2251351/timothy-olyphant-played-himself-rob-lowe-sitcom-the-grinder/",
-      "canonical": "tvline.com/2251351/timothy-olyphant-played-himself-rob-lowe-sitcom-the-grinder",
-      "published_dt": "2026-09-05T02:12:00+06:00",
-      "published_date": "2026-09-05T02:12:00+06:00",
-      "source": "TVLine",
-      "region": "Entertainment",
-      "excerpt": "Timothy Olyphant guest-starred as an exaggerated version of himself on a short-lived Rob Lowe sitcom, complete with a fake TV role and a real award.",
-      "image": "https://www.tvline.com/img/gallery/timothy-olyphant-played-himself-on-this-short-lived-rob-lowe-sitcom/l-intro-1788545214.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "posted",
-      "first_seen": "2026-09-05T22:37:56.779743+06:00",
-      "last_seen": "2026-09-05T22:37:56.779746+06:00",
-      "posted_at": "2026-09-05T22:47:23.131208+06:00"
-    },
-    "tvline.com/2251478/emmys-2026-supporting-actor-limited-series-nominees-vote-poll": {
-      "title": "Emmys 2026 Poll: Who Should Win For Supporting Actor In A Limited Series?",
-      "url": "https://www.tvline.com/2251478/emmys-2026-supporting-actor-limited-series-nominees-vote-poll/",
-      "canonical": "tvline.com/2251478/emmys-2026-supporting-actor-limited-series-nominees-vote-poll",
-      "published_dt": "2026-09-05T02:07:33+06:00",
-      "published_date": "2026-09-05T02:07:33+06:00",
-      "source": "TVLine",
-      "region": "Entertainment",
-      "excerpt": "It's our final Primetime Emmy poll before the big night! Who do you think should win for Supporting Actor in a Limited Series this year?",
-      "image": "https://www.tvline.com/img/gallery/emmys-2026-poll-who-should-win-for-supporting-actor-in-a-limited-series/l-intro-1788542412.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "posted",
-      "first_seen": "2026-09-05T22:37:56.779910+06:00",
-      "last_seen": "2026-09-05T22:37:56.779913+06:00",
-      "posted_at": "2026-09-05T22:47:13.087889+06:00"
+      "first_seen": "2026-09-06T00:52:19.319284+06:00",
+      "last_seen": "2026-09-06T00:52:19.319285+06:00"
     },
     "tvline.com/2251197/gilligans-island-bob-denver-star-classic-70-kids-show": {
       "title": "After Gilligan's Island, Bob Denver Starred In This Even Goofier '70s Kids' Show",
@@ -1328,73 +1354,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-09-05T22:37:56.780075+06:00",
-      "last_seen": "2026-09-05T22:37:56.780079+06:00"
-    },
-    "tvline.com/2251370/the-monkees-60-year-anniversary-streaming-free": {
-      "title": "60 Years Ago, The Monkees Debuted On TV - Here's Where You Can Stream Their Show For Free",
-      "url": "https://www.tvline.com/2251370/the-monkees-60-year-anniversary-streaming-free/",
-      "canonical": "tvline.com/2251370/the-monkees-60-year-anniversary-streaming-free",
-      "published_dt": "2026-09-05T00:26:20+06:00",
-      "published_date": "2026-09-05T00:26:20+06:00",
-      "source": "TVLine",
-      "region": "Entertainment",
-      "excerpt": "The Monkees debuted on our TV sets in September 1966, a few weeks after their first single hit the charts. Here's where you can watch the show today.",
-      "image": "https://www.tvline.com/img/gallery/60-years-ago-the-monkees-debuted-on-tv-heres-where-you-can-stream-their-show-for-free/l-intro-1788545865.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-09-05T22:37:56.780277+06:00",
-      "last_seen": "2026-09-05T22:37:56.780283+06:00"
-    },
-    "tvline.com/2251345/greys-anatomy-season-23-cast-james-wolk-seth-norton": {
-      "title": "Grey's Anatomy Casts James Wolk As 'Handsome, Arrogant' Troublemaker For Season 23",
-      "url": "https://www.tvline.com/2251345/greys-anatomy-season-23-cast-james-wolk-seth-norton/",
-      "canonical": "tvline.com/2251345/greys-anatomy-season-23-cast-james-wolk-seth-norton",
-      "published_dt": "2026-09-05T00:05:28+06:00",
-      "published_date": "2026-09-05T00:05:28+06:00",
-      "source": "TVLine",
-      "region": "Entertainment",
-      "excerpt": "James Wolk is entering Shondaland by way of Grey's Anatomy, recurring this fall as a \"handsome, arrogant\" surgeon-turned-businessman. Get more details.",
-      "image": "https://www.tvline.com/img/gallery/james-wolk-joins-greys-anatomy-season-23/l-intro-1788544367.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "posted",
-      "first_seen": "2026-09-05T22:37:56.780447+06:00",
-      "last_seen": "2026-09-05T22:37:56.780451+06:00",
-      "posted_at": "2026-09-05T22:47:18.371032+06:00"
-    },
-    "tvline.com/2251325/dancing-with-the-stars-the-next-pro-results-project-runway-chad-powers-tv-questions": {
-      "title": "TVLine Asks: ﻿Did DWTS: The Next Pro Results Surprise? ﻿Who Should Win Project Runway? Was Chad Powers Giving The Purge? And More",
-      "url": "https://www.tvline.com/2251325/dancing-with-the-stars-the-next-pro-results-project-runway-chad-powers-tv-questions/",
-      "canonical": "tvline.com/2251325/dancing-with-the-stars-the-next-pro-results-project-runway-chad-powers-tv-questions",
-      "published_dt": "2026-09-05T00:00:00+06:00",
-      "published_date": "2026-09-05T00:00:00+06:00",
-      "source": "TVLine",
-      "region": "Entertainment",
-      "excerpt": "We tackle the biggest questions from the week in TV: Dancing With the Stars: The Next Pro, Project Runway, Chad Powers, and much more!",
-      "image": "https://www.tvline.com/img/gallery/tvline-asks-did-dwts-the-next-pro-results-surprise-who-should-win-project-runway-was-chad-powers-giving-the-purge-and-more/l-intro-1788543932.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-09-05T22:37:56.780636+06:00",
-      "last_seen": "2026-09-05T22:37:56.780640+06:00"
-    },
-    "tvline.com/2251282/lanterns-writer-power-ring-sexist-stopped-john-stewart-mother-chosen": {
-      "title": "Lanterns Writer Says The Power Ring's Sexism Stopped It From Choosing John Stewart's Mother",
-      "url": "https://www.tvline.com/2251282/lanterns-writer-power-ring-sexist-stopped-john-stewart-mother-chosen/",
-      "canonical": "tvline.com/2251282/lanterns-writer-power-ring-sexist-stopped-john-stewart-mother-chosen",
-      "published_dt": "2026-09-04T23:13:57+06:00",
-      "published_date": "2026-09-04T23:13:57+06:00",
-      "source": "TVLine",
-      "region": "Entertainment",
-      "excerpt": "Lanterns is using the Green Lantern mythos to explore inequality in America. John's mom would have been Earth's Green Lantern if the ring wasn't biased.",
-      "image": "https://www.tvline.com/img/gallery/lanterns-writer-says-the-power-rings-sexism-stopped-it-from-choosing-john-stewarts-mother/l-intro-1788540728.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-09-05T22:37:56.780814+06:00",
-      "last_seen": "2026-09-05T22:37:56.780817+06:00"
+      "first_seen": "2026-09-06T00:52:19.319504+06:00",
+      "last_seen": "2026-09-06T00:52:19.319505+06:00"
     },
     "bollywoodhungama.com/news/south-cinema/sreeleela-shares-throwback-video-of-herself-dancing-at-9-to-mark-janmashtami-2026-watch": {
       "title": "Sreeleela shares throwback video of herself dancing at 9 to mark Janmashtami 2026, watch",
@@ -1409,8 +1370,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-09-05T22:37:58.173077+06:00",
-      "last_seen": "2026-09-05T22:37:58.173086+06:00"
+      "first_seen": "2026-09-06T00:52:21.495448+06:00",
+      "last_seen": "2026-09-06T00:52:21.495450+06:00"
     },
     "bollywoodhungama.com/news/features/rebel-kid-aka-apoorva-reveals-why-she-left-india-for-new-york-i-had-absolutely-no-control-over-my-own-life": {
       "title": "Rebel Kid aka Apoorva reveals why she left India for New York: “I had absolutely no control over my own life”",
@@ -1425,8 +1386,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-09-05T22:37:58.173668+06:00",
-      "last_seen": "2026-09-05T22:37:58.173675+06:00"
+      "first_seen": "2026-09-06T00:52:21.495696+06:00",
+      "last_seen": "2026-09-06T00:52:21.495698+06:00"
     },
     "bollywoodhungama.com/news/features/amol-parashar-says-mirzapur-the-film-offers-audiences-a-chance-to-support-talent-driven-cinema-pens-heartfelt-review": {
       "title": "Amol Parashar says Mirzapur: The Film offers audiences a chance to support talent-driven cinema; pens heartfelt review",
@@ -1441,8 +1402,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-09-05T22:37:58.174154+06:00",
-      "last_seen": "2026-09-05T22:37:58.174159+06:00"
+      "first_seen": "2026-09-06T00:52:21.495915+06:00",
+      "last_seen": "2026-09-06T00:52:21.495916+06:00"
     },
     "bollywoodhungama.com/news/bollywood/drishyam-the-conclusion-trailer-to-be-out-on-september-9-ahead-of-release-on-gandhi-jayanti-2026": {
       "title": "Drishyam: The Conclusion trailer to be out on September 9 ahead of release on Gandhi Jayanti 2026",
@@ -1456,9 +1417,10 @@
       "image": "",
       "discovery": "rss",
       "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-09-05T22:37:58.174640+06:00",
-      "last_seen": "2026-09-05T22:37:58.174645+06:00"
+      "status": "posted",
+      "first_seen": "2026-09-06T00:52:21.496138+06:00",
+      "last_seen": "2026-09-06T00:52:21.496139+06:00",
+      "posted_at": "2026-09-06T01:17:07.569296+06:00"
     },
     "bollywoodhungama.com/news/parties-and-events/photos-kunal-kemmu-preity-zinta-sparsh-shrivastava-and-vanshika-dhir-snapped-promoting-vibe-at-rang-mandir-bandra": {
       "title": "Photos: Kunal Kemmu, Preity Zinta, Sparsh Shrivastava and Vanshika Dhir snapped promoting Vibe at Rang Mandir Bandra",
@@ -1473,8 +1435,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-09-05T22:37:58.174939+06:00",
-      "last_seen": "2026-09-05T22:37:58.174944+06:00"
+      "first_seen": "2026-09-06T00:52:21.496274+06:00",
+      "last_seen": "2026-09-06T00:52:21.496275+06:00"
     },
     "bollywoodhungama.com/news/features/rupali-ganguly-drops-adorable-yashoda-krishna-reel-on-janmashtami-2026": {
       "title": "Rupali Ganguly drops adorable Yashoda-Krishna reel on Janmashtami 2026",
@@ -1489,8 +1451,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-09-05T22:37:58.175378+06:00",
-      "last_seen": "2026-09-05T22:37:58.175383+06:00"
+      "first_seen": "2026-09-06T00:52:21.496466+06:00",
+      "last_seen": "2026-09-06T00:52:21.496467+06:00"
     },
     "bollywoodhungama.com/news/features/ishwak-singh-speaks-on-playing-gokul-in-gandhari-it-was-challenging-uncomfortable-at-times-and-deeply-personal": {
       "title": "Ishwak Singh speaks on playing Gokul in Gandhari: “It was challenging, uncomfortable at times and deeply personal”",
@@ -1505,8 +1467,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-09-05T22:37:58.176497+06:00",
-      "last_seen": "2026-09-05T22:37:58.176503+06:00"
+      "first_seen": "2026-09-06T00:52:21.496977+06:00",
+      "last_seen": "2026-09-06T00:52:21.496978+06:00"
     },
     "bollywoodhungama.com/news/features/exclusive-pratik-gandhi-says-his-ghamasaan-character-aditya-is-not-scared-of-losing-anything-which-makes-him-very-powerful": {
       "title": "EXCLUSIVE: Pratik Gandhi says his Ghamasaan character Aditya “is not scared of losing anything which makes him very powerful”",
@@ -1521,8 +1483,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-09-05T22:37:58.176932+06:00",
-      "last_seen": "2026-09-05T22:37:58.176937+06:00"
+      "first_seen": "2026-09-06T00:52:21.497190+06:00",
+      "last_seen": "2026-09-06T00:52:21.497191+06:00"
     },
     "bollywoodhungama.com/news/features/dia-mirza-speaks-out-against-paid-trolling-says-online-abuse-comes-with-no-consequence": {
       "title": "Dia Mirza speaks out against paid trolling, says online abuse comes with “no consequence”",
@@ -1537,8 +1499,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-09-05T22:37:58.177387+06:00",
-      "last_seen": "2026-09-05T22:37:58.177392+06:00"
+      "first_seen": "2026-09-06T00:52:21.497392+06:00",
+      "last_seen": "2026-09-06T00:52:21.497393+06:00"
     },
     "soompi.com/article/1868263wpp/song-kang-and-lee-jun-young-get-into-a-physical-fight-in-four-hands-two-sonatas": {
       "title": "Song Kang And Lee Jun Young Get Into A Physical Fight In “Four Hands, Two Sonatas”",
@@ -1553,8 +1515,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-09-05T22:37:58.633643+06:00",
-      "last_seen": "2026-09-05T22:37:58.633650+06:00"
+      "first_seen": "2026-09-06T00:52:21.906758+06:00",
+      "last_seen": "2026-09-06T00:52:21.906760+06:00"
     },
     "soompi.com/article/1868228wpp/kong-hyo-jin-notices-ominous-change-in-husband-jung-jun-wons-behavior-in-a-bona-fide-killer": {
       "title": "Kong Hyo Jin Notices Ominous Change In Husband Jung Jun Won’s Behavior In “A Bona Fide Killer”",
@@ -1569,8 +1531,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-09-05T22:37:58.634207+06:00",
-      "last_seen": "2026-09-05T22:37:58.634213+06:00"
+      "first_seen": "2026-09-06T00:52:21.907077+06:00",
+      "last_seen": "2026-09-06T00:52:21.907080+06:00"
     },
     "soompi.com/article/1868247wpp/exids-hani-anxiously-waits-for-someone-as-ha-seok-jin-falls-into-shock-in-love-on-the-menu": {
       "title": "EXID’s Hani Anxiously Waits For Someone As Ha Seok Jin Falls Into Shock In “Love On The Menu”",
@@ -1585,8 +1547,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-09-05T22:37:58.634798+06:00",
-      "last_seen": "2026-09-05T22:37:58.634804+06:00"
+      "first_seen": "2026-09-06T00:52:21.907366+06:00",
+      "last_seen": "2026-09-06T00:52:21.907368+06:00"
     },
     "soompi.com/article/1868243wpp/yoo-seung-ho-lures-lee-sae-rom-to-his-studio-in-flex-x-cop-2": {
       "title": "Yoo Seung Ho Lures Lee Sae Rom To His Studio In “Flex X Cop 2”",
@@ -1601,8 +1563,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-09-05T22:37:58.635331+06:00",
-      "last_seen": "2026-09-05T22:37:58.635337+06:00"
+      "first_seen": "2026-09-06T00:52:21.907624+06:00",
+      "last_seen": "2026-09-06T00:52:21.907625+06:00"
     },
     "soompi.com/article/1868236wpp/song-kang-is-left-stranded-as-lee-jun-young-flees-the-stage-in-four-hands-two-sonatas": {
       "title": "Song Kang Is Left Stranded As Lee Jun Young Flees The Stage In “Four Hands, Two Sonatas”",
@@ -1617,8 +1579,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-09-05T22:37:58.635862+06:00",
-      "last_seen": "2026-09-05T22:37:58.635867+06:00"
+      "first_seen": "2026-09-06T00:52:21.907875+06:00",
+      "last_seen": "2026-09-06T00:52:21.907876+06:00"
     },
     "soompi.com/article/1868233wpp/a-bona-fide-killer-kicks-off-final-2-weeks-on-no-1-ratings": {
       "title": "“A Bona Fide Killer” Kicks Off Final 2 Weeks On No. 1 Ratings",
@@ -1633,8 +1595,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-09-05T22:37:58.636406+06:00",
-      "last_seen": "2026-09-05T22:37:58.636412+06:00"
+      "first_seen": "2026-09-06T00:52:21.908141+06:00",
+      "last_seen": "2026-09-06T00:52:21.908143+06:00"
     },
     "soompi.com/article/1868229wpp/cortiss-fashion-becomes-their-1st-mv-to-hit-100-million-views": {
       "title": "CORTIS’s “FaSHioN” Becomes Their 1st MV To Hit 100 Million Views",
@@ -1649,8 +1611,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-09-05T22:37:58.636919+06:00",
-      "last_seen": "2026-09-05T22:37:58.636924+06:00"
+      "first_seen": "2026-09-06T00:52:21.908390+06:00",
+      "last_seen": "2026-09-06T00:52:21.908392+06:00"
     },
     "soompi.com/article/1865525wpp/8-k-dramas-with-invincible-and-overpowered-characters": {
       "title": "8 K-Dramas With Invincible And Overpowered Characters",
@@ -1665,8 +1627,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-09-05T22:37:58.637394+06:00",
-      "last_seen": "2026-09-05T22:37:58.637399+06:00"
+      "first_seen": "2026-09-06T00:52:21.908613+06:00",
+      "last_seen": "2026-09-06T00:52:21.908614+06:00"
     },
     "whats-on-netflix.com/news/the-gentlemen-season-2-cinematographer-darker-evolution": {
       "title": "Behind the Scenes of ‘The Gentlemen’ Season 2: Anamorphic Lenses and Expanding Guy Ritchie’s Posh World",
@@ -1681,8 +1643,8 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-09-05T22:37:59.877715+06:00",
-      "last_seen": "2026-09-05T22:37:59.877721+06:00"
+      "first_seen": "2026-09-06T00:52:22.968332+06:00",
+      "last_seen": "2026-09-06T00:52:22.968335+06:00"
     },
     "whats-on-netflix.com/what-to-watch/fito-paez-the-world-within-a-song-review": {
       "title": "The New Netflix Fito Páez Documentary is a Brutally Honest Portrait Built Strictly for the Superfans",
@@ -1697,342 +1659,509 @@
       "discovery": "rss",
       "date_estimated": false,
       "status": "pending",
-      "first_seen": "2026-09-05T22:37:59.877915+06:00",
-      "last_seen": "2026-09-05T22:37:59.877919+06:00"
-    },
-    "whats-on-netflix.com/interviews/finding-her-edge-showrunner-jeff-norton-teases-whats-in-store-for-season-2-as-filming-begins": {
-      "title": "‘Finding Her Edge’ Showrunner Jeff Norton Teases What’s in Store For Season 2 As Filming Begins",
-      "url": "https://www.whats-on-netflix.com/interviews/finding-her-edge-showrunner-jeff-norton-teases-whats-in-store-for-season-2-as-filming-begins/",
-      "canonical": "whats-on-netflix.com/interviews/finding-her-edge-showrunner-jeff-norton-teases-whats-in-store-for-season-2-as-filming-begins",
-      "published_dt": "2026-09-05T02:13:16+06:00",
-      "published_date": "2026-09-05T02:13:16+06:00",
-      "source": "What's on Netflix",
-      "region": "Entertainment",
-      "excerpt": "Season 2 takes on an 'off to college' feel, according to showrunner Jeff Norton.",
-      "image": "https://www.whats-on-netflix.com/wp-content/uploads/2026/09/jeff-norton-teases-finding-her-edge-season-2-as-filming-begins.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "posted",
-      "first_seen": "2026-09-05T22:37:59.878093+06:00",
-      "last_seen": "2026-09-05T22:37:59.878097+06:00",
-      "posted_at": "2026-09-05T22:47:28.376001+06:00"
+      "first_seen": "2026-09-06T00:52:22.968438+06:00",
+      "last_seen": "2026-09-06T00:52:22.968439+06:00"
     }
   },
   "events": {
-    "mayday_release": {
-      "event_id": "mayday_release",
-      "canonical_url": "collider.com/mayday-ryan-reynolds-apple-tv-streaming-hit-september-2026",
-      "original_url": "https://collider.com/mayday-ryan-reynolds-apple-tv-streaming-hit-september-2026/",
+    "simpsons_yellow_mirror_special": {
+      "event_id": "simpsons_yellow_mirror_special",
+      "canonical_url": "collider.com/the-simpsons-season-37-disney-exclusive-yellow-mirror-anthology",
+      "original_url": "https://collider.com/the-simpsons-season-37-disney-exclusive-yellow-mirror-anthology/",
       "source": "Collider",
       "region": "Entertainment",
-      "topic": "Streaming Platform News",
-      "institution": "Apple TV+",
-      "event_cluster_id": "evt_560913bc48",
+      "topic": "Major Film Announcements",
+      "institution": "Disney+",
+      "event_cluster_id": "evt_f0bf1eef18",
       "event_confidence": 0.6,
       "event_source_count": 1,
-      "headline": "Mayday",
-      "summary": "Apple TV’s new action‑comedy starring Ryan Reynolds and Kenneth Branagh tops the platform’s viewership charts.",
+      "headline": "The Simpsons",
+      "summary": "The \"Yellow Mirror\" special debuts exclusively on Disney+ as the third and final Season 37 short, using an anthology format for the first time.",
       "highlights": [
-        "Premiered on Apple TV on September 4, 2026",
-        "Certified Fresh with an 80% Rotten Tomatoes score",
-        "Directed by Jonathan Goldstein and John Francis Daley"
+        "\"Yellow Mirror\" released exclusively on Disney+",
+        "Third and final special of Season 37",
+        "Adopts an anthology format instead of the usual Treehouse of Horror"
       ],
       "concepts": [],
       "key_numbers": [],
-      "published_at": "2026-09-05T20:00:11+06:00",
-      "selected_at": "2026-09-05T22:46:40.130499+06:00",
+      "published_at": "2026-09-06T00:38:11+06:00",
+      "selected_at": "2026-09-06T01:16:26.044701+06:00",
       "status": "published",
-      "message_id": 264
+      "message_id": 275
     },
-    "affleck_aflac_commercial_2026": {
-      "event_id": "affleck_aflac_commercial_2026",
-      "canonical_url": "variety.com/2026/tv/news/aflac-ben-affleck-commercials-artists-equity-duck-insurance-1236852321",
-      "original_url": "https://variety.com/2026/tv/news/aflac-ben-affleck-commercials-artists-equity-duck-insurance-1236852321/",
+    "primetime_venice_premiere": {
+      "event_id": "primetime_venice_premiere",
+      "canonical_url": "deadline.com/2026/09/primetime-reviews-reaction-robert-pattinson-a24-film-1237068888",
+      "original_url": "https://deadline.com/2026/09/primetime-reviews-reaction-robert-pattinson-a24-film-1237068888/",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "topic": "Major Film Announcements",
+      "institution": "Deadline",
+      "event_cluster_id": "evt_cd987b9c5a",
+      "event_confidence": 0.6,
+      "event_source_count": 1,
+      "headline": "Primetime",
+      "summary": "A24’s dark drama ‘Primetime’ starring Robert Pattinson premieres at Venice with strong critical praise.",
+      "highlights": [
+        "Debuted at the Venice Film Festival",
+        "Rotten Tomatoes score sits at 92%",
+        "Critics highlight Pattinson’s performance as a potential Oscar contender"
+      ],
+      "concepts": [],
+      "key_numbers": [],
+      "published_at": "2026-09-05T21:54:27+06:00",
+      "selected_at": "2026-09-06T01:16:36.992612+06:00",
+      "status": "published",
+      "message_id": 277
+    },
+    "primetime_venice_ovation": {
+      "event_id": "primetime_venice_ovation",
+      "canonical_url": "variety.com/2026/film/festivals/robert-pattinson-primetime-venice-premiere-1236837079",
+      "original_url": "https://variety.com/2026/film/festivals/robert-pattinson-primetime-venice-premiere-1236837079/",
       "source": "Variety",
       "region": "Entertainment",
       "topic": "Major Film Announcements",
-      "institution": "Aflac",
-      "event_cluster_id": "evt_1d6e898db1",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Aflac",
-      "summary": "Aflac teams up with Ben Affleck’s Artists Equity for new TV commercials debuting on ESPN’s College GameDay.",
+      "institution": "A24",
+      "event_cluster_id": "evt_5e8e45630d",
+      "event_confidence": 1.0,
+      "event_source_count": 2,
+      "headline": "Primetime",
+      "summary": "Robert Pattinson’s thriller ‘Primetime’ premiered at Venice with a seven‑minute standing ovation and is set for theatrical release on Sept.",
       "highlights": [
-        "First ad airs Saturday on ESPN’s College GameDay",
-        "Affleck appears alongside coaches Nick Saban, Deion Sanders and Dawn Staley",
-        "Campaign will run through 2027 with a second flight around Thanksgiving"
+        "Venice debut earned a seven‑minute ovation",
+        "A24 will release the film in theaters on Sept. 25",
+        "Features Phoebe Bridgers in her acting debut and Jeff Zucker as himself"
       ],
       "concepts": [],
       "key_numbers": [],
-      "published_at": "2026-09-05T18:30:00+06:00",
-      "selected_at": "2026-09-05T22:46:45.525711+06:00",
+      "published_at": "2026-09-05T23:17:20+06:00",
+      "selected_at": "2026-09-06T01:16:43.090079+06:00",
       "status": "published",
-      "message_id": 265
+      "message_id": 278
     },
-    "release_date_confirmations_pattinson_2026": {
-      "event_id": "release_date_confirmations_pattinson_2026",
-      "canonical_url": "hollywoodreporter.com/movies/movie-news/robert-pattinson-movies-2026-primetime-odyssey-dune-drama-1236691678",
-      "original_url": "https://www.hollywoodreporter.com/movies/movie-news/robert-pattinson-movies-2026-primetime-odyssey-dune-drama-1236691678/",
+    "elsinore_the_liberation_telluride_premieres": {
+      "event_id": "elsinore_the_liberation_telluride_premieres",
+      "canonical_url": "indiewire.com/awards/predictions/elsinore-the-liberation-andrew-scott-carrie-coon-oscar-race-1235215087",
+      "original_url": "https://www.indiewire.com/awards/predictions/elsinore-the-liberation-andrew-scott-carrie-coon-oscar-race-1235215087/",
+      "source": "IndieWire",
+      "region": "Entertainment",
+      "topic": "Major Film Announcements",
+      "institution": "IndieWire",
+      "event_cluster_id": "evt_99d30d6afd",
+      "event_confidence": 0.6,
+      "event_source_count": 1,
+      "headline": "Elsinore",
+      "summary": "Simon Stone’s ‘Elsinore’ starring Andrew Scott dramatizes Ian Charleson’s 1989 HIV battle while performing Hamlet.",
+      "highlights": [
+        "Andrew Scott leads the Oscar‑hopeful cast",
+        "Set during the 1989 AIDS crisis in London",
+        "Focus distributes the film"
+      ],
+      "concepts": [],
+      "key_numbers": [],
+      "published_at": "2026-09-05T22:01:03+06:00",
+      "selected_at": "2026-09-06T01:16:49.175687+06:00",
+      "status": "published",
+      "message_id": 279
+    },
+    "the_difficult_bride_venice_screening": {
+      "event_id": "the_difficult_bride_venice_screening",
+      "canonical_url": "indiewire.com/features/interviews/the-difficult-bride-movie-rubaiyat-hossain-venice-1235214801",
+      "original_url": "https://www.indiewire.com/features/interviews/the-difficult-bride-movie-rubaiyat-hossain-venice-1235214801/",
+      "source": "IndieWire",
+      "region": "Entertainment",
+      "topic": "Major Film Announcements",
+      "institution": "IndieWire",
+      "event_cluster_id": "evt_2f92b8514b",
+      "event_confidence": 0.6,
+      "event_source_count": 1,
+      "headline": "The Difficult Bride",
+      "summary": "Rubaiyat Hossain’s feminist supernatural horror premieres at Venice’s Orizzonti section.",
+      "highlights": [
+        "Premieres at Venice on September 6",
+        "Explores bridal beauty pressures through body horror",
+        "Fourth feature by Bangladeshi director Rubaiyat Hossain"
+      ],
+      "concepts": [],
+      "key_numbers": [],
+      "published_at": "2026-09-05T21:51:32+06:00",
+      "selected_at": "2026-09-06T01:16:54.884161+06:00",
+      "status": "published",
+      "message_id": 280
+    },
+    "the_natural_state_telluride_documentary": {
+      "event_id": "the_natural_state_telluride_documentary",
+      "canonical_url": "deadline.com/2026/09/the-natural-states-interview-jane-campion-matt-dougherty-1237068829",
+      "original_url": "https://deadline.com/2026/09/the-natural-states-interview-jane-campion-matt-dougherty-1237068829/",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "topic": "Major Film Announcements",
+      "institution": "Deadline",
+      "event_cluster_id": "evt_b9077d3897",
+      "event_confidence": 0.6,
+      "event_source_count": 1,
+      "headline": "The Natural State",
+      "summary": "Documentary on anti‑guru U.G.",
+      "highlights": [
+        "World premiere at the Telluride Film Festival",
+        "Directed by Matt Dougherty",
+        "Executive produced by Oscar‑winner Jane Campion"
+      ],
+      "concepts": [],
+      "key_numbers": [],
+      "published_at": "2026-09-05T22:00:00+06:00",
+      "selected_at": "2026-09-06T01:17:00.336018+06:00",
+      "status": "published",
+      "message_id": 281
+    },
+    "drishyam_the_conclusion_trailer_release_date_announced": {
+      "event_id": "drishyam_the_conclusion_trailer_release_date_announced",
+      "canonical_url": "bollywoodhungama.com/news/bollywood/drishyam-the-conclusion-trailer-to-be-out-on-september-9-ahead-of-release-on-gandhi-jayanti-2026",
+      "original_url": "https://www.bollywoodhungama.com/news/bollywood/drishyam-the-conclusion-trailer-to-be-out-on-september-9-ahead-of-release-on-gandhi-jayanti-2026/",
+      "source": "Bollywood Hungama",
+      "region": "Entertainment",
+      "topic": "Trailers and First Looks",
+      "institution": "Bollywood Hungama",
+      "event_cluster_id": "evt_1aaf18e944",
+      "event_confidence": 0.6,
+      "event_source_count": 1,
+      "headline": "Drishyam: The Conclusion",
+      "summary": "The trailer for the Ajay Devgn‑starrer will drop on September 9 ahead of its October 2 theatrical release.",
+      "highlights": [
+        "Trailer release set for September 9, 2026",
+        "Film opens on Gandhi Jayanti, October 2, 2026",
+        "New poster reveals a bigger threat for the Salgaonkar family"
+      ],
+      "concepts": [],
+      "key_numbers": [],
+      "published_at": "2026-09-05T17:20:54+06:00",
+      "selected_at": "2026-09-06T01:17:07.569327+06:00",
+      "status": "published",
+      "message_id": 282
+    },
+    "supernatural_creator_quit": {
+      "event_id": "supernatural_creator_quit",
+      "canonical_url": "tvline.com/2247667/why-supernatural-creator-eric-kripke-quit-after-5-seasons",
+      "original_url": "https://www.tvline.com/2247667/why-supernatural-creator-eric-kripke-quit-after-5-seasons/",
+      "source": "TVLine",
+      "region": "Entertainment",
+      "topic": "Major Film Announcements",
+      "institution": "The CW",
+      "event_cluster_id": "evt_b95ecf8820",
+      "event_confidence": 0.6,
+      "event_source_count": 1,
+      "headline": "Supernatural",
+      "summary": "Creator Eric Kripke left the show after Season 5 due to the strain of 22‑episode seasons.",
+      "highlights": [
+        "Kripke quit after Season 5, citing creative fatigue",
+        "Sera Gamble took over as showrunner from Season 6",
+        "Kripke stayed on as executive consultant through the series end"
+      ],
+      "concepts": [],
+      "key_numbers": [],
+      "published_at": "2026-09-05T21:12:00+06:00",
+      "selected_at": "2026-09-06T01:17:13.267635+06:00",
+      "status": "published",
+      "message_id": 283
+    },
+    "burningman_reality_show": {
+      "event_id": "burningman_reality_show",
+      "canonical_url": "hollywoodreporter.com/news/general-news/bethenny-frankel-burning-man-tiktok-goggles-1236691488",
+      "original_url": "https://www.hollywoodreporter.com/news/general-news/bethenny-frankel-burning-man-tiktok-goggles-1236691488/",
       "source": "The Hollywood Reporter",
       "region": "Entertainment",
       "topic": "Major Film Announcements",
       "institution": "The Hollywood Reporter",
-      "event_cluster_id": "evt_33e453c7f3",
+      "event_cluster_id": "evt_2c3667e712",
       "event_confidence": 0.6,
       "event_source_count": 1,
-      "headline": "Primetime",
-      "summary": "Robert Pattinson says he’d be devastated to drop any of his 2026 films, including the A24 drama Primetime.",
+      "headline": "Bethenny Frankel",
+      "summary": "Bethenny Frankel is documenting her Burning Man experience on TikTok, turning the festival into a personal reality‑show style series.",
       "highlights": [
-        "Pattinson stars as Chris Hansen in A24’s Primetime, debuting at Venice Film Festival",
-        "He’s also slated for The Batman: Part II, The Drama, The Odyssey and Dune: Part Three this year"
+        "Frankel posted daily video recaps from the desert festival",
+        "Her content has tripled her average viewer count"
       ],
       "concepts": [],
       "key_numbers": [],
-      "published_at": "2026-09-05T21:26:53+06:00",
-      "selected_at": "2026-09-05T22:46:54.990477+06:00",
+      "published_at": "2026-09-05T21:09:35+06:00",
+      "selected_at": "2026-09-06T01:17:18.274294+06:00",
       "status": "published",
-      "message_id": 266
+      "message_id": 284
     },
-    "director_return_venice": {
-      "event_id": "director_return_venice",
-      "canonical_url": "deadline.com/2026/09/lee-chang-dong-possible-love-venice-netflix-1237067951",
-      "original_url": "https://deadline.com/2026/09/lee-chang-dong-possible-love-venice-netflix-1237067951/",
+    "underrated_hbo_max_shows": {
+      "event_id": "underrated_hbo_max_shows",
+      "canonical_url": "tvline.com/2243083/most-underrated-tv-shows-streaming-hbo-max",
+      "original_url": "https://www.tvline.com/2243083/most-underrated-tv-shows-streaming-hbo-max/",
+      "source": "TVLine",
+      "region": "Entertainment",
+      "topic": "Streaming Platform News",
+      "institution": "TVLine",
+      "event_cluster_id": "evt_f3fedf6a0e",
+      "event_confidence": 0.6,
+      "event_source_count": 1,
+      "headline": "Scavengers Reign",
+      "summary": "Sci‑fi animated series about a deep‑space cargo crew stranded on an alien planet, still streaming on HBO Max.",
+      "highlights": [
+        "Cancelled after one season, no second‑season order",
+        "First season remains available on HBO Max"
+      ],
+      "concepts": [],
+      "key_numbers": [],
+      "published_at": "2026-09-05T21:02:00+06:00",
+      "selected_at": "2026-09-06T01:17:28.765617+06:00",
+      "status": "published",
+      "message_id": 285
+    },
+    "primetime_film_review_deadline": {
+      "event_id": "primetime_film_review_deadline",
+      "canonical_url": "deadline.com/2026/09/primetime-review-robert-pattinson-lance-oppenheim-venice-1237068867",
+      "original_url": "https://deadline.com/2026/09/primetime-review-robert-pattinson-lance-oppenheim-venice-1237068867/",
       "source": "Deadline",
       "region": "Entertainment",
       "topic": "Major Film Announcements",
       "institution": "Deadline",
-      "event_cluster_id": "evt_9877fe07fd",
+      "event_cluster_id": "evt_340a91c5b2",
       "event_confidence": 0.6,
       "event_source_count": 1,
-      "headline": "Possible Love",
-      "summary": "Lee Chang‑dong returns after eight years with the Venice‑competing drama Possible Love.",
+      "headline": "Primetime",
+      "summary": "Lance Oppenheim’s dark drama starring Robert Pattinson debuted at Venice Competition.",
       "highlights": [
-        "Debuts in competition at Venice 2026",
-        "Netflix will release it in cinemas on Oct 23, 2026",
-        "Streaming on Netflix begins Nov 6, 2026"
+        "Premiered in competition at the Venice Film Festival",
+        "Features Robert Pattinson in a Jerry Maguire‑meets‑Dracula role",
+        "Distributed by A24"
       ],
       "concepts": [],
       "key_numbers": [],
-      "published_at": "2026-09-05T13:21:10+06:00",
-      "selected_at": "2026-09-05T22:47:01.792994+06:00",
+      "published_at": "2026-09-05T21:01:00+06:00",
+      "selected_at": "2026-09-06T01:17:33.921704+06:00",
       "status": "published",
-      "message_id": 267
+      "message_id": 286
     },
-    "film_acquisition_trailer": {
-      "event_id": "film_acquisition_trailer",
-      "canonical_url": "deadline.com/2026/09/loco-films-venice-guria-georgian-oscar-trailer-1237068270",
-      "original_url": "https://deadline.com/2026/09/loco-films-venice-guria-georgian-oscar-trailer-1237068270/",
-      "source": "Deadline",
+    "primetime_film_review_variety": {
+      "event_id": "primetime_film_review_variety",
+      "canonical_url": "variety.com/2026/film/reviews/primetime-review-robert-pattinson-1236846988",
+      "original_url": "https://variety.com/2026/film/reviews/primetime-review-robert-pattinson-1236846988/",
+      "source": "Variety",
       "region": "Entertainment",
-      "topic": "Trailers and First Looks",
-      "institution": "Deadline",
-      "event_cluster_id": "evt_6fb755e4fc",
+      "topic": "Major Film Announcements",
+      "institution": "Variety",
+      "event_cluster_id": "evt_63ef270fb4",
       "event_confidence": 0.6,
       "event_source_count": 1,
-      "headline": "Guria",
-      "summary": "Georgian drama Guria, selected as Georgia’s 2027 Oscar entry, has secured sales representation from Loco Films and released its first trailer.",
+      "headline": "Primetime",
+      "summary": "Robert Pattinson stars as Chris Hansen in the claustrophobic horror‑drama \"Primetime\".",
       "highlights": [
-        "Loco Films will handle worldwide sales for the film",
-        "The movie will premiere in the Spotlight section at the Venice Film Festival",
-        "Georgia has chosen Guria as its official Oscar submission for the 99th Academy Awards"
+        "Directed by Lance Oppenheim",
+        "Features a cast including Merritt Wever, Skyler Gisondo and Phoebe Bridgers",
+        "Set around the 2006 shift of \"To Catch a Predator\" to primetime"
       ],
       "concepts": [],
       "key_numbers": [],
-      "published_at": "2026-09-05T12:29:44+06:00",
-      "selected_at": "2026-09-05T22:47:07.783374+06:00",
+      "published_at": "2026-09-05T21:00:00+06:00",
+      "selected_at": "2026-09-06T01:17:38.870417+06:00",
       "status": "published",
-      "message_id": 268
+      "message_id": 287
     },
-    "emmy2026_supportingactor_poll": {
-      "event_id": "emmy2026_supportingactor_poll",
-      "canonical_url": "tvline.com/2251478/emmys-2026-supporting-actor-limited-series-nominees-vote-poll",
-      "original_url": "https://www.tvline.com/2251478/emmys-2026-supporting-actor-limited-series-nominees-vote-poll/",
+    "primetime_film_review_indiewire": {
+      "event_id": "primetime_film_review_indiewire",
+      "canonical_url": "indiewire.com/criticism/movies/a24-primetime-movie-review-robert-pattinson-chris-hansen-1235215068",
+      "original_url": "https://www.indiewire.com/criticism/movies/a24-primetime-movie-review-robert-pattinson-chris-hansen-1235215068/",
+      "source": "IndieWire",
+      "region": "Entertainment",
+      "topic": "Major Film Announcements",
+      "institution": "IndieWire",
+      "event_cluster_id": "evt_d6768f6c2f",
+      "event_confidence": 0.6,
+      "event_source_count": 1,
+      "headline": "Primetime",
+      "summary": "Robert Pattinson stars as a twisted version of Chris Hansen in the reality‑TV thriller \"Primetime.\"",
+      "highlights": [
+        "A24 will open the film in theaters",
+        "Premiere was at the 2026 Venice Film Festival",
+        "Release set for September 25, 2026"
+      ],
+      "concepts": [],
+      "key_numbers": [],
+      "published_at": "2026-09-05T21:00:00+06:00",
+      "selected_at": "2026-09-06T01:17:44.033255+06:00",
+      "status": "published",
+      "message_id": 288
+    },
+    "anson_mount_performer_week": {
+      "event_id": "anson_mount_performer_week",
+      "canonical_url": "tvline.com/2251593/anson-mount-pike-star-trek-strange-new-worlds-season-4-episode-7-performance",
+      "original_url": "https://www.tvline.com/2251593/anson-mount-pike-star-trek-strange-new-worlds-season-4-episode-7-performance/",
+      "source": "TVLine",
+      "region": "Entertainment",
+      "topic": "Major Film Announcements",
+      "institution": "TVLine",
+      "event_cluster_id": "evt_bcb527d1f2",
+      "event_confidence": 0.6,
+      "event_source_count": 1,
+      "headline": "Star Trek: Strange New Worlds",
+      "summary": "Anson Mount delivers a powerful, tear‑filled performance as Captain Pike in the September 3 episode “Like Chronitons Through the Hourglass.”",
+      "highlights": [
+        "Mount’s emotional breakthrough comes as Pike confronts the loss of his late girlfriend Marie Batel",
+        "The episode features a soap‑opera style plot with Q trainee Trelane manipulating the crew"
+      ],
+      "concepts": [],
+      "key_numbers": [],
+      "published_at": "2026-09-05T20:00:00+06:00",
+      "selected_at": "2026-09-06T01:17:49.561921+06:00",
+      "status": "published",
+      "message_id": 289
+    },
+    "pattinson_interview_primetime": {
+      "event_id": "pattinson_interview_primetime",
+      "canonical_url": "thewrap.com/creative-content/movies/robert-pattinson-chris-hansen-memes-reaction",
+      "original_url": "https://www.thewrap.com/creative-content/movies/robert-pattinson-chris-hansen-memes-reaction/",
+      "source": "TheWrap",
+      "region": "Entertainment",
+      "topic": "Major Film Announcements",
+      "institution": "TheWrap",
+      "event_cluster_id": "evt_42090db215",
+      "event_confidence": 0.6,
+      "event_source_count": 1,
+      "headline": "Primetime",
+      "summary": "Robert Pattinson debuted the film “Primetime” at Venice, hoping Chris Hansen enjoys the movie despite not seeing the final cut.",
+      "highlights": [
+        "Premiere held at the Venice Film Festival",
+        "Chris Hansen has not yet seen the finished film but promotes it on his TruBlu network",
+        "The movie will run exclusively with TruBlu ads for its first four weeks in theaters"
+      ],
+      "concepts": [],
+      "key_numbers": [],
+      "published_at": "2026-09-05T19:48:14+06:00",
+      "selected_at": "2026-09-06T01:17:54.683916+06:00",
+      "status": "published",
+      "message_id": 290
+    },
+    "seinfeld_guest_stars": {
+      "event_id": "seinfeld_guest_stars",
+      "canonical_url": "tvline.com/2241463/famous-actors-forgot-guest-starred-seinfeld",
+      "original_url": "https://www.tvline.com/2241463/famous-actors-forgot-guest-starred-seinfeld/",
       "source": "TVLine",
       "region": "Entertainment",
       "topic": "Casting",
       "institution": "TVLine",
-      "event_cluster_id": "evt_098e782f70",
+      "event_cluster_id": "evt_0cafe6efba",
       "event_confidence": 0.6,
       "event_source_count": 1,
-      "headline": "DTF St. Louis",
-      "summary": "HBO's \"DTF St.",
+      "headline": "Seinfeld",
+      "summary": "Five future stars made early guest appearances on the iconic sitcom.",
       "highlights": [
-        "Three of six nominees come from HBO's \"DTF St. Louis\"",
-        "Jason Bateman is nominated for both supporting (DTF St. Louis) and lead (Black Rabbit) categories",
-        "Other nominees include Nick Offerman (Netflix's \"Death by Lightning\") and Charles Melton (Netflix's \"BEEF\")"
+        "Mariska Hargitay appeared in the 1993 episode \"The Pilot\"",
+        "Jon Favreau played a clown in the 1994 episode \"The Fire\"",
+        "Bob Odenkirk guest‑starred as Elaine’s boyfriend Ben in 1996"
       ],
       "concepts": [],
       "key_numbers": [],
-      "published_at": "2026-09-05T02:07:33+06:00",
-      "selected_at": "2026-09-05T22:47:13.087920+06:00",
+      "published_at": "2026-09-05T19:12:00+06:00",
+      "selected_at": "2026-09-06T01:18:01.630358+06:00",
       "status": "published",
-      "message_id": 269
+      "message_id": 291
     },
-    "casting_james_wolk_season23": {
-      "event_id": "casting_james_wolk_season23",
-      "canonical_url": "tvline.com/2251345/greys-anatomy-season-23-cast-james-wolk-seth-norton",
-      "original_url": "https://www.tvline.com/2251345/greys-anatomy-season-23-cast-james-wolk-seth-norton/",
-      "source": "TVLine",
-      "region": "Entertainment",
-      "topic": "Casting",
-      "institution": "ABC",
-      "event_cluster_id": "evt_8a69482e67",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Grey's Anatomy",
-      "summary": "James Wolk joins Grey's Anatomy as recurring surgeon-turned-businessman Seth Norton for Season 23.",
-      "highlights": [
-        "Wolk will appear in at least four episodes",
-        "His character runs a luxury medical center, Olympic Regent Health",
-        "Season 23 premieres Oct 15 on ABC"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-09-05T00:05:28+06:00",
-      "selected_at": "2026-09-05T22:47:18.371066+06:00",
-      "status": "published",
-      "message_id": 270
-    },
-    "olyphant_self_cameo": {
-      "event_id": "olyphant_self_cameo",
-      "canonical_url": "tvline.com/2251351/timothy-olyphant-played-himself-rob-lowe-sitcom-the-grinder",
-      "original_url": "https://www.tvline.com/2251351/timothy-olyphant-played-himself-rob-lowe-sitcom-the-grinder/",
+    "de_lancie_early_guest_role": {
+      "event_id": "de_lancie_early_guest_role",
+      "canonical_url": "tvline.com/2240760/star-trek-john-de-lancie-guest-star-ann-jillian-sitcom-its-a-living",
+      "original_url": "https://www.tvline.com/2240760/star-trek-john-de-lancie-guest-star-ann-jillian-sitcom-its-a-living/",
       "source": "TVLine",
       "region": "Entertainment",
       "topic": "Major Film Announcements",
-      "institution": "Rob Lowe Sitcom",
-      "event_cluster_id": "evt_3871848181",
+      "institution": "TVLine",
+      "event_cluster_id": "evt_b9db37d73a",
       "event_confidence": 0.6,
       "event_source_count": 1,
-      "headline": "The Grinder",
-      "summary": "Timothy Olyphant cameoed as a fictional version of himself in the short‑lived Fox sitcom.",
+      "headline": "It\u0002s a Living",
+      "summary": "John de Lancie guest‑starred as Tom Morton in the 1981 \"It's a Living\" episode \"The Wedding.\"",
       "highlights": [
-        "Olyphant appeared in four episodes as himself",
-        "The show ran for one season, 22 episodes (2015‑2016)",
-        "He won a 2016 Critics' Choice TV Award for Best Guest Actor"
+        "De Lancie appeared in the November 1981 Season 2 episode titled \"The Wedding\"",
+        "The sitcom was renamed \"Making a Living\" for Season 2 and cancelled after that season"
       ],
       "concepts": [],
       "key_numbers": [],
-      "published_at": "2026-09-05T02:12:00+06:00",
-      "selected_at": "2026-09-05T22:47:23.131284+06:00",
+      "published_at": "2026-09-05T18:12:00+06:00",
+      "selected_at": "2026-09-06T01:18:07.120247+06:00",
       "status": "published",
-      "message_id": 271
+      "message_id": 292
     },
-    "season2_filming_start": {
-      "event_id": "season2_filming_start",
-      "canonical_url": "whats-on-netflix.com/interviews/finding-her-edge-showrunner-jeff-norton-teases-whats-in-store-for-season-2-as-filming-begins",
-      "original_url": "https://www.whats-on-netflix.com/interviews/finding-her-edge-showrunner-jeff-norton-teases-whats-in-store-for-season-2-as-filming-begins/",
-      "source": "What's on Netflix",
+    "viqueens_us_distribution": {
+      "event_id": "viqueens_us_distribution",
+      "canonical_url": "deadline.com/2026/09/coyote-vs-acme-ketchup-viqueens-1237069008",
+      "original_url": "https://deadline.com/2026/09/coyote-vs-acme-ketchup-viqueens-1237069008/",
+      "source": "Deadline",
       "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "Netflix",
-      "event_cluster_id": "evt_9964ba5176",
+      "topic": "OTT Rights and Distribution",
+      "institution": "Ketchup Entertainment",
+      "event_cluster_id": "evt_9b40471e10",
       "event_confidence": 0.6,
       "event_source_count": 1,
-      "headline": "Finding Her Edge",
-      "summary": "Season 2 of the Netflix YA series is now filming, with scripts completed and cast back on set.",
+      "headline": "ViQueens",
+      "summary": "Ketchup Entertainment has secured U.S. distribution rights to the Norwegian animated film ViQueens.",
       "highlights": [
-        "Production officially started on September 2, 2026",
-        "Season 2 filming underway with new ice‑skating drama and romances",
-        "No release date set yet, but expected in 2027"
+        "Teaser will debut in U.S. theaters this weekend alongside Coyote Vs. Acme",
+        "A theatrical release is planned but no date has been set yet"
       ],
       "concepts": [],
       "key_numbers": [],
-      "published_at": "2026-09-05T02:13:16+06:00",
-      "selected_at": "2026-09-05T22:47:28.376032+06:00",
+      "published_at": "2026-09-05T23:47:53+06:00",
+      "selected_at": "2026-09-06T01:18:15.205560+06:00",
       "status": "published",
-      "message_id": 272
+      "message_id": 293
     },
-    "spider_man_brand_new_day_900m_domestic": {
-      "event_id": "spider_man_brand_new_day_900m_domestic",
-      "canonical_url": "variety.com/2026/film/news/spider-man-brand-new-day-box-office-900-million-1236849789",
-      "original_url": "https://variety.com/2026/film/news/spider-man-brand-new-day-box-office-900-million-1236849789/",
-      "source": "Variety",
+    "spider_man_brand_new_day_labor_day_take": {
+      "event_id": "spider_man_brand_new_day_labor_day_take",
+      "canonical_url": "deadline.com/2026/09/box-office-spider-man-brand-new-day-by-any-means-labor-day-1237068549",
+      "original_url": "https://deadline.com/2026/09/box-office-spider-man-brand-new-day-by-any-means-labor-day-1237068549/",
+      "source": "Deadline",
       "region": "Entertainment",
       "topic": "Major Film Announcements",
-      "institution": "Paramount Pictures",
-      "event_cluster_id": "evt_2868241b2b",
+      "institution": "Deadline",
+      "event_cluster_id": "evt_393258ddc7",
       "event_confidence": 0.6,
       "event_source_count": 1,
       "headline": "Spider-Man: Brand New Day",
-      "summary": "The film became the fastest to reach $900 million domestically in 36 days.",
+      "summary": "Spider-Man: Brand New Day pulled in $22 M over Labor Day, edging toward a record‑breaking summer box‑office total.",
       "highlights": [
-        "Crossed $900 million domestic mark in 36 days",
-        "Now projected to hit $922 million over Labor Day weekend",
-        "On track to become highest‑grossing domestic film ever"
+        "$22 M earned in the four‑day Labor Day frame",
+        "Running total near $921 M, within $16 M of the all‑time domestic record",
+        "Booked in 3,520 theaters across the U.S."
       ],
       "concepts": [],
       "key_numbers": [],
-      "published_at": "2026-09-05T22:31:43+06:00",
-      "selected_at": "2026-09-05T22:47:34.093892+06:00",
+      "published_at": "2026-09-05T22:01:00+06:00",
+      "selected_at": "2026-09-06T01:18:20.470514+06:00",
       "status": "published",
-      "message_id": 273
-    },
-    "spider_man_brand_new_day_sixth_weekend_1": {
-      "event_id": "spider_man_brand_new_day_sixth_weekend_1",
-      "canonical_url": "hollywoodreporter.com/movies/movie-news/spider-man-ruling-box-office-for-sixth-weekend-1236691340",
-      "original_url": "https://www.hollywoodreporter.com/movies/movie-news/spider-man-ruling-box-office-for-sixth-weekend-1236691340/",
-      "source": "The Hollywood Reporter",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "Marvel Studios",
-      "event_cluster_id": "evt_8c5d1a2203",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Spider-Man: Brand New Day",
-      "summary": "Spider-Man: Brand New Day tops the domestic box office for a sixth straight weekend, pulling in about $22 million.",
-      "highlights": [
-        "Sixth consecutive weekend at No. 1 with $22 million over four days",
-        "Domestic gross just crossed $900 million, nearing the all‑time record",
-        "Global total exceeds $2.33 billion, ranking third all‑time"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-09-05T21:48:04+06:00",
-      "selected_at": "2026-09-05T22:47:39.906595+06:00",
-      "status": "published",
-      "message_id": 274
+      "message_id": 294
     }
   },
   "event_clusters": {
-    "evt_560913bc48": {
-      "event_id": "evt_560913bc48",
-      "topic": "Streaming Platform News",
+    "evt_84e3ef799a": {
+      "event_id": "evt_84e3ef799a",
+      "topic": "Release Dates",
       "region": "Entertainment",
       "sources": [
         "Collider"
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-09-05T22:39:15.298487+06:00",
-      "headline": "Ryan Reynolds’ ‘Rush Hour’ in Russia Is Officially Apple TV’s Newest Blockbuster"
+      "last_seen": "2026-09-06T00:53:34.837438+06:00",
+      "headline": "Netflix's New 'Bridgerton' Replacement Officially Sets 2026 Release Date"
     },
-    "evt_1d6e898db1": {
-      "event_id": "evt_1d6e898db1",
+    "evt_f0bf1eef18": {
+      "event_id": "evt_f0bf1eef18",
       "topic": "Major Film Announcements",
       "region": "Entertainment",
       "sources": [
-        "Variety"
+        "Collider"
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-09-05T22:39:15.298501+06:00",
-      "headline": "Aflac Taps Affleck for Commercials to Keep Insurance Customers Quacking"
+      "last_seen": "2026-09-06T00:53:34.837453+06:00",
+      "headline": "'The Simpsons' Is Officially Changing Its Formula for the First Time in 36 Years"
     },
-    "evt_33e453c7f3": {
-      "event_id": "evt_33e453c7f3",
-      "topic": "Major Film Announcements",
-      "region": "Entertainment",
-      "sources": [
-        "The Hollywood Reporter"
-      ],
-      "source_count": 1,
-      "confidence": 0.6,
-      "last_seen": "2026-09-05T22:39:15.298505+06:00",
-      "headline": "Robert Pattinson Says He Would’ve Been “Devastated” to Drop Any of His Big 2026 Films"
-    },
-    "evt_750e463179": {
-      "event_id": "evt_750e463179",
+    "evt_9c7b8b9c4f": {
+      "event_id": "evt_9c7b8b9c4f",
       "topic": "Major Film Announcements",
       "region": "Entertainment",
       "sources": [
@@ -2040,11 +2169,11 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-09-05T22:39:15.298508+06:00",
-      "headline": "Congress Is About to Write a Federal Film Tax Credit: Just Don’t Call It a Hollywood Bill"
+      "last_seen": "2026-09-06T00:53:34.837455+06:00",
+      "headline": "Robert Pattinson’s ‘Primetime’ Unveiled at Venice Film Festival to Nearly 8-Minute Standing Ovation"
     },
-    "evt_9877fe07fd": {
-      "event_id": "evt_9877fe07fd",
+    "evt_cd987b9c5a": {
+      "event_id": "evt_cd987b9c5a",
       "topic": "Major Film Announcements",
       "region": "Entertainment",
       "sources": [
@@ -2052,47 +2181,84 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-09-05T22:39:15.298510+06:00",
-      "headline": "Lee Chang-dong On His Eight-Year Hiatus & Confident Return With Venice Competition Title ‘Possible Love’"
+      "last_seen": "2026-09-06T00:53:34.837457+06:00",
+      "headline": "‘Primetime’: What The Critics Are Saying About A24’s Chris Hansen Movie Starring Robert Pattinson"
     },
-    "evt_6fb755e4fc": {
-      "event_id": "evt_6fb755e4fc",
+    "evt_5e8e45630d": {
+      "event_id": "evt_5e8e45630d",
+      "topic": "Major Film Announcements",
+      "region": "Entertainment",
+      "sources": [
+        "Deadline",
+        "Variety"
+      ],
+      "source_count": 2,
+      "confidence": 1.0,
+      "last_seen": "2026-09-06T00:53:34.837459+06:00",
+      "headline": "Robert Pattinson Kisses Suki Waterhouse as ‘Primetime’ Rocks Venice With 7-Minute Standing Ovation"
+    },
+    "evt_99d30d6afd": {
+      "event_id": "evt_99d30d6afd",
+      "topic": "Major Film Announcements",
+      "region": "Entertainment",
+      "sources": [
+        "IndieWire"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-09-06T00:53:34.837460+06:00",
+      "headline": "‘Elsinore’ and ‘The Liberation’ Launch TV Stars Andrew Scott and Carrie Coon Into the Oscar Race"
+    },
+    "evt_2f92b8514b": {
+      "event_id": "evt_2f92b8514b",
+      "topic": "Major Film Announcements",
+      "region": "Entertainment",
+      "sources": [
+        "IndieWire"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-09-06T00:53:34.837461+06:00",
+      "headline": "‘The Difficult Bride’ Turns South Asia’s Beloved Wedding Tropes Into Feminist Folk Horror at Venice"
+    },
+    "evt_b9077d3897": {
+      "event_id": "evt_b9077d3897",
+      "topic": "Major Film Announcements",
+      "region": "Entertainment",
+      "sources": [
+        "Deadline"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-09-06T00:53:34.837463+06:00",
+      "headline": "Director Matt Dougherty, E.P. Jane Campion Explore Riveting “Anti-Guru” U.G. Krishnamurti In ‘The Natural State’ – Telluride Film Festival"
+    },
+    "evt_1aaf18e944": {
+      "event_id": "evt_1aaf18e944",
       "topic": "Trailers and First Looks",
       "region": "Entertainment",
       "sources": [
-        "Deadline"
+        "Bollywood Hungama"
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-09-05T22:39:15.298512+06:00",
-      "headline": "Loco Films Boards Venice Title ‘Guria’ As Drama Is Selected To Be Georgia’s Oscar Entry + First Trailer"
+      "last_seen": "2026-09-06T00:53:34.837464+06:00",
+      "headline": "Drishyam: The Conclusion trailer to be out on September 9 ahead of release on Gandhi Jayanti 2026"
     },
-    "evt_098e782f70": {
-      "event_id": "evt_098e782f70",
-      "topic": "Casting",
+    "evt_913a777355": {
+      "event_id": "evt_913a777355",
+      "topic": "Major Film Announcements",
       "region": "Entertainment",
       "sources": [
-        "TVLine"
+        "IndieWire"
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-09-05T22:39:15.298515+06:00",
-      "headline": "Emmys 2026 Poll: Who Should Win For Supporting Actor In A Limited Series?"
+      "last_seen": "2026-09-06T00:53:34.837466+06:00",
+      "headline": "What I Learned Watching Six Hours of Gen-AI Short Films for the Reply AI Film Festival"
     },
-    "evt_8a69482e67": {
-      "event_id": "evt_8a69482e67",
-      "topic": "Casting",
-      "region": "Entertainment",
-      "sources": [
-        "TVLine"
-      ],
-      "source_count": 1,
-      "confidence": 0.6,
-      "last_seen": "2026-09-05T22:39:15.298518+06:00",
-      "headline": "Grey's Anatomy Casts James Wolk As 'Handsome, Arrogant' Troublemaker For Season 23"
-    },
-    "evt_3871848181": {
-      "event_id": "evt_3871848181",
+    "evt_b95ecf8820": {
+      "event_id": "evt_b95ecf8820",
       "topic": "Major Film Announcements",
       "region": "Entertainment",
       "sources": [
@@ -2100,35 +2266,11 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-09-05T22:39:15.298520+06:00",
-      "headline": "Timothy Olyphant Played Himself On This Short-Lived Rob Lowe Sitcom"
+      "last_seen": "2026-09-06T00:53:34.837468+06:00",
+      "headline": "Why Supernatural's Creator Quit The Hit Show After Just 5 Seasons"
     },
-    "evt_9964ba5176": {
-      "event_id": "evt_9964ba5176",
-      "topic": "Major Film Announcements",
-      "region": "Entertainment",
-      "sources": [
-        "What's on Netflix"
-      ],
-      "source_count": 1,
-      "confidence": 0.6,
-      "last_seen": "2026-09-05T22:39:15.298522+06:00",
-      "headline": "‘Finding Her Edge’ Showrunner Jeff Norton Teases What’s in Store For Season 2 As Filming Begins"
-    },
-    "evt_2868241b2b": {
-      "event_id": "evt_2868241b2b",
-      "topic": "Major Film Announcements",
-      "region": "Entertainment",
-      "sources": [
-        "Variety"
-      ],
-      "source_count": 1,
-      "confidence": 0.6,
-      "last_seen": "2026-09-05T22:39:15.298525+06:00",
-      "headline": "‘Spider-Man: Brand New Day’ Is Fastest Film to Cross $900 Million at Domestic Box Office"
-    },
-    "evt_8c5d1a2203": {
-      "event_id": "evt_8c5d1a2203",
+    "evt_2c3667e712": {
+      "event_id": "evt_2c3667e712",
       "topic": "Major Film Announcements",
       "region": "Entertainment",
       "sources": [
@@ -2136,52 +2278,239 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-09-05T22:39:15.298527+06:00",
-      "headline": "‘Spider-Man: Brand New Day’ Topping Box Office for Sixth Weekend in a Row"
+      "last_seen": "2026-09-06T00:53:34.837469+06:00",
+      "headline": "Bethenny Frankel Is Turning Burning Man Into Her Non-Reality Show"
     },
-    "evt_c1ddcdb030": {
-      "event_id": "evt_c1ddcdb030",
-      "topic": "Franchises and IP",
+    "evt_61e504dc14": {
+      "event_id": "evt_61e504dc14",
+      "topic": "Major Film Announcements",
       "region": "Entertainment",
       "sources": [
-        "Collider"
+        "The Hollywood Reporter"
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-09-05T22:39:15.298529+06:00",
-      "headline": "‘Resident Evil’ Is Officially Coming Back Bigger Than Ever at the Box Office"
+      "last_seen": "2026-09-06T00:53:34.837470+06:00",
+      "headline": "‘Primetime’ Review: You Might Feel the Need to Shower After Watching Robert Pattinson as ‘To Catch a Predator’ Host Chris Hansen"
+    },
+    "evt_d8e52b45da": {
+      "event_id": "evt_d8e52b45da",
+      "topic": "Major Film Announcements",
+      "region": "Entertainment",
+      "sources": [
+        "TheWrap"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-09-06T00:53:34.837471+06:00",
+      "headline": "‘Primetime’ Review: Robert Pattinson Is Delightfully Gonzo in Searing Exploitation Screed"
+    },
+    "evt_f3fedf6a0e": {
+      "event_id": "evt_f3fedf6a0e",
+      "topic": "Streaming Platform News",
+      "region": "Entertainment",
+      "sources": [
+        "TVLine"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-09-06T00:53:34.837472+06:00",
+      "headline": "15 Most Underrated TV Shows Streaming On HBO Max Right Now"
+    },
+    "evt_340a91c5b2": {
+      "event_id": "evt_340a91c5b2",
+      "topic": "Major Film Announcements",
+      "region": "Entertainment",
+      "sources": [
+        "Deadline"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-09-06T00:53:34.837473+06:00",
+      "headline": "‘Primetime’ Review: Robert Pattinson Channels Jerry Maguire And Dracula For Lance Oppenheim’s Dark TV Morality Tale – Venice Film Festival"
+    },
+    "evt_63ef270fb4": {
+      "event_id": "evt_63ef270fb4",
+      "topic": "Major Film Announcements",
+      "region": "Entertainment",
+      "sources": [
+        "Variety"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-09-06T00:53:34.837475+06:00",
+      "headline": "‘Primetime’ Review: Robert Pattinson Leads a Dazzling Cast in a Lurid Horror-Movie Portrait of a ‘Predator’-Hunter’s Predatory Instinct"
+    },
+    "evt_d6768f6c2f": {
+      "event_id": "evt_d6768f6c2f",
+      "topic": "Major Film Announcements",
+      "region": "Entertainment",
+      "sources": [
+        "IndieWire"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-09-06T00:53:34.837476+06:00",
+      "headline": "‘Primetime’ Review: Robert Pattinson Is Even Creepier Than IRL Chris Hansen in a Bleakly Invigorating ‘To Catch a Predator’ Thriller"
+    },
+    "evt_44f311e457": {
+      "event_id": "evt_44f311e457",
+      "topic": "Major Film Announcements",
+      "region": "Entertainment",
+      "sources": [
+        "IndieWire"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-09-06T00:53:34.837477+06:00",
+      "headline": "‘Citizen Osama’ Review: A Direct, Disarming View of Daily Horrors in Gaza from the POV of a Journalist and New Father"
+    },
+    "evt_a31fed153b": {
+      "event_id": "evt_a31fed153b",
+      "topic": "Major Film Announcements",
+      "region": "Entertainment",
+      "sources": [
+        "IndieWire"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-09-06T00:53:34.837478+06:00",
+      "headline": "‘The Row’ Review: One Man’s Tragedy-Inspired Voyages Across the Pacific Are Turned Into a Branding Exercise"
+    },
+    "evt_bcb527d1f2": {
+      "event_id": "evt_bcb527d1f2",
+      "topic": "Major Film Announcements",
+      "region": "Entertainment",
+      "sources": [
+        "TVLine"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-09-06T00:53:34.837479+06:00",
+      "headline": "TVLine's Performer Of The Week: Anson Mount"
+    },
+    "evt_42090db215": {
+      "event_id": "evt_42090db215",
+      "topic": "Major Film Announcements",
+      "region": "Entertainment",
+      "sources": [
+        "TheWrap"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-09-06T00:53:34.837481+06:00",
+      "headline": "Robert Pattinson Hopes Chris Hansen Likes ‘Primetime’: ‘Something Magnetic About His Presence’"
+    },
+    "evt_0cafe6efba": {
+      "event_id": "evt_0cafe6efba",
+      "topic": "Casting",
+      "region": "Entertainment",
+      "sources": [
+        "TVLine"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-09-06T00:53:34.837482+06:00",
+      "headline": "5 Famous Actors You Forgot Guest-Starred On Seinfeld"
+    },
+    "evt_b9db37d73a": {
+      "event_id": "evt_b9db37d73a",
+      "topic": "Major Film Announcements",
+      "region": "Entertainment",
+      "sources": [
+        "TVLine"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-09-06T00:53:34.837483+06:00",
+      "headline": "Star Trek's John De Lancie Had A Big Guest Role On A Nearly Forgotten Ann Jillian Sitcom"
+    },
+    "evt_9b40471e10": {
+      "event_id": "evt_9b40471e10",
+      "topic": "OTT Rights and Distribution",
+      "region": "Entertainment",
+      "sources": [
+        "Deadline"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-09-06T00:53:34.837484+06:00",
+      "headline": "‘Coyote Vs. Acme’ Distributor Ketchup Entertainment Takes U.S. On Norwegian Animated Pic ‘ViQueens’"
+    },
+    "evt_3ba2442ef6": {
+      "event_id": "evt_3ba2442ef6",
+      "topic": "Major Film Announcements",
+      "region": "Entertainment",
+      "sources": [
+        "TheWrap"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-09-06T00:53:34.837485+06:00",
+      "headline": "‘Spider-Man’ Still on Top at Labor Day Box Office While ‘Coyote vs Acme’ Holds Strong"
+    },
+    "evt_393258ddc7": {
+      "event_id": "evt_393258ddc7",
+      "topic": "Major Film Announcements",
+      "region": "Entertainment",
+      "sources": [
+        "Deadline"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-09-06T00:53:34.837486+06:00",
+      "headline": "‘Spider-Man: Brand New Day’ $22M Labor Day Take Powering Summer To Potential $4.76B All-Time Record – Update"
     }
   },
   "posted_event_ids": [
-    "evt_560913bc48",
-    "evt_1d6e898db1",
-    "evt_33e453c7f3",
-    "evt_9877fe07fd",
-    "evt_6fb755e4fc",
-    "evt_098e782f70",
-    "evt_8a69482e67",
-    "evt_3871848181",
-    "evt_9964ba5176",
-    "evt_2868241b2b",
-    "evt_8c5d1a2203"
+    "evt_f0bf1eef18",
+    "evt_9c7b8b9c4f",
+    "evt_cd987b9c5a",
+    "evt_5e8e45630d",
+    "evt_99d30d6afd",
+    "evt_2f92b8514b",
+    "evt_b9077d3897",
+    "evt_1aaf18e944",
+    "evt_b95ecf8820",
+    "evt_2c3667e712",
+    "evt_f3fedf6a0e",
+    "evt_340a91c5b2",
+    "evt_63ef270fb4",
+    "evt_d6768f6c2f",
+    "evt_bcb527d1f2",
+    "evt_42090db215",
+    "evt_0cafe6efba",
+    "evt_b9db37d73a",
+    "evt_9b40471e10",
+    "evt_393258ddc7"
   ],
   "recent_titles": [
-    "mayday",
-    "aflac",
+    "the simpsons",
     "primetime",
-    "possible love",
-    "guria",
-    "dtf st louis",
-    "grey s anatomy",
-    "the grinder",
-    "finding her edge",
-    "spider man brand new day",
+    "primetime",
+    "primetime",
+    "elsinore",
+    "the difficult bride",
+    "the natural state",
+    "drishyam the conclusion",
+    "supernatural",
+    "bethenny frankel",
+    "scavengers reign",
+    "primetime",
+    "primetime",
+    "primetime",
+    "star trek strange new worlds",
+    "primetime",
+    "seinfeld",
+    "it s a living",
+    "viqueens",
     "spider man brand new day"
   ],
   "category_coverage": {
-    "Streaming Platform News": "2026-09-05T22:46:40.130510+06:00",
-    "Major Film Announcements": "2026-09-05T22:47:39.906606+06:00",
-    "Trailers and First Looks": "2026-09-05T22:47:07.783383+06:00",
-    "Casting": "2026-09-05T22:47:18.371075+06:00"
+    "Major Film Announcements": "2026-09-06T01:18:20.470521+06:00",
+    "Trailers and First Looks": "2026-09-06T01:17:07.569334+06:00",
+    "Streaming Platform News": "2026-09-06T01:17:28.765625+06:00",
+    "Casting": "2026-09-06T01:18:01.630365+06:00",
+    "OTT Rights and Distribution": "2026-09-06T01:18:15.205567+06:00"
   }
 }
