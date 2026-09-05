@@ -2,6 +2,20 @@
 
 EntertainmentNewsBot V1 is an update-only entertainment newsroom using the same proven execution framework as the working BusinessNewsroom project, with Entertainment-specific editorial scoring and presentation.
 
+## V1.1 Media Fix
+
+Movie and series images now use an **original-media mode** independent of editorial priority. The bot:
+
+- prefers portrait poster/key-art candidates when available
+- preserves the complete source image
+- preserves the original aspect ratio
+- performs proportional resize only when an image exceeds the configured maximum
+- never crops, blurs, pads, stretches, or adds `@EntertainmentNewsroom` branding to movie/series media
+- keeps the existing branded 16:9 treatment only for non-movie/series editorial photos
+- falls back to the official source logo, then centered source name, when no usable image can be downloaded
+
+This prevents portrait posters such as *Love and Monsters* from being routed through the 16:9 branded-card path.
+
 ## Required secrets
 
 ```text

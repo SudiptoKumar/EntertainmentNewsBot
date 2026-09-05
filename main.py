@@ -2476,11 +2476,51 @@ def _story_priority_label(story):
 
 
 def _is_poster_priority(story):
+    """Use the untouched/original-media path for every movie or series story.
+
+    Image presentation is independent of editorial priority. A streaming update,
+    release-date confirmation, casting story, trailer story, etc. can all carry
+    a movie/series poster. Those images must never be converted to the 16:9
+    branded-card treatment.
+    """
+    fmt = safe_text(story.get("format")).strip().lower()
+    if fmt in {"movie", "series", "film", "tv series", "limited series", "mini-series", "miniseries"}:
+        return True
+    # Defensive fallback for older/generated records.
     return _story_priority_label(story) in {
         "OTT / Streaming Availability",
         "Hindi Dub / Language Availability",
         "Upcoming OTT Releases",
     }
+
+
+def _image_candidate_score(story, url, image, position=0):
+    """Score an already-downloaded image without altering its pixels.
+
+    Poster selection is intentionally based on image geometry and source URL
+    hints. The winning file is later resized proportionally only when needed.
+    """
+    raw = safe_text(url).lower()
+    title = normalize_title(story.get("title") or story.get("headline") or "")
+    title_tokens = [t for t in re.findall(r"[a-z0-9]+", title) if len(t) >= 4]
+    score = 0
+
+    if image.height > image.width * 1.05:
+        score += 35
+    elif image.height >= image.width * 0.95:
+        score += 8
+    else:
+        score -= 8
+
+    if any(token in raw for token in ("poster", "key-art", "keyart", "one-sheet", "artwork", "cover")):
+        score += 30
+    if any(token in raw for token in title_tokens[:8]):
+        score += 12
+
+    # Earlier candidates are normally stronger, but geometry/URL evidence
+    # must outweigh simple ordering.
+    score += max(0, 8 - min(position, 8))
+    return score
 
 
 def _extract_image_candidates_from_html(page_html, base_url, title):
@@ -2587,14 +2627,35 @@ def prepare_image(story,index):
     for candidate in story.get("image_candidates",[])[:20]:
         if candidate and candidate not in image_urls:image_urls.append(candidate)
 
+    # MOVIE/SERIES MEDIA POLICY:
+    # Preserve the complete source image. Never crop, blur, pad, stretch, or
+    # add channel branding. Pick the strongest original image using dimensions
+    # and URL hints, then apply proportional resize only if it exceeds limits.
     if _is_poster_priority(story):
-        for url in image_urls:
-            image=download_image(url,story.get("url",""))
-            if image and image.height >= image.width * 1.05:
-                path=f"/tmp/news_{index}.jpg"
-                fit_full_poster(image).save(path,"JPEG",quality=94,optimize=True)
-                return path
+        best_image = None
+        best_score = -10**9
+        for position, url in enumerate(image_urls):
+            image = download_image(url,story.get("url",""))
+            if not image:
+                continue
+            score = _image_candidate_score(story,url,image,position)
+            logger.info(
+                "MEDIA CANDIDATE #%d score=%d size=%sx%s url=%s",
+                position + 1, score, image.width, image.height, url[:180]
+            )
+            if score > best_score:
+                best_image = image
+                best_score = score
+        if best_image is not None:
+            path=f"/tmp/news_{index}.jpg"
+            fit_full_poster(best_image).save(path,"JPEG",quality=95,optimize=True)
+            logger.info(
+                "ORIGINAL MEDIA MODE: preserved aspect ratio size=%sx%s score=%d",
+                best_image.width, best_image.height, best_score
+            )
+            return path
 
+    # Non-movie/series editorial photos retain the branded 16:9 treatment.
     for url in image_urls:
         image=download_image(url,story.get("url",""))
         if image:
@@ -3226,8 +3287,19 @@ def self_test():
     fitted2=fit_full_poster(landscape)
     assert fitted2.size==(1200,675)
 
-    # No channel branding on full-poster path.
-    assert "@EntertainmentNewsroom" not in "".join([])
+    # No channel branding is ever added to movie/series media.
+    assert _is_poster_priority(dict(sample, format="Series", priority_type="Release Date Confirmations")) is True
+    assert _is_poster_priority(dict(sample, format="Movie", priority_type="Box Office Updates")) is True
+    assert _is_poster_priority(dict(sample, format="Sports", priority_type="Box Office Updates")) is False
+
+    # Candidate scoring must prefer a complete portrait poster over a landscape
+    # article image, while fit_full_poster preserves the exact aspect ratio.
+    poster=Image.new("RGB",(1000,1500),(60,70,80))
+    landscape_media=Image.new("RGB",(1600,900),(60,70,80))
+    poster_story=dict(sample,format="Movie",title="Love and Monsters")
+    assert _image_candidate_score(poster_story,"https://example.com/love-and-monsters-poster.jpg",poster,0) > _image_candidate_score(poster_story,"https://example.com/love-and-monsters-photo.jpg",landscape_media,0)
+    fitted_poster=fit_full_poster(poster)
+    assert fitted_poster.size==(1000,1500)
 
     logger.info("EntertainmentNewsroom V1 self-test passed.")
 
