@@ -125,6 +125,11 @@ LEARNED_LOW_RATIO = 0.80
 LEARNED_HISTORY_LIMIT = 500
 LEARNED_PATTERN_RETENTION_DAYS = 45
 WORK_MEMORY_RETENTION_DAYS = 90
+SOURCE_LEARNING_MIN_OBSERVATIONS = 10
+SOURCE_LEARNING_LOW_RATIO = 0.85
+SOURCE_LEARNING_LOW_SCORE_CEILING = 48
+LEARNING_SOFT_PENALTY_MAX = 10
+PRE_FILTER_HISTORY_LIMIT = 1000
 
 # Lightweight English stopwords used only by the conservative event/entity
 # deduplication layer. This is deliberately small so legitimate game entities
@@ -518,6 +523,18 @@ def default_state():
         "work_memory": {},
         "learned_rejections": {},
         "score_history": [],
+        "adaptive_metrics": {
+            "raw_discovered": 0,
+            "pre_cerebras_rejected": 0,
+            "hard_rejected": 0,
+            "duplicate_rejected": 0,
+            "learned_rejected": 0,
+            "passed_to_cerebras": 0,
+            "cerebras_ranked": 0,
+            "published": 0,
+            "estimated_candidates_avoided": 0,
+        },
+        "source_quality": {},
     }
 
 
@@ -883,6 +900,20 @@ def event_memory_hit(item):
             return True, "near_identical_recent_title"
     return False, ""
 
+def update_filter_metric(reason):
+    metrics = STATE.setdefault("adaptive_metrics", {})
+    metrics["pre_cerebras_rejected"] = int(metrics.get("pre_cerebras_rejected", 0)) + 1
+    if reason.startswith("hard_") or reason in {"no_entertainment_signal", "low_value_editorial", "sports", "promotion", "celebrity_lifestyle"}:
+        metrics["hard_rejected"] = int(metrics.get("hard_rejected", 0)) + 1
+    elif reason.startswith("learned_"):
+        metrics["learned_rejected"] = int(metrics.get("learned_rejected", 0)) + 1
+    elif reason.startswith("same_work") or reason.startswith("near_identical") or reason in {"posted_url", "duplicate_title"}:
+        metrics["duplicate_rejected"] = int(metrics.get("duplicate_rejected", 0)) + 1
+
+def update_pass_metric():
+    metrics = STATE.setdefault("adaptive_metrics", {})
+    metrics["passed_to_cerebras"] = int(metrics.get("passed_to_cerebras", 0)) + 1
+
 def learned_pattern_block(item):
     pattern = deterministic_pattern(item)
     if not pattern or pattern in {"sports", "low_value_editorial", "celebrity_lifestyle", "promotion"}:
@@ -897,12 +928,25 @@ def learned_pattern_block(item):
         return True, f"learned_pattern:{pattern}"
     return False, ""
 
+def learned_source_block(item):
+    domain = urlparse(safe_text(item.get("url"))).netloc.lower().removeprefix("www.")
+    if not domain:
+        return False, ""
+    stats = STATE.get("source_quality", {}).get(domain)
+    if not stats:
+        return False, ""
+    observations = int(stats.get("observations", 0))
+    low = int(stats.get("low_score_count", 0))
+    avg = float(stats.get("avg_score", 100))
+    if observations >= SOURCE_LEARNING_MIN_OBSERVATIONS and low / max(1, observations) >= SOURCE_LEARNING_LOW_RATIO and avg <= SOURCE_LEARNING_LOW_SCORE_CEILING:
+        # Source-level blocking is only allowed for clearly junk-dominated sources.
+        return True, f"learned_source:{domain}"
+    return False, ""
+
 def pre_cerebras_filter(item):
     title = safe_text(item.get("title"))
-    excerpt = safe_text(item.get("excerpt"))
     blob = content_blob(item)
     if HARD_SPORTS_RE.search(blob):
-        # Allow an entertainment work that is explicitly the subject of the story.
         if not re.search(r"\b(?:movie|film|series|documentary|sports movie|sports drama)\b", blob, re.I):
             return False, "hard_sports"
     if HARD_BAD_TITLE_RE.search(title):
@@ -914,6 +958,9 @@ def pre_cerebras_filter(item):
     if hit:
         return False, reason
     hit, reason = learned_pattern_block(item)
+    if hit:
+        return False, reason
+    hit, reason = learned_source_block(item)
     if hit:
         return False, reason
     return True, ""
@@ -964,9 +1011,11 @@ def candidate_basic_allowed(item):
     item_for_filter = {**item, "canonical": canonical, "url": url, "title": title}
     allowed, reason = pre_cerebras_filter(item_for_filter)
     if not allowed:
+        update_filter_metric(reason)
         logger.info("PRE-CEREBRAS DROP: %s | %s", reason, title)
         return False
 
+    update_pass_metric()
     return bool(canonical)
 
 
@@ -1683,6 +1732,21 @@ def record_low_score_learning(rows):
     STATE["score_history"] = history[-LEARNED_HISTORY_LIMIT:]
 
 
+def update_source_quality(rows):
+    quality = STATE.setdefault("source_quality", {})
+    for row in rows:
+        domain = urlparse(safe_text(row.get("url"))).netloc.lower().removeprefix("www.")
+        if not domain:
+            continue
+        score = int(row.get("importance_score", 0))
+        stats = quality.setdefault(domain, {"observations": 0, "low_score_count": 0, "total_score": 0, "avg_score": 0, "last_seen": now_iso()})
+        stats["observations"] = int(stats.get("observations", 0)) + 1
+        stats["low_score_count"] = int(stats.get("low_score_count", 0)) + int(score < PUBLISH_THRESHOLD)
+        stats["total_score"] = int(stats.get("total_score", 0)) + score
+        stats["avg_score"] = round(stats["total_score"] / max(1, stats["observations"]), 1)
+        stats["last_seen"] = now_iso()
+
+
 def bootstrap_learning_from_queue():
     """Backfill adaptive learning from previously ranked queue records, once per run."""
     rows = []
@@ -1705,6 +1769,7 @@ def bootstrap_learning_from_queue():
         fresh = [x for x in rows if (safe_text(x.get("title")), int(x.get("importance_score", 0))) not in existing]
         if fresh:
             record_low_score_learning(fresh)
+            update_source_quality(fresh)
             logger.info("LEARNING BOOTSTRAP: added %d previous low-score records", len(fresh))
 
 
@@ -1767,8 +1832,11 @@ Priority is a ranking preference, not a quota. Return EVERY candidate with exact
                 "sector": safe_text(row.get("sector")),
                 "rank_reason": safe_text(row.get("rank_reason")),
                 "last_ranked_at": now_iso(),
+                "learning_pattern": deterministic_pattern(row),
             })
     record_low_score_learning(rows)
+    update_source_quality(rows)
+    STATE.setdefault("adaptive_metrics", {})["cerebras_ranked"] = int(STATE.setdefault("adaptive_metrics", {}).get("cerebras_ranked", 0)) + len(rows)
     return rows
 
 
@@ -3395,7 +3463,11 @@ def run():
     logger.info("LOOKBACK=%d hours | %s -> %s",DISCOVERY_LOOKBACK_HOURS,DISCOVERY_START.isoformat(),DISCOVERY_END.isoformat())
     prune_state(); refresh_category_coverage(); bootstrap_learning_from_queue(); collect_rss()
     count=queue_candidates_for_region("Entertainment"); count+=google_news_gap_fill("Entertainment",count,DISCOVERY_TARGET_PER_REGION); exa_gap_fill("Entertainment",count,DISCOVERY_TARGET_PER_REGION); save_state(STATE)
-    candidates=available_candidates("Entertainment",source_pool="primary"); logger.info("DISCOVERY CANDIDATES: %d",len(candidates))
+    candidates=available_candidates("Entertainment",source_pool="primary")
+    metrics = STATE.setdefault("adaptive_metrics", {})
+    metrics["raw_discovered"] = len(STATE.get("queue", {}))
+    logger.info("PRE-CEREBRAS FILTER METRICS: rejected=%d hard=%d duplicate=%d learned=%d passed=%d", int(metrics.get("pre_cerebras_rejected",0)), int(metrics.get("hard_rejected",0)), int(metrics.get("duplicate_rejected",0)), int(metrics.get("learned_rejected",0)), int(metrics.get("passed_to_cerebras",0)))
+    logger.info("DISCOVERY CANDIDATES AFTER PYTHON FILTER: %d",len(candidates))
     ranked=prepare_ranked_region("Entertainment",candidates); logger.info("PUBLISHABLE RANKED CANDIDATES: %d",len(ranked))
     stories=process_ranked_region("Entertainment",ranked); published_count=0
     for index,story in enumerate(stories,1):
@@ -3419,7 +3491,11 @@ def run():
         except Exception as exc:
             logger.error("Telegram publication failed for %s: %s",story.get("headline"),exc)
         save_state(STATE); time.sleep(POST_DELAY_SECONDS)
-    save_state(STATE); logger.info("Finished. Published=%d",published_count)
+    metrics["published"] = int(metrics.get("published", 0)) + published_count
+    metrics["estimated_candidates_avoided"] = int(metrics.get("pre_cerebras_rejected", 0))
+    save_state(STATE)
+    logger.info("ADAPTIVE SUMMARY: passed_to_cerebras=%d rejected_before_cerebras=%d learned_rejected=%d published=%d", int(metrics.get("passed_to_cerebras",0)), int(metrics.get("pre_cerebras_rejected",0)), int(metrics.get("learned_rejected",0)), published_count)
+    logger.info("Finished. Published=%d",published_count)
 
 
 # ============================================================
@@ -3530,6 +3606,21 @@ def self_test():
     }
     allowed, reason = pre_cerebras_filter(sports)
     assert allowed is False and reason == "hard_sports"
+
+    # Learned source-quality block requires repeated evidence and does not block good sources prematurely.
+    learned_state = default_state(); globals()["STATE"] = learned_state
+    source_rows = []
+    for i in range(SOURCE_LEARNING_MIN_OBSERVATIONS):
+        source_rows.append({"url": "https://junk.example/story", "source": "junk", "importance_score": 35, "title": f"routine article {i}", "priority_type": "New Movie / Series Announcements"})
+    update_source_quality(source_rows)
+    blocked_src, src_reason = learned_source_block({"url": "https://junk.example/new-story", "title": "another article"})
+    assert blocked_src is True and src_reason.startswith("learned_source:")
+    # Good score at the same source should prevent source blacklist qualification in a fresh state.
+    learned_state = default_state(); globals()["STATE"] = learned_state
+    mixed = [{"url": "https://good.example/a", "importance_score": 40, "title": "a", "priority_type": "Trailer Releases"}] * 7 + [{"url": "https://good.example/b", "importance_score": 95, "title": "b", "priority_type": "OTT / Streaming Availability"}] * 3
+    update_source_quality(mixed)
+    blocked_good, _ = learned_source_block({"url": "https://good.example/c", "title": "major streaming release"})
+    assert blocked_good is False
 
     # State JSON regression with ISO dates.
     test_state=default_state(); test_state["queue"]["example.com/story"]={"region":"Entertainment","published_date":now_iso(),"last_seen":now_iso(),"status":"pending","title":"Example","url":"https://example.com/story"}

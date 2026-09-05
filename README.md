@@ -65,19 +65,6 @@ Priority is an editorial preference, not a quota. Higher-priority qualifying sto
 
 The model returns the bounded components; Python calculates the final score.
 
-
-## Adaptive pre-Cerebras filter
-
-Python performs a deterministic screening pass before any candidate is sent to Cerebras. This is designed to reduce token usage and prevent obvious junk from reaching the ranking model.
-
-The pre-Cerebras gate rejects high-confidence sports/non-entertainment items, low-value editorial patterns, invalid source paths, already-published URLs, repeated work/event combinations, and learned low-value patterns. Ambiguous candidates are still allowed through to Cerebras.
-
-After each ranking pass, the bot stores compact score feedback in `news_state.json`: recent scores, detected low-value patterns, observation counts, average scores, and examples. A pattern is only promoted to an automatic Python block after repeated evidence (`5+` observations, at least `80%` low-score rate, and average score `<=55`). Learning data expires after 45 days.
-
-Work-level memory is also stored in `news_state.json`. A previously published work/event combination can therefore be rejected before Cerebras even when a new article uses different wording or comes from another publication. Work memory expires after 90 days.
-
-This is intentionally conservative: one low score never blacklists a topic, title, publication, actor, franchise, or platform.
-
 ## Discovery and publishing pipeline
 
 ```text
@@ -91,13 +78,9 @@ Source validation
   ↓
 24-hour window
   ↓
-Python hard entertainment filter
+URL deduplication
   ↓
-Python learned low-value filter
-  ↓
-Python work/event duplicate filter
-  ↓
-URL + same-run deduplication
+Event/entity deduplication
   ↓
 Thin-excerpt enrichment
   ↓
@@ -198,3 +181,12 @@ EXA_API_KEY=dummy CEREBRAS_API_KEY=dummy TELEGRAM_BOT_TOKEN=dummy TELEGRAM_CHANN
 ## GitHub Actions
 
 The included workflow supports manual execution and hourly scheduled runs from 07:00 through 23:00 Asia/Dhaka.
+
+
+## Adaptive Pre-Cerebras Filter
+
+V1 uses deterministic Python filtering before any Cerebras ranking call. It blocks obvious non-entertainment material, strong low-value formats, repeated work/event coverage, and sufficiently proven low-value patterns learned from prior ranking results stored in `news_state.json`.
+
+The learning system is conservative: patterns require repeated evidence, old evidence expires, and high-value candidates are not blocked merely because another story in the same broad subject scored low. Source-level learning is applied only after repeated low-score evidence from the same domain.
+
+Each run logs how many candidates were rejected before Cerebras so token-efficiency gains are measurable.
