@@ -181,7 +181,3 @@ EXA_API_KEY=dummy CEREBRAS_API_KEY=dummy TELEGRAM_BOT_TOKEN=dummy TELEGRAM_CHANN
 ## GitHub Actions
 
 The included workflow supports manual execution and hourly scheduled runs from 07:00 through 23:00 Asia/Dhaka.
-
-## V1 image-source integrity fix
-
-The image pipeline never treats an Exa/RSS discovery thumbnail as the authoritative image when the article page itself can provide an image. Page-derived images are preferred, poster-priority stories use full portrait artwork without 16:9 padding/cropping, and a per-run visual fingerprint prevents the same image from being reused for different stories. If no trustworthy image is available, the bot falls back to the publication logo rather than publishing a likely unrelated image.

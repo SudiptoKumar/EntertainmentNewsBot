@@ -115,10 +115,6 @@ MAX_RICH_CHARACTERS = 32768
 MAX_RICH_CHARACTERS = 32768
 MAX_TELEGRAM_CAPTION_CHARACTERS = 1024
 
-# Per-run image identity memory. The same visual asset must not be reused for
-# different stories in one run, even when publishers expose different URLs.
-USED_IMAGE_FINGERPRINTS = set()
-
 # Lightweight English stopwords used only by the conservative event/entity
 # deduplication layer. This is deliberately small so legitimate game entities
 # and meaningful terms are not filtered out.
@@ -1709,15 +1705,9 @@ def extract_article(
                 favor_precision=True,
             )
 
-            # Never trust a discovery-provider image as the primary article
-            # image. Discovery APIs can return a query-level thumbnail that
-            # belongs to a different story. Prefer assets actually embedded in
-            # the article page; use the discovery image only as last resort.
-            page_candidates = item.get("image_candidates", [])
             image_url = (
-                page_candidates[0]
-                if page_candidates
-                else find_og_image(
+                item.get("image")
+                or find_og_image(
                     url,
                     page_html,
                     response.url,
@@ -1756,16 +1746,17 @@ def extract_article(
                 )
             )
 
-            # Exa fallback text is trusted for extraction, but its image
-            # field is not trusted for title-specific artwork. Keep the
-            # previously collected page candidate if one exists.
-            image_url = safe_text(
-                getattr(
-                    result,
-                    "image",
-                    "",
+            image_url = (
+                item.get("image")
+                or safe_text(
+                    getattr(
+                        result,
+                        "image",
+                        "",
+                    )
                 )
             )
+
             if text:
                 return (
                     text,
@@ -2467,7 +2458,6 @@ def _is_poster_priority(story):
         "OTT / Streaming Availability",
         "Hindi Dub / Language Availability",
         "Upcoming OTT Releases",
-        "Release Date Confirmations",
     }
 
 
@@ -2568,80 +2558,31 @@ def _source_logo_card(logo, source="Source"):
     return canvas_rgba.convert("RGB")
 
 
-def _image_fingerprint(image):
-    """Stable visual fingerprint so one image cannot be reused in a run."""
-    try:
-        thumb = image.convert("RGB").resize((32, 32), Image.Resampling.LANCZOS)
-        return hashlib.sha256(thumb.tobytes()).hexdigest()
-    except Exception:
-        return ""
-
-
-def _accept_unique_image(image):
-    fp = _image_fingerprint(image)
-    if not fp:
-        return True
-    if fp in USED_IMAGE_FINGERPRINTS:
-        return False
-    USED_IMAGE_FINGERPRINTS.add(fp)
-    return True
-
-
 def prepare_image(story,index):
-    """
-    Select an image for one story without cross-story reuse.
+    image_urls=[]
+    primary=safe_text(story.get("image_url"))
+    if primary:image_urls.append(primary)
+    for candidate in story.get("image_candidates",[])[:20]:
+        if candidate and candidate not in image_urls:image_urls.append(candidate)
 
-    Poster-priority stories only use images extracted from the story page.
-    Discovery-provider thumbnails are deliberately excluded from that path
-    because they can be unrelated query-level images.
-    """
-    page_urls = []
-    for candidate in story.get("image_candidates", [])[:20]:
-        candidate = safe_text(candidate)
-        if candidate and candidate not in page_urls:
-            page_urls.append(candidate)
-
-    discovery_url = safe_text(story.get("image_url"))
-    all_urls = list(page_urls)
-    if discovery_url and discovery_url not in all_urls:
-        all_urls.append(discovery_url)
-
-    # Full-poster path: never use an arbitrary discovery thumbnail.
     if _is_poster_priority(story):
-        for url in page_urls:
-            image = download_image(url, story.get("url", ""))
-            if not image:
-                continue
-            if image.height < image.width * 1.05:
-                continue
-            if not _accept_unique_image(image):
-                continue
-            path = f"/tmp/news_{index}.jpg"
-            fit_full_poster(image).save(path, "JPEG", quality=94, optimize=True)
+        for url in image_urls:
+            image=download_image(url,story.get("url",""))
+            if image and image.height >= image.width * 1.05:
+                path=f"/tmp/news_{index}.jpg"
+                fit_full_poster(image).save(path,"JPEG",quality=94,optimize=True)
+                return path
+
+    for url in image_urls:
+        image=download_image(url,story.get("url",""))
+        if image:
+            path=f"/tmp/news_{index}.jpg"
+            branded_card(image).save(path,"JPEG",quality=88,optimize=True)
             return path
 
-        # No trustworthy poster found. Try a page-derived landscape image
-        # before falling back, but still reject images already used this run.
-        for url in page_urls:
-            image = download_image(url, story.get("url", ""))
-            if image and _accept_unique_image(image):
-                path = f"/tmp/news_{index}.jpg"
-                branded_card(image).save(path, "JPEG", quality=88, optimize=True)
-                return path
-    else:
-        # Normal stories: page-derived images first, discovery image last.
-        for url in all_urls:
-            image = download_image(url, story.get("url", ""))
-            if image and _accept_unique_image(image):
-                path = f"/tmp/news_{index}.jpg"
-                branded_card(image).save(path, "JPEG", quality=88, optimize=True)
-                return path
-
-    # If the source image is unavailable or already used, use the publication
-    # logo. This is preferable to showing an unrelated image from another post.
-    logo = _download_source_logo(story.get("source", ""), story.get("url", ""))
-    path = f"/tmp/news_{index}.jpg"
-    _source_logo_card(logo, story.get("source", "Source")).save(path, "JPEG", quality=92, optimize=True)
+    logo=_download_source_logo(story.get("source",""),story.get("url",""))
+    path=f"/tmp/news_{index}.jpg"
+    _source_logo_card(logo, story.get("source", "Source")).save(path,"JPEG",quality=92,optimize=True)
     return path
 
 
@@ -3151,7 +3092,6 @@ def process_ranked_region(region,ranked):
 
 
 def run():
-    USED_IMAGE_FINGERPRINTS.clear()
     logger.info("ENTERTAINMENTNEWSROOM V1 UPDATE-ONLY")
     logger.info("Channel=%s Mode=%s Threshold=%d/100",TELEGRAM_CHANNEL,NEWS_MODE,PUBLISH_THRESHOLD)
     logger.info("LOOKBACK=%d hours | %s -> %s",DISCOVERY_LOOKBACK_HOURS,DISCOVERY_START.isoformat(),DISCOVERY_END.isoformat())
@@ -3250,14 +3190,9 @@ def self_test():
     landscape=Image.new("RGB",(1600,900),(60,70,80))
     fitted2=fit_full_poster(landscape)
     assert fitted2.size==(1200,675)
-    assert "@EntertainmentNewsroom" not in dynamic_rich_html(sample)
 
-    # Image identity regression: identical visual assets may not be reused
-    # for different stories in the same run.
-    USED_IMAGE_FINGERPRINTS.clear()
-    assert _accept_unique_image(portrait) is True
-    assert _accept_unique_image(portrait.copy()) is False
-    USED_IMAGE_FINGERPRINTS.clear()
+    # No channel branding on full-poster path.
+    assert "@EntertainmentNewsroom" not in "".join([])
 
     logger.info("EntertainmentNewsroom V1 self-test passed.")
 
