@@ -1,6 +1,6 @@
-# EntertainmentNewsBot V1
+# EntertainmentNewsBot V1.2
 
-EntertainmentNewsBot V1 is an update-only entertainment newsroom using the same proven execution framework as the working BusinessNewsroom project, with Entertainment-specific editorial scoring and presentation.
+EntertainmentNewsBot V1.2 is an update-only entertainment newsroom using the same proven execution framework as the working BusinessNewsroom project, with Entertainment-specific editorial scoring and presentation.
 
 ## Required secrets
 
@@ -190,3 +190,14 @@ V1 uses deterministic Python filtering before any Cerebras ranking call. It bloc
 The learning system is conservative: patterns require repeated evidence, old evidence expires, and high-value candidates are not blocked merely because another story in the same broad subject scored low. Source-level learning is applied only after repeated low-score evidence from the same domain.
 
 Each run logs how many candidates were rejected before Cerebras so token-efficiency gains are measurable.
+
+
+## V1.2 duplicate-protection update
+
+V1.2 adds a final publication-time de-duplication gate in addition to URL, title, queue, and pre-Cerebras event checks. The persistent memory now stores compact publication fingerprints containing the normalized work identity, priority type, event text, and publication time. Different publishers covering the same work and the same development are therefore rejected even when their URLs, headlines, or LLM event keys differ.
+
+A second in-memory reservation gate runs during the publish loop so duplicate stories already present in the same ranked batch cannot both be sent. The GitHub Actions workflow also uses a concurrency group so two scheduled/manual runs cannot publish concurrently against the same repository state.
+
+Telegram transport handling was tightened as well: an ambiguous timeout is never followed automatically by `sendPhoto`, because the first request may already have reached Telegram. The photo fallback is limited to explicit Rich Message/API validation failures.
+
+After a deliberate clean-state reset, `fresh_start_at` prevents the normal rolling discovery window from immediately republishing pre-reset stories.

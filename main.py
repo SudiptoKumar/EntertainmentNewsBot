@@ -125,6 +125,12 @@ LEARNED_LOW_RATIO = 0.80
 LEARNED_HISTORY_LIMIT = 500
 LEARNED_PATTERN_RETENTION_DAYS = 45
 WORK_MEMORY_RETENTION_DAYS = 90
+EVENT_FINGERPRINT_RETENTION_DAYS = 120
+BOX_OFFICE_DEDUP_HOURS = 36
+DEFAULT_EVENT_DEDUP_HOURS = 24
+CAST_EVENT_DEDUP_HOURS = 6
+PRODUCTION_EVENT_DEDUP_HOURS = 12
+RELEASE_EVENT_DEDUP_HOURS = 48
 SOURCE_LEARNING_MIN_OBSERVATIONS = 10
 SOURCE_LEARNING_LOW_RATIO = 0.85
 SOURCE_LEARNING_LOW_SCORE_CEILING = 48
@@ -521,6 +527,8 @@ def default_state():
         "posted_event_ids": [],
         "recent_titles": [],
         "work_memory": {},
+        "publication_fingerprints": [],
+        "fresh_start_at": now_iso(),
         "learned_rejections": {},
         "score_history": [],
         "adaptive_metrics": {
@@ -706,6 +714,14 @@ def prune_state():
             del work_memory[key]
     STATE["work_memory"] = work_memory
 
+    fingerprints = STATE.get("publication_fingerprints", [])
+    cutoff_fingerprints = datetime.now(BD_TZ) - timedelta(days=EVENT_FINGERPRINT_RETENTION_DAYS)
+    STATE["publication_fingerprints"] = [
+        fp for fp in fingerprints
+        if (parse_datetime(fp.get("published_at")) is not None)
+        and parse_datetime(fp.get("published_at")) >= cutoff_fingerprints
+    ][-1000:]
+
     history = STATE.get("score_history", [])
     STATE["score_history"] = history[-LEARNED_HISTORY_LIMIT:]
 
@@ -862,39 +878,139 @@ def work_key_from_text(title):
     text = normalize_title(title)
     if not text:
         return ""
-    # Remove event/status language while preserving the underlying title.
     text = re.sub(r"\b(?:season|series|part|chapter|episode)\s+\d+\b", " ", text)
     text = re.sub(r"\b(?:19|20)\d{2}\b", " ", text)
-    removal = re.compile(
-        r"\b(?:official|confirmed|confirmation|announced|announcement|new|now|streaming|streams|streamed|"
+    text = re.sub(
+        r"\b(?:official|confirmed|confirmation|announced|announcement|now|streaming|streams|streamed|"
         r"upcoming|release|released|release date|date|premiere|premieres|renewed|renewal|episode|trailer|"
         r"teaser|first look|first glimpse|poster|posters|casting|cast|joins|join|production|filming|filmed|"
         r"wrapped|wraps|theatrical|re release|re-release|box office|opens|grosses|grossed|rights|acquired|"
         r"acquisition|dub|dubbed|hindi|language|available|availability|coming|returns|returning|back|"
-        r"for|to|on|at|in|with|from|by|of)\b",
-        re.I,
+        r"reaches|reach|crosses|crossed|hits|hit|tops|top|earns|earned|adds|added|logs|logged|grosses|"
+        r"nears|near|sets|set|becomes|became|fastest|record|records|milestone|domestic|worldwide|total|"
+        r"weekend|weekends|day|days|million|billion|for|to|on|at|in|with|from|by|of)\b",
+        " ", text, flags=re.I,
     )
-    text = removal.sub(" ", text)
     text = re.sub(r"\b\d+\b", " ", text)
-    text = re.sub(r"\s+", " ", text).strip()
-    return text
+    return re.sub(r"\s+", " ", text).strip()
+
+
+def _work_keys_similar(a, b):
+    a, b = safe_text(a), safe_text(b)
+    if not a or not b:
+        return False
+    if a == b:
+        return True
+    aa, bb = set(a.split()), set(b.split())
+    overlap = len(aa & bb) / max(1, min(len(aa), len(bb)))
+    return overlap >= 0.80 or SequenceMatcher(None, a, b).ratio() >= 0.88
+
+
+def _event_text(item):
+    if safe_text(item.get("event_text")):
+        return safe_text(item.get("event_text"))
+    return safe_text(" ".join([
+        safe_text(item.get("title") or item.get("headline")),
+        safe_text(item.get("excerpt")),
+        safe_text(item.get("summary")),
+        " ".join(safe_text(x) for x in item.get("highlights", [])[:3]),
+        safe_text(item.get("platform")),
+        safe_text(item.get("release_date")),
+    ]))
+
+
+def _event_core(item):
+    text = normalize_title(_event_text(item))
+    work = work_key_from_text(safe_text(item.get("title") or item.get("headline")))
+    for token in set(work.split()):
+        if len(token) >= 3:
+            text = re.sub(rf"\b{re.escape(token)}\b", " ", text)
+    generic = {
+        "official","confirmed","confirmation","announce","announced","announcement","new","now",
+        "available","availability","release","released","premiere","premieres","upcoming","streaming",
+        "season","series","episode","episodes","trailer","teaser","first","look","glimpse","poster",
+        "casting","cast","joins","join","production","filming","filmed","wrapped","wraps","theatrical",
+        "cinema","box","office","gross","grossed","grosses","rights","acquired","acquisition","dub",
+        "dubbed","hindi","language","languages","update","updates","news","report","reports","says",
+        "reveals","talks","actor","actress","director","film","movie","show","tv",
+    }
+    return " ".join(t for t in text.split() if len(t) >= 3 and t not in generic)[:500]
+
+
+def _event_core_similarity(a, b):
+    aa, bb = _event_core(a), _event_core(b)
+    if not aa or not bb:
+        return 0.0
+    return max(SequenceMatcher(None, aa, bb).ratio(), token_jaccard(aa, bb))
+
+
+def event_signature_from_item(item):
+    work = work_key_from_text(safe_text(item.get("title") or item.get("headline")))
+    priority = safe_text(item.get("priority_type")) or infer_priority_type(item)
+    return f"{work}|{priority}|{_event_core(item)}"
+
+
+def _dedup_hours_for_priority(priority):
+    if priority == "Box Office Updates":
+        return BOX_OFFICE_DEDUP_HOURS
+    if priority == "Cast / Character Announcements":
+        return CAST_EVENT_DEDUP_HOURS
+    if priority == "Production / Filming Updates":
+        return PRODUCTION_EVENT_DEDUP_HOURS
+    if priority == "Release Date Confirmations":
+        return RELEASE_EVENT_DEDUP_HOURS
+    return DEFAULT_EVENT_DEDUP_HOURS
+
+
+def _publication_event_match(candidate, previous):
+    candidate_work = work_key_from_text(safe_text(candidate.get("title") or candidate.get("headline")))
+    previous_work = safe_text(previous.get("work_key")) or work_key_from_text(safe_text(previous.get("title") or previous.get("headline")))
+    if not _work_keys_similar(candidate_work, previous_work):
+        return False
+    candidate_priority = safe_text(candidate.get("priority_type")) or infer_priority_type(candidate)
+    previous_priority = safe_text(previous.get("priority_type"))
+    if not candidate_priority or candidate_priority != previous_priority:
+        return False
+    published_at = parse_datetime(previous.get("published_at")) or NOW_BD
+    age_hours = abs((NOW_BD - published_at).total_seconds()) / 3600.0
+    if age_hours > _dedup_hours_for_priority(candidate_priority):
+        return False
+    if event_signature_from_item(candidate) == safe_text(previous.get("fingerprint")):
+        return True
+    title_score = title_similarity(
+        safe_text(candidate.get("title") or candidate.get("headline")),
+        safe_text(previous.get("headline") or previous.get("title")),
+    )
+    core_score = _event_core_similarity(candidate, previous)
+    if title_score >= 0.55 or core_score >= 0.55:
+        return True
+    if candidate_priority == "Box Office Updates":
+        ctext, ptext = _event_text(candidate).lower(), _event_text(previous).lower()
+        numeric = set(re.findall(r"\$?\d+(?:\.\d+)?\s*(?:million|billion|m|bn)", ctext))
+        prev_numeric = set(re.findall(r"\$?\d+(?:\.\d+)?\s*(?:million|billion|m|bn)", ptext))
+        milestones = set(re.findall(r"\b(?:\d+(?:st|nd|rd|th)|opening weekend|record|fastest|milestone)\b", ctext))
+        prev_milestones = set(re.findall(r"\b(?:\d+(?:st|nd|rd|th)|opening weekend|record|fastest|milestone)\b", ptext))
+        if (numeric & prev_numeric) or (milestones & prev_milestones):
+            return True
+    return False
+
 
 def event_memory_hit(item):
-    title = safe_text(item.get("title"))
+    title = safe_text(item.get("title") or item.get("headline"))
     canonical = safe_text(item.get("canonical"))
     if canonical and canonical in POSTED_URLS:
         return True, "posted_url"
+    for previous in reversed(STATE.get("publication_fingerprints", [])[-1000:]):
+        if _publication_event_match(item, previous):
+            return True, f"same_work_same_event:{previous.get('priority_type','')}"
     work_key = work_key_from_text(title)
     priority = infer_priority_type(item)
     if work_key:
         memory = STATE.get("work_memory", {}).get(work_key)
-        if memory:
-            published_events = memory.get("published_events", {}) or {}
-            if priority and priority in published_events:
-                dt = parse_datetime(published_events.get(priority))
-                if dt and (NOW_BD - dt).total_seconds() <= WORK_MEMORY_RETENTION_DAYS * 86400:
-                    return True, f"same_work_same_event:{priority}"
-    # Fallback: very-high title similarity against recently published headlines.
+        if memory and priority in (memory.get("published_events", {}) or {}):
+            dt = parse_datetime(memory["published_events"][priority])
+            if dt and (NOW_BD - dt).total_seconds() <= _dedup_hours_for_priority(priority) * 3600:
+                return True, f"legacy_work_cooldown:{priority}"
     for previous in STATE.get("recent_titles", [])[-250:]:
         if title_similarity(title, previous) >= 0.92:
             return True, "near_identical_recent_title"
@@ -999,6 +1115,10 @@ def candidate_basic_allowed(item):
         <= published
         <= DISCOVERY_END
     ):
+        return False
+
+    fresh_start = parse_datetime(STATE.get("fresh_start_at"))
+    if fresh_start and published < fresh_start:
         return False
 
     region = safe_text(item.get("region"))
@@ -1885,6 +2005,13 @@ def cluster_ranked_events(ranked):
             if same_key or (
                 same_event_window(item, representative)
                 and event_similarity_v04(item, representative) >= 0.88
+            ) or (
+                safe_text(item.get("priority_type"))
+                and safe_text(item.get("priority_type")) == safe_text(representative.get("priority_type"))
+                and _work_keys_similar(work_key_from_text(item.get("title", "")), work_key_from_text(representative.get("title", "")))
+                and same_event_window(item, representative, hours=48)
+                and (title_similarity(item.get("title", ""), representative.get("title", "")) >= 0.55
+                     or _event_core_similarity(item, representative) >= 0.55)
             ):
                 cluster.append(item)
                 placed = True
@@ -1974,6 +2101,19 @@ def remember_posted_event(story):
         priority = safe_text(story.get("priority_type")) or infer_priority_type({"title": story.get("headline", ""), "excerpt": story.get("summary", "")})
         if priority:
             memory.setdefault("published_events", {})[priority] = now_iso()
+        records = STATE.setdefault("publication_fingerprints", [])
+        records.append({
+            "fingerprint": event_signature_from_item({**story, "priority_type": priority}),
+            "work_key": work_key,
+            "priority_type": priority,
+            "headline": story.get("headline", ""),
+            "event_text": _event_text(story)[:1400],
+            "core": _event_core(story),
+            "event_key": safe_text(story.get("event_key")),
+            "canonical": safe_text(story.get("canonical")),
+            "published_at": now_iso(),
+        })
+        STATE["publication_fingerprints"] = records[-1000:]
     return event_id
 
 
@@ -2951,13 +3091,17 @@ def prepare_image(story,index):
 # ============================================================
 
 def telegram_call(method, data=None, files=None):
+    if not TELEGRAM_BOT_TOKEN:
+        return {"ok": False, "description": "TELEGRAM_BOT_TOKEN missing", "configuration_error": True}
     url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/{method}"
     last = {"ok": False, "description": "Unknown error"}
-    for attempt in range(1, 6):
+    for attempt in range(1, 4):
         try:
             response = session.post(url, data=data or {}, files=files, timeout=90)
             result = response.json()
+            result["http_status"] = response.status_code
             if result.get("ok"):
+                result["ambiguous"] = False
                 return result
             last = result
             if response.status_code == 429:
@@ -2969,11 +3113,13 @@ def telegram_call(method, data=None, files=None):
                 time.sleep(2 * attempt)
                 continue
             break
+        except requests.Timeout as exc:
+            return {"ok": False, "description": f"timeout: {exc}", "transport_error": True, "ambiguous": True}
+        except requests.RequestException as exc:
+            return {"ok": False, "description": str(exc), "transport_error": True, "ambiguous": True}
         except Exception as exc:
-            last = {"ok": False, "description": str(exc)}
-            time.sleep(2 * attempt)
+            return {"ok": False, "description": str(exc), "transport_error": True, "ambiguous": True}
     return last
-
 
 def send_bot_api_fallback(image_path, rich_html):
     """Last-resort photo send when Rich Messages are unavailable."""
@@ -3457,8 +3603,20 @@ def process_ranked_region(region,ranked):
     return valid
 
 
+def publication_duplicate_reason(story, reserved):
+    candidate = dict(story)
+    candidate["title"] = story.get("headline") or story.get("title", "")
+    hit, reason = event_memory_hit(candidate)
+    if hit:
+        return reason
+    for previous in reserved:
+        if _publication_event_match(candidate, previous):
+            return f"same_run_duplicate:{previous.get('headline','')}"
+    return ""
+
+
 def run():
-    logger.info("ENTERTAINMENTNEWSROOM V1 ADAPTIVE PRE-CEREBRAS")
+    logger.info("ENTERTAINMENTNEWSROOM V1.2 ADAPTIVE DEDUP")
     logger.info("Channel=%s Mode=%s Threshold=%d/100",TELEGRAM_CHANNEL,NEWS_MODE,PUBLISH_THRESHOLD)
     logger.info("LOOKBACK=%d hours | %s -> %s",DISCOVERY_LOOKBACK_HOURS,DISCOVERY_START.isoformat(),DISCOVERY_END.isoformat())
     prune_state(); refresh_category_coverage(); bootstrap_learning_from_queue(); collect_rss()
@@ -3470,15 +3628,28 @@ def run():
     logger.info("DISCOVERY CANDIDATES AFTER PYTHON FILTER: %d",len(candidates))
     ranked=prepare_ranked_region("Entertainment",candidates); logger.info("PUBLISHABLE RANKED CANDIDATES: %d",len(ranked))
     stories=process_ranked_region("Entertainment",ranked); published_count=0
+    reserved_this_run=[]
     for index,story in enumerate(stories,1):
         try:
+            duplicate_reason = publication_duplicate_reason(story, reserved_this_run)
+            if duplicate_reason:
+                logger.info("FINAL PUBLISH DROP: %s | %s", duplicate_reason, story.get("headline",""))
+                continue
             rich_html = fit_rich_html(story)
             logger.info("Telegram rich message prepared: chars=%d type=%s", rich_visible_length(rich_html), story.get("news_type"))
             image_path=prepare_image(story,index)
             result=send_rich_photo(image_path, rich_html)
             if not result.get("ok"):
-                logger.warning("Rich Message publish failed; trying Bot API sendPhoto fallback: %s", result.get("description"))
-                result=send_bot_api_fallback(image_path, rich_html)
+                if result.get("ambiguous") or result.get("transport_error"):
+                    raise RuntimeError("Ambiguous Telegram transport failure; publish not retried to avoid duplicate delivery")
+                description = safe_text(result.get("description")).lower()
+                status = int(result.get("http_status",0) or 0)
+                can_fallback = status in {400,404,405} and ("rich" in description or "method" in description or "not found" in description)
+                if can_fallback:
+                    logger.warning("Rich Message unsupported/invalid; trying Bot API sendPhoto fallback: %s", result.get("description"))
+                    result=send_bot_api_fallback(image_path, rich_html)
+                else:
+                    raise RuntimeError(result.get("description") or "Telegram Rich Message publish failed")
             if not result.get("ok"):
                 raise RuntimeError(result.get("description") or "Telegram publish failed")
             message=result.get("result", {})
@@ -3487,6 +3658,7 @@ def run():
             canonical=story["canonical"]; POSTED_URLS.add(canonical); save_posted_url(canonical); qi=STATE["queue"].get(canonical)
             if qi:qi["status"]="posted";qi["posted_at"]=now_iso()
             store_event(story,published=True,message_id=message_id); remember_posted_event(story); update_category_coverage(story); STATE["recent_titles"].append(normalize_title(story["headline"]))
+            reserved_this_run.append(dict(story))
             logger.info("Published #%d score=%s sector=%s type=%s: %s",published_count,story.get("importance_score",0),story.get("sector"),story.get("news_type"),story["headline"])
         except Exception as exc:
             logger.error("Telegram publication failed for %s: %s",story.get("headline"),exc)
@@ -3622,15 +3794,21 @@ def self_test():
     blocked_good, _ = learned_source_block({"url": "https://good.example/c", "title": "major streaming release"})
     assert blocked_good is False
 
-    # State JSON regression with ISO dates.
+    # State JSON regression with ISO dates. Use a temporary file so self-test
+    # never mutates the repository's persistent production state.
+    import tempfile
     test_state=default_state(); test_state["queue"]["example.com/story"]={"region":"Entertainment","published_date":now_iso(),"last_seen":now_iso(),"status":"pending","title":"Example","url":"https://example.com/story"}
-    original_state=globals()["STATE"]; globals()["STATE"]=test_state
+    original_state=globals()["STATE"]; original_state_file=globals()["STATE_FILE"]
+    globals()["STATE"]=test_state
     try:
-        save_state(test_state)
-        with open(STATE_FILE,encoding="utf-8") as f: loaded=json.load(f)
-        assert loaded["queue"]["example.com/story"]["region"]=="Entertainment"
+        with tempfile.TemporaryDirectory() as _td:
+            globals()["STATE_FILE"]=os.path.join(_td,"news_state.json")
+            save_state(test_state)
+            with open(STATE_FILE,encoding="utf-8") as f: loaded=json.load(f)
+            assert loaded["queue"]["example.com/story"]["region"]=="Entertainment"
     finally:
         globals()["STATE"]=original_state
+        globals()["STATE_FILE"]=original_state_file
 
     # Poster regression: preserve portrait ratio and do not brand it.
     portrait=Image.new("RGB",(700,1100),(60,70,80))
@@ -3643,7 +3821,86 @@ def self_test():
     # No channel branding on full-poster path.
     assert "@EntertainmentNewsroom" not in "".join([])
 
-    logger.info("EntertainmentNewsroom V1 self-test passed.")
+    # Cross-run duplicate regression with different publisher wording.
+    old_state = globals()["STATE"]
+    old_posted = set(POSTED_URLS)
+    try:
+        globals()["STATE"] = default_state()
+        published_story = {
+            "headline": "Spider-Man: Brand New Day",
+            "title": "Spider-Man: Brand New Day",
+            "summary": "The film crosses $900 million domestically.",
+            "highlights": ["The film reaches a $900 million domestic milestone."],
+            "priority_type": "Box Office Updates",
+            "canonical": "deadline.com/spider-man-900m",
+            "url": "https://deadline.com/spider-man-900m",
+            "sector": "Hollywood",
+        }
+        remember_posted_event(published_story)
+        duplicate_candidate = {
+            "title": "Spider-Man: Brand New Day reaches $900 million domestic",
+            "excerpt": "Spider-Man: Brand New Day has crossed $900 million domestically.",
+            "url": "https://variety.com/2026/film/news/spider-man-900m",
+            "canonical": "variety.com/2026/film/news/spider-man-900m",
+            "priority_type": "Box Office Updates",
+        }
+        hit, reason = event_memory_hit(duplicate_candidate)
+        assert hit is True and "same_work_same_event" in reason
+
+        # Same-run duplicate must be blocked even before it is written to state.
+        reserved = [dict(published_story, published_at=NOW_BD.isoformat())]
+        assert publication_duplicate_reason(duplicate_candidate, reserved)
+
+        # A later box-office cycle is permitted after the cooldown window.
+        globals()["STATE"]["publication_fingerprints"][0]["published_at"] = (NOW_BD - timedelta(hours=60)).isoformat()
+        later, _ = event_memory_hit(duplicate_candidate)
+        assert later is False
+    finally:
+        globals()["STATE"] = old_state
+        POSTED_URLS.clear(); POSTED_URLS.update(old_posted)
+
+    # Two different event types for the same work are not conflated.
+    old_state = globals()["STATE"]
+    try:
+        globals()["STATE"] = default_state()
+        remember_posted_event({
+            "headline":"Spider-Man: Brand New Day", "title":"Spider-Man: Brand New Day",
+            "summary":"Sony confirmed the release date.", "highlights":["The release date is September 2026."],
+            "priority_type":"Release Date Confirmations", "canonical":"sony.com/spider-date", "url":"https://sony.com/spider-date", "sector":"Hollywood"
+        })
+        trailer_candidate = {"title":"Spider-Man: Brand New Day trailer released", "excerpt":"The first trailer has been released.",
+                             "url":"https://deadline.com/spider-trailer", "canonical":"deadline.com/spider-trailer",
+                             "priority_type":"Trailer Releases"}
+        assert event_memory_hit(trailer_candidate)[0] is False
+    finally:
+        globals()["STATE"] = old_state
+
+    # Cluster different headlines from multiple publishers when they describe
+    # the same work + same event family.
+    a = {"title":"Spider-Man: Brand New Day crosses $900 million", "excerpt":"Domestic gross reaches $900 million.",
+         "priority_type":"Box Office Updates", "event_key":"publisher_key_a", "editor_rank":1,
+         "importance_score":95, "published_date":NOW_BD.isoformat()}
+    b = {"title":"Spider-Man: Brand New Day hits $900M domestic", "excerpt":"The movie reaches the $900 million domestic milestone.",
+         "priority_type":"Box Office Updates", "event_key":"publisher_key_b", "editor_rank":2,
+         "importance_score":92, "published_date":NOW_BD.isoformat()}
+    assert len(collapse_event_clusters([a,b])) == 1
+
+    # Telegram timeout is ambiguous: never trigger a second sendPhoto that can
+    # duplicate a message that actually reached Telegram.
+    class _TimeoutSession:
+        def __init__(self): self.calls=0
+        def post(self,*args,**kwargs):
+            self.calls += 1
+            raise requests.Timeout("simulated timeout")
+    old_session = globals()["session"]
+    try:
+        ts = _TimeoutSession(); globals()["session"] = ts
+        result = telegram_call("sendRichMessage", data={"chat_id":"@EntertainmentNewsroom"})
+        assert result.get("ambiguous") is True and ts.calls == 1
+    finally:
+        globals()["session"] = old_session
+
+    logger.info("EntertainmentNewsroom V1.2 self-test passed.")
 
 
 if __name__ == "__main__":
