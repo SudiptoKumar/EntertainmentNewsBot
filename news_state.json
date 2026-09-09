@@ -1,142 +1,142 @@
 {
   "feeds": {
     "https://deadline.com/feed/": {
-      "etag": "W/\"6ed56bea94b0b96feab5ea0b81b4f626\"",
-      "last_modified": "Wed, 09 Sep 2026 15:03:36 GMT",
-      "last_checked": "2026-09-09T21:04:24.003737+06:00",
+      "etag": "W/\"79e4acb3101694f286a7e2f341e5a54a\"",
+      "last_modified": "Wed, 09 Sep 2026 19:06:30 GMT",
+      "last_checked": "2026-09-10T01:08:38.851049+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://variety.com/feed/": {
-      "etag": "W/\"86a9f5e55e6eee3a8ac046b5fea19312\"",
-      "last_modified": "Wed, 09 Sep 2026 08:46:43 GMT",
-      "last_checked": "2026-09-09T21:04:24.209635+06:00",
+      "etag": "W/\"83e755eba514e0a54a60c9efc47b6c08\"",
+      "last_modified": "Wed, 09 Sep 2026 19:07:36 GMT",
+      "last_checked": "2026-09-10T01:08:39.145856+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.hollywoodreporter.com/feed/": {
-      "etag": "W/\"1fc9d58718c37e52dd507dc56d48c273\"",
-      "last_modified": "Wed, 09 Sep 2026 02:49:38 GMT",
-      "last_checked": "2026-09-09T21:04:24.373569+06:00",
+      "etag": "W/\"4bf21163852a666e0975c9baa490c285\"",
+      "last_modified": "Wed, 09 Sep 2026 19:06:52 GMT",
+      "last_checked": "2026-09-10T01:08:39.422954+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.thewrap.com/feed/": {
-      "etag": "\"be19994f9a4e51789afe639292d06bbe\"",
-      "last_modified": "Wed, 09 Sep 2026 14:57:05 GMT",
-      "last_checked": "2026-09-09T21:04:24.518151+06:00",
+      "etag": "\"bd2b64167a69e4b75297ce26f503d099\"",
+      "last_modified": "Wed, 09 Sep 2026 19:00:00 GMT",
+      "last_checked": "2026-09-10T01:08:39.697093+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.indiewire.com/feed/": {
-      "etag": "W/\"cd8dc5e2e5ce25e90bd360e45dd47f02\"",
-      "last_modified": "Wed, 09 Sep 2026 15:01:44 GMT",
-      "last_checked": "2026-09-09T21:04:25.226876+06:00",
+      "etag": "W/\"1caf4e2ec3725da2036b7a29488b898e\"",
+      "last_modified": "Tue, 08 Sep 2026 19:35:51 GMT",
+      "last_checked": "2026-09-10T01:08:40.001751+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://collider.com/feed/": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-09-09T21:04:47.632635+06:00",
-      "fail_count": 1,
+      "last_checked": "2026-09-10T01:08:40.237703+06:00",
+      "fail_count": 0,
       "alerted": false
     },
     "https://tvline.com/feed/": {
       "etag": "\"6c823de77d46e13c23f3d1f452b83ffa\"",
       "last_modified": "Wed, 09 Sep 2026 14:53:02 GMT",
-      "last_checked": "2026-09-09T21:04:47.834879+06:00",
-      "fail_count": 0,
+      "last_checked": "2026-09-10T01:08:40.633200+06:00",
+      "fail_count": 1,
       "alerted": false
     },
     "https://www.ottplay.com/rss": {
       "etag": "\"b5496c89c58ff0f5d07d64a68d4efe07\"",
       "last_modified": "Thu, 27 May 2021 12:38:49 GMT",
-      "last_checked": "2026-09-09T21:04:49.099888+06:00",
+      "last_checked": "2026-09-10T01:08:41.548081+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.filmibeat.com/rss/feeds/filmibeat-news.xml": {
       "etag": null,
-      "last_modified": "Wed, 09 Sep 2026 15:04:49 GMT",
-      "last_checked": "2026-09-09T21:04:49.543756+06:00",
+      "last_modified": "Wed, 09 Sep 2026 19:00:06 GMT",
+      "last_checked": "2026-09-10T01:08:42.060595+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.pinkvilla.com/rss": {
-      "last_checked": "2026-09-09T21:04:49.754787+06:00",
-      "fail_count": 9,
+      "last_checked": "2026-09-10T01:08:42.178430+06:00",
+      "fail_count": 10,
       "alerted": true
     },
     "https://www.bollywoodhungama.com/feed/": {
-      "etag": "\"cfded55d582c14c3040a5bc43aaa9007\"",
-      "last_modified": "Wed, 09 Sep 2026 15:00:35 GMT",
-      "last_checked": "2026-09-09T21:04:49.863118+06:00",
+      "etag": "\"8512365029a15ec05a6c32165f7ad03f\"",
+      "last_modified": "Wed, 09 Sep 2026 17:34:57 GMT",
+      "last_checked": "2026-09-10T01:08:42.829966+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.gadgets360.com/entertainment/rss": {
-      "last_checked": "2026-09-09T21:04:50.165354+06:00",
-      "fail_count": 9,
+      "last_checked": "2026-09-10T01:08:43.180380+06:00",
+      "fail_count": 10,
       "alerted": true
     },
     "https://www.soompi.com/feed": {
-      "etag": "W/\"ddccd081dd0d8d4839f344bd91c5ad76\"",
-      "last_modified": "Wed, 09 Sep 2026 13:37:29 GMT",
-      "last_checked": "2026-09-09T21:04:50.413385+06:00",
+      "etag": "W/\"bf973dc9b555b7cf5146295314ba914e\"",
+      "last_modified": "Wed, 09 Sep 2026 18:46:05 GMT",
+      "last_checked": "2026-09-10T01:08:43.386672+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.whats-on-netflix.com/feed/": {
       "etag": null,
-      "last_modified": "Wed, 09 Sep 2026 13:25:30 GMT",
-      "last_checked": "2026-09-09T21:04:51.618243+06:00",
+      "last_modified": "Wed, 09 Sep 2026 17:08:28 GMT",
+      "last_checked": "2026-09-10T01:08:45.056107+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.netflix.com/tudum/rss.xml": {
-      "last_checked": "2026-09-09T21:04:52.575983+06:00",
-      "fail_count": 9,
+      "last_checked": "2026-09-10T01:08:46.224682+06:00",
+      "fail_count": 10,
       "alerted": true
     },
     "https://press.wbd.com/us/en/rss": {
-      "last_checked": "2026-09-09T21:04:53.023488+06:00",
-      "fail_count": 9,
+      "last_checked": "2026-09-10T01:08:46.609958+06:00",
+      "fail_count": 10,
       "alerted": true
     },
     "https://www.apple.com/tv-pr/newsroom/feed/": {
-      "last_checked": "2026-09-09T21:04:53.396626+06:00",
-      "fail_count": 9,
+      "last_checked": "2026-09-10T01:08:47.340603+06:00",
+      "fail_count": 10,
       "alerted": true
     },
     "https://www.aboutamazon.com/rss": {
-      "last_checked": "2026-09-09T21:04:53.732961+06:00",
-      "fail_count": 9,
+      "last_checked": "2026-09-10T01:08:47.721973+06:00",
+      "fail_count": 10,
       "alerted": true
     },
     "https://www.marvel.com/articles/feed": {
-      "last_checked": "2026-09-09T21:04:54.341716+06:00",
-      "fail_count": 9,
+      "last_checked": "2026-09-10T01:08:48.135294+06:00",
+      "fail_count": 10,
       "alerted": true
     },
     "https://www.dc.com/blog/rss.xml": {
-      "last_checked": "2026-09-09T21:04:55.088166+06:00",
-      "fail_count": 9,
+      "last_checked": "2026-09-10T01:08:48.427614+06:00",
+      "fail_count": 10,
       "alerted": true
     },
     "https://www.sonypictures.com/rss": {
-      "last_checked": "2026-09-09T21:04:55.465878+06:00",
-      "fail_count": 9,
+      "last_checked": "2026-09-10T01:08:49.046098+06:00",
+      "fail_count": 10,
       "alerted": true
     },
     "https://www.paramount.com/rss": {
-      "last_checked": "2026-09-09T21:04:55.572188+06:00",
-      "fail_count": 9,
+      "last_checked": "2026-09-10T01:08:49.113816+06:00",
+      "fail_count": 10,
       "alerted": true
     },
     "https://www.universalpictures.com/rss": {
-      "last_checked": "2026-09-09T21:04:55.812610+06:00",
-      "fail_count": 9,
+      "last_checked": "2026-09-10T01:08:49.503231+06:00",
+      "fail_count": 10,
       "alerted": true
     }
   },
@@ -6049,7 +6049,7 @@
       "priority_rank": 7,
       "sector": "International",
       "rank_reason": "Unscored fallback; withheld from publication.",
-      "last_ranked_at": "2026-09-09T21:05:56.103300+06:00",
+      "last_ranked_at": "2026-09-10T01:11:54.918759+06:00",
       "learning_pattern": ""
     },
     "deadline.com/2026/09/jeff-lowell-dies-john-tucker-must-die-the-crew-1237071814": {
@@ -6073,7 +6073,7 @@
       "priority_rank": 11,
       "sector": "International",
       "rank_reason": "Unscored fallback; withheld from publication.",
-      "last_ranked_at": "2026-09-09T21:05:56.106950+06:00",
+      "last_ranked_at": "2026-09-10T01:11:54.922502+06:00",
       "learning_pattern": ""
     },
     "deadline.com/2026/09/federal-film-tv-tax-credits-latest-1237071772": {
@@ -6097,7 +6097,7 @@
       "priority_rank": 11,
       "sector": "International",
       "rank_reason": "Unscored fallback; withheld from publication.",
-      "last_ranked_at": "2026-09-09T21:05:56.107098+06:00",
+      "last_ranked_at": "2026-09-10T01:11:54.922641+06:00",
       "learning_pattern": ""
     },
     "deadline.com/2026/09/john-mulaney-get-smart-reboot-1237071666": {
@@ -6121,7 +6121,7 @@
       "priority_rank": 9,
       "sector": "International",
       "rank_reason": "Unscored fallback; withheld from publication.",
-      "last_ranked_at": "2026-09-09T21:05:56.105744+06:00",
+      "last_ranked_at": "2026-09-10T01:11:54.921300+06:00",
       "learning_pattern": ""
     },
     "deadline.com/2026/09/lonesome-dove-netflix-series-zoe-kazan-jeb-stuart-1237071579": {
@@ -6144,8 +6144,8 @@
       "priority_tier": 2,
       "priority_rank": 5,
       "sector": "Hollywood",
-      "rank_reason": "High‑profile adaptation of a classic novel, green‑lit by a major streaming platform with strong show‑runner pedigree; significant audience interest and global reach.",
-      "last_ranked_at": "2026-09-09T21:05:56.101292+06:00",
+      "rank_reason": "Official green‑light from Netflix for a high‑profile Western adaptation, strong IP, global platform, and high audience interest.",
+      "last_ranked_at": "2026-09-10T01:11:54.915886+06:00",
       "learning_pattern": ""
     },
     "deadline.com/2026/09/keen-ruffalo-signs-caa-1237071645": {
@@ -6169,7 +6169,7 @@
       "priority_rank": 11,
       "sector": "International",
       "rank_reason": "Unscored fallback; withheld from publication.",
-      "last_ranked_at": "2026-09-09T21:05:56.107232+06:00",
+      "last_ranked_at": "2026-09-10T01:11:54.922779+06:00",
       "learning_pattern": ""
     },
     "deadline.com/2026/09/pact-census-international-tv-revenues-up-1237070622": {
@@ -6184,17 +6184,18 @@
       "image": "https://deadline.com/wp-content/uploads/2025/09/Adolescence-Erin-Doherty.jpg",
       "discovery": "rss",
       "date_estimated": false,
-      "status": "pending",
+      "status": "posted",
       "first_seen": "2026-09-09T11:47:41.624377+06:00",
       "last_seen": "2026-09-09T11:47:41.624383+06:00",
-      "importance_score": 100,
+      "importance_score": 89,
       "priority_type": "Box Office Updates",
       "priority_tier": 3,
       "priority_rank": 13,
       "sector": "International",
-      "rank_reason": "Record‑high revenue for British TV makers, highlighting industry health and informing strategic decisions for broadcasters and investors.",
-      "last_ranked_at": "2026-09-09T21:05:56.108162+06:00",
-      "learning_pattern": ""
+      "rank_reason": "Second‑highest ever revenue for UK independent producers, driven by US streaming investment; strong industry impact and high audience interest.",
+      "last_ranked_at": "2026-09-10T01:11:54.923313+06:00",
+      "learning_pattern": "",
+      "posted_at": "2026-09-10T01:23:26.915597+06:00"
     },
     "deadline.com/2026/09/company-ovation-venice-film-festival-casey-affleck-1237070741": {
       "title": "Casey Affleck’s ‘Company’ Earns 4.5-Minute Ovation At Venice World Premiere",
@@ -6236,13 +6237,13 @@
       "status": "pending",
       "first_seen": "2026-09-09T11:47:41.641801+06:00",
       "last_seen": "2026-09-09T11:47:41.641807+06:00",
-      "importance_score": 74,
+      "importance_score": 80,
       "priority_type": "Box Office Updates",
       "priority_tier": 3,
       "priority_rank": 13,
       "sector": "International",
-      "rank_reason": "Official box‑office data showing growth on Broadway; significant for the theatrical market and international relevance.",
-      "last_ranked_at": "2026-09-09T21:05:56.108761+06:00",
+      "rank_reason": "Weekly Broadway gross up 2 % YoY, indicating healthy theatrical performance as summer ends; relevant to theatre‑focused audiences.",
+      "last_ranked_at": "2026-09-10T01:11:54.923930+06:00",
       "learning_pattern": ""
     },
     "deadline.com/2026/09/snl-uk-amelia-dimoldenberg-jamie-demetriou-guest-hosts-1237071497": {
@@ -6260,13 +6261,13 @@
       "status": "pending",
       "first_seen": "2026-09-09T11:47:41.648961+06:00",
       "last_seen": "2026-09-09T11:47:41.648967+06:00",
-      "importance_score": 69,
+      "importance_score": 60,
       "priority_type": "Cast / Character Announcements",
       "priority_tier": 3,
       "priority_rank": 9,
-      "sector": "Hollywood",
-      "rank_reason": "Official announcement of high‑profile hosts for a major comedy franchise – strong audience anticipation and platform relevance.",
-      "last_ranked_at": "2026-09-09T21:05:56.105265+06:00",
+      "sector": "International",
+      "rank_reason": "High‑profile UK comedians announced as hosts for SNL UK season 2, boosting viewer curiosity and cross‑market appeal.",
+      "last_ranked_at": "2026-09-10T01:11:54.920919+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/film/awards/hamaguchi-ryusuke-all-of-a-sudden-asia-pacific-screen-awards-nominations-1236855447": {
@@ -6290,7 +6291,7 @@
       "priority_rank": 11,
       "sector": "International",
       "rank_reason": "Unscored fallback; withheld from publication.",
-      "last_ranked_at": "2026-09-09T21:05:56.106797+06:00",
+      "last_ranked_at": "2026-09-10T01:11:54.922346+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/tv/news/jon-stewart-nathan-fielder-you-can-see-everything-trump-1236855432": {
@@ -6314,7 +6315,7 @@
       "priority_rank": 7,
       "sector": "International",
       "rank_reason": "Unscored fallback; withheld from publication.",
-      "last_ranked_at": "2026-09-09T21:05:56.103440+06:00",
+      "last_ranked_at": "2026-09-10T01:11:54.918905+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/film/news/john-mulaney-get-smart-movie-reboot-warner-bros-1236855373": {
@@ -6329,17 +6330,18 @@
       "image": "https://variety.com/wp-content/uploads/2025/10/GettyImages-2202399482-1.jpg",
       "discovery": "rss",
       "date_estimated": false,
-      "status": "pending",
+      "status": "posted",
       "first_seen": "2026-09-09T11:47:41.784122+06:00",
       "last_seen": "2026-09-09T11:47:41.784128+06:00",
-      "importance_score": 0,
+      "importance_score": 90,
       "priority_type": "Cast / Character Announcements",
       "priority_tier": 3,
       "priority_rank": 9,
-      "sector": "International",
-      "rank_reason": "Unscored fallback; withheld from publication.",
-      "last_ranked_at": "2026-09-09T21:05:56.105616+06:00",
-      "learning_pattern": ""
+      "sector": "Hollywood",
+      "rank_reason": "Early‑stage casting news for a high‑profile comedy reboot, notable talent involvement and strong audience curiosity.",
+      "last_ranked_at": "2026-09-10T01:11:54.920491+06:00",
+      "learning_pattern": "",
+      "posted_at": "2026-09-10T01:23:17.183508+06:00"
     },
     "variety.com/2026/tv/news/netflix-lonesome-dove-orders-new-series-take-1236855339": {
       "title": "Netflix Orders New Series Take On ‘Lonesome Dove’ From ‘East of Eden’ Showrunners Zoe Kazan and Jeb Stuart",
@@ -6387,7 +6389,7 @@
       "priority_rank": 8,
       "sector": "International",
       "rank_reason": "Unscored fallback; withheld from publication.",
-      "last_ranked_at": "2026-09-09T21:05:56.104691+06:00",
+      "last_ranked_at": "2026-09-10T01:11:54.920344+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/film/news/congress-draft-federal-film-incentive-trump-1236855119": {
@@ -6436,7 +6438,7 @@
       "priority_rank": 11,
       "sector": "International",
       "rank_reason": "Unscored fallback; withheld from publication.",
-      "last_ranked_at": "2026-09-09T21:05:56.107343+06:00",
+      "last_ranked_at": "2026-09-10T01:11:54.922895+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/tv/global/british-tv-sector-revenues-streamers-1236854714": {
@@ -6451,17 +6453,18 @@
       "image": "https://variety.com/wp-content/uploads/2026/07/The-Gentlemen-Season-2.jpg",
       "discovery": "rss",
       "date_estimated": false,
-      "status": "pending",
+      "status": "posted",
       "first_seen": "2026-09-09T11:47:41.834683+06:00",
       "last_seen": "2026-09-09T11:47:41.834694+06:00",
-      "importance_score": 87,
+      "importance_score": 84,
       "priority_type": "Box Office Updates",
       "priority_tier": 3,
       "priority_rank": 13,
       "sector": "International",
-      "rank_reason": "Official trade‑group data showing a $5.1 bn revenue boost driven by U.S. streamers – high significance for global production market and strong international relevance.",
-      "last_ranked_at": "2026-09-09T21:05:56.108304+06:00",
-      "learning_pattern": ""
+      "rank_reason": "£3.81 bn revenue figure underscores the UK market’s attractiveness to US streamers; notable for global production trends.",
+      "last_ranked_at": "2026-09-10T01:11:54.923625+06:00",
+      "learning_pattern": "",
+      "posted_at": "2026-09-10T01:23:34.161489+06:00"
     },
     "whats-on-netflix.com/news/call-my-agent-reunion-movie-september-10-recap": {
       "title": "Where We Left the ‘Call My Agent!’ Cast Ahead of the Netflix Reunion Movie",
@@ -6477,14 +6480,14 @@
       "date_estimated": false,
       "status": "pending",
       "first_seen": "2026-09-09T11:47:48.865113+06:00",
-      "last_seen": "2026-09-09T21:04:52.059784+06:00",
-      "importance_score": 64,
-      "priority_type": "First Look / First Glimpse / Posters",
-      "priority_tier": 2,
-      "priority_rank": 8,
+      "last_seen": "2026-09-10T01:08:45.540468+06:00",
+      "importance_score": 68,
+      "priority_type": "Release Date Confirmations",
+      "priority_tier": 1,
+      "priority_rank": 4,
       "sector": "International",
-      "rank_reason": "Reported preview of a popular series reunion; moderate significance and strong fan interest.",
-      "last_ranked_at": "2026-09-09T21:05:56.103860+06:00",
+      "rank_reason": "Global release of a highly‑anticipated reunion film for a beloved series; strong fan interest and streaming platform relevance.",
+      "last_ranked_at": "2026-09-10T01:11:54.915426+06:00",
       "learning_pattern": ""
     },
     "whats-on-netflix.com/news/the-gentlemen-season-2-audience-decline-netflix": {
@@ -6501,14 +6504,14 @@
       "date_estimated": false,
       "status": "pending",
       "first_seen": "2026-09-09T11:47:48.871687+06:00",
-      "last_seen": "2026-09-09T21:04:52.070666+06:00",
-      "importance_score": 60,
+      "last_seen": "2026-09-10T01:08:45.552639+06:00",
+      "importance_score": 54,
       "priority_type": "Box Office Updates",
       "priority_tier": 3,
       "priority_rank": 13,
-      "sector": "Hollywood",
-      "rank_reason": "Reported viewership data indicating a slump; relevant for streaming performance analysis but lower impact.",
-      "last_ranked_at": "2026-09-09T21:05:56.108900+06:00",
+      "sector": "International",
+      "rank_reason": "Significant drop in streaming viewership for a high‑profile sequel; indicates audience reception but lower overall impact than revenue or box‑office news.",
+      "last_ranked_at": "2026-09-10T01:11:54.924243+06:00",
       "learning_pattern": ""
     },
     "whats-on-netflix.com/interviews/dont-say-good-luck-laura-hankin-interview-true-story": {
@@ -6542,13 +6545,13 @@
       "status": "pending",
       "first_seen": "2026-09-09T16:56:54.836336+06:00",
       "last_seen": "2026-09-09T16:56:54.836343+06:00",
-      "importance_score": 73,
+      "importance_score": 70,
       "priority_type": "Upcoming OTT Releases",
       "priority_tier": 1,
       "priority_rank": 3,
       "sector": "International",
-      "rank_reason": "Official slate update for South African market adding new franchise entries; strong regional impact and platform IP, moderate global relevance.",
-      "last_ranked_at": "2026-09-09T21:05:56.099790+06:00",
+      "rank_reason": "Regional content rollout with new seasons of established franchises; notable for local market growth.",
+      "last_ranked_at": "2026-09-10T01:11:54.914506+06:00",
       "learning_pattern": ""
     },
     "deadline.com/2026/09/john-malkovich-israelthe-music-critic-cancel-1237071975": {
@@ -6566,13 +6569,13 @@
       "status": "pending",
       "first_seen": "2026-09-09T16:56:54.851025+06:00",
       "last_seen": "2026-09-09T16:56:54.851032+06:00",
-      "importance_score": 55,
-      "priority_type": "Release Date Confirmations",
-      "priority_tier": 1,
-      "priority_rank": 4,
-      "sector": "International",
-      "rank_reason": "Official cancellation of a high‑profile performance due to fabricated press release; notable but limited impact on broader entertainment news.",
-      "last_ranked_at": "2026-09-09T21:05:56.101165+06:00",
+      "importance_score": 44,
+      "priority_type": "Production / Filming Updates",
+      "priority_tier": 3,
+      "priority_rank": 11,
+      "sector": "Hollywood",
+      "rank_reason": "Cancellation due to fabricated press release; notable but limited broader entertainment relevance.",
+      "last_ranked_at": "2026-09-10T01:11:54.921921+06:00",
       "learning_pattern": ""
     },
     "deadline.com/2026/09/bbc-matt-brittin-news-unit-examine-jason-arday-coverage-1237071542": {
@@ -6590,13 +6593,13 @@
       "status": "pending",
       "first_seen": "2026-09-09T16:56:54.865723+06:00",
       "last_seen": "2026-09-09T16:56:54.865729+06:00",
-      "importance_score": 49,
+      "importance_score": 35,
       "priority_type": "Production / Filming Updates",
       "priority_tier": 3,
       "priority_rank": 11,
-      "sector": "International",
-      "rank_reason": "Official internal review of news coverage; limited entertainment impact but notable for media accountability.",
-      "last_ranked_at": "2026-09-09T21:05:56.106523+06:00",
+      "sector": "Hollywood",
+      "rank_reason": "Internal BBC review; relevant to media industry but minimal entertainment audience interest.",
+      "last_ranked_at": "2026-09-10T01:11:54.922063+06:00",
       "learning_pattern": ""
     },
     "deadline.com/2026/09/damilola-orimogunje-venice-giornate-dear-ajayi-1237071950": {
@@ -6614,13 +6617,13 @@
       "status": "pending",
       "first_seen": "2026-09-09T16:56:54.882842+06:00",
       "last_seen": "2026-09-09T16:56:54.882849+06:00",
-      "importance_score": 63,
-      "priority_type": "New Movie / Series Announcements",
+      "importance_score": 52,
+      "priority_type": "First Look / First Glimpse / Posters",
       "priority_tier": 2,
-      "priority_rank": 5,
+      "priority_rank": 8,
       "sector": "International",
-      "rank_reason": "Official selection of a Nigerian film at a prestigious festival; high cultural relevance and growing international interest.",
-      "last_ranked_at": "2026-09-09T21:05:56.102329+06:00",
+      "rank_reason": "First Nigerian feature in Venice’s Giornate; significant for African cinema representation.",
+      "last_ranked_at": "2026-09-10T01:11:54.919731+06:00",
       "learning_pattern": ""
     },
     "deadline.com/2026/09/our-loves-trailer-avi-nesher-october-7-film-toronto-ophir-1237071955": {
@@ -6638,13 +6641,13 @@
       "status": "pending",
       "first_seen": "2026-09-09T16:56:54.900718+06:00",
       "last_seen": "2026-09-09T16:56:54.900724+06:00",
-      "importance_score": 61,
+      "importance_score": 67,
       "priority_type": "Trailer Releases",
       "priority_tier": 2,
       "priority_rank": 7,
       "sector": "International",
-      "rank_reason": "Official first trailer for an Israeli film with upcoming TIFF premiere; solid anticipation among festival audiences.",
-      "last_ranked_at": "2026-09-09T21:05:56.103150+06:00",
+      "rank_reason": "First trailer for a politically charged film premiering at TIFF; strong festival exposure and notable producers.",
+      "last_ranked_at": "2026-09-10T01:11:54.918598+06:00",
       "learning_pattern": ""
     },
     "deadline.com/2026/09/levelk-us-euro-sales-karlovy-vary-prizewinner-guest-1237071941": {
@@ -6687,13 +6690,13 @@
       "status": "pending",
       "first_seen": "2026-09-09T16:56:54.927989+06:00",
       "last_seen": "2026-09-09T16:56:54.927995+06:00",
-      "importance_score": 95,
+      "importance_score": 90,
       "priority_type": "First Look / First Glimpse / Posters",
       "priority_tier": 2,
       "priority_rank": 8,
       "sector": "Hollywood",
-      "rank_reason": "First‑look release for a high‑budget, star‑studded series; strong visual assets generate buzz and platform promotion.",
-      "last_ranked_at": "2026-09-09T21:05:56.103583+06:00",
+      "rank_reason": "Exclusive first‑look release showcases major cast and visual style, driving buzz for upcoming OTT series.",
+      "last_ranked_at": "2026-09-10T01:11:54.919068+06:00",
       "learning_pattern": ""
     },
     "deadline.com/2026/09/tokyo-gap-financing-market-canada-frontieres-1237071794": {
@@ -6761,13 +6764,13 @@
       "status": "pending",
       "first_seen": "2026-09-09T16:56:55.089761+06:00",
       "last_seen": "2026-09-09T16:56:55.089768+06:00",
-      "importance_score": 66,
+      "importance_score": 55,
       "priority_type": "Production / Filming Updates",
       "priority_tier": 3,
       "priority_rank": 11,
       "sector": "International",
-      "rank_reason": "Official production details for a high‑end period thriller series; notable creative talent and international appeal.",
-      "last_ranked_at": "2026-09-09T21:05:56.105994+06:00",
+      "rank_reason": "Insight into a period thriller series; notable for creative development but early stage.",
+      "last_ranked_at": "2026-09-10T01:11:54.921621+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/film/global/ventana-sur-bernardo-bergeret-joanna-lombardi-karinadolgiej-1236854355": {
@@ -6785,13 +6788,13 @@
       "status": "pending",
       "first_seen": "2026-09-09T16:56:55.110078+06:00",
       "last_seen": "2026-09-09T16:56:55.110084+06:00",
-      "importance_score": 62,
-      "priority_type": "OTT Platform Acquisition / Streaming Rights",
+      "importance_score": 52,
+      "priority_type": "Production / Filming Updates",
       "priority_tier": 3,
-      "priority_rank": 12,
+      "priority_rank": 11,
       "sector": "International",
-      "rank_reason": "Official formation of a selection committee for a major co‑production forum; impacts cross‑border financing and development.",
-      "last_ranked_at": "2026-09-09T21:05:56.107859+06:00",
+      "rank_reason": "Formation of a selection committee for co‑production; important industry move but limited immediate audience impact.",
+      "last_ranked_at": "2026-09-10T01:11:54.921760+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/film/news/drishyam-conclusion-abhishek-pathak-ajay-devgn-1236855563": {
@@ -6809,13 +6812,13 @@
       "status": "pending",
       "first_seen": "2026-09-09T16:56:55.129427+06:00",
       "last_seen": "2026-09-09T16:56:55.129434+06:00",
-      "importance_score": 82,
-      "priority_type": "New Movie / Series Announcements",
-      "priority_tier": 2,
-      "priority_rank": 5,
+      "importance_score": 76,
+      "priority_type": "Cast / Character Announcements",
+      "priority_tier": 3,
+      "priority_rank": 9,
       "sector": "Indian",
-      "rank_reason": "Official statements on the third Hindi‑language installment of a globally recognized franchise; strong domestic and overseas interest.",
-      "last_ranked_at": "2026-09-09T21:05:56.101439+06:00",
+      "rank_reason": "Third installment of a major Hindi franchise with global box‑office potential; confirmed cast and storyline details.",
+      "last_ranked_at": "2026-09-10T01:11:54.920629+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/tv/global/blindspot-berlin-christmas-market-terrorist-attack-tiff-1236855021": {
@@ -6833,13 +6836,13 @@
       "status": "pending",
       "first_seen": "2026-09-09T16:56:55.149908+06:00",
       "last_seen": "2026-09-09T16:56:55.149914+06:00",
-      "importance_score": 61,
+      "importance_score": 42,
       "priority_type": "First Look / First Glimpse / Posters",
       "priority_tier": 2,
       "priority_rank": 8,
       "sector": "International",
-      "rank_reason": "Official insight into a new series tackling a recent terror event; strong creative relevance and moderate audience interest.",
-      "last_ranked_at": "2026-09-09T21:05:56.103945+06:00",
+      "rank_reason": "Series focusing on a historic event; informative but lower impact compared to other announcements.",
+      "last_ranked_at": "2026-09-10T01:11:54.919885+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/music/news/suno-new-label-backed-model-v6-1236855351": {
@@ -6854,17 +6857,18 @@
       "image": "https://variety.com/wp-content/uploads/2026/09/Suno_v6_A.jpg",
       "discovery": "rss",
       "date_estimated": false,
-      "status": "pending",
+      "status": "posted",
       "first_seen": "2026-09-09T16:56:55.161415+06:00",
       "last_seen": "2026-09-09T16:56:55.161422+06:00",
-      "importance_score": 54,
-      "priority_type": "OTT / Streaming Availability",
-      "priority_tier": 1,
-      "priority_rank": 1,
+      "importance_score": 100,
+      "priority_type": "New Movie / Series Announcements",
+      "priority_tier": 2,
+      "priority_rank": 5,
       "sector": "International",
-      "rank_reason": "Official launch of a new AI music generation model backed by major licensing deals; notable tech‑industry crossover but limited direct entertainment impact.",
-      "last_ranked_at": "2026-09-09T21:05:56.099659+06:00",
-      "learning_pattern": ""
+      "rank_reason": "AI music model backed by Warner Music, BMG and Believe, significant tech‑driven development with global industry impact.",
+      "last_ranked_at": "2026-09-10T01:11:54.915633+06:00",
+      "learning_pattern": "",
+      "posted_at": "2026-09-10T01:23:02.906828+06:00"
     },
     "variety.com/2026/film/global/duncan-kenworthy-to-receive-bafta-fellowship-1236855540": {
       "title": "‘Four Weddings and a Funeral’ and ‘Love Actually’ Producer Duncan Kenworthy to Receive BAFTA Fellowship",
@@ -6878,17 +6882,18 @@
       "image": "https://variety.com/wp-content/uploads/2026/09/EV14HKAcadCirc_20140326_1115.jpg",
       "discovery": "rss",
       "date_estimated": false,
-      "status": "pending",
+      "status": "posted",
       "first_seen": "2026-09-09T16:56:55.175653+06:00",
       "last_seen": "2026-09-09T16:56:55.175659+06:00",
-      "importance_score": 48,
-      "priority_type": "First Look / First Glimpse / Posters",
+      "importance_score": 100,
+      "priority_type": "New Movie / Series Announcements",
       "priority_tier": 2,
-      "priority_rank": 8,
+      "priority_rank": 5,
       "sector": "International",
-      "rank_reason": "Official recognition of a veteran producer; important within industry but low immediate consumer relevance.",
-      "last_ranked_at": "2026-09-09T21:05:56.104410+06:00",
-      "learning_pattern": ""
+      "rank_reason": "Prestigious industry honor for a veteran producer, high‑profile ceremony and broad relevance across global film community.",
+      "last_ranked_at": "2026-09-10T01:11:54.915755+06:00",
+      "learning_pattern": "",
+      "posted_at": "2026-09-10T01:23:07.584811+06:00"
     },
     "variety.com/2026/film/global/euro-atlantic-series-co-pro-iberseries-platino-industria-1236854250": {
       "title": "Euro-Atlantic Series Co-Pro Pitch Program Launches at Iberseries & Platino Industria in Madrid (EXCLUSIVE)",
@@ -6905,13 +6910,13 @@
       "status": "pending",
       "first_seen": "2026-09-09T16:56:55.191137+06:00",
       "last_seen": "2026-09-09T16:56:55.191144+06:00",
-      "importance_score": 44,
+      "importance_score": 0,
       "priority_type": "OTT Platform Acquisition / Streaming Rights",
       "priority_tier": 3,
       "priority_rank": 12,
       "sector": "International",
-      "rank_reason": "Official launch of a co‑production pitch initiative; strategic importance for developers but limited immediate audience impact.",
-      "last_ranked_at": "2026-09-09T21:05:56.108013+06:00",
+      "rank_reason": "Unscored fallback; withheld from publication.",
+      "last_ranked_at": "2026-09-10T01:11:54.923170+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/tv/global/babylon-berlin-final-season-tykwer-von-borries-ard-1236851585": {
@@ -6953,14 +6958,14 @@
       "date_estimated": false,
       "status": "pending",
       "first_seen": "2026-09-09T16:57:00.993403+06:00",
-      "last_seen": "2026-09-09T21:04:52.047080+06:00",
+      "last_seen": "2026-09-10T01:08:45.526537+06:00",
       "importance_score": 69,
       "priority_type": "Upcoming OTT Releases",
       "priority_tier": 1,
       "priority_rank": 3,
       "sector": "International",
-      "rank_reason": "Official celebration and slate reveal for a key regional market; strong platform IP and audience anticipation for upcoming titles.",
-      "last_ranked_at": "2026-09-09T21:05:56.099931+06:00",
+      "rank_reason": "Milestone announcement with extensive slate; reinforces platform’s regional influence and future content pipeline.",
+      "last_ranked_at": "2026-09-10T01:11:54.914646+06:00",
       "learning_pattern": ""
     },
     "deadline.com/2026/09/martin-herlihy-leaving-saturday-night-live-1237072170": {
@@ -6978,13 +6983,13 @@
       "status": "pending",
       "first_seen": "2026-09-09T21:04:24.038107+06:00",
       "last_seen": "2026-09-09T21:04:24.038119+06:00",
-      "importance_score": 58,
+      "importance_score": 0,
       "priority_type": "Cast / Character Announcements",
       "priority_tier": 3,
       "priority_rank": 9,
-      "sector": "Hollywood",
-      "rank_reason": "Departure of a writer/performer from a flagship sketch show; notable but limited broader impact.",
-      "last_ranked_at": "2026-09-09T21:05:56.105386+06:00",
+      "sector": "International",
+      "rank_reason": "Unscored fallback; withheld from publication.",
+      "last_ranked_at": "2026-09-10T01:11:54.921057+06:00",
       "learning_pattern": ""
     },
     "deadline.com/2026/09/ms-now-new-streaming-series-rachel-maddow-lawrence-odonnell-1237072020": {
@@ -7002,13 +7007,13 @@
       "status": "pending",
       "first_seen": "2026-09-09T21:04:24.052272+06:00",
       "last_seen": "2026-09-09T21:04:24.052293+06:00",
-      "importance_score": 76,
+      "importance_score": 0,
       "priority_type": "New Movie / Series Announcements",
       "priority_tier": 2,
       "priority_rank": 5,
       "sector": "International",
-      "rank_reason": "Launch of a new streaming platform with a slate of original series featuring high‑profile news personalities; strong platform relevance and cross‑border interest.",
-      "last_ranked_at": "2026-09-09T21:05:56.101930+06:00",
+      "rank_reason": "Unscored fallback; withheld from publication.",
+      "last_ranked_at": "2026-09-10T01:11:54.918317+06:00",
       "learning_pattern": ""
     },
     "deadline.com/2026/09/maxton-hall-amazon-ai-technology-lip-sync-dubbing-1237071616": {
@@ -7026,13 +7031,13 @@
       "status": "pending",
       "first_seen": "2026-09-09T21:04:24.066182+06:00",
       "last_seen": "2026-09-09T21:04:24.066196+06:00",
-      "importance_score": 79,
+      "importance_score": 0,
       "priority_type": "OTT / Streaming Availability",
       "priority_tier": 1,
       "priority_rank": 1,
-      "sector": "Hollywood",
-      "rank_reason": "First AI‑driven dubbing on a major streaming series; technical innovation with platform impact and audience curiosity.",
-      "last_ranked_at": "2026-09-09T21:05:56.099363+06:00",
+      "sector": "International",
+      "rank_reason": "Unscored fallback; withheld from publication.",
+      "last_ranked_at": "2026-09-10T01:11:54.913822+06:00",
       "learning_pattern": ""
     },
     "deadline.com/2026/09/aaron-eckhart-butchers-war-1237072073": {
@@ -7047,17 +7052,18 @@
       "image": "https://deadline.com/wp-content/uploads/2026/09/Aaron-Eckhart-in-Butchers-War.png",
       "discovery": "rss",
       "date_estimated": false,
-      "status": "pending",
+      "status": "posted",
       "first_seen": "2026-09-09T21:04:24.086616+06:00",
       "last_seen": "2026-09-09T21:04:24.086630+06:00",
-      "importance_score": 67,
+      "importance_score": 83,
       "priority_type": "OTT Platform Acquisition / Streaming Rights",
       "priority_tier": 3,
       "priority_rank": 12,
-      "sector": "International",
-      "rank_reason": "Acquisition of North American and international rights for a thriller; important for distribution but lower audience hype than major releases.",
-      "last_ranked_at": "2026-09-09T21:05:56.107723+06:00",
-      "learning_pattern": ""
+      "sector": "Hollywood",
+      "rank_reason": "North American and international rights secured for a star‑led action thriller; notable distribution impact across territories.",
+      "last_ranked_at": "2026-09-10T01:11:54.923027+06:00",
+      "learning_pattern": "",
+      "posted_at": "2026-09-10T01:23:22.176681+06:00"
     },
     "deadline.com/2026/09/my-sad-dead-trailer-pablo-larrain-netflix-1237071947": {
       "title": "Pablo Larraín’s ‘My Sad Dead’ Trailer: “The Dead Start To Make Themselves Present”",
@@ -7074,13 +7080,13 @@
       "status": "pending",
       "first_seen": "2026-09-09T21:04:24.100586+06:00",
       "last_seen": "2026-09-09T21:04:24.100596+06:00",
-      "importance_score": 74,
+      "importance_score": 91,
       "priority_type": "Trailer Releases",
       "priority_tier": 2,
       "priority_rank": 7,
       "sector": "International",
-      "rank_reason": "Trailer for a highly anticipated Netflix miniseries by acclaimed director Pablo Larraín; strong anticipation and platform strength.",
-      "last_ranked_at": "2026-09-09T21:05:56.103002+06:00",
+      "rank_reason": "Official trailer for a high‑profile Netflix miniseries debuting at a major festival; strong platform IP and global audience interest.",
+      "last_ranked_at": "2026-09-10T01:11:54.918458+06:00",
       "learning_pattern": ""
     },
     "deadline.com/2026/09/good-morning-america-weekend-anchors-rachel-scott-1237072028": {
@@ -7098,13 +7104,13 @@
       "status": "pending",
       "first_seen": "2026-09-09T21:04:24.115988+06:00",
       "last_seen": "2026-09-09T21:04:24.115998+06:00",
-      "importance_score": 38,
-      "priority_type": "Season Renewals / New Season Updates",
-      "priority_tier": 2,
-      "priority_rank": 6,
+      "importance_score": 61,
+      "priority_type": "Production / Filming Updates",
+      "priority_tier": 3,
+      "priority_rank": 11,
       "sector": "Hollywood",
-      "rank_reason": "Personnel change for a morning news program; routine staffing news with modest audience interest.",
-      "last_ranked_at": "2026-09-09T21:05:56.102607+06:00",
+      "rank_reason": "Official staffing change on a major U.S. morning show; impacts viewership but limited broader entertainment relevance.",
+      "last_ranked_at": "2026-09-10T01:11:54.921485+06:00",
       "learning_pattern": ""
     },
     "deadline.com/2026/09/ellen-burstyn-working-93-place-to-be-gloria-steinem-venice-1237072001": {
@@ -7122,13 +7128,13 @@
       "status": "pending",
       "first_seen": "2026-09-09T21:04:24.137220+06:00",
       "last_seen": "2026-09-09T21:04:24.137236+06:00",
-      "importance_score": 38,
+      "importance_score": 57,
       "priority_type": "First Look / First Glimpse / Posters",
       "priority_tier": 2,
       "priority_rank": 8,
       "sector": "Hollywood",
-      "rank_reason": "Interview and first‑look at a festival premiere; notable for festival coverage but limited immediate impact.",
-      "last_ranked_at": "2026-09-09T21:05:56.104541+06:00",
+      "rank_reason": "High‑profile actress interview at Venice; adds prestige but is primarily promotional.",
+      "last_ranked_at": "2026-09-10T01:11:54.919573+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/film/news/halloween-film-festival-ripcord-indie-platform-1236855396": {
@@ -7146,13 +7152,13 @@
       "status": "pending",
       "first_seen": "2026-09-09T21:04:24.237486+06:00",
       "last_seen": "2026-09-09T21:04:24.237498+06:00",
-      "importance_score": 69,
+      "importance_score": 0,
       "priority_type": "First Look / First Glimpse / Posters",
       "priority_tier": 2,
       "priority_rank": 8,
       "sector": "International",
-      "rank_reason": "Launch of a genre‑focused film festival on a new indie platform; notable for community engagement and niche audience interest.",
-      "last_ranked_at": "2026-09-09T21:05:56.103727+06:00",
+      "rank_reason": "Unscored fallback; withheld from publication.",
+      "last_ranked_at": "2026-09-10T01:11:54.920059+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/film/news/disclosure-day-peacock-release-date-streaming-how-to-watch-1236806947": {
@@ -7170,13 +7176,13 @@
       "status": "pending",
       "first_seen": "2026-09-09T21:04:24.245958+06:00",
       "last_seen": "2026-09-09T21:04:24.245968+06:00",
-      "importance_score": 91,
+      "importance_score": 0,
       "priority_type": "Release Date Confirmations",
       "priority_tier": 1,
       "priority_rank": 4,
-      "sector": "Hollywood",
-      "rank_reason": "Steven Spielberg’s new sci‑fi film streaming on Peacock with confirmed date; high‑profile director, major platform, strong audience interest and global relevance.",
-      "last_ranked_at": "2026-09-09T21:05:56.101025+06:00",
+      "sector": "International",
+      "rank_reason": "Unscored fallback; withheld from publication.",
+      "last_ranked_at": "2026-09-10T01:11:54.915510+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/film/box-office/practical-magic-2-box-office-opening-weekend-projection-spiderman-brand-new-day-1236855513": {
@@ -7194,13 +7200,13 @@
       "status": "pending",
       "first_seen": "2026-09-09T21:04:24.260697+06:00",
       "last_seen": "2026-09-09T21:04:24.260708+06:00",
-      "importance_score": 83,
+      "importance_score": 77,
       "priority_type": "Box Office Updates",
       "priority_tier": 3,
       "priority_rank": 13,
       "sector": "Hollywood",
-      "rank_reason": "Box‑office preview for a high‑budget sequel with major stars; significant commercial impact and strong audience anticipation.",
-      "last_ranked_at": "2026-09-09T21:05:56.108459+06:00",
+      "rank_reason": "High‑profile sequel launch with sizable opening target; significant for theatrical revenue tracking.",
+      "last_ranked_at": "2026-09-10T01:11:54.924089+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/tv/news/martin-herlihy-leaves-snl-1236855736": {
@@ -7218,13 +7224,13 @@
       "status": "pending",
       "first_seen": "2026-09-09T21:04:24.270871+06:00",
       "last_seen": "2026-09-09T21:04:24.270883+06:00",
-      "importance_score": 52,
+      "importance_score": 0,
       "priority_type": "Cast / Character Announcements",
       "priority_tier": 3,
       "priority_rank": 9,
-      "sector": "Hollywood",
-      "rank_reason": "Duplicate of ID 1 with reported source; lower authority and thus lower priority.",
-      "last_ranked_at": "2026-09-09T21:05:56.105505+06:00",
+      "sector": "International",
+      "rank_reason": "Unscored fallback; withheld from publication.",
+      "last_ranked_at": "2026-09-10T01:11:54.921184+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/film/news/sony-pictures-ceo-spider-man-brand-new-day-emotional-people-crying-1236855666": {
@@ -7242,13 +7248,13 @@
       "status": "pending",
       "first_seen": "2026-09-09T21:04:24.291178+06:00",
       "last_seen": "2026-09-09T21:04:24.291192+06:00",
-      "importance_score": 81,
+      "importance_score": 84,
       "priority_type": "Box Office Updates",
       "priority_tier": 3,
       "priority_rank": 13,
       "sector": "Hollywood",
-      "rank_reason": "Record‑breaking global box‑office performance; major franchise, high revenue, and worldwide relevance.",
-      "last_ranked_at": "2026-09-09T21:05:56.108605+06:00",
+      "rank_reason": "Record‑breaking box‑office performance of a major Hollywood franchise; strong audience interest and global relevance.",
+      "last_ranked_at": "2026-09-10T01:11:54.923460+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/film/features/bleeding-hearts-doc-tiff-zella-day-jesse-woods-a-star-is-born-1236855126": {
@@ -7266,13 +7272,13 @@
       "status": "pending",
       "first_seen": "2026-09-09T21:04:24.306991+06:00",
       "last_seen": "2026-09-09T21:04:24.307006+06:00",
-      "importance_score": 49,
+      "importance_score": 0,
       "priority_type": "First Look / First Glimpse / Posters",
       "priority_tier": 2,
       "priority_rank": 8,
       "sector": "International",
-      "rank_reason": "Documentary debut at TIFF; culturally significant but niche audience and modest commercial impact.",
-      "last_ranked_at": "2026-09-09T21:05:56.104273+06:00",
+      "rank_reason": "Unscored fallback; withheld from publication.",
+      "last_ranked_at": "2026-09-10T01:11:54.920199+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/tv/news/48-hours-expands-video-podcasting-woman-in-the-woods-1236855232": {
@@ -7290,13 +7296,13 @@
       "status": "pending",
       "first_seen": "2026-09-09T21:04:24.319015+06:00",
       "last_seen": "2026-09-09T21:04:24.319026+06:00",
-      "importance_score": 45,
+      "importance_score": 0,
       "priority_type": "Production / Filming Updates",
       "priority_tier": 3,
       "priority_rank": 11,
-      "sector": "Hollywood",
-      "rank_reason": "Expansion of a news program into video podcasting; interesting format shift but limited broad impact.",
-      "last_ranked_at": "2026-09-09T21:05:56.106659+06:00",
+      "sector": "International",
+      "rank_reason": "Unscored fallback; withheld from publication.",
+      "last_ranked_at": "2026-09-10T01:11:54.922207+06:00",
       "learning_pattern": ""
     },
     "whats-on-netflix.com/coming-soon/first-look-at-whats-coming-to-netflix-in-october-2026": {
@@ -7313,14 +7319,14 @@
       "date_estimated": false,
       "status": "pending",
       "first_seen": "2026-09-09T21:04:52.002457+06:00",
-      "last_seen": "2026-09-09T21:04:52.002471+06:00",
-      "importance_score": 33,
+      "last_seen": "2026-09-10T01:08:45.506324+06:00",
+      "importance_score": 75,
       "priority_type": "Upcoming OTT Releases",
       "priority_tier": 1,
       "priority_rank": 3,
       "sector": "Hollywood",
-      "rank_reason": "General preview of upcoming titles; useful for planning but lacks a single high‑impact event.",
-      "last_ranked_at": "2026-09-09T21:05:56.100369+06:00",
+      "rank_reason": "Comprehensive preview of high‑profile Netflix originals for a major market month; strong platform IP and audience hype.",
+      "last_ranked_at": "2026-09-10T01:11:54.913963+06:00",
       "learning_pattern": ""
     },
     "whats-on-netflix.com/news/lorne-michaels-documentary-netflix-release-date": {
@@ -7372,6 +7378,489 @@
       "last_ranked_at": "2026-09-09T21:05:56.101588+06:00",
       "learning_pattern": "",
       "posted_at": "2026-09-09T21:30:23.289338+06:00"
+    },
+    "deadline.com/2026/09/carrie-coon-rebecca-ferguson-greta-lee-honeymoon-funeral-1237072427": {
+      "title": "Carrie Coon Joins Rebecca Ferguson & Greta Lee In MRC Rom-Com ‘Honeymoon / Funeral’",
+      "url": "https://deadline.com/2026/09/carrie-coon-rebecca-ferguson-greta-lee-honeymoon-funeral-1237072427/",
+      "canonical": "deadline.com/2026/09/carrie-coon-rebecca-ferguson-greta-lee-honeymoon-funeral-1237072427",
+      "published_dt": "2026-09-10T01:01:00+06:00",
+      "published_date": "2026-09-10T01:01:00+06:00",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "excerpt": "EXCLUSIVE: The White Lotus star Carrie Coon has joined Rebecca Ferguson and Greta Lee in the upcoming romantic comedy, Honeymoon/Funeral.  MRC is financing and overseeing production of the film from director Nahnatchka Khan and writer Julia Bicknell. Filming continues in London. Ferguson and Lee star as two women who meet on a flight from LA to London – […]",
+      "image": "https://deadline.com/wp-content/uploads/2026/09/Carrie-Coon-Rebecca-Ferguson-and-Greta-Lee.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-09-10T01:08:38.894554+06:00",
+      "last_seen": "2026-09-10T01:08:38.894562+06:00",
+      "importance_score": 74,
+      "priority_type": "Cast / Character Announcements",
+      "priority_tier": 3,
+      "priority_rank": 9,
+      "sector": "Hollywood",
+      "rank_reason": "Confirmed casting news for a rom‑com with notable talent, moderate audience interest.",
+      "last_ranked_at": "2026-09-10T01:11:54.920782+06:00",
+      "learning_pattern": ""
+    },
+    "deadline.com/2026/09/box-office-practical-magic-2-1237072094": {
+      "title": "‘Practical Magic 2’ Hopes To Weave Spell & Keep Box Office Alive; Global Outlook $58M-$63M – Box Office Preview",
+      "url": "https://deadline.com/2026/09/box-office-practical-magic-2-1237072094/",
+      "canonical": "deadline.com/2026/09/box-office-practical-magic-2-1237072094",
+      "published_dt": "2026-09-10T00:17:50+06:00",
+      "published_date": "2026-09-10T00:17:50+06:00",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "excerpt": "After summer hit a record $4.76 billion stateside, Warner Bros has a female destination in Practical Magic 2, the sequel to the 1998 Sandra Bullock and Nicole Kidman witchy romantic fantasy comedy which is eyeing around $40M domestic, and between $18-23M overseas in 77 territories for a global start between $58M-$63M. Practical Magic 2 will […]",
+      "image": "https://deadline.com/wp-content/uploads/2026/09/MCDPRMA_WB008.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "posted",
+      "first_seen": "2026-09-10T01:08:38.913196+06:00",
+      "last_seen": "2026-09-10T01:08:38.913203+06:00",
+      "importance_score": 80,
+      "priority_type": "Box Office Updates",
+      "priority_tier": 3,
+      "priority_rank": 13,
+      "sector": "Hollywood",
+      "rank_reason": "Official box‑office outlook for a high‑profile sequel, significant financial impact and wide reach.",
+      "last_ranked_at": "2026-09-10T01:11:54.923786+06:00",
+      "learning_pattern": "",
+      "posted_at": "2026-09-10T01:23:38.949778+06:00"
+    },
+    "deadline.com/2026/09/carrie-anne-moss-signs-verve-1237072534": {
+      "title": "Carrie-Anne Moss Signs With Verve",
+      "url": "https://deadline.com/2026/09/carrie-anne-moss-signs-verve-1237072534/",
+      "canonical": "deadline.com/2026/09/carrie-anne-moss-signs-verve-1237072534",
+      "published_dt": "2026-09-10T00:11:57+06:00",
+      "published_date": "2026-09-10T00:11:57+06:00",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "excerpt": "EXCLUSIVE: Actress Carrie-Anne Moss has inked with Verve for representation. An Independent Spirit and Genie Award winner, Moss is fresh off FUBAR, the action comedy series from Netflix and Skydance Television, where she starred opposite Arnold Schwarzenegger. She’ll next be seen starring opposite fellow Canadian Hudson Williams, the Heated Rivalry breakout, in Yaga, a new thriller series from Crave and […]",
+      "image": "https://deadline.com/wp-content/uploads/2026/09/Carrie-Anne-Moss_PC_Danielle-Cohen.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-09-10T01:08:38.922137+06:00",
+      "last_seen": "2026-09-10T01:08:38.922144+06:00",
+      "importance_score": 0,
+      "priority_type": "",
+      "priority_tier": 2,
+      "priority_rank": 5,
+      "sector": "International",
+      "rank_reason": "Unscored fallback; withheld from publication.",
+      "last_ranked_at": "2026-09-10T01:11:54.916852+06:00",
+      "learning_pattern": ""
+    },
+    "deadline.com/2026/09/wildwood-afi-fest-2026-opening-film-1237072469": {
+      "title": "Laika’s ‘Wildwood’ To Open AFI Fest 2026",
+      "url": "https://deadline.com/2026/09/wildwood-afi-fest-2026-opening-film-1237072469/",
+      "canonical": "deadline.com/2026/09/wildwood-afi-fest-2026-opening-film-1237072469",
+      "published_dt": "2026-09-10T00:00:00+06:00",
+      "published_date": "2026-09-10T00:00:00+06:00",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "excerpt": "The American Film Institute said Wednesday that it has selected Laika’s latest stop-motion animated feature, Wildwood, as the opening-night film of AFI Fest, whose 40th edition launches in October. The October 21 screening will mark the U.S. premiere of the pic, which will world premiere October 11 at the London Film Festival. It will open in […]",
+      "image": "https://deadline.com/wp-content/uploads/2026/05/Wildwood.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-09-10T01:08:38.932611+06:00",
+      "last_seen": "2026-09-10T01:08:38.932618+06:00",
+      "importance_score": 0,
+      "priority_type": "",
+      "priority_tier": 2,
+      "priority_rank": 5,
+      "sector": "International",
+      "rank_reason": "Unscored fallback; withheld from publication.",
+      "last_ranked_at": "2026-09-10T01:11:54.916976+06:00",
+      "learning_pattern": ""
+    },
+    "deadline.com/2026/09/nirvana-2026-vma-video-vanguard-award-1237072477": {
+      "title": "Nirvana Set For VMAs Video Vanguard Award",
+      "url": "https://deadline.com/2026/09/nirvana-2026-vma-video-vanguard-award-1237072477/",
+      "canonical": "deadline.com/2026/09/nirvana-2026-vma-video-vanguard-award-1237072477",
+      "published_dt": "2026-09-09T23:47:53+06:00",
+      "published_date": "2026-09-09T23:47:53+06:00",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "excerpt": "Smells like a well-deserved honor for the Band That Changed It All. MTV said Wednesday that Nirvana will receive the VMAs’ top career prize, the Video Vanguard Award, during the 2026 ceremony on Sunday, September 27. The news comes 34 years to the day after Kurt Cobain, Krist Novoselic and future Foo Fighter Dave Grohl […]",
+      "image": "https://deadline.com/wp-content/uploads/2026/09/Nirvana.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-09-10T01:08:38.942237+06:00",
+      "last_seen": "2026-09-10T01:08:38.942243+06:00",
+      "importance_score": 0,
+      "priority_type": "",
+      "priority_tier": 2,
+      "priority_rank": 5,
+      "sector": "International",
+      "rank_reason": "Unscored fallback; withheld from publication.",
+      "last_ranked_at": "2026-09-10T01:11:54.917520+06:00",
+      "learning_pattern": ""
+    },
+    "deadline.com/2026/09/the-rainmaker-season-2-release-date-trailer-usa-network-1237072408": {
+      "title": "‘The Rainmaker’ Sets Season 2 Release Date; Unveils Full Trailer",
+      "url": "https://deadline.com/2026/09/the-rainmaker-season-2-release-date-trailer-usa-network-1237072408/",
+      "canonical": "deadline.com/2026/09/the-rainmaker-season-2-release-date-trailer-usa-network-1237072408",
+      "published_dt": "2026-09-09T23:13:06+06:00",
+      "published_date": "2026-09-09T23:13:06+06:00",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "excerpt": "USA Network has slotted Friday, October 16 for the Season 2 premiere of hit legal drama series The Rainmaker, inspired by John Grisham’s bestselling novel, and unveiled the full trailer. Season two stars returning Milo Callaghan, Lana Parrilla, P.J. Byrne, Madison Iseman, Merle Dandridge, Richard Kind and Austin Nichols.   The season picks back up with […]",
+      "image": "https://deadline.com/wp-content/uploads/2026/09/TRM_201_CB_300426_1974RT_40ad51.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-09-10T01:08:38.953721+06:00",
+      "last_seen": "2026-09-10T01:08:38.953728+06:00",
+      "importance_score": 82,
+      "priority_type": "Release Date Confirmations",
+      "priority_tier": 1,
+      "priority_rank": 4,
+      "sector": "Hollywood",
+      "rank_reason": "Official release‑date confirmation plus full trailer for a popular legal drama, strong audience anticipation.",
+      "last_ranked_at": "2026-09-10T01:11:54.914962+06:00",
+      "learning_pattern": ""
+    },
+    "deadline.com/2026/09/comcast-nbcuniversal-epic-universe-nbc-universal-split-1237072287": {
+      "title": "Comcast CFO Notes Ongoing Epic Universe Softness, Dinging Stock; NBCU Split on Track",
+      "url": "https://deadline.com/2026/09/comcast-nbcuniversal-epic-universe-nbc-universal-split-1237072287/",
+      "canonical": "deadline.com/2026/09/comcast-nbcuniversal-epic-universe-nbc-universal-split-1237072287",
+      "published_dt": "2026-09-09T23:03:58+06:00",
+      "published_date": "2026-09-09T23:03:58+06:00",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "excerpt": "Comcast chief financial officer Jason Armstrong defended the company’s pending spinoff of NBCUniversal from its core connectivity operations, saying that “after a decade-plus building two strong businesses … there’s a bit of a divergence in terms of what [they] are focused on.” He also told investors at the Goldman Sachs Communacopia conference today that June […]",
+      "image": "https://deadline.com/wp-content/uploads/2025/09/GettyImages-2212942643.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "posted",
+      "first_seen": "2026-09-10T01:08:38.969940+06:00",
+      "last_seen": "2026-09-10T01:08:38.969948+06:00",
+      "importance_score": 87,
+      "priority_type": "New Movie / Series Announcements",
+      "priority_tier": 2,
+      "priority_rank": 5,
+      "sector": "Hollywood",
+      "rank_reason": "Official CFO comments on major corporate restructuring affecting a flagship Hollywood studio; high financial impact and broad industry reach.",
+      "last_ranked_at": "2026-09-10T01:11:54.916106+06:00",
+      "learning_pattern": "",
+      "posted_at": "2026-09-10T01:23:12.625654+06:00"
+    },
+    "variety.com/2026/music/columns/taylor-swift-grammy-chances-i-knew-it-i-knew-you-fate-ophelia-1236849929": {
+      "title": "Taylor Swift Has Never Won a Grammy for Record or Song of the Year. With Three No. 1 Hits Eligible for 2027, Which Will She Choose for Victory?",
+      "url": "https://variety.com/2026/music/columns/taylor-swift-grammy-chances-i-knew-it-i-knew-you-fate-ophelia-1236849929/",
+      "canonical": "variety.com/2026/music/columns/taylor-swift-grammy-chances-i-knew-it-i-knew-you-fate-ophelia-1236849929",
+      "published_dt": "2026-09-10T01:04:05+06:00",
+      "published_date": "2026-09-10T01:04:05+06:00",
+      "source": "Variety",
+      "region": "Entertainment",
+      "excerpt": "There are two points of view you could take on Taylor Swift and her Grammys history: (a) Swift has been a Grammys hoarder. (b) Swift has gotten robbed by the Recording Academy… regularly. Which of these contradictory statements is true? How about both of them? They’re not actually as oxymoronic as they appear; it just […]",
+      "image": "https://variety.com/wp-content/uploads/2024/02/Taylor-Swift-Album-of-the-Year-e1788978337777.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-09-10T01:08:39.178957+06:00",
+      "last_seen": "2026-09-10T01:08:39.178974+06:00",
+      "importance_score": 54,
+      "priority_type": "New Movie / Series Announcements",
+      "priority_tier": 2,
+      "priority_rank": 5,
+      "sector": "Hollywood",
+      "rank_reason": "Speculative piece on Grammy eligibility; low evidence and rumor status, but high fan interest.",
+      "last_ranked_at": "2026-09-10T01:11:54.916254+06:00",
+      "learning_pattern": ""
+    },
+    "variety.com/2026/shopping/news/ifa-september-2026-best-new-tech-releases-products-shop-now-1236849068": {
+      "title": "The Best Tech at IFA 2026: From 4K Projectors and Wearables to Headphones and TV Smart Lighting",
+      "url": "https://variety.com/2026/shopping/news/ifa-september-2026-best-new-tech-releases-products-shop-now-1236849068/",
+      "canonical": "variety.com/2026/shopping/news/ifa-september-2026-best-new-tech-releases-products-shop-now-1236849068",
+      "published_dt": "2026-09-10T01:00:00+06:00",
+      "published_date": "2026-09-10T01:00:00+06:00",
+      "source": "Variety",
+      "region": "Entertainment",
+      "excerpt": "While CES is the biggest tech industry showcase in the United States, IFA is the largest consumer electronics trade show in Europe. For more than 100 years, some of the best and biggest communication and tech companies from around the world have gathered in the heart of Berlin, Germany at the Messe Berlin exhibition grounds, […]",
+      "image": "https://variety.com/wp-content/uploads/2026/09/IFA-2026-Berlin-VR-Featured.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-09-10T01:08:39.196361+06:00",
+      "last_seen": "2026-09-10T01:08:39.196377+06:00",
+      "importance_score": 0,
+      "priority_type": "",
+      "priority_tier": 2,
+      "priority_rank": 5,
+      "sector": "International",
+      "rank_reason": "Unscored fallback; withheld from publication.",
+      "last_ranked_at": "2026-09-10T01:11:54.916420+06:00",
+      "learning_pattern": ""
+    },
+    "variety.com/2026/theater/news/paul-mescal-emma-corrin-emilia-clarke-national-theatre-2027-slate-1236856118": {
+      "title": "Paul Mescal, Emma Corrin, Emilia Clarke Lead London National Theatre’s Starry 2027 Slate",
+      "url": "https://variety.com/2026/theater/news/paul-mescal-emma-corrin-emilia-clarke-national-theatre-2027-slate-1236856118/",
+      "canonical": "variety.com/2026/theater/news/paul-mescal-emma-corrin-emilia-clarke-national-theatre-2027-slate-1236856118",
+      "published_dt": "2026-09-10T01:00:00+06:00",
+      "published_date": "2026-09-10T01:00:00+06:00",
+      "source": "Variety",
+      "region": "Entertainment",
+      "excerpt": "London’s National Theatre has unveiled its 2027 program, with Paul Mescal, Emma Corrin and Emilia Clarke topping a star-heavy slate of 18 productions, eight of them world premieres, spanning the venue’s three stages and beyond. Mescal returns to the Lyttelton theater for a repertory season, playing Biff Loman in Rebecca Frecknall’s staging of Arthur Miller’s […]",
+      "image": "https://variety.com/wp-content/uploads/2026/09/Paul-Mescal-Emma-Corrin-Emilia-Clarke.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-09-10T01:08:39.212587+06:00",
+      "last_seen": "2026-09-10T01:08:39.212597+06:00",
+      "importance_score": 0,
+      "priority_type": "",
+      "priority_tier": 2,
+      "priority_rank": 5,
+      "sector": "International",
+      "rank_reason": "Unscored fallback; withheld from publication.",
+      "last_ranked_at": "2026-09-10T01:11:54.916561+06:00",
+      "learning_pattern": ""
+    },
+    "variety.com/2026/shopping/news/billy-joel-new-york-yankees-sportiqe-merch-collection-2026-1236856062": {
+      "title": "Playoff State of Mind: Yankees Tap Billy Joel for Merch Collection, Just In Time for the Postseason",
+      "url": "https://variety.com/2026/shopping/news/billy-joel-new-york-yankees-sportiqe-merch-collection-2026-1236856062/",
+      "canonical": "variety.com/2026/shopping/news/billy-joel-new-york-yankees-sportiqe-merch-collection-2026-1236856062",
+      "published_dt": "2026-09-10T00:55:18+06:00",
+      "published_date": "2026-09-10T00:55:18+06:00",
+      "source": "Variety",
+      "region": "Entertainment",
+      "excerpt": "The New York Yankees are heading towards another (likely) postseason run and the team has tapped one of New York’s most famous faces (and voices) to help root them on. Athleticwear brand Sportiqe has released a Billy Joel x New York Yankees collection, that pairs the brand’s T-shirts, sweatshirts and hoodies with Joel’s lyrics and […]",
+      "image": "https://variety.com/wp-content/uploads/2026/09/billy-joel-yankees-t-shirt-sportiqe.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-09-10T01:08:39.229487+06:00",
+      "last_seen": "2026-09-10T01:08:39.229501+06:00",
+      "importance_score": 0,
+      "priority_type": "",
+      "priority_tier": 2,
+      "priority_rank": 5,
+      "sector": "International",
+      "rank_reason": "Unscored fallback; withheld from publication.",
+      "last_ranked_at": "2026-09-10T01:11:54.916706+06:00",
+      "learning_pattern": ""
+    },
+    "variety.com/2026/tv/global/rupauls-drag-race-uk-all-stars-wow-presents-plus-2027-1236854337": {
+      "title": "‘RuPaul’s Drag Race UK: All Stars’ Set to Premiere on WOW Presents Plus (EXCLUSIVE)",
+      "url": "https://variety.com/2026/tv/global/rupauls-drag-race-uk-all-stars-wow-presents-plus-2027-1236854337/",
+      "canonical": "variety.com/2026/tv/global/rupauls-drag-race-uk-all-stars-wow-presents-plus-2027-1236854337",
+      "published_dt": "2026-09-10T00:13:45+06:00",
+      "published_date": "2026-09-10T00:13:45+06:00",
+      "source": "Variety",
+      "region": "Entertainment",
+      "excerpt": "“RuPaul’s Drag Race UK” is moving from the BBC and headed to World of Wonder‘s streaming platform WOW Presents Plus. The news comes after The Sun reported that the show would be leaving the BBC as part of its cuts. However, Variety can confirm that in Fall 2027, the franchise will return with the first […]",
+      "image": "https://variety.com/wp-content/uploads/2026/09/RDRUK8_RuPaul_16x9.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "posted",
+      "first_seen": "2026-09-10T01:08:39.244788+06:00",
+      "last_seen": "2026-09-10T01:08:39.244805+06:00",
+      "importance_score": 85,
+      "priority_type": "OTT / Streaming Availability",
+      "priority_tier": 1,
+      "priority_rank": 1,
+      "sector": "International",
+      "rank_reason": "Major franchise moving to a streaming service, confirmed by Variety, high audience interest and platform impact.",
+      "last_ranked_at": "2026-09-10T01:11:54.913653+06:00",
+      "learning_pattern": "",
+      "posted_at": "2026-09-10T01:22:58.185962+06:00"
+    },
+    "variety.com/lists/fall-tv-shows-2026-preview": {
+      "title": "Fall TV Preview: 55 Most Anticipated New and Returning Shows of 2026",
+      "url": "https://variety.com/lists/fall-tv-shows-2026-preview/",
+      "canonical": "variety.com/lists/fall-tv-shows-2026-preview",
+      "published_dt": "2026-09-10T00:00:00+06:00",
+      "published_date": "2026-09-10T00:00:00+06:00",
+      "source": "Variety",
+      "region": "Entertainment",
+      "excerpt": "Yes, peak TV is over — but we challenge you even to begin watching all the great shows that will premiere in the coming weeks, or even catch up with the new good ones that came out this summer. Are you all caught up on “Furious” on Hulu and “Sterling Point” on Prime Video and HBO’s […]",
+      "image": "https://variety.com/wp-content/uploads/2026/08/Fall-TV-Preview.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-09-10T01:08:39.258149+06:00",
+      "last_seen": "2026-09-10T01:08:39.258164+06:00",
+      "importance_score": 0,
+      "priority_type": "",
+      "priority_tier": 2,
+      "priority_rank": 5,
+      "sector": "International",
+      "rank_reason": "Unscored fallback; withheld from publication.",
+      "last_ranked_at": "2026-09-10T01:11:54.917131+06:00",
+      "learning_pattern": ""
+    },
+    "variety.com/2026/film/awards/variety-10-actors-to-watch-2026-announcement-1236848865": {
+      "title": "Jaafar Jackson, Inde Navarrette and Ray Nicholson Among Variety’s 10 Actors to Watch for 2026",
+      "url": "https://variety.com/2026/film/awards/variety-10-actors-to-watch-2026-announcement-1236848865/",
+      "canonical": "variety.com/2026/film/awards/variety-10-actors-to-watch-2026-announcement-1236848865",
+      "published_dt": "2026-09-10T00:00:00+06:00",
+      "published_date": "2026-09-10T00:00:00+06:00",
+      "source": "Variety",
+      "region": "Entertainment",
+      "excerpt": "Variety has unveiled its 2026 class of 10 Actors to Watch. Since 1998, the franchise has singled out breakout performers on the cusp of the industry’s front ranks and the track record speaks for itself. Past honorees include more than 35 Oscar winners and nominees, among them Mahershala Ali, Timothée Chalamet and Brie Larson. Last […]",
+      "image": "https://variety.com/wp-content/uploads/2026/09/10-Actors-to-Watch.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-09-10T01:08:39.274968+06:00",
+      "last_seen": "2026-09-10T01:08:39.274982+06:00",
+      "importance_score": 0,
+      "priority_type": "",
+      "priority_tier": 2,
+      "priority_rank": 5,
+      "sector": "International",
+      "rank_reason": "Unscored fallback; withheld from publication.",
+      "last_ranked_at": "2026-09-10T01:11:54.917253+06:00",
+      "learning_pattern": ""
+    },
+    "variety.com/2026/film/news/wildwood-afi-film-fest-premiere-1236856002": {
+      "title": "Laika’s ‘Wildwood’ Set to Open AFI Film Fest",
+      "url": "https://variety.com/2026/film/news/wildwood-afi-film-fest-premiere-1236856002/",
+      "canonical": "variety.com/2026/film/news/wildwood-afi-film-fest-premiere-1236856002",
+      "published_dt": "2026-09-10T00:00:00+06:00",
+      "published_date": "2026-09-10T00:00:00+06:00",
+      "source": "Variety",
+      "region": "Entertainment",
+      "excerpt": "Laika’s “Wildwood” is set to open the 40th edition of AFI Fest, presented by Canva, on Oct. 21. It also marks the U.S premiere of the film. “Wildwood” is the latest animated feature from the Portland-based studio Laika, and it’s directed and produced by Travis Knight. The film follows a young girl named Prue (Peyton […]",
+      "image": "https://variety.com/wp-content/uploads/2026/09/WILDWOOD.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-09-10T01:08:39.285580+06:00",
+      "last_seen": "2026-09-10T01:08:39.285590+06:00",
+      "importance_score": 0,
+      "priority_type": "",
+      "priority_tier": 2,
+      "priority_rank": 5,
+      "sector": "International",
+      "rank_reason": "Unscored fallback; withheld from publication.",
+      "last_ranked_at": "2026-09-10T01:11:54.917394+06:00",
+      "learning_pattern": ""
+    },
+    "whats-on-netflix.com/coming-soon/upcoming-spanish-movies-netflix-2026-2027": {
+      "title": "Netflix’s 2026 & 2027 Spanish Movie Slate: All Upcoming Films & First Looks",
+      "url": "https://www.whats-on-netflix.com/coming-soon/upcoming-spanish-movies-netflix-2026-2027/",
+      "canonical": "whats-on-netflix.com/coming-soon/upcoming-spanish-movies-netflix-2026-2027",
+      "published_dt": "2026-09-09T23:07:35+06:00",
+      "published_date": "2026-09-09T23:07:35+06:00",
+      "source": "What's on Netflix",
+      "region": "Entertainment",
+      "excerpt": "From star-studded mystery thrillers to unconventional rom-coms, here is our complete preview of Spanish movies coming to Netflix in 2026 and beyond.",
+      "image": "https://www.whats-on-netflix.com/wp-content/uploads/2025/10/netflix-spanish-movie-slate-2026-2027.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-09-10T01:08:45.445143+06:00",
+      "last_seen": "2026-09-10T01:08:45.445152+06:00",
+      "importance_score": 0,
+      "priority_type": "",
+      "priority_tier": 2,
+      "priority_rank": 5,
+      "sector": "International",
+      "rank_reason": "Unscored fallback; withheld from publication.",
+      "last_ranked_at": "2026-09-10T01:11:54.917637+06:00",
+      "learning_pattern": ""
+    },
+    "whats-on-netflix.com/leaving-soon/licensed-shows-leaving-netflix-september-2026": {
+      "title": "Netflix Is Losing Some Major Licensed Shows Throughout September",
+      "url": "https://www.whats-on-netflix.com/leaving-soon/licensed-shows-leaving-netflix-september-2026/",
+      "canonical": "whats-on-netflix.com/leaving-soon/licensed-shows-leaving-netflix-september-2026",
+      "published_dt": "2026-09-09T23:02:11+06:00",
+      "published_date": "2026-09-09T23:02:11+06:00",
+      "source": "What's on Netflix",
+      "region": "Entertainment",
+      "excerpt": "Multiple major licensed series including 'Girlfriends', 'Heels', and 'Nashville' are scheduled to depart Netflix US throughout the remainder of September 2026.",
+      "image": "https://www.whats-on-netflix.com/wp-content/uploads/2026/09/penelope-series.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-09-10T01:08:45.457826+06:00",
+      "last_seen": "2026-09-10T01:08:45.457833+06:00",
+      "importance_score": 64,
+      "priority_type": "Production / Filming Updates",
+      "priority_tier": 3,
+      "priority_rank": 11,
+      "sector": "Hollywood",
+      "rank_reason": "Significant content‑library change affecting streaming catalog; impacts subscriber expectations and competitor dynamics.",
+      "last_ranked_at": "2026-09-10T01:11:54.921426+06:00",
+      "learning_pattern": ""
+    },
+    "whats-on-netflix.com/news/new-first-looks-at-nicola-coughlan-carmen-ejogo-and-naomi-scott-filming-new-netflix-roald-dahl-series": {
+      "title": "New First Looks at Nicola Coughlan, Carmen Ejogo and Naomi Scott Filming Netflix Roald Dahl Series",
+      "url": "https://www.whats-on-netflix.com/news/new-first-looks-at-nicola-coughlan-carmen-ejogo-and-naomi-scott-filming-new-netflix-roald-dahl-series/",
+      "canonical": "whats-on-netflix.com/news/new-first-looks-at-nicola-coughlan-carmen-ejogo-and-naomi-scott-filming-new-netflix-roald-dahl-series",
+      "published_dt": "2026-09-09T22:45:54+06:00",
+      "published_date": "2026-09-09T22:45:54+06:00",
+      "source": "What's on Netflix",
+      "region": "Entertainment",
+      "excerpt": "Exclusive new behind-the-scenes photos reveal Nicola Coughlan, Naomi Scott, and Toby Jones on location for Netflix's dark Roald Dahl anthology.",
+      "image": "https://www.whats-on-netflix.com/wp-content/uploads/2026/09/Carmen-Ejogo-Nichola-Coughlan-New-Snaps-Tales-of-the-Unexpected-Roald-Dahl-Netflix.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-09-10T01:08:45.475253+06:00",
+      "last_seen": "2026-09-10T01:08:45.475260+06:00",
+      "importance_score": 71,
+      "priority_type": "First Look / First Glimpse / Posters",
+      "priority_tier": 2,
+      "priority_rank": 8,
+      "sector": "Hollywood",
+      "rank_reason": "First‑look material for a high‑profile Netflix original; notable cast and creative team, generating buzz.",
+      "last_ranked_at": "2026-09-10T01:11:54.919222+06:00",
+      "learning_pattern": ""
+    },
+    "whats-on-netflix.com/news/haunted-hotel-season-2-netflix-release-date": {
+      "title": "‘Haunted Hotel’ Season 2 Sets Halloween Release Date at Netflix",
+      "url": "https://www.whats-on-netflix.com/news/haunted-hotel-season-2-netflix-release-date/",
+      "canonical": "whats-on-netflix.com/news/haunted-hotel-season-2-netflix-release-date",
+      "published_dt": "2026-09-09T21:50:16+06:00",
+      "published_date": "2026-09-09T21:50:16+06:00",
+      "source": "What's on Netflix",
+      "region": "Entertainment",
+      "excerpt": "Matt Roller’s hit adult animated comedy is officially returning to Netflix for an eight-episode second season this October.",
+      "image": "https://www.whats-on-netflix.com/wp-content/uploads/2026/09/haunted-hotel-season-2-release-date.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-09-10T01:08:45.486508+06:00",
+      "last_seen": "2026-09-10T01:08:45.486515+06:00",
+      "importance_score": 74,
+      "priority_type": "Release Date Confirmations",
+      "priority_tier": 1,
+      "priority_rank": 4,
+      "sector": "Hollywood",
+      "rank_reason": "Confirmed release date for a popular animated series; strong viewership data and platform promotion.",
+      "last_ranked_at": "2026-09-10T01:11:54.915109+06:00",
+      "learning_pattern": ""
+    },
+    "whats-on-netflix.com/news/when-will-heartland-season-20-be-on-netflix": {
+      "title": "When will ‘Heartland’ Season 20 be on Netflix?",
+      "url": "https://www.whats-on-netflix.com/news/when-will-heartland-season-20-be-on-netflix/",
+      "canonical": "whats-on-netflix.com/news/when-will-heartland-season-20-be-on-netflix",
+      "published_dt": "2026-09-09T21:19:40+06:00",
+      "published_date": "2026-09-09T21:19:40+06:00",
+      "source": "What's on Netflix",
+      "region": "Entertainment",
+      "excerpt": "The Bartlett-Fleming family returns for a massive milestone season, but US fans will have a long wait for 'Heartland' Season 20 to hit Netflix.",
+      "image": "https://www.whats-on-netflix.com/wp-content/uploads/2026/09/heartland-season-20-when-will-it-release-on-netflix-e1788961721496.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-09-10T01:08:45.496090+06:00",
+      "last_seen": "2026-09-10T01:08:45.496097+06:00",
+      "importance_score": 0,
+      "priority_type": "",
+      "priority_tier": 2,
+      "priority_rank": 5,
+      "sector": "International",
+      "rank_reason": "Unscored fallback; withheld from publication.",
+      "last_ranked_at": "2026-09-10T01:11:54.917976+06:00",
+      "learning_pattern": ""
     }
   },
   "events": {
@@ -8963,6 +9452,229 @@
       "selected_at": "2026-09-09T21:30:54.389211+06:00",
       "status": "published",
       "message_id": 397
+    },
+    "rupaul_s_drag_race_uk_all_stars_streaming_shift": {
+      "event_id": "rupaul_s_drag_race_uk_all_stars_streaming_shift",
+      "canonical_url": "variety.com/2026/tv/global/rupauls-drag-race-uk-all-stars-wow-presents-plus-2027-1236854337",
+      "original_url": "https://variety.com/2026/tv/global/rupauls-drag-race-uk-all-stars-wow-presents-plus-2027-1236854337/",
+      "source": "Variety",
+      "region": "Entertainment",
+      "topic": "Streaming Platform News",
+      "institution": "World of Wonder / WOW Presents Plus",
+      "event_cluster_id": "evt_f6931be15b",
+      "event_confidence": 0.6,
+      "event_source_count": 1,
+      "headline": "RuPaul’s Drag Race UK: All Stars",
+      "summary": "The first All Stars edition of RuPaul’s Drag Race UK will debut on WOW Presents Plus in Fall 2027.",
+      "highlights": [
+        "Series moves from BBC to WOW Presents Plus",
+        "All eight UK seasons and three ‘Vs The World’ seasons will be available globally"
+      ],
+      "concepts": [],
+      "key_numbers": [],
+      "published_at": "2026-09-10T00:13:45+06:00",
+      "selected_at": "2026-09-10T01:22:58.186154+06:00",
+      "status": "published",
+      "message_id": 398
+    },
+    "v6modellaunch": {
+      "event_id": "v6modellaunch",
+      "canonical_url": "variety.com/2026/music/news/suno-new-label-backed-model-v6-1236855351",
+      "original_url": "https://variety.com/2026/music/news/suno-new-label-backed-model-v6-1236855351/",
+      "source": "Variety",
+      "region": "Entertainment",
+      "topic": "Major Film Announcements",
+      "institution": "Suno",
+      "event_cluster_id": "evt_0d605a02f3",
+      "event_confidence": 0.6,
+      "event_source_count": 1,
+      "headline": "Suno V6",
+      "summary": "Suno launches its new V6 AI music generation models backed by licensing deals with major labels.",
+      "highlights": [
+        "V6 flagship model available to Pro and Premier tiers",
+        "V6-mini offered for free to all users",
+        "Models roll out to users on Wednesday"
+      ],
+      "concepts": [],
+      "key_numbers": [],
+      "published_at": "2026-09-09T15:00:00+06:00",
+      "selected_at": "2026-09-10T01:23:02.906862+06:00",
+      "status": "published",
+      "message_id": 399
+    },
+    "kenworthybaftafellowship": {
+      "event_id": "kenworthybaftafellowship",
+      "canonical_url": "variety.com/2026/film/global/duncan-kenworthy-to-receive-bafta-fellowship-1236855540",
+      "original_url": "https://variety.com/2026/film/global/duncan-kenworthy-to-receive-bafta-fellowship-1236855540/",
+      "source": "Variety",
+      "region": "Entertainment",
+      "topic": "Major Film Announcements",
+      "institution": "BAFTA",
+      "event_cluster_id": "evt_5b039d05f3",
+      "event_confidence": 0.6,
+      "event_source_count": 1,
+      "headline": "Duncan Kenworthy",
+      "summary": "British producer Duncan Kenworthy will receive the BAFTA Fellowship for his five‑decade career.",
+      "highlights": [
+        "Kenworthy is honored at a special BAFTA ceremony hosted by Richard Curtis",
+        "He co‑founded DNA and produced hits like Four Weddings and a Funeral and Love Actually"
+      ],
+      "concepts": [],
+      "key_numbers": [],
+      "published_at": "2026-09-09T14:56:48+06:00",
+      "selected_at": "2026-09-10T01:23:07.584841+06:00",
+      "status": "published",
+      "message_id": 400
+    },
+    "nbcu_split_spending": {
+      "event_id": "nbcu_split_spending",
+      "canonical_url": "deadline.com/2026/09/comcast-nbcuniversal-epic-universe-nbc-universal-split-1237072287",
+      "original_url": "https://deadline.com/2026/09/comcast-nbcuniversal-epic-universe-nbc-universal-split-1237072287/",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "topic": "Casting",
+      "institution": "Comcast",
+      "event_cluster_id": "evt_85cc07add5",
+      "event_confidence": 0.6,
+      "event_source_count": 1,
+      "headline": "Comcast",
+      "summary": "Comcast CFO says NBCU split is on track despite soft theme‑park earnings.",
+      "highlights": [
+        "NBCU and Sky will spin off from Comcast’s broadband unit by mid‑next year",
+        "Universal’s Orlando parks showed continued softness in June, hurting investor confidence",
+        "Comcast stock fell over 7% after the CFO’s comments"
+      ],
+      "concepts": [],
+      "key_numbers": [],
+      "published_at": "2026-09-09T23:03:58+06:00",
+      "selected_at": "2026-09-10T01:23:12.625687+06:00",
+      "status": "published",
+      "message_id": 401
+    },
+    "getsmartcastingmulaney": {
+      "event_id": "getsmartcastingmulaney",
+      "canonical_url": "variety.com/2026/film/news/john-mulaney-get-smart-movie-reboot-warner-bros-1236855373",
+      "original_url": "https://variety.com/2026/film/news/john-mulaney-get-smart-movie-reboot-warner-bros-1236855373/",
+      "source": "Variety",
+      "region": "Entertainment",
+      "topic": "Major Film Announcements",
+      "institution": "Warner Bros.",
+      "event_cluster_id": "evt_92b3b2e8d4",
+      "event_confidence": 0.6,
+      "event_source_count": 1,
+      "headline": "Get Smart",
+      "summary": "John Mulaney is in talks to star as Agent Maxwell Smart in Warner Bros.' upcoming Get Smart film reboot.",
+      "highlights": [
+        "Mulaney is circling the lead role in the reboot",
+        "Screenwriter Seth Grahame‑Smith attached to the project",
+        "Producers include Andrew Lazar and Chuck Roven"
+      ],
+      "concepts": [],
+      "key_numbers": [],
+      "published_at": "2026-09-09T07:45:48+06:00",
+      "selected_at": "2026-09-10T01:23:17.183542+06:00",
+      "status": "published",
+      "message_id": 402
+    },
+    "butcher_s_war_rights_deal": {
+      "event_id": "butcher_s_war_rights_deal",
+      "canonical_url": "deadline.com/2026/09/aaron-eckhart-butchers-war-1237072073",
+      "original_url": "https://deadline.com/2026/09/aaron-eckhart-butchers-war-1237072073/",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "topic": "OTT Rights and Distribution",
+      "institution": "Samuel Goldwyn Films / Voltage Pictures",
+      "event_cluster_id": "evt_1727336556",
+      "event_confidence": 0.6,
+      "event_source_count": 1,
+      "headline": "Butcher’s War",
+      "summary": "Aaron Eckhart stars in the action thriller Butcher’s War, with North American rights bought by Samuel Goldwyn Films and international rights by Voltage Pictures.",
+      "highlights": [
+        "Samuel Goldwyn Films acquires U.S. distribution rights",
+        "Voltage Pictures secures international rights and will market the film at TIFF",
+        "The film is directed by Kyle Kauwika Harris and written by Don Roff, Harris, and Dawn Bursteen"
+      ],
+      "concepts": [],
+      "key_numbers": [],
+      "published_at": "2026-09-09T19:47:53+06:00",
+      "selected_at": "2026-09-10T01:23:22.176719+06:00",
+      "status": "published",
+      "message_id": 403
+    },
+    "revenue_report_2025": {
+      "event_id": "revenue_report_2025",
+      "canonical_url": "deadline.com/2026/09/pact-census-international-tv-revenues-up-1237070622",
+      "original_url": "https://deadline.com/2026/09/pact-census-international-tv-revenues-up-1237070622/",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "topic": "Major Film Announcements",
+      "institution": "Pact (UK Producers Trade Group)",
+      "event_cluster_id": "evt_766b4227db",
+      "event_confidence": 0.6,
+      "event_source_count": 1,
+      "headline": "Pact Census",
+      "summary": "UK independent TV producers' revenues hit £3.81B in 2025, driven by a 15.8% rise in international earnings.",
+      "highlights": [
+        "International revenue reached £1.57B, 41.1% of total",
+        "Subscription streamers now account for 72.3% of overseas commissions",
+        "BBC faces a £500M cost‑saving push amid funding strain"
+      ],
+      "concepts": [],
+      "key_numbers": [],
+      "published_at": "2026-09-09T05:01:00+06:00",
+      "selected_at": "2026-09-10T01:23:26.915630+06:00",
+      "status": "published",
+      "message_id": 404
+    },
+    "sector_revenue_2025": {
+      "event_id": "sector_revenue_2025",
+      "canonical_url": "variety.com/2026/tv/global/british-tv-sector-revenues-streamers-1236854714",
+      "original_url": "https://variety.com/2026/tv/global/british-tv-sector-revenues-streamers-1236854714/",
+      "source": "Variety",
+      "region": "Entertainment",
+      "topic": "Major Film Announcements",
+      "institution": "Pact (UK Producers Trade Group)",
+      "event_cluster_id": "evt_220cbde863",
+      "event_confidence": 0.6,
+      "event_source_count": 1,
+      "headline": "British TV sector revenues hit $5.1 billion",
+      "summary": "U.S. streamers drove a 4.1% rise in UK TV sector revenue to $5.1 billion in 2025.",
+      "highlights": [
+        "International TV revenue grew 15.8% to £1.57 billion",
+        "Domestic TV revenue fell below £2 billion for the first time in five years",
+        "SVOD platforms increased commissioning budgets, boosting investment"
+      ],
+      "concepts": [],
+      "key_numbers": [],
+      "published_at": "2026-09-09T05:01:00+06:00",
+      "selected_at": "2026-09-10T01:23:34.161521+06:00",
+      "status": "published",
+      "message_id": 405
+    },
+    "practical_magic_2_box_office_preview": {
+      "event_id": "practical_magic_2_box_office_preview",
+      "canonical_url": "deadline.com/2026/09/box-office-practical-magic-2-1237072094",
+      "original_url": "https://deadline.com/2026/09/box-office-practical-magic-2-1237072094/",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "topic": "Casting",
+      "institution": "Warner Bros",
+      "event_cluster_id": "evt_ef125d81d2",
+      "event_confidence": 0.6,
+      "event_source_count": 1,
+      "headline": "Practical Magic 2",
+      "summary": "Warner Bros projects $58M‑$63M global opening for the sequel, targeting $30M‑$35M domestic in 4,000 theaters.",
+      "highlights": [
+        "Projected $40M domestic opening, $18‑23M overseas",
+        "Not releasing in China",
+        "Opening previews Thursday at 2 PM"
+      ],
+      "concepts": [],
+      "key_numbers": [],
+      "published_at": "2026-09-10T00:17:50+06:00",
+      "selected_at": "2026-09-10T01:23:38.949813+06:00",
+      "status": "published",
+      "message_id": 406
     }
   },
   "event_clusters": {
@@ -10045,7 +10757,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-09-09T21:05:56.939493+06:00",
+      "last_seen": "2026-09-10T01:11:55.729304+06:00",
       "headline": "Netflix Orders ‘Lonesome Dove’ Series From Zoe Kazan & Jeb Stuart Based On Larry McMurtry’s Novel"
     },
     "evt_fde5ab39b7": {
@@ -10093,7 +10805,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-09-09T21:05:56.939507+06:00",
+      "last_seen": "2026-09-10T01:11:55.729313+06:00",
       "headline": "‘Treasure Island’: Hayley Atwell, David Oyelowo & Tom Sweet Hit The High Seas In First Look At MGM+ & Paramount+ Pirate Series"
     },
     "evt_c7a1d57d11": {
@@ -10201,7 +10913,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-09-09T21:05:56.939523+06:00",
+      "last_seen": "2026-09-10T01:11:55.729321+06:00",
       "headline": "International Revenues Of $2.1B Boost British TV Makers, Census Finds, As Pact Warns BBC Must Avoid “Managed Decline”"
     },
     "evt_220cbde863": {
@@ -10213,7 +10925,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-09-09T21:05:56.939526+06:00",
+      "last_seen": "2026-09-10T01:11:55.729327+06:00",
       "headline": "British TV Sector Revenues Hit $5.1 Billion Last Year Driven by U.S. Streamers: It ‘Underlines the Strength of the U.K. Production Market’"
     },
     "evt_e6726eb43c": {
@@ -10237,8 +10949,128 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-09-09T21:05:56.939531+06:00",
+      "last_seen": "2026-09-10T01:11:55.729324+06:00",
       "headline": "Sony Pictures Entertainment CEO on Success of ‘Spider-Man: Brand New Day’: The Movie Is ‘Emotional’ and ‘Some People Come Away Crying’"
+    },
+    "evt_f6931be15b": {
+      "event_id": "evt_f6931be15b",
+      "topic": "Streaming Platform News",
+      "region": "Entertainment",
+      "sources": [
+        "Variety"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-09-10T01:11:55.729280+06:00",
+      "headline": "‘RuPaul’s Drag Race UK: All Stars’ Set to Premiere on WOW Presents Plus (EXCLUSIVE)"
+    },
+    "evt_fe7c6163ec": {
+      "event_id": "evt_fe7c6163ec",
+      "topic": "Trailers and First Looks",
+      "region": "Entertainment",
+      "sources": [
+        "Deadline"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-09-10T01:11:55.729295+06:00",
+      "headline": "‘The Rainmaker’ Sets Season 2 Release Date; Unveils Full Trailer"
+    },
+    "evt_0d605a02f3": {
+      "event_id": "evt_0d605a02f3",
+      "topic": "Major Film Announcements",
+      "region": "Entertainment",
+      "sources": [
+        "Variety"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-09-10T01:11:55.729299+06:00",
+      "headline": "Suno Tries to Break Into Music Mainstream With New Label-Backed Model ‘v6’"
+    },
+    "evt_5b039d05f3": {
+      "event_id": "evt_5b039d05f3",
+      "topic": "Major Film Announcements",
+      "region": "Entertainment",
+      "sources": [
+        "Variety"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-09-10T01:11:55.729302+06:00",
+      "headline": "‘Four Weddings and a Funeral’ and ‘Love Actually’ Producer Duncan Kenworthy to Receive BAFTA Fellowship"
+    },
+    "evt_85cc07add5": {
+      "event_id": "evt_85cc07add5",
+      "topic": "Casting",
+      "region": "Entertainment",
+      "sources": [
+        "Deadline"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-09-10T01:11:55.729308+06:00",
+      "headline": "Comcast CFO Notes Ongoing Epic Universe Softness, Dinging Stock; NBCU Split on Track"
+    },
+    "evt_b5a6ed1dcb": {
+      "event_id": "evt_b5a6ed1dcb",
+      "topic": "Trailers and First Looks",
+      "region": "Entertainment",
+      "sources": [
+        "Deadline"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-09-10T01:11:55.729311+06:00",
+      "headline": "Pablo Larraín’s ‘My Sad Dead’ Trailer: “The Dead Start To Make Themselves Present”"
+    },
+    "evt_92b3b2e8d4": {
+      "event_id": "evt_92b3b2e8d4",
+      "topic": "Major Film Announcements",
+      "region": "Entertainment",
+      "sources": [
+        "Variety"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-09-10T01:11:55.729316+06:00",
+      "headline": "John Mulaney Circling Lead Role in ‘Get Smart’ Reboot at Warner Bros."
+    },
+    "evt_1727336556": {
+      "event_id": "evt_1727336556",
+      "topic": "OTT Rights and Distribution",
+      "region": "Entertainment",
+      "sources": [
+        "Deadline"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-09-10T01:11:55.729319+06:00",
+      "headline": "Aaron Eckhart Pic ‘Butcher’s War’: Samuel Goldwyn Takes U.S., Voltage Pictures Acquires International Rights – TIFF"
+    },
+    "evt_ef125d81d2": {
+      "event_id": "evt_ef125d81d2",
+      "topic": "Casting",
+      "region": "Entertainment",
+      "sources": [
+        "Deadline"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-09-10T01:11:55.729330+06:00",
+      "headline": "‘Practical Magic 2’ Hopes To Weave Spell & Keep Box Office Alive; Global Outlook $58M-$63M – Box Office Preview"
+    },
+    "evt_b643be4116": {
+      "event_id": "evt_b643be4116",
+      "topic": "Major Film Announcements",
+      "region": "Entertainment",
+      "sources": [
+        "Deadline"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-09-10T01:11:55.729333+06:00",
+      "headline": "‘Harry Potter And The Cursed Child’ Posts Big Gain As Summer Slips Away – Broadway Box Office"
     }
   },
   "posted_event_ids": [
@@ -10305,7 +11137,16 @@
     "evt_c7a1d57d11",
     "evt_d20a9efb75",
     "evt_bc1b4e69a1",
-    "evt_17e0a98100"
+    "evt_17e0a98100",
+    "evt_f6931be15b",
+    "evt_0d605a02f3",
+    "evt_5b039d05f3",
+    "evt_85cc07add5",
+    "evt_92b3b2e8d4",
+    "evt_1727336556",
+    "evt_766b4227db",
+    "evt_220cbde863",
+    "evt_ef125d81d2"
   ],
   "recent_titles": [
     "the dog stars",
@@ -10371,7 +11212,16 @@
     "vanessa guill n biopic",
     "tokyo gap financing market",
     "the guest",
-    "la bola negra"
+    "la bola negra",
+    "rupaul s drag race uk all stars",
+    "suno v6",
+    "duncan kenworthy",
+    "comcast",
+    "get smart",
+    "butcher s war",
+    "pact census",
+    "british tv sector revenues hit 5 1 billion",
+    "practical magic 2"
   ],
   "work_memory": {
     "the dog stars": {
@@ -10949,6 +11799,87 @@
         "Box Office Updates": "2026-09-09T21:30:54.389260+06:00"
       },
       "last_published_at": "2026-09-09T21:30:54.389256+06:00"
+    },
+    "rupaul s drag race uk all stars": {
+      "title": "RuPaul’s Drag Race UK: All Stars",
+      "sector": "International",
+      "first_published_at": "2026-09-10T01:22:58.186211+06:00",
+      "published_events": {
+        "Upcoming OTT Releases": "2026-09-10T01:22:58.186219+06:00"
+      },
+      "last_published_at": "2026-09-10T01:22:58.186216+06:00"
+    },
+    "suno v6": {
+      "title": "Suno V6",
+      "sector": "International",
+      "first_published_at": "2026-09-10T01:23:02.906899+06:00",
+      "published_events": {
+        "New Movie / Series Announcements": "2026-09-10T01:23:02.906908+06:00"
+      },
+      "last_published_at": "2026-09-10T01:23:02.906904+06:00"
+    },
+    "duncan kenworthy": {
+      "title": "Duncan Kenworthy",
+      "sector": "International",
+      "first_published_at": "2026-09-10T01:23:07.584875+06:00",
+      "published_events": {
+        "New Movie / Series Announcements": "2026-09-10T01:23:07.584881+06:00"
+      },
+      "last_published_at": "2026-09-10T01:23:07.584879+06:00"
+    },
+    "comcast": {
+      "title": "Comcast",
+      "sector": "Hollywood",
+      "first_published_at": "2026-09-10T01:23:12.625714+06:00",
+      "published_events": {
+        "New Movie / Series Announcements": "2026-09-10T01:23:12.625721+06:00"
+      },
+      "last_published_at": "2026-09-10T01:23:12.625718+06:00"
+    },
+    "get smart": {
+      "title": "Get Smart",
+      "sector": "Hollywood",
+      "first_published_at": "2026-09-10T01:23:17.183591+06:00",
+      "published_events": {
+        "New Movie / Series Announcements": "2026-09-10T01:23:17.183601+06:00"
+      },
+      "last_published_at": "2026-09-10T01:23:17.183596+06:00"
+    },
+    "butcher s war": {
+      "title": "Butcher’s War",
+      "sector": "Hollywood",
+      "first_published_at": "2026-09-10T01:23:22.176760+06:00",
+      "published_events": {
+        "New Movie / Series Announcements": "2026-09-10T01:23:22.176768+06:00"
+      },
+      "last_published_at": "2026-09-10T01:23:22.176764+06:00"
+    },
+    "pact census": {
+      "title": "Pact Census",
+      "sector": "International",
+      "first_published_at": "2026-09-10T01:23:26.915667+06:00",
+      "published_events": {
+        "New Movie / Series Announcements": "2026-09-10T01:23:26.915674+06:00"
+      },
+      "last_published_at": "2026-09-10T01:23:26.915671+06:00"
+    },
+    "british tv sector revenues": {
+      "title": "British TV sector revenues hit $5.1 billion",
+      "sector": "International",
+      "first_published_at": "2026-09-10T01:23:34.161577+06:00",
+      "published_events": {
+        "New Movie / Series Announcements": "2026-09-10T01:23:34.161584+06:00"
+      },
+      "last_published_at": "2026-09-10T01:23:34.161581+06:00"
+    },
+    "practical magic": {
+      "title": "Practical Magic 2",
+      "sector": "Hollywood",
+      "first_published_at": "2026-09-10T01:23:38.949848+06:00",
+      "published_events": {
+        "Box Office Updates": "2026-09-10T01:23:38.949854+06:00"
+      },
+      "last_published_at": "2026-09-10T01:23:38.949852+06:00"
     }
   },
   "publication_fingerprints": [
@@ -11655,26 +12586,120 @@
       "event_key": "Netflix theatrical reporting plan",
       "canonical": "variety.com/2026/film/news/netflix-report-box-office-theatrical-releases-1236854834",
       "published_at": "2026-09-09T21:30:54.389725+06:00"
+    },
+    {
+      "fingerprint": "rupaul s drag race uk all stars|Upcoming OTT Releases|moving from the bbc and headed world wonder platform wow presents plus the comes after the sun reported that the would leaving the bbc part its cuts however variety can confirm that fall 2027 the franchise will return with the the edition will debut wow presents plus fall 2027 moves from bbc wow presents plus eight seasons and three the world seasons will globally wow presents plus fall 2027",
+      "work_key": "rupaul s drag race uk all stars",
+      "priority_type": "Upcoming OTT Releases",
+      "headline": "RuPaul’s Drag Race UK: All Stars",
+      "event_text": "RuPaul’s Drag Race UK: All Stars “RuPaul’s Drag Race UK” is moving from the BBC and headed to World of Wonder‘s streaming platform WOW Presents Plus. The news comes after The Sun reported that the show would be leaving the BBC as part of its cuts. However, Variety can confirm that in Fall 2027, the franchise will return with the first […] The first All Stars edition of RuPaul’s Drag Race UK will debut on WOW Presents Plus in Fall 2027. Series moves from BBC to WOW Presents Plus All eight UK seasons and three ‘Vs The World’ seasons will be available globally WOW Presents Plus Fall 2027",
+      "core": "moving from the bbc and headed world wonder platform wow presents plus the comes after the sun reported that the would leaving the bbc part its cuts however variety can confirm that fall 2027 the franchise will return with the the edition will debut wow presents plus fall 2027 moves from bbc wow presents plus eight seasons and three the world seasons will globally wow presents plus fall 2027",
+      "event_key": "RuPaul’s Drag Race UK: All Stars streaming shift",
+      "canonical": "variety.com/2026/tv/global/rupauls-drag-race-uk-all-stars-wow-presents-plus-2027-1236854337",
+      "published_at": "2026-09-10T01:22:58.186744+06:00"
+    },
+    {
+      "fingerprint": "suno v6|New Movie / Series Announcements|has spent months collecting music licensing deals like infinity stones and has product for the music generation company has revealed details about its suite models all built its licensing deals with warner music group bmg and believe the company said the collection launches its music generation models backed licensing deals with major labels flagship model pro and premier tiers mini offered for free all users models roll out users wednesday",
+      "work_key": "suno v6",
+      "priority_type": "New Movie / Series Announcements",
+      "headline": "Suno V6",
+      "event_text": "Suno V6 Suno has spent months collecting music licensing deals like Infinity Stones — and now it has a product to show for it. The AI music generation company has revealed details about its suite of new models, all built on its licensing deals with Warner Music Group, BMG and Believe. Dubbed “V6,” the company said the collection […] Suno launches its new V6 AI music generation models backed by licensing deals with major labels. V6 flagship model available to Pro and Premier tiers V6-mini offered for free to all users Models roll out to users on Wednesday",
+      "core": "has spent months collecting music licensing deals like infinity stones and has product for the music generation company has revealed details about its suite models all built its licensing deals with warner music group bmg and believe the company said the collection launches its music generation models backed licensing deals with major labels flagship model pro and premier tiers mini offered for free all users models roll out users wednesday",
+      "event_key": "V6ModelLaunch",
+      "canonical": "variety.com/2026/music/news/suno-new-label-backed-model-v6-1236855351",
+      "published_at": "2026-09-10T01:23:02.907232+06:00"
+    },
+    {
+      "fingerprint": "duncan kenworthy|New Movie / Series Announcements|british producer best known for his work with longtime collaborator richard curtis set receive the british academy highest honor the bafta fellowship already awarded obe officer the order the british empire for services will honored bafta special ceremony hosted curtis british producer will receive the bafta fellowship for his five decade career honored special bafta ceremony hosted richard curtis founded dna and produced hits like four weddings and funeral and love actually",
+      "work_key": "duncan kenworthy",
+      "priority_type": "New Movie / Series Announcements",
+      "headline": "Duncan Kenworthy",
+      "event_text": "Duncan Kenworthy British producer Duncan Kenworthy, best known for his work with longtime collaborator Richard Curtis, is set to receive the British Academy highest honor, the BAFTA Fellowship. Kenworthy, already awarded an OBE (Officer of the Order of the British Empire) for services to film, will be honored at BAFTA in a special ceremony hosted by Curtis. […] British producer Duncan Kenworthy will receive the BAFTA Fellowship for his five‑decade career. Kenworthy is honored at a special BAFTA ceremony hosted by Richard Curtis He co‑founded DNA and produced hits like Four Weddings and a Funeral and Love Actually",
+      "core": "british producer best known for his work with longtime collaborator richard curtis set receive the british academy highest honor the bafta fellowship already awarded obe officer the order the british empire for services will honored bafta special ceremony hosted curtis british producer will receive the bafta fellowship for his five decade career honored special bafta ceremony hosted richard curtis founded dna and produced hits like four weddings and funeral and love actually",
+      "event_key": "KenworthyBAFTAFellowship",
+      "canonical": "variety.com/2026/film/global/duncan-kenworthy-to-receive-bafta-fellowship-1236855540",
+      "published_at": "2026-09-10T01:23:07.585283+06:00"
+    },
+    {
+      "fingerprint": "comcast|New Movie / Series Announcements|chief financial officer jason armstrong defended the company pending spinoff nbcuniversal from its core connectivity operations saying that after decade plus building two strong businesses there bit divergence terms what they are focused also told investors the goldman sachs communacopia conference today that june cfo nbcu split track despite soft theme park earnings nbcu and sky will spin off from broadband unit mid next year universal orlando parks showed continued softness june hurting invest",
+      "work_key": "comcast",
+      "priority_type": "New Movie / Series Announcements",
+      "headline": "Comcast",
+      "event_text": "Comcast Comcast chief financial officer Jason Armstrong defended the company’s pending spinoff of NBCUniversal from its core connectivity operations, saying that “after a decade-plus building two strong businesses … there’s a bit of a divergence in terms of what [they] are focused on.” He also told investors at the Goldman Sachs Communacopia conference today that June […] Comcast CFO says NBCU split is on track despite soft theme‑park earnings. NBCU and Sky will spin off from Comcast’s broadband unit by mid‑next year Universal’s Orlando parks showed continued softness in June, hurting investor confidence Comcast stock fell over 7% after the CFO’s comments",
+      "core": "chief financial officer jason armstrong defended the company pending spinoff nbcuniversal from its core connectivity operations saying that after decade plus building two strong businesses there bit divergence terms what they are focused also told investors the goldman sachs communacopia conference today that june cfo nbcu split track despite soft theme park earnings nbcu and sky will spin off from broadband unit mid next year universal orlando parks showed continued softness june hurting invest",
+      "event_key": "NBCU_Split_Spending",
+      "canonical": "deadline.com/2026/09/comcast-nbcuniversal-epic-universe-nbc-universal-split-1237072287",
+      "published_at": "2026-09-10T01:23:12.626049+06:00"
+    },
+    {
+      "fingerprint": "get smart|New Movie / Series Announcements|john mulaney circling the role agent maxwell warner bros reboot variety has the project still very early stages seth grahame smith who wrote 2025 you see you don set pen the screenplay producers include andrew lazar and chuck roven john mulaney star agent maxwell warner bros reboot mulaney circling the lead role the reboot screenwriter seth grahame smith attached the project producers include andrew lazar and chuck roven",
+      "work_key": "get smart",
+      "priority_type": "New Movie / Series Announcements",
+      "headline": "Get Smart",
+      "event_text": "Get Smart John Mulaney is circling the role of Agent Maxwell Smart in Warner Bros. upcoming movie reboot of “Get Smart,” Variety has confirmed. The project is still in very early stages. Seth Grahame-Smith, who wrote 2025’s “Now You See Me: Now You Don’t,” is set to pen the screenplay. Producers include Andrew Lazar and Chuck Roven. […] John Mulaney is in talks to star as Agent Maxwell Smart in Warner Bros.' upcoming Get Smart film reboot. Mulaney is circling the lead role in the reboot Screenwriter Seth Grahame‑Smith attached to the project Producers include Andrew Lazar and Chuck Roven",
+      "core": "john mulaney circling the role agent maxwell warner bros reboot variety has the project still very early stages seth grahame smith who wrote 2025 you see you don set pen the screenplay producers include andrew lazar and chuck roven john mulaney star agent maxwell warner bros reboot mulaney circling the lead role the reboot screenwriter seth grahame smith attached the project producers include andrew lazar and chuck roven",
+      "event_key": "GetSmartCastingMulaney",
+      "canonical": "variety.com/2026/film/news/john-mulaney-get-smart-movie-reboot-warner-bros-1236855373",
+      "published_at": "2026-09-10T01:23:17.183976+06:00"
+    },
+    {
+      "fingerprint": "butcher s war|New Movie / Series Announcements|exclusive samuel goldwyn films has north american and voltage pictures has picked international the aaron eckhart action thriller voltage pictures will introduce the international buyers the toronto international festival the also stars jason behr roswell the grudge skinwalkers danielle vasinova 1923 the madison the aaron eckhart stars the action thriller with north american bought samuel goldwyn films and international voltage pictures samuel goldwyn films acquires distribution voltage pictures",
+      "work_key": "butcher s war",
+      "priority_type": "New Movie / Series Announcements",
+      "headline": "Butcher’s War",
+      "event_text": "Butcher’s War EXCLUSIVE: Samuel Goldwyn Films has acquired North American rights and Voltage Pictures has picked up international rights to the Aaron Eckhart action thriller Butcher’s War. Voltage Pictures will introduce the film to international buyers at the Toronto International Film Festival. The film also stars Jason Behr (Roswell, The Grudge, Skinwalkers), Danielle Vasinova (1923, The Madison, The […] Aaron Eckhart stars in the action thriller Butcher’s War, with North American rights bought by Samuel Goldwyn Films and international rights by Voltage Pictures. Samuel Goldwyn Films acquires U.S. distribution rights Voltage Pictures secures international rights and will market the film at TIFF The film is directed by Kyle Kauwika Harris and written by Don Roff, Harris, and Dawn Bursteen",
+      "core": "exclusive samuel goldwyn films has north american and voltage pictures has picked international the aaron eckhart action thriller voltage pictures will introduce the international buyers the toronto international festival the also stars jason behr roswell the grudge skinwalkers danielle vasinova 1923 the madison the aaron eckhart stars the action thriller with north american bought samuel goldwyn films and international voltage pictures samuel goldwyn films acquires distribution voltage pictures",
+      "event_key": "Butcher’s War Rights Deal",
+      "canonical": "deadline.com/2026/09/aaron-eckhart-butchers-war-1237072073",
+      "published_at": "2026-09-10T01:23:22.177240+06:00"
+    },
+    {
+      "fingerprint": "pact census|New Movie / Series Announcements|revenue from britain independent producers hit its second highest total last year despite spend from broadcasters falling beneath for the time since 2020 the numbers from come the producers body warned that the bbc must avoid situation financial managed decline the shows television revenues independent producers revenues hit 81b 2025 driven rise international earnings international revenue reached 57b total subscription streamers account for overseas commissions bbc faces 500m cost saving push a",
+      "work_key": "pact census",
+      "priority_type": "New Movie / Series Announcements",
+      "headline": "Pact Census",
+      "event_text": "Pact Census Revenue from Britain’s independent producers hit its second-highest total last year, despite spend from UK broadcasters falling beneath £2B ($2.7B) for the first time since 2020. The numbers from Pact come as the UK producers body warned that the BBC must avoid a situation of financial “managed decline.” The Pact Census shows UK television revenues […] UK independent TV producers' revenues hit £3.81B in 2025, driven by a 15.8% rise in international earnings. International revenue reached £1.57B, 41.1% of total Subscription streamers now account for 72.3% of overseas commissions BBC faces a £500M cost‑saving push amid funding strain",
+      "core": "revenue from britain independent producers hit its second highest total last year despite spend from broadcasters falling beneath for the time since 2020 the numbers from come the producers body warned that the bbc must avoid situation financial managed decline the shows television revenues independent producers revenues hit 81b 2025 driven rise international earnings international revenue reached 57b total subscription streamers account for overseas commissions bbc faces 500m cost saving push a",
+      "event_key": "Revenue_Report_2025",
+      "canonical": "deadline.com/2026/09/pact-census-international-tv-revenues-up-1237070622",
+      "published_at": "2026-09-10T01:23:26.916123+06:00"
+    },
+    {
+      "fingerprint": "british tv sector revenues|New Movie / Series Announcements|hit billion hit billion billion last year largely driven streamers the results were published pact the producers trade group who noted the figure represented 149 million increase 2024 they say driven primarily investment into the international revenue streamers drove rise revenue billion 2025 international revenue grew billion domestic revenue fell below billion for the time five years svod platforms increased commissioning budgets boosting investment",
+      "work_key": "british tv sector revenues",
+      "priority_type": "New Movie / Series Announcements",
+      "headline": "British TV sector revenues hit $5.1 billion",
+      "event_text": "British TV sector revenues hit $5.1 billion British TV sector revenues hit £3.81 billion ($5.1 billion) last year, largely driven by U.S. streamers. The results were published by Pact, the U.K. producers trade group, who noted the figure represented a £149 million (4.1%) increase on 2024 revenues. They say it is driven primarily by streaming investment into the U.K. International TV revenue […] U.S. streamers drove a 4.1% rise in UK TV sector revenue to $5.1 billion in 2025. International TV revenue grew 15.8% to £1.57 billion Domestic TV revenue fell below £2 billion for the first time in five years SVOD platforms increased commissioning budgets, boosting investment",
+      "core": "hit billion hit billion billion last year largely driven streamers the results were published pact the producers trade group who noted the figure represented 149 million increase 2024 they say driven primarily investment into the international revenue streamers drove rise revenue billion 2025 international revenue grew billion domestic revenue fell below billion for the time five years svod platforms increased commissioning budgets boosting investment",
+      "event_key": "Sector_Revenue_2025",
+      "canonical": "variety.com/2026/tv/global/british-tv-sector-revenues-streamers-1236854714",
+      "published_at": "2026-09-10T01:23:34.162089+06:00"
+    },
+    {
+      "fingerprint": "practical magic|Box Office Updates|after summer hit record billion stateside warner bros has female destination the sequel the 1998 sandra bullock and nicole kidman witchy romantic fantasy comedy which eyeing around 40m domestic and between 23m overseas territories for global start between 58m 63m will warner bros projects 58m 63m global opening for the sequel targeting 30m 35m domestic 000 theaters projected 40m domestic opening 23m overseas not releasing china opening previews thursday",
+      "work_key": "practical magic",
+      "priority_type": "Box Office Updates",
+      "headline": "Practical Magic 2",
+      "event_text": "Practical Magic 2 After summer hit a record $4.76 billion stateside, Warner Bros has a female destination in Practical Magic 2, the sequel to the 1998 Sandra Bullock and Nicole Kidman witchy romantic fantasy comedy which is eyeing around $40M domestic, and between $18-23M overseas in 77 territories for a global start between $58M-$63M. Practical Magic 2 will […] Warner Bros projects $58M‑$63M global opening for the sequel, targeting $30M‑$35M domestic in 4,000 theaters. Projected $40M domestic opening, $18‑23M overseas Not releasing in China Opening previews Thursday at 2 PM",
+      "core": "after summer hit record billion stateside warner bros has female destination the sequel the 1998 sandra bullock and nicole kidman witchy romantic fantasy comedy which eyeing around 40m domestic and between 23m overseas territories for global start between 58m 63m will warner bros projects 58m 63m global opening for the sequel targeting 30m 35m domestic 000 theaters projected 40m domestic opening 23m overseas not releasing china opening previews thursday",
+      "event_key": "Practical Magic 2 box‑office preview",
+      "canonical": "deadline.com/2026/09/box-office-practical-magic-2-1237072094",
+      "published_at": "2026-09-10T01:23:38.950283+06:00"
     }
   ],
   "fresh_start_at": "2026-09-07T13:58:06.173598+06:00",
   "learned_rejections": {
     "sports": {
-      "observations": 16,
-      "low_score_count": 12,
-      "total_score": 1001,
-      "avg_score": 62.6,
-      "last_seen": "2026-09-09T16:58:09.028668+06:00",
+      "observations": 17,
+      "low_score_count": 13,
+      "total_score": 1059,
+      "avg_score": 62.3,
+      "last_seen": "2026-09-10T01:08:38.669348+06:00",
       "examples": [
         {
           "title": "The Best ‘Transformers’ Movie Officially Hits a 40th Anniversary Setback",
           "score": 43,
           "priority_type": "Production / Filming Updates"
-        },
-        {
-          "title": "Piers Morgan Launches ‘Football Uncensored’ On YouTube After World Cup Series Scored 60M Views",
-          "score": 58,
-          "priority_type": "New Movie / Series Announcements"
         },
         {
           "title": "‘Untold: Raygun: Breaking Badly’ Netflix Documentary: 5 Biggest Reveals About Dr. Rachael Gunn",
@@ -11690,25 +12715,25 @@
           "title": "Documentary About Formula One World Champion Niki Lauda to Be Directed by James Erskine, WestEnd Films Handling World Sales",
           "score": 39,
           "priority_type": "New Movie / Series Announcements"
+        },
+        {
+          "title": "Piers Morgan Launches ‘Football Uncensored’ On YouTube After World Cup Series Scored 60M Views",
+          "score": 58,
+          "priority_type": "New Movie / Series Announcements"
         }
       ]
     },
     "celebrity_lifestyle": {
-      "observations": 9,
-      "low_score_count": 8,
-      "total_score": 257,
-      "avg_score": 28.6,
-      "last_seen": "2026-09-09T21:04:23.930755+06:00",
+      "observations": 10,
+      "low_score_count": 9,
+      "total_score": 320,
+      "avg_score": 32.0,
+      "last_seen": "2026-09-10T01:08:38.668614+06:00",
       "examples": [
         {
           "title": "Emmy Awards 2026: A Complete Guide to Parties and Events (Updating)",
           "score": 0,
           "priority_type": ""
-        },
-        {
-          "title": "Dori Media Wants Buyers To Hunt ‘New Love’ At MIPCOM",
-          "score": 63,
-          "priority_type": "OTT Platform Acquisition / Streaming Rights"
         },
         {
           "title": "AMC Global Media Settles Breach Of Contract Suit With ‘Walking Dead’ Creator Robert Kirkman, Producers",
@@ -11719,6 +12744,11 @@
           "title": "Yoon Jong Hoon And Han Eun Seo Announce Marriage",
           "score": 0,
           "priority_type": ""
+        },
+        {
+          "title": "Dori Media Wants Buyers To Hunt ‘New Love’ At MIPCOM",
+          "score": 63,
+          "priority_type": "OTT Platform Acquisition / Streaming Rights"
         }
       ]
     },
@@ -11752,798 +12782,6 @@
     }
   },
   "score_history": [
-    {
-      "title": "BBC News Anchor Maryam Moshiri Reveals Blood Cancer Diagnosis",
-      "score": 26,
-      "pattern": "",
-      "priority_type": "First Look / First Glimpse / Posters",
-      "source": "Variety",
-      "seen_at": "2026-09-08T16:53:00.065915+06:00"
-    },
-    {
-      "title": "‘South Park’ Trolls Donald Trump Again After Winning Emmy — An Award He’s Lost Twice",
-      "score": 25,
-      "pattern": "",
-      "priority_type": "First Look / First Glimpse / Posters",
-      "source": "TheWrap",
-      "seen_at": "2026-09-08T16:53:00.066018+06:00"
-    },
-    {
-      "title": "‘Monsters of God’ Director Eric Goode Breaks Down the Finale Reveal: ‘He Was Like an Alcoholic Running a Liquor Store’",
-      "score": 25,
-      "pattern": "",
-      "priority_type": "First Look / First Glimpse / Posters",
-      "source": "IndieWire",
-      "seen_at": "2026-09-08T16:53:00.066146+06:00"
-    },
-    {
-      "title": "The 10 Best Fantasy Movies in Film History",
-      "score": 19,
-      "pattern": "",
-      "priority_type": "First Look / First Glimpse / Posters",
-      "source": "Collider",
-      "seen_at": "2026-09-08T16:53:00.066205+06:00"
-    },
-    {
-      "title": "8 Sci-Fi TV Shows With Aliens That Are 10/10 Masterpieces",
-      "score": 17,
-      "pattern": "",
-      "priority_type": "First Look / First Glimpse / Posters",
-      "source": "Collider",
-      "seen_at": "2026-09-08T16:53:00.066267+06:00"
-    },
-    {
-      "title": "The 10 Best Romantic Movies in Film History",
-      "score": 17,
-      "pattern": "",
-      "priority_type": "First Look / First Glimpse / Posters",
-      "source": "Collider",
-      "seen_at": "2026-09-08T16:53:00.066565+06:00"
-    },
-    {
-      "title": "‘SNL UK’ Adds Comedian & ‘Big Boys’ Actor Freddie Meredith To Season 2 Cast",
-      "score": 90,
-      "pattern": "",
-      "priority_type": "Cast / Character Announcements",
-      "source": "Deadline",
-      "seen_at": "2026-09-08T16:53:00.066690+06:00"
-    },
-    {
-      "title": "Colin Morgan & Katie Leung To Narrate BBC Studios Gothic Horror Podcast Drama ‘The Haunted Library’",
-      "score": 53,
-      "pattern": "",
-      "priority_type": "Cast / Character Announcements",
-      "source": "Deadline",
-      "seen_at": "2026-09-08T16:53:00.066821+06:00"
-    },
-    {
-      "title": "‘Elite’ Star Ester Expósito Circles ‘Stink Eye,’ an Iberseries Co-Production & Financing Forum Title (EXCLUSIVE)",
-      "score": 49,
-      "pattern": "",
-      "priority_type": "Cast / Character Announcements",
-      "source": "Variety",
-      "seen_at": "2026-09-08T16:53:00.066960+06:00"
-    },
-    {
-      "title": "Luca Guadagnino on Casting Hollywood A-Listers in Subversive Roles: ‘I Have Worked With Some of the Finest’",
-      "score": 39,
-      "pattern": "",
-      "priority_type": "Cast / Character Announcements",
-      "source": "Variety",
-      "seen_at": "2026-09-08T16:53:00.067108+06:00"
-    },
-    {
-      "title": "The Next James Bond Has Been Picked, Says Gary Oldman, Whose ‘Fingers Are Crossed’ for ‘Slow Horses’ Co-Star Jack Lowden",
-      "score": 36,
-      "pattern": "",
-      "priority_type": "Cast / Character Announcements",
-      "source": "Variety",
-      "seen_at": "2026-09-08T16:53:00.067261+06:00"
-    },
-    {
-      "title": "5 Artists Who Need to Sing the Next James Bond Theme Song",
-      "score": 34,
-      "pattern": "",
-      "priority_type": "Cast / Character Announcements",
-      "source": "Collider",
-      "seen_at": "2026-09-08T16:53:00.067577+06:00"
-    },
-    {
-      "title": "Lilly Wachowski Says ‘The Matrix 5’ Director Wants Her ‘Blessing’ Before Making Revival",
-      "score": 33,
-      "pattern": "",
-      "priority_type": "Cast / Character Announcements",
-      "source": "TheWrap",
-      "seen_at": "2026-09-08T16:53:00.067677+06:00"
-    },
-    {
-      "title": "‘SNL UK’ Adds ‘Such Brave Girls’ Star Freddie Meredith",
-      "score": 33,
-      "pattern": "",
-      "priority_type": "Cast / Character Announcements",
-      "source": "The Hollywood Reporter",
-      "seen_at": "2026-09-08T16:53:00.067749+06:00"
-    },
-    {
-      "title": "Nick Offerman Calls Out Ben Shapiro for ‘Rampant Homophobia’ in His ‘Last of Us’ Criticisms",
-      "score": 31,
-      "pattern": "",
-      "priority_type": "Cast / Character Announcements",
-      "source": "TheWrap",
-      "seen_at": "2026-09-08T16:53:00.067851+06:00"
-    },
-    {
-      "title": "James Bond Writer Steven Knight Refuses To Deny That 007 Has Been Cast: “I Cannot Speak About This Subject”",
-      "score": 24,
-      "pattern": "",
-      "priority_type": "Cast / Character Announcements",
-      "source": "Deadline",
-      "seen_at": "2026-09-08T16:53:00.067989+06:00"
-    },
-    {
-      "title": "Why Andrew Garfield Says Billionaires Should Be “Scared Sh**less” by ‘The Uprising’",
-      "score": 24,
-      "pattern": "",
-      "priority_type": "Cast / Character Announcements",
-      "source": "The Hollywood Reporter",
-      "seen_at": "2026-09-08T16:53:00.068344+06:00"
-    },
-    {
-      "title": "ABC’s New 'The Rookie' Spin-Off Star Officially Eyes Tom Cruise Casting",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "Cast / Character Announcements",
-      "source": "Collider",
-      "seen_at": "2026-09-08T16:53:00.068434+06:00"
-    },
-    {
-      "title": "‘Adults’ Star Malik Elassal Wants Zohran Mamdani For Season 3 Cameo: “We Have Mutuals”",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "Cast / Character Announcements",
-      "source": "Deadline",
-      "seen_at": "2026-09-08T16:53:00.068567+06:00"
-    },
-    {
-      "title": "20th Century’s ‘Whalefall’ Producers Reflect On Shooting In California: “The Best Creative Teams Are Here”",
-      "score": 72,
-      "pattern": "",
-      "priority_type": "Theatrical Releases / Re-releases",
-      "source": "Deadline",
-      "seen_at": "2026-09-08T16:53:00.068703+06:00"
-    },
-    {
-      "title": "Inside the Restoration of Indian Cult Classic ‘English, August,’ Heading to Venice as Relevant as Ever (EXCLUSIVE)",
-      "score": 54,
-      "pattern": "",
-      "priority_type": "Theatrical Releases / Re-releases",
-      "source": "Variety",
-      "seen_at": "2026-09-08T16:53:00.068843+06:00"
-    },
-    {
-      "title": "Liam and Noel Gallagher Soak Up London Love at U.K. Premiere of ‘Oasis: Don’t Look Back in Anger’",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "Theatrical Releases / Re-releases",
-      "source": "The Hollywood Reporter",
-      "seen_at": "2026-09-08T16:53:00.068935+06:00"
-    },
-    {
-      "title": "Lumiere Declaration Sets 15 Principles for Global Film Governance, Calling Audience Attention ‘a Trust to Be Honored, Not a Resource to Be C",
-      "score": 76,
-      "pattern": "",
-      "priority_type": "Production / Filming Updates",
-      "source": "Variety",
-      "seen_at": "2026-09-08T16:53:00.069102+06:00"
-    },
-    {
-      "title": "Andy Serkis Unleashes Imagination with Venice Immersive Breakout ‘Nevatars’",
-      "score": 70,
-      "pattern": "",
-      "priority_type": "Production / Filming Updates",
-      "source": "Variety",
-      "seen_at": "2026-09-08T16:53:00.069228+06:00"
-    },
-    {
-      "title": "MPA Signs Two Declarations At Lumière Summit, Attends Roundtables With Macron & Lee Jae Myung",
-      "score": 60,
-      "pattern": "",
-      "priority_type": "Production / Filming Updates",
-      "source": "Deadline",
-      "seen_at": "2026-09-08T16:53:00.069364+06:00"
-    },
-    {
-      "title": "Film Industry Leaders Demand Structural Fix for Gender Gap at Lumiere Summit",
-      "score": 57,
-      "pattern": "",
-      "priority_type": "Production / Filming Updates",
-      "source": "Variety",
-      "seen_at": "2026-09-08T16:53:00.069494+06:00"
-    },
-    {
-      "title": "Belgian Royalty Series ‘King of Hearts’ Secures Key VRT Backing (EXCLUSIVE)",
-      "score": 52,
-      "pattern": "",
-      "priority_type": "Production / Filming Updates",
-      "source": "Variety",
-      "seen_at": "2026-09-08T16:53:00.069626+06:00"
-    },
-    {
-      "title": "Amazon’s Newest Fire Tablet Is Only $150, With 10,000 Units Sold In the Last Month Alone",
-      "score": 35,
-      "pattern": "",
-      "priority_type": "Production / Filming Updates",
-      "source": "Variety",
-      "seen_at": "2026-09-08T16:53:00.069763+06:00"
-    },
-    {
-      "title": "Prada Foundation Film Fund Chief Paolo Moretti on First-Year Journey That Helped  Spawn Rubaiyat Hossain’s Venice Horizons Entry ‘The Diffic",
-      "score": 35,
-      "pattern": "",
-      "priority_type": "Production / Filming Updates",
-      "source": "Variety",
-      "seen_at": "2026-09-08T16:53:00.069918+06:00"
-    },
-    {
-      "title": "Space Force Uniform Is Inspired By Quasi-Satirical Film ‘Starship Troopers’",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "Production / Filming Updates",
-      "source": "Deadline",
-      "seen_at": "2026-09-08T16:53:00.070051+06:00"
-    },
-    {
-      "title": "Paul Thomas Anderson’s Cameron Winter Concert Film Joins London Film Festival Lineup As Mubi Acquires World Rights",
-      "score": 81,
-      "pattern": "",
-      "priority_type": "OTT Platform Acquisition / Streaming Rights",
-      "source": "Deadline",
-      "seen_at": "2026-09-08T16:53:00.070196+06:00"
-    },
-    {
-      "title": "Mehdi Norowzian’s ‘A Time In Eternity’ Starring Leila Hatami Lands Sales Rep Ahead Of TIFF Market",
-      "score": 59,
-      "pattern": "",
-      "priority_type": "OTT Platform Acquisition / Streaming Rights",
-      "source": "Deadline",
-      "seen_at": "2026-09-08T16:53:00.070334+06:00"
-    },
-    {
-      "title": "About Premium Content Inks International Deals for Mystery and Romance Series, Counterfeit Art Doc (EXCLUSIVE)",
-      "score": 59,
-      "pattern": "",
-      "priority_type": "OTT Platform Acquisition / Streaming Rights",
-      "source": "Variety",
-      "seen_at": "2026-09-08T16:53:00.070476+06:00"
-    },
-    {
-      "title": "Tom Rothman on Sony’s ‘Spider-Man: Brand New Day’ Blockbuster Success, Being Outbid for ‘Obsession’ and More",
-      "score": 92,
-      "pattern": "",
-      "priority_type": "Box Office Updates",
-      "source": "Variety",
-      "seen_at": "2026-09-08T16:53:00.070631+06:00"
-    },
-    {
-      "title": "Summer U.S. Box Office Hits All-Time $4.76B Record: How Audiences Surrendered To Moviegoing",
-      "score": 89,
-      "pattern": "",
-      "priority_type": "Box Office Updates",
-      "source": "Deadline",
-      "seen_at": "2026-09-08T16:53:00.070768+06:00"
-    },
-    {
-      "title": "'Star Wars: The Force Awakens' All-Time Box Office Record Is Officially About To Collapse",
-      "score": 82,
-      "pattern": "",
-      "priority_type": "Box Office Updates",
-      "source": "Collider",
-      "seen_at": "2026-09-08T16:53:00.070845+06:00"
-    },
-    {
-      "title": "Ridley Scott’s Sci-Fi Epic Is Officially One of His Biggest Box Office Misses in 26 Years",
-      "score": 74,
-      "pattern": "",
-      "priority_type": "Box Office Updates",
-      "source": "Collider",
-      "seen_at": "2026-09-08T16:53:00.070940+06:00"
-    },
-    {
-      "title": "Korea Box Office: ‘The Odyssey’ Overwhelms ‘Spider-Man: Brand New Day’ as Admissions Top 10 Million",
-      "score": 73,
-      "pattern": "",
-      "priority_type": "Box Office Updates",
-      "source": "Variety",
-      "seen_at": "2026-09-08T16:53:00.071106+06:00"
-    },
-    {
-      "title": "China Box Office: ‘Once Upon a Time in the Middle East’ Crosses $300 Million",
-      "score": 72,
-      "pattern": "",
-      "priority_type": "Box Office Updates",
-      "source": "Variety",
-      "seen_at": "2026-09-08T16:53:00.071253+06:00"
-    },
-    {
-      "title": "International Sales Of French TV Programs Crash To A Ten-Year Low",
-      "score": 66,
-      "pattern": "",
-      "priority_type": "Box Office Updates",
-      "source": "Deadline",
-      "seen_at": "2026-09-08T16:53:00.071387+06:00"
-    },
-    {
-      "title": "France TV Exports Plummet Amid Ad Decline, Broadcaster Budget Cuts, ‘Deteriorating Economic Environment’",
-      "score": 62,
-      "pattern": "",
-      "priority_type": "Box Office Updates",
-      "source": "Variety",
-      "seen_at": "2026-09-08T16:53:00.071522+06:00"
-    },
-    {
-      "title": "Rob Reiner Wins Posthumous Emmy, Julie Andrews, ‘Widow’s Bay’ Among Others Honored at Creative Arts Emmys",
-      "score": 46,
-      "pattern": "",
-      "priority_type": "Box Office Updates",
-      "source": "IndieWire",
-      "seen_at": "2026-09-08T16:53:00.071612+06:00"
-    },
-    {
-      "title": "France Launches Global Initiatives to Support Independent Cinema and Establish Framework for Alliance of State Film Commissions: Lumiere Sum",
-      "score": 68,
-      "pattern": "",
-      "priority_type": "New Movie / Series Announcements",
-      "source": "Variety",
-      "seen_at": "2026-09-08T20:58:54.205462+06:00"
-    },
-    {
-      "title": "Shriya Pilgaonkar on having Mirzapur The Movie and Haiwaan releasing in September: “What’s exciting is that my looks and characters in both ",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "",
-      "source": "Bollywood Hungama",
-      "seen_at": "2026-09-08T20:58:54.205662+06:00"
-    },
-    {
-      "title": "The Business of Lucy Darling: How Carisa Hendrix Went From Performing At Haunted Houses To Touring Globally As Her Old Hollywood-Inspired Ch",
-      "score": 35,
-      "pattern": "",
-      "priority_type": "New Movie / Series Announcements",
-      "source": "Deadline",
-      "seen_at": "2026-09-08T20:58:54.205802+06:00"
-    },
-    {
-      "title": "Lumiere Declaration Sets 15 Principles for Global Film Governance, Calling Audience Attention ‘a Trust to Be Honored, Not a Resource to Be C",
-      "score": 76,
-      "pattern": "",
-      "priority_type": "Production / Filming Updates",
-      "source": "Variety",
-      "seen_at": "2026-09-08T20:58:54.205937+06:00"
-    },
-    {
-      "title": "Prada Foundation Film Fund Chief Paolo Moretti on First-Year Journey That Helped  Spawn Rubaiyat Hossain’s Venice Horizons Entry ‘The Diffic",
-      "score": 35,
-      "pattern": "",
-      "priority_type": "Production / Filming Updates",
-      "source": "Variety",
-      "seen_at": "2026-09-08T20:58:54.206066+06:00"
-    },
-    {
-      "title": "French President Emmanuel Macron Calls on YouTube to Finance Content and Warns of Growing Threat to Cultural Model (EXCLUSIVE)",
-      "score": 91,
-      "pattern": "",
-      "priority_type": "OTT / Streaming Availability",
-      "source": "Variety",
-      "seen_at": "2026-09-08T21:05:13.352421+06:00"
-    },
-    {
-      "title": "MS NOW Entering DTC Era With Launch Of Membership Program And Dedicated Streaming Outlet",
-      "score": 88,
-      "pattern": "",
-      "priority_type": "OTT / Streaming Availability",
-      "source": "Deadline",
-      "seen_at": "2026-09-08T21:05:13.352559+06:00"
-    },
-    {
-      "title": "‘Don’t Say Good Luck’ Writer Laura Hankin on the Personal True Story Behind the Netflix Hit",
-      "score": 68,
-      "pattern": "",
-      "priority_type": "OTT / Streaming Availability",
-      "source": "What's on Netflix",
-      "seen_at": "2026-09-08T21:05:13.352928+06:00"
-    },
-    {
-      "title": "Tom Cruise’s Vampire Classic Is Officially an HBO Max Hit",
-      "score": 42,
-      "pattern": "",
-      "priority_type": "OTT / Streaming Availability",
-      "source": "Collider",
-      "seen_at": "2026-09-08T21:05:13.353264+06:00"
-    },
-    {
-      "title": "Emmy Awards 2026: A Complete Guide to Parties and Events (Updating)",
-      "score": 36,
-      "pattern": "",
-      "priority_type": "OTT / Streaming Availability",
-      "source": "The Hollywood Reporter",
-      "seen_at": "2026-09-08T21:05:13.353316+06:00"
-    },
-    {
-      "title": "The Greatest Western of All Time Is Finally Free to Watch",
-      "score": 31,
-      "pattern": "",
-      "priority_type": "OTT / Streaming Availability",
-      "source": "Collider",
-      "seen_at": "2026-09-08T21:05:13.353409+06:00"
-    },
-    {
-      "title": "‘Untold: Raygun: Breaking Badly’ Netflix Documentary: 5 Biggest Reveals About Dr. Rachael Gunn",
-      "score": 46,
-      "pattern": "sports",
-      "priority_type": "Upcoming OTT Releases",
-      "source": "What's on Netflix",
-      "seen_at": "2026-09-08T21:05:13.353489+06:00"
-    },
-    {
-      "title": "Ella Purnell’s 6-Episode Dark Thriller Is One of the Best Shows on Streaming",
-      "score": 31,
-      "pattern": "low_value_editorial",
-      "priority_type": "Upcoming OTT Releases",
-      "source": "Collider",
-      "seen_at": "2026-09-08T21:05:13.353542+06:00"
-    },
-    {
-      "title": "3 Best Series to Binge on Prime Video This Week (Sep 7-11)",
-      "score": 31,
-      "pattern": "",
-      "priority_type": "Upcoming OTT Releases",
-      "source": "Collider",
-      "seen_at": "2026-09-08T21:05:13.353610+06:00"
-    },
-    {
-      "title": "Taylor Sheridan’s ‘Mayor of Kingstown’ Sets Netflix Release Date",
-      "score": 90,
-      "pattern": "",
-      "priority_type": "Release Date Confirmations",
-      "source": "What's on Netflix",
-      "seen_at": "2026-09-08T21:05:13.353925+06:00"
-    },
-    {
-      "title": "‘Dexter: Resurrection’ Sets Season 2 Premiere Date & Drops Teaser Trailer",
-      "score": 70,
-      "pattern": "",
-      "priority_type": "Release Date Confirmations",
-      "source": "Deadline",
-      "seen_at": "2026-09-08T21:05:13.354052+06:00"
-    },
-    {
-      "title": "‘Yellowjackets’ Star’s Twisted Horror Movie Officially Sets Hulu Release Date",
-      "score": 70,
-      "pattern": "",
-      "priority_type": "Release Date Confirmations",
-      "source": "Collider",
-      "seen_at": "2026-09-08T21:05:13.354124+06:00"
-    },
-    {
-      "title": "‘60 Minutes’ Gives A Peek At Story Lineup For Season Premiere Following Tumultuous Revamp",
-      "score": 63,
-      "pattern": "",
-      "priority_type": "Release Date Confirmations",
-      "source": "Deadline",
-      "seen_at": "2026-09-08T21:05:13.354258+06:00"
-    },
-    {
-      "title": "‘Harry Potter’ Season 2 Could Be the Real Problem in HBO’s Entire Reboot",
-      "score": 41,
-      "pattern": "",
-      "priority_type": "Release Date Confirmations",
-      "source": "Collider",
-      "seen_at": "2026-09-08T21:05:13.354335+06:00"
-    },
-    {
-      "title": "The Apple TV Masterpiece That Dolly Parton Loved Officially Smashes a Jaw-Dropping Milestone",
-      "score": 88,
-      "pattern": "",
-      "priority_type": "New Movie / Series Announcements",
-      "source": "Collider",
-      "seen_at": "2026-09-08T21:05:13.354432+06:00"
-    },
-    {
-      "title": "India’s Gubbara Launches Distribution Arm as ‘Termite’ Heads to Toronto (EXCLUSIVE)",
-      "score": 86,
-      "pattern": "",
-      "priority_type": "New Movie / Series Announcements",
-      "source": "Variety",
-      "seen_at": "2026-09-08T21:05:13.354558+06:00"
-    },
-    {
-      "title": "MPA Signs Two Declarations At Lumière Summit, Attends Roundtables With Macron & Lee Jae Myung",
-      "score": 80,
-      "pattern": "",
-      "priority_type": "New Movie / Series Announcements",
-      "source": "Deadline",
-      "seen_at": "2026-09-08T21:05:13.354690+06:00"
-    },
-    {
-      "title": "Why Andrew Garfield Says Billionaires Should Be “Scared Sh**less” by ‘The Uprising’",
-      "score": 78,
-      "pattern": "",
-      "priority_type": "New Movie / Series Announcements",
-      "source": "The Hollywood Reporter",
-      "seen_at": "2026-09-08T21:05:13.354763+06:00"
-    },
-    {
-      "title": "John Turturro “Grateful” to Zurich Film Festival for Golden Eye Award Honor",
-      "score": 74,
-      "pattern": "",
-      "priority_type": "New Movie / Series Announcements",
-      "source": "The Hollywood Reporter",
-      "seen_at": "2026-09-08T21:05:13.355102+06:00"
-    },
-    {
-      "title": "Hot-Button Play ‘Downstate’ Confirmed For Broadway, Leans Into Controversy",
-      "score": 65,
-      "pattern": "",
-      "priority_type": "New Movie / Series Announcements",
-      "source": "Deadline",
-      "seen_at": "2026-09-08T21:05:13.355228+06:00"
-    },
-    {
-      "title": "ID’s ‘O.J. Unseen: Exploitation of Evil’ Excavates O.J. Simpson’s Thwarted Reality TV Comeback",
-      "score": 50,
-      "pattern": "",
-      "priority_type": "New Movie / Series Announcements",
-      "source": "The Hollywood Reporter",
-      "seen_at": "2026-09-08T21:05:13.355309+06:00"
-    },
-    {
-      "title": "Bruce Davis, Longtime Film Academy Chief Executive, Dies at 83",
-      "score": 34,
-      "pattern": "",
-      "priority_type": "New Movie / Series Announcements",
-      "source": "The Hollywood Reporter",
-      "seen_at": "2026-09-08T21:05:13.355397+06:00"
-    },
-    {
-      "title": "As NFL Season Kicks Off, Here Are Five Things In The Mix For 2026",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "",
-      "source": "Deadline",
-      "seen_at": "2026-09-08T21:05:13.355524+06:00"
-    },
-    {
-      "title": "AMC Global Media Settles Breach Of Contract Suit With ‘Walking Dead’ Creator Robert Kirkman, Producers",
-      "score": 0,
-      "pattern": "celebrity_lifestyle",
-      "priority_type": "",
-      "source": "Deadline",
-      "seen_at": "2026-09-08T21:05:13.355620+06:00"
-    },
-    {
-      "title": "'Dexter: Resurrection' Officially Ditches Dexter Morgan's Iconic Look",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "",
-      "source": "Collider",
-      "seen_at": "2026-09-08T21:05:13.355938+06:00"
-    },
-    {
-      "title": "‘Dexter: Resurrection’ Season 2 Sets October Premiere Date, Drops Mysterious Teaser",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "",
-      "source": "Variety",
-      "seen_at": "2026-09-08T21:05:13.356065+06:00"
-    },
-    {
-      "title": "Scott Rudin Plans Two New Broadway Shows, Including One With Julia Roberts and Paul Rudd",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "",
-      "source": "The Hollywood Reporter",
-      "seen_at": "2026-09-08T21:05:13.356146+06:00"
-    },
-    {
-      "title": "Tom Jones Claims He’s Been Fired From ‘The Voice U.K.’ Over “Financial Difficulty With Insurance”",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "",
-      "source": "The Hollywood Reporter",
-      "seen_at": "2026-09-08T21:05:13.356252+06:00"
-    },
-    {
-      "title": "'Godzilla Minus Zero' Is Officially Here With Jaw-Dropping First Look",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "",
-      "source": "Collider",
-      "seen_at": "2026-09-08T21:05:13.356584+06:00"
-    },
-    {
-      "title": "David Jonsson, Olivia Colman and Kunal Nayyar to Lead Voice Cast of Animated Family Movie ‘Bollywoof’ (EXCLUSIVE)",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "",
-      "source": "Variety",
-      "seen_at": "2026-09-08T21:05:13.356731+06:00"
-    },
-    {
-      "title": "Titmouse Art Director Otto Tang on Bringing New York to Life in Netflix’s ‘DANG!’",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "",
-      "source": "What's on Netflix",
-      "seen_at": "2026-09-08T21:05:13.356811+06:00"
-    },
-    {
-      "title": "A New Retro Way to Experience Classic Film and Television Is Officially Here [Exclusive]",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "",
-      "source": "Collider",
-      "seen_at": "2026-09-08T21:05:13.356891+06:00"
-    },
-    {
-      "title": "Emma Stone Fights Zombies in Two of HBO Max's Newest Arrivals",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "New Movie / Series Announcements",
-      "source": "Collider",
-      "seen_at": "2026-09-08T21:05:13.356944+06:00"
-    },
-    {
-      "title": "Laura Poitras and Rachel Lauren Mueller on Making ICE Doc ‘They’re Here’ Like a “Horror Movie”",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "New Movie / Series Announcements",
-      "source": "The Hollywood Reporter",
-      "seen_at": "2026-09-08T21:05:13.357047+06:00"
-    },
-    {
-      "title": "Venice Horizons Winner Anuparna Roy Returns to Lido With Mumbai Story of Migrants, Desire and Belonging ‘Lovers in the Blue Night’",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "New Movie / Series Announcements",
-      "source": "Variety",
-      "seen_at": "2026-09-08T21:05:13.357191+06:00"
-    },
-    {
-      "title": "BBC Breakout Comedy ‘Small Prophets’ Renewed For Season 2 After Stellar Ratings & Apple TV Pickup",
-      "score": 84,
-      "pattern": "",
-      "priority_type": "Season Renewals / New Season Updates",
-      "source": "Deadline",
-      "seen_at": "2026-09-08T21:05:13.357354+06:00"
-    },
-    {
-      "title": "‘Fauda’ Creator Says New Season Confronting Oct. 7 Attacks and Aftermath Is “Most Important Thing That We Ever Wrote”",
-      "score": 61,
-      "pattern": "",
-      "priority_type": "Season Renewals / New Season Updates",
-      "source": "The Hollywood Reporter",
-      "seen_at": "2026-09-08T21:05:13.357490+06:00"
-    },
-    {
-      "title": "After 24 Years, Agatha Christie’s 'Poirot' Ended With Its Most Disturbing Case",
-      "score": 24,
-      "pattern": "",
-      "priority_type": "Season Renewals / New Season Updates",
-      "source": "Collider",
-      "seen_at": "2026-09-08T21:05:13.357566+06:00"
-    },
-    {
-      "title": "‘Musk’ Teaser-Trailer: World’s Richest Man Called “Chaotic, Capricious,” “Manifestly Cruel And Selfish” In Damning Alex Gibney Doc",
-      "score": 99,
-      "pattern": "",
-      "priority_type": "Trailer Releases",
-      "source": "Deadline",
-      "seen_at": "2026-09-08T21:05:13.357694+06:00"
-    },
-    {
-      "title": "‘Godzilla Minus Zero’ Unveils New Trailer, Cast Members",
-      "score": 83,
-      "pattern": "",
-      "priority_type": "Trailer Releases",
-      "source": "Variety",
-      "seen_at": "2026-09-08T21:05:13.357802+06:00"
-    },
-    {
-      "title": "German Police Rush to Prevent an Islamic Terror Attack in ‘Blindspot Berlin’ (Exclusive Trailer)",
-      "score": 79,
-      "pattern": "",
-      "priority_type": "Trailer Releases",
-      "source": "The Hollywood Reporter",
-      "seen_at": "2026-09-08T21:05:13.358088+06:00"
-    },
-    {
-      "title": "Nathan Fielder and Lance Oppenheim’s Elizabeth Holmes Doc ‘You Can See Everything’ Detonates the Oscar Race — and Has A24 Chasing a 90-Year ",
-      "score": 74,
-      "pattern": "",
-      "priority_type": "Trailer Releases",
-      "source": "Variety",
-      "seen_at": "2026-09-08T21:05:13.358226+06:00"
-    },
-    {
-      "title": "Andrew Garfield Hopes ‘The Uprising’ Makes Billionaires “Scared Sh*tless”: “They’re The Most Soul Sick”",
-      "score": 72,
-      "pattern": "",
-      "priority_type": "Trailer Releases",
-      "source": "Deadline",
-      "seen_at": "2026-09-08T21:05:13.358346+06:00"
-    },
-    {
-      "title": "Omaha Pulls Off a Star-Studded Hollywood Heist for the ‘Manningcast’ Schedule Release (Exclusive)",
-      "score": 53,
-      "pattern": "",
-      "priority_type": "Trailer Releases",
-      "source": "The Hollywood Reporter",
-      "seen_at": "2026-09-08T21:05:13.358455+06:00"
-    },
-    {
-      "title": "Here's Why Bradley Cooper Crashed and Burned in His Latest Streaming Movie",
-      "score": 24,
-      "pattern": "",
-      "priority_type": "Trailer Releases",
-      "source": "Collider",
-      "seen_at": "2026-09-08T21:05:13.358524+06:00"
-    },
-    {
-      "title": "‘Boys of Tommen’ Unveils First Images of Shirtless Conor Sanchez as Johnny and Wistful Nancy Surridge as Shannon",
-      "score": 85,
-      "pattern": "sports",
-      "priority_type": "First Look / First Glimpse / Posters",
-      "source": "Variety",
-      "seen_at": "2026-09-08T21:05:13.358567+06:00"
-    },
-    {
-      "title": "The Talk Of Telluride: Secret Screening Of Elizabeth Holmes Documentary ‘You Can See Everything’",
-      "score": 83,
-      "pattern": "",
-      "priority_type": "First Look / First Glimpse / Posters",
-      "source": "Deadline",
-      "seen_at": "2026-09-08T21:05:13.358690+06:00"
-    },
-    {
-      "title": "Freya Allan & Kodi Smit-McPhee Star In Nick Hamm’s Jack The Ripper-Era Thriller ‘Black Palace’ — First Look",
-      "score": 79,
-      "pattern": "",
-      "priority_type": "First Look / First Glimpse / Posters",
-      "source": "Deadline",
-      "seen_at": "2026-09-08T21:05:13.358821+06:00"
-    },
-    {
-      "title": "Javier Bardem & Penélope Cruz Talk Playing Fictitious Arguing Couple In ‘Bunker’:  “We Are Very Good At Creating Fiction & Reality” – Venice",
-      "score": 77,
-      "pattern": "",
-      "priority_type": "First Look / First Glimpse / Posters",
-      "source": "Deadline",
-      "seen_at": "2026-09-08T21:05:13.358954+06:00"
-    },
-    {
-      "title": "Hirokazu Koreeda Opens Up About His Tender Coming-of-Age Drama ‘Look Back’: “I Was Tearful the Entire Time I Made This Film”",
-      "score": 76,
-      "pattern": "routine_interview",
-      "priority_type": "First Look / First Glimpse / Posters",
-      "source": "The Hollywood Reporter",
-      "seen_at": "2026-09-08T21:05:13.359037+06:00"
-    },
-    {
-      "title": "‘Company’: First Footage Revealed For Casey Affleck’s Venice Drama Featuring His Two Sons",
-      "score": 66,
-      "pattern": "",
-      "priority_type": "First Look / First Glimpse / Posters",
-      "source": "Deadline",
-      "seen_at": "2026-09-08T21:05:13.359158+06:00"
-    },
-    {
-      "title": "Betty Gilpin Jabs at Sam Altman During ‘Manic Poem’ Acceptance Speech at the Emmys",
-      "score": 66,
-      "pattern": "",
-      "priority_type": "First Look / First Glimpse / Posters",
-      "source": "Variety",
-      "seen_at": "2026-09-08T21:05:13.359271+06:00"
-    },
     {
       "title": "Katie Lee Biegel on Telling the Story of the People Behind Windows on the World Restaurant in CNN Doc Short",
       "score": 63,
@@ -15751,18 +15989,810 @@
       "priority_type": "Box Office Updates",
       "source": "What's on Netflix",
       "seen_at": "2026-09-09T21:05:56.118778+06:00"
+    },
+    {
+      "title": "BBC Rejects Complaints It Aired “Too Much” Coverage Of Harry & Meghan’s UK Return",
+      "score": 57,
+      "pattern": "",
+      "priority_type": "Box Office Updates",
+      "source": "Deadline",
+      "seen_at": "2026-09-10T01:08:38.668409+06:00"
+    },
+    {
+      "title": "BBC News Presenter Maryam Moshiri Reveals She Has Incurable Blood Cancer",
+      "score": 52,
+      "pattern": "",
+      "priority_type": "Box Office Updates",
+      "source": "Deadline",
+      "seen_at": "2026-09-10T01:08:38.668530+06:00"
+    },
+    {
+      "title": "Dori Media Wants Buyers To Hunt ‘New Love’ At MIPCOM",
+      "score": 63,
+      "pattern": "celebrity_lifestyle",
+      "priority_type": "OTT Platform Acquisition / Streaming Rights",
+      "source": "Deadline",
+      "seen_at": "2026-09-10T01:08:38.668621+06:00"
+    },
+    {
+      "title": "Gaza Cinema Academy Launches At Venice Film Festival To Help Gazans Tell Their Own Stories",
+      "score": 68,
+      "pattern": "",
+      "priority_type": "Production / Filming Updates",
+      "source": "Deadline",
+      "seen_at": "2026-09-10T01:08:38.668730+06:00"
+    },
+    {
+      "title": "‘SNL U.K.’ Adds Freddie Meredith to Cast",
+      "score": 22,
+      "pattern": "",
+      "priority_type": "Cast / Character Announcements",
+      "source": "Variety",
+      "seen_at": "2026-09-10T01:08:38.668826+06:00"
+    },
+    {
+      "title": "Female-Driven, Premium Period Dramas Spearhead Latest French Fiction Revolution",
+      "score": 50,
+      "pattern": "",
+      "priority_type": "Production / Filming Updates",
+      "source": "Variety",
+      "seen_at": "2026-09-10T01:08:38.668930+06:00"
+    },
+    {
+      "title": "France Launches Global Initiatives to Support Independent Cinema and Establish Framework for Alliance of State Film Commissions: Lumiere Sum",
+      "score": 68,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Variety",
+      "seen_at": "2026-09-10T01:08:38.669065+06:00"
+    },
+    {
+      "title": "Ellen Burstyn on Being “Recognized” by Marilyn Monroe, Changing Roles for Women With ‘Alice Doesn’t Live Here Anymore’",
+      "score": 69,
+      "pattern": "",
+      "priority_type": "Theatrical Releases / Re-releases",
+      "source": "The Hollywood Reporter",
+      "seen_at": "2026-09-10T01:08:38.669144+06:00"
+    },
+    {
+      "title": "Gary Oldman Says a James Bond Has Been Picked — and He’s Hoping It’s Jack Lowden",
+      "score": 58,
+      "pattern": "",
+      "priority_type": "Cast / Character Announcements",
+      "source": "The Hollywood Reporter",
+      "seen_at": "2026-09-10T01:08:38.669216+06:00"
+    },
+    {
+      "title": "Steve Callaghan’s ‘Trivia Night Mysteries’ Cozy Crime Franchise Expands With Two Movies",
+      "score": 75,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Deadline",
+      "seen_at": "2026-09-10T01:08:38.669329+06:00"
+    },
+    {
+      "title": "Piers Morgan Launches ‘Football Uncensored’ On YouTube After World Cup Series Scored 60M Views",
+      "score": 58,
+      "pattern": "sports",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Deadline",
+      "seen_at": "2026-09-10T01:08:38.669354+06:00"
+    },
+    {
+      "title": "Nathan Fielder and Lance Oppenheim’s Elizabeth Holmes Doc ‘You Can See Everything’ Detonates the Oscar Race — and Has A24 Chasing a 90-Year ",
+      "score": 74,
+      "pattern": "",
+      "priority_type": "Trailer Releases",
+      "source": "Variety",
+      "seen_at": "2026-09-10T01:08:38.669477+06:00"
+    },
+    {
+      "title": "Festival Leaders Confront Growing Political Pressure at Lumiere Summit: ‘We Don’t Judge Artists by Their Passport’",
+      "score": 42,
+      "pattern": "",
+      "priority_type": "First Look / First Glimpse / Posters",
+      "source": "Variety",
+      "seen_at": "2026-09-10T01:08:38.669594+06:00"
+    },
+    {
+      "title": "Tokyo Film Festival Adds New Initiatives, Kashiko Kawakita Award to Honor Women in Cinema",
+      "score": 66,
+      "pattern": "",
+      "priority_type": "First Look / First Glimpse / Posters",
+      "source": "The Hollywood Reporter",
+      "seen_at": "2026-09-10T01:08:38.669642+06:00"
+    },
+    {
+      "title": "Betty Gilpin Confesses She’s ‘Forever Pitching’ a ‘Widow’s Bay’ Season 2 Return After Emmy Win",
+      "score": 66,
+      "pattern": "",
+      "priority_type": "Season Renewals / New Season Updates",
+      "source": "TheWrap",
+      "seen_at": "2026-09-10T01:08:38.669730+06:00"
+    },
+    {
+      "title": "Why Faith Carter From When Calls The Heart Looks So Familiar",
+      "score": 44,
+      "pattern": "",
+      "priority_type": "Cast / Character Announcements",
+      "source": "TVLine",
+      "seen_at": "2026-09-10T01:08:38.669783+06:00"
+    },
+    {
+      "title": "10 Forgotten 2010s Sci-Fi Shows Still Worth Watching Today",
+      "score": 0,
+      "pattern": "",
+      "priority_type": "First Look / First Glimpse / Posters",
+      "source": "TVLine",
+      "seen_at": "2026-09-10T01:08:38.669831+06:00"
+    },
+    {
+      "title": "The Incredible Hulk: Why Bruce Banner's Name Was Changed For The Marvel Series",
+      "score": 36,
+      "pattern": "",
+      "priority_type": "Cast / Character Announcements",
+      "source": "TVLine",
+      "seen_at": "2026-09-10T01:08:38.669896+06:00"
+    },
+    {
+      "title": "Land Of The Lost: What Happened To The Cast Of The Cult Classic Kids' Show?",
+      "score": 25,
+      "pattern": "",
+      "priority_type": "Cast / Character Announcements",
+      "source": "TVLine",
+      "seen_at": "2026-09-10T01:08:38.669961+06:00"
+    },
+    {
+      "title": "Shriya Pilgaonkar on having Mirzapur The Movie and Haiwaan releasing in September: “What’s exciting is that my looks and characters in both ",
+      "score": 0,
+      "pattern": "",
+      "priority_type": "",
+      "source": "Bollywood Hungama",
+      "seen_at": "2026-09-10T01:08:38.670149+06:00"
+    },
+    {
+      "title": "The Business of Lucy Darling: How Carisa Hendrix Went From Performing At Haunted Houses To Touring Globally As Her Old Hollywood-Inspired Ch",
+      "score": 23,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Deadline",
+      "seen_at": "2026-09-10T01:08:38.670284+06:00"
+    },
+    {
+      "title": "Lumiere Declaration Sets 15 Principles for Global Film Governance, Calling Audience Attention ‘a Trust to Be Honored, Not a Resource to Be C",
+      "score": 72,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Variety",
+      "seen_at": "2026-09-10T01:08:38.670417+06:00"
+    },
+    {
+      "title": "Prada Foundation Film Fund Chief Paolo Moretti on First-Year Journey That Helped  Spawn Rubaiyat Hossain’s Venice Horizons Entry ‘The Diffic",
+      "score": 52,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Variety",
+      "seen_at": "2026-09-10T01:08:38.670545+06:00"
+    },
+    {
+      "title": "‘Beat Shazam’ at 100 Episodes: How the Fox Game Show Beat the Odds With Jamie Foxx at the Helm",
+      "score": 0,
+      "pattern": "",
+      "priority_type": "Season Renewals / New Season Updates",
+      "source": "TheWrap",
+      "seen_at": "2026-09-10T01:08:38.670653+06:00"
+    },
+    {
+      "title": "‘Musk’ Trailer: Elon Rises in Alex Gibney’s Incendiary 235-Minute Documentary",
+      "score": 75,
+      "pattern": "",
+      "priority_type": "Trailer Releases",
+      "source": "TheWrap",
+      "seen_at": "2026-09-10T01:08:38.670725+06:00"
+    },
+    {
+      "title": "Glenn Close’s ‘Hunger Games’ Transformation Blows Fans Away After New Teaser: ‘Absolutely Unrecognizable’",
+      "score": 28,
+      "pattern": "",
+      "priority_type": "Trailer Releases",
+      "source": "TheWrap",
+      "seen_at": "2026-09-10T01:08:38.670807+06:00"
+    },
+    {
+      "title": "‘Musk’ Teaser: The Wealthiest Man in the World Becomes Alex Gibney’s Latest Documentary Subject",
+      "score": 68,
+      "pattern": "",
+      "priority_type": "First Look / First Glimpse / Posters",
+      "source": "IndieWire",
+      "seen_at": "2026-09-10T01:08:38.670859+06:00"
+    },
+    {
+      "title": "From ‘Scream 7’ to ‘Coyote vs. Acme,’ We’re Living in the Age of the Protest Ticket",
+      "score": 33,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "IndieWire",
+      "seen_at": "2026-09-10T01:08:38.670943+06:00"
+    },
+    {
+      "title": "5 Sci-Fi Shows William Shatner Appeared In (That Aren't Star Trek)",
+      "score": 13,
+      "pattern": "",
+      "priority_type": "First Look / First Glimpse / Posters",
+      "source": "TVLine",
+      "seen_at": "2026-09-10T01:08:38.671017+06:00"
+    },
+    {
+      "title": "Kang Hoon Renews Contract With Agency",
+      "score": 28,
+      "pattern": "",
+      "priority_type": "Cast / Character Announcements",
+      "source": "Soompi",
+      "seen_at": "2026-09-10T01:08:38.671154+06:00"
+    },
+    {
+      "title": "Inside Rauw Alejandro’s Three-Act Concert in New York, a Celebration of Music, Culture and Puerto Rican Pride: ‘It Creates an Impact on All ",
+      "score": 55,
+      "pattern": "",
+      "priority_type": "First Look / First Glimpse / Posters",
+      "source": "Variety",
+      "seen_at": "2026-09-10T01:08:38.671333+06:00"
+    },
+    {
+      "title": "Ventana Sur Founder Bernardo Bergeret, Showrunner Joanna Lombardi and TV Film Exec Karina Dolgiej Comprise First Selection Team of Iberserie",
+      "score": 62,
+      "pattern": "",
+      "priority_type": "OTT Platform Acquisition / Streaming Rights",
+      "source": "Variety",
+      "seen_at": "2026-09-10T01:08:38.671470+06:00"
+    },
+    {
+      "title": "‘Blindspot Berlin’ Zooms In on ‘Systemic Failures and Human Errors’ That Led to the Infamous Christmas Market Terrorist Attack: ‘We Were Jus",
+      "score": 61,
+      "pattern": "",
+      "priority_type": "First Look / First Glimpse / Posters",
+      "source": "Variety",
+      "seen_at": "2026-09-10T01:08:38.671602+06:00"
+    },
+    {
+      "title": "‘RuPaul’s Drag Race UK: All Stars’ Set to Premiere on WOW Presents Plus (EXCLUSIVE)",
+      "score": 85,
+      "pattern": "",
+      "priority_type": "OTT / Streaming Availability",
+      "source": "Variety",
+      "seen_at": "2026-09-10T01:11:54.924723+06:00"
+    },
+    {
+      "title": "‘Maxton Hall’ Uses Amazon AI Technology To Sync Actors’ Lips With Human-Dubbed Audio",
+      "score": 0,
+      "pattern": "",
+      "priority_type": "OTT / Streaming Availability",
+      "source": "Deadline",
+      "seen_at": "2026-09-10T01:11:54.924857+06:00"
+    },
+    {
+      "title": "First Look at What’s Coming to Netflix in October 2026",
+      "score": 75,
+      "pattern": "",
+      "priority_type": "Upcoming OTT Releases",
+      "source": "What's on Netflix",
+      "seen_at": "2026-09-10T01:11:54.925202+06:00"
+    },
+    {
+      "title": "Netflix South Africa Slate Includes Latest ‘How To Ruin’, ‘Seriously Single’ & ‘Disaster Holiday’ Editions",
+      "score": 70,
+      "pattern": "",
+      "priority_type": "Upcoming OTT Releases",
+      "source": "Deadline",
+      "seen_at": "2026-09-10T01:11:54.925342+06:00"
+    },
+    {
+      "title": "Netflix South Africa Celebrates 10 Years With Slate Update: ‘Blood Legacy’ Season 2 and ‘How to Ruin Diwali’ Dates Set",
+      "score": 69,
+      "pattern": "",
+      "priority_type": "Upcoming OTT Releases",
+      "source": "What's on Netflix",
+      "seen_at": "2026-09-10T01:11:54.925683+06:00"
+    },
+    {
+      "title": "‘The Rainmaker’ Sets Season 2 Release Date; Unveils Full Trailer",
+      "score": 82,
+      "pattern": "",
+      "priority_type": "Release Date Confirmations",
+      "source": "Deadline",
+      "seen_at": "2026-09-10T01:11:54.925813+06:00"
+    },
+    {
+      "title": "‘Haunted Hotel’ Season 2 Sets Halloween Release Date at Netflix",
+      "score": 74,
+      "pattern": "",
+      "priority_type": "Release Date Confirmations",
+      "source": "What's on Netflix",
+      "seen_at": "2026-09-10T01:11:54.926153+06:00"
+    },
+    {
+      "title": "Where We Left the ‘Call My Agent!’ Cast Ahead of the Netflix Reunion Movie",
+      "score": 68,
+      "pattern": "",
+      "priority_type": "Release Date Confirmations",
+      "source": "What's on Netflix",
+      "seen_at": "2026-09-10T01:11:54.926240+06:00"
+    },
+    {
+      "title": "‘Disclosure Day’ Sets Peacock Streaming Release Date",
+      "score": 0,
+      "pattern": "",
+      "priority_type": "Release Date Confirmations",
+      "source": "Variety",
+      "seen_at": "2026-09-10T01:11:54.926367+06:00"
+    },
+    {
+      "title": "Suno Tries to Break Into Music Mainstream With New Label-Backed Model ‘v6’",
+      "score": 100,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Variety",
+      "seen_at": "2026-09-10T01:11:54.926494+06:00"
+    },
+    {
+      "title": "‘Four Weddings and a Funeral’ and ‘Love Actually’ Producer Duncan Kenworthy to Receive BAFTA Fellowship",
+      "score": 100,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Variety",
+      "seen_at": "2026-09-10T01:11:54.926629+06:00"
+    },
+    {
+      "title": "Netflix Orders ‘Lonesome Dove’ Series From Zoe Kazan & Jeb Stuart Based On Larry McMurtry’s Novel",
+      "score": 100,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Deadline",
+      "seen_at": "2026-09-10T01:11:54.926778+06:00"
+    },
+    {
+      "title": "Comcast CFO Notes Ongoing Epic Universe Softness, Dinging Stock; NBCU Split on Track",
+      "score": 87,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Deadline",
+      "seen_at": "2026-09-10T01:11:54.926911+06:00"
+    },
+    {
+      "title": "Taylor Swift Has Never Won a Grammy for Record or Song of the Year. With Three No. 1 Hits Eligible for 2027, Which Will She Choose for Victo",
+      "score": 54,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Variety",
+      "seen_at": "2026-09-10T01:11:54.927084+06:00"
+    },
+    {
+      "title": "The Best Tech at IFA 2026: From 4K Projectors and Wearables to Headphones and TV Smart Lighting",
+      "score": 0,
+      "pattern": "",
+      "priority_type": "",
+      "source": "Variety",
+      "seen_at": "2026-09-10T01:11:54.927225+06:00"
+    },
+    {
+      "title": "Paul Mescal, Emma Corrin, Emilia Clarke Lead London National Theatre’s Starry 2027 Slate",
+      "score": 0,
+      "pattern": "",
+      "priority_type": "",
+      "source": "Variety",
+      "seen_at": "2026-09-10T01:11:54.927369+06:00"
+    },
+    {
+      "title": "Playoff State of Mind: Yankees Tap Billy Joel for Merch Collection, Just In Time for the Postseason",
+      "score": 0,
+      "pattern": "",
+      "priority_type": "",
+      "source": "Variety",
+      "seen_at": "2026-09-10T01:11:54.927512+06:00"
+    },
+    {
+      "title": "Carrie-Anne Moss Signs With Verve",
+      "score": 0,
+      "pattern": "",
+      "priority_type": "",
+      "source": "Deadline",
+      "seen_at": "2026-09-10T01:11:54.927633+06:00"
+    },
+    {
+      "title": "Laika’s ‘Wildwood’ To Open AFI Fest 2026",
+      "score": 0,
+      "pattern": "",
+      "priority_type": "",
+      "source": "Deadline",
+      "seen_at": "2026-09-10T01:11:54.927755+06:00"
+    },
+    {
+      "title": "Fall TV Preview: 55 Most Anticipated New and Returning Shows of 2026",
+      "score": 0,
+      "pattern": "",
+      "priority_type": "",
+      "source": "Variety",
+      "seen_at": "2026-09-10T01:11:54.927872+06:00"
+    },
+    {
+      "title": "Jaafar Jackson, Inde Navarrette and Ray Nicholson Among Variety’s 10 Actors to Watch for 2026",
+      "score": 0,
+      "pattern": "",
+      "priority_type": "",
+      "source": "Variety",
+      "seen_at": "2026-09-10T01:11:54.928020+06:00"
+    },
+    {
+      "title": "Laika’s ‘Wildwood’ Set to Open AFI Film Fest",
+      "score": 0,
+      "pattern": "",
+      "priority_type": "",
+      "source": "Variety",
+      "seen_at": "2026-09-10T01:11:54.928144+06:00"
+    },
+    {
+      "title": "Nirvana Set For VMAs Video Vanguard Award",
+      "score": 0,
+      "pattern": "",
+      "priority_type": "",
+      "source": "Deadline",
+      "seen_at": "2026-09-10T01:11:54.928258+06:00"
+    },
+    {
+      "title": "Netflix’s 2026 & 2027 Spanish Movie Slate: All Upcoming Films & First Looks",
+      "score": 0,
+      "pattern": "",
+      "priority_type": "",
+      "source": "What's on Netflix",
+      "seen_at": "2026-09-10T01:11:54.928593+06:00"
+    },
+    {
+      "title": "When will ‘Heartland’ Season 20 be on Netflix?",
+      "score": 0,
+      "pattern": "",
+      "priority_type": "",
+      "source": "What's on Netflix",
+      "seen_at": "2026-09-10T01:11:54.928917+06:00"
+    },
+    {
+      "title": "MS NOW Streamer Sets Original Series With Rachel Maddow, Lawrence O’Donnell, More",
+      "score": 0,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Deadline",
+      "seen_at": "2026-09-10T01:11:54.929063+06:00"
+    },
+    {
+      "title": "Pablo Larraín’s ‘My Sad Dead’ Trailer: “The Dead Start To Make Themselves Present”",
+      "score": 91,
+      "pattern": "",
+      "priority_type": "Trailer Releases",
+      "source": "Deadline",
+      "seen_at": "2026-09-10T01:11:54.929201+06:00"
+    },
+    {
+      "title": "‘Our Loves’: First Trailer For Avi Nesher’s October 7 Film Ahead Of TIFF Berth; Shari Redstone, Len Blavatnik Among Exec Producers",
+      "score": 67,
+      "pattern": "",
+      "priority_type": "Trailer Releases",
+      "source": "Deadline",
+      "seen_at": "2026-09-10T01:11:54.929356+06:00"
+    },
+    {
+      "title": "Jon Stewart Likens Donald Trump Aide Natalie Harp To Elizabeth Holmes In Viral ‘You Can See Everything’ Trailer",
+      "score": 0,
+      "pattern": "",
+      "priority_type": "Trailer Releases",
+      "source": "Deadline",
+      "seen_at": "2026-09-10T01:11:54.929500+06:00"
+    },
+    {
+      "title": "Jon Stewart Uses Nathan Fielder’s ‘You Can See Everything’ Trailer to Troll Donald Trump and His ‘Human Printer’ Aide",
+      "score": 0,
+      "pattern": "",
+      "priority_type": "Trailer Releases",
+      "source": "Variety",
+      "seen_at": "2026-09-10T01:11:54.929647+06:00"
+    },
+    {
+      "title": "‘Treasure Island’: Hayley Atwell, David Oyelowo & Tom Sweet Hit The High Seas In First Look At MGM+ & Paramount+ Pirate Series",
+      "score": 90,
+      "pattern": "",
+      "priority_type": "First Look / First Glimpse / Posters",
+      "source": "Deadline",
+      "seen_at": "2026-09-10T01:11:54.929797+06:00"
+    },
+    {
+      "title": "New First Looks at Nicola Coughlan, Carmen Ejogo and Naomi Scott Filming Netflix Roald Dahl Series",
+      "score": 71,
+      "pattern": "",
+      "priority_type": "First Look / First Glimpse / Posters",
+      "source": "What's on Netflix",
+      "seen_at": "2026-09-10T01:11:54.930155+06:00"
+    },
+    {
+      "title": "Ellen Burstyn Talks Working Into 90s with Starring Role In Unexpected Love Story ‘Place To Be’; Pays Tribute To Gloria Steinem – Venice",
+      "score": 57,
+      "pattern": "",
+      "priority_type": "First Look / First Glimpse / Posters",
+      "source": "Deadline",
+      "seen_at": "2026-09-10T01:11:54.930315+06:00"
+    },
+    {
+      "title": "Damilola Orimogunje On Making Venice Giornate History & Prioritizing African Distribution With His Sophomore Feature ‘Dear Ajayi’",
+      "score": 52,
+      "pattern": "",
+      "priority_type": "First Look / First Glimpse / Posters",
+      "source": "Deadline",
+      "seen_at": "2026-09-10T01:11:54.930464+06:00"
+    },
+    {
+      "title": "‘Blindspot Berlin’ Zooms In on ‘Systemic Failures and Human Errors’ That Led to the Infamous Christmas Market Terrorist Attack: ‘We Were Jus",
+      "score": 42,
+      "pattern": "",
+      "priority_type": "First Look / First Glimpse / Posters",
+      "source": "Variety",
+      "seen_at": "2026-09-10T01:11:54.930626+06:00"
+    },
+    {
+      "title": "Halloween Film Festival Launched by Ripcord; Indie Platform Aims to Connect Filmmakers With Genre Fans (EXCLUSIVE)",
+      "score": 0,
+      "pattern": "",
+      "priority_type": "First Look / First Glimpse / Posters",
+      "source": "Variety",
+      "seen_at": "2026-09-10T01:11:54.930762+06:00"
+    },
+    {
+      "title": "‘Bleeding Hearts’: This Must-See TIFF Doc Is a Real Life ‘A Star Is Born’ (EXCLUSIVE)",
+      "score": 0,
+      "pattern": "",
+      "priority_type": "First Look / First Glimpse / Posters",
+      "source": "Variety",
+      "seen_at": "2026-09-10T01:11:54.930904+06:00"
+    },
+    {
+      "title": "Telluride Takeaways: From Julianne Moore and Paul Giamatti’s ‘Debut’ to Nathan Fielder’s Audacious Dare to the Doc Branch",
+      "score": 0,
+      "pattern": "",
+      "priority_type": "First Look / First Glimpse / Posters",
+      "source": "Variety",
+      "seen_at": "2026-09-10T01:11:54.931061+06:00"
+    },
+    {
+      "title": "John Mulaney Circling Lead Role in ‘Get Smart’ Reboot at Warner Bros.",
+      "score": 90,
+      "pattern": "",
+      "priority_type": "Cast / Character Announcements",
+      "source": "Variety",
+      "seen_at": "2026-09-10T01:11:54.931194+06:00"
+    },
+    {
+      "title": "‘Drishyam: The Conclusion’ Director Abhishek Pathak Says Ajay Devgn’s Vijay Salgaonkar Turns Darker, as Franchise Continues Global Journey (",
+      "score": 76,
+      "pattern": "",
+      "priority_type": "Cast / Character Announcements",
+      "source": "Variety",
+      "seen_at": "2026-09-10T01:11:54.931344+06:00"
+    },
+    {
+      "title": "Carrie Coon Joins Rebecca Ferguson & Greta Lee In MRC Rom-Com ‘Honeymoon / Funeral’",
+      "score": 74,
+      "pattern": "",
+      "priority_type": "Cast / Character Announcements",
+      "source": "Deadline",
+      "seen_at": "2026-09-10T01:11:54.931480+06:00"
+    },
+    {
+      "title": "‘SNL UK’ Sets Amelia Dimoldenberg & Jamie Demetriou As Guest Hosts",
+      "score": 60,
+      "pattern": "",
+      "priority_type": "Cast / Character Announcements",
+      "source": "Deadline",
+      "seen_at": "2026-09-10T01:11:54.931604+06:00"
+    },
+    {
+      "title": "Martin Herlihy Leaving ‘Saturday Night Live’ After 5 Years",
+      "score": 0,
+      "pattern": "",
+      "priority_type": "Cast / Character Announcements",
+      "source": "Deadline",
+      "seen_at": "2026-09-10T01:11:54.931727+06:00"
+    },
+    {
+      "title": "Martin Herlihy Exits ‘SNL’ After Five Seasons",
+      "score": 0,
+      "pattern": "",
+      "priority_type": "Cast / Character Announcements",
+      "source": "Variety",
+      "seen_at": "2026-09-10T01:11:54.931840+06:00"
+    },
+    {
+      "title": "John Mulaney Looking To ‘Get Smart’ At Warner Bros – The Dish",
+      "score": 0,
+      "pattern": "",
+      "priority_type": "Cast / Character Announcements",
+      "source": "Deadline",
+      "seen_at": "2026-09-10T01:11:54.931964+06:00"
+    },
+    {
+      "title": "Netflix Is Losing Some Major Licensed Shows Throughout September",
+      "score": 64,
+      "pattern": "",
+      "priority_type": "Production / Filming Updates",
+      "source": "What's on Netflix",
+      "seen_at": "2026-09-10T01:11:54.932032+06:00"
+    },
+    {
+      "title": "ABC News Names Rachel Scott And Rhiannon Ally As Co-Anchors Of ‘Good Morning America Weekend’",
+      "score": 61,
+      "pattern": "",
+      "priority_type": "Production / Filming Updates",
+      "source": "Deadline",
+      "seen_at": "2026-09-10T01:11:54.932164+06:00"
+    },
+    {
+      "title": "France Untold: ‘Swapped’ Team Discusses Collective Drive Behind Trailblazing Period Thriller",
+      "score": 55,
+      "pattern": "",
+      "priority_type": "Production / Filming Updates",
+      "source": "Variety",
+      "seen_at": "2026-09-10T01:11:54.932295+06:00"
+    },
+    {
+      "title": "Ventana Sur Founder Bernardo Bergeret, Showrunner Joanna Lombardi and TV Film Exec Karina Dolgiej Comprise First Selection Team of Iberserie",
+      "score": 52,
+      "pattern": "",
+      "priority_type": "Production / Filming Updates",
+      "source": "Variety",
+      "seen_at": "2026-09-10T01:11:54.932448+06:00"
+    },
+    {
+      "title": "John Malkovich Cancels 2027 Tel Aviv Show & Says Producers Fabricated Quotes About The Performance",
+      "score": 44,
+      "pattern": "",
+      "priority_type": "Production / Filming Updates",
+      "source": "Deadline",
+      "seen_at": "2026-09-10T01:11:54.932570+06:00"
+    },
+    {
+      "title": "BBC Boss Matt Brittin Asked News Unit To Examine Jason Arday Coverage After Cambridge Professor’s Death",
+      "score": 35,
+      "pattern": "",
+      "priority_type": "Production / Filming Updates",
+      "source": "Deadline",
+      "seen_at": "2026-09-10T01:11:54.932704+06:00"
+    },
+    {
+      "title": "’48 Hours’ Expands Use of Video Podcasting With ‘Woman in the Woods”",
+      "score": 0,
+      "pattern": "",
+      "priority_type": "Production / Filming Updates",
+      "source": "Variety",
+      "seen_at": "2026-09-10T01:11:54.932834+06:00"
+    },
+    {
+      "title": "Hamaguchi Ryusuke’s ‘All of a Sudden’, Abinash Bikram Shah’s ‘Elephants in the Fog’ Lead Asia Pacific Screen Awards Nominations",
+      "score": 0,
+      "pattern": "",
+      "priority_type": "Production / Filming Updates",
+      "source": "Variety",
+      "seen_at": "2026-09-10T01:11:54.932981+06:00"
+    },
+    {
+      "title": "Jeff Lowell Dies: ‘John Tucker Must Die’ Writer & ‘The Crew’ Creator Was 52",
+      "score": 0,
+      "pattern": "",
+      "priority_type": "Production / Filming Updates",
+      "source": "Deadline",
+      "seen_at": "2026-09-10T01:11:54.933124+06:00"
+    },
+    {
+      "title": "Federal Film & TV Tax Credits Not A Done Deal, Adam Schiff Says; White House Involved: “Negotiations Are Ongoing”",
+      "score": 0,
+      "pattern": "",
+      "priority_type": "Production / Filming Updates",
+      "source": "Deadline",
+      "seen_at": "2026-09-10T01:11:54.933260+06:00"
+    },
+    {
+      "title": "Keen Ruffalo Signs With CAA",
+      "score": 0,
+      "pattern": "",
+      "priority_type": "Production / Filming Updates",
+      "source": "Deadline",
+      "seen_at": "2026-09-10T01:11:54.933372+06:00"
+    },
+    {
+      "title": "Bruce Davis, Longtime AMPAS Executive Director, Dies at 83",
+      "score": 0,
+      "pattern": "",
+      "priority_type": "Production / Filming Updates",
+      "source": "Variety",
+      "seen_at": "2026-09-10T01:11:54.933487+06:00"
+    },
+    {
+      "title": "Aaron Eckhart Pic ‘Butcher’s War’: Samuel Goldwyn Takes U.S., Voltage Pictures Acquires International Rights – TIFF",
+      "score": 83,
+      "pattern": "",
+      "priority_type": "OTT Platform Acquisition / Streaming Rights",
+      "source": "Deadline",
+      "seen_at": "2026-09-10T01:11:54.933623+06:00"
+    },
+    {
+      "title": "Euro-Atlantic Series Co-Pro Pitch Program Launches at Iberseries & Platino Industria in Madrid (EXCLUSIVE)",
+      "score": 0,
+      "pattern": "",
+      "priority_type": "OTT Platform Acquisition / Streaming Rights",
+      "source": "Variety",
+      "seen_at": "2026-09-10T01:11:54.933761+06:00"
+    },
+    {
+      "title": "International Revenues Of $2.1B Boost British TV Makers, Census Finds, As Pact Warns BBC Must Avoid “Managed Decline”",
+      "score": 89,
+      "pattern": "",
+      "priority_type": "Box Office Updates",
+      "source": "Deadline",
+      "seen_at": "2026-09-10T01:11:54.933903+06:00"
+    },
+    {
+      "title": "Sony Pictures Entertainment CEO on Success of ‘Spider-Man: Brand New Day’: The Movie Is ‘Emotional’ and ‘Some People Come Away Crying’",
+      "score": 84,
+      "pattern": "",
+      "priority_type": "Box Office Updates",
+      "source": "Variety",
+      "seen_at": "2026-09-10T01:11:54.934110+06:00"
+    },
+    {
+      "title": "British TV Sector Revenues Hit $5.1 Billion Last Year Driven by U.S. Streamers: It ‘Underlines the Strength of the U.K. Production Market’",
+      "score": 84,
+      "pattern": "",
+      "priority_type": "Box Office Updates",
+      "source": "Variety",
+      "seen_at": "2026-09-10T01:11:54.934274+06:00"
+    },
+    {
+      "title": "‘Practical Magic 2’ Hopes To Weave Spell & Keep Box Office Alive; Global Outlook $58M-$63M – Box Office Preview",
+      "score": 80,
+      "pattern": "",
+      "priority_type": "Box Office Updates",
+      "source": "Deadline",
+      "seen_at": "2026-09-10T01:11:54.934414+06:00"
+    },
+    {
+      "title": "‘Harry Potter And The Cursed Child’ Posts Big Gain As Summer Slips Away – Broadway Box Office",
+      "score": 80,
+      "pattern": "",
+      "priority_type": "Box Office Updates",
+      "source": "Deadline",
+      "seen_at": "2026-09-10T01:11:54.934556+06:00"
+    },
+    {
+      "title": "Box Office: ‘Practical Magic 2’ Aims to Dethrone ‘Spider-Man: Brand New Day’ With $40 Million Debut",
+      "score": 77,
+      "pattern": "",
+      "priority_type": "Box Office Updates",
+      "source": "Variety",
+      "seen_at": "2026-09-10T01:11:54.934703+06:00"
+    },
+    {
+      "title": "‘The Gentlemen’ Season 2 Suffers Viewership Slump in Opening Week",
+      "score": 54,
+      "pattern": "",
+      "priority_type": "Box Office Updates",
+      "source": "What's on Netflix",
+      "seen_at": "2026-09-10T01:11:54.935049+06:00"
     }
   ],
   "adaptive_metrics": {
-    "raw_discovered": 299,
-    "pre_cerebras_rejected": 620,
-    "hard_rejected": 289,
-    "duplicate_rejected": 14,
-    "learned_rejected": 317,
-    "passed_to_cerebras": 364,
-    "cerebras_ranked": 740,
-    "published": 64,
-    "estimated_candidates_avoided": 620
+    "raw_discovered": 319,
+    "pre_cerebras_rejected": 710,
+    "hard_rejected": 320,
+    "duplicate_rejected": 16,
+    "learned_rejected": 374,
+    "passed_to_cerebras": 388,
+    "cerebras_ranked": 806,
+    "published": 73,
+    "estimated_candidates_avoided": 710
   },
   "source_quality": {
     "collider.com": {
@@ -15780,11 +16810,11 @@
       "last_seen": "2026-09-07T23:34:34.062343+06:00"
     },
     "whats-on-netflix.com": {
-      "observations": 35,
-      "low_score_count": 26,
-      "total_score": 2083,
-      "avg_score": 59.5,
-      "last_seen": "2026-09-09T21:05:56.119309+06:00"
+      "observations": 44,
+      "low_score_count": 35,
+      "total_score": 2558,
+      "avg_score": 58.1,
+      "last_seen": "2026-09-10T01:11:54.935546+06:00"
     },
     "soompi.com": {
       "observations": 29,
@@ -15794,11 +16824,11 @@
       "last_seen": "2026-09-08T11:49:09.577970+06:00"
     },
     "deadline.com": {
-      "observations": 221,
-      "low_score_count": 166,
-      "total_score": 13180,
-      "avg_score": 59.6,
-      "last_seen": "2026-09-09T21:05:56.119303+06:00"
+      "observations": 250,
+      "low_score_count": 186,
+      "total_score": 14482,
+      "avg_score": 57.9,
+      "last_seen": "2026-09-10T01:11:54.935532+06:00"
     },
     "thewrap.com": {
       "observations": 16,
@@ -15815,11 +16845,11 @@
       "last_seen": "2026-09-08T21:05:13.366232+06:00"
     },
     "variety.com": {
-      "observations": 205,
-      "low_score_count": 158,
-      "total_score": 11791,
-      "avg_score": 57.5,
-      "last_seen": "2026-09-09T21:05:56.119296+06:00"
+      "observations": 233,
+      "low_score_count": 180,
+      "total_score": 12690,
+      "avg_score": 54.5,
+      "last_seen": "2026-09-10T01:11:54.935539+06:00"
     },
     "indiewire.com": {
       "observations": 10,
@@ -15837,15 +16867,15 @@
     }
   },
   "category_coverage": {
-    "Major Film Announcements": "2026-09-09T21:30:49.325925+06:00",
+    "Major Film Announcements": "2026-09-10T01:23:34.162099+06:00",
     "Release Dates": "2026-09-09T21:30:17.966202+06:00",
     "Studio Business": "2026-09-07T18:02:43.182687+06:00",
-    "Streaming Platform News": "2026-09-09T21:30:54.389733+06:00",
+    "Streaming Platform News": "2026-09-10T01:22:58.186753+06:00",
     "Franchises and IP": "2026-09-07T23:48:35.934554+06:00",
-    "Casting": "2026-09-09T21:30:39.033322+06:00",
+    "Casting": "2026-09-10T01:23:38.950292+06:00",
     "Trailers and First Looks": "2026-09-09T00:40:43.178984+06:00",
     "Streaming Premieres": "2026-09-08T17:02:09.295797+06:00",
-    "OTT Rights and Distribution": "2026-09-08T21:14:34.654912+06:00",
+    "OTT Rights and Distribution": "2026-09-10T01:23:22.177250+06:00",
     "Renewals and Cancellations": "2026-09-08T21:14:45.307935+06:00"
   }
 }
