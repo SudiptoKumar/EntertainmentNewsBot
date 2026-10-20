@@ -1,512 +1,150 @@
 {
   "feeds": {
     "https://deadline.com/feed/": {
-      "etag": "W/\"7a4a1cadd28ad54570ac5a6d490ae430\"",
-      "last_modified": "Tue, 20 Oct 2026 16:20:38 GMT",
-      "last_checked": "2026-10-20T22:32:39.320862+06:00",
+      "etag": "W/\"a959755b0165cae9ef00b5292946725b\"",
+      "last_modified": "Tue, 20 Oct 2026 20:18:18 GMT",
+      "last_checked": "2026-10-21T02:19:24.250200+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://variety.com/feed/": {
-      "etag": "W/\"54a41ff5274855d8922a2b26bb2cb6e4\"",
-      "last_modified": "Tue, 20 Oct 2026 16:25:02 GMT",
-      "last_checked": "2026-10-20T22:32:40.123308+06:00",
+      "etag": "W/\"88c2c3d2b9bf1eb30851a8b93da64afd\"",
+      "last_modified": "Tue, 20 Oct 2026 20:18:29 GMT",
+      "last_checked": "2026-10-21T02:19:24.763682+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.hollywoodreporter.com/feed/": {
-      "etag": "W/\"2f60bc0a64455ab41d7b0e9814c33a98\"",
-      "last_modified": "Tue, 20 Oct 2026 16:25:56 GMT",
-      "last_checked": "2026-10-20T22:32:41.292356+06:00",
+      "etag": "W/\"f2a03f2822b159ba1bb770b821425965\"",
+      "last_modified": "Tue, 20 Oct 2026 20:19:10 GMT",
+      "last_checked": "2026-10-21T02:19:28.167442+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.thewrap.com/feed/": {
-      "etag": "\"62b5b9a0bb754bb87c21a4591ae211ec\"",
-      "last_modified": "Tue, 20 Oct 2026 16:32:04 GMT",
-      "last_checked": "2026-10-20T22:32:41.733087+06:00",
+      "etag": "\"5523ecfb84075415faa2d167366a6852\"",
+      "last_modified": "Tue, 20 Oct 2026 20:19:01 GMT",
+      "last_checked": "2026-10-21T02:19:28.824551+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.indiewire.com/feed/": {
-      "etag": "W/\"b9f66da86a1e1d5d6fa9627c2adc5ce3\"",
-      "last_modified": "Tue, 20 Oct 2026 16:31:15 GMT",
-      "last_checked": "2026-10-20T22:32:42.534846+06:00",
+      "etag": "W/\"fa0cd6d733fd1211214423127e388f60\"",
+      "last_modified": "Tue, 20 Oct 2026 18:56:10 GMT",
+      "last_checked": "2026-10-21T02:19:29.401739+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://collider.com/feed/": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-10-20T22:32:43.537398+06:00",
+      "last_checked": "2026-10-21T02:19:30.048422+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://tvline.com/feed/": {
-      "etag": "\"7af75cdaef177ff21e835db9e53909b6\"",
-      "last_modified": "Tue, 20 Oct 2026 16:12:00 GMT",
-      "last_checked": "2026-10-20T22:32:44.489624+06:00",
+      "etag": "\"741a5b8daeb87384d63435c087556ec2\"",
+      "last_modified": "Tue, 20 Oct 2026 18:59:05 GMT",
+      "last_checked": "2026-10-21T02:19:30.544511+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.ottplay.com/rss": {
       "etag": "\"b5496c89c58ff0f5d07d64a68d4efe07\"",
       "last_modified": "Thu, 27 May 2021 12:38:49 GMT",
-      "last_checked": "2026-10-20T22:32:46.512721+06:00",
+      "last_checked": "2026-10-21T02:19:31.564848+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.filmibeat.com/rss/feeds/filmibeat-news.xml": {
       "etag": null,
-      "last_modified": "Tue, 20 Oct 2026 16:32:46 GMT",
-      "last_checked": "2026-10-20T22:32:46.979751+06:00",
+      "last_modified": "Tue, 20 Oct 2026 20:19:32 GMT",
+      "last_checked": "2026-10-21T02:19:32.090566+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.pinkvilla.com/rss": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-10-20T22:32:47.671829+06:00",
+      "last_checked": "2026-10-21T02:19:32.854570+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.bollywoodhungama.com/feed/": {
-      "etag": "\"19bb59571bcc23651d1bafade4ba0d16\"",
-      "last_modified": "Tue, 20 Oct 2026 15:30:41 GMT",
-      "last_checked": "2026-10-20T22:32:48.188620+06:00",
+      "etag": "\"bb100233b68778d3bd9f7da874f483f6\"",
+      "last_modified": "Tue, 20 Oct 2026 16:59:11 GMT",
+      "last_checked": "2026-10-21T02:19:33.676329+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.gadgets360.com/entertainment/rss": {
-      "last_checked": "2026-10-20T22:32:48.992153+06:00",
-      "fail_count": 152,
+      "last_checked": "2026-10-21T02:19:34.401311+06:00",
+      "fail_count": 153,
       "alerted": true
     },
     "https://www.soompi.com/feed": {
-      "etag": "W/\"15990db0b3e68b255826d7668baa4311\"",
-      "last_modified": "Tue, 20 Oct 2026 16:09:09 GMT",
-      "last_checked": "2026-10-20T22:32:49.309857+06:00",
+      "etag": "W/\"7d5127b3b98a106ba033dc7cdeb9ea98\"",
+      "last_modified": "Tue, 20 Oct 2026 18:34:16 GMT",
+      "last_checked": "2026-10-21T02:19:34.672104+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.whats-on-netflix.com/feed/": {
       "etag": null,
-      "last_modified": "Tue, 20 Oct 2026 15:57:34 GMT",
-      "last_checked": "2026-10-20T22:32:51.475089+06:00",
+      "last_modified": "Tue, 20 Oct 2026 20:12:29 GMT",
+      "last_checked": "2026-10-21T02:19:36.643826+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.netflix.com/tudum/rss.xml": {
-      "last_checked": "2026-10-20T22:32:52.743995+06:00",
-      "fail_count": 152,
+      "last_checked": "2026-10-21T02:19:38.014291+06:00",
+      "fail_count": 153,
       "alerted": true
     },
     "https://press.wbd.com/us/en/rss": {
-      "last_checked": "2026-10-20T22:32:53.064721+06:00",
-      "fail_count": 152,
+      "last_checked": "2026-10-21T02:19:38.434734+06:00",
+      "fail_count": 153,
       "alerted": true
     },
     "https://www.apple.com/tv-pr/newsroom/feed/": {
-      "last_checked": "2026-10-20T22:32:53.633150+06:00",
-      "fail_count": 152,
+      "last_checked": "2026-10-21T02:19:39.238728+06:00",
+      "fail_count": 153,
       "alerted": true
     },
     "https://www.aboutamazon.com/rss": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-10-20T22:32:53.788383+06:00",
+      "last_checked": "2026-10-21T02:19:39.408414+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.marvel.com/articles/feed": {
-      "last_checked": "2026-10-20T22:32:54.456080+06:00",
-      "fail_count": 152,
+      "last_checked": "2026-10-21T02:19:39.696446+06:00",
+      "fail_count": 153,
       "alerted": true
     },
     "https://www.dc.com/blog/rss.xml": {
-      "last_checked": "2026-10-20T22:32:56.470535+06:00",
-      "fail_count": 152,
+      "last_checked": "2026-10-21T02:19:40.289233+06:00",
+      "fail_count": 153,
       "alerted": true
     },
     "https://www.sonypictures.com/rss": {
-      "last_checked": "2026-10-20T22:32:57.019147+06:00",
-      "fail_count": 152,
+      "last_checked": "2026-10-21T02:19:40.912347+06:00",
+      "fail_count": 153,
       "alerted": true
     },
     "https://www.paramount.com/rss": {
-      "last_checked": "2026-10-20T22:32:57.274354+06:00",
-      "fail_count": 152,
+      "last_checked": "2026-10-21T02:19:41.015110+06:00",
+      "fail_count": 153,
       "alerted": true
     },
     "https://www.universalpictures.com/rss": {
-      "last_checked": "2026-10-20T22:32:57.851899+06:00",
-      "fail_count": 152,
+      "last_checked": "2026-10-21T02:19:41.631591+06:00",
+      "fail_count": 153,
       "alerted": true
     }
   },
   "queue": {
-    "deadline.com/2026/10/trump-bill-maher-dinner-white-house-1237166009": {
-      "title": "Donald Trump On Dinner With Bill Maher: “He Likes Me A Lot More Than People Understand, And I Actually Like Him”",
-      "url": "https://deadline.com/2026/10/trump-bill-maher-dinner-white-house-1237166009/",
-      "canonical": "deadline.com/2026/10/trump-bill-maher-dinner-white-house-1237166009",
-      "published_dt": "2026-10-17T01:08:36+06:00",
-      "published_date": "2026-10-17T01:08:36+06:00",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "excerpt": "Donald Trump is once again praising Bill Maher following a dinner he had at the White House with the HBO host along with Stephen A. Smith and Kid Rock. “It was a great dinner, it was a very informative dinner,” Trump told reporters on Friday. “Smart people. Stephen A. is great. Bill Maher — I […]",
-      "image": "https://deadline.com/wp-content/uploads/2026/03/Donald-Trump-Bill-Maher-2-shot.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-17T01:26:01.722505+06:00",
-      "last_seen": "2026-10-17T01:26:01.722525+06:00",
-      "importance_score": 50,
-      "priority_type": "Cast / Character Announcements",
-      "priority_tier": 3,
-      "priority_rank": 9,
-      "sector": "Hollywood",
-      "rank_reason": "Political figure’s comment on a media personality; newsworthy for public interest but low relevance to entertainment production.",
-      "last_ranked_at": "2026-10-17T23:49:19.613635+06:00",
-      "learning_pattern": ""
-    },
-    "deadline.com/2026/10/ncis-origins-mark-harmon-michael-weatherly-interview-photos-1237165975": {
-      "title": "‘NCIS: Origins’ Boss Talks Mark Harmon & Michael Weatherly Reunion Is “An Episode No Fan Will Want To Miss” As New Photos Drop",
-      "url": "https://deadline.com/2026/10/ncis-origins-mark-harmon-michael-weatherly-interview-photos-1237165975/",
-      "canonical": "deadline.com/2026/10/ncis-origins-mark-harmon-michael-weatherly-interview-photos-1237165975",
-      "published_dt": "2026-10-17T01:00:25+06:00",
-      "published_date": "2026-10-17T01:00:25+06:00",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "excerpt": "EXCLUSIVE: David J. North, NCIS: Origins showrunner and executive producer, has heard the NCIS fans’ excitement over the big upcoming Mark Harmon and Michael Weatherly reunion in the Origins prequel, and now he’s teasing that more surprises are ahead. Deadline also has four new images from the upcoming third episode titled “Return of the Mack” […]",
-      "image": "https://deadline.com/wp-content/uploads/2026/10/edit-3245384_NCOR_S3_0431b.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-17T01:26:01.865672+06:00",
-      "last_seen": "2026-10-17T01:26:01.865690+06:00",
-      "importance_score": 66,
-      "priority_type": "Trailer Releases",
-      "priority_tier": 2,
-      "priority_rank": 7,
-      "sector": "Hollywood",
-      "rank_reason": "Upcoming reunion of major TV stars with new images released; moderate impact on series‑fan base and future viewership.",
-      "last_ranked_at": "2026-10-17T23:49:19.611281+06:00",
-      "learning_pattern": ""
-    },
-    "deadline.com/2026/10/tom-werner-a-different-world-liverpool-fc-interview-1237151127": {
-      "title": "A Different World: Tom Werner Wants To Make An Impact On Screen, Stage & In The Stadium",
-      "url": "https://deadline.com/2026/10/tom-werner-a-different-world-liverpool-fc-interview-1237151127/",
-      "canonical": "deadline.com/2026/10/tom-werner-a-different-world-liverpool-fc-interview-1237151127",
-      "published_dt": "2026-10-17T00:20:00+06:00",
-      "published_date": "2026-10-17T00:20:00+06:00",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "excerpt": "Tom Werner has been involved in a lot of hit television shows, from working on Mork & Mindy and Taxi when he was at ABC to producing series including The Cosby Show, Roseanne, 3rd Rock From The Sun and That ‘70s Show at Carsey-Werner. When he moved into sports ownership as part of the group […]",
-      "image": "https://deadline.com/wp-content/uploads/2026/10/GettyImages-601048784-1500.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-17T01:26:01.968599+06:00",
-      "last_seen": "2026-10-17T01:26:01.968613+06:00",
-      "importance_score": 50,
-      "priority_type": "Production / Filming Updates",
-      "priority_tier": 3,
-      "priority_rank": 11,
-      "sector": "Hollywood",
-      "rank_reason": "Profile of a veteran producer; informative but low immediate news value for upcoming projects.",
-      "last_ranked_at": "2026-10-17T23:49:19.614909+06:00",
-      "learning_pattern": ""
-    },
-    "deadline.com/2026/10/jude-law-liverpool-fc-manager-bill-shankly-a24-series-1237155045": {
-      "title": "Jude Law Set To Play Legendary Liverpool Manager Bill Shankly In A24 Series From Jack Thorne",
-      "url": "https://deadline.com/2026/10/jude-law-liverpool-fc-manager-bill-shankly-a24-series-1237155045/",
-      "canonical": "deadline.com/2026/10/jude-law-liverpool-fc-manager-bill-shankly-a24-series-1237155045",
-      "published_dt": "2026-10-17T00:17:30+06:00",
-      "published_date": "2026-10-17T00:17:30+06:00",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "excerpt": "EXCLUSIVE: Jude Law might be a Tottenham Hotspur fan but he’s potentially heading to Anfield for his next role. The Black Rabbit star is set to star as legendary Liverpool FC manager Bill Shankly in a series from Adolescence writer Jack Thorne and A24. The soccer club revealed in 2024 that it was working with […]",
-      "image": "https://deadline.com/wp-content/uploads/2026/10/bill-shankly-getty-images-portrait-studio-presented-by-imdb-1500x845-1.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "posted",
-      "first_seen": "2026-10-17T01:26:02.079278+06:00",
-      "last_seen": "2026-10-17T01:26:02.079296+06:00",
-      "importance_score": 85,
-      "priority_type": "Cast / Character Announcements",
-      "priority_tier": 3,
-      "priority_rank": 9,
-      "sector": "Hollywood",
-      "rank_reason": "High‑profile casting of an Oscar‑winning actor in a biographical series from a prestigious indie studio.",
-      "last_ranked_at": "2026-10-17T20:09:24.822615+06:00",
-      "learning_pattern": "sports",
-      "posted_at": "2026-10-17T20:23:31.698042+06:00"
-    },
-    "deadline.com/2026/10/dancing-with-the-stars-super-bowl-night-ratings-abc-1237165903": {
-      "title": "‘Dancing With The Stars’ Scores 9-Year Ratings High Among Adults 18-49 On Super Bowl Night",
-      "url": "https://deadline.com/2026/10/dancing-with-the-stars-super-bowl-night-ratings-abc-1237165903/",
-      "canonical": "deadline.com/2026/10/dancing-with-the-stars-super-bowl-night-ratings-abc-1237165903",
-      "published_dt": "2026-10-17T00:15:05+06:00",
-      "published_date": "2026-10-17T00:15:05+06:00",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "excerpt": "EXCLUSIVE: Dancing with the Stars is still having its moment. Tuesday night’s episode drew 6.59 million live + same-day viewers, according to Nielsen’s Big Data + Panel, up 2% from the week prior. Dancing with the Stars led primetime on Tuesday across the major broadcasters. Super Bowl night also posted an 11% ratings increase among […]",
-      "image": "https://deadline.com/wp-content/uploads/2026/10/183834_CW_09436-900x0-copy.png",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-17T01:26:02.188349+06:00",
-      "last_seen": "2026-10-17T01:26:02.188361+06:00",
-      "importance_score": 57,
-      "priority_type": "Box Office Updates",
-      "priority_tier": 3,
-      "priority_rank": 13,
-      "sector": "Hollywood",
-      "rank_reason": "Ratings data showing a temporary spike; useful for performance analysis but not a new content development.",
-      "last_ranked_at": "2026-10-17T23:49:19.615454+06:00",
-      "learning_pattern": ""
-    },
-    "deadline.com/2026/10/chase-infiniti-julia-set-sony-pictures-classics-1237165898": {
-      "title": "Chase Infiniti-Starring ‘The Julia Set’ Acquired By Sony Pictures Classics After TIFF Premiere",
-      "url": "https://deadline.com/2026/10/chase-infiniti-julia-set-sony-pictures-classics-1237165898/",
-      "canonical": "deadline.com/2026/10/chase-infiniti-julia-set-sony-pictures-classics-1237165898",
-      "published_dt": "2026-10-17T00:00:00+06:00",
-      "published_date": "2026-10-17T00:00:00+06:00",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "excerpt": "Sony Pictures Classics has taken U.S. and key international territory rights to the student drama The Julia Set starring Chase Infiniti. The movie, directed by Niki Byrne, drew headlines at the Toronto Film Festival as it repped Infiniti’s next feature outing following the multi-Oscar winning One Battle After Another. The Julia Set stands at 70% […]",
-      "image": "https://deadline.com/wp-content/uploads/2026/10/The-Julia-Set.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "posted",
-      "first_seen": "2026-10-17T01:26:02.426580+06:00",
-      "last_seen": "2026-10-17T01:26:02.426593+06:00",
-      "importance_score": 82,
-      "priority_type": "OTT Platform Acquisition / Streaming Rights",
-      "priority_tier": 3,
-      "priority_rank": 12,
-      "sector": "Hollywood",
-      "rank_reason": "Acquisition of a breakout festival film by a major arthouse distributor expands its market footprint.",
-      "last_ranked_at": "2026-10-17T20:09:24.823278+06:00",
-      "learning_pattern": "",
-      "posted_at": "2026-10-17T20:23:36.795117+06:00"
-    },
-    "deadline.com/2026/10/cineverse-acquires-ralphs-perfekt-christmas-north-america-1237165879": {
-      "title": "Cineverse Boards Genre-Bending Holiday Film ‘Ralph’s Perfekt Christmas’",
-      "url": "https://deadline.com/2026/10/cineverse-acquires-ralphs-perfekt-christmas-north-america-1237165879/",
-      "canonical": "deadline.com/2026/10/cineverse-acquires-ralphs-perfekt-christmas-north-america-1237165879",
-      "published_dt": "2026-10-16T23:52:26+06:00",
-      "published_date": "2026-10-16T23:52:26+06:00",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "excerpt": "EXCLUSIVE: Cineverse has snagged VOD and streaming rights to Ralph’s Perfekt Christmas. The genre-bending feature stars Tom McLaren and counts former Twentieth Century Fox exec Mary McLaren among its producers. It is the debut feature from Mary McLaren and Tom McLaren’s Next Chapter Entertainment banner. Cineverse has rights for North America and will release the […]",
-      "image": "https://deadline.com/wp-content/uploads/2026/10/Ralphs-Perfket-Christmas-9-Tom-McLaren-Ralph.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-17T01:26:02.519914+06:00",
-      "last_seen": "2026-10-17T01:26:02.519930+06:00",
-      "importance_score": 0,
-      "priority_type": "OTT Platform Acquisition / Streaming Rights",
-      "priority_tier": 3,
-      "priority_rank": 12,
-      "sector": "International",
-      "rank_reason": "Unscored fallback; withheld from publication.",
-      "last_ranked_at": "2026-10-17T23:49:19.615172+06:00",
-      "learning_pattern": ""
-    },
-    "deadline.com/2026/10/p-valley-teaser-trailer-third-season-1237165897": {
-      "title": "‘P-Valley’ Drops Opening Scene Teaser From Third & Final Season",
-      "url": "https://deadline.com/2026/10/p-valley-teaser-trailer-third-season-1237165897/",
-      "canonical": "deadline.com/2026/10/p-valley-teaser-trailer-third-season-1237165897",
-      "published_dt": "2026-10-16T23:45:00+06:00",
-      "published_date": "2026-10-16T23:45:00+06:00",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "excerpt": "EXCLUSIVE: The upcoming third season of Starz’s P-Valley will be its last, but there’s still a whole journey to experience, which begins with two back-to-back episodes premiering on December 4. Deadline has your first look at the Season 3 premiere featuring Roulette (Gail Bean) and Whisper (Psalms Salazar) in a 20-second clip above. In the […]",
-      "image": "https://deadline.com/wp-content/uploads/2026/10/PUV3_Gail-Bean-Roulette-Psalms-Salazar-Whisper.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-17T01:26:02.600557+06:00",
-      "last_seen": "2026-10-17T01:26:02.600572+06:00",
-      "importance_score": 79,
-      "priority_type": "First Look / First Glimpse / Posters",
-      "priority_tier": 2,
-      "priority_rank": 8,
-      "sector": "Hollywood",
-      "rank_reason": "First‑look teaser for the final season of a popular drama, generating buzz ahead of a December premiere.",
-      "last_ranked_at": "2026-10-17T20:09:24.822243+06:00",
-      "learning_pattern": ""
-    },
-    "variety.com/2026/film/news/selma-blair-rep-speaks-out-arrest-plane-incident-1236909381": {
-      "title": "Selma Blair’s Rep Speaks Out After Actress’ Arrest and Plane Incident: ‘Selma Did Not Intend to Harm Anyone’",
-      "url": "https://variety.com/2026/film/news/selma-blair-rep-speaks-out-arrest-plane-incident-1236909381/",
-      "canonical": "variety.com/2026/film/news/selma-blair-rep-speaks-out-arrest-plane-incident-1236909381",
-      "published_dt": "2026-10-17T01:15:45+06:00",
-      "published_date": "2026-10-17T01:15:45+06:00",
-      "source": "Variety",
-      "region": "Entertainment",
-      "excerpt": "Selma Blair’s spokesperson has spoken out after the actress was charged with second-degree assault following a violent incident on a Delta flight on Sunday. “Since Sunday night, the public account of what happened to Selma aboard a flight to New York has been built almost entirely on a police statement and a decade-old headline,” her […]",
-      "image": "https://variety.com/wp-content/uploads/2024/10/MAB_7086.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-17T01:26:02.864587+06:00",
-      "last_seen": "2026-10-17T01:26:02.864604+06:00",
-      "importance_score": 55,
-      "priority_type": "Cast / Character Announcements",
-      "priority_tier": 3,
-      "priority_rank": 9,
-      "sector": "Hollywood",
-      "rank_reason": "A high‑profile actress involved in a legal incident; notable but primarily a personal‑life story with limited entertainment‑industry impact.",
-      "last_ranked_at": "2026-10-17T23:49:19.613218+06:00",
-      "learning_pattern": ""
-    },
-    "variety.com/2026/tv/news/kate-berlant-hbo-special-parmesan-1236913499": {
-      "title": "Kate Berlant on Her HBO Special ‘Parmesan,’ the Joke That Made a Man Flip Her Off and Her Next Project With John Early",
-      "url": "https://variety.com/2026/tv/news/kate-berlant-hbo-special-parmesan-1236913499/",
-      "canonical": "variety.com/2026/tv/news/kate-berlant-hbo-special-parmesan-1236913499",
-      "published_dt": "2026-10-17T00:39:40+06:00",
-      "published_date": "2026-10-17T00:39:40+06:00",
-      "source": "Variety",
-      "region": "Entertainment",
-      "excerpt": "There’s a throughline in Kate Berlant’s new HBO special “Parmesan,” and it’s not cheese. “My addiction? My phone,” the comedian says at the beginning of the hour. With slapstick style and performative haughtiness, Berlant yearns for a time before cellphones in the special, out Oct. 16. Chronicling the hyper-niche behaviors that define our online existence, […]",
-      "image": "https://variety.com/wp-content/uploads/2026/10/Kate-Berlant_Emilio-Madrid_001_10.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-17T01:26:03.007177+06:00",
-      "last_seen": "2026-10-17T01:26:03.007195+06:00",
-      "importance_score": 60,
-      "priority_type": "OTT / Streaming Availability",
-      "priority_tier": 1,
-      "priority_rank": 1,
-      "sector": "Hollywood",
-      "rank_reason": "New comedy special on a major streaming platform; notable for OTT content but limited broader industry effect.",
-      "last_ranked_at": "2026-10-17T23:49:19.609964+06:00",
-      "learning_pattern": ""
-    },
-    "variety.com/2026/film/global/viff-films-deserve-closer-look-matthew-rankin-john-turturro-1236914031": {
-      "title": "8 VIFF Films That Deserve a Closer Look",
-      "url": "https://variety.com/2026/film/global/viff-films-deserve-closer-look-matthew-rankin-john-turturro-1236914031/",
-      "canonical": "variety.com/2026/film/global/viff-films-deserve-closer-look-matthew-rankin-john-turturro-1236914031",
-      "published_dt": "2026-10-17T00:22:28+06:00",
-      "published_date": "2026-10-17T00:22:28+06:00",
-      "source": "Variety",
-      "region": "Entertainment",
-      "excerpt": "The 45th Vancouver International Film Festival (VIFF) featured some high-profile titles, including Jesse Eisenberg’s “The Debut,” which has been generating awards buzz for star Julianne Moore, and Martin McDonagh’s closing-night black comedy “Wild Horse Nine,” starring John Malkovich and Sam Rockwell. Peter Farrelly’s “I Play Rocky” took home the Audience Award in the Special Presentations […]",
-      "image": "https://variety.com/wp-content/uploads/2026/10/LadiesAndGentlemenBrianMulroney_LoneliestManInTown_OnlyLivingPickpocketInNewYork_VIFF_2.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-17T01:26:03.072958+06:00",
-      "last_seen": "2026-10-17T01:26:03.072976+06:00",
-      "importance_score": 60,
-      "priority_type": "First Look / First Glimpse / Posters",
-      "priority_tier": 2,
-      "priority_rank": 8,
-      "sector": "International",
-      "rank_reason": "Festival coverage of notable films; important for festival circuit but not a direct release announcement.",
-      "last_ranked_at": "2026-10-17T23:49:19.611851+06:00",
-      "learning_pattern": ""
-    },
-    "variety.com/2026/awards/news/michael-gotham-musical-tribute-1236914181": {
-      "title": "‘Michael’ to Receive Musical Tribute at 2026 Gotham Film Awards",
-      "url": "https://variety.com/2026/awards/news/michael-gotham-musical-tribute-1236914181/",
-      "canonical": "variety.com/2026/awards/news/michael-gotham-musical-tribute-1236914181",
-      "published_dt": "2026-10-17T00:00:00+06:00",
-      "published_date": "2026-10-17T00:00:00+06:00",
-      "source": "Variety",
-      "region": "Entertainment",
-      "excerpt": "The 36th Annual Gotham Film Awards Ceremony will present the cast and creative team behind “Michael” with the Gotham Musical Tribute. Inaugurated last year by Hugh Jackman and Kate Hudson of “Song Sung Blue,” director Antoine Fuqua, actors Colman Domingo, Jaafar Jackson and Nia Long and producer Graham King will receive the tribute for the […]",
-      "image": "https://variety.com/wp-content/uploads/2026/04/001-mkt-001-cin-v0037-cnpt-1002.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-17T01:26:03.155751+06:00",
-      "last_seen": "2026-10-17T01:26:03.155767+06:00",
-      "importance_score": 61,
-      "priority_type": "First Look / First Glimpse / Posters",
-      "priority_tier": 2,
-      "priority_rank": 8,
-      "sector": "International",
-      "rank_reason": "Award‑season recognition for a film; adds prestige but does not affect release schedule.",
-      "last_ranked_at": "2026-10-17T23:49:19.611720+06:00",
-      "learning_pattern": ""
-    },
-    "variety.com/2026/film/news/the-julia-set-chase-infiniti-sony-pictures-classics-tiff-1236914143": {
-      "title": "‘The Julia Set,’ Starring Chase Infiniti, Lands at Sony Pictures Classics Following TIFF Premiere",
-      "url": "https://variety.com/2026/film/news/the-julia-set-chase-infiniti-sony-pictures-classics-tiff-1236914143/",
-      "canonical": "variety.com/2026/film/news/the-julia-set-chase-infiniti-sony-pictures-classics-tiff-1236914143",
-      "published_dt": "2026-10-17T00:00:00+06:00",
-      "published_date": "2026-10-17T00:00:00+06:00",
-      "source": "Variety",
-      "region": "Entertainment",
-      "excerpt": "Sony Pictures Classics has acquired rights to Niki Byrne’s “The Julia Set,” starring Chase Infiniti, following the film’s world premiere at TIFF. The film, written and directed by Byrne, was one of the festival’s breakouts, thanks in large part to Infiniti’s commanding performance. The “One Battle After Another” and “The Testaments” star earned rave reviews […]",
-      "image": "https://variety.com/wp-content/uploads/2026/09/the_julia_set_01.webp",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-17T01:26:03.267832+06:00",
-      "last_seen": "2026-10-17T01:26:03.267848+06:00",
-      "importance_score": 66,
-      "priority_type": "OTT Platform Acquisition / Streaming Rights",
-      "priority_tier": 3,
-      "priority_rank": 12,
-      "sector": "International",
-      "rank_reason": "Acquisition by a major distributor following festival debut; significant for indie‑film market and future theatrical/streaming rollout.",
-      "last_ranked_at": "2026-10-17T23:49:19.615036+06:00",
-      "learning_pattern": ""
-    },
-    "variety.com/2026/film/global/joel-coen-ethan-coen-lumiere-award-winners-1236914195": {
-      "title": "Joel and Ethan Coen Reflect on Their Careers, Streaming and the Future of Movie Theaters at Lumière Festival: Watching Films on iPhones Is ‘Very Disheartening’",
-      "url": "https://variety.com/2026/film/global/joel-coen-ethan-coen-lumiere-award-winners-1236914195/",
-      "canonical": "variety.com/2026/film/global/joel-coen-ethan-coen-lumiere-award-winners-1236914195",
-      "published_dt": "2026-10-16T23:52:47+06:00",
-      "published_date": "2026-10-16T23:52:47+06:00",
-      "source": "Variety",
-      "region": "Entertainment",
-      "excerpt": "LYON, France — Joel and Ethan Coen have embraced the streaming boom, working with Netflix and Apple TV+, but they remain staunch defenders of movie theaters. Speaking at the Lumière Film Festival in Lyon on Friday, the Oscar-winning brothers were asked about their experience working with Netflix on “The Ballad of Buster Scruggs” and Apple […]",
-      "image": "https://variety.com/wp-content/uploads/2026/10/16-Oct-15H-Celestins-MasterClass-LoicBENOIT-5486.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-17T01:26:03.440015+06:00",
-      "last_seen": "2026-10-17T01:26:03.440033+06:00",
-      "importance_score": 70,
-      "priority_type": "Production / Filming Updates",
-      "priority_tier": 3,
-      "priority_rank": 11,
-      "sector": "International",
-      "rank_reason": "High‑profile directors commenting on industry trends; relevant for future distribution strategies but not a concrete release announcement.",
-      "last_ranked_at": "2026-10-17T23:49:19.614595+06:00",
-      "learning_pattern": ""
-    },
-    "variety.com/2026/tv/news/emilio-sakraya-fourth-actor-xaden-riorson-1236914182": {
-      "title": "Who Is Emilio Sakraya? Meet ‘Fourth Wing’ Actor Playing Xaden Riorson",
-      "url": "https://variety.com/2026/tv/news/emilio-sakraya-fourth-actor-xaden-riorson-1236914182/",
-      "canonical": "variety.com/2026/tv/news/emilio-sakraya-fourth-actor-xaden-riorson-1236914182",
-      "published_dt": "2026-10-16T23:42:14+06:00",
-      "published_date": "2026-10-16T23:42:14+06:00",
-      "source": "Variety",
-      "region": "Entertainment",
-      "excerpt": "“Fouth Wing” fans finally have their Xaden Riorson. Amazon Prime Video revealed Thursday that Emilio Sakraya will play the brooding male lead alongside Esther McGregor as Violet Sorrengail, the protagonist and narrator of the fantasy book series. They’re the main characters in Rebecca Yarros’ “Fourth Wing” trilogy (which has two more books on the way), […]",
-      "image": "https://variety.com/wp-content/uploads/2026/10/GettyImages-2248275728-e1792091399675.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-10-17T01:26:03.537513+06:00",
-      "last_seen": "2026-10-17T01:26:03.537530+06:00",
-      "importance_score": 67,
-      "priority_type": "Cast / Character Announcements",
-      "priority_tier": 3,
-      "priority_rank": 9,
-      "sector": "Hollywood",
-      "rank_reason": "Key casting reveal for the high‑profile fantasy adaptation ‘Fourth Wing’.",
-      "last_ranked_at": "2026-10-17T20:09:24.822653+06:00",
-      "learning_pattern": ""
-    },
     "deadline.com/2026/10/anthony-scaramucci-katie-zacharia-trump-press-secretary-1237166304": {
       "title": "Anthony Scaramucci Reacts To Katie Zacharia’s White House Tenure Being Shorter Than His: “Records Are Made To Be Broken”",
       "url": "https://deadline.com/2026/10/anthony-scaramucci-katie-zacharia-trump-press-secretary-1237166304/",
@@ -3276,13 +2914,13 @@
       "status": "pending",
       "first_seen": "2026-10-20T11:44:23.893723+06:00",
       "last_seen": "2026-10-20T17:07:09.270993+06:00",
-      "importance_score": 44,
+      "importance_score": 0,
       "priority_type": "Cast / Character Announcements",
       "priority_tier": 3,
       "priority_rank": 9,
-      "sector": "Hollywood",
-      "rank_reason": "Interview‑based speculation; low impact beyond fan curiosity.",
-      "last_ranked_at": "2026-10-20T22:33:12.261308+06:00",
+      "sector": "International",
+      "rank_reason": "Ranking-service failure; candidate withheld.",
+      "last_ranked_at": "2026-10-21T02:19:53.942981+06:00",
       "learning_pattern": ""
     },
     "deadline.com/2026/10/star-wars-super-bowl-2027-altcast-disney-nfl-1237168321": {
@@ -3325,13 +2963,13 @@
       "status": "pending",
       "first_seen": "2026-10-20T11:44:24.026235+06:00",
       "last_seen": "2026-10-20T17:07:09.409405+06:00",
-      "importance_score": 36,
+      "importance_score": 0,
       "priority_type": "Production / Filming Updates",
       "priority_tier": 3,
       "priority_rank": 11,
-      "sector": "Hollywood",
-      "rank_reason": "Early development tease; no concrete details yet.",
-      "last_ranked_at": "2026-10-20T22:33:12.262857+06:00",
+      "sector": "International",
+      "rank_reason": "Ranking-service failure; candidate withheld.",
+      "last_ranked_at": "2026-10-21T02:19:53.943996+06:00",
       "learning_pattern": ""
     },
     "deadline.com/2026/10/2026-tasveer-film-festival-awards-1237168277": {
@@ -3349,13 +2987,13 @@
       "status": "pending",
       "first_seen": "2026-10-20T11:44:24.090583+06:00",
       "last_seen": "2026-10-20T17:07:09.540980+06:00",
-      "importance_score": 24,
+      "importance_score": 0,
       "priority_type": "Box Office Updates",
       "priority_tier": 3,
       "priority_rank": 13,
       "sector": "International",
-      "rank_reason": "Festival results; niche interest.",
-      "last_ranked_at": "2026-10-20T22:33:12.263876+06:00",
+      "rank_reason": "Ranking-service failure; candidate withheld.",
+      "last_ranked_at": "2026-10-21T02:19:53.944761+06:00",
       "learning_pattern": ""
     },
     "deadline.com/2026/10/disney-carol-choi-luke-kang-asia-pacific-1237168258": {
@@ -3398,13 +3036,13 @@
       "status": "pending",
       "first_seen": "2026-10-20T11:44:24.215465+06:00",
       "last_seen": "2026-10-20T11:44:24.215470+06:00",
-      "importance_score": 31,
+      "importance_score": 0,
       "priority_type": "Release Date Confirmations",
       "priority_tier": 1,
       "priority_rank": 4,
-      "sector": "Hollywood",
-      "rank_reason": "Teaser of upcoming series; moderate anticipation.",
-      "last_ranked_at": "2026-10-20T22:33:12.259040+06:00",
+      "sector": "International",
+      "rank_reason": "Ranking-service failure; candidate withheld.",
+      "last_ranked_at": "2026-10-21T02:19:53.941117+06:00",
       "learning_pattern": ""
     },
     "deadline.com/2026/10/dwayne-johnson-lizard-music-release-date-1237167973": {
@@ -3447,13 +3085,13 @@
       "status": "pending",
       "first_seen": "2026-10-20T11:44:24.358088+06:00",
       "last_seen": "2026-10-20T11:44:24.358092+06:00",
-      "importance_score": 17,
+      "importance_score": 0,
       "priority_type": "First Look / First Glimpse / Posters",
       "priority_tier": 2,
       "priority_rank": 8,
-      "sector": "Hollywood",
-      "rank_reason": "Political ad featuring actors; low relevance to entertainment content.",
-      "last_ranked_at": "2026-10-20T22:33:12.260953+06:00",
+      "sector": "International",
+      "rank_reason": "Ranking-service failure; candidate withheld.",
+      "last_ranked_at": "2026-10-21T02:19:53.942493+06:00",
       "learning_pattern": "sports"
     },
     "deadline.com/2026/10/the-gilded-age-characters-not-returning-season-4-1237168161": {
@@ -3471,13 +3109,13 @@
       "status": "pending",
       "first_seen": "2026-10-20T11:44:24.398882+06:00",
       "last_seen": "2026-10-20T11:44:24.398886+06:00",
-      "importance_score": 17,
+      "importance_score": 0,
       "priority_type": "Cast / Character Announcements",
       "priority_tier": 3,
       "priority_rank": 9,
-      "sector": "Hollywood",
-      "rank_reason": "Routine casting update; minimal news value.",
-      "last_ranked_at": "2026-10-20T22:33:12.261863+06:00",
+      "sector": "International",
+      "rank_reason": "Ranking-service failure; candidate withheld.",
+      "last_ranked_at": "2026-10-21T02:19:53.943125+06:00",
       "learning_pattern": ""
     },
     "deadline.com/2026/10/orphan-black-hbo-max-peacock-co-exclusive-streaming-deal-1237168150": {
@@ -3520,13 +3158,13 @@
       "status": "pending",
       "first_seen": "2026-10-20T11:44:24.599308+06:00",
       "last_seen": "2026-10-20T11:44:24.599313+06:00",
-      "importance_score": 60,
+      "importance_score": 0,
       "priority_type": "New Movie / Series Announcements",
       "priority_tier": 2,
       "priority_rank": 5,
-      "sector": "Indian",
-      "rank_reason": "First AI‑human hybrid Indian music label; relevance to Indian OTT/streaming market and emerging tech.",
-      "last_ranked_at": "2026-10-20T22:33:12.259522+06:00",
+      "sector": "International",
+      "rank_reason": "Ranking-service failure; candidate withheld.",
+      "last_ranked_at": "2026-10-21T02:19:53.941517+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/film/news/anurag-kashyap-vasan-bala-mumbai-cab-thriller-aakhri-ride-1236915547": {
@@ -3574,8 +3212,8 @@
       "priority_tier": 2,
       "priority_rank": 6,
       "sector": "International",
-      "rank_reason": "Unscored fallback; withheld from publication.",
-      "last_ranked_at": "2026-10-20T22:33:12.260203+06:00",
+      "rank_reason": "Ranking-service failure; candidate withheld.",
+      "last_ranked_at": "2026-10-21T02:19:53.941729+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/film/news/judi-dench-says-cats-film-was-a-waste-of-goodwill-talent-1236917065": {
@@ -3593,13 +3231,13 @@
       "status": "pending",
       "first_seen": "2026-10-20T11:44:24.805472+06:00",
       "last_seen": "2026-10-20T11:44:24.805482+06:00",
-      "importance_score": 38,
+      "importance_score": 0,
       "priority_type": "First Look / First Glimpse / Posters",
       "priority_tier": 2,
       "priority_rank": 8,
-      "sector": "Hollywood",
-      "rank_reason": "Personal commentary; limited news value.",
-      "last_ranked_at": "2026-10-20T22:33:12.260484+06:00",
+      "sector": "International",
+      "rank_reason": "Ranking-service failure; candidate withheld.",
+      "last_ranked_at": "2026-10-21T02:19:53.942341+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/film/news/daisy-edgar-jones-sense-and-sensibility-dolly-parton-1236917040": {
@@ -3617,13 +3255,13 @@
       "status": "pending",
       "first_seen": "2026-10-20T11:44:24.860559+06:00",
       "last_seen": "2026-10-20T11:44:24.860566+06:00",
-      "importance_score": 36,
+      "importance_score": 0,
       "priority_type": "Cast / Character Announcements",
       "priority_tier": 3,
       "priority_rank": 9,
-      "sector": "Hollywood",
-      "rank_reason": "Human‑interest piece; modest audience interest.",
-      "last_ranked_at": "2026-10-20T22:33:12.261495+06:00",
+      "sector": "International",
+      "rank_reason": "Ranking-service failure; candidate withheld.",
+      "last_ranked_at": "2026-10-21T02:19:53.943052+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/film/people-news/office-space-actor-richard-riehle-an-actors-actor-1236917003": {
@@ -3641,13 +3279,13 @@
       "status": "pending",
       "first_seen": "2026-10-20T11:44:24.923729+06:00",
       "last_seen": "2026-10-20T11:44:24.923738+06:00",
-      "importance_score": 21,
+      "importance_score": 0,
       "priority_type": "First Look / First Glimpse / Posters",
       "priority_tier": 2,
       "priority_rank": 8,
-      "sector": "Hollywood",
-      "rank_reason": "Opinion piece with limited news impact.",
-      "last_ranked_at": "2026-10-20T22:33:12.260865+06:00",
+      "sector": "International",
+      "rank_reason": "Ranking-service failure; candidate withheld.",
+      "last_ranked_at": "2026-10-21T02:19:53.942423+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/film/people-news/ann-hornaday-dead-washington-post-film-critic-1236917007": {
@@ -3665,13 +3303,13 @@
       "status": "pending",
       "first_seen": "2026-10-20T11:44:24.984995+06:00",
       "last_seen": "2026-10-20T11:44:24.985000+06:00",
-      "importance_score": 32,
+      "importance_score": 0,
       "priority_type": "Box Office Updates",
       "priority_tier": 3,
       "priority_rank": 13,
-      "sector": "Hollywood",
-      "rank_reason": "Notable industry figure; important but not news‑driving for entertainment releases.",
-      "last_ranked_at": "2026-10-20T22:33:12.263689+06:00",
+      "sector": "International",
+      "rank_reason": "Ranking-service failure; candidate withheld.",
+      "last_ranked_at": "2026-10-21T02:19:53.944691+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/film/news/netflix-fired-dan-lin-greta-gerwig-narnia-tensions-1236916933": {
@@ -3714,13 +3352,13 @@
       "status": "pending",
       "first_seen": "2026-10-20T11:44:25.080657+06:00",
       "last_seen": "2026-10-20T11:44:25.080664+06:00",
-      "importance_score": 25,
+      "importance_score": 0,
       "priority_type": "Box Office Updates",
       "priority_tier": 3,
       "priority_rank": 13,
-      "sector": "Hollywood",
-      "rank_reason": "Industry veteran’s passing; limited impact on current entertainment news cycle.",
-      "last_ranked_at": "2026-10-20T22:33:12.263777+06:00",
+      "sector": "International",
+      "rank_reason": "Ranking-service failure; candidate withheld.",
+      "last_ranked_at": "2026-10-21T02:19:53.944834+06:00",
       "learning_pattern": ""
     },
     "deadline.com/2026/10/british-council-film-lab-africa-taboo-anthology-1237168404": {
@@ -3738,13 +3376,13 @@
       "status": "pending",
       "first_seen": "2026-10-20T17:07:08.699417+06:00",
       "last_seen": "2026-10-20T17:07:08.699437+06:00",
-      "importance_score": 63,
+      "importance_score": 74,
       "priority_type": "First Look / First Glimpse / Posters",
       "priority_tier": 2,
       "priority_rank": 8,
       "sector": "International",
-      "rank_reason": "Cross‑regional series preview at a major festival, notable international interest.",
-      "last_ranked_at": "2026-10-20T22:33:12.260296+06:00",
+      "rank_reason": "First‑look preview of a new African anthology series at a major festival, notable cross‑regional interest.",
+      "last_ranked_at": "2026-10-21T02:19:53.941803+06:00",
       "learning_pattern": ""
     },
     "deadline.com/2026/10/domingo-corral-gatekeepers-reject-conservative-projects-1237168400": {
@@ -3762,13 +3400,13 @@
       "status": "pending",
       "first_seen": "2026-10-20T17:07:08.856060+06:00",
       "last_seen": "2026-10-20T17:07:08.856092+06:00",
-      "importance_score": 50,
-      "priority_type": "New Movie / Series Announcements",
-      "priority_tier": 2,
-      "priority_rank": 5,
+      "importance_score": 40,
+      "priority_type": "Production / Filming Updates",
+      "priority_tier": 3,
+      "priority_rank": 11,
       "sector": "International",
-      "rank_reason": "Industry advocacy with potential future project impact, limited immediate news value.",
-      "last_ranked_at": "2026-10-20T22:33:12.259840+06:00",
+      "rank_reason": "Advocacy speech at market event; relevance to content buyers, modest audience interest.",
+      "last_ranked_at": "2026-10-21T02:19:53.943769+06:00",
       "learning_pattern": ""
     },
     "deadline.com/2026/10/mtv-russell-brand-feared-seen-trouble-rape-claim-1237168361": {
@@ -3786,13 +3424,13 @@
       "status": "pending",
       "first_seen": "2026-10-20T17:07:08.987445+06:00",
       "last_seen": "2026-10-20T17:07:08.987474+06:00",
-      "importance_score": 0,
-      "priority_type": "New Movie / Series Announcements",
-      "priority_tier": 2,
-      "priority_rank": 5,
+      "importance_score": 29,
+      "priority_type": "Cast / Character Announcements",
+      "priority_tier": 3,
+      "priority_rank": 9,
       "sector": "Hollywood",
-      "rank_reason": "No substantive entertainment event provided.",
-      "last_ranked_at": "2026-10-20T22:33:12.260027+06:00",
+      "rank_reason": "Serious allegation story; important socially but not a core entertainment release.",
+      "last_ranked_at": "2026-10-21T02:19:53.942759+06:00",
       "learning_pattern": ""
     },
     "deadline.com/2026/10/a24-docs-chief-nicole-stott-magna-studios-oasis-anger-1237168380": {
@@ -3810,13 +3448,13 @@
       "status": "pending",
       "first_seen": "2026-10-20T17:07:09.094829+06:00",
       "last_seen": "2026-10-20T17:07:09.094848+06:00",
-      "importance_score": 74,
+      "importance_score": 36,
       "priority_type": "Production / Filming Updates",
       "priority_tier": 3,
       "priority_rank": 11,
       "sector": "Hollywood",
-      "rank_reason": "Former A24 docs chief joins Magna, indicating strategic expansion in non‑fiction content; notable industry move.",
-      "last_ranked_at": "2026-10-20T22:33:12.262133+06:00",
+      "rank_reason": "Executive hire from A24 to documentary outfit; industry relevance, low consumer impact.",
+      "last_ranked_at": "2026-10-21T02:19:53.943917+06:00",
       "learning_pattern": ""
     },
     "deadline.com/2026/10/this-city-is-ours-renewed-season-3-bbc-1237167718": {
@@ -3834,13 +3472,13 @@
       "status": "pending",
       "first_seen": "2026-10-20T17:07:09.158091+06:00",
       "last_seen": "2026-10-20T17:07:09.158123+06:00",
-      "importance_score": 86,
+      "importance_score": 0,
       "priority_type": "Season Renewals / New Season Updates",
       "priority_tier": 2,
       "priority_rank": 6,
       "sector": "International",
-      "rank_reason": "Greenlit third season before second aired; strong international interest and high audience anticipation.",
-      "last_ranked_at": "2026-10-20T22:33:12.260121+06:00",
+      "rank_reason": "Ranking-service failure; candidate withheld.",
+      "last_ranked_at": "2026-10-21T02:19:53.941663+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/film/global/evolution-mallorca-script-lab-pitches-sirat-producer-jury-1236917228": {
@@ -3858,13 +3496,13 @@
       "status": "pending",
       "first_seen": "2026-10-20T17:07:09.829997+06:00",
       "last_seen": "2026-10-20T17:07:09.830014+06:00",
-      "importance_score": 45,
+      "importance_score": 61,
       "priority_type": "Production / Filming Updates",
       "priority_tier": 3,
       "priority_rank": 11,
       "sector": "International",
-      "rank_reason": "Festival‑level event with niche industry relevance.",
-      "last_ranked_at": "2026-10-20T22:33:12.262700+06:00",
+      "rank_reason": "Revival of a key pitching platform at a regional festival, useful for industry stakeholders.",
+      "last_ranked_at": "2026-10-21T02:19:53.943345+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/film/global/raj-singh-italy-rp1-holding-100-milion-film-fund-1236917222": {
@@ -3907,13 +3545,13 @@
       "status": "pending",
       "first_seen": "2026-10-20T17:07:10.090588+06:00",
       "last_seen": "2026-10-20T17:07:10.090612+06:00",
-      "importance_score": 71,
+      "importance_score": 84,
       "priority_type": "Box Office Updates",
       "priority_tier": 3,
       "priority_rank": 13,
-      "sector": "Hollywood",
-      "rank_reason": "Strong box‑office performance in key markets, high audience reach.",
-      "last_ranked_at": "2026-10-20T22:33:12.263471+06:00",
+      "sector": "International",
+      "rank_reason": "Top‑box office performance in major markets with notable Indian and Hollywood titles, high audience impact and strong international relevance.",
+      "last_ranked_at": "2026-10-21T02:19:53.944347+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/tv/news/disney-carol-choi-asia-pacific-president-luke-kang-retires-1236917287": {
@@ -3956,13 +3594,13 @@
       "status": "pending",
       "first_seen": "2026-10-20T17:07:10.337135+06:00",
       "last_seen": "2026-10-20T17:07:10.337153+06:00",
-      "importance_score": 36,
+      "importance_score": 29,
       "priority_type": "Cast / Character Announcements",
       "priority_tier": 3,
       "priority_rank": 9,
       "sector": "Hollywood",
-      "rank_reason": "Minor celebrity commentary, low news value.",
-      "last_ranked_at": "2026-10-20T22:33:12.261397+06:00",
+      "rank_reason": "Celebrity commentary on a controversy; low news value for entertainment coverage.",
+      "last_ranked_at": "2026-10-21T02:19:53.942680+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/film/news/jakarta-pitches-regional-film-hub-busan-model-1236917279": {
@@ -3980,13 +3618,13 @@
       "status": "pending",
       "first_seen": "2026-10-20T17:07:10.439013+06:00",
       "last_seen": "2026-10-20T17:07:10.439030+06:00",
-      "importance_score": 58,
+      "importance_score": 45,
       "priority_type": "Production / Filming Updates",
       "priority_tier": 3,
       "priority_rank": 11,
       "sector": "International",
-      "rank_reason": "Strategic industry development with regional impact, moderate significance.",
-      "last_ranked_at": "2026-10-20T22:33:12.262416+06:00",
+      "rank_reason": "Strategic regional film hub initiative, notable for industry but limited direct audience impact.",
+      "last_ranked_at": "2026-10-21T02:19:53.943702+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/tv/global/russell-brand-trial-fourth-woman-violent-sexual-assault-1236917257": {
@@ -4004,13 +3642,13 @@
       "status": "pending",
       "first_seen": "2026-10-20T17:07:10.564047+06:00",
       "last_seen": "2026-10-20T17:07:10.564077+06:00",
-      "importance_score": 75,
-      "priority_type": "New Movie / Series Announcements",
-      "priority_tier": 2,
-      "priority_rank": 5,
+      "importance_score": 40,
+      "priority_type": "Production / Filming Updates",
+      "priority_tier": 3,
+      "priority_rank": 11,
       "sector": "Hollywood",
-      "rank_reason": "High‑profile legal proceeding with major public and media attention.",
-      "last_ranked_at": "2026-10-20T22:33:12.259232+06:00",
+      "rank_reason": "Legal proceedings involving a high‑profile figure; important but not entertainment content.",
+      "last_ranked_at": "2026-10-21T02:19:53.943846+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/film/global/the-debut-ink-evolution-mallorca-15th-edition-1236917230": {
@@ -4028,13 +3666,13 @@
       "status": "pending",
       "first_seen": "2026-10-20T17:07:10.739896+06:00",
       "last_seen": "2026-10-20T17:07:10.739914+06:00",
-      "importance_score": 50,
-      "priority_type": "Production / Filming Updates",
-      "priority_tier": 3,
-      "priority_rank": 11,
+      "importance_score": 60,
+      "priority_type": "First Look / First Glimpse / Posters",
+      "priority_tier": 2,
+      "priority_rank": 8,
       "sector": "International",
-      "rank_reason": "Documentary debut with regional cultural relevance.",
-      "last_ranked_at": "2026-10-20T22:33:12.262593+06:00",
+      "rank_reason": "Highlights of festival line‑up, indicating upcoming projects and talent, moderate audience interest.",
+      "last_ranked_at": "2026-10-21T02:19:53.942041+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/film/global/goodbye-julia-sudanese-about-love-and-september-laws-1236916213": {
@@ -4052,13 +3690,13 @@
       "status": "pending",
       "first_seen": "2026-10-20T17:07:10.883141+06:00",
       "last_seen": "2026-10-20T17:07:10.883159+06:00",
-      "importance_score": 52,
+      "importance_score": 70,
       "priority_type": "New Movie / Series Announcements",
       "priority_tier": 2,
       "priority_rank": 5,
       "sector": "International",
-      "rank_reason": "Cultural‑drama project with growing international interest, modest impact.",
-      "last_ranked_at": "2026-10-20T22:33:12.259741+06:00",
+      "rank_reason": "New Sudanese period drama with festival exposure and multi‑market sales push, strong anticipation among art‑house audiences.",
+      "last_ranked_at": "2026-10-21T02:19:53.941265+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/film/global/big-boys-dont-cry-muhammad-mustapha-el-gouna-1236916813": {
@@ -4076,13 +3714,13 @@
       "status": "pending",
       "first_seen": "2026-10-20T17:07:11.054054+06:00",
       "last_seen": "2026-10-20T17:07:11.054086+06:00",
-      "importance_score": 64,
-      "priority_type": "New Movie / Series Announcements",
+      "importance_score": 68,
+      "priority_type": "First Look / First Glimpse / Posters",
       "priority_tier": 2,
-      "priority_rank": 5,
-      "sector": "Hollywood",
-      "rank_reason": "Serious allegation linked to the ongoing trial, strong source and evidence, high audience concern.",
-      "last_ranked_at": "2026-10-20T22:33:12.259413+06:00",
+      "priority_rank": 8,
+      "sector": "International",
+      "rank_reason": "World premiere of a socially relevant documentary at a notable festival, moderate international relevance.",
+      "last_ranked_at": "2026-10-21T02:19:53.941876+06:00",
       "learning_pattern": ""
     },
     "deadline.com/2026/10/everwonder-studio-deals-zeberiah-newman-vanessa-golembewski-1237167893": {
@@ -4100,13 +3738,13 @@
       "status": "pending",
       "first_seen": "2026-10-20T22:32:39.410526+06:00",
       "last_seen": "2026-10-20T22:32:39.410536+06:00",
-      "importance_score": 73,
-      "priority_type": "Production / Filming Updates",
-      "priority_tier": 3,
-      "priority_rank": 11,
+      "importance_score": 77,
+      "priority_type": "New Movie / Series Announcements",
+      "priority_tier": 2,
+      "priority_rank": 5,
       "sector": "Hollywood",
-      "rank_reason": "Strategic production agreements that could shape future content pipelines, notable for industry insiders.",
-      "last_ranked_at": "2026-10-20T22:33:12.262230+06:00",
+      "rank_reason": "First overall‑deal announcements for a studio tied to a major streaming hit; strong industry impact and high audience interest.",
+      "last_ranked_at": "2026-10-21T02:19:53.941192+06:00",
       "learning_pattern": ""
     },
     "deadline.com/2026/10/streaming-guide-justwatch-launches-service-1237168555": {
@@ -4125,12 +3763,12 @@
       "first_seen": "2026-10-20T22:32:39.487128+06:00",
       "last_seen": "2026-10-20T22:32:39.487137+06:00",
       "importance_score": 80,
-      "priority_type": "OTT Platform Acquisition / Streaming Rights",
-      "priority_tier": 3,
-      "priority_rank": 12,
+      "priority_type": "OTT / Streaming Availability",
+      "priority_tier": 1,
+      "priority_rank": 1,
       "sector": "International",
-      "rank_reason": "Launch of a new OTT platform with multi‑regional content partners, significant for streaming market dynamics.",
-      "last_ranked_at": "2026-10-20T22:33:12.263203+06:00",
+      "rank_reason": "Launch of a new multi‑regional ad‑supported streaming service with 30 global content partners; significant platform expansion.",
+      "last_ranked_at": "2026-10-21T02:19:53.940525+06:00",
       "learning_pattern": ""
     },
     "deadline.com/2026/10/celebration-of-black-cinema-television-honorees-2026-1237168596": {
@@ -4148,13 +3786,13 @@
       "status": "pending",
       "first_seen": "2026-10-20T22:32:39.604448+06:00",
       "last_seen": "2026-10-20T22:32:39.604455+06:00",
-      "importance_score": 56,
+      "importance_score": 60,
       "priority_type": "First Look / First Glimpse / Posters",
       "priority_tier": 2,
       "priority_rank": 8,
       "sector": "Hollywood",
-      "rank_reason": "Award‑season announcement with cultural relevance but limited immediate impact on content releases.",
-      "last_ranked_at": "2026-10-20T22:33:12.260385+06:00",
+      "rank_reason": "Major awards event highlighting Black cinema and TV; notable industry recognition but limited direct content impact.",
+      "last_ranked_at": "2026-10-21T02:19:53.941962+06:00",
       "learning_pattern": ""
     },
     "deadline.com/2026/10/nick-kroll-to-host-amazon-lol-last-one-laughing-1237168168": {
@@ -4197,13 +3835,13 @@
       "status": "pending",
       "first_seen": "2026-10-20T22:32:39.762654+06:00",
       "last_seen": "2026-10-20T22:32:39.762670+06:00",
-      "importance_score": 35,
+      "importance_score": 43,
       "priority_type": "Box Office Updates",
       "priority_tier": 3,
       "priority_rank": 13,
       "sector": "Hollywood",
-      "rank_reason": "Box‑office update for a niche documentary; modest commercial interest.",
-      "last_ranked_at": "2026-10-20T22:33:12.263580+06:00",
+      "rank_reason": "Box‑office performance of a documentary; modest industry relevance.",
+      "last_ranked_at": "2026-10-21T02:19:53.944610+06:00",
       "learning_pattern": ""
     },
     "deadline.com/2026/10/christina-applegate-multiple-sclerosis-misdiagnosis-1237168572": {
@@ -4221,13 +3859,13 @@
       "status": "pending",
       "first_seen": "2026-10-20T22:32:39.828784+06:00",
       "last_seen": "2026-10-20T22:32:39.828790+06:00",
-      "importance_score": 23,
+      "importance_score": 22,
       "priority_type": "Cast / Character Announcements",
       "priority_tier": 3,
       "priority_rank": 9,
       "sector": "Hollywood",
-      "rank_reason": "Personal health disclosure; important to the individual but limited entertainment relevance.",
-      "last_ranked_at": "2026-10-20T22:33:12.261688+06:00",
+      "rank_reason": "Personal health update; minimal relevance to entertainment content.",
+      "last_ranked_at": "2026-10-21T02:19:53.942912+06:00",
       "learning_pattern": ""
     },
     "deadline.com/2026/10/unsolved-mysteries-video-podcast-1237168157": {
@@ -4245,13 +3883,13 @@
       "status": "pending",
       "first_seen": "2026-10-20T22:32:39.873051+06:00",
       "last_seen": "2026-10-20T22:32:39.873057+06:00",
-      "importance_score": 77,
+      "importance_score": 61,
       "priority_type": "OTT / Streaming Availability",
       "priority_tier": 1,
       "priority_rank": 1,
       "sector": "Hollywood",
-      "rank_reason": "Significant revival of a known franchise in a new format with strong platform backing and high audience interest.",
-      "last_ranked_at": "2026-10-20T22:33:12.258591+06:00",
+      "rank_reason": "Official announcement of a legacy true‑crime series returning in a new format; notable but niche audience.",
+      "last_ranked_at": "2026-10-21T02:19:53.940829+06:00",
       "learning_pattern": ""
     },
     "deadline.com/2026/10/robert-downey-series-snap-specs-ar-glasses-1237168499": {
@@ -4266,17 +3904,18 @@
       "image": "https://deadline.com/wp-content/uploads/2026/10/Screenshot-2026-10-20-at-9.49.07-AM.png",
       "discovery": "rss",
       "date_estimated": false,
-      "status": "pending",
+      "status": "posted",
       "first_seen": "2026-10-20T22:32:39.933966+06:00",
       "last_seen": "2026-10-20T22:32:39.933974+06:00",
-      "importance_score": 73,
+      "importance_score": 80,
       "priority_type": "OTT / Streaming Availability",
       "priority_tier": 1,
       "priority_rank": 1,
       "sector": "Hollywood",
-      "rank_reason": "High‑profile celebrity endorsement of emerging AR tech, notable cross‑media impact.",
-      "last_ranked_at": "2026-10-20T22:33:12.258699+06:00",
-      "learning_pattern": "sports"
+      "rank_reason": "High‑profile celebrity partnership launching original AR‑shorts, strong platform IP and broad audience interest.",
+      "last_ranked_at": "2026-10-21T02:19:53.940647+06:00",
+      "learning_pattern": "sports",
+      "posted_at": "2026-10-21T02:21:52.609297+06:00"
     },
     "deadline.com/2026/10/netflix-jinny-howe-restructuring-ucan-scripted-cole-galvin-1237168349": {
       "title": "Netflix’s Jinny Howe Restructures UCAN Scripted Operation By Genre, Ups Cole Galvin To VP",
@@ -4293,13 +3932,13 @@
       "status": "pending",
       "first_seen": "2026-10-20T22:32:40.018304+06:00",
       "last_seen": "2026-10-20T22:32:40.018310+06:00",
-      "importance_score": 57,
+      "importance_score": 50,
       "priority_type": "Production / Filming Updates",
       "priority_tier": 3,
       "priority_rank": 11,
       "sector": "Hollywood",
-      "rank_reason": "Internal organizational change affecting future content pipeline, moderate relevance.",
-      "last_ranked_at": "2026-10-20T22:33:12.262500+06:00",
+      "rank_reason": "Internal restructuring of a major streaming division; relevant to industry but limited consumer impact.",
+      "last_ranked_at": "2026-10-21T02:19:53.943422+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/film/global/only-what-we-carry-trafalgar-fanny-ardant-danny-huston-1236917330": {
@@ -4317,13 +3956,13 @@
       "status": "pending",
       "first_seen": "2026-10-20T22:32:40.229666+06:00",
       "last_seen": "2026-10-20T22:32:40.229677+06:00",
-      "importance_score": 60,
+      "importance_score": 66,
       "priority_type": "Production / Filming Updates",
       "priority_tier": 3,
       "priority_rank": 11,
       "sector": "International",
-      "rank_reason": "Post‑production update on an indie film with notable international talent; modest industry interest.",
-      "last_ranked_at": "2026-10-20T22:33:12.262319+06:00",
+      "rank_reason": "A high‑profile indie drama entering post‑production with an international cast; notable for cross‑border talent and festival circuit relevance.",
+      "last_ranked_at": "2026-10-21T02:19:53.943265+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/sports/news/shaquille-o-neal-nba-victor-wembanyama-meaner-1236917194": {
@@ -4341,13 +3980,13 @@
       "status": "pending",
       "first_seen": "2026-10-20T22:32:40.302587+06:00",
       "last_seen": "2026-10-20T22:32:40.302594+06:00",
-      "importance_score": 17,
+      "importance_score": 34,
       "priority_type": "Cast / Character Announcements",
       "priority_tier": 3,
       "priority_rank": 9,
       "sector": "Hollywood",
-      "rank_reason": "Human‑interest piece with minimal impact on entertainment industry news.",
-      "last_ranked_at": "2026-10-20T22:33:12.261773+06:00",
+      "rank_reason": "Human‑interest piece with low relevance to entertainment releases; kept for completeness.",
+      "last_ranked_at": "2026-10-21T02:19:53.942607+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/film/global/mobland-mandeep-dhillon-short-golda-rosheuvel-scott-karim-1236917375": {
@@ -4365,13 +4004,13 @@
       "status": "pending",
       "first_seen": "2026-10-20T22:32:40.428530+06:00",
       "last_seen": "2026-10-20T22:32:40.428538+06:00",
-      "importance_score": 46,
-      "priority_type": "Cast / Character Announcements",
+      "importance_score": 48,
+      "priority_type": "Production / Filming Updates",
       "priority_tier": 3,
-      "priority_rank": 9,
+      "priority_rank": 11,
       "sector": "Indian",
-      "rank_reason": "Short‑form indie project with limited reach; primarily of interest to niche film‑festival audiences.",
-      "last_ranked_at": "2026-10-20T22:33:12.261202+06:00",
+      "rank_reason": "Indie short starring a known OTT actor; modest industry interest, primarily Indian‑focused talent.",
+      "last_ranked_at": "2026-10-21T02:19:53.943569+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/film/global/deadstream-directors-joseph-vanessa-winter-future-me-1236917457": {
@@ -4389,13 +4028,13 @@
       "status": "pending",
       "first_seen": "2026-10-20T22:32:40.573429+06:00",
       "last_seen": "2026-10-20T22:32:40.573436+06:00",
-      "importance_score": 54,
+      "importance_score": 58,
       "priority_type": "New Movie / Series Announcements",
       "priority_tier": 2,
       "priority_rank": 5,
       "sector": "International",
-      "rank_reason": "Multi‑picture deal for a genre film; notable for cross‑border production but niche audience.",
-      "last_ranked_at": "2026-10-20T22:33:12.259613+06:00",
+      "rank_reason": "First title of a cross‑border multi‑picture agreement; notable for UAE‑US collaboration in genre cinema.",
+      "last_ranked_at": "2026-10-21T02:19:53.941344+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/streaming/news/justwatch-tv-avod-launch-content-partners-1236916975": {
@@ -4413,13 +4052,13 @@
       "status": "pending",
       "first_seen": "2026-10-20T22:32:40.664293+06:00",
       "last_seen": "2026-10-20T22:32:40.664304+06:00",
-      "importance_score": 79,
+      "importance_score": 74,
       "priority_type": "OTT Platform Acquisition / Streaming Rights",
       "priority_tier": 3,
       "priority_rank": 12,
       "sector": "International",
-      "rank_reason": "Expansion of content library for the newly launched service, reinforcing its market entry.",
-      "last_ranked_at": "2026-10-20T22:33:12.263291+06:00",
+      "rank_reason": "Detailed partner list for the new AVOD service; reinforces platform reach and IP strength.",
+      "last_ranked_at": "2026-10-21T02:19:53.944071+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/film/news/daniel-kaluuya-grass-branden-jacobs-jenkins-play-1236916683": {
@@ -4437,13 +4076,13 @@
       "status": "pending",
       "first_seen": "2026-10-20T22:32:40.743968+06:00",
       "last_seen": "2026-10-20T22:32:40.743981+06:00",
-      "importance_score": 41,
-      "priority_type": "New Movie / Series Announcements",
+      "importance_score": 48,
+      "priority_type": "First Look / First Glimpse / Posters",
       "priority_tier": 2,
-      "priority_rank": 5,
+      "priority_rank": 8,
       "sector": "Hollywood",
-      "rank_reason": "Stage debut of a high‑profile actor; cultural significance but limited to theatre‑going audience.",
-      "last_ranked_at": "2026-10-20T22:33:12.259936+06:00",
+      "rank_reason": "High‑profile actor’s New York stage debut; cultural relevance but limited mass‑market impact.",
+      "last_ranked_at": "2026-10-21T02:19:53.942198+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/tv/news/mayor-of-kingstown-season-5-release-date-first-look-photos-1236917594": {
@@ -4461,13 +4100,13 @@
       "status": "pending",
       "first_seen": "2026-10-20T22:32:40.824007+06:00",
       "last_seen": "2026-10-20T22:32:40.824018+06:00",
-      "importance_score": 80,
+      "importance_score": 78,
       "priority_type": "Release Date Confirmations",
       "priority_tier": 1,
       "priority_rank": 4,
       "sector": "Hollywood",
-      "rank_reason": "Confirmed release date and visual assets for a flagship series, providing concrete scheduling info and high fan anticipation.",
-      "last_ranked_at": "2026-10-20T22:33:12.258829+06:00",
+      "rank_reason": "Official release‑date confirmation plus first‑look photos for a popular series; strong audience anticipation.",
+      "last_ranked_at": "2026-10-21T02:19:53.941037+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/film/news/robert-pattinson-bribed-zyn-primetime-1236917479": {
@@ -4485,13 +4124,13 @@
       "status": "pending",
       "first_seen": "2026-10-20T22:32:40.925915+06:00",
       "last_seen": "2026-10-20T22:32:40.925925+06:00",
-      "importance_score": 35,
+      "importance_score": 22,
       "priority_type": "Cast / Character Announcements",
       "priority_tier": 3,
       "priority_rank": 9,
       "sector": "Hollywood",
-      "rank_reason": "Anecdotal casting story; lacks verification and limited news value.",
-      "last_ranked_at": "2026-10-20T22:33:12.261584+06:00",
+      "rank_reason": "Unverified rumor about casting incentives; does not meet publishable threshold.",
+      "last_ranked_at": "2026-10-21T02:19:53.942835+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/film/columns/sinners-music-exhibition-california-african-american-museum-1236917400": {
@@ -4509,13 +4148,13 @@
       "status": "pending",
       "first_seen": "2026-10-20T22:32:40.987934+06:00",
       "last_seen": "2026-10-20T22:32:40.987942+06:00",
-      "importance_score": 29,
+      "importance_score": 31,
       "priority_type": "First Look / First Glimpse / Posters",
       "priority_tier": 2,
       "priority_rank": 8,
       "sector": "Hollywood",
-      "rank_reason": "Cultural exhibition; low impact on entertainment news cycle.",
-      "last_ranked_at": "2026-10-20T22:33:12.260778+06:00",
+      "rank_reason": "Cultural exhibition tied to a film’s music; low direct entertainment impact.",
+      "last_ranked_at": "2026-10-21T02:19:53.942271+06:00",
       "learning_pattern": ""
     },
     "aboutamazon.com/news/workplace/amazon-holiday-jobs-2026-seasonal-hiring-healthcare": {
@@ -4532,14 +4171,390 @@
       "date_estimated": false,
       "status": "pending",
       "first_seen": "2026-10-20T22:32:53.874247+06:00",
-      "last_seen": "2026-10-20T22:32:53.874259+06:00",
-      "importance_score": 40,
+      "last_seen": "2026-10-21T02:19:39.479918+06:00",
+      "importance_score": 45,
       "priority_type": "Production / Filming Updates",
       "priority_tier": 3,
       "priority_rank": 11,
       "sector": "Hollywood",
-      "rank_reason": "Corporate hiring news, low entertainment relevance.",
-      "last_ranked_at": "2026-10-20T22:33:12.262798+06:00",
+      "rank_reason": "Large employment announcement; important for corporate news but low entertainment relevance.",
+      "last_ranked_at": "2026-10-21T02:19:53.943655+06:00",
+      "learning_pattern": ""
+    },
+    "deadline.com/2026/10/netflix-q3-2026-earnings-layoffs-streaming-1237168825": {
+      "title": "Netflix Stock Falls Despite Solid Q3 Results On Lowered Q4 Revenue And Advertising Guidance",
+      "url": "https://deadline.com/2026/10/netflix-q3-2026-earnings-layoffs-streaming-1237168825/",
+      "canonical": "deadline.com/2026/10/netflix-q3-2026-earnings-layoffs-streaming-1237168825",
+      "published_dt": "2026-10-21T02:13:40+06:00",
+      "published_date": "2026-10-21T02:13:40+06:00",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "excerpt": "Battered Netflix shares tumbled in after-hours trading Tuesday as the company issued a worrisome decrease in guidance for fourth-quarter revenue and full-year advertising sales. The swoon, which was partially reversed as the full results were digested, came despite a solid set of financials for the third quarter. Earnings per share of 87 cents beating Wall […]",
+      "image": "https://deadline.com/wp-content/uploads/2026/10/Netflix-earnings.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-10-21T02:19:24.361577+06:00",
+      "last_seen": "2026-10-21T02:19:24.361586+06:00",
+      "importance_score": 76,
+      "priority_type": "OTT / Streaming Availability",
+      "priority_tier": 1,
+      "priority_rank": 1,
+      "sector": "Hollywood",
+      "rank_reason": "Quarterly earnings and guidance impact investors and the streaming market globally.",
+      "last_ranked_at": "2026-10-21T02:19:53.940677+06:00",
+      "learning_pattern": ""
+    },
+    "deadline.com/2026/10/american-horror-story-renewed-season-14-fx-1237168879": {
+      "title": "‘American Horror Story’ Renewed For Season 14 At FX",
+      "url": "https://deadline.com/2026/10/american-horror-story-renewed-season-14-fx-1237168879/",
+      "canonical": "deadline.com/2026/10/american-horror-story-renewed-season-14-fx-1237168879",
+      "published_dt": "2026-10-21T02:00:00+06:00",
+      "published_date": "2026-10-21T02:00:00+06:00",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "excerpt": "There is more American Horror Story in our future. A week ahead of the Season 13 finale, FX announced it has renewed Ryan Murphy and Brad Falchuk’s anthology series for a 14th season. The renewal follows AHS: 13‘s biggest streaming premiere ever. The debut episode landed on Nielsen’s Streaming Top 10 charts and repped Murphy’s […]",
+      "image": "https://deadline.com/wp-content/uploads/2026/10/American-Horror-Story-Logo.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-10-21T02:19:24.394635+06:00",
+      "last_seen": "2026-10-21T02:19:24.394642+06:00",
+      "importance_score": 68,
+      "priority_type": "Season Renewals / New Season Updates",
+      "priority_tier": 2,
+      "priority_rank": 6,
+      "sector": "Hollywood",
+      "rank_reason": "High‑profile anthology series renewal signals continued franchise strength.",
+      "last_ranked_at": "2026-10-21T02:19:53.941596+06:00",
+      "learning_pattern": ""
+    },
+    "deadline.com/2026/10/nba-atlanta-hawks-full-regular-season-streaming-on-prime-video-1237168885": {
+      "title": "In NBA First, Atlanta Hawks Full Regular Season To Stream On Prime Video In Parallel With Local TV",
+      "url": "https://deadline.com/2026/10/nba-atlanta-hawks-full-regular-season-streaming-on-prime-video-1237168885/",
+      "canonical": "deadline.com/2026/10/nba-atlanta-hawks-full-regular-season-streaming-on-prime-video-1237168885",
+      "published_dt": "2026-10-21T01:46:10+06:00",
+      "published_date": "2026-10-21T01:46:10+06:00",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "excerpt": "In a first for an NBA team, the Atlanta Hawks will stream their full regular season (apart from nationally broadcast games) on Amazon Prime Video in simulcasts with local broadcast TV. The streamer will have the digital exclusive for 74 games of the full 82 on the schedule, with local broadcast group Gray Media airing […]",
+      "image": "https://deadline.com/wp-content/uploads/2026/10/Atlanta-Hawks.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-10-21T02:19:24.459694+06:00",
+      "last_seen": "2026-10-21T02:19:24.459698+06:00",
+      "importance_score": 65,
+      "priority_type": "OTT Platform Acquisition / Streaming Rights",
+      "priority_tier": 3,
+      "priority_rank": 12,
+      "sector": "Hollywood",
+      "rank_reason": "First NBA team‑wide streaming deal; notable OTT platform acquisition.",
+      "last_ranked_at": "2026-10-21T02:19:53.944144+06:00",
+      "learning_pattern": ""
+    },
+    "deadline.com/2026/10/starz-verizon-fios-settle-carriage-fight-1237168822": {
+      "title": "Starz Is Back On Verizon Fios As Carriage Dispute Settled",
+      "url": "https://deadline.com/2026/10/starz-verizon-fios-settle-carriage-fight-1237168822/",
+      "canonical": "deadline.com/2026/10/starz-verizon-fios-settle-carriage-fight-1237168822",
+      "published_dt": "2026-10-21T00:26:54+06:00",
+      "published_date": "2026-10-21T00:26:54+06:00",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "excerpt": "Starz and Verizon have inked a deal that restores all Starz channels, Starz On Demand and the Starz app to Verizon Fios. Starz programming includes the full Power Universe and upcoming Power: Origins; drama Fightland; every episode of Outlander and the series’ prequel Outlander: Blood of my Blood; as well as the upcoming season of […]",
+      "image": "https://deadline.com/wp-content/uploads/2026/07/Power-Book-Origins-Spence-Moore-22Ghost22-Charlie-Mann-22Tommy22-and-Mekai-Curtis-22Kanan-Stark22.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-10-21T02:19:24.504050+06:00",
+      "last_seen": "2026-10-21T02:19:24.504055+06:00",
+      "importance_score": 47,
+      "priority_type": "OTT Platform Acquisition / Streaming Rights",
+      "priority_tier": 3,
+      "priority_rank": 12,
+      "sector": "Hollywood",
+      "rank_reason": "Same news as ID 11; lower priority due to duplication.",
+      "last_ranked_at": "2026-10-21T02:19:53.944283+06:00",
+      "learning_pattern": ""
+    },
+    "deadline.com/2026/10/amazon-mgm-studios-julie-rapaport-alana-mayo-film-heads-1237168808": {
+      "title": "Amazon MGM Studios Elevates Julie Rapaport & Alana Mayo In Film Division Reorg",
+      "url": "https://deadline.com/2026/10/amazon-mgm-studios-julie-rapaport-alana-mayo-film-heads-1237168808/",
+      "canonical": "deadline.com/2026/10/amazon-mgm-studios-julie-rapaport-alana-mayo-film-heads-1237168808",
+      "published_dt": "2026-10-21T00:13:15+06:00",
+      "published_date": "2026-10-21T00:13:15+06:00",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "excerpt": "Amazon MGM Studios is revamping its film division, with Julie Rapaport and Alana Mayo each being tapped as as Head of Film, Production & Development. Both will report to Courtenay Valenti, Head of Film, Streaming and Theatrical at Amazon MGM. Valenti revealed the restructuring Tuesday and sent a note to staff. “Julie and Alana will […]",
+      "image": "https://deadline.com/wp-content/uploads/2026/10/Julie-.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-10-21T02:19:24.560138+06:00",
+      "last_seen": "2026-10-21T02:19:24.560143+06:00",
+      "importance_score": 48,
+      "priority_type": "Production / Filming Updates",
+      "priority_tier": 3,
+      "priority_rank": 11,
+      "sector": "Hollywood",
+      "rank_reason": "Internal leadership changes; relevant to industry insiders but limited public interest.",
+      "last_ranked_at": "2026-10-21T02:19:53.943496+06:00",
+      "learning_pattern": ""
+    },
+    "deadline.com/feature/the-gilded-age-season-4-news-updates-everything-we-know-1236748421": {
+      "title": "Everything We Know About ‘The Gilded Age’ Season 4 So Far",
+      "url": "https://deadline.com/feature/the-gilded-age-season-4-news-updates-everything-we-know-1236748421/",
+      "canonical": "deadline.com/feature/the-gilded-age-season-4-news-updates-everything-we-know-1236748421",
+      "published_dt": "2026-10-21T00:06:20+06:00",
+      "published_date": "2026-10-21T00:06:20+06:00",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "excerpt": "The culture clash will continue in Season 4 of Julian Fellowes’ HBO period drama The Gilded Age, based on the turn-of-the-century time period in America that lasted between 1870 and 1900. Some familiar faces have been promoted to series regulars since Season 3, and some new faces are joining the cast to play big-name historical […]",
+      "image": "https://deadline.com/wp-content/uploads/2025/07/carrie-coon-merritt-wever-e1752281224589.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-10-21T02:19:24.600567+06:00",
+      "last_seen": "2026-10-21T02:19:24.600571+06:00",
+      "importance_score": 45,
+      "priority_type": "Upcoming OTT Releases",
+      "priority_tier": 1,
+      "priority_rank": 3,
+      "sector": "Hollywood",
+      "rank_reason": "Season preview information; moderate fan interest but not breaking news.",
+      "last_ranked_at": "2026-10-21T02:19:53.940966+06:00",
+      "learning_pattern": ""
+    },
+    "deadline.com/2026/10/the-prestige-rerelease-2027-christopher-nolan-1237168795": {
+      "title": "Christopher Nolan’s ‘The Prestige’ Sets 20th Anniversary Re-Release For 2027",
+      "url": "https://deadline.com/2026/10/the-prestige-rerelease-2027-christopher-nolan-1237168795/",
+      "canonical": "deadline.com/2026/10/the-prestige-rerelease-2027-christopher-nolan-1237168795",
+      "published_dt": "2026-10-20T23:51:29+06:00",
+      "published_date": "2026-10-20T23:51:29+06:00",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "excerpt": "Christopher Nolan’s thriller The Prestige will to return theaters on January 29, 2027, in celebration of the film’s 20th anniversary. Walt Disney Studios will re-release the film that stars Hugh Jackman, Christian Bale, Michael Caine and Scarlett Johansson, and features the late David Bowie as physicist Nikola Tesla. The re-release will give audiences the chance […]",
+      "image": "https://deadline.com/wp-content/uploads/2026/10/MCDPRES_EC018.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-10-21T02:19:24.646553+06:00",
+      "last_seen": "2026-10-21T02:19:24.646557+06:00",
+      "importance_score": 42,
+      "priority_type": "Theatrical Releases / Re-releases",
+      "priority_tier": 3,
+      "priority_rank": 10,
+      "sector": "Hollywood",
+      "rank_reason": "Anniversary theatrical re‑release; niche appeal compared to new content.",
+      "last_ranked_at": "2026-10-21T02:19:53.943194+06:00",
+      "learning_pattern": ""
+    },
+    "variety.com/2026/tv/news/netflix-q3-2026-earnings-wall-street-layoffs-exec-firings-1236917438": {
+      "title": "Netflix Q3 Revenue Meets Wall Street Estimates, Q4 Earnings Will Be Crimped by Costs Associated With Mass Layoffs",
+      "url": "https://variety.com/2026/tv/news/netflix-q3-2026-earnings-wall-street-layoffs-exec-firings-1236917438/",
+      "canonical": "variety.com/2026/tv/news/netflix-q3-2026-earnings-wall-street-layoffs-exec-firings-1236917438",
+      "published_dt": "2026-10-21T02:13:23+06:00",
+      "published_date": "2026-10-21T02:13:23+06:00",
+      "source": "Variety",
+      "region": "Entertainment",
+      "excerpt": "Netflix’s third-quarter 2026 earnings met revenue expectations and it slightly beat on the bottom line. But the streamer faces an urgent need to refresh its queue: Revenue growth in the period slowed, and the company just laid off 1,000 employees in a restructuring effort to reposition itself. Netflix posted Q3 revenue of $12.87 billion, up […]",
+      "image": "https://variety.com/wp-content/uploads/2026/10/Netflix-Los-Angeles-Offices.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-10-21T02:19:24.842498+06:00",
+      "last_seen": "2026-10-21T02:19:24.842503+06:00",
+      "importance_score": 70,
+      "priority_type": "OTT / Streaming Availability",
+      "priority_tier": 1,
+      "priority_rank": 1,
+      "sector": "Hollywood",
+      "rank_reason": "Financial performance with layoff news affects subscriber outlook.",
+      "last_ranked_at": "2026-10-21T02:19:53.940750+06:00",
+      "learning_pattern": ""
+    },
+    "variety.com/2026/tv/news/american-horror-story-renewed-season-14-1236917963": {
+      "title": "‘American Horror Story’ Renewed for Season 14",
+      "url": "https://variety.com/2026/tv/news/american-horror-story-renewed-season-14-1236917963/",
+      "canonical": "variety.com/2026/tv/news/american-horror-story-renewed-season-14-1236917963",
+      "published_dt": "2026-10-21T02:10:35+06:00",
+      "published_date": "2026-10-21T02:10:35+06:00",
+      "source": "Variety",
+      "region": "Entertainment",
+      "excerpt": "“American Horror Story” has been renewed for its 14th season at FX. The news comes ahead of the Oct. 29 finale of Season 13, which reunites franchise legends Jessica Lange, Sarah Paulson, Evan Peters, Emma Roberts, Billie Lourd, Kathy Bates, Angela Bassett, Gabourey Sidibe and more. More to come…",
+      "image": "https://variety.com/wp-content/uploads/2026/10/AHS-PENTHOUSE_ep1310_00222_r.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-10-21T02:19:24.871243+06:00",
+      "last_seen": "2026-10-21T02:19:24.871246+06:00"
+    },
+    "variety.com/2026/film/news/keanu-reeves-james-wan-gangster-cop-devil-paramount-1236917945": {
+      "title": "Keanu Reeves in Talks to Star in James Wan’s ‘The Gangster, The Cop, The Devil’ at Paramount",
+      "url": "https://variety.com/2026/film/news/keanu-reeves-james-wan-gangster-cop-devil-paramount-1236917945/",
+      "canonical": "variety.com/2026/film/news/keanu-reeves-james-wan-gangster-cop-devil-paramount-1236917945",
+      "published_dt": "2026-10-21T01:48:02+06:00",
+      "published_date": "2026-10-21T01:48:02+06:00",
+      "source": "Variety",
+      "region": "Entertainment",
+      "excerpt": "Keanu Reeves is in talks to team with James Wan for the filmmaker’s latest project, “The Gangster, The Cop, The Devil” at Paramount Pictures. The Paramount Pictures movie reimagines the 2019 Korean action-crime thriller starring Don Lee (also known as Ma Dong-seok), who is attached to reprise his role opposite Reeves. The original film — […]",
+      "image": "https://variety.com/wp-content/uploads/2026/10/Keanu-Reeves_PC_Brian-Bowen-Smith-1.jpeg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-10-21T02:19:24.933451+06:00",
+      "last_seen": "2026-10-21T02:19:24.933454+06:00",
+      "importance_score": 64,
+      "priority_type": "Cast / Character Announcements",
+      "priority_tier": 3,
+      "priority_rank": 9,
+      "sector": "Hollywood",
+      "rank_reason": "Star power attached to a high‑profile adaptation; casting news drives buzz.",
+      "last_ranked_at": "2026-10-21T02:19:53.942526+06:00",
+      "learning_pattern": ""
+    },
+    "variety.com/2026/shopping/news/andy-cohen-bravo-book-real-housewives-20-year-anniversary-1236917946": {
+      "title": "Andy Cohen Celebrates 20 Years of ‘Real Housewives’ With New Book Featuring 600 Never-Before-Seen Photos and Behind-the-Scenes Stories",
+      "url": "https://variety.com/2026/shopping/news/andy-cohen-bravo-book-real-housewives-20-year-anniversary-1236917946/",
+      "canonical": "variety.com/2026/shopping/news/andy-cohen-bravo-book-real-housewives-20-year-anniversary-1236917946",
+      "published_dt": "2026-10-21T01:44:15+06:00",
+      "published_date": "2026-10-21T01:44:15+06:00",
+      "source": "Variety",
+      "region": "Entertainment",
+      "excerpt": "Andy Cohen has spent two decades presiding over some of reality television’s most memorable confrontations. Now, he’s opening up his personal archives. The Bravo host and executive producer is marking the 20th anniversary of the “Real Housewives” franchise with a new book, “Andy’s Bravo Scrapbook: Twenty Years Behind the Scenes of the Real Housewives and […]",
+      "image": "https://variety.com/wp-content/uploads/2026/10/andy-cohen-bravo-scrapbook.png",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-10-21T02:19:25.017220+06:00",
+      "last_seen": "2026-10-21T02:19:25.017224+06:00",
+      "importance_score": 51,
+      "priority_type": "New Movie / Series Announcements",
+      "priority_tier": 2,
+      "priority_rank": 5,
+      "sector": "Hollywood",
+      "rank_reason": "Milestone book release for a long‑running reality franchise; moderate audience interest.",
+      "last_ranked_at": "2026-10-21T02:19:53.941433+06:00",
+      "learning_pattern": ""
+    },
+    "variety.com/2026/film/news/dwayne-johnson-70-year-old-man-lizard-music-photos-1236917894": {
+      "title": "Dwayne Johnson Transforms Into a 70-Year-Old Man in Shocking ‘Lizard Music’ Set Photos",
+      "url": "https://variety.com/2026/film/news/dwayne-johnson-70-year-old-man-lizard-music-photos-1236917894/",
+      "canonical": "variety.com/2026/film/news/dwayne-johnson-70-year-old-man-lizard-music-photos-1236917894",
+      "published_dt": "2026-10-21T01:13:56+06:00",
+      "published_date": "2026-10-21T01:13:56+06:00",
+      "source": "Variety",
+      "region": "Entertainment",
+      "excerpt": "Move over, Mark Kerr, and make way for the Chicken Man. Dwayne Johnson was spotted in Brooklyn on Tuesday shooting his new movie “Lizard Music” from director Benny Safdie. Like with his previous collaboration with the “Uncut Gems” director, 2025’s “The Smashing Machine,” Johnson has gone through a serious prosthetic transformation. This time around, instead […]",
+      "image": "https://variety.com/wp-content/uploads/2026/10/dwayne.png",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-10-21T02:19:25.078636+06:00",
+      "last_seen": "2026-10-21T02:19:25.078639+06:00",
+      "importance_score": 54,
+      "priority_type": "First Look / First Glimpse / Posters",
+      "priority_tier": 2,
+      "priority_rank": 8,
+      "sector": "Hollywood",
+      "rank_reason": "High‑profile star in striking transformation; generates buzz but still pre‑production.",
+      "last_ranked_at": "2026-10-21T02:19:53.942123+06:00",
+      "learning_pattern": ""
+    },
+    "variety.com/2026/tv/news/lioness-season-3-finale-ratings-viewers-1236917872": {
+      "title": "‘Lioness’ Season 3 Closes With 9.7 Million Viewers in Seven Days, a Series High and the No. 5 Paramount+ Finale Ever",
+      "url": "https://variety.com/2026/tv/news/lioness-season-3-finale-ratings-viewers-1236917872/",
+      "canonical": "variety.com/2026/tv/news/lioness-season-3-finale-ratings-viewers-1236917872",
+      "published_dt": "2026-10-21T01:00:00+06:00",
+      "published_date": "2026-10-21T01:00:00+06:00",
+      "source": "Variety",
+      "region": "Entertainment",
+      "excerpt": "“Lioness” showed strong audience growth throughout its third season and ended on a high note: The finale reached 9.7 million viewers in its first seven days of availability. That total marks not only the most-watched episode in the series’ history, but the No. 5 most-watched finale of all time compared to other Paramount+ originals. Additionally, […]",
+      "image": "https://variety.com/wp-content/uploads/2026/10/Lioness_308_0306_0119_RT.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-10-21T02:19:25.147277+06:00",
+      "last_seen": "2026-10-21T02:19:25.147292+06:00",
+      "importance_score": 60,
+      "priority_type": "Box Office Updates",
+      "priority_tier": 3,
+      "priority_rank": 13,
+      "sector": "Hollywood",
+      "rank_reason": "Strong streaming numbers indicate franchise health; relevant for OTT performance metrics.",
+      "last_ranked_at": "2026-10-21T02:19:53.944436+06:00",
+      "learning_pattern": ""
+    },
+    "variety.com/2026/film/news/you-can-see-everything-boosts-dropout-ratings-hulu-seyfried-1236917676": {
+      "title": "Elizabeth Holmes Mania: ‘You Can See Everything’ Drives 186% Viewership Spike for Amanda Seyfried’s ‘The Dropout’ (EXCLUSIVE)",
+      "url": "https://variety.com/2026/film/news/you-can-see-everything-boosts-dropout-ratings-hulu-seyfried-1236917676/",
+      "canonical": "variety.com/2026/film/news/you-can-see-everything-boosts-dropout-ratings-hulu-seyfried-1236917676",
+      "published_dt": "2026-10-21T01:00:00+06:00",
+      "published_date": "2026-10-21T01:00:00+06:00",
+      "source": "Variety",
+      "region": "Entertainment",
+      "excerpt": "“The Dropout,” Hulu’s 2022 limited series in which Amanda Seyfried plays Elizabeth Holmes, has seen a massive audience spike due to the buzz surrounding A24’s new Holmes documentary “You Can See Everything.” Viewership of “The Dropout” jumped by 186% in September compared to the month before, driven by the Sept. 6 announcement that “You Can […]",
+      "image": "https://variety.com/wp-content/uploads/2026/10/the-dropout-mcdyoca-ec127-1000x667-1.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-10-21T02:19:25.223637+06:00",
+      "last_seen": "2026-10-21T02:19:25.223642+06:00",
+      "importance_score": 57,
+      "priority_type": "Box Office Updates",
+      "priority_tier": 3,
+      "priority_rank": 13,
+      "sector": "Hollywood",
+      "rank_reason": "Cross‑title viewership boost shows impact of related documentary; notable but niche.",
+      "last_ranked_at": "2026-10-21T02:19:53.944516+06:00",
+      "learning_pattern": ""
+    },
+    "variety.com/2026/digital/news/robert-downey-jr-pitchman-snap-specs-ar-glasses-1236917815": {
+      "title": "Robert Downey Jr. Signs On as Pitchman for Snap’s $2,200 Specs AR Glasses",
+      "url": "https://variety.com/2026/digital/news/robert-downey-jr-pitchman-snap-specs-ar-glasses-1236917815/",
+      "canonical": "variety.com/2026/digital/news/robert-downey-jr-pitchman-snap-specs-ar-glasses-1236917815",
+      "published_dt": "2026-10-21T00:52:39+06:00",
+      "published_date": "2026-10-21T00:52:39+06:00",
+      "source": "Variety",
+      "region": "Entertainment",
+      "excerpt": "Robert Downey Jr., whose famous portrayal of Marvel’s Iron Man had him decked out with a variety of high-tech gadgetry, is donning Snap’s Specs augmented-reality glasses in a new role as lead spokesman for the devices. Downey Jr.’s partnership with Specs kicked off with a collection of original episodes featuring him showing off the tech […]",
+      "image": "https://variety.com/wp-content/uploads/2026/10/Specs-Robert-Downey-Jr.png",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-10-21T02:19:25.277346+06:00",
+      "last_seen": "2026-10-21T02:19:25.277350+06:00",
+      "importance_score": 51,
+      "priority_type": "OTT / Streaming Availability",
+      "priority_tier": 1,
+      "priority_rank": 1,
+      "sector": "Hollywood",
+      "rank_reason": "Celebrity endorsement of AR hardware; relevant to tech‑entertainment crossover.",
+      "last_ranked_at": "2026-10-21T02:19:53.940892+06:00",
+      "learning_pattern": ""
+    },
+    "variety.com/2026/tv/news/starz-verizon-fios-carriage-pact-1236917862": {
+      "title": "Starz Gets Back on Verizon Fios After New Carriage Pact",
+      "url": "https://variety.com/2026/tv/news/starz-verizon-fios-carriage-pact-1236917862/",
+      "canonical": "variety.com/2026/tv/news/starz-verizon-fios-carriage-pact-1236917862",
+      "published_dt": "2026-10-21T00:31:00+06:00",
+      "published_date": "2026-10-21T00:31:00+06:00",
+      "source": "Variety",
+      "region": "Entertainment",
+      "excerpt": "The cable network Starz and its ancillary properties are available once again on Verizon’s Fios service following an interruption in service due to a battle over the terms of a new contract. Starz said on Tuesday that all of its networks and on-demand services were back on Verizon. The Starz services went dark in late […]",
+      "image": "https://variety.com/wp-content/uploads/2026/09/Starz-Fios-1.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-10-21T02:19:25.320123+06:00",
+      "last_seen": "2026-10-21T02:19:25.320126+06:00",
+      "importance_score": 47,
+      "priority_type": "OTT Platform Acquisition / Streaming Rights",
+      "priority_tier": 3,
+      "priority_rank": 12,
+      "sector": "Hollywood",
+      "rank_reason": "Carriage dispute resolution; important for cable subscribers but limited broader impact.",
+      "last_ranked_at": "2026-10-21T02:19:53.944219+06:00",
       "learning_pattern": ""
     }
   },
@@ -4618,56 +4633,6 @@
       "selected_at": "2026-09-30T01:32:36.368811+06:00",
       "status": "published",
       "message_id": 729
-    },
-    "movistar_2027_slate_announcement": {
-      "event_id": "movistar_2027_slate_announcement",
-      "canonical_url": "deadline.com/2026/09/movistar-plus-2027-slate-ja-bayona-san-sebastian-1237108799",
-      "original_url": "https://deadline.com/2026/09/movistar-plus-2027-slate-ja-bayona-san-sebastian-1237108799/",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "topic": "Casting",
-      "institution": "Movistar Plus",
-      "event_cluster_id": "evt_42bfb05787",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Movistar Plus",
-      "summary": "Movistar Plus unveiled its 2027 slate, adding new series and weekly Spanish films.",
-      "highlights": [
-        "JA Bayona to executive‑produce two non‑fiction features",
-        "Fernando León de Aranoa’s comedy series titled The Castaway",
-        "Series The Brief Life will dramatise the 1991 Barcelona Olympics opening ceremony"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-09-20T23:00:00+06:00",
-      "selected_at": "2026-09-21T00:10:47.960861+06:00",
-      "status": "published",
-      "message_id": 610
-    },
-    "the_savant_release_2027": {
-      "event_id": "the_savant_release_2027",
-      "canonical_url": "deadline.com/2026/09/jessica-chastain-the-savant-new-release-date-apple-tv-1237108228",
-      "original_url": "https://deadline.com/2026/09/jessica-chastain-the-savant-new-release-date-apple-tv-1237108228/",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "topic": "Release Dates",
-      "institution": "Apple TV+",
-      "event_cluster_id": "evt_44b7ddc10f",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "The Savant",
-      "summary": "Apple TV+ has rescheduled the Jessica Chastain thriller series for spring 2027 after a year‑long hold.",
-      "highlights": [
-        "Series was delayed from a planned Sept. 26, 2025 premiere",
-        "Apple TV+ cites sensitivity to recent extremist‑related events",
-        "New release window targets spring 2027, making it eligible for the 2027 Emmys"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-09-21T01:00:39+06:00",
-      "selected_at": "2026-09-21T12:11:12.562918+06:00",
-      "status": "published",
-      "message_id": 611
     },
     "rameshwar_nath_kao_biopic": {
       "event_id": "rameshwar_nath_kao_biopic",
@@ -14501,6 +14466,31 @@
       "selected_at": "2026-10-20T22:35:10.696858+06:00",
       "status": "published",
       "message_id": 1011
+    },
+    "snap_specs_ar_glasses_robertdowneyjr": {
+      "event_id": "snap_specs_ar_glasses_robertdowneyjr",
+      "canonical_url": "deadline.com/2026/10/robert-downey-series-snap-specs-ar-glasses-1237168499",
+      "original_url": "https://deadline.com/2026/10/robert-downey-series-snap-specs-ar-glasses-1237168499/",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "topic": "Major Film Announcements",
+      "institution": "Snap",
+      "event_cluster_id": "evt_c199722e73",
+      "event_confidence": 0.6,
+      "event_source_count": 1,
+      "headline": "SPECS",
+      "summary": "Robert Downey Jr.",
+      "highlights": [
+        "Downey Jr. will appear in a debut episode during the Knicks‑76ers tip‑off tonight",
+        "Another episode will air during Game 1 of the World Series on Oct 23",
+        "Episodes will be released on the SPECS website and YouTube as they are produced"
+      ],
+      "concepts": [],
+      "key_numbers": [],
+      "published_at": "2026-10-20T20:34:31+06:00",
+      "selected_at": "2026-10-21T02:21:52.609417+06:00",
+      "status": "published",
+      "message_id": 1012
     }
   },
   "event_clusters": {
@@ -27370,7 +27360,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-20T17:07:48.283548+06:00",
+      "last_seen": "2026-10-21T02:19:54.326806+06:00",
       "headline": "‘Street Fighter’ Punches to Summit as Rajinikanth’s ‘Jailer 2’ Bows in Third at U.K., Ireland Box Office"
     },
     "evt_438bada73d": {
@@ -27406,12 +27396,23 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-10-20T22:33:12.731432+06:00",
+      "last_seen": "2026-10-21T02:19:54.326786+06:00",
       "headline": "Streaming Guide JustWatch Launches Its Own Service With Titles From 30 Global Content Suppliers"
+    },
+    "evt_c199722e73": {
+      "event_id": "evt_c199722e73",
+      "topic": "Major Film Announcements",
+      "region": "Entertainment",
+      "sources": [
+        "Deadline"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-10-21T02:19:54.326803+06:00",
+      "headline": "Snap Taps Robert Downey Jr. To Boost New SPECS AR Glasses"
     }
   },
   "posted_event_ids": [
-    "evt_3b63431394",
     "evt_eedaf921ad",
     "evt_9372d47db4",
     "evt_7247226233",
@@ -27910,10 +27911,10 @@
     "evt_5386e06c24",
     "evt_109f6c8961",
     "evt_b5d1359cba",
-    "evt_438bada73d"
+    "evt_438bada73d",
+    "evt_c199722e73"
   ],
   "recent_titles": [
-    "the savant",
     "paramount skydance",
     "untitled r aw film",
     "spain crece fund",
@@ -28313,7 +28314,8 @@
     "drive the pretenders",
     "amazon nuclear energy project",
     "the walt disney company asia pacific",
-    "lol last one laughing"
+    "lol last one laughing",
+    "specs"
   ],
   "work_memory": {
     "the dog stars": {
@@ -34283,6 +34285,15 @@
         "New Movie / Series Announcements": "2026-10-20T22:35:10.696901+06:00"
       },
       "last_published_at": "2026-10-20T22:35:10.696899+06:00"
+    },
+    "specs": {
+      "title": "SPECS",
+      "sector": "Hollywood",
+      "first_published_at": "2026-10-21T02:21:52.609445+06:00",
+      "published_events": {
+        "New Movie / Series Announcements": "2026-10-21T02:21:52.609451+06:00"
+      },
+      "last_published_at": "2026-10-21T02:21:52.609449+06:00"
     }
   },
   "publication_fingerprints": [
@@ -41721,16 +41732,27 @@
       "event_key": "LOL_Host_Announcement",
       "canonical": "deadline.com/2026/10/nick-kroll-to-host-amazon-lol-last-one-laughing-1237168168",
       "published_at": "2026-10-20T22:35:10.697107+06:00"
+    },
+    {
+      "fingerprint": "specs|New Movie / Series Announcements|robert downey launching collection original touting the partners with snap honorary chief customer experience officer for its augmented reality glasses the short videos which demonstrate applications showing how wearers can elevate workspaces master golf relax with entertaining develop artistic skills are robert downey downey will appear debut during the knicks 76ers tip off tonight another will air during game the world oct will the website and youtube they are produced",
+      "work_key": "specs",
+      "priority_type": "New Movie / Series Announcements",
+      "headline": "SPECS",
+      "event_text": "SPECS Robert Downey Jr. is launching a collection of original episodes touting SPECS, as the actor partners with Snap as Honorary Chief Customer Experience Officer for its new augmented reality glasses. The short videos, which demonstrate applications showing how wearers can elevate workspaces, master golf, relax with an entertaining show, or develop artistic skills, are available […] Robert Downey Jr. Downey Jr. will appear in a debut episode during the Knicks‑76ers tip‑off tonight Another episode will air during Game 1 of the World Series on Oct 23 Episodes will be released on the SPECS website and YouTube as they are produced",
+      "core": "robert downey launching collection original touting the partners with snap honorary chief customer experience officer for its augmented reality glasses the short videos which demonstrate applications showing how wearers can elevate workspaces master golf relax with entertaining develop artistic skills are robert downey downey will appear debut during the knicks 76ers tip off tonight another will air during game the world oct will the website and youtube they are produced",
+      "event_key": "Snap_SPECS_AR_Glasses_RobertDowneyJr",
+      "canonical": "deadline.com/2026/10/robert-downey-series-snap-specs-ar-glasses-1237168499",
+      "published_at": "2026-10-21T02:21:52.609666+06:00"
     }
   ],
   "fresh_start_at": "2026-09-07T13:58:06.173598+06:00",
   "learned_rejections": {
     "sports": {
-      "observations": 161,
-      "low_score_count": 136,
-      "total_score": 7859,
-      "avg_score": 48.8,
-      "last_seen": "2026-10-20T22:33:12.266510+06:00",
+      "observations": 164,
+      "low_score_count": 138,
+      "total_score": 8017,
+      "avg_score": 48.9,
+      "last_seen": "2026-10-21T02:19:53.946822+06:00",
       "examples": [
         {
           "title": "Dodgers-Brewers & Rays-Guardians MLB Playoff Game Times For Thursday Changed",
@@ -41738,24 +41760,24 @@
           "priority_type": "Production / Filming Updates"
         },
         {
-          "title": "‘Street Fighter’ Cast Guide: All the WWE Stars, UFC Champs and Celebs Playing Video Game Fighters in the Live-Action Movie",
-          "score": 78,
-          "priority_type": "Cast / Character Announcements"
-        },
-        {
           "title": "Snap Taps Robert Downey Jr. To Boost New SPECS AR Glasses",
           "score": 73,
           "priority_type": "OTT / Streaming Availability"
         },
         {
-          "title": "‘Friday Night Lights’ Stars Hit The Field To Aid James Talarico’s Smashmouth Attempt To Score A Texas Senate Race Win",
-          "score": 17,
-          "priority_type": "First Look / First Glimpse / Posters"
-        },
-        {
           "title": "‘Running Point’ EP Mindy Kaling To Recur In Season 3 Of Netflix Series",
           "score": 58,
           "priority_type": "Cast / Character Announcements"
+        },
+        {
+          "title": "‘Street Fighter’ Cast Guide: All the WWE Stars, UFC Champs and Celebs Playing Video Game Fighters in the Live-Action Movie",
+          "score": 78,
+          "priority_type": "Cast / Character Announcements"
+        },
+        {
+          "title": "‘Friday Night Lights’ Stars Hit The Field To Aid James Talarico’s Smashmouth Attempt To Score A Texas Senate Race Win",
+          "score": 0,
+          "priority_type": "First Look / First Glimpse / Posters"
         }
       ]
     },
@@ -41856,614 +41878,6 @@
     }
   },
   "score_history": [
-    {
-      "title": "Controversial ‘Downstate’ Again Delays First Broadway Preview Due To Illness",
-      "score": 54,
-      "pattern": "",
-      "priority_type": "Theatrical Releases / Re-releases",
-      "source": "Deadline",
-      "seen_at": "2026-10-18T11:32:07.149866+06:00"
-    },
-    {
-      "title": "Clive Barker Teases ‘Hellraiser: Revival’ Video Game Has Reignited “Many Ideas” For Film Franchise: “Planning To Keep My Fingers In That Pie",
-      "score": 91,
-      "pattern": "",
-      "priority_type": "Production / Filming Updates",
-      "source": "Deadline",
-      "seen_at": "2026-10-18T11:32:07.150021+06:00"
-    },
-    {
-      "title": "How NBC Brought Live Musicals Back to Television",
-      "score": 90,
-      "pattern": "",
-      "priority_type": "Production / Filming Updates",
-      "source": "Variety",
-      "seen_at": "2026-10-18T11:32:07.150146+06:00"
-    },
-    {
-      "title": "Mahershala Ali Cries Recalling ‘Moonlight’ Scene, Keeps Quiet on ‘Spider-Verse’ at London Talk: ‘I’ve Got to Be Careful’",
-      "score": 70,
-      "pattern": "",
-      "priority_type": "Production / Filming Updates",
-      "source": "Variety",
-      "seen_at": "2026-10-18T11:32:07.150290+06:00"
-    },
-    {
-      "title": "‘The Angry Birds Movie 3’ Unpacked by VFX Supervisor, Including Red’s Redesign and Character-Effects Automation: ’He’s Similar by Choice’",
-      "score": 66,
-      "pattern": "",
-      "priority_type": "Production / Filming Updates",
-      "source": "Variety",
-      "seen_at": "2026-10-18T11:32:07.150449+06:00"
-    },
-    {
-      "title": "J.K. Rowling’s Agent Slams Trans Rights Protest at ‘Harry Potter and the Cursed Child’ in London: It Put ‘Others at Risk’",
-      "score": 48,
-      "pattern": "",
-      "priority_type": "Production / Filming Updates",
-      "source": "Variety",
-      "seen_at": "2026-10-18T11:32:07.150606+06:00"
-    },
-    {
-      "title": "Coen Brothers Bring Laughs to Lumière Award Ceremony as Javier Bardem Recalls ‘No Country for Old Men’: ‘They Gave Me One Masterpiece’",
-      "score": 48,
-      "pattern": "",
-      "priority_type": "Production / Filming Updates",
-      "source": "Variety",
-      "seen_at": "2026-10-18T11:32:07.150773+06:00"
-    },
-    {
-      "title": "J.K. Rowling’s Agent Neil Blair Condemns Trans Rights Protest At ‘Harry Potter And The Cursed Child’",
-      "score": 48,
-      "pattern": "",
-      "priority_type": "Production / Filming Updates",
-      "source": "Deadline",
-      "seen_at": "2026-10-18T11:32:07.150918+06:00"
-    },
-    {
-      "title": "Here’s Where to Buy New York Knicks Home Opener Tickets at Madison Square Garden Online",
-      "score": 12,
-      "pattern": "",
-      "priority_type": "Production / Filming Updates",
-      "source": "Variety",
-      "seen_at": "2026-10-18T11:32:07.151054+06:00"
-    },
-    {
-      "title": "‘Dancing With the Stars’ Pulls Val Chmerkovskiy After ‘Inappropriate’ Carrie Ann Inaba Slap Joke: ‘The Well-Being’ of Our Staff Is ‘Non-Nego",
-      "score": 12,
-      "pattern": "",
-      "priority_type": "Production / Filming Updates",
-      "source": "Variety",
-      "seen_at": "2026-10-18T11:32:07.151216+06:00"
-    },
-    {
-      "title": "Gene Schwam, Veteran Hollywood Publicist to Elvis Presley, Julie Andrews and More, Dies at 96",
-      "score": 12,
-      "pattern": "",
-      "priority_type": "Production / Filming Updates",
-      "source": "Variety",
-      "seen_at": "2026-10-18T11:32:07.151359+06:00"
-    },
-    {
-      "title": "Box Office: ‘Street Fighter’ Scores $13 Million Debut as ‘You Can See Everything’ Opens at No. 2 With $5.5 Million on Friday",
-      "score": 90,
-      "pattern": "",
-      "priority_type": "Box Office Updates",
-      "source": "Variety",
-      "seen_at": "2026-10-18T11:32:07.151521+06:00"
-    },
-    {
-      "title": "Russell Brand Was ‘Ruthless and Calculated’ With a ‘Voracious’ Desire for ‘Sexual Contact,’ Prosecution Alleges in Rape Trial Opening Statem",
-      "score": 31,
-      "pattern": "",
-      "priority_type": "Production / Filming Updates",
-      "source": "Variety",
-      "seen_at": "2026-10-18T16:35:53.141626+06:00"
-    },
-    {
-      "title": "Russell T Davies Calls BBC Boss’ AI ‘Doctor Who’ Comment ‘Clumsy’ and Teases Show’s Future: ‘You’ll Start to See Production’ in ‘Summer Next",
-      "score": 46,
-      "pattern": "",
-      "priority_type": "Production / Filming Updates",
-      "source": "Variety",
-      "seen_at": "2026-10-18T16:35:53.141775+06:00"
-    },
-    {
-      "title": "Ron Perlman Lines Up Hemingway Movie & Updates On ‘Sons Of Anarchy’ Spinoff ‘Legends’, That Third ‘Hellboy’ Film & Next Steps For His Asylm ",
-      "score": 73,
-      "pattern": "",
-      "priority_type": "New Movie / Series Announcements",
-      "source": "Deadline",
-      "seen_at": "2026-10-18T16:35:53.141908+06:00"
-    },
-    {
-      "title": "‘La Tierra Del Valor’ Trailer: Nezza Bravely Sings Spanish-Language Version Of National Anthem In Film From Cristina Costantini, EP Eva Long",
-      "score": 73,
-      "pattern": "",
-      "priority_type": "Trailer Releases",
-      "source": "Deadline",
-      "seen_at": "2026-10-18T16:35:53.142039+06:00"
-    },
-    {
-      "title": "British True Crime Producer Association Welcomes Non-UK Producers For First Time Including America’s Gennie Studios, My Entertainment and Te",
-      "score": 34,
-      "pattern": "",
-      "priority_type": "Production / Filming Updates",
-      "source": "Deadline",
-      "seen_at": "2026-10-18T16:35:53.142168+06:00"
-    },
-    {
-      "title": "Hudson Williams, Zach Galifianakis & Jay Baruchel Set For ‘The Assembly’ Season 2 At Canada’s CBC",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "Season Renewals / New Season Updates",
-      "source": "Deadline",
-      "seen_at": "2026-10-18T16:35:53.142296+06:00"
-    },
-    {
-      "title": "‘Grey’s Anatomy’ EP Meg Marinis On Season 23 Premiere’s Time Jump, Pregnancy Surprise, James Wolk’s Arrival & Doctor’s Exit; Texas Spinoff S",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "Season Renewals / New Season Updates",
-      "source": "Deadline",
-      "seen_at": "2026-10-18T16:35:53.142427+06:00"
-    },
-    {
-      "title": "‘Grey’s Anatomy’ Boss Unpacks Season 23 Premiere and Teases Dolly Parton Episode, Texas Spinoff and Whether This Really Could Be the Final S",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "Season Renewals / New Season Updates",
-      "source": "Variety",
-      "seen_at": "2026-10-18T16:35:53.142562+06:00"
-    },
-    {
-      "title": "Jenna Ortega Says She Hopes ‘Klara and the Sun’ Encourages People to ‘Put Down the Computers and Phones’ as Dystopian Film World Premieres i",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "Theatrical Releases / Re-releases",
-      "source": "Variety",
-      "seen_at": "2026-10-18T16:35:53.142703+06:00"
-    },
-    {
-      "title": "‘The Mandalorian and Grogu’ VFX Veteran Hal Hickel on Rotta’s Redesign, Phil Tippett and Jon Favreau’s ‘Less James Bond, More Jackass’ Appro",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "",
-      "source": "Variety",
-      "seen_at": "2026-10-18T16:35:53.142843+06:00"
-    },
-    {
-      "title": "Kal Penn, Michael Chiklis, David Koechner, Nat Faxon, Wendi McLendon-Covey & 7 More Join Gregg Araki’s ‘The Decline of F*cking Western Civil",
-      "score": 66,
-      "pattern": "",
-      "priority_type": "Cast / Character Announcements",
-      "source": "Deadline",
-      "seen_at": "2026-10-18T16:35:53.142985+06:00"
-    },
-    {
-      "title": "Martin Scorsese Recalls His Last Conversation With Federico Fellini in New Doc Premiering at Rome Film Festival: ‘Thank You, I’ll See You So",
-      "score": 78,
-      "pattern": "",
-      "priority_type": "New Movie / Series Announcements",
-      "source": "Variety",
-      "seen_at": "2026-10-18T16:35:53.143126+06:00"
-    },
-    {
-      "title": "Joel and Ethan Coen Reflect on Their Careers, Streaming and the Future of Movie Theaters at Lumière Festival: Watching Films on iPhones Is ‘",
-      "score": 70,
-      "pattern": "",
-      "priority_type": "Production / Filming Updates",
-      "source": "Variety",
-      "seen_at": "2026-10-18T16:35:53.143277+06:00"
-    },
-    {
-      "title": "The Impossible ‘Whalefall’: Director Brian Duffield Wanted a Challenge, So He Discovered a Way to Crush Austin Abrams in a Whale Stomach Tha",
-      "score": 61,
-      "pattern": "",
-      "priority_type": "Production / Filming Updates",
-      "source": "Variety",
-      "seen_at": "2026-10-18T16:35:53.143421+06:00"
-    },
-    {
-      "title": "Elizabeth Holmes’ Partner Billy Evans Admits ‘She Looks Insane’ in ‘You Can See Everything’ Trailer but Defends Making the Doc: ‘Make Up You",
-      "score": 48,
-      "pattern": "",
-      "priority_type": "Trailer Releases",
-      "source": "Variety",
-      "seen_at": "2026-10-18T16:35:53.143590+06:00"
-    },
-    {
-      "title": "Joel Coen Talks Studio Consolidation –  ‘Competition Is What Produces Opportunities for Different Kinds of Movies’ – and Teases Reunion Film",
-      "score": 63,
-      "pattern": "",
-      "priority_type": "New Movie / Series Announcements",
-      "source": "Variety",
-      "seen_at": "2026-10-18T16:35:53.143782+06:00"
-    },
-    {
-      "title": "Paul Bettany Says He and Johnny Depp ‘Hadn’t Spoken’ in Years When Their Texts Were Read During Libel Trial: ‘I Was Being Painted As This Cl",
-      "score": 12,
-      "pattern": "celebrity_lifestyle",
-      "priority_type": "Cast / Character Announcements",
-      "source": "Variety",
-      "seen_at": "2026-10-18T16:35:53.143905+06:00"
-    },
-    {
-      "title": "‘Dancing With the Stars’ Pulls Val Chmerkovskiy After ‘Inappropriate’ Carrie Ann Inaba Slap Joke: ‘The Well-Being’ of Our Staff Is ‘Non-Nego",
-      "score": 12,
-      "pattern": "",
-      "priority_type": "Production / Filming Updates",
-      "source": "Variety",
-      "seen_at": "2026-10-18T16:35:53.144045+06:00"
-    },
-    {
-      "title": "KJ Apa on Becoming Jimmy Stewart, Speculation That He Is the Singer Mr. Fantasy and Opening Up About His Addictions and Recovery: ‘This Is A",
-      "score": 12,
-      "pattern": "",
-      "priority_type": "Cast / Character Announcements",
-      "source": "Variety",
-      "seen_at": "2026-10-18T16:35:53.144194+06:00"
-    },
-    {
-      "title": "Here’s Where to Buy New York Knicks Home Opener Tickets at Madison Square Garden Online",
-      "score": 36,
-      "pattern": "",
-      "priority_type": "Release Date Confirmations",
-      "source": "Variety",
-      "seen_at": "2026-10-18T16:36:21.617738+06:00"
-    },
-    {
-      "title": "Joel Coen Talks Studio Consolidation –  ‘Competition Is What Produces Opportunities for Different Kinds of Movies’ – and Teases Reunion Film",
-      "score": 100,
-      "pattern": "",
-      "priority_type": "New Movie / Series Announcements",
-      "source": "Variety",
-      "seen_at": "2026-10-18T16:36:21.617885+06:00"
-    },
-    {
-      "title": "Law Roach Wants to Try Acting: ‘If I’m Terrible at It, at Least I Tried’",
-      "score": 41,
-      "pattern": "",
-      "priority_type": "Season Renewals / New Season Updates",
-      "source": "Variety",
-      "seen_at": "2026-10-18T16:36:21.618010+06:00"
-    },
-    {
-      "title": "Mahershala Ali Cries Recalling ‘Moonlight’ Scene, Keeps Quiet on ‘Spider-Verse’ at London Talk: ‘I’ve Got to Be Careful’",
-      "score": 100,
-      "pattern": "",
-      "priority_type": "First Look / First Glimpse / Posters",
-      "source": "Variety",
-      "seen_at": "2026-10-18T16:36:21.618146+06:00"
-    },
-    {
-      "title": "Michael Forest Dies: Actor In Roger Corman B-Movies, ‘Star Trek’s Apollo Was 97",
-      "score": 100,
-      "pattern": "",
-      "priority_type": "First Look / First Glimpse / Posters",
-      "source": "Deadline",
-      "seen_at": "2026-10-18T16:36:21.618276+06:00"
-    },
-    {
-      "title": "J.K. Rowling’s Agent Slams Trans Rights Protest at ‘Harry Potter and the Cursed Child’ in London: It Put ‘Others at Risk’",
-      "score": 100,
-      "pattern": "",
-      "priority_type": "First Look / First Glimpse / Posters",
-      "source": "Variety",
-      "seen_at": "2026-10-18T16:36:21.618426+06:00"
-    },
-    {
-      "title": "James Austin Johnson’s Trump Stops by ‘SNL U.K.’ for Meeting With Burnham and Zelenskyy: ‘You Don’t Have One Guy Who Can Play Trump?’",
-      "score": 86,
-      "pattern": "",
-      "priority_type": "First Look / First Glimpse / Posters",
-      "source": "Variety",
-      "seen_at": "2026-10-18T16:36:21.618583+06:00"
-    },
-    {
-      "title": "Roger Deakins on Instinct, Experience and Not Knowing What Is a Cinematographer: ‘I Still Can’t Answer That’",
-      "score": 77,
-      "pattern": "celebrity_lifestyle",
-      "priority_type": "First Look / First Glimpse / Posters",
-      "source": "Variety",
-      "seen_at": "2026-10-18T16:36:21.618692+06:00"
-    },
-    {
-      "title": "‘SNL U.K.’ Weekend Update Takes Jab at Shane Gillis: ‘You Stupid F—ing C—’",
-      "score": 70,
-      "pattern": "",
-      "priority_type": "First Look / First Glimpse / Posters",
-      "source": "Variety",
-      "seen_at": "2026-10-18T16:36:21.618832+06:00"
-    },
-    {
-      "title": "James McAvoy Says ‘Split’ Is The Only Film That ‘Really Consistently Pays Me’",
-      "score": 59,
-      "pattern": "",
-      "priority_type": "First Look / First Glimpse / Posters",
-      "source": "Variety",
-      "seen_at": "2026-10-18T16:36:21.618961+06:00"
-    },
-    {
-      "title": "Jaime Pressly Defends ‘Mom’ Co-Stars As “Beautifully Flawed” After Chuck Lorre Memoir: “Incredible Cast Of Women”",
-      "score": 54,
-      "pattern": "",
-      "priority_type": "First Look / First Glimpse / Posters",
-      "source": "Deadline",
-      "seen_at": "2026-10-18T16:36:21.619098+06:00"
-    },
-    {
-      "title": "Gene Schwam, Veteran Hollywood Publicist to Elvis Presley, Julie Andrews and More, Dies at 96",
-      "score": 44,
-      "pattern": "",
-      "priority_type": "First Look / First Glimpse / Posters",
-      "source": "Variety",
-      "seen_at": "2026-10-18T16:36:21.619249+06:00"
-    },
-    {
-      "title": "Paul Bettany Says He and Johnny Depp ‘Hadn’t Spoken’ in Years When Their Texts Were Read During Libel Trial: ‘I Was Being Painted As This Cl",
-      "score": 33,
-      "pattern": "",
-      "priority_type": "First Look / First Glimpse / Posters",
-      "source": "Variety",
-      "seen_at": "2026-10-18T16:36:21.619398+06:00"
-    },
-    {
-      "title": "Paul McCartney Was Concerned Paul Mescal Is “Markedly Shorter” Than ‘The Beatles’ Co-Stars",
-      "score": 67,
-      "pattern": "",
-      "priority_type": "Cast / Character Announcements",
-      "source": "Deadline",
-      "seen_at": "2026-10-18T16:36:21.619527+06:00"
-    },
-    {
-      "title": "‘Street Fighter’s Orville Peck Tried To “Orchestrate” Kylie Minogue Cameo: “Guys, I Can Text Her”",
-      "score": 64,
-      "pattern": "",
-      "priority_type": "Cast / Character Announcements",
-      "source": "Deadline",
-      "seen_at": "2026-10-18T16:36:21.619660+06:00"
-    },
-    {
-      "title": "KJ Apa on Becoming Jimmy Stewart, Speculation That He Is the Singer Mr. Fantasy and Opening Up About His Addictions and Recovery: ‘This Is A",
-      "score": 47,
-      "pattern": "",
-      "priority_type": "Cast / Character Announcements",
-      "source": "Variety",
-      "seen_at": "2026-10-18T16:36:21.619818+06:00"
-    },
-    {
-      "title": "Controversial ‘Downstate’ Again Delays First Broadway Preview Due To Illness",
-      "score": 99,
-      "pattern": "",
-      "priority_type": "Theatrical Releases / Re-releases",
-      "source": "Deadline",
-      "seen_at": "2026-10-18T16:36:21.619933+06:00"
-    },
-    {
-      "title": "‘The Angry Birds Movie 3’ Unpacked by VFX Supervisor, Including Red’s Redesign and Character-Effects Automation: ’He’s Similar by Choice’",
-      "score": 100,
-      "pattern": "",
-      "priority_type": "Production / Filming Updates",
-      "source": "Variety",
-      "seen_at": "2026-10-18T16:36:21.620081+06:00"
-    },
-    {
-      "title": "Pathé Unveils Sofia Coppola’s ‘Marie Antoinette’ 4K Restoration as Sophie and Jérôme Seydoux Are Feted in Lyon",
-      "score": 98,
-      "pattern": "",
-      "priority_type": "Production / Filming Updates",
-      "source": "Variety",
-      "seen_at": "2026-10-18T16:36:21.620230+06:00"
-    },
-    {
-      "title": "Ryan Gosling’s Zero-G Stunts on ‘Project Hail Mary’ Broken Down by the Space Epic’s VFX Supervisors",
-      "score": 84,
-      "pattern": "",
-      "priority_type": "Production / Filming Updates",
-      "source": "Variety",
-      "seen_at": "2026-10-18T16:36:21.620380+06:00"
-    },
-    {
-      "title": "‘Dancing With the Stars’ Pulls Val Chmerkovskiy After ‘Inappropriate’ Carrie Ann Inaba Slap Joke: ‘The Well-Being’ of Our Staff Is ‘Non-Nego",
-      "score": 53,
-      "pattern": "",
-      "priority_type": "Production / Filming Updates",
-      "source": "Variety",
-      "seen_at": "2026-10-18T16:36:21.620537+06:00"
-    },
-    {
-      "title": "Box Office: ‘Street Fighter’ Scores $13 Million Debut as ‘You Can See Everything’ Opens at No. 2 With $5.5 Million on Friday",
-      "score": 100,
-      "pattern": "",
-      "priority_type": "Box Office Updates",
-      "source": "Variety",
-      "seen_at": "2026-10-18T16:36:21.620689+06:00"
-    },
-    {
-      "title": "Ron Perlman Lines Up Hemingway Movie & Updates On ‘Sons Of Anarchy’ Spinoff ‘Legends’, That Third ‘Hellboy’ Film & Next Steps For His Asylm ",
-      "score": 73,
-      "pattern": "",
-      "priority_type": "New Movie / Series Announcements",
-      "source": "Deadline",
-      "seen_at": "2026-10-18T20:20:58.505829+06:00"
-    },
-    {
-      "title": "‘La Tierra Del Valor’ Trailer: Nezza Bravely Sings Spanish-Language Version Of National Anthem In Film From Cristina Costantini, EP Eva Long",
-      "score": 73,
-      "pattern": "",
-      "priority_type": "Trailer Releases",
-      "source": "Deadline",
-      "seen_at": "2026-10-18T20:20:58.505951+06:00"
-    },
-    {
-      "title": "British True Crime Producer Association Welcomes Non-UK Producers For First Time Including America’s Gennie Studios, My Entertainment and Te",
-      "score": 34,
-      "pattern": "",
-      "priority_type": "Production / Filming Updates",
-      "source": "Deadline",
-      "seen_at": "2026-10-18T20:20:58.506071+06:00"
-    },
-    {
-      "title": "Comcast Gave $7.5 Million To Help Fund Donald Trump’s White House Ballroom, New Report Reveals",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "Box Office Updates",
-      "source": "Deadline",
-      "seen_at": "2026-10-18T20:20:58.506171+06:00"
-    },
-    {
-      "title": "‘Grey’s Anatomy’ EP Meg Marinis On Season 23 Premiere’s Time Jump, Pregnancy Surprise, James Wolk’s Arrival & Doctor’s Exit; Texas Spinoff S",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "Season Renewals / New Season Updates",
-      "source": "Deadline",
-      "seen_at": "2026-10-18T20:20:58.506282+06:00"
-    },
-    {
-      "title": "‘Grey’s Anatomy’ Boss Unpacks Season 23 Premiere and Teases Dolly Parton Episode, Texas Spinoff and Whether This Really Could Be the Final S",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "Season Renewals / New Season Updates",
-      "source": "Variety",
-      "seen_at": "2026-10-18T20:20:58.506394+06:00"
-    },
-    {
-      "title": "Jenna Ortega Says She Hopes ‘Klara and the Sun’ Encourages People to ‘Put Down the Computers and Phones’ as Dystopian Film World Premieres i",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "Theatrical Releases / Re-releases",
-      "source": "Variety",
-      "seen_at": "2026-10-18T20:20:58.506508+06:00"
-    },
-    {
-      "title": "‘The Mandalorian and Grogu’ VFX Veteran Hal Hickel on Rotta’s Redesign, Phil Tippett and Jon Favreau’s ‘Less James Bond, More Jackass’ Appro",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "",
-      "source": "Variety",
-      "seen_at": "2026-10-18T20:20:58.506618+06:00"
-    },
-    {
-      "title": "Kal Penn, Michael Chiklis, David Koechner, Nat Faxon, Wendi McLendon-Covey & 7 More Join Gregg Araki’s ‘The Decline of F*cking Western Civil",
-      "score": 66,
-      "pattern": "",
-      "priority_type": "Cast / Character Announcements",
-      "source": "Deadline",
-      "seen_at": "2026-10-18T20:20:58.506730+06:00"
-    },
-    {
-      "title": "Martin Scorsese Recalls His Last Conversation With Federico Fellini in New Doc Premiering at Rome Film Festival: ‘Thank You, I’ll See You So",
-      "score": 78,
-      "pattern": "",
-      "priority_type": "New Movie / Series Announcements",
-      "source": "Variety",
-      "seen_at": "2026-10-18T20:20:58.506841+06:00"
-    },
-    {
-      "title": "Joel and Ethan Coen Reflect on Their Careers, Streaming and the Future of Movie Theaters at Lumière Festival: Watching Films on iPhones Is ‘",
-      "score": 70,
-      "pattern": "",
-      "priority_type": "Production / Filming Updates",
-      "source": "Variety",
-      "seen_at": "2026-10-18T20:20:58.506951+06:00"
-    },
-    {
-      "title": "The Impossible ‘Whalefall’: Director Brian Duffield Wanted a Challenge, So He Discovered a Way to Crush Austin Abrams in a Whale Stomach Tha",
-      "score": 61,
-      "pattern": "",
-      "priority_type": "Production / Filming Updates",
-      "source": "Variety",
-      "seen_at": "2026-10-18T20:20:58.507071+06:00"
-    },
-    {
-      "title": "Elizabeth Holmes’ Partner Billy Evans Admits ‘She Looks Insane’ in ‘You Can See Everything’ Trailer but Defends Making the Doc: ‘Make Up You",
-      "score": 48,
-      "pattern": "",
-      "priority_type": "Trailer Releases",
-      "source": "Variety",
-      "seen_at": "2026-10-18T20:20:58.507180+06:00"
-    },
-    {
-      "title": "Paul Bettany Says He and Johnny Depp ‘Hadn’t Spoken’ in Years When Their Texts Were Read During Libel Trial: ‘I Was Being Painted As This Cl",
-      "score": 33,
-      "pattern": "celebrity_lifestyle",
-      "priority_type": "First Look / First Glimpse / Posters",
-      "source": "Variety",
-      "seen_at": "2026-10-18T20:20:58.507272+06:00"
-    },
-    {
-      "title": "‘Dancing With the Stars’ Pulls Val Chmerkovskiy After ‘Inappropriate’ Carrie Ann Inaba Slap Joke: ‘The Well-Being’ of Our Staff Is ‘Non-Nego",
-      "score": 53,
-      "pattern": "",
-      "priority_type": "Production / Filming Updates",
-      "source": "Variety",
-      "seen_at": "2026-10-18T20:20:58.507381+06:00"
-    },
-    {
-      "title": "KJ Apa on Becoming Jimmy Stewart, Speculation That He Is the Singer Mr. Fantasy and Opening Up About His Addictions and Recovery: ‘This Is A",
-      "score": 47,
-      "pattern": "",
-      "priority_type": "Cast / Character Announcements",
-      "source": "Variety",
-      "seen_at": "2026-10-18T20:20:58.507498+06:00"
-    },
-    {
-      "title": "London Film Festival: Sergei Loznitsa’s ‘Imperium’ & Sompot Chidgasornpongse’s ‘9 Temples To Heaven’ Among Big Winners — Full List",
-      "score": 100,
-      "pattern": "",
-      "priority_type": "New Movie / Series Announcements",
-      "source": "Deadline",
-      "seen_at": "2026-10-18T20:21:25.259866+06:00"
-    },
-    {
-      "title": "Sergei Loznitsa’s ‘Imperium’ Wins Best Film at BFI London Film Festival",
-      "score": 100,
-      "pattern": "",
-      "priority_type": "New Movie / Series Announcements",
-      "source": "Variety",
-      "seen_at": "2026-10-18T20:21:25.259969+06:00"
-    },
-    {
-      "title": "El Gouna Unveils Third Cohort Of CineGouna Emerge Program’s Rising Stars",
-      "score": 100,
-      "pattern": "",
-      "priority_type": "New Movie / Series Announcements",
-      "source": "Deadline",
-      "seen_at": "2026-10-18T20:21:25.260087+06:00"
-    },
-    {
-      "title": "‘SNL U.K.’ Weekend Update Takes Jab at Shane Gillis: ‘You Stupid F—ing C—’",
-      "score": 100,
-      "pattern": "",
-      "priority_type": "Cast / Character Announcements",
-      "source": "Variety",
-      "seen_at": "2026-10-18T20:21:25.260200+06:00"
-    },
-    {
-      "title": "Roger Deakins on Instinct, Experience and Not Knowing What Is a Cinematographer: ‘I Still Can’t Answer That’",
-      "score": 100,
-      "pattern": "celebrity_lifestyle",
-      "priority_type": "Cast / Character Announcements",
-      "source": "Variety",
-      "seen_at": "2026-10-18T20:21:25.260287+06:00"
-    },
-    {
-      "title": "Jaime Pressly Defends ‘Mom’ Co-Stars As “Beautifully Flawed” After Chuck Lorre Memoir: “Incredible Cast Of Women”",
-      "score": 100,
-      "pattern": "",
-      "priority_type": "Cast / Character Announcements",
-      "source": "Deadline",
-      "seen_at": "2026-10-18T20:21:25.260400+06:00"
-    },
-    {
-      "title": "James McAvoy Says ‘Split’ Is The Only Film That ‘Really Consistently Pays Me’",
-      "score": 100,
-      "pattern": "",
-      "priority_type": "Cast / Character Announcements",
-      "source": "Variety",
-      "seen_at": "2026-10-18T20:21:25.260505+06:00"
-    },
     {
       "title": "Paul McCartney Was Concerned Paul Mescal Is “Markedly Shorter” Than ‘The Beatles’ Co-Stars",
       "score": 100,
@@ -45855,18 +45269,626 @@
       "priority_type": "Box Office Updates",
       "source": "Deadline",
       "seen_at": "2026-10-20T22:33:12.269330+06:00"
+    },
+    {
+      "title": "Anthony Scaramucci Reacts To Katie Zacharia’s White House Tenure Being Shorter Than His: “Records Are Made To Be Broken”",
+      "score": 35,
+      "pattern": "",
+      "priority_type": "First Look / First Glimpse / Posters",
+      "source": "Deadline",
+      "seen_at": "2026-10-21T02:19:24.145675+06:00"
+    },
+    {
+      "title": "‘9-1-1: Nashville’ Pays Tribute To Chad Lowe’s Daughter Fiona With Title Card In Season 2 Premiere",
+      "score": 62,
+      "pattern": "",
+      "priority_type": "First Look / First Glimpse / Posters",
+      "source": "Deadline",
+      "seen_at": "2026-10-21T02:19:24.145755+06:00"
+    },
+    {
+      "title": "KJ Apa Asked ‘Riverdale’ Showrunner Roberto Aguirre-Sacasa For ‘Afterlife with Archie’ Cameo: “I Don’t Know Who I’d Play”",
+      "score": 70,
+      "pattern": "",
+      "priority_type": "Cast / Character Announcements",
+      "source": "Deadline",
+      "seen_at": "2026-10-21T02:19:24.145833+06:00"
+    },
+    {
+      "title": "How ‘Whalefall’s Director & Author Wove The Closure Of A Father-Son Relationship Into A Survival Tale",
+      "score": 55,
+      "pattern": "",
+      "priority_type": "First Look / First Glimpse / Posters",
+      "source": "Deadline",
+      "seen_at": "2026-10-21T02:19:24.145898+06:00"
+    },
+    {
+      "title": "‘La Bola Negra’ Directing Duo Los Javis Reveal How Spanish Sensation Became “The Journey Of Our Lives”",
+      "score": 58,
+      "pattern": "",
+      "priority_type": "First Look / First Glimpse / Posters",
+      "source": "Deadline",
+      "seen_at": "2026-10-21T02:19:24.145965+06:00"
+    },
+    {
+      "title": "‘Crystal Lake’s Gwendolyn Sundstrom On Grace’s Friendship With Jason, “Learning A Lot” From Linda Cardellini & That Killer Twist",
+      "score": 50,
+      "pattern": "",
+      "priority_type": "Cast / Character Announcements",
+      "source": "Deadline",
+      "seen_at": "2026-10-21T02:19:24.146039+06:00"
+    },
+    {
+      "title": "The Impossible ‘Whalefall’: Director Brian Duffield Wanted a Challenge, So He Discovered a Way to Crush Austin Abrams in a Whale Stomach Tha",
+      "score": 61,
+      "pattern": "",
+      "priority_type": "Production / Filming Updates",
+      "source": "Variety",
+      "seen_at": "2026-10-21T02:19:24.146118+06:00"
+    },
+    {
+      "title": "‘Street Fighter’ Cast Guide: All the WWE Stars, UFC Champs and Celebs Playing Video Game Fighters in the Live-Action Movie",
+      "score": 78,
+      "pattern": "sports",
+      "priority_type": "Cast / Character Announcements",
+      "source": "Variety",
+      "seen_at": "2026-10-21T02:19:24.146140+06:00"
+    },
+    {
+      "title": "Elizabeth Holmes’ Partner Billy Evans Admits ‘She Looks Insane’ in ‘You Can See Everything’ Trailer but Defends Making the Doc: ‘Make Up You",
+      "score": 48,
+      "pattern": "",
+      "priority_type": "Trailer Releases",
+      "source": "Variety",
+      "seen_at": "2026-10-21T02:19:24.146219+06:00"
+    },
+    {
+      "title": "Timothy Busfield Indictment on Child Sex Abuse Charges Thrown Out by Judge",
+      "score": 28,
+      "pattern": "",
+      "priority_type": "First Look / First Glimpse / Posters",
+      "source": "Variety",
+      "seen_at": "2026-10-21T02:19:24.146284+06:00"
+    },
+    {
+      "title": "Inside ‘The New Stanford Prison Experiment,’ Netflix’s Controversial Reality Series: ‘People Are Going to Have Very Strong Feelings’ (EXCLUS",
+      "score": 30,
+      "pattern": "",
+      "priority_type": "Upcoming OTT Releases",
+      "source": "Variety",
+      "seen_at": "2026-10-21T02:19:24.146360+06:00"
+    },
+    {
+      "title": "Jason Sudeikis Hopes to Continue ‘Ted Lasso’ for Season 5, Says Coverage of Split From Olivia Wilde Missed a ‘Million Little Things’: ‘It’s ",
+      "score": 34,
+      "pattern": "",
+      "priority_type": "Season Renewals / New Season Updates",
+      "source": "Variety",
+      "seen_at": "2026-10-21T02:19:24.146441+06:00"
+    },
+    {
+      "title": "Julianne Moore Says ‘The Debut’ Is ‘One of the Best Scripts I’ve Ever Read’ as Jesse Eisenberg’s Musical Comedy Closes London Film Festival ",
+      "score": 20,
+      "pattern": "",
+      "priority_type": "First Look / First Glimpse / Posters",
+      "source": "Variety",
+      "seen_at": "2026-10-21T02:19:24.146522+06:00"
+    },
+    {
+      "title": "‘The Debut,’ ‘Ink’ Among Evolution Mallorca Highlights as Festival Celebrates 15th Edition: ‘We Want the Island to Be a Thriving Film Destin",
+      "score": 50,
+      "pattern": "",
+      "priority_type": "Production / Filming Updates",
+      "source": "Variety",
+      "seen_at": "2026-10-21T02:19:24.146605+06:00"
+    },
+    {
+      "title": "‘Big Boys Don’t Cry’ Director Muhammad Mustapha Talks Masculinity Ahead of El Gouna Premiere: ‘The Only Emotion Men Are Allowed to Express I",
+      "score": 64,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Variety",
+      "seen_at": "2026-10-21T02:19:24.146686+06:00"
+    },
+    {
+      "title": "‘MobLand’ Actor Mandeep Dhillon to Star in Self-Written Short ‘The Things I Want to Do to You’ Alongside Golda Rosheuvel and Scott Karim (EX",
+      "score": 46,
+      "pattern": "",
+      "priority_type": "Cast / Character Announcements",
+      "source": "Variety",
+      "seen_at": "2026-10-21T02:19:24.146766+06:00"
+    },
+    {
+      "title": "‘Deadstream’ Directors Joseph and Vanessa Winter to Helm Horror Movie ‘Future Me’ as Longevity Pictures, Spooky Pictures and Image Nation St",
+      "score": 54,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Variety",
+      "seen_at": "2026-10-21T02:19:24.146850+06:00"
+    },
+    {
+      "title": "Streaming Guide JustWatch Launches Its Own Service With Titles From 30 Global Content Suppliers",
+      "score": 80,
+      "pattern": "",
+      "priority_type": "OTT / Streaming Availability",
+      "source": "Deadline",
+      "seen_at": "2026-10-21T02:19:53.944985+06:00"
+    },
+    {
+      "title": "Snap Taps Robert Downey Jr. To Boost New SPECS AR Glasses",
+      "score": 80,
+      "pattern": "sports",
+      "priority_type": "OTT / Streaming Availability",
+      "source": "Deadline",
+      "seen_at": "2026-10-21T02:19:53.945021+06:00"
+    },
+    {
+      "title": "Netflix Stock Falls Despite Solid Q3 Results On Lowered Q4 Revenue And Advertising Guidance",
+      "score": 76,
+      "pattern": "",
+      "priority_type": "OTT / Streaming Availability",
+      "source": "Deadline",
+      "seen_at": "2026-10-21T02:19:53.945091+06:00"
+    },
+    {
+      "title": "Netflix Q3 Revenue Meets Wall Street Estimates, Q4 Earnings Will Be Crimped by Costs Associated With Mass Layoffs",
+      "score": 70,
+      "pattern": "",
+      "priority_type": "OTT / Streaming Availability",
+      "source": "Variety",
+      "seen_at": "2026-10-21T02:19:53.945168+06:00"
+    },
+    {
+      "title": "‘Unsolved Mysteries’ Returns As Video Podcast",
+      "score": 61,
+      "pattern": "",
+      "priority_type": "OTT / Streaming Availability",
+      "source": "Deadline",
+      "seen_at": "2026-10-21T02:19:53.945227+06:00"
+    },
+    {
+      "title": "Robert Downey Jr. Signs On as Pitchman for Snap’s $2,200 Specs AR Glasses",
+      "score": 51,
+      "pattern": "",
+      "priority_type": "OTT / Streaming Availability",
+      "source": "Variety",
+      "seen_at": "2026-10-21T02:19:53.945299+06:00"
+    },
+    {
+      "title": "Everything We Know About ‘The Gilded Age’ Season 4 So Far",
+      "score": 45,
+      "pattern": "",
+      "priority_type": "Upcoming OTT Releases",
+      "source": "Deadline",
+      "seen_at": "2026-10-21T02:19:53.945368+06:00"
+    },
+    {
+      "title": "‘Mayor of Kingstown’ Season 5 Drops Release Date and First Look Photos at Jeremy Renner’s Final Episodes",
+      "score": 78,
+      "pattern": "",
+      "priority_type": "Release Date Confirmations",
+      "source": "Variety",
+      "seen_at": "2026-10-21T02:19:53.945445+06:00"
+    },
+    {
+      "title": "Rita Wilson Teases Return In Lena Dunham’s ‘Girls’ Revival On HBO: “I Would Do Anything For Her”",
+      "score": 0,
+      "pattern": "",
+      "priority_type": "Release Date Confirmations",
+      "source": "Deadline",
+      "seen_at": "2026-10-21T02:19:53.945518+06:00"
+    },
+    {
+      "title": "EverWonder Studio Strikes Overall Deals With Zeberiah Newman & Vanessa Golembewski",
+      "score": 77,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Deadline",
+      "seen_at": "2026-10-21T02:19:53.945593+06:00"
+    },
+    {
+      "title": "‘Goodbye Julia’ Director on Reaching for ‘Wider Audiences’ in Sudanese Period Drama ‘About Love & September Laws’ (EXCLUSIVE)",
+      "score": 70,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Variety",
+      "seen_at": "2026-10-21T02:19:53.945671+06:00"
+    },
+    {
+      "title": "‘Deadstream’ Directors Joseph and Vanessa Winter to Helm Horror Movie ‘Future Me’ as Longevity Pictures, Spooky Pictures and Image Nation St",
+      "score": 58,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Variety",
+      "seen_at": "2026-10-21T02:19:53.945757+06:00"
+    },
+    {
+      "title": "Andy Cohen Celebrates 20 Years of ‘Real Housewives’ With New Book Featuring 600 Never-Before-Seen Photos and Behind-the-Scenes Stories",
+      "score": 51,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Variety",
+      "seen_at": "2026-10-21T02:19:53.945839+06:00"
+    },
+    {
+      "title": "Human-AI Indian Music Label Raagverse Launches With ‘Janaa Hai Toh Jao’ (EXCLUSIVE)",
+      "score": 0,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Variety",
+      "seen_at": "2026-10-21T02:19:53.945909+06:00"
+    },
+    {
+      "title": "‘American Horror Story’ Renewed For Season 14 At FX",
+      "score": 68,
+      "pattern": "",
+      "priority_type": "Season Renewals / New Season Updates",
+      "source": "Deadline",
+      "seen_at": "2026-10-21T02:19:53.945974+06:00"
+    },
+    {
+      "title": "‘This City Is Ours’ Renewed For Season 3 At BBC",
+      "score": 0,
+      "pattern": "",
+      "priority_type": "Season Renewals / New Season Updates",
+      "source": "Deadline",
+      "seen_at": "2026-10-21T02:19:53.946038+06:00"
+    },
+    {
+      "title": "Jon Stewart Jokes Skydance Has ‘Pulled Our Renewal’ Before Slamming JD Vance, Trump and Emmanuel Macron",
+      "score": 0,
+      "pattern": "",
+      "priority_type": "Season Renewals / New Season Updates",
+      "source": "Variety",
+      "seen_at": "2026-10-21T02:19:53.946110+06:00"
+    },
+    {
+      "title": "British Council’s Film Lab Africa Previews ‘TABOO’ Anthology Series At London Screening",
+      "score": 74,
+      "pattern": "",
+      "priority_type": "First Look / First Glimpse / Posters",
+      "source": "Deadline",
+      "seen_at": "2026-10-21T02:19:53.946180+06:00"
+    },
+    {
+      "title": "‘Big Boys Don’t Cry’ Director Muhammad Mustapha Talks Masculinity Ahead of El Gouna Premiere: ‘The Only Emotion Men Are Allowed to Express I",
+      "score": 68,
+      "pattern": "",
+      "priority_type": "First Look / First Glimpse / Posters",
+      "source": "Variety",
+      "seen_at": "2026-10-21T02:19:53.946265+06:00"
+    },
+    {
+      "title": "Chris Rock, Quinta Brunson, Jaafar Jackson, Chiwetel Ejiofor Among Honorees For 9th Critics Choice Celebration Of Black Cinema & TV",
+      "score": 60,
+      "pattern": "",
+      "priority_type": "First Look / First Glimpse / Posters",
+      "source": "Deadline",
+      "seen_at": "2026-10-21T02:19:53.946342+06:00"
+    },
+    {
+      "title": "‘The Debut,’ ‘Ink’ Among Evolution Mallorca Highlights as Festival Celebrates 15th Edition: ‘We Want the Island to Be a Thriving Film Destin",
+      "score": 60,
+      "pattern": "",
+      "priority_type": "First Look / First Glimpse / Posters",
+      "source": "Variety",
+      "seen_at": "2026-10-21T02:19:53.946421+06:00"
+    },
+    {
+      "title": "Dwayne Johnson Transforms Into a 70-Year-Old Man in Shocking ‘Lizard Music’ Set Photos",
+      "score": 54,
+      "pattern": "",
+      "priority_type": "First Look / First Glimpse / Posters",
+      "source": "Variety",
+      "seen_at": "2026-10-21T02:19:53.946493+06:00"
+    },
+    {
+      "title": "Daniel Kaluuya to Star in ‘Purpose’ Playwright Branden Jacobs-Jenkins’ Next Show ‘Grass’",
+      "score": 48,
+      "pattern": "",
+      "priority_type": "First Look / First Glimpse / Posters",
+      "source": "Variety",
+      "seen_at": "2026-10-21T02:19:53.946570+06:00"
+    },
+    {
+      "title": "‘Sinners’ Music Exhibition Opens at California African American Museum",
+      "score": 31,
+      "pattern": "",
+      "priority_type": "First Look / First Glimpse / Posters",
+      "source": "Variety",
+      "seen_at": "2026-10-21T02:19:53.946638+06:00"
+    },
+    {
+      "title": "Judi Dench Says Panned ‘Cats’ Film Was a ‘Waste’ of Andrew Lloyd Webber’s ‘Goodwill and Talent’: ‘Oh God, I Can’t Bear It’",
+      "score": 0,
+      "pattern": "",
+      "priority_type": "First Look / First Glimpse / Posters",
+      "source": "Variety",
+      "seen_at": "2026-10-21T02:19:53.946720+06:00"
+    },
+    {
+      "title": "Why ‘Office Space’ Actor Richard Riehle Was the Quintessential Actor’s Actor (Guest Column)",
+      "score": 0,
+      "pattern": "",
+      "priority_type": "First Look / First Glimpse / Posters",
+      "source": "Variety",
+      "seen_at": "2026-10-21T02:19:53.946788+06:00"
+    },
+    {
+      "title": "‘Friday Night Lights’ Stars Hit The Field To Aid James Talarico’s Smashmouth Attempt To Score A Texas Senate Race Win",
+      "score": 0,
+      "pattern": "sports",
+      "priority_type": "First Look / First Glimpse / Posters",
+      "source": "Deadline",
+      "seen_at": "2026-10-21T02:19:53.946827+06:00"
+    },
+    {
+      "title": "Keanu Reeves in Talks to Star in James Wan’s ‘The Gangster, The Cop, The Devil’ at Paramount",
+      "score": 64,
+      "pattern": "",
+      "priority_type": "Cast / Character Announcements",
+      "source": "Variety",
+      "seen_at": "2026-10-21T02:19:53.946901+06:00"
+    },
+    {
+      "title": "Shaquille O’Neal’s Advice for NBA Phenom Victor Wembanyama: ‘Be Meaner’",
+      "score": 34,
+      "pattern": "",
+      "priority_type": "Cast / Character Announcements",
+      "source": "Variety",
+      "seen_at": "2026-10-21T02:19:53.946971+06:00"
+    },
+    {
+      "title": "Dana Carvey Says He ‘Didn’t Understand the Kerfuffle’ Over Shane Gillis’ ‘SNL’ Monologue: ‘I Just Saw It’ as a ‘Joke’",
+      "score": 29,
+      "pattern": "",
+      "priority_type": "Cast / Character Announcements",
+      "source": "Variety",
+      "seen_at": "2026-10-21T02:19:53.947049+06:00"
+    },
+    {
+      "title": "Ex-MTV Worker Didn’t Report Alleged Russell Brand Rape Because “Media Industry Protects Its Own”",
+      "score": 29,
+      "pattern": "",
+      "priority_type": "Cast / Character Announcements",
+      "source": "Deadline",
+      "seen_at": "2026-10-21T02:19:53.947122+06:00"
+    },
+    {
+      "title": "Robert Pattinson Was Bribed to Star in ‘Primetime’ With 200 Zyn Canisters and a Note That Read: ‘Dear Chris Han-Zyn’",
+      "score": 22,
+      "pattern": "",
+      "priority_type": "Cast / Character Announcements",
+      "source": "Variety",
+      "seen_at": "2026-10-21T02:19:53.947198+06:00"
+    },
+    {
+      "title": "Christina Applegate Reveals MS Misdiagnosis: “I Am Back At Square One”",
+      "score": 22,
+      "pattern": "",
+      "priority_type": "Cast / Character Announcements",
+      "source": "Deadline",
+      "seen_at": "2026-10-21T02:19:53.947264+06:00"
+    },
+    {
+      "title": "Michael Douglas Asked To Be Killed Off Marvel’s ‘Ant-Man’: “They Wouldn’t Let Me”",
+      "score": 0,
+      "pattern": "",
+      "priority_type": "Cast / Character Announcements",
+      "source": "Deadline",
+      "seen_at": "2026-10-21T02:19:53.947333+06:00"
+    },
+    {
+      "title": "Why Daisy Edgar-Jones Listened to Dolly Parton to Prep for ‘Sense and Sensibility’",
+      "score": 0,
+      "pattern": "",
+      "priority_type": "Cast / Character Announcements",
+      "source": "Variety",
+      "seen_at": "2026-10-21T02:19:53.947404+06:00"
+    },
+    {
+      "title": "‘The Gilded Age’: 2 Supporting Characters Not Returning For Season 4",
+      "score": 0,
+      "pattern": "",
+      "priority_type": "Cast / Character Announcements",
+      "source": "Deadline",
+      "seen_at": "2026-10-21T02:19:53.947475+06:00"
+    },
+    {
+      "title": "Christopher Nolan’s ‘The Prestige’ Sets 20th Anniversary Re-Release For 2027",
+      "score": 42,
+      "pattern": "",
+      "priority_type": "Theatrical Releases / Re-releases",
+      "source": "Deadline",
+      "seen_at": "2026-10-21T02:19:53.947550+06:00"
+    },
+    {
+      "title": "‘Only What We Carry’ Team Sets Offbeat Family Drama ‘Trafalgar,’ Starring Fanny Ardant, Danny Huston (EXCLUSIVE)",
+      "score": 66,
+      "pattern": "",
+      "priority_type": "Production / Filming Updates",
+      "source": "Variety",
+      "seen_at": "2026-10-21T02:19:53.947626+06:00"
+    },
+    {
+      "title": "Evolution Mallorca Brings Back Script Lab Pitches With ‘Sirat’ Producer and Oscar Winner Kim Magnusson Among Jury Members",
+      "score": 61,
+      "pattern": "",
+      "priority_type": "Production / Filming Updates",
+      "source": "Variety",
+      "seen_at": "2026-10-21T02:19:53.947702+06:00"
+    },
+    {
+      "title": "Netflix’s Jinny Howe Restructures UCAN Scripted Operation By Genre, Ups Cole Galvin To VP",
+      "score": 50,
+      "pattern": "",
+      "priority_type": "Production / Filming Updates",
+      "source": "Deadline",
+      "seen_at": "2026-10-21T02:19:53.947774+06:00"
+    },
+    {
+      "title": "Amazon MGM Studios Elevates Julie Rapaport & Alana Mayo In Film Division Reorg",
+      "score": 48,
+      "pattern": "",
+      "priority_type": "Production / Filming Updates",
+      "source": "Deadline",
+      "seen_at": "2026-10-21T02:19:53.947841+06:00"
+    },
+    {
+      "title": "‘MobLand’ Actor Mandeep Dhillon to Star in Self-Written Short ‘The Things I Want to Do to You’ Alongside Golda Rosheuvel and Scott Karim (EX",
+      "score": 48,
+      "pattern": "",
+      "priority_type": "Production / Filming Updates",
+      "source": "Variety",
+      "seen_at": "2026-10-21T02:19:53.947924+06:00"
+    },
+    {
+      "title": "Amazon is creating over 300,000 new US jobs this holiday season with increased pay and expanded benefits",
+      "score": 45,
+      "pattern": "",
+      "priority_type": "Production / Filming Updates",
+      "source": "Prime Video / Amazon News",
+      "seen_at": "2026-10-21T02:19:53.947968+06:00"
+    },
+    {
+      "title": "Jakarta Pitches Itself as Regional Film Hub, Points to Busan as Model",
+      "score": 45,
+      "pattern": "",
+      "priority_type": "Production / Filming Updates",
+      "source": "Variety",
+      "seen_at": "2026-10-21T02:19:53.948033+06:00"
+    },
+    {
+      "title": "Domingo Corral Urges Commissioners To Ditch Conservative Thinking Or Risk Missing Next ‘La Bola Negra’: “You Cannot Reject The Other Way”",
+      "score": 40,
+      "pattern": "",
+      "priority_type": "Production / Filming Updates",
+      "source": "Deadline",
+      "seen_at": "2026-10-21T02:19:53.948108+06:00"
+    },
+    {
+      "title": "Russell Brand Trial: Fourth Woman Alleges ‘Violent’ Sexual Assault While Working at Capital Radio",
+      "score": 40,
+      "pattern": "",
+      "priority_type": "Production / Filming Updates",
+      "source": "Variety",
+      "seen_at": "2026-10-21T02:19:53.948177+06:00"
+    },
+    {
+      "title": "Former A24 Docs Chief Joins ‘Oasis: Don’t Look Back In Anger’ Outfit Magna Studios",
+      "score": 36,
+      "pattern": "",
+      "priority_type": "Production / Filming Updates",
+      "source": "Deadline",
+      "seen_at": "2026-10-21T02:19:53.948254+06:00"
+    },
+    {
+      "title": "Quinta Brunson Shares Update On Betty Boop Film Development: “The Story Will Be Unlike Anything Anyone Expects”",
+      "score": 0,
+      "pattern": "",
+      "priority_type": "Production / Filming Updates",
+      "source": "Deadline",
+      "seen_at": "2026-10-21T02:19:53.948328+06:00"
+    },
+    {
+      "title": "JustWatch TV Launches With Content Partners Including Cineverse and Altitude for New AVOD Streaming Service",
+      "score": 74,
+      "pattern": "",
+      "priority_type": "OTT Platform Acquisition / Streaming Rights",
+      "source": "Variety",
+      "seen_at": "2026-10-21T02:19:53.948398+06:00"
+    },
+    {
+      "title": "In NBA First, Atlanta Hawks Full Regular Season To Stream On Prime Video In Parallel With Local TV",
+      "score": 65,
+      "pattern": "",
+      "priority_type": "OTT Platform Acquisition / Streaming Rights",
+      "source": "Deadline",
+      "seen_at": "2026-10-21T02:19:53.948471+06:00"
+    },
+    {
+      "title": "Starz Gets Back on Verizon Fios After New Carriage Pact",
+      "score": 47,
+      "pattern": "",
+      "priority_type": "OTT Platform Acquisition / Streaming Rights",
+      "source": "Variety",
+      "seen_at": "2026-10-21T02:19:53.948533+06:00"
+    },
+    {
+      "title": "Starz Is Back On Verizon Fios As Carriage Dispute Settled",
+      "score": 47,
+      "pattern": "",
+      "priority_type": "OTT Platform Acquisition / Streaming Rights",
+      "source": "Deadline",
+      "seen_at": "2026-10-21T02:19:53.948600+06:00"
+    },
+    {
+      "title": "‘Street Fighter’ Punches to Summit as Rajinikanth’s ‘Jailer 2’ Bows in Third at U.K., Ireland Box Office",
+      "score": 84,
+      "pattern": "",
+      "priority_type": "Box Office Updates",
+      "source": "Variety",
+      "seen_at": "2026-10-21T02:19:53.948685+06:00"
+    },
+    {
+      "title": "‘Lioness’ Season 3 Closes With 9.7 Million Viewers in Seven Days, a Series High and the No. 5 Paramount+ Finale Ever",
+      "score": 60,
+      "pattern": "",
+      "priority_type": "Box Office Updates",
+      "source": "Variety",
+      "seen_at": "2026-10-21T02:19:53.948763+06:00"
+    },
+    {
+      "title": "Elizabeth Holmes Mania: ‘You Can See Everything’ Drives 186% Viewership Spike for Amanda Seyfried’s ‘The Dropout’ (EXCLUSIVE)",
+      "score": 57,
+      "pattern": "",
+      "priority_type": "Box Office Updates",
+      "source": "Variety",
+      "seen_at": "2026-10-21T02:19:53.948847+06:00"
+    },
+    {
+      "title": "‘You Can See Everything’ Wins Monday With $2.5M+; Can Nathan Fielder & Elizabeth Holmes Melt ‘Clayface’ This Weekend?",
+      "score": 43,
+      "pattern": "",
+      "priority_type": "Box Office Updates",
+      "source": "Deadline",
+      "seen_at": "2026-10-21T02:19:53.948927+06:00"
+    },
+    {
+      "title": "Ann Hornaday, Longtime Washington Post Film Critic and Pulitzer Prize Finalist, Dies at 66",
+      "score": 0,
+      "pattern": "",
+      "priority_type": "Box Office Updates",
+      "source": "Variety",
+      "seen_at": "2026-10-21T02:19:53.948995+06:00"
+    },
+    {
+      "title": "Awards Go To ‘Mayilaa,’ ‘The Gymnasts Of Fisherman Colony’ And More At Seattle’s Tasveer film Festival",
+      "score": 0,
+      "pattern": "",
+      "priority_type": "Box Office Updates",
+      "source": "Deadline",
+      "seen_at": "2026-10-21T02:19:53.949066+06:00"
+    },
+    {
+      "title": "Tim O’Donnell, Veteran TV Comedy Writer-Director Known for ‘Growing Pains’ and ‘Dave’s World,’ Dies at 77",
+      "score": 0,
+      "pattern": "",
+      "priority_type": "Box Office Updates",
+      "source": "Variety",
+      "seen_at": "2026-10-21T02:19:53.949143+06:00"
     }
   ],
   "adaptive_metrics": {
-    "raw_discovered": 181,
-    "pre_cerebras_rejected": 16133,
-    "hard_rejected": 5364,
+    "raw_discovered": 182,
+    "pre_cerebras_rejected": 16245,
+    "hard_rejected": 5401,
     "duplicate_rejected": 145,
-    "learned_rejected": 10624,
-    "passed_to_cerebras": 3200,
-    "cerebras_ranked": 7698,
-    "published": 678,
-    "estimated_candidates_avoided": 16133
+    "learned_rejected": 10699,
+    "passed_to_cerebras": 3217,
+    "cerebras_ranked": 7757,
+    "published": 679,
+    "estimated_candidates_avoided": 16245
   },
   "source_quality": {
     "collider.com": {
@@ -45898,11 +45920,11 @@
       "last_seen": "2026-09-08T11:49:09.577970+06:00"
     },
     "deadline.com": {
-      "observations": 3483,
-      "low_score_count": 2850,
-      "total_score": 179595,
-      "avg_score": 51.6,
-      "last_seen": "2026-10-20T22:33:12.269588+06:00"
+      "observations": 3509,
+      "low_score_count": 2874,
+      "total_score": 180638,
+      "avg_score": 51.5,
+      "last_seen": "2026-10-21T02:19:53.949383+06:00"
     },
     "thewrap.com": {
       "observations": 16,
@@ -45919,11 +45941,11 @@
       "last_seen": "2026-09-08T21:05:13.366232+06:00"
     },
     "variety.com": {
-      "observations": 3701,
-      "low_score_count": 3038,
-      "total_score": 183566,
-      "avg_score": 49.6,
-      "last_seen": "2026-10-20T22:33:12.269584+06:00"
+      "observations": 3733,
+      "low_score_count": 3069,
+      "total_score": 184936,
+      "avg_score": 49.5,
+      "last_seen": "2026-10-21T02:19:53.949387+06:00"
     },
     "indiewire.com": {
       "observations": 10,
@@ -45961,11 +45983,11 @@
       "last_seen": "2026-09-27T01:36:45.714238+06:00"
     },
     "aboutamazon.com": {
-      "observations": 40,
-      "low_score_count": 23,
-      "total_score": 2865,
-      "avg_score": 71.6,
-      "last_seen": "2026-10-20T22:33:12.269543+06:00"
+      "observations": 41,
+      "low_score_count": 24,
+      "total_score": 2910,
+      "avg_score": 71.0,
+      "last_seen": "2026-10-21T02:19:53.949329+06:00"
     },
     "marvel.com": {
       "observations": 3,
@@ -46011,7 +46033,7 @@
     }
   },
   "category_coverage": {
-    "Major Film Announcements": "2026-10-20T22:35:10.697120+06:00",
+    "Major Film Announcements": "2026-10-21T02:21:52.609677+06:00",
     "Release Dates": "2026-10-20T17:14:47.384983+06:00",
     "Studio Business": "2026-10-15T02:36:44.364724+06:00",
     "Streaming Platform News": "2026-10-19T18:35:36.002264+06:00",
