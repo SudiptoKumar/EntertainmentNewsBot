@@ -2765,22 +2765,35 @@ def dynamic_rich_html(story):
         availability.append(f"<p>✦ <b>Status:</b> {escape_rich_html(story.get('status'))}</p>")
     if safe_text(story.get("release_date")):
         availability.append(f"<p>✦ <b>Release:</b> {escape_rich_html(story.get('release_date'))}</p>")
-    lines.extend(availability)
-
     summary = bold_terms_html(story.get("summary", ""), terms)
     if summary:
-        lines.append(f"<blockquote>📖 {summary}</blockquote>")
+        lines.append(f"<p><b>{summary}</b></p>")
 
+    # POSTCARD FORMAT (network standard, Karn's pick 2026-10-30): every
+    # detail (availability rows, highlights, note) inside one tap-to-expand
+    # FULL STORY block. No visible section template.
+    story_bits = []
+    for row in availability:
+        story_bits.append(row.removeprefix("<p>").removesuffix("</p>"))
     for detail in story.get("highlights", [])[:3]:
-        lines.append(f"<p>✦ {bold_terms_html(detail, terms)}</p>")
+        story_bits.append(f"✦ {bold_terms_html(detail, terms)}")
 
     spoiler = safe_text(story.get("spoiler"))
+    spoiler_line = ""
     if spoiler:
-        lines.append(f"<p>🙈 <b>Spoiler:</b> <tg-spoiler>{bold_terms_html(spoiler, terms)}</tg-spoiler></p>")
+        spoiler_line = f"<p>🙈 <b>Spoiler:</b> <tg-spoiler>{bold_terms_html(spoiler, terms)}</tg-spoiler></p>"
 
     note = safe_text(story.get("note"))
     if note:
-        lines.append(f"<details><summary>ℹ️ More</summary><p>{bold_terms_html(note, terms)}</p></details>")
+        story_bits.append(bold_terms_html(note, terms))
+    if story_bits:
+        lines.append(
+            "<blockquote expandable><b>FULL STORY</b><br>"
+            + "<br><br>".join(story_bits)
+            + "</blockquote>"
+        )
+    if spoiler_line:
+        lines.append(spoiler_line)
 
     hashtags = " ".join(category_hashtags({**story, "sector": safe_text(story.get("sector"))}))
     footer_line = " ".join(x for x in [CHANNEL_TAG, hashtags] if x)
