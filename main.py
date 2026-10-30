@@ -24,6 +24,8 @@ from urllib3.util.retry import Retry
 from exa_py import Exa
 from cerebras.cloud.sdk import Cerebras
 
+import cerebras_keys
+
 
 # ============================================================
 # CONFIGURATION
@@ -773,6 +775,27 @@ exa = Exa(
 cerebras = Cerebras(
     api_key=CEREBRAS_API_KEY
 )
+
+
+def _reset_cerebras_client():
+    global cerebras
+    cerebras = Cerebras(api_key=cerebras_keys.active_key() or CEREBRAS_API_KEY)
+
+
+def cerebras_create(**kwargs):
+    """chat.completions.create with multi-key failover: on a quota/auth
+    status (401/402/403/429) the active key is retired for the run (owner
+    alerted via the Newsroom bot), the client is rebuilt on the next key,
+    and the call retries. Any other error propagates untouched."""
+    while True:
+        try:
+            return cerebras.chat.completions.create(**kwargs)
+        except Exception as exc:
+            status = getattr(exc, "status_code", None)
+            if cerebras_keys.is_quota_status(status) and cerebras_keys.failover(status):
+                _reset_cerebras_client()
+                continue
+            raise
 
 
 # ============================================================
@@ -1931,7 +1954,7 @@ For each candidate, assign exactly one priority_type from this fixed list:
 13. Box Office Updates
 Priority is a ranking preference, not a quota. Return EVERY candidate with exactly one sector, source_class and priority_type, plus topic, institution, event_key and reason. Do not invent values beyond the supplied metadata."""
         try:
-            response=cerebras.chat.completions.create(model=CEREBRAS_MODEL,messages=[{"role":"system","content":prompt},{"role":"user","content":"\n".join(lines)}],response_format={"type":"json_schema","json_schema":{"name":"entertainment_news_v11_rank","strict":True,"schema":RANK_SCHEMA}},reasoning_effort="low",temperature=0.0,max_completion_tokens=3600)
+            response=cerebras_create(model=CEREBRAS_MODEL,messages=[{"role":"system","content":prompt},{"role":"user","content":"\n".join(lines)}],response_format={"type":"json_schema","json_schema":{"name":"entertainment_news_v11_rank","strict":True,"schema":RANK_SCHEMA}},reasoning_effort="low",temperature=0.0,max_completion_tokens=3600)
             data=json.loads(safe_text(response.choices[0].message.content)); by_id={i:x for i,x in enumerate(batch,1)}; returned=set(); scored=[]
             for r in data.get("ranked",[]):
                 idx=int(r.get("id",0))
@@ -2386,7 +2409,7 @@ Return only valid JSON matching the schema."""
     )
     for attempt in range(3):
         try:
-            response=cerebras.chat.completions.create(model=CEREBRAS_MODEL,messages=[{"role":"system","content":prompt},{"role":"user","content":user}],response_format={"type":"json_schema","json_schema":{"name":"entertainment_news_story_v12","strict":True,"schema":STORY_SCHEMA}},reasoning_effort="low",temperature=0.15,max_completion_tokens=1500)
+            response=cerebras_create(model=CEREBRAS_MODEL,messages=[{"role":"system","content":prompt},{"role":"user","content":user}],response_format={"type":"json_schema","json_schema":{"name":"entertainment_news_story_v12","strict":True,"schema":STORY_SCHEMA}},reasoning_effort="low",temperature=0.15,max_completion_tokens=1500)
             data=json.loads(safe_text(response.choices[0].message.content))
             title=clean_generated_text(data.get("title")); year=clean_generated_text(data.get("year")); summary=first_sentence(data.get("summary"))
             highlights=[clean_generated_text(x) for x in data.get("highlights",[]) if clean_generated_text(x)]
@@ -3338,7 +3361,7 @@ Return only the JSON schema.
     )
 
     try:
-        response = cerebras.chat.completions.create(
+        response = cerebras_create(
             model=CEREBRAS_MODEL,
             messages=[
                 {"role": "system", "content": prompt},
@@ -3371,7 +3394,7 @@ def event_status_verified(story,article_text):
     schema={"type":"object","properties":{"supported":{"type":"boolean"},"unsupported_claims":{"type":"array","items":{"type":"string"},"maxItems":3}},"required":["supported","unsupported_claims"],"additionalProperties":False}
     prompt="You are a strict entertainment status verifier. Check whether status claims in the generated story are directly supported by the source article. Reject upgrades from speculation to confirmation and misstatements of release, renewal, cancellation, production, rights, platform availability or theatrical status. Return only JSON."
     try:
-        r=cerebras.chat.completions.create(model=CEREBRAS_MODEL,messages=[{"role":"system","content":prompt},{"role":"user","content":"SOURCE ARTICLE:\n"+article_text[:12000]+"\n\nSTATUS CLAIMS:\n- "+"\n- ".join(status_terms)}],response_format={"type":"json_schema","json_schema":{"name":"entertainment_status_check","strict":True,"schema":schema}},reasoning_effort="low",temperature=0.0,max_completion_tokens=350)
+        r=cerebras_create(model=CEREBRAS_MODEL,messages=[{"role":"system","content":prompt},{"role":"user","content":"SOURCE ARTICLE:\n"+article_text[:12000]+"\n\nSTATUS CLAIMS:\n- "+"\n- ".join(status_terms)}],response_format={"type":"json_schema","json_schema":{"name":"entertainment_status_check","strict":True,"schema":schema}},reasoning_effort="low",temperature=0.0,max_completion_tokens=350)
         d=json.loads(safe_text(r.choices[0].message.content));return bool(d.get("supported")),d.get("unsupported_claims",[])
     except Exception as exc:
         logger.warning("Event-status verification failed: %s",exc);return False,["verification infrastructure failure"]
