@@ -70,15 +70,10 @@ NEWS_PRIORITY = {
     "Hindi Dub / Language Availability": (1, 2),
     "Upcoming OTT Releases": (1, 3),
     "Release Date Confirmations": (1, 4),
-    "New Movie / Series Announcements": (2, 5),
-    "Season Renewals / New Season Updates": (2, 6),
-    "Trailer Releases": (2, 7),
-    "First Look / First Glimpse / Posters": (2, 8),
-    "Cast / Character Announcements": (3, 9),
-    "Theatrical Releases / Re-releases": (3, 10),
-    "Production / Filming Updates": (3, 11),
-    "OTT Platform Acquisition / Streaming Rights": (3, 12),
-    "Box Office Updates": (3, 13),
+    "Theatrical Releases / Re-releases": (1, 5),
+    "New Movie / Series Announcements": (2, 6),
+    "Season Renewals / New Season Updates": (2, 7),
+    "OTT Platform Acquisition / Streaming Rights": (2, 8),
 }
 NEWS_TYPE_TO_PRIORITY = {
     "Now Streaming": "OTT / Streaming Availability",
@@ -87,18 +82,13 @@ NEWS_TYPE_TO_PRIORITY = {
     "Release Date": "Release Date Confirmations",
     "Announcement": "New Movie / Series Announcements",
     "Renewal": "Season Renewals / New Season Updates",
-    "Cancellation": "Season Renewals / New Season Updates",
-    "Trailer": "Trailer Releases",
-    "First Look": "First Look / First Glimpse / Posters",
-    "Casting": "Cast / Character Announcements",
     "Theatrical": "Theatrical Releases / Re-releases",
-    "Production": "Production / Filming Updates",
     "Distribution": "OTT Platform Acquisition / Streaming Rights",
-    "Box Office": "Box Office Updates",
-    "Industry": "New Movie / Series Announcements",
-    "Confirmed": "New Movie / Series Announcements",
-    "Reported": "New Movie / Series Announcements",
 }
+# RELEASE-ONLY editorial scope (Karn, 2026-11-06): a publishable story must
+# answer what title is releasing, when, where (platform/theatre) and in
+# which languages. Every other entertainment category is blocked.
+ALLOWED_PRIORITY_TYPES = tuple(NEWS_PRIORITY.keys())
 DISCOVERY_LOOKBACK_HOURS = 24
 
 # Reliability / quality
@@ -128,10 +118,7 @@ LEARNED_HISTORY_LIMIT = 500
 LEARNED_PATTERN_RETENTION_DAYS = 45
 WORK_MEMORY_RETENTION_DAYS = 90
 EVENT_FINGERPRINT_RETENTION_DAYS = 120
-BOX_OFFICE_DEDUP_HOURS = 36
 DEFAULT_EVENT_DEDUP_HOURS = 24
-CAST_EVENT_DEDUP_HOURS = 6
-PRODUCTION_EVENT_DEDUP_HOURS = 12
 RELEASE_EVENT_DEDUP_HOURS = 48
 SOURCE_LEARNING_MIN_OBSERVATIONS = 10
 SOURCE_LEARNING_LOW_RATIO = 0.85
@@ -183,20 +170,20 @@ RSS_FEEDS = [
 # TAXONOMY: ENTERTAINMENT NEWS
 # ============================================================
 SECTORS=["Hollywood","Indian","International"]
-TOPICS={"Entertainment":["Major Film Announcements","Major Series Announcements","Casting","Trailers and First Looks","Production Starts","Production Wraps","Release Dates","Renewals and Cancellations","Streaming Premieres","Streaming Platform News","OTT Rights and Distribution","Franchises and IP","Studio Business","Platform Business","Acquisitions and Mergers","Cinema Industry","Production Deals","Major Awards and Recognition","Box Office","International Distribution"]}
+TOPICS={"Entertainment":["Release Dates","Streaming Premieres","OTT Releases","Theatrical Releases","Hindi Dub Releases","New Season Releases","Streaming Rights"]}
 INSTITUTIONS=["Netflix","Amazon","Prime Video","HBO","HBO Max","Warner Bros.","Warner Bros. Discovery","Disney","Disney+","Hulu","Apple TV+","Paramount","Paramount+","Universal Pictures","Sony Pictures","Marvel","DC","JioHotstar","SonyLIV","Viki","TVING","iQIYI","Tencent Video","Youku","Yash Raj Films","Dharma Productions","A24","Lionsgate","MGM"]
 SOURCE_NAMES={"deadline.com":"Deadline","variety.com":"Variety","hollywoodreporter.com":"The Hollywood Reporter","thewrap.com":"TheWrap","indiewire.com":"IndieWire","collider.com":"Collider","tvline.com":"TVLine","ottplay.com":"OTTplay","filmibeat.com":"Filmibeat","pinkvilla.com":"Pinkvilla","bollywoodhungama.com":"Bollywood Hungama","gadgets360.com":"Gadgets 360","soompi.com":"Soompi","dramazoom.com":"DramaZOOM","mydramalist.com":"MyDramaList","asianwiki.com":"AsianWiki","whats-on-netflix.com":"What's on Netflix","netflix.com":"Netflix Tudum","press.wbd.com":"Warner Bros. Discovery / HBO Max Pressroom","apple.com":"Apple TV Press","aboutamazon.com":"Prime Video / Amazon News","aboutamazon.in":"Prime Video / Amazon News","marvel.com":"Marvel","dc.com":"DC","sonypictures.com":"Sony Pictures","paramount.com":"Paramount","universalpictures.com":"Universal Pictures"}
-CATEGORY_HASHTAGS={"Major Film Announcements":["#Movies","#Film"],"Major Series Announcements":["#Series","#Streaming"],"Casting":["#Casting"],"Trailers and First Looks":["#Trailer"],"Production Starts":["#Production"],"Production Wraps":["#Production"],"Release Dates":["#ReleaseDate"],"Renewals and Cancellations":["#Streaming"],"Streaming Premieres":["#Streaming"],"Streaming Platform News":["#Streaming"],"OTT Rights and Distribution":["#OTT"],"Franchises and IP":["#Franchise"],"Studio Business":["#FilmIndustry"],"Platform Business":["#Streaming"],"Acquisitions and Mergers":["#MediaBusiness"],"Cinema Industry":["#Cinema"],"Production Deals":["#Production"],"Major Awards and Recognition":["#Awards"],"Box Office":["#BoxOffice"],"International Distribution":["#Distribution"]}
-TOPIC_ALIASES={"casting":"Casting","cast":"Casting","trailer":"Trailers and First Looks","teaser":"Trailers and First Looks","release date":"Release Dates","release":"Release Dates","renewed":"Renewals and Cancellations","renewal":"Renewals and Cancellations","cancelled":"Renewals and Cancellations","canceled":"Renewals and Cancellations","streaming":"Streaming Platform News","ott":"Streaming Platform News","distribution":"OTT Rights and Distribution","rights":"OTT Rights and Distribution","franchise":"Franchises and IP","bollywood":"Indian Cinema","acquisition":"Acquisitions and Mergers","merger":"Acquisitions and Mergers","studio":"Studio Business","box office":"Box Office"}
+CATEGORY_HASHTAGS={"Release Dates":["#ReleaseDate"],"Streaming Premieres":["#Streaming"],"OTT Releases":["#OTT"],"Theatrical Releases":["#Cinema"],"Hindi Dub Releases":["#HindiDub"],"New Season Releases":["#Streaming"],"Streaming Rights":["#OTT"]}
+TOPIC_ALIASES={"release date":"Release Dates","release":"Release Dates","renewed":"New Season Releases","renewal":"New Season Releases","new season":"New Season Releases","streaming":"Streaming Premieres","ott":"OTT Releases","distribution":"Streaming Rights","rights":"Streaming Rights","hindi dub":"Hindi Dub Releases","theatrical":"Theatrical Releases","in cinemas":"Theatrical Releases"}
 def canonical_topic(topic,region="Entertainment"):
     key=safe_text(topic).lower().strip()
     if key in TOPIC_ALIASES:return TOPIC_ALIASES[key]
     for item in TOPICS["Entertainment"]:
         if key==item.lower():return item
-    patterns=[(("cast","actor","actress","star"),"Casting"),(("trailer","teaser","first look","poster"),"Trailers and First Looks"),(("release date","premiere date","release"),"Release Dates"),(("renew","cancel","cancellation"),"Renewals and Cancellations"),(("streaming premiere","premieres","debut"),"Streaming Premieres"),(("netflix","prime video","hbo","disney+","apple tv","streaming platform"),"Streaming Platform News"),(("rights","distribution","international release"),"OTT Rights and Distribution"),(("franchise","sequel","spinoff","spin-off","adaptation"),"Franchises and IP"),(("bollywood","indian cinema","pan-indian","telugu","tamil","malayalam","hindi cinema"),"Indian Cinema"),(("acquisition","acquires","merger"),"Acquisitions and Mergers"),(("production starts","begins production","starts filming"),"Production Starts"),(("wraps production","production wrapped","wraps filming"),"Production Wraps"),(("box office","opening weekend","gross"),"Box Office"),(("studio","layoff","jobs","business"),"Studio Business")]
+    patterns=[(("release date","premiere date","release"),"Release Dates"),(("streaming premiere","premieres","debut","now streaming","now available"),"Streaming Premieres"),(("ott release","coming to","upcoming ott"),"OTT Releases"),(("rights","distribution","streaming rights"),"Streaming Rights"),(("hindi dub","dubbed","language"),"Hindi Dub Releases"),(("theatrical","in cinemas","in theaters","re-release","re release"),"Theatrical Releases"),(("renew","new season","season"),"New Season Releases")]
     for needles,canon in patterns:
         if any(n in key for n in needles):return canon
-    return "Major Film Announcements"
+    return "Release Dates"
 def normalize_sector(value):
     raw=safe_text(value).strip().lower(); aliases={"indian cinema":"Indian","india":"Indian","bollywood":"Indian","international":"International","global":"International","hollywood":"Hollywood","us":"Hollywood","u.s.":"Hollywood"}
     if raw in aliases:return aliases[raw]
@@ -217,10 +204,10 @@ def canonical_topic(topic,region="Entertainment"):
     if key in TOPIC_ALIASES:return TOPIC_ALIASES[key]
     for item in TOPICS["Entertainment"]:
         if key==item.lower():return item
-    patterns=[(("cast","actor","actress","star"),"Casting"),(("trailer","teaser","first look","poster"),"Trailers and First Looks"),(("release date","premiere date","release"),"Release Dates"),(("renew","cancel","cancellation"),"Renewals and Cancellations"),(("streaming premiere","premieres","debut"),"Streaming Premieres"),(("netflix","prime video","hbo","disney+","apple tv","streaming platform"),"Streaming Platform News"),(("rights","distribution","international release"),"OTT Rights and Distribution"),(("franchise","sequel","spinoff","spin-off","adaptation"),"Franchises and IP"),(("bollywood","indian cinema","pan-indian"),"Indian Cinema"),(("k-drama","korean drama","korea"),"Korean Drama"),(("c-drama","chinese drama","china"),"Chinese Drama"),(("acquisition","acquires","merger"),"Acquisitions and Mergers"),(("production starts","begins production","starts filming"),"Production Starts"),(("wraps production","production wrapped","wraps filming"),"Production Wraps"),(("studio","layoff","jobs","business"),"Studio Business")]
+    patterns=[(("release date","premiere date","release"),"Release Dates"),(("streaming premiere","premieres","debut","now streaming","now available"),"Streaming Premieres"),(("ott release","coming to","upcoming ott"),"OTT Releases"),(("rights","distribution","streaming rights"),"Streaming Rights"),(("hindi dub","dubbed","language"),"Hindi Dub Releases"),(("theatrical","in cinemas","in theaters","re-release","re release"),"Theatrical Releases"),(("renew","new season","season"),"New Season Releases")]
     for needles,canon in patterns:
         if any(n in key for n in needles):return canon
-    return "Major Film Announcements"
+    return "Release Dates"
 def category_hashtags(story):
     tags=[]
     for tag in CATEGORY_HASHTAGS.get(safe_text(story.get("topic")),[]):
@@ -832,10 +819,10 @@ ENTERTAINMENT_POSITIVE_TERMS = {
     "movie", "film", "series", "tv", "season", "episode", "streaming",
     "ott", "netflix", "prime video", "amazon prime", "hbo", "hbo max",
     "disney+", "apple tv+", "paramount+", "peacock", "hulu", "trailer",
-    "teaser", "casting", "cast", "actor", "actress", "director",
-    "production", "filming", "renewed", "renewal", "cancelled", "canceled",
-    "release date", "poster", "first look", "franchise", "theatrical",
-    "cinema", "box office", "streaming rights", "dubbed", "hindi dub",
+    "cast", "actor", "actress", "director",
+    "renewed", "renewal",
+    "release date", "theatrical",
+    "cinema", "streaming rights", "dubbed", "hindi dub",
 }
 HARD_BAD_TITLE_RE = re.compile(
     r"\b(?:review|reviews|opinion|editorial|watchlist|what to watch|"
@@ -878,24 +865,91 @@ def deterministic_pattern(item):
 def infer_priority_type(item):
     blob = content_blob(item)
     patterns = [
-        ("Hindi Dub / Language Availability", r"\b(?:hindi dub|dubbed|dubbing|language(?:s)? available|audio language)\b"),
-        ("OTT / Streaming Availability", r"\b(?:now streaming|streaming now|available to stream|lands on .*stream|available on netflix|available on .*\+|added to .* library)\b"),
-        ("Upcoming OTT Releases", r"\b(?:coming to netflix|coming to .*\+|upcoming ott|ott release|streaming on .* from|will stream on)\b"),
-        ("Release Date Confirmations", r"\b(?:release date|premiere date|premieres on|set for .* release|slated for .* release)\b"),
-        ("Season Renewals / New Season Updates", r"\b(?:renewed|renewal|season \d+|new season|returns for season)\b"),
-        ("Trailer Releases", r"\b(?:trailer|teaser)\b"),
-        ("First Look / First Glimpse / Posters", r"\b(?:first look|first glimpse|poster|posters)\b"),
-        ("Cast / Character Announcements", r"\b(?:cast|casting|joins the cast|to play|character)\b"),
-        ("Theatrical Releases / Re-releases", r"\b(?:in theaters|theatrical|re-release|re release|cinema release)\b"),
-        ("Production / Filming Updates", r"\b(?:filming|production|wraps|wrapped|on set)\b"),
+        ("Hindi Dub / Language Availability", r"\b(?:hindi dub|dubbed in hindi|hindi dubbed|language(?:s)? available|audio language)\b"),
+        ("OTT / Streaming Availability", r"\b(?:now streaming|streaming now|available to stream|now available on|lands on .*stream|available on netflix|available on .*\+|added to .* library)\b"),
+        ("Upcoming OTT Releases", r"\b(?:coming to netflix|coming to .*\+|upcoming ott|ott release|streaming on .* from|will stream on|coming soon on)\b"),
         ("OTT Platform Acquisition / Streaming Rights", r"\b(?:streaming rights|acquires .* rights|acquired .* rights|exclusive streaming|ott rights)\b"),
-        ("Box Office Updates", r"\b(?:box office|grossed|opening weekend|domestic gross|worldwide gross)\b"),
+        ("Theatrical Releases / Re-releases", r"\b(?:in theaters|in theatres|in cinemas|theatrical release|re-release|re release|cinema release)\b"),
+        ("Release Date Confirmations", r"\b(?:release date|premiere date|premieres on|set for .* release|slated for .* release|postponed to|delayed to|shifts to)\b"),
+        ("Season Renewals / New Season Updates", r"\b(?:renewed for season|renewal|new season.*(?:premieres|release|coming|arrives)|season \d+.*(?:premieres|release date|coming))\b"),
         ("New Movie / Series Announcements", r"\b(?:announces new (?:movie|film|series)|new (?:movie|film|series) announced|greenlit|orders series)\b"),
     ]
     for key, pattern in patterns:
         if re.search(pattern, blob, re.I):
             return key
     return ""
+
+
+# --- RELEASE-ONLY GATE (deterministic, pre-Cerebras) ---
+RELEASE_PLATFORM_RE = re.compile(
+    r"\b(?:netflix|prime video|amazon prime|disney\+|disney plus|hulu|apple tv\+|"
+    r"hbo max|\bmax\b|paramount\+|peacock|jiocinema|jiohotstar|hotstar|sonyliv|"
+    r"zee5|mx player|iqiyi|viki|tving|hbo|bookmyshow stream|bookmyshow)\b", re.I)
+RELEASE_DATE_RE = re.compile(
+    r"\b(?:january|february|march|april|may|june|july|august|september|october|"
+    r"november|december)\s+\d{1,2}(?:st|nd|rd|th)?(?:,?\s+\d{4})?\b"
+    r"|\b\d{1,2}[/-]\d{1,2}[/-]\d{2,4}\b"
+    r"|\b(?:today|tomorrow|this (?:week|friday|weekend|month)|next (?:week|month|friday))\b"
+    r"|\b(?:diwali|christmas|new year|eid|thanksgiving)\s+\d{4}\b"
+    r"|\b(?:early|mid|late)[- ]\d{4}\b|\b\d{4}\b", re.I)
+RELEASE_ACTION_RE = re.compile(
+    r"\b(?:now streaming|streaming now|now available|available (?:now|to stream|on)|"
+    r"premieres?|debuts?|releases?|released|releasing|release date|premiere date|"
+    r"in cinemas|in theatres|in theaters|theatrical|coming to|coming soon|arrives|"
+    r"hits|drops on|launches on|streaming on|ott release|re-release|re release|"
+    r"postponed to|delayed to|shifts to|set to release|slated to release)\b", re.I)
+STRONG_RELEASE_RE = re.compile(
+    r"\b(?:now streaming|streaming now|now available on|available to stream|"
+    r"in cinemas (?:from|on)|in theaters (?:from|on)|in theatres (?:from|on))\b", re.I)
+BLOCKED_TITLE_RE = re.compile(
+    r"\b(?:trailer|teaser|first look|first glimpse|poster|posters|box office|"
+    r"grossed|grosses|opening weekend|cast(?:ing)? (?:announced|revealed|joins)|"
+    r"joins the cast|begins filming|starts filming|begins production|"
+    r"wraps filming|wraps production|production (?:begins|starts|wraps)|"
+    r"cancelled|canceled|cancellation|review|reviews|interview|"
+    r"viewership|ratings record|wins (?:the )?award|award for)\b", re.I)
+
+def has_release_signal(item):
+    """True when title+excerpt show a release action plus a date, platform,
+    theatre or language-availability signal. A single strong signal
+    (e.g. 'now streaming', 'in cinemas from') is enough on its own."""
+    blob = content_blob(item)
+    if STRONG_RELEASE_RE.search(blob):
+        return True
+    if re.search(r"\b(?:hindi dub|dubbed in hindi|hindi dubbed)\b", blob, re.I) and (
+        RELEASE_PLATFORM_RE.search(blob) or RELEASE_ACTION_RE.search(blob)):
+        return True
+    if RELEASE_ACTION_RE.search(blob) and (
+        RELEASE_DATE_RE.search(blob) or RELEASE_PLATFORM_RE.search(blob)
+        or re.search(r"\b(?:cinemas?|theatres?|theaters?)\b", blob, re.I)):
+        return True
+    if RELEASE_DATE_RE.search(blob) and RELEASE_PLATFORM_RE.search(blob):
+        return True
+    return False
+
+def release_candidate_allowed(item):
+    """Release-only publish gate for a candidate (title-based blocked types
+    first, then the release-signal requirement)."""
+    title = safe_text(item.get("title"))
+    if BLOCKED_TITLE_RE.search(title):
+        return False, "blocked_non_release_type"
+    if not has_release_signal(item):
+        return False, "no_release_signal"
+    return True, ""
+
+def story_release_evidence(story):
+    """A generated story is publishable only with release evidence: a
+    platform, a release date, or a Now Streaming / Coming Soon style
+    status. Used directly by the self-test."""
+    if safe_text(story.get("platform")):
+        return True
+    if safe_text(story.get("release_date")):
+        return True
+    status = safe_text(story.get("status")).lower()
+    if any(k in status for k in ("now streaming", "now available", "coming soon", "in cinemas", "in theatres", "in theaters", "coming to")):
+        return True
+    return False
+
 
 def work_key_from_text(title):
     text = normalize_title(title)
@@ -974,12 +1028,6 @@ def event_signature_from_item(item):
 
 
 def _dedup_hours_for_priority(priority):
-    if priority == "Box Office Updates":
-        return BOX_OFFICE_DEDUP_HOURS
-    if priority == "Cast / Character Announcements":
-        return CAST_EVENT_DEDUP_HOURS
-    if priority == "Production / Filming Updates":
-        return PRODUCTION_EVENT_DEDUP_HOURS
     if priority == "Release Date Confirmations":
         return RELEASE_EVENT_DEDUP_HOURS
     return DEFAULT_EVENT_DEDUP_HOURS
@@ -1007,14 +1055,6 @@ def _publication_event_match(candidate, previous):
     core_score = _event_core_similarity(candidate, previous)
     if title_score >= 0.55 or core_score >= 0.55:
         return True
-    if candidate_priority == "Box Office Updates":
-        ctext, ptext = _event_text(candidate).lower(), _event_text(previous).lower()
-        numeric = set(re.findall(r"\$?\d+(?:\.\d+)?\s*(?:million|billion|m|bn)", ctext))
-        prev_numeric = set(re.findall(r"\$?\d+(?:\.\d+)?\s*(?:million|billion|m|bn)", ptext))
-        milestones = set(re.findall(r"\b(?:\d+(?:st|nd|rd|th)|opening weekend|record|fastest|milestone)\b", ctext))
-        prev_milestones = set(re.findall(r"\b(?:\d+(?:st|nd|rd|th)|opening weekend|record|fastest|milestone)\b", ptext))
-        if (numeric & prev_numeric) or (milestones & prev_milestones):
-            return True
     return False
 
 
@@ -1042,7 +1082,7 @@ def event_memory_hit(item):
 def update_filter_metric(reason):
     metrics = STATE.setdefault("adaptive_metrics", {})
     metrics["pre_cerebras_rejected"] = int(metrics.get("pre_cerebras_rejected", 0)) + 1
-    if reason.startswith("hard_") or reason in {"no_entertainment_signal", "low_value_editorial", "sports", "promotion", "celebrity_lifestyle"}:
+    if reason.startswith("hard_") or reason in {"no_entertainment_signal", "low_value_editorial", "sports", "promotion", "celebrity_lifestyle", "no_release_signal", "blocked_non_release_type"}:
         metrics["hard_rejected"] = int(metrics.get("hard_rejected", 0)) + 1
     elif reason.startswith("learned_"):
         metrics["learned_rejected"] = int(metrics.get("learned_rejected", 0)) + 1
@@ -1101,6 +1141,9 @@ def pre_cerebras_filter(item):
         return False, reason
     hit, reason = learned_source_block(item)
     if hit:
+        return False, reason
+    allowed, reason = release_candidate_allowed(item)
+    if not allowed:
         return False, reason
     return True, ""
 
@@ -1540,7 +1583,7 @@ def allowed_source_for_region(url,region=None):return primary_domain_allowed(url
 # GOOGLE NEWS RSS: FREE GAP FILL
 # ============================================================
 
-GOOGLE_NEWS_QUERIES={"Entertainment":["major Hollywood movie series news Netflix HBO Disney Prime Video","major Indian cinema Bollywood pan-Indian film streaming news","Korean drama film major streaming platform news","Chinese drama film major streaming platform news","major entertainment studio acquisition production release casting news","major OTT rights international distribution streaming deal news"]}
+GOOGLE_NEWS_QUERIES={"Entertainment":["movie series \"release date\" now streaming Netflix Prime Video Disney+ Apple TV+","film \"OTT release date\" streaming premiere Hindi dubbed","series season premiere date release streaming platform","movie \"in cinemas\" theatrical release date","Korean drama Chinese drama \"now streaming\" release date Hindi dub","film series postponed new release date OTT platform"]}
 GOOGLE_NEWS_LOCALE={"Entertainment":("en-US","US","US:en")}
 
 def resolve_google_news_url(link):
@@ -1712,12 +1755,12 @@ def exa_gap_fill(region, existing_count, needed, fallback=False):
     if not domains:
         return 0
     queries=[
-        "latest major Hollywood movie and series news",
-        "latest major Netflix HBO Disney Prime Video entertainment news",
-        "latest major Indian cinema Bollywood streaming news",
-        "latest major Korean drama Chinese drama news",
-        "latest major entertainment studio platform business distribution news",
-        "latest major film casting trailer release franchise news",
+        "movie series now streaming release date Netflix HBO Disney Prime Video",
+        "film OTT release date streaming premiere Hindi dubbed release",
+        "series season premiere date confirmed streaming platform release",
+        "movie in cinemas theatrical release date re-release",
+        "Korean drama Chinese drama now streaming release date Hindi dub",
+        "movie series release date postponed new date OTT platform",
     ]
 
     added = 0
@@ -1936,22 +1979,17 @@ def rank_candidates(candidates,region):
             lines.append("\n".join([f"ID: {idx}",f"Title: {item.get('title','')}",f"Source: {item.get('source','')}",f"Published: {item.get('published_date','')}",age,f"Excerpt: {trim_source_text(item.get('excerpt',''),850)}",""]))
         prompt=f"""You are the senior editor of @EntertainmentNewsroom. Rank these entertainment candidates using a strict 0-100 model.
 Sectors: Hollywood, Indian, International. Hollywood means primarily US/Hollywood entertainment; Indian means India-led cinema/series/OTT; International means major non-Indian, non-Hollywood global entertainment and cross-border developments.
-Judge the underlying event, not headline excitement. Routine celebrity lifestyle, gossip, fashion, generic interviews, minor casting, routine catalog additions, weak promotions, unsupported rumors and duplicates are low priority. Rumor/speculation may be classified but must never reach a publishable score. Official confirmation is stronger than reputable reporting.
+RELEASE-ONLY CHANNEL: this channel publishes ONLY release updates - a story is publishable only if it answers what title is releasing, when, and where (platform/theatre), ideally in which languages. Score any candidate that does NOT clearly announce a release (reviews, trailers/teasers, first looks/posters alone, casting alone, production starts/wraps alone, box office, viewership records, business, awards, gossip, interviews, hype, cancellations) so its total stays below 80, whatever its priority_type. Rumor/speculation must never reach a publishable score. Official confirmation is stronger than reputable reporting.
 Scoring components must sum to exactly 100: significance 0-20; reach 0-15; event_magnitude 0-15; platform_ip_strength 0-10; source_authority 0-15; evidence_strength 0-10; international_relevance 0-5; recency 0-5; audience_anticipation 0-5.
 For each candidate, assign exactly one priority_type from this fixed list:
 1. OTT / Streaming Availability
 2. Hindi Dub / Language Availability
 3. Upcoming OTT Releases
 4. Release Date Confirmations
-5. New Movie / Series Announcements
-6. Season Renewals / New Season Updates
-7. Trailer Releases
-8. First Look / First Glimpse / Posters
-9. Cast / Character Announcements
-10. Theatrical Releases / Re-releases
-11. Production / Filming Updates
-12. OTT Platform Acquisition / Streaming Rights
-13. Box Office Updates
+5. Theatrical Releases / Re-releases
+6. New Movie / Series Announcements (only with a release date/window and platform/theatre)
+7. Season Renewals / New Season Updates (only with the new season's release date/window)
+8. OTT Platform Acquisition / Streaming Rights (only with the title coming to that platform with a date/window)
 Priority is a ranking preference, not a quota. Return EVERY candidate with exactly one sector, source_class and priority_type, plus topic, institution, event_key and reason. Do not invent values beyond the supplied metadata."""
         try:
             response=cerebras_create(model=CEREBRAS_MODEL,messages=[{"role":"system","content":prompt},{"role":"user","content":"\n".join(lines)}],response_format={"type":"json_schema","json_schema":{"name":"entertainment_news_v11_rank","strict":True,"schema":RANK_SCHEMA}},reasoning_effort="low",temperature=0.0,max_completion_tokens=3600)
@@ -2318,14 +2356,15 @@ STORY_SCHEMA={
 "year":{"type":"string"},
 "summary":{"type":"string"},
 "sector":{"type":"string","enum":SECTORS},
-"format":{"type":"string","enum":["Film","Series","Streaming","Industry"]},
-"news_type":{"type":"string","enum":["Confirmed","Reported","Now Streaming","Hindi Dub","Upcoming OTT","Trailer","Renewal","Cancellation","Release Date","Box Office","Industry","Casting","Production","Distribution","Announcement","First Look","Theatrical"]},
+"format":{"type":"string","enum":["Film","Series","Streaming"]},
+"news_type":{"type":"string","enum":["Now Streaming","Hindi Dub","Upcoming OTT","Renewal","Release Date","Distribution","Announcement","Theatrical"]},
 "highlights":{"type":"array","items":{"type":"string"},"minItems":2,"maxItems":3},
+"genre":{"type":"string"},"plot":{"type":"string"},
 "platform":{"type":"string"},"episodes":{"type":"string"},"languages":{"type":"string"},"status":{"type":"string"},"release_date":{"type":"string"},
 "spoiler":{"type":"string"},"note":{"type":"string"},
 "bold_terms":{"type":"array","items":{"type":"string"},"maxItems":18}
 },
-"required":["title","year","summary","sector","format","news_type","highlights","platform","episodes","languages","status","release_date","spoiler","note","bold_terms"],"additionalProperties":False}
+"required":["title","year","summary","sector","format","news_type","highlights","genre","plot","platform","episodes","languages","status","release_date","spoiler","note","bold_terms"],"additionalProperties":False}
 
 
 def first_sentence(text):
@@ -2388,7 +2427,10 @@ CRITICAL OUTPUT RULES:
 - year = title year only when clearly supported by the source; otherwise empty.
 - summary = one short sentence, factual and useful.
 - highlights = 2-3 short factual updates only.
-- Choose exactly one news_type and one of the 13 priority types implied by that news_type.
+- RELEASE-ONLY: choose exactly one news_type from the release set (Now Streaming, Hindi Dub, Upcoming OTT, Renewal, Release Date, Distribution, Announcement, Theatrical). Never write a review, trailer, casting, production, box-office or gossip story.
+- genre = a short genre/type description supported by the source (e.g. Korean Historical Fantasy Romantic Drama); empty if the source does not support one. Do not invent it.
+- plot = a 2-3 line factual synopsis of the film/series from the source only; empty if the source gives no synopsis. Do not invent plot details.
+- The story MUST carry release evidence: platform, release_date, or a status such as Now Streaming / Coming Soon with a window. A story with no release evidence is invalid.
 - Availability/release fields are populated only when the source supports them.
 - Keep copy compact, not blog-style.
 - No section labels such as 'Availability', 'What's New', 'Context', 'Vocabulary', or 'Bottom Line' in generated fields.
@@ -2414,11 +2456,15 @@ Return only valid JSON matching the schema."""
             title=clean_generated_text(data.get("title")); year=clean_generated_text(data.get("year")); summary=first_sentence(data.get("summary"))
             highlights=[clean_generated_text(x) for x in data.get("highlights",[]) if clean_generated_text(x)]
             spoiler=clean_generated_text(data.get("spoiler")); note=clean_generated_text(data.get("note")); fmt=safe_text(data.get("format")); news_type=safe_text(data.get("news_type")); out_sector=normalize_sector(data.get("sector"))
-            allowed_types={"Confirmed","Reported","Now Streaming","Hindi Dub","Upcoming OTT","Trailer","Renewal","Cancellation","Release Date","Box Office","Industry","Casting","Production","Distribution","Announcement","First Look","Theatrical"}
-            if not title or not summary or not complete_text(title) or not complete_text(summary) or fmt not in {"Film","Series","Streaming","Industry"} or news_type not in allowed_types or not (2<=len(highlights)<=3) or any(not complete_text(x) for x in highlights) or (spoiler and not complete_text(spoiler)): raise ValueError("Invalid story structure")
+            allowed_types={"Now Streaming","Hindi Dub","Upcoming OTT","Renewal","Release Date","Distribution","Announcement","Theatrical"}
+            if not title or not summary or not complete_text(title) or not complete_text(summary) or fmt not in {"Film","Series","Streaming"} or news_type not in allowed_types or not (2<=len(highlights)<=3) or any(not complete_text(x) for x in highlights) or (spoiler and not complete_text(spoiler)): raise ValueError("Invalid story structure")
             dynamic_fields={k:trim_source_text(clean_generated_text(data.get(k)),300) for k in ["platform","episodes","languages","status","release_date"]}
+            genre=trim_source_text(clean_generated_text(data.get("genre")),120); plot=trim_source_text(clean_generated_text(data.get("plot")),400)
+            if plot and not complete_text(plot): raise ValueError("Incomplete plot")
             priority_type = NEWS_TYPE_TO_PRIORITY.get(news_type, "New Movie / Series Announcements")
-            return {**item,"title":trim_source_text(title,100),"headline":trim_source_text(title,100),"year":trim_source_text(year,10),"summary":trim_source_text(summary,220),"sector":out_sector,"format":fmt,"news_type":news_type,"priority_type":priority_type,"highlights":[trim_source_text(x,135) for x in highlights],**dynamic_fields,"spoiler":trim_source_text(spoiler,500),"note":trim_source_text(note,350),"bold_terms":[safe_text(x) for x in data.get("bold_terms",[]) if safe_text(x)]}
+            candidate_story={**item,"title":trim_source_text(title,100),"headline":trim_source_text(title,100),"year":trim_source_text(year,10),"summary":trim_source_text(summary,220),"sector":out_sector,"format":fmt,"news_type":news_type,"priority_type":priority_type,"highlights":[trim_source_text(x,135) for x in highlights],**dynamic_fields,"genre":genre,"plot":plot,"spoiler":trim_source_text(spoiler,500),"note":trim_source_text(note,350),"bold_terms":[safe_text(x) for x in data.get("bold_terms",[]) if safe_text(x)]}
+            if not story_release_evidence(candidate_story): raise ValueError("No release evidence (platform/release_date/status)")
+            return candidate_story
         except Exception as exc:
             logger.warning("Story generation attempt %d failed: %s",attempt+1,exc)
             if attempt<2:time.sleep(1)
@@ -2540,6 +2586,10 @@ def numeric_grounded(
             *story.get(
                 "highlights",
                 [],
+            ),
+            story.get(
+                "plot",
+                "",
             ),
         ]
     )
@@ -2741,10 +2791,42 @@ def add_media_reference():
     return '<img src="tg://photo?id=newsphoto">'
 
 
+def build_release_line(story):
+    """The single release line for the FULL STORY block, built only from
+    the story's platform / release_date / languages / episodes / status."""
+    platform = safe_text(story.get("platform"))
+    date = safe_text(story.get("release_date"))
+    languages = safe_text(story.get("languages"))
+    episodes = safe_text(story.get("episodes"))
+    status = safe_text(story.get("status"))
+    news_type = safe_text(story.get("news_type"))
+    priority = safe_text(story.get("priority_type"))
+    status_l = status.lower()
+    if "now streaming" in status_l or news_type == "Now Streaming":
+        line = f"Now Streaming on {platform}" if platform else "Now Streaming"
+    elif priority == "Theatrical Releases / Re-releases" or news_type == "Theatrical":
+        line = f"In Cinemas on {date}" if date else "Now Playing in Cinemas"
+    elif date and platform:
+        line = f"Confirmed to Release on {date} on {platform}"
+    elif date:
+        line = f"Confirmed to Release on {date}"
+    elif platform:
+        line = f"Coming Soon on {platform}"
+    elif status:
+        line = status
+    else:
+        return ""
+    if languages and languages.lower() not in line.lower():
+        line += f" in {languages}" if "language" in languages.lower() else f" in {languages}"
+    if episodes:
+        line += f" ({episodes} episodes)" if "episode" not in episodes.lower() else f" ({episodes})"
+    return line
+
+
 def dynamic_rich_html(story):
     """Render the final V1 Entertainment template deterministically."""
     terms = derive_bold_terms(story)
-    news_type = safe_text(story.get("news_type")) or "Confirmed"
+    news_type = safe_text(story.get("news_type")) or "Release Date"
     priority = safe_text(story.get("priority_type"))
     title = escape_rich_html(story.get("title") or story.get("headline") or "")
     year = safe_text(story.get("year"))
@@ -2757,47 +2839,38 @@ def dynamic_rich_html(story):
         "Release Date Confirmations":"📅 RELEASE DATE CONFIRMED",
         "New Movie / Series Announcements":"🎬 NEW ANNOUNCEMENT",
         "Season Renewals / New Season Updates":"🔄 SEASON UPDATE",
-        "Trailer Releases":"🎞️ TRAILER RELEASED",
-        "First Look / First Glimpse / Posters":"👀 FIRST LOOK",
-        "Cast / Character Announcements":"🎭 CAST ANNOUNCEMENT",
         "Theatrical Releases / Re-releases":"🎥 THEATRICAL RELEASE",
-        "Production / Filming Updates":"🎬 PRODUCTION UPDATE",
         "OTT Platform Acquisition / Streaming Rights":"🌍 STREAMING RIGHTS",
-        "Box Office Updates":"💰 BOX OFFICE",
     }
     fallback_hooks = {
         "Now Streaming":"🔥 NOW STREAMING","Hindi Dub":"🇮🇳 HINDI DUB AVAILABLE","Upcoming OTT":"📺 UPCOMING OTT RELEASE",
-        "Release Date":"📅 RELEASE DATE CONFIRMED","Trailer":"🎞️ TRAILER RELEASED","Renewal":"🔄 SEASON UPDATE","Cancellation":"❌ CANCELLATION",
-        "First Look":"👀 FIRST LOOK","Casting":"🎭 CAST ANNOUNCEMENT","Theatrical":"🎥 THEATRICAL RELEASE","Production":"🎬 PRODUCTION UPDATE",
-        "Distribution":"🌍 STREAMING RIGHTS","Box Office":"💰 BOX OFFICE","Industry":"🏢 INDUSTRY UPDATE","Announcement":"🎬 NEW ANNOUNCEMENT",
-        "Reported":"📰 REPORTED","Confirmed":"📢 CONFIRMED",
+        "Release Date":"📅 RELEASE DATE CONFIRMED","Renewal":"🔄 SEASON UPDATE",
+        "Theatrical":"🎥 THEATRICAL RELEASE",
+        "Distribution":"🌍 STREAMING RIGHTS","Announcement":"🎬 NEW ANNOUNCEMENT",
     }
-    hook = hook_map.get(priority, fallback_hooks.get(news_type, "📢 CONFIRMED"))
+    hook = hook_map.get(priority, fallback_hooks.get(news_type, "📅 RELEASE DATE CONFIRMED"))
     lines.append(f"<p><b>{escape_rich_html(hook)}</b></p>")
     lines.append(f"<h1><b>🎬 {title}" + (f" ({escape_rich_html(year)})" if year else "") + "</b></h1>")
 
-    # Availability is placed immediately after the title when supported.
-    availability = []
-    if safe_text(story.get("platform")):
-        availability.append(f"<p>✦ <b>Platform:</b> {escape_rich_html(story.get('platform'))}</p>")
-    if safe_text(story.get("episodes")):
-        availability.append(f"<p>✦ <b>Episodes:</b> {escape_rich_html(story.get('episodes'))}</p>")
-    if safe_text(story.get("languages")):
-        availability.append(f"<p>✦ <b>Language:</b> {escape_rich_html(story.get('languages'))}</p>")
-    if safe_text(story.get("status")):
-        availability.append(f"<p>✦ <b>Status:</b> {escape_rich_html(story.get('status'))}</p>")
-    if safe_text(story.get("release_date")):
-        availability.append(f"<p>✦ <b>Release:</b> {escape_rich_html(story.get('release_date'))}</p>")
     summary = bold_terms_html(story.get("summary", ""), terms)
     if summary:
         lines.append(f"<p><b>{summary}</b></p>")
 
     # POSTCARD FORMAT (network standard, Karn's pick 2026-10-30): every
-    # detail (availability rows, highlights, note) inside one tap-to-expand
-    # FULL STORY block. No visible section template.
+    # detail inside one tap-to-expand FULL STORY block. Release-only order
+    # (Chalo Review Karen, Karn 2026-11-06): first the plot, then the
+    # release line, then highlights, then the note. The first content
+    # inside the block is story content (the plot), never a label alone.
     story_bits = []
-    for row in availability:
-        story_bits.append(row.removeprefix("<p>").removesuffix("</p>"))
+    plot = safe_text(story.get("plot"))
+    genre = safe_text(story.get("genre"))
+    if plot:
+        story_bits.append(f"📑 {bold_terms_html(plot, terms)}")
+    elif genre:
+        story_bits.append(bold_terms_html(genre, terms))
+    release_line = build_release_line(story)
+    if release_line:
+        story_bits.append(f"👉 {bold_terms_html(release_line, terms)}")
     for detail in story.get("highlights", [])[:3]:
         story_bits.append(f"✦ {bold_terms_html(detail, terms)}")
 
@@ -2808,7 +2881,7 @@ def dynamic_rich_html(story):
 
     note = safe_text(story.get("note"))
     if note:
-        story_bits.append(bold_terms_html(note, terms))
+        story_bits.append(f"📍 Note: {bold_terms_html(note, terms)}")
     if story_bits:
         lines.append(
             "<blockquote expandable><b>FULL STORY</b><br>"
@@ -3343,6 +3416,7 @@ def claims_grounded(story, article_text):
         story.get("headline", ""),
         story.get("summary", ""),
         *story.get("highlights", []),
+        story.get("plot", ""),
     ]
     claims = [safe_text(x) for x in claims if safe_text(x)]
 
@@ -3723,7 +3797,7 @@ def self_test():
     sample={
         "title":"Example Series","year":"2026","summary":"The series is confirmed for a September 2026 release.",
         "sector":"Hollywood","format":"Series","news_type":"Release Date","priority_type":"Release Date Confirmations",
-        "highlights":["Apple TV+ confirmed the premiere date.","Season 1 will contain 8 episodes."],
+        "highlights":["Apple TV+ confirmed the premiere date.","Season 1 will contain 8 episodes."],"genre":"Drama Series","plot":"A small town faces a mystery that changes every family living there. The series follows two rivals forced to work together.",
         "platform":"Apple TV+","episodes":"8","languages":"English","status":"Coming Soon","release_date":"September 9, 2026",
         "spoiler":"","note":"Release timing is subject to the platform's published schedule.",
         "bold_terms":["Apple TV+","September 9, 2026"],"source":"Deadline","url":"https://deadline.com/example/story",
@@ -3735,18 +3809,40 @@ def self_test():
     assert "THE CONTEXT" not in rendered and "BOTTOM LINE" not in rendered
     assert "📺" not in rendered and "Availability" not in rendered
     assert "What's New" not in rendered
-    assert "✦ <b>Platform:</b> Apple TV+" in rendered
-    assert "✦ <b>Release:</b> September 9, 2026" in rendered
+    assert "📑 A small town faces a mystery" in rendered
+    assert "👉" in rendered and "September 9, 2026" in rendered and "Apple TV+" in rendered
+    assert build_release_line(sample).startswith("Confirmed to Release on September 9, 2026 on Apple TV+")
+    # FULL STORY order: plot first, then release line, then note.
+    assert rendered.index("📑") < rendered.index("👉") < rendered.index("📍 Note:")
+    assert "✦ <b>Platform:</b>" not in rendered
     assert "<b>🎬 Example Series (2026)</b>" in rendered
     assert "<a href=\"https://deadline.com/example/story\">Deadline</a>" in rendered
     assert "@EntertainmentNewsroom" in rendered
     assert rich_visible_length(rendered) <= MAX_RICH_CHARACTERS
     assert likely_same_event("Netflix announces series release date","Netflix announces series release date")
-    assert NEWS_PRIORITY["OTT / Streaming Availability"] < NEWS_PRIORITY["Trailer Releases"] < NEWS_PRIORITY["Box Office Updates"]
+    assert NEWS_PRIORITY["OTT / Streaming Availability"] < NEWS_PRIORITY["Release Date Confirmations"] < NEWS_PRIORITY["OTT Platform Acquisition / Streaming Rights"]
+    # Blocked types have no priority / hook path at all.
+    for _blocked in ("Trailer Releases","First Look / First Glimpse / Posters","Cast / Character Announcements","Production / Filming Updates","Box Office Updates"):
+        assert _blocked not in NEWS_PRIORITY
+        assert _blocked not in dynamic_rich_html(sample)
+    for _blocked_type in ("Trailer","Cancellation","Box Office","Casting","Production","First Look"):
+        assert _blocked_type not in NEWS_TYPE_TO_PRIORITY
+    # Release gate: no platform / release_date / streaming status = rejected.
+    assert story_release_evidence(sample) is True
+    assert story_release_evidence(dict(sample, platform="", release_date="", status="")) is False
+    assert story_release_evidence(dict(sample, platform="", release_date="", status="Now Streaming")) is True
+    assert story_release_evidence(dict(sample, platform="", release_date="November 12, 2026", status="")) is True
+    # Candidate gate: clear release passes; trailer / box office / no-signal blocked.
+    assert release_candidate_allowed({"title":"Example Series now streaming on Netflix","excerpt":"All episodes are now streaming on Netflix in Hindi and English."})[0] is True
+    assert release_candidate_allowed({"title":"Example Film trailer released","excerpt":"The trailer for the film was released today."})[0] is False
+    assert release_candidate_allowed({"title":"Example Film crosses $100 million at the box office","excerpt":"The film grossed $100 million worldwide."})[0] is False
+    assert release_candidate_allowed({"title":"Actor joins the cast of Example Film","excerpt":"The actor has joined the cast of the upcoming film."})[0] is False
+    assert release_candidate_allowed({"title":"Example Series season 2 begins production","excerpt":"Production has started on the new season."})[0] is False
+    assert has_release_signal({"title":"Example Film confirmed to release on November 12, 2026 on Netflix","excerpt":"The film will release in Hindi and English."}) is True
     assert rank_score({"significance":20,"reach":15,"event_magnitude":15,"platform_ip_strength":10,"source_authority":15,"evidence_strength":10,"international_relevance":5,"recency":5,"audience_anticipation":5,"source_class":"official"}) == 100
     assert rank_score({"significance":20,"reach":15,"event_magnitude":15,"platform_ip_strength":10,"source_authority":15,"evidence_strength":10,"international_relevance":5,"recency":5,"audience_anticipation":5,"source_class":"rumor"}) == 69
 
-    # Every 13 priority types resolves to a hook and a valid priority tuple.
+    # Every allowed priority type resolves to a hook and a valid priority tuple.
     for priority in NEWS_PRIORITY:
         probe=dict(sample, priority_type=priority)
         out=dynamic_rich_html(probe)
@@ -3834,7 +3930,7 @@ def self_test():
     assert blocked_src is True and src_reason.startswith("learned_source:")
     # Good score at the same source should prevent source blacklist qualification in a fresh state.
     learned_state = default_state(); globals()["STATE"] = learned_state
-    mixed = [{"url": "https://good.example/a", "importance_score": 40, "title": "a", "priority_type": "Trailer Releases"}] * 7 + [{"url": "https://good.example/b", "importance_score": 95, "title": "b", "priority_type": "OTT / Streaming Availability"}] * 3
+    mixed = [{"url": "https://good.example/a", "importance_score": 40, "title": "a", "priority_type": "New Movie / Series Announcements"}] * 7 + [{"url": "https://good.example/b", "importance_score": 95, "title": "b", "priority_type": "OTT / Streaming Availability"}] * 3
     update_source_quality(mixed)
     blocked_good, _ = learned_source_block({"url": "https://good.example/c", "title": "major streaming release"})
     assert blocked_good is False
@@ -3874,20 +3970,20 @@ def self_test():
         published_story = {
             "headline": "Spider-Man: Brand New Day",
             "title": "Spider-Man: Brand New Day",
-            "summary": "The film crosses $900 million domestically.",
-            "highlights": ["The film reaches a $900 million domestic milestone."],
-            "priority_type": "Box Office Updates",
-            "canonical": "deadline.com/spider-man-900m",
-            "url": "https://deadline.com/spider-man-900m",
+            "summary": "Sony confirmed the film will release on September 9, 2026.",
+            "highlights": ["The release date is September 9, 2026."],
+            "priority_type": "Release Date Confirmations",
+            "canonical": "deadline.com/spider-man-date",
+            "url": "https://deadline.com/spider-man-date",
             "sector": "Hollywood",
         }
         remember_posted_event(published_story)
         duplicate_candidate = {
-            "title": "Spider-Man: Brand New Day reaches $900 million domestic",
-            "excerpt": "Spider-Man: Brand New Day has crossed $900 million domestically.",
-            "url": "https://variety.com/2026/film/news/spider-man-900m",
-            "canonical": "variety.com/2026/film/news/spider-man-900m",
-            "priority_type": "Box Office Updates",
+            "title": "Spider-Man: Brand New Day release date confirmed for September 9, 2026",
+            "excerpt": "Sony confirmed Spider-Man: Brand New Day will release on September 9, 2026.",
+            "url": "https://variety.com/2026/film/news/spider-man-date",
+            "canonical": "variety.com/2026/film/news/spider-man-date",
+            "priority_type": "Release Date Confirmations",
         }
         hit, reason = event_memory_hit(duplicate_candidate)
         assert hit is True and "same_work_same_event" in reason
@@ -3896,7 +3992,7 @@ def self_test():
         reserved = [dict(published_story, published_at=NOW_BD.isoformat())]
         assert publication_duplicate_reason(duplicate_candidate, reserved)
 
-        # A later box-office cycle is permitted after the cooldown window.
+        # A later release cycle is permitted after the cooldown window.
         globals()["STATE"]["publication_fingerprints"][0]["published_at"] = (NOW_BD - timedelta(hours=60)).isoformat()
         later, _ = event_memory_hit(duplicate_candidate)
         assert later is False
@@ -3913,20 +4009,20 @@ def self_test():
             "summary":"Sony confirmed the release date.", "highlights":["The release date is September 2026."],
             "priority_type":"Release Date Confirmations", "canonical":"sony.com/spider-date", "url":"https://sony.com/spider-date", "sector":"Hollywood"
         })
-        trailer_candidate = {"title":"Spider-Man: Brand New Day trailer released", "excerpt":"The first trailer has been released.",
-                             "url":"https://deadline.com/spider-trailer", "canonical":"deadline.com/spider-trailer",
-                             "priority_type":"Trailer Releases"}
-        assert event_memory_hit(trailer_candidate)[0] is False
+        other_candidate = {"title":"Spider-Man: Brand New Day now streaming on Netflix", "excerpt":"The film is now streaming on Netflix.",
+                             "url":"https://deadline.com/spider-streaming", "canonical":"deadline.com/spider-streaming",
+                             "priority_type":"OTT / Streaming Availability"}
+        assert event_memory_hit(other_candidate)[0] is False
     finally:
         globals()["STATE"] = old_state
 
     # Cluster different headlines from multiple publishers when they describe
     # the same work + same event family.
-    a = {"title":"Spider-Man: Brand New Day crosses $900 million", "excerpt":"Domestic gross reaches $900 million.",
-         "priority_type":"Box Office Updates", "event_key":"publisher_key_a", "editor_rank":1,
+    a = {"title":"Spider-Man: Brand New Day release date confirmed for September 9, 2026", "excerpt":"Sony confirmed the release date is September 9, 2026.",
+         "priority_type":"Release Date Confirmations", "event_key":"publisher_key_a", "editor_rank":1,
          "importance_score":95, "published_date":NOW_BD.isoformat()}
-    b = {"title":"Spider-Man: Brand New Day hits $900M domestic", "excerpt":"The movie reaches the $900 million domestic milestone.",
-         "priority_type":"Box Office Updates", "event_key":"publisher_key_b", "editor_rank":2,
+    b = {"title":"Spider-Man: Brand New Day confirmed to release on September 9, 2026", "excerpt":"The film will release on September 9, 2026, Sony confirmed.",
+         "priority_type":"Release Date Confirmations", "event_key":"publisher_key_b", "editor_rank":2,
          "importance_score":92, "published_date":NOW_BD.isoformat()}
     assert len(collapse_event_clusters([a,b])) == 1
 
