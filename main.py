@@ -901,8 +901,9 @@ RELEASE_ACTION_RE = re.compile(
 STRONG_RELEASE_RE = re.compile(
     r"\b(?:now streaming|streaming now|now available on|available to stream|"
     r"in cinemas (?:from|on)|in theaters (?:from|on)|in theatres (?:from|on))\b", re.I)
+TRAILER_TEASER_TITLE_RE = re.compile(r"\b(?:trailer|teaser)\b", re.I)
 BLOCKED_TITLE_RE = re.compile(
-    r"\b(?:trailer|teaser|first look|first glimpse|poster|posters|box office|"
+    r"\b(?:first look|first glimpse|poster|posters|box office|"
     r"grossed|grosses|opening weekend|cast(?:ing)? (?:announced|revealed|joins)|"
     r"joins the cast|begins filming|starts filming|begins production|"
     r"wraps filming|wraps production|production (?:begins|starts|wraps)|"
@@ -927,11 +928,35 @@ def has_release_signal(item):
         return True
     return False
 
+def has_strong_release_signal(item):
+    """True for an unmistakable release announcement: 'now streaming',
+    a release date together with a platform or an actual date, a premiere
+    on a platform/date, a cinema opening on a date, or a title coming to
+    a platform. Used only to override the trailer/teaser title block."""
+    blob = content_blob(item)
+    if STRONG_RELEASE_RE.search(blob):
+        return True
+    has_platform = bool(RELEASE_PLATFORM_RE.search(blob))
+    has_date = bool(RELEASE_DATE_RE.search(blob))
+    if re.search(r"\brelease date\b", blob, re.I) and (has_platform or has_date):
+        return True
+    if re.search(r"\bpremier\w*\b", blob, re.I) and (has_platform or has_date):
+        return True
+    if re.search(r"\bcoming to\b", blob, re.I) and has_platform:
+        return True
+    if re.search(r"\b(?:in cinemas|in theatres|in theaters)\b", blob, re.I) and has_date:
+        return True
+    return False
+
 def release_candidate_allowed(item):
     """Release-only publish gate for a candidate (title-based blocked types
-    first, then the release-signal requirement)."""
+    first, then the release-signal requirement). A title whose only blocked
+    signal is trailer/teaser still passes when the item carries a strong
+    release signal - it is then written as its release type, never Trailer."""
     title = safe_text(item.get("title"))
     if BLOCKED_TITLE_RE.search(title):
+        return False, "blocked_non_release_type"
+    if TRAILER_TEASER_TITLE_RE.search(title) and not has_strong_release_signal(item):
         return False, "blocked_non_release_type"
     if not has_release_signal(item):
         return False, "no_release_signal"
@@ -1979,7 +2004,7 @@ def rank_candidates(candidates,region):
             lines.append("\n".join([f"ID: {idx}",f"Title: {item.get('title','')}",f"Source: {item.get('source','')}",f"Published: {item.get('published_date','')}",age,f"Excerpt: {trim_source_text(item.get('excerpt',''),850)}",""]))
         prompt=f"""You are the senior editor of @EntertainmentNewsroom. Rank these entertainment candidates using a strict 0-100 model.
 Sectors: Hollywood, Indian, International. Hollywood means primarily US/Hollywood entertainment; Indian means India-led cinema/series/OTT; International means major non-Indian, non-Hollywood global entertainment and cross-border developments.
-RELEASE-ONLY CHANNEL: this channel publishes ONLY release updates - a story is publishable only if it answers what title is releasing, when, and where (platform/theatre), ideally in which languages. Score any candidate that does NOT clearly announce a release (reviews, trailers/teasers, first looks/posters alone, casting alone, production starts/wraps alone, box office, viewership records, business, awards, gossip, interviews, hype, cancellations) so its total stays below 80, whatever its priority_type. Rumor/speculation must never reach a publishable score. Official confirmation is stronger than reputable reporting.
+RELEASE-ONLY CHANNEL: this channel publishes ONLY release updates - a story is publishable only if it answers what title is releasing, when, and where (platform/theatre), ideally in which languages. Score any candidate that does NOT clearly announce a release (reviews, trailers/teasers alone, first looks/posters alone, casting alone, production starts/wraps alone, box office, viewership records, business, awards, gossip, interviews, hype, cancellations) so its total stays below 80, whatever its priority_type. Rumor/speculation must never reach a publishable score. Official confirmation is stronger than reputable reporting.
 Scoring components must sum to exactly 100: significance 0-20; reach 0-15; event_magnitude 0-15; platform_ip_strength 0-10; source_authority 0-15; evidence_strength 0-10; international_relevance 0-5; recency 0-5; audience_anticipation 0-5.
 For each candidate, assign exactly one priority_type from this fixed list:
 1. OTT / Streaming Availability
@@ -3839,6 +3864,14 @@ def self_test():
     assert release_candidate_allowed({"title":"Actor joins the cast of Example Film","excerpt":"The actor has joined the cast of the upcoming film."})[0] is False
     assert release_candidate_allowed({"title":"Example Series season 2 begins production","excerpt":"Production has started on the new season."})[0] is False
     assert has_release_signal({"title":"Example Film confirmed to release on November 12, 2026 on Netflix","excerpt":"The film will release in Hindi and English."}) is True
+    # Trailer-word override: a strong release signal beats trailer/teaser as
+    # the ONLY blocked signal; every other blocked type still wins.
+    assert release_candidate_allowed({"title":"Black Doves Season 2 Now Streaming: Release Date, Episodes, Cast, Plot, Trailer, and More","excerpt":"Season 2 is now streaming on Netflix, with all episodes available in English and Hindi."})[0] is True
+    assert release_candidate_allowed({"title":"'Melania, The Series' Gets Prime Video Release Date & Trailer","excerpt":"Prime Video has confirmed the release date for the series."})[0] is True
+    _trailer_only = release_candidate_allowed({"title":"Official Trailer Released for Upcoming Film Example","excerpt":"The trailer for the film was released today."})
+    assert _trailer_only[0] is False and _trailer_only[1] == "blocked_non_release_type"
+    _box_office = release_candidate_allowed({"title":"Example Film crosses $100 million at the box office","excerpt":"The film is now streaming on Netflix after its release on November 12, 2026."})
+    assert _box_office[0] is False and _box_office[1] == "blocked_non_release_type"
     assert rank_score({"significance":20,"reach":15,"event_magnitude":15,"platform_ip_strength":10,"source_authority":15,"evidence_strength":10,"international_relevance":5,"recency":5,"audience_anticipation":5,"source_class":"official"}) == 100
     assert rank_score({"significance":20,"reach":15,"event_magnitude":15,"platform_ip_strength":10,"source_authority":15,"evidence_strength":10,"international_relevance":5,"recency":5,"audience_anticipation":5,"source_class":"rumor"}) == 69
 
