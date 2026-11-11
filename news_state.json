@@ -1,248 +1,152 @@
 {
   "feeds": {
     "https://deadline.com/feed/": {
-      "etag": "W/\"8d0c6f42660f21bd4fb0e94524041f65\"",
-      "last_modified": "Wed, 11 Nov 2026 15:53:44 GMT",
-      "last_checked": "2026-11-11T21:56:55.686219+06:00",
+      "etag": "W/\"923690c436a6e8d94502cbb99f04ad3a\"",
+      "last_modified": "Wed, 11 Nov 2026 22:33:14 GMT",
+      "last_checked": "2026-11-12T04:35:29.929635+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://variety.com/feed/": {
-      "etag": "W/\"197ada34bfafbf99a6a5cac6498f0b6c\"",
-      "last_modified": "Wed, 11 Nov 2026 15:50:57 GMT",
-      "last_checked": "2026-11-11T21:56:57.106594+06:00",
+      "etag": "W/\"9389ff81977201ce9a1a688880456b8e\"",
+      "last_modified": "Wed, 11 Nov 2026 22:29:32 GMT",
+      "last_checked": "2026-11-12T04:35:31.334750+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.hollywoodreporter.com/feed/": {
-      "etag": "W/\"a5c2dbba11ddf21a4a87e89488a40c0d\"",
-      "last_modified": "Wed, 11 Nov 2026 15:52:45 GMT",
-      "last_checked": "2026-11-11T21:56:58.461826+06:00",
+      "etag": "W/\"b8390b4d959f1956dd4e7f1ca17e1d7f\"",
+      "last_modified": "Wed, 11 Nov 2026 22:26:03 GMT",
+      "last_checked": "2026-11-12T04:35:35.104263+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.thewrap.com/feed/": {
-      "etag": "\"ab9a5b8773a8eb73b74f2c5dfcef1978\"",
-      "last_modified": "Wed, 11 Nov 2026 15:54:13 GMT",
-      "last_checked": "2026-11-11T21:56:59.657251+06:00",
+      "etag": "\"c980cb9bc8808286ee3f85e8d4bbb125\"",
+      "last_modified": "Wed, 11 Nov 2026 22:32:11 GMT",
+      "last_checked": "2026-11-12T04:35:36.143127+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.indiewire.com/feed/": {
-      "etag": "W/\"9bb7eadbcec9f204e383f8c3d05c2b1b\"",
-      "last_modified": "Wed, 11 Nov 2026 15:10:38 GMT",
-      "last_checked": "2026-11-11T21:57:00.634932+06:00",
+      "etag": "W/\"953a364b4fc1c5bb03a9126b583fe758\"",
+      "last_modified": "Wed, 11 Nov 2026 20:53:21 GMT",
+      "last_checked": "2026-11-12T04:35:37.194960+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://collider.com/feed/": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-11T21:57:02.357818+06:00",
+      "last_checked": "2026-11-12T04:35:38.978853+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://tvline.com/feed/": {
-      "etag": "\"6a549bd545cd5a6416ac62b4ad200c75\"",
-      "last_modified": "Wed, 11 Nov 2026 14:15:33 GMT",
-      "last_checked": "2026-11-11T21:57:03.555679+06:00",
+      "etag": "\"0a65d3f34a4dea18eb7ed4d9fb497f6c\"",
+      "last_modified": "Wed, 11 Nov 2026 21:15:00 GMT",
+      "last_checked": "2026-11-12T04:35:39.539131+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.ottplay.com/rss": {
       "etag": "\"b5496c89c58ff0f5d07d64a68d4efe07\"",
       "last_modified": "Thu, 27 May 2021 12:38:49 GMT",
-      "last_checked": "2026-11-11T21:57:05.919043+06:00",
+      "last_checked": "2026-11-12T04:35:42.386536+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.filmibeat.com/rss/feeds/filmibeat-news.xml": {
       "etag": null,
-      "last_modified": "Wed, 11 Nov 2026 15:57:06 GMT",
-      "last_checked": "2026-11-11T21:57:06.798861+06:00",
+      "last_modified": "Wed, 11 Nov 2026 22:35:42 GMT",
+      "last_checked": "2026-11-12T04:35:42.966594+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.pinkvilla.com/rss": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-11T21:57:07.357580+06:00",
+      "last_checked": "2026-11-12T04:35:43.295175+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.bollywoodhungama.com/feed/": {
-      "etag": "\"b480bc06975e6ad85fc729d4eff141af\"",
-      "last_modified": "Wed, 11 Nov 2026 15:43:10 GMT",
-      "last_checked": "2026-11-11T21:57:07.528911+06:00",
+      "etag": "\"c7277d8d578caaa824b239bb44ab52cf\"",
+      "last_modified": "Wed, 11 Nov 2026 19:49:49 GMT",
+      "last_checked": "2026-11-12T04:35:44.385950+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.gadgets360.com/entertainment/rss": {
-      "last_checked": "2026-11-11T21:57:09.407393+06:00",
-      "fail_count": 222,
+      "last_checked": "2026-11-12T04:35:46.541805+06:00",
+      "fail_count": 223,
       "alerted": true
     },
     "https://www.soompi.com/feed": {
-      "etag": "W/\"4a7e7b3d017141015a6444b04ad087be\"",
-      "last_modified": "Wed, 11 Nov 2026 15:28:16 GMT",
-      "last_checked": "2026-11-11T21:57:09.644209+06:00",
+      "etag": "W/\"088da64fab049c1b50fcaba6f3238f85\"",
+      "last_modified": "Wed, 11 Nov 2026 16:53:39 GMT",
+      "last_checked": "2026-11-12T04:35:46.770919+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.whats-on-netflix.com/feed/": {
       "etag": null,
-      "last_modified": "Wed, 11 Nov 2026 15:38:01 GMT",
-      "last_checked": "2026-11-11T21:57:12.147864+06:00",
+      "last_modified": "Wed, 11 Nov 2026 22:06:03 GMT",
+      "last_checked": "2026-11-12T04:35:48.830079+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.netflix.com/tudum/rss.xml": {
-      "last_checked": "2026-11-11T21:57:14.884725+06:00",
-      "fail_count": 222,
+      "last_checked": "2026-11-12T04:35:51.762903+06:00",
+      "fail_count": 223,
       "alerted": true
     },
     "https://press.wbd.com/us/en/rss": {
-      "last_checked": "2026-11-11T21:57:15.547760+06:00",
-      "fail_count": 222,
+      "last_checked": "2026-11-12T04:35:52.018235+06:00",
+      "fail_count": 223,
       "alerted": true
     },
     "https://www.apple.com/tv-pr/newsroom/feed/": {
-      "last_checked": "2026-11-11T21:57:15.969159+06:00",
-      "fail_count": 222,
+      "last_checked": "2026-11-12T04:35:52.329246+06:00",
+      "fail_count": 223,
       "alerted": true
     },
     "https://www.aboutamazon.com/rss": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-11T21:57:16.157190+06:00",
+      "last_checked": "2026-11-12T04:35:52.439551+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.marvel.com/articles/feed": {
-      "last_checked": "2026-11-11T21:57:52.757164+06:00",
-      "fail_count": 222,
+      "last_checked": "2026-11-12T04:35:53.053959+06:00",
+      "fail_count": 223,
       "alerted": true
     },
     "https://www.dc.com/blog/rss.xml": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-11T21:57:53.557033+06:00",
-      "fail_count": 3,
+      "last_checked": "2026-11-12T04:35:54.494883+06:00",
+      "fail_count": 4,
       "alerted": true
     },
     "https://www.sonypictures.com/rss": {
-      "last_checked": "2026-11-11T21:57:54.013824+06:00",
-      "fail_count": 222,
+      "last_checked": "2026-11-12T04:35:54.801592+06:00",
+      "fail_count": 223,
       "alerted": true
     },
     "https://www.paramount.com/rss": {
-      "last_checked": "2026-11-11T21:57:54.125056+06:00",
-      "fail_count": 222,
+      "last_checked": "2026-11-12T04:35:54.887597+06:00",
+      "fail_count": 223,
       "alerted": true
     },
     "https://www.universalpictures.com/rss": {
-      "last_checked": "2026-11-11T21:57:54.561921+06:00",
-      "fail_count": 222,
+      "last_checked": "2026-11-12T04:35:55.217829+06:00",
+      "fail_count": 223,
       "alerted": true
     }
   },
   "queue": {
-    "deadline.com/2026/11/netflix-radford-studio-purchase-latest-1237216149": {
-      "title": "Netflix’s Radford Studio Acquisition Moving Ahead Despite Streamer’s Sunset Blvd Landlord Throwing Shade On Deal",
-      "url": "https://deadline.com/2026/11/netflix-radford-studio-purchase-latest-1237216149/",
-      "canonical": "deadline.com/2026/11/netflix-radford-studio-purchase-latest-1237216149",
-      "published_dt": "2026-11-07T08:41:12+06:00",
-      "published_date": "2026-11-07T08:41:12+06:00",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "excerpt": "Netflix didn’t end up owning the legendary Warner Bros lot after losing out earlier this year to David Ellison for the Burbank studio, but the streamer is still ploughing ahead to take control of Radford Studio Center in the next several months. Despite some recent shade thrown by Netflix’s current Sunset Blvd landlord, the long-rumored […]",
-      "image": "https://deadline.com/wp-content/uploads/2026/11/rardford-studio-lot-netflix.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-11-07T12:53:07.605089+06:00",
-      "last_seen": "2026-11-08T00:30:24.926103+06:00",
-      "importance_score": 30,
-      "priority_type": "OTT Platform Acquisition / Streaming Rights",
-      "priority_tier": 2,
-      "priority_rank": 8,
-      "sector": "Hollywood",
-      "rank_reason": "Acquisition news, not a content release; scores remain low.",
-      "last_ranked_at": "2026-11-08T00:32:37.527278+06:00",
-      "learning_pattern": ""
-    },
-    "variety.com/2026/film/news/davika-hoorne-inherit-sequel-1236941967": {
-      "title": "Davika Hoorne Returning for ‘Inherit’ Sequel, Director Banjong Pisanthanakun Confirms (EXCLUSIVE)",
-      "url": "https://variety.com/2026/film/news/davika-hoorne-inherit-sequel-1236941967/",
-      "canonical": "variety.com/2026/film/news/davika-hoorne-inherit-sequel-1236941967",
-      "published_dt": "2026-11-07T14:59:03+06:00",
-      "published_date": "2026-11-07T14:59:03+06:00",
-      "source": "Variety",
-      "region": "Entertainment",
-      "excerpt": "Banjong Pisanthanakun, the Thai director of horror hits “Shutter” and “Pee Mak,” tells Variety his new psychological horror film “Inherit” will get a sequel, with star Davika Hoorne set to return. “Inherit,” a Centrepiece selection at the Toronto Film Festival, where it world premiered in September, is closing the Jakarta World Cinema festival. Pisanthanakun and […]",
-      "image": "https://variety.com/wp-content/uploads/2026/11/Davika-Hoorne-Banjong-Pisanthanakun.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-11-07T19:47:22.609992+06:00",
-      "last_seen": "2026-11-08T00:30:29.178583+06:00",
-      "importance_score": 57,
-      "priority_type": "New Movie / Series Announcements",
-      "priority_tier": 2,
-      "priority_rank": 6,
-      "sector": "International",
-      "rank_reason": "Confirms a sequel will be made but provides no release date or platform, so it does not meet release‑only criteria for a high publishable score.",
-      "last_ranked_at": "2026-11-08T13:00:59.711178+06:00",
-      "learning_pattern": ""
-    },
-    "deadline.com/2026/11/g-i-joe-bradley-cooper-movie-date-paranormal-activity-1237215902": {
-      "title": "Bradley Cooper 'G.I. Joe' Movie, 'Paranormal Activity' Release Dates Set",
-      "url": "https://deadline.com/2026/11/g-i-joe-bradley-cooper-movie-date-paranormal-activity-1237215902/",
-      "canonical": "deadline.com/2026/11/g-i-joe-bradley-cooper-movie-date-paranormal-activity-1237215902",
-      "published_dt": "2026-11-07T03:00:00+06:00",
-      "published_date": "2026-11-07T03:00:00+06:00",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "excerpt": "N o n e",
-      "image": "https://deadline.com/wp-content/uploads/2026/10/Bradley-Cooper-Duke-from-G.I.-Joe-and-Danny-McBride.jpg?w=1024",
-      "discovery": "exa",
-      "source_pool": "primary",
-      "status": "pending",
-      "first_seen": "2026-11-08T00:31:35.075478+06:00",
-      "last_seen": "2026-11-08T00:31:35.075496+06:00",
-      "importance_score": 90,
-      "priority_type": "Theatrical Releases / Re-releases",
-      "priority_tier": 1,
-      "priority_rank": 5,
-      "sector": "Hollywood",
-      "rank_reason": "Officially confirmed theatrical release date (Oct 20, 2028) with major studio backing and high audience anticipation.",
-      "last_ranked_at": "2026-11-08T00:32:37.526108+06:00",
-      "learning_pattern": ""
-    },
-    "variety.com/2026/film/awards/jesse-eisenberg-julianne-moore-debut-ai-bad-now-you-see-me-4-1236941541": {
-      "title": "Jesse Eisenberg, Julianne Moore on The Debut, AI and Now You See Me 4",
-      "url": "https://variety.com/2026/film/awards/jesse-eisenberg-julianne-moore-debut-ai-bad-now-you-see-me-4-1236941541/",
-      "canonical": "variety.com/2026/film/awards/jesse-eisenberg-julianne-moore-debut-ai-bad-now-you-see-me-4-1236941541",
-      "published_dt": "2026-11-07T04:51:02+06:00",
-      "published_date": "2026-11-07T04:51:02+06:00",
-      "source": "Variety",
-      "region": "Entertainment",
-      "excerpt": "N o n e",
-      "image": "https://variety.com/wp-content/uploads/2026/11/jesse-eisenberg-julianne-moore.jpg?w=1000&h=563&crop=1",
-      "discovery": "exa",
-      "source_pool": "primary",
-      "status": "pending",
-      "first_seen": "2026-11-08T00:31:35.198514+06:00",
-      "last_seen": "2026-11-08T00:31:35.198531+06:00",
-      "importance_score": 24,
-      "priority_type": "New Movie / Series Announcements",
-      "priority_tier": 2,
-      "priority_rank": 6,
-      "sector": "Hollywood",
-      "rank_reason": "Discussion of film without release date; remains below publishable threshold.",
-      "last_ranked_at": "2026-11-08T00:32:37.526821+06:00",
-      "learning_pattern": ""
-    },
     "deadline.com/2026/11/druski-elizabeth-holmes-whiteface-dru-can-see-everything-snl-1237216571": {
       "title": "Druski Serves Elizabeth Holmes Whiteface In ‘Dru Can See Everything’ Sketch During ‘SNL’ Debut",
       "url": "https://deadline.com/2026/11/druski-elizabeth-holmes-whiteface-dru-can-see-everything-snl-1237216571/",
@@ -1081,13 +985,13 @@
       "status": "pending",
       "first_seen": "2026-11-11T13:34:23.565199+06:00",
       "last_seen": "2026-11-11T13:34:23.565210+06:00",
-      "importance_score": 27,
+      "importance_score": 14,
       "priority_type": "New Movie / Series Announcements",
       "priority_tier": 2,
       "priority_rank": 6,
       "sector": "Hollywood",
-      "rank_reason": "Interview content without new release information; low publishable score.",
-      "last_ranked_at": "2026-11-11T22:00:22.954425+06:00",
+      "rank_reason": "Actor interview without release info – not publishable.",
+      "last_ranked_at": "2026-11-12T04:36:23.140791+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/film/news/visionquest-elizabeth-olsen-avengers-doomsday-scarlet-witch-1235365599": {
@@ -1105,13 +1009,13 @@
       "status": "pending",
       "first_seen": "2026-11-11T13:34:25.175987+06:00",
       "last_seen": "2026-11-11T13:34:25.175995+06:00",
-      "importance_score": 27,
-      "priority_type": "New Movie / Series Announcements",
+      "importance_score": 39,
+      "priority_type": "Season Renewals / New Season Updates",
       "priority_tier": 2,
-      "priority_rank": 6,
+      "priority_rank": 7,
       "sector": "Hollywood",
-      "rank_reason": "Spoiler article lacks a release date; therefore low score.",
-      "last_ranked_at": "2026-11-11T22:00:22.954283+06:00",
+      "rank_reason": "Spoiler article about finale, no new release window – not a release announcement.",
+      "last_ranked_at": "2026-11-12T04:36:23.140920+06:00",
       "learning_pattern": ""
     },
     "netflix.com/tudum/articles/ink-release-date-danny-boyle-movie": {
@@ -1154,13 +1058,13 @@
       "status": "pending",
       "first_seen": "2026-11-11T21:56:56.252260+06:00",
       "last_seen": "2026-11-11T21:56:56.252284+06:00",
-      "importance_score": 33,
+      "importance_score": 23,
       "priority_type": "New Movie / Series Announcements",
       "priority_tier": 2,
       "priority_rank": 6,
       "sector": "Indian",
-      "rank_reason": "Talk focuses on franchise development without a confirmed release window; low publishable score.",
-      "last_ranked_at": "2026-11-11T22:00:22.954105+06:00",
+      "rank_reason": "World premiere mentioned but no release window – limited relevance.",
+      "last_ranked_at": "2026-11-12T04:36:23.140637+06:00",
       "learning_pattern": ""
     },
     "deadline.com/2026/11/mhz-choice-the-man-who-died-1237220161": {
@@ -1178,13 +1082,13 @@
       "status": "pending",
       "first_seen": "2026-11-11T21:56:56.703428+06:00",
       "last_seen": "2026-11-11T21:56:56.703446+06:00",
-      "importance_score": 76,
+      "importance_score": 75,
       "priority_type": "OTT Platform Acquisition / Streaming Rights",
       "priority_tier": 2,
       "priority_rank": 8,
       "sector": "International",
-      "rank_reason": "Deadline reports exclusive U.S. rights acquisition and Dec 1 premiere on MHz Choice, a notable international‑to‑U.S. streaming event.",
-      "last_ranked_at": "2026-11-11T22:00:22.955856+06:00",
+      "rank_reason": "MHz Choice acquires U.S. rights and schedules Dec 1 premiere – a clear streaming‑rights acquisition with a set date.",
+      "last_ranked_at": "2026-11-12T04:36:23.141044+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/film/news/amanda-seyfried-slams-billy-evans-you-can-see-everything-filming-1236945046": {
@@ -1202,13 +1106,13 @@
       "status": "pending",
       "first_seen": "2026-11-11T21:56:57.363013+06:00",
       "last_seen": "2026-11-11T21:56:57.363030+06:00",
-      "importance_score": 33,
+      "importance_score": 23,
       "priority_type": "New Movie / Series Announcements",
       "priority_tier": 2,
       "priority_rank": 6,
       "sector": "Hollywood",
-      "rank_reason": "Interview reveals behind‑the‑scenes details but no release date; scores remain below publishable threshold.",
-      "last_ranked_at": "2026-11-11T22:00:22.953928+06:00",
+      "rank_reason": "Interview‑driven gossip, no release details – stays below publishable score.",
+      "last_ranked_at": "2026-11-12T04:36:23.140477+06:00",
       "learning_pattern": ""
     },
     "about.netflix.com/en/news/imtiaz-alis-o-saathi-re-starring-aditi-rao-hydari-avinash-tiwary-and-arjun-rampal-premieres-december-4-on-netflix": {
@@ -1223,17 +1127,18 @@
       "image": "https://images.ctfassets.net/4cd45et68cgf/68I8dQNxs7Q81wWEswdy3H/73ace2c6df22e412635e85ca8a74b36a/EN-GB_OSR_Main_Vertical_1x1_RGB_PREDATE.jpg",
       "discovery": "exa",
       "source_pool": "primary",
-      "status": "pending",
+      "status": "posted",
       "first_seen": "2026-11-11T21:58:05.739599+06:00",
       "last_seen": "2026-11-11T21:58:05.739616+06:00",
-      "importance_score": 76,
-      "priority_type": "OTT / Streaming Availability",
-      "priority_tier": 1,
-      "priority_rank": 1,
+      "importance_score": 80,
+      "priority_type": "New Movie / Series Announcements",
+      "priority_tier": 2,
+      "priority_rank": 6,
       "sector": "Indian",
-      "rank_reason": "Official Netflix press release confirms series debut on Dec 4, 2026, with high anticipation for an Imtiaz Ali project.",
-      "last_ranked_at": "2026-11-11T22:00:22.952612+06:00",
-      "learning_pattern": ""
+      "rank_reason": "Netflix officially announces the series will premiere Dec 4, 2026 – a high‑profile Imtiaz Ali project.",
+      "last_ranked_at": "2026-11-12T04:36:23.139734+06:00",
+      "learning_pattern": "",
+      "posted_at": "2026-11-12T04:40:29.942163+06:00"
     },
     "tamil.filmibeat.com/ott/november-12th-to-november-15th-this-week-ott-release-movies-and-web-series-186843.html": {
       "title": "OTT This week: ஜெயிலர் 2 முதல் ரணபாலி' வரை.. இந்த வாரம் ஓடிடியை கலக்க வரும் மாஸ் படங்களின் லிஸ்ட்! | November 12th to November 15th This week ott release movies and web series - Tamil Filmibeat",
@@ -1250,13 +1155,13 @@
       "status": "pending",
       "first_seen": "2026-11-11T21:58:09.529998+06:00",
       "last_seen": "2026-11-11T21:58:09.530016+06:00",
-      "importance_score": 63,
-      "priority_type": "Upcoming OTT Releases",
+      "importance_score": 69,
+      "priority_type": "OTT / Streaming Availability",
       "priority_tier": 1,
-      "priority_rank": 3,
+      "priority_rank": 1,
       "sector": "Indian",
-      "rank_reason": "Filmibeat lists Jailer 2 releasing on Amazon Prime Video on Dec 12, 2026; a notable regional OTT release.",
-      "last_ranked_at": "2026-11-11T22:00:22.952969+06:00",
+      "rank_reason": "Amazon Prime Video lists Jailer 2 release on Nov 12, 2026 – a major Tamil blockbuster moving to OTT.",
+      "last_ranked_at": "2026-11-12T04:36:23.137560+06:00",
       "learning_pattern": ""
     },
     "disneyplus.com/en-sg/explore/articles/2026-binge-watch-guide": {
@@ -1283,6 +1188,175 @@
       "last_ranked_at": "2026-11-11T22:00:22.953607+06:00",
       "learning_pattern": "",
       "posted_at": "2026-11-11T22:05:23.816455+06:00"
+    },
+    "deadline.com/2026/11/avengers-endgame-encore-disney-plus-stream-release-date-1237220911": {
+      "title": "‘Avengers Endgame: Encore’ Sets Disney+ Release Date With New ‘Countdown To Doomsday’ Spot",
+      "url": "https://deadline.com/2026/11/avengers-endgame-encore-disney-plus-stream-release-date-1237220911/",
+      "canonical": "deadline.com/2026/11/avengers-endgame-encore-disney-plus-stream-release-date-1237220911",
+      "published_dt": "2026-11-12T04:02:06+06:00",
+      "published_date": "2026-11-12T04:02:06+06:00",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "excerpt": "The countdown to Avengers: Doomsday continues, and Disney+ has set the release date for Avengers: Endgame: Encore for Friday, November 13. The epic conclusion to the Infinity Saga, which has grossed more than $2.9 billion at the worldwide box office, includes a first look at Avengers: Doomsday ahead of its December 18 theatrical release. A new TV spot titled […]",
+      "image": "https://deadline.com/wp-content/uploads/2026/11/avengers-endgame-encore-poster.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "posted",
+      "first_seen": "2026-11-12T04:35:30.382950+06:00",
+      "last_seen": "2026-11-12T04:35:30.382958+06:00",
+      "importance_score": 89,
+      "priority_type": "Theatrical Releases / Re-releases",
+      "priority_tier": 1,
+      "priority_rank": 5,
+      "sector": "Hollywood",
+      "rank_reason": "Official Disney+ announcement sets streaming release for Nov 13, 2026 – a major Marvel title with huge audience impact.",
+      "last_ranked_at": "2026-11-12T04:36:23.138607+06:00",
+      "learning_pattern": "",
+      "posted_at": "2026-11-12T04:40:24.476360+06:00"
+    },
+    "deadline.com/2026/11/fox-midseason-2027-dates-1237220662": {
+      "title": "Fox Sets Midseason Dates For ‘Best Medicine,’ ‘The Masked Singer,’ ‘Doc,’ New Drama ‘The Interrogator’ & More",
+      "url": "https://deadline.com/2026/11/fox-midseason-2027-dates-1237220662/",
+      "canonical": "deadline.com/2026/11/fox-midseason-2027-dates-1237220662",
+      "published_dt": "2026-11-12T02:00:00+06:00",
+      "published_date": "2026-11-12T02:00:00+06:00",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "excerpt": "With two weeks to go before Thanksgiving, Fox has set midseason premiere dates for several of its returning series and one new drama. The network said Wednesday that its “Night of Medical Marvels” will return from holiday hiatus on Tuesday, January 6, with remaining episodes of hit sophomore drama Best Medicine at 8 p.m., followed […]",
+      "image": "https://deadline.com/wp-content/uploads/2026/11/Best-Medicine-The-Masked-Singer-Doc-The-Interrogator-.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-12T04:35:30.834863+06:00",
+      "last_seen": "2026-11-12T04:35:30.834874+06:00",
+      "importance_score": 46,
+      "priority_type": "Release Date Confirmations",
+      "priority_tier": 1,
+      "priority_rank": 4,
+      "sector": "Hollywood",
+      "rank_reason": "Mid‑season dates set but no specific new title releases – below publishable threshold.",
+      "last_ranked_at": "2026-11-12T04:36:23.138474+06:00",
+      "learning_pattern": ""
+    },
+    "deadline.com/2026/11/marisa-tomei-cast-upgraded-2-movie-1237220581": {
+      "title": "Marisa Tomei Returning As Claire Dupont In ‘Upgraded 2’",
+      "url": "https://deadline.com/2026/11/marisa-tomei-cast-upgraded-2-movie-1237220581/",
+      "canonical": "deadline.com/2026/11/marisa-tomei-cast-upgraded-2-movie-1237220581",
+      "published_dt": "2026-11-12T02:00:00+06:00",
+      "published_date": "2026-11-12T02:00:00+06:00",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "excerpt": "EXCLUSIVE: Marisa Tomei has set her return for the upcoming Upgraded 2, reprising her role as Claire Dupont, starring opposite the previously announced Camila Mendes and Leslie Bibb. Tomei is an original cast member of the film Upgraded, which was released in 2024. Production is currently underway in Italy. Plot details for the sequel from […]",
+      "image": "https://deadline.com/wp-content/uploads/2026/11/Marisa-Tomei.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-12T04:35:31.072469+06:00",
+      "last_seen": "2026-11-12T04:35:31.072477+06:00",
+      "importance_score": 50,
+      "priority_type": "New Movie / Series Announcements",
+      "priority_tier": 2,
+      "priority_rank": 6,
+      "sector": "Hollywood",
+      "rank_reason": "Reports Marisa Tomei’s return but no release date – limited publishable value.",
+      "last_ranked_at": "2026-11-12T04:36:23.140348+06:00",
+      "learning_pattern": ""
+    },
+    "variety.com/2026/film/news/avengers-endgame-encore-disney-streaming-release-date-1236821013": {
+      "title": "Avengers Endgame Encore Sets Disney+ Streaming Release DAte",
+      "url": "https://variety.com/2026/film/news/avengers-endgame-encore-disney-streaming-release-date-1236821013/",
+      "canonical": "variety.com/2026/film/news/avengers-endgame-encore-disney-streaming-release-date-1236821013",
+      "published_dt": "2026-11-11T23:17:18+06:00",
+      "published_date": "2026-11-11T23:17:18+06:00",
+      "source": "Variety",
+      "region": "Entertainment",
+      "excerpt": "N o n e",
+      "image": "https://variety.com/wp-content/uploads/2024/04/MCDAVEN_EC255.jpg?w=1000&h=563&crop=1",
+      "discovery": "exa",
+      "source_pool": "primary",
+      "status": "pending",
+      "first_seen": "2026-11-12T04:36:03.338886+06:00",
+      "last_seen": "2026-11-12T04:36:03.338905+06:00",
+      "importance_score": 83,
+      "priority_type": "Theatrical Releases / Re-releases",
+      "priority_tier": 1,
+      "priority_rank": 5,
+      "sector": "Hollywood",
+      "rank_reason": "Variety confirms the same Disney+ streaming date, reinforcing the release news.",
+      "last_ranked_at": "2026-11-12T04:36:23.138738+06:00",
+      "learning_pattern": ""
+    },
+    "netflix.com/tudum/articles/avedon-release-date-news": {
+      "title": "Richard Avedon Netflix Documentary Directed By Ron Howard Release Date, Trailer, News - Netflix Tudum",
+      "url": "https://www.netflix.com/tudum/articles/avedon-release-date-news",
+      "canonical": "netflix.com/tudum/articles/avedon-release-date-news",
+      "published_dt": "2026-11-11T14:00:38+06:00",
+      "published_date": "2026-11-11T14:00:38+06:00",
+      "source": "Netflix Tudum",
+      "region": "Entertainment",
+      "excerpt": "N o n e",
+      "image": "https://dnm.nflximg.net/api/v6/s0XAg4q_jvYbSSbLvySyUsliNSg/AAAAQXj0Nmmrt4rZERjhX4Wo7bzstwWlpJZv5XAnqCJLsHFcsfFSjCw0X-Xm_dHrqMKLh7_-2a1P7pzdUKx20rzbzSeWmwHymi3nIIDzScxCbpGtFvziUKCyV5EEkhaqZsW4DNLebMQb8VBvPu_nuSStK4uWQ28.jpg?r=03c",
+      "discovery": "exa",
+      "source_pool": "primary",
+      "status": "pending",
+      "first_seen": "2026-11-12T04:36:03.488435+06:00",
+      "last_seen": "2026-11-12T04:36:03.488453+06:00",
+      "importance_score": 44,
+      "priority_type": "OTT / Streaming Availability",
+      "priority_tier": 1,
+      "priority_rank": 1,
+      "sector": "Hollywood",
+      "rank_reason": "Documentary now streaming; no new release date announced – low score.",
+      "last_ranked_at": "2026-11-12T04:36:23.138173+06:00",
+      "learning_pattern": ""
+    },
+    "deadline.com/2026/11/the-age-of-innocence-netflix-release-date-tv-show-photos-1237219435": {
+      "title": "'The Age Of Innocence' TV Show Sets Netflix Release Date; First Photos",
+      "url": "https://deadline.com/2026/11/the-age-of-innocence-netflix-release-date-tv-show-photos-1237219435/",
+      "canonical": "deadline.com/2026/11/the-age-of-innocence-netflix-release-date-tv-show-photos-1237219435",
+      "published_dt": "2026-11-11T05:18:57+06:00",
+      "published_date": "2026-11-11T05:18:57+06:00",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "excerpt": "N o n e",
+      "image": "https://deadline.com/wp-content/uploads/2026/11/AGEOFINNOCENCE_101_251010_CB_00198_R4.jpg?w=1024",
+      "discovery": "exa",
+      "source_pool": "primary",
+      "status": "pending",
+      "first_seen": "2026-11-12T04:36:08.761554+06:00",
+      "last_seen": "2026-11-12T04:36:08.761571+06:00",
+      "importance_score": 78,
+      "priority_type": "New Movie / Series Announcements",
+      "priority_tier": 2,
+      "priority_rank": 6,
+      "sector": "International",
+      "rank_reason": "Netflix sets Feb 18, 2027 release for the limited series – notable adaptation with global appeal.",
+      "last_ranked_at": "2026-11-12T04:36:23.140030+06:00",
+      "learning_pattern": ""
+    },
+    "tamil.filmibeat.com/heroes/cm-vijays-bairavaa-will-re-release-on-new-year-2027-186841.html": {
+      "title": "2027 புத்தாண்டுக்கே ரசிகர்களுக்கு ட்ரீட் கொடுக்கும் சிஎம் விஜய்.. இந்த படம் ரீ ரிலிஸ் ஆகுதாம்! | CM Vijay's Bairavaa will re release on New Year 2027 - Tamil Filmibeat",
+      "url": "https://tamil.filmibeat.com/heroes/cm-vijays-bairavaa-will-re-release-on-new-year-2027-186841.html",
+      "canonical": "tamil.filmibeat.com/heroes/cm-vijays-bairavaa-will-re-release-on-new-year-2027-186841.html",
+      "published_dt": "2026-11-11T17:16:20+06:00",
+      "published_date": "2026-11-11T17:16:20+06:00",
+      "source": "tamil.filmibeat.com",
+      "region": "Entertainment",
+      "excerpt": "N o n e",
+      "image": "https://images.filmibeat.com/ta/img/2026/11/cmvijayy-11271794395761.jpg",
+      "discovery": "exa",
+      "source_pool": "primary",
+      "status": "pending",
+      "first_seen": "2026-11-12T04:36:10.155161+06:00",
+      "last_seen": "2026-11-12T04:36:10.155179+06:00",
+      "importance_score": 66,
+      "priority_type": "Theatrical Releases / Re-releases",
+      "priority_tier": 1,
+      "priority_rank": 5,
+      "sector": "Indian",
+      "rank_reason": "Announces Jan 1, 2027 theatrical re‑release of the 2017 hit – a notable event for regional audiences.",
+      "last_ranked_at": "2026-11-12T04:36:23.139043+06:00",
+      "learning_pattern": ""
     }
   },
   "events": {
@@ -1310,30 +1384,6 @@
       "selected_at": "2026-11-06T13:59:33.093487+06:00",
       "status": "published",
       "message_id": 1265
-    },
-    "being_heumann_trailer": {
-      "event_id": "being_heumann_trailer",
-      "canonical_url": "deadline.com/2026/10/being-heumann-trailer-sian-heder-1237066047",
-      "original_url": "https://deadline.com/2026/10/being-heumann-trailer-sian-heder-1237066047/",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "topic": "Trailers and First Looks",
-      "institution": "Apple Original Films",
-      "event_cluster_id": "evt_6fa61b5ea9",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Being Heumann",
-      "summary": "Apple Original Films released an extended trailer for the disability‑rights biopic Being Heumann.",
-      "highlights": [
-        "Extended trailer debuted ahead of TIFF premiere on Sep 10",
-        "Theatrical release set for Nov 6 before streaming on Apple TV on Nov 13"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-12T22:20:00+06:00",
-      "selected_at": "2026-10-12T23:39:53.643430+06:00",
-      "status": "published",
-      "message_id": 893
     },
     "cannes_world_premiere_sales": {
       "event_id": "cannes_world_premiere_sales",
@@ -11082,6 +11132,55 @@
       "selected_at": "2026-11-11T22:05:23.816597+06:00",
       "status": "published",
       "message_id": 1305
+    },
+    "streaming_release": {
+      "event_id": "streaming_release",
+      "canonical_url": "deadline.com/2026/11/avengers-endgame-encore-disney-plus-stream-release-date-1237220911",
+      "original_url": "https://deadline.com/2026/11/avengers-endgame-encore-disney-plus-stream-release-date-1237220911/",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "topic": "Release Dates",
+      "institution": "Disney+",
+      "event_cluster_id": "evt_1b3060e1f4",
+      "event_confidence": 1.0,
+      "event_source_count": 2,
+      "headline": "Avengers Endgame: Encore",
+      "summary": "Disney+ has scheduled the special presentation Avengers Endgame: Encore for November 13.",
+      "highlights": [
+        "Release set for Friday, November 13 on Disney+",
+        "Includes first look at upcoming Avengers: Doomsday"
+      ],
+      "concepts": [],
+      "key_numbers": [],
+      "published_at": "2026-11-12T04:02:06+06:00",
+      "selected_at": "2026-11-12T04:40:24.476525+06:00",
+      "status": "published",
+      "message_id": 1306
+    },
+    "series_premiere": {
+      "event_id": "series_premiere",
+      "canonical_url": "about.netflix.com/en/news/imtiaz-alis-o-saathi-re-starring-aditi-rao-hydari-avinash-tiwary-and-arjun-rampal-premieres-december-4-on-netflix",
+      "original_url": "https://about.netflix.com/en/news/imtiaz-alis-o-saathi-re-starring-aditi-rao-hydari-avinash-tiwary-and-arjun-rampal-premieres-december-4-on-netflix",
+      "source": "about.netflix.com",
+      "region": "Entertainment",
+      "topic": "Release Dates",
+      "institution": "Netflix",
+      "event_cluster_id": "evt_e3d74b3b3e",
+      "event_confidence": 0.6,
+      "event_source_count": 1,
+      "headline": "O Saathi Re",
+      "summary": "Imtiaz Ali’s new romantic series premieres on Netflix on Dec 4, 2026.",
+      "highlights": [
+        "Premiering Dec 4, 2026 on Netflix",
+        "Stars Aditi Rao Hydari, Avinash Tiwary, Arjun Rampal",
+        "Created, written and showrun by Imtiaz Ali"
+      ],
+      "concepts": [],
+      "key_numbers": [],
+      "published_at": "2026-11-11T16:43:33+06:00",
+      "selected_at": "2026-11-12T04:40:29.942203+06:00",
+      "status": "published",
+      "message_id": 1307
     }
   },
   "event_clusters": {
@@ -29652,11 +29751,34 @@
       "confidence": 0.6,
       "last_seen": "2026-11-11T22:00:23.031821+06:00",
       "headline": "Vietnamese Musical Hit ‘A Little Dream Of Me’ Set For North American Release Through Reel Citrus"
+    },
+    "evt_1b3060e1f4": {
+      "event_id": "evt_1b3060e1f4",
+      "topic": "Release Dates",
+      "region": "Entertainment",
+      "sources": [
+        "Deadline",
+        "Variety"
+      ],
+      "source_count": 2,
+      "confidence": 1.0,
+      "last_seen": "2026-11-12T04:36:23.184540+06:00",
+      "headline": "‘Avengers Endgame: Encore’ Sets Disney+ Release Date With New ‘Countdown To Doomsday’ Spot"
+    },
+    "evt_e3d74b3b3e": {
+      "event_id": "evt_e3d74b3b3e",
+      "topic": "Release Dates",
+      "region": "Entertainment",
+      "sources": [
+        "about.netflix.com"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-12T04:36:23.184548+06:00",
+      "headline": "Imtiaz Ali's ‘O Saathi Re’, Starring Aditi Rao Hydari, Avinash Tiwary, and Arjun Rampal, Premieres December 4 on Netflix -  About Netflix"
     }
   },
   "posted_event_ids": [
-    "evt_5c3250e93e",
-    "evt_cb1637846e",
     "evt_07efba7981",
     "evt_9fa97d00e6",
     "evt_3389fa0418",
@@ -30154,10 +30276,11 @@
     "evt_15a00f2b29",
     "evt_1b02a5afe8",
     "evt_6b2a906558",
-    "evt_9dfd3196d1"
+    "evt_9dfd3196d1",
+    "evt_1b3060e1f4",
+    "evt_e3d74b3b3e"
   ],
   "recent_titles": [
-    "honey",
     "god of war",
     "discovery",
     "merrick treves",
@@ -30557,7 +30680,9 @@
     "bucks harbor",
     "paddington the musical",
     "ink",
-    "disney twisted wonderland the animation"
+    "disney twisted wonderland the animation",
+    "avengers endgame encore",
+    "o saathi re"
   ],
   "work_memory": {
     "the dog stars": {
@@ -34068,13 +34193,14 @@
       "last_published_at": "2026-09-29T12:57:53.986201+06:00"
     },
     "avengers endgame encore": {
-      "title": "Avengers: Endgame Encore",
-      "sector": "International",
+      "title": "Avengers Endgame: Encore",
+      "sector": "Hollywood",
       "first_published_at": "2026-09-29T12:57:59.291058+06:00",
       "published_events": {
-        "Box Office Updates": "2026-09-29T12:57:59.291067+06:00"
+        "Box Office Updates": "2026-09-29T12:57:59.291067+06:00",
+        "Release Date Confirmations": "2026-11-12T04:40:24.476596+06:00"
       },
-      "last_published_at": "2026-09-29T12:57:59.291064+06:00"
+      "last_published_at": "2026-11-12T04:40:24.476592+06:00"
     },
     "the gifted": {
       "title": "The Gifted",
@@ -38910,6 +39036,15 @@
         "OTT / Streaming Availability": "2026-11-11T22:05:23.816688+06:00"
       },
       "last_published_at": "2026-11-11T22:05:23.816684+06:00"
+    },
+    "o saathi re": {
+      "title": "O Saathi Re",
+      "sector": "Indian",
+      "first_published_at": "2026-11-12T04:40:29.942263+06:00",
+      "published_events": {
+        "Release Date Confirmations": "2026-11-12T04:40:29.942272+06:00"
+      },
+      "last_published_at": "2026-11-12T04:40:29.942268+06:00"
     }
   },
   "publication_fingerprints": [
@@ -49516,6 +49651,28 @@
       "event_key": "Avengers:Doomsday_Release",
       "canonical": "disneyplus.com/en-sg/explore/articles/2026-binge-watch-guide",
       "published_at": "2026-11-11T22:05:23.817346+06:00"
+    },
+    {
+      "fingerprint": "avengers endgame encore|Release Date Confirmations|the countdown doomsday continues and disney has set the date for for friday november the epic conclusion the infinity saga which has more than billion the worldwide includes doomsday ahead its december spot titled disney has scheduled the special presentation for november set for friday november disney includes doomsday disney 2026",
+      "work_key": "avengers endgame encore",
+      "priority_type": "Release Date Confirmations",
+      "headline": "Avengers Endgame: Encore",
+      "event_text": "Avengers Endgame: Encore The countdown to Avengers: Doomsday continues, and Disney+ has set the release date for Avengers: Endgame: Encore for Friday, November 13. The epic conclusion to the Infinity Saga, which has grossed more than $2.9 billion at the worldwide box office, includes a first look at Avengers: Doomsday ahead of its December 18 theatrical release. A new TV spot titled […] Disney+ has scheduled the special presentation Avengers Endgame: Encore for November 13. Release set for Friday, November 13 on Disney+ Includes first look at upcoming Avengers: Doomsday Disney+ 2026-11-13",
+      "core": "the countdown doomsday continues and disney has set the date for for friday november the epic conclusion the infinity saga which has more than billion the worldwide includes doomsday ahead its december spot titled disney has scheduled the special presentation for november set for friday november disney includes doomsday disney 2026",
+      "event_key": "streaming_release",
+      "canonical": "deadline.com/2026/11/avengers-endgame-encore-disney-plus-stream-release-date-1237220911",
+      "published_at": "2026-11-12T04:40:24.477069+06:00"
+    },
+    {
+      "fingerprint": "o saathi re|Release Date Confirmations|entertainment november 2026 love story separating couple finding their way through the complexities their relationship and love that was never equal this december netflix brings its audiences premiering december created written and showrun imtiaz ali and directed arif ali this window seat films stars aditi rao hydari avinash tiwary and arjun rampal exploration complex emotions and relationship which love was never equal produced imtiaz ali mohit choudhary and shibasish sarkar follows layered cha",
+      "work_key": "o saathi re",
+      "priority_type": "Release Date Confirmations",
+      "headline": "O Saathi Re",
+      "event_text": "O Saathi Re Entertainment\n10 November 2026\n~ A love story of a separating couple finding their way through the complexities of their relationship, and a love that was never equal~\nThis December, Netflix brings to its audiences O Saathi Re, a series premiering December 4. Created, written and showrun by Imtiaz Ali, and directed by Arif Ali, this Window Seat Films production stars Aditi Rao Hydari, Avinash Tiwary and Arjun Rampal in an exploration of complex emotions and a relationship in which love was never equal.\nProduced by Imtiaz Ali, Mohit Choudhary and Shibasish Sarkar, O Saathi Re follows layered characters as they navigate the imbalances that can exist within love. From finding identity and personal desires to power dynamics within relationships and the delicate balance between understanding and letting go, the series presents a mature take on love that goes beyond conventional romance.\nSpeaking about the series, Imtiaz Ali shares, “O Saathi Re is a modern romantic show with a vintage heart. Sometimes, love surprises you by showing itself in the most unexpected corners. This is the story of the growth of affection in a divorcing couple. Affection has a throbbing heart, love is beautiful Imtiaz Ali’s new romantic series premieres on Netflix on Dec 4, 2026. Premiering Dec 4, 2026 on Netflix Stars Aditi Rao Hydari, Avinash Tiwary, Arjun Rampal Created, written and showrun b",
+      "core": "entertainment november 2026 love story separating couple finding their way through the complexities their relationship and love that was never equal this december netflix brings its audiences premiering december created written and showrun imtiaz ali and directed arif ali this window seat films stars aditi rao hydari avinash tiwary and arjun rampal exploration complex emotions and relationship which love was never equal produced imtiaz ali mohit choudhary and shibasish sarkar follows layered cha",
+      "event_key": "series_premiere",
+      "canonical": "about.netflix.com/en/news/imtiaz-alis-o-saathi-re-starring-aditi-rao-hydari-avinash-tiwary-and-arjun-rampal-premieres-december-4-on-netflix",
+      "published_at": "2026-11-12T04:40:29.942840+06:00"
     }
   ],
   "fresh_start_at": "2026-09-07T13:58:06.173598+06:00",
@@ -49637,182 +49794,6 @@
     }
   },
   "score_history": [
-    {
-      "title": "Shari Rosenblum Leaving As Head Of PR For 20th Television After 25 Years Across Disney & Fox",
-      "score": 49,
-      "pattern": "",
-      "priority_type": "Production / Filming Updates",
-      "source": "Deadline",
-      "seen_at": "2026-11-06T04:44:18.494906+06:00"
-    },
-    {
-      "title": "20th Television Comms SVP Shari Rosenblum to Exit Studio After 26 Years",
-      "score": 49,
-      "pattern": "",
-      "priority_type": "Production / Filming Updates",
-      "source": "Variety",
-      "seen_at": "2026-11-06T04:44:18.494998+06:00"
-    },
-    {
-      "title": "Ken Ziffren Offers Optimistic View On Industry, Even When It Comes To AI & Federal Tax Credit Legislation",
-      "score": 40,
-      "pattern": "",
-      "priority_type": "Production / Filming Updates",
-      "source": "Deadline",
-      "seen_at": "2026-11-06T04:44:18.495092+06:00"
-    },
-    {
-      "title": "Did Midterm Elections Cause Changes in News World Order?",
-      "score": 19,
-      "pattern": "",
-      "priority_type": "Production / Filming Updates",
-      "source": "Variety",
-      "seen_at": "2026-11-06T04:44:18.495178+06:00"
-    },
-    {
-      "title": "‘The Pitt’ and ‘ER’ Are Similar Enough to Allow Crichton Suit, Appeals Court Rules",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "Production / Filming Updates",
-      "source": "Variety",
-      "seen_at": "2026-11-06T04:44:18.495272+06:00"
-    },
-    {
-      "title": "Sony Pictures Classics Takes Jean-Pierre Jeunet’s ‘Violette’",
-      "score": 100,
-      "pattern": "",
-      "priority_type": "OTT Platform Acquisition / Streaming Rights",
-      "source": "Deadline",
-      "seen_at": "2026-11-06T04:44:18.495364+06:00"
-    },
-    {
-      "title": "Emile Hirsch & Benjamin Norris Survival Thriller ‘In Tandem’ Climbs To AFM With Ultimate Media Group & WME, First Look Revealed",
-      "score": 70,
-      "pattern": "",
-      "priority_type": "OTT Platform Acquisition / Streaming Rights",
-      "source": "Deadline",
-      "seen_at": "2026-11-06T04:44:18.495464+06:00"
-    },
-    {
-      "title": "Studio Dome Acquires Courtroom Comedy ‘Out of Order!’ Starring Brandon Routh, Brooke Shields, Luis Guzmán Ahead of AFM (EXCLUSIVE)",
-      "score": 66,
-      "pattern": "",
-      "priority_type": "OTT Platform Acquisition / Streaming Rights",
-      "source": "Variety",
-      "seen_at": "2026-11-06T04:44:18.495571+06:00"
-    },
-    {
-      "title": "Netflix Woos Mattel Veteran Roberto Stanichi To Lead Consumer Products and Experiences",
-      "score": 32,
-      "pattern": "",
-      "priority_type": "OTT Platform Acquisition / Streaming Rights",
-      "source": "Deadline",
-      "seen_at": "2026-11-06T04:44:18.495665+06:00"
-    },
-    {
-      "title": "‘Godzilla Minus Zero’ Stomping To $60M+ WW Opening, Posts Massive First Day In Japan; Will ‘Ramayana’ Upset The Lizard? – Box Office Preview",
-      "score": 90,
-      "pattern": "",
-      "priority_type": "Box Office Updates",
-      "source": "Deadline",
-      "seen_at": "2026-11-06T04:44:18.495784+06:00"
-    },
-    {
-      "title": "Lionsgate Quarterly Revenue Pops 41% on Strength of ‘Michael,’ TV Series Sales as Studio Narrows Net Loss",
-      "score": 77,
-      "pattern": "",
-      "priority_type": "Box Office Updates",
-      "source": "Variety",
-      "seen_at": "2026-11-06T04:44:18.495884+06:00"
-    },
-    {
-      "title": "Lionsgate Quarterly Revenue Pops With Growth Across Film & TV Studios, Library",
-      "score": 63,
-      "pattern": "",
-      "priority_type": "Box Office Updates",
-      "source": "Deadline",
-      "seen_at": "2026-11-06T04:44:18.495970+06:00"
-    },
-    {
-      "title": "Fiona Cauley & Inevitable Foundation Are Making The Disabled Community “The Main Character” In New Digital Series ‘Talking Sh*t’",
-      "score": 39,
-      "pattern": "",
-      "priority_type": "New Movie / Series Announcements",
-      "source": "Deadline",
-      "seen_at": "2026-11-06T13:45:34.548419+06:00"
-    },
-    {
-      "title": "Indiana Hoosiers’ Historic National Championship Run To Be Chronicled In Upcoming Doc ‘Misfits’ From Tom Brady’s Shadow Lion",
-      "score": 0,
-      "pattern": "sports",
-      "priority_type": "New Movie / Series Announcements",
-      "source": "Deadline",
-      "seen_at": "2026-11-06T13:45:34.548461+06:00"
-    },
-    {
-      "title": "‘Obsession’ Breakout Inde Navarrette to Receive Rising Star Award at Palm Springs Film Awards (EXCLUSIVE)",
-      "score": 48,
-      "pattern": "",
-      "priority_type": "New Movie / Series Announcements",
-      "source": "Variety",
-      "seen_at": "2026-11-06T13:45:34.548526+06:00"
-    },
-    {
-      "title": "‘Doctor Who’ 60th Anniversary Soundtrack Finally Gets Release Date, Featuring Music From David Tennant’s Return",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "Release Date Confirmations",
-      "source": "Variety",
-      "seen_at": "2026-11-06T13:45:34.548591+06:00"
-    },
-    {
-      "title": "அசோக் செல்வனின் ‘அன்பின் அவன்’ ஓடிடி ரிலீஸ் தேதி அறிவிப்பு.. எந்த தளத்தில் தெரியுமா? | Ashok Selvan Starrer Anbil Avan Premieres On SonyLIV ",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "",
-      "source": "tamil.filmibeat.com",
-      "seen_at": "2026-11-06T13:45:34.548639+06:00"
-    },
-    {
-      "title": "OTT Releases This Week: ఓటీటీలో సినిమాల జాతర.. ఈ వారం మిస్ కాకుండా చూడాల్సిన మూవీస్ ఇవే! | OTT Releases This Week: 20+ Movies & Web Series S",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "OTT / Streaming Availability",
-      "source": "telugu.filmibeat.com",
-      "seen_at": "2026-11-06T13:45:34.548691+06:00"
-    },
-    {
-      "title": "‘The Invited’ Series Inspired By Wendy Webb Novels In Works From Impossible Dream Entertainment & Wall To Wall; Helen Black & Jeff Howard Sc",
-      "score": 73,
-      "pattern": "",
-      "priority_type": "New Movie / Series Announcements",
-      "source": "Deadline",
-      "seen_at": "2026-11-06T13:45:34.548759+06:00"
-    },
-    {
-      "title": "Ranbir Kapoor and Yash’s ‘Ramayana’ Makers on Retelling India’s Epic for the World, as Amazon Music and T-Series Bet on A.R. Rahman and Hans",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "",
-      "source": "Variety",
-      "seen_at": "2026-11-06T13:45:34.548834+06:00"
-    },
-    {
-      "title": "Andrew Garfield Says He ‘Never Had Any Interaction’ With Sam Altman While Filming ‘Artificial,’ Despite Altman Claiming They Waved to Each O",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "",
-      "source": "Variety",
-      "seen_at": "2026-11-06T13:45:34.548908+06:00"
-    },
-    {
-      "title": "Atlantic Records & Teddy Park’s The Black Label Join K-Pop Thriller ‘Perfect Girl’; First Look At Jeon Somi, Ally Nitibhon, Adeline Rudolph ",
-      "score": 62,
-      "pattern": "",
-      "priority_type": "OTT / Streaming Availability",
-      "source": "Deadline",
-      "seen_at": "2026-11-06T13:45:34.548978+06:00"
-    },
     {
       "title": "‘Snoop’: Hercy Miller Will Portray Master P, Zachariah Rogers Is The D.O.C., & Tyquan Givens Set As Original Character In Universal’s Snoop ",
       "score": 73,
@@ -53636,18 +53617,194 @@
       "priority_type": "OTT Platform Acquisition / Streaming Rights",
       "source": "Deadline",
       "seen_at": "2026-11-11T22:00:22.959063+06:00"
+    },
+    {
+      "title": "Former NCT Member Lucas Wong Makes Acting Debut in Taiwanese Folk-Music Drama ‘A Time’ With Jerry Yan, Ning Chang at Taiwan Creative Content",
+      "score": 51,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Variety",
+      "seen_at": "2026-11-12T04:35:29.827871+06:00"
+    },
+    {
+      "title": "This week Movie Releases: భోగి, ఇట్లు అర్జున, దొంగ నా కొడుకు.. ఇంకా ఈ వారం విడుదలయ్యే సినిమాలు ఇవే! | This Week Movie Releases: Bhogi, Itlu ",
+      "score": 49,
+      "pattern": "",
+      "priority_type": "Theatrical Releases / Re-releases",
+      "source": "telugu.filmibeat.com",
+      "seen_at": "2026-11-12T04:35:29.827978+06:00"
+    },
+    {
+      "title": "Keira Knightley Says ‘It Means Nothing’ When Fans Quote ‘Love Actually’ to Her Because She Hasn’t Watched It Since the Premiere: ‘I Don’t Re",
+      "score": 26,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Variety",
+      "seen_at": "2026-11-12T04:35:29.828110+06:00"
+    },
+    {
+      "title": "From a Mockbuster Version of ‘The Odyssey’ to a ‘Jiu-Jitsu Nun’: How Producers Are Keeping the Low-Budget Film Market Alive Via Streaming an",
+      "score": 21,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Variety",
+      "seen_at": "2026-11-12T04:35:29.828247+06:00"
+    },
+    {
+      "title": "‘Harry Potter’ Star Paapa Essiedu Says ‘I Don’t Want to Talk About’ J.K. Rowling ‘At All’ but ‘Trans People Have the Right to Be Treated Wit",
+      "score": 22,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Variety",
+      "seen_at": "2026-11-12T04:35:29.828384+06:00"
+    },
+    {
+      "title": "From Local to Global: Anshuman Jha & Sarah-Jane Dias On Advocating Animal Rights In ‘Lakadbaggha 2’ & Uniqueness Of Crafting An Indian Actio",
+      "score": 33,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Deadline",
+      "seen_at": "2026-11-12T04:35:29.828543+06:00"
+    },
+    {
+      "title": "Amanda Seyfried Joined ‘You Can See Everything’ Without Reps Knowing, Had ‘No Approval’ Over Filming and Got ‘Disrespected’ by Billy Evans: ",
+      "score": 33,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Variety",
+      "seen_at": "2026-11-12T04:35:29.828680+06:00"
+    },
+    {
+      "title": "OTT This week: ஜெயிலர் 2 முதல் ரணபாலி' வரை.. இந்த வாரம் ஓடிடியை கலக்க வரும் மாஸ் படங்களின் லிஸ்ட்! | November 12th to November 15th This wee",
+      "score": 63,
+      "pattern": "",
+      "priority_type": "Upcoming OTT Releases",
+      "source": "tamil.filmibeat.com",
+      "seen_at": "2026-11-12T04:35:29.828768+06:00"
+    },
+    {
+      "title": "OTT This week: ஜெயிலர் 2 முதல் ரணபாலி' வரை.. இந்த வாரம் ஓடிடியை கலக்க வரும் மாஸ் படங்களின் லிஸ்ட்! | November 12th to November 15th This wee",
+      "score": 69,
+      "pattern": "",
+      "priority_type": "OTT / Streaming Availability",
+      "source": "tamil.filmibeat.com",
+      "seen_at": "2026-11-12T04:36:23.141779+06:00"
+    },
+    {
+      "title": "Richard Avedon Netflix Documentary Directed By Ron Howard Release Date, Trailer, News - Netflix Tudum",
+      "score": 44,
+      "pattern": "",
+      "priority_type": "OTT / Streaming Availability",
+      "source": "Netflix Tudum",
+      "seen_at": "2026-11-12T04:36:23.142055+06:00"
+    },
+    {
+      "title": "Fox Sets Midseason Dates For ‘Best Medicine,’ ‘The Masked Singer,’ ‘Doc,’ New Drama ‘The Interrogator’ & More",
+      "score": 46,
+      "pattern": "",
+      "priority_type": "Release Date Confirmations",
+      "source": "Deadline",
+      "seen_at": "2026-11-12T04:36:23.142180+06:00"
+    },
+    {
+      "title": "‘Avengers Endgame: Encore’ Sets Disney+ Release Date With New ‘Countdown To Doomsday’ Spot",
+      "score": 89,
+      "pattern": "",
+      "priority_type": "Theatrical Releases / Re-releases",
+      "source": "Deadline",
+      "seen_at": "2026-11-12T04:36:23.142307+06:00"
+    },
+    {
+      "title": "Avengers Endgame Encore Sets Disney+ Streaming Release DAte",
+      "score": 83,
+      "pattern": "",
+      "priority_type": "Theatrical Releases / Re-releases",
+      "source": "Variety",
+      "seen_at": "2026-11-12T04:36:23.142615+06:00"
+    },
+    {
+      "title": "2027 புத்தாண்டுக்கே ரசிகர்களுக்கு ட்ரீட் கொடுக்கும் சிஎம் விஜய்.. இந்த படம் ரீ ரிலிஸ் ஆகுதாம்! | CM Vijay's Bairavaa will re release on New ",
+      "score": 66,
+      "pattern": "",
+      "priority_type": "Theatrical Releases / Re-releases",
+      "source": "tamil.filmibeat.com",
+      "seen_at": "2026-11-12T04:36:23.143196+06:00"
+    },
+    {
+      "title": "Imtiaz Ali's ‘O Saathi Re’, Starring Aditi Rao Hydari, Avinash Tiwary, and Arjun Rampal, Premieres December 4 on Netflix -  About Netflix",
+      "score": 80,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "about.netflix.com",
+      "seen_at": "2026-11-12T04:36:23.143485+06:00"
+    },
+    {
+      "title": "'The Age Of Innocence' TV Show Sets Netflix Release Date; First Photos",
+      "score": 78,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Deadline",
+      "seen_at": "2026-11-12T04:36:23.143796+06:00"
+    },
+    {
+      "title": "Marisa Tomei Returning As Claire Dupont In ‘Upgraded 2’",
+      "score": 50,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Deadline",
+      "seen_at": "2026-11-12T04:36:23.143905+06:00"
+    },
+    {
+      "title": "Amanda Seyfried Joined ‘You Can See Everything’ Without Reps Knowing, Had ‘No Approval’ Over Filming and Got ‘Disrespected’ by Billy Evans: ",
+      "score": 23,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Variety",
+      "seen_at": "2026-11-12T04:36:23.144060+06:00"
+    },
+    {
+      "title": "From Local to Global: Anshuman Jha & Sarah-Jane Dias On Advocating Animal Rights In ‘Lakadbaggha 2’ & Uniqueness Of Crafting An Indian Actio",
+      "score": 23,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Deadline",
+      "seen_at": "2026-11-12T04:36:23.144210+06:00"
+    },
+    {
+      "title": "Amanda Seyfried Says ‘You Can See Everything’ Role “Scares” Her, “Feels Good” Taking On Doc",
+      "score": 14,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Deadline",
+      "seen_at": "2026-11-12T04:36:23.144336+06:00"
+    },
+    {
+      "title": "MCU Surprise: ‘VisionQuest’ Finale Teases the Return of [SPOILER] in ‘Avengers: Doomsday’",
+      "score": 39,
+      "pattern": "",
+      "priority_type": "Season Renewals / New Season Updates",
+      "source": "Variety",
+      "seen_at": "2026-11-12T04:36:23.144468+06:00"
+    },
+    {
+      "title": "MHz CHoice Becomes New U.S. Home For ‘The Man Who Died’, Finnish Dark Comedy Series From ‘Sherlock & Daughter’ Writer Brendan Foley",
+      "score": 75,
+      "pattern": "",
+      "priority_type": "OTT Platform Acquisition / Streaming Rights",
+      "source": "Deadline",
+      "seen_at": "2026-11-12T04:36:23.144603+06:00"
     }
   ],
   "adaptive_metrics": {
-    "raw_discovered": 47,
-    "pre_cerebras_rejected": 24188,
-    "hard_rejected": 8246,
-    "duplicate_rejected": 207,
-    "learned_rejected": 15735,
-    "passed_to_cerebras": 4489,
-    "cerebras_ranked": 10729,
-    "published": 966,
-    "estimated_candidates_avoided": 24188
+    "raw_discovered": 50,
+    "pre_cerebras_rejected": 24359,
+    "hard_rejected": 8319,
+    "duplicate_rejected": 208,
+    "learned_rejected": 15832,
+    "passed_to_cerebras": 4502,
+    "cerebras_ranked": 10743,
+    "published": 968,
+    "estimated_candidates_avoided": 24359
   },
   "source_quality": {
     "collider.com": {
@@ -53679,11 +53836,11 @@
       "last_seen": "2026-09-08T11:49:09.577970+06:00"
     },
     "deadline.com": {
-      "observations": 4907,
-      "low_score_count": 3982,
-      "total_score": 249456,
+      "observations": 4914,
+      "low_score_count": 3988,
+      "total_score": 249831,
       "avg_score": 50.8,
-      "last_seen": "2026-11-11T22:00:22.959195+06:00"
+      "last_seen": "2026-11-12T04:36:23.144735+06:00"
     },
     "thewrap.com": {
       "observations": 16,
@@ -53700,11 +53857,11 @@
       "last_seen": "2026-09-08T21:05:13.366232+06:00"
     },
     "variety.com": {
-      "observations": 5199,
-      "low_score_count": 4290,
-      "total_score": 248583,
+      "observations": 5202,
+      "low_score_count": 4292,
+      "total_score": 248728,
       "avg_score": 47.8,
-      "last_seen": "2026-11-11T22:00:22.959189+06:00"
+      "last_seen": "2026-11-12T04:36:23.144728+06:00"
     },
     "indiewire.com": {
       "observations": 10,
@@ -53763,18 +53920,18 @@
       "last_seen": "2026-11-10T14:07:03.539085+06:00"
     },
     "netflix.com": {
-      "observations": 31,
-      "low_score_count": 14,
-      "total_score": 2100,
-      "avg_score": 67.7,
-      "last_seen": "2026-11-11T13:35:49.209202+06:00"
+      "observations": 32,
+      "low_score_count": 15,
+      "total_score": 2144,
+      "avg_score": 67.0,
+      "last_seen": "2026-11-12T04:36:23.144643+06:00"
     },
     "about.netflix.com": {
-      "observations": 15,
+      "observations": 16,
       "low_score_count": 9,
-      "total_score": 716,
-      "avg_score": 47.7,
-      "last_seen": "2026-11-11T22:00:22.959092+06:00"
+      "total_score": 796,
+      "avg_score": 49.8,
+      "last_seen": "2026-11-12T04:36:23.144686+06:00"
     },
     "disneyplus.com": {
       "observations": 7,
@@ -53791,11 +53948,11 @@
       "last_seen": "2026-10-03T01:08:38.911842+06:00"
     },
     "tamil.filmibeat.com": {
-      "observations": 2,
-      "low_score_count": 2,
-      "total_score": 63,
-      "avg_score": 31.5,
-      "last_seen": "2026-11-11T22:00:22.959103+06:00"
+      "observations": 4,
+      "low_score_count": 4,
+      "total_score": 198,
+      "avg_score": 49.5,
+      "last_seen": "2026-11-12T04:36:23.144677+06:00"
     },
     "press.disneyplus.com": {
       "observations": 2,
@@ -53821,7 +53978,7 @@
   },
   "category_coverage": {
     "Major Film Announcements": "2026-11-06T22:18:20.099531+06:00",
-    "Release Dates": "2026-11-11T22:05:23.817367+06:00",
+    "Release Dates": "2026-11-12T04:40:29.942864+06:00",
     "Studio Business": "2026-10-24T20:35:57.113797+06:00",
     "Streaming Platform News": "2026-11-06T22:17:44.559012+06:00",
     "Franchises and IP": "2026-11-06T22:17:34.555229+06:00",
