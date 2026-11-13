@@ -1,250 +1,152 @@
 {
   "feeds": {
     "https://deadline.com/feed/": {
-      "etag": "W/\"eb5555f5a20e99329ad48aa9e4417d91\"",
-      "last_modified": "Fri, 13 Nov 2026 07:26:22 GMT",
-      "last_checked": "2026-11-13T13:40:23.459383+06:00",
+      "etag": "W/\"f77610c8ec441740ab01cdafbce5c5ab\"",
+      "last_modified": "Fri, 13 Nov 2026 15:57:25 GMT",
+      "last_checked": "2026-11-13T21:58:33.509081+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://variety.com/feed/": {
-      "etag": "W/\"ef44bc7476f45d43f495e973be6f7afe\"",
-      "last_modified": "Fri, 13 Nov 2026 07:01:16 GMT",
-      "last_checked": "2026-11-13T13:40:24.181776+06:00",
+      "etag": "W/\"9d04634dfd4bdb0a51f2513bd17fb3eb\"",
+      "last_modified": "Fri, 13 Nov 2026 15:58:31 GMT",
+      "last_checked": "2026-11-13T21:58:36.309275+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.hollywoodreporter.com/feed/": {
-      "etag": "W/\"07e56cc87b7bdadaa18323339898db07\"",
-      "last_modified": "Wed, 11 Nov 2026 18:45:45 GMT",
-      "last_checked": "2026-11-13T13:40:25.073803+06:00",
+      "etag": "W/\"0608d384a2fc53f7cc7f441e0e2d3c0f\"",
+      "last_modified": "Fri, 13 Nov 2026 15:57:34 GMT",
+      "last_checked": "2026-11-13T21:58:37.358707+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.thewrap.com/feed/": {
-      "etag": "\"ac69fb62bb765a2d053a00518052381f\"",
-      "last_modified": "Fri, 13 Nov 2026 06:06:10 GMT",
-      "last_checked": "2026-11-13T13:40:25.807978+06:00",
+      "etag": "\"bd67bee07b590184a51aaaebdcc212ca\"",
+      "last_modified": "Fri, 13 Nov 2026 15:48:09 GMT",
+      "last_checked": "2026-11-13T21:58:38.797257+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.indiewire.com/feed/": {
-      "etag": "W/\"06519b7e9090a2c1c06a2e3b5838543c\"",
-      "last_modified": "Fri, 13 Nov 2026 00:23:22 GMT",
-      "last_checked": "2026-11-13T13:40:26.474028+06:00",
+      "etag": "W/\"462e0a19d2855b8c35c030690d932c6e\"",
+      "last_modified": "Fri, 13 Nov 2026 15:57:59 GMT",
+      "last_checked": "2026-11-13T21:58:40.279250+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://collider.com/feed/": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-13T13:40:27.469627+06:00",
+      "last_checked": "2026-11-13T21:58:41.990069+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://tvline.com/feed/": {
-      "etag": "\"4f6362cd37c6f0f5d296c541dfa8d8d3\"",
-      "last_modified": "Fri, 13 Nov 2026 04:00:00 GMT",
-      "last_checked": "2026-11-13T13:40:28.096095+06:00",
+      "etag": "\"63f1f38084894602cc221409df1da75b\"",
+      "last_modified": "Fri, 13 Nov 2026 15:12:00 GMT",
+      "last_checked": "2026-11-13T21:58:43.135022+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.ottplay.com/rss": {
       "etag": "\"b5496c89c58ff0f5d07d64a68d4efe07\"",
       "last_modified": "Thu, 27 May 2021 12:38:49 GMT",
-      "last_checked": "2026-11-13T13:40:29.516158+06:00",
+      "last_checked": "2026-11-13T21:58:46.321257+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.filmibeat.com/rss/feeds/filmibeat-news.xml": {
       "etag": null,
-      "last_modified": "Fri, 13 Nov 2026 07:40:29 GMT",
-      "last_checked": "2026-11-13T13:40:29.924164+06:00",
+      "last_modified": "Fri, 13 Nov 2026 15:56:47 GMT",
+      "last_checked": "2026-11-13T21:58:46.693455+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.pinkvilla.com/rss": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-13T13:40:30.649146+06:00",
+      "last_checked": "2026-11-13T21:58:47.427656+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.bollywoodhungama.com/feed/": {
-      "etag": "\"844ee2bd1bf8f81e90181378518d522f\"",
-      "last_modified": "Fri, 13 Nov 2026 07:35:46 GMT",
-      "last_checked": "2026-11-13T13:40:30.788087+06:00",
+      "etag": "\"5f82786d10d8711441d76689b6c23f19\"",
+      "last_modified": "Fri, 13 Nov 2026 15:11:39 GMT",
+      "last_checked": "2026-11-13T21:58:48.557767+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.gadgets360.com/entertainment/rss": {
-      "last_checked": "2026-11-13T13:40:31.856277+06:00",
-      "fail_count": 226,
+      "last_checked": "2026-11-13T21:58:50.510293+06:00",
+      "fail_count": 227,
       "alerted": true
     },
     "https://www.soompi.com/feed": {
-      "etag": "W/\"ee11afb9cd75601eaca9f15dd8171bf5\"",
-      "last_modified": "Fri, 13 Nov 2026 07:37:04 GMT",
-      "last_checked": "2026-11-13T13:40:32.142658+06:00",
+      "etag": "W/\"1f3cc196c50b646d5736e627dd18a08b\"",
+      "last_modified": "Fri, 13 Nov 2026 12:31:04 GMT",
+      "last_checked": "2026-11-13T21:58:50.773036+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.whats-on-netflix.com/feed/": {
       "etag": null,
-      "last_modified": "Thu, 12 Nov 2026 22:46:46 GMT",
-      "last_checked": "2026-11-13T13:40:34.320009+06:00",
+      "last_modified": "Fri, 13 Nov 2026 15:52:16 GMT",
+      "last_checked": "2026-11-13T21:58:53.745577+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.netflix.com/tudum/rss.xml": {
-      "last_checked": "2026-11-13T13:40:36.299184+06:00",
-      "fail_count": 226,
+      "last_checked": "2026-11-13T21:58:56.142280+06:00",
+      "fail_count": 227,
       "alerted": true
     },
     "https://press.wbd.com/us/en/rss": {
-      "last_checked": "2026-11-13T13:40:36.651722+06:00",
-      "fail_count": 226,
+      "last_checked": "2026-11-13T21:58:56.479382+06:00",
+      "fail_count": 227,
       "alerted": true
     },
     "https://www.apple.com/tv-pr/newsroom/feed/": {
-      "last_checked": "2026-11-13T13:40:36.994195+06:00",
-      "fail_count": 226,
+      "last_checked": "2026-11-13T21:58:57.038951+06:00",
+      "fail_count": 227,
       "alerted": true
     },
     "https://www.aboutamazon.com/rss": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-13T13:40:37.183474+06:00",
+      "last_checked": "2026-11-13T21:58:57.199085+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.marvel.com/articles/feed": {
-      "last_checked": "2026-11-13T13:40:37.702335+06:00",
-      "fail_count": 226,
+      "last_checked": "2026-11-13T21:58:57.291726+06:00",
+      "fail_count": 227,
       "alerted": true
     },
     "https://www.dc.com/blog/rss.xml": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-13T13:40:38.292255+06:00",
-      "fail_count": 7,
+      "last_checked": "2026-11-13T21:58:57.420480+06:00",
+      "fail_count": 8,
       "alerted": true
     },
     "https://www.sonypictures.com/rss": {
-      "last_checked": "2026-11-13T13:40:38.805286+06:00",
-      "fail_count": 226,
+      "last_checked": "2026-11-13T21:58:57.913810+06:00",
+      "fail_count": 227,
       "alerted": true
     },
     "https://www.paramount.com/rss": {
-      "last_checked": "2026-11-13T13:40:38.972593+06:00",
-      "fail_count": 226,
+      "last_checked": "2026-11-13T21:58:57.959836+06:00",
+      "fail_count": 227,
       "alerted": true
     },
     "https://www.universalpictures.com/rss": {
-      "last_checked": "2026-11-13T13:40:39.434391+06:00",
-      "fail_count": 226,
+      "last_checked": "2026-11-13T21:58:58.356025+06:00",
+      "fail_count": 227,
       "alerted": true
     }
   },
   "queue": {
-    "variety.com/2026/film/global/goldwyn-french-ww2-epic-de-gaulle-crossing-over-u-s-audiences-1236942834": {
-      "title": "Goldwyn Bets on French WW2 Epic ‘De Gaulle’ Crossing Over to U.S. Audiences: ‘It’s the Story of an Ally’",
-      "url": "https://variety.com/2026/film/global/goldwyn-french-ww2-epic-de-gaulle-crossing-over-u-s-audiences-1236942834/",
-      "canonical": "variety.com/2026/film/global/goldwyn-french-ww2-epic-de-gaulle-crossing-over-u-s-audiences-1236942834",
-      "published_dt": "2026-11-09T09:16:45+06:00",
-      "published_date": "2026-11-09T09:16:45+06:00",
-      "source": "Variety",
-      "region": "Entertainment",
-      "excerpt": "Antonin Baudry’s two-part World War II epic about Charles de Gaulle made its U.S. premiere Saturday at the American French Film Festival in Los Angeles, drawing a seven-minute standing ovation after both installments, each running more than two and a half hours, played back-to-back to packed audiences at the DGA Theater. The €74 million production, […]",
-      "image": "https://variety.com/wp-content/uploads/2026/11/De-Gaulle.webp",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-11-09T13:43:46.697280+06:00",
-      "last_seen": "2026-11-09T13:43:46.697298+06:00",
-      "importance_score": 50,
-      "priority_type": "Release Date Confirmations",
-      "priority_tier": 1,
-      "priority_rank": 4,
-      "sector": "International",
-      "rank_reason": "The film premiered at a festival in Los Angeles, but no public release date or platform was announced.",
-      "last_ranked_at": "2026-11-09T13:44:33.309549+06:00",
-      "learning_pattern": ""
-    },
-    "variety.com/2026/tv/news/love-is-blind-creator-rob-attack-michaella-1236942023": {
-      "title": "‘Love Is Blind’ Creator on Protecting the Cast and Why He Chose to Keep Rob’s Attack on Production in the Final Cut",
-      "url": "https://variety.com/2026/tv/news/love-is-blind-creator-rob-attack-michaella-1236942023/",
-      "canonical": "variety.com/2026/tv/news/love-is-blind-creator-rob-attack-michaella-1236942023",
-      "published_dt": "2026-11-09T09:00:00+06:00",
-      "published_date": "2026-11-09T09:00:00+06:00",
-      "source": "Variety",
-      "region": "Entertainment",
-      "excerpt": "SPOILER ALERT: This post contains spoilers for Season 11 of “Love Is Blind,” including the reunion, now streaming on Netflix. Another season of “Love Is Blind” has wrapped up. The Season 11 reunion dropped on Netflix on Sunday, revealing that the one couple who did say “I do” on their wedding day, Sarah Williams and […]",
-      "image": "https://variety.com/wp-content/uploads/2026/11/Love_Is_Blind_n_S11_E9_00_40_54_05RC.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "posted",
-      "first_seen": "2026-11-09T13:43:47.036708+06:00",
-      "last_seen": "2026-11-09T13:43:47.036727+06:00",
-      "importance_score": 100,
-      "priority_type": "OTT / Streaming Availability",
-      "priority_tier": 1,
-      "priority_rank": 1,
-      "sector": "Hollywood",
-      "rank_reason": "Netflix released the Season 11 reunion episode on Sunday, providing a clear release date and platform for viewers worldwide.",
-      "last_ranked_at": "2026-11-09T13:44:33.309156+06:00",
-      "learning_pattern": "",
-      "posted_at": "2026-11-09T13:45:35.955523+06:00"
-    },
-    "variety.com/2026/film/box-office/heated-rivalry-theatrical-release-box-office-grosses-1236942444": {
-      "title": "'Heated Rivalry' Theatrical Release Generates $1.4 Million",
-      "url": "https://variety.com/2026/film/box-office/heated-rivalry-theatrical-release-box-office-grosses-1236942444/",
-      "canonical": "variety.com/2026/film/box-office/heated-rivalry-theatrical-release-box-office-grosses-1236942444",
-      "published_dt": "2026-11-09T01:19:59+06:00",
-      "published_date": "2026-11-09T01:19:59+06:00",
-      "source": "Variety",
-      "region": "Entertainment",
-      "excerpt": "N o n e",
-      "image": "https://variety.com/wp-content/uploads/2025/11/heated-rivalry.jpg?w=1000&h=563&crop=1",
-      "discovery": "exa",
-      "source_pool": "primary",
-      "status": "posted",
-      "first_seen": "2026-11-09T13:44:23.675762+06:00",
-      "last_seen": "2026-11-09T13:44:23.675779+06:00",
-      "importance_score": 100,
-      "priority_type": "Theatrical Releases / Re-releases",
-      "priority_tier": 1,
-      "priority_rank": 5,
-      "sector": "International",
-      "rank_reason": "Limited theatrical run announced from Nov 6 through Nov 30, giving a concrete release window and venue information.",
-      "last_ranked_at": "2026-11-09T13:44:33.309711+06:00",
-      "learning_pattern": "sports",
-      "posted_at": "2026-11-09T13:45:41.100855+06:00"
-    },
-    "variety.com/2026/film/news/spy-x-family-season-4-new-theatrical-film-2027-1236942775": {
-      "title": "'Spy x Family' Season 4 and New Theatrical Film Set for 2027",
-      "url": "https://variety.com/2026/film/news/spy-x-family-season-4-new-theatrical-film-2027-1236942775/",
-      "canonical": "variety.com/2026/film/news/spy-x-family-season-4-new-theatrical-film-2027-1236942775",
-      "published_dt": "2026-11-09T05:51:22+06:00",
-      "published_date": "2026-11-09T05:51:22+06:00",
-      "source": "Variety",
-      "region": "Entertainment",
-      "excerpt": "N o n e",
-      "image": "https://variety.com/wp-content/uploads/2026/11/Spy-x-Kids.jpg?w=1000&h=563&crop=1",
-      "discovery": "exa",
-      "source_pool": "primary",
-      "status": "pending",
-      "first_seen": "2026-11-09T13:44:30.008369+06:00",
-      "last_seen": "2026-11-09T13:44:30.008397+06:00",
-      "importance_score": 44,
-      "priority_type": "New Movie / Series Announcements",
-      "priority_tier": 2,
-      "priority_rank": 6,
-      "sector": "International",
-      "rank_reason": "Announces a future season and film for 2027 without a specific release date or platform, limiting publishability.",
-      "last_ranked_at": "2026-11-09T13:44:33.309750+06:00",
-      "learning_pattern": ""
-    },
     "deadline.com/2026/11/johnny-depp-ti-west-london-ebenezer-global-premiere-1237218130": {
       "title": "Johnny Depp & Ti West Land In A Chilly London For ‘Ebenezer’ Global Premiere",
       "url": "https://deadline.com/2026/11/johnny-depp-ti-west-london-ebenezer-global-premiere-1237218130/",
@@ -1253,13 +1155,13 @@
       "status": "pending",
       "first_seen": "2026-11-12T23:26:10.697714+06:00",
       "last_seen": "2026-11-12T23:26:10.697729+06:00",
-      "importance_score": 36,
+      "importance_score": 51,
       "priority_type": "Season Renewals / New Season Updates",
       "priority_tier": 2,
       "priority_rank": 7,
       "sector": "Hollywood",
-      "rank_reason": "Cast additions announced without a release date, thus not publishable under release‑only rules.",
-      "last_ranked_at": "2026-11-13T13:40:49.072233+06:00",
+      "rank_reason": "Cast additions announced for Season 2 but no release date or platform window; therefore score stays below publishable threshold.",
+      "last_ranked_at": "2026-11-13T22:01:12.803866+06:00",
       "learning_pattern": "routine_production"
     },
     "deadline.com/2026/11/sophie-nelisse-heated-rivalry-season-2-update-1237221711": {
@@ -1277,13 +1179,13 @@
       "status": "pending",
       "first_seen": "2026-11-12T23:26:10.814794+06:00",
       "last_seen": "2026-11-12T23:26:10.814813+06:00",
-      "importance_score": 28,
+      "importance_score": 42,
       "priority_type": "Season Renewals / New Season Updates",
       "priority_tier": 2,
       "priority_rank": 7,
-      "sector": "Indian",
-      "rank_reason": "Provides production wrap info but no release window.",
-      "last_ranked_at": "2026-11-13T13:40:49.072309+06:00",
+      "sector": "Hollywood",
+      "rank_reason": "Provides production wrap info but no confirmed release window; score remains below publishable level.",
+      "last_ranked_at": "2026-11-13T22:01:12.804134+06:00",
       "learning_pattern": ""
     },
     "deadline.com/2026/11/lucasfilm-star-wars-50th-anniversary-rerelease-imax-1237221738": {
@@ -1326,13 +1228,13 @@
       "status": "pending",
       "first_seen": "2026-11-12T23:26:11.612069+06:00",
       "last_seen": "2026-11-12T23:26:11.612087+06:00",
-      "importance_score": 37,
+      "importance_score": 35,
       "priority_type": "New Movie / Series Announcements",
       "priority_tier": 2,
       "priority_rank": 6,
       "sector": "International",
-      "rank_reason": "The story is a condemnation statement, not a release announcement. It lacks a title release date, platform or language details, so it cannot reach a publishable score and remains below 80.",
-      "last_ranked_at": "2026-11-13T13:40:49.071951+06:00",
+      "rank_reason": "Statement about a tragic event, not a release; score remains below publishable threshold.",
+      "last_ranked_at": "2026-11-13T22:01:12.803235+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/film/global/blind-spot-najwa-nimri-film-factory-mar-targarona-1236945300": {
@@ -1350,13 +1252,13 @@
       "status": "pending",
       "first_seen": "2026-11-12T23:26:15.702190+06:00",
       "last_seen": "2026-11-12T23:26:15.702205+06:00",
-      "importance_score": 33,
-      "priority_type": "OTT Platform Acquisition / Streaming Rights",
+      "importance_score": 44,
+      "priority_type": "New Movie / Series Announcements",
       "priority_tier": 2,
-      "priority_rank": 8,
+      "priority_rank": 6,
       "sector": "International",
-      "rank_reason": "Film presented at market; no release date or platform disclosed.",
-      "last_ranked_at": "2026-11-13T13:40:49.072522+06:00",
+      "rank_reason": "Announcement of market screening, not a release date; score kept under 80.",
+      "last_ranked_at": "2026-11-13T22:01:12.803104+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/film/news/gkids-acquires-rights-to-cartoon-saloon-julian-1236946291": {
@@ -1399,13 +1301,13 @@
       "status": "pending",
       "first_seen": "2026-11-12T23:26:16.034930+06:00",
       "last_seen": "2026-11-12T23:26:16.034950+06:00",
-      "importance_score": 28,
+      "importance_score": 51,
       "priority_type": "Season Renewals / New Season Updates",
       "priority_tier": 2,
       "priority_rank": 7,
       "sector": "Hollywood",
-      "rank_reason": "Similar to ID 9; no release date provided.",
-      "last_ranked_at": "2026-11-13T13:40:49.072374+06:00",
+      "rank_reason": "Same information as ID 1; lacks release specifics, keeping score under 80.",
+      "last_ranked_at": "2026-11-13T22:01:12.804002+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/awards/news/game-awards-disney-plus-livestream-1236946139": {
@@ -1423,13 +1325,13 @@
       "status": "pending",
       "first_seen": "2026-11-12T23:26:16.121749+06:00",
       "last_seen": "2026-11-12T23:26:16.121763+06:00",
-      "importance_score": 35,
+      "importance_score": 100,
       "priority_type": "OTT / Streaming Availability",
       "priority_tier": 1,
       "priority_rank": 1,
-      "sector": "International",
-      "rank_reason": "Adds a streaming platform to an existing event; not a new title release.",
-      "last_ranked_at": "2026-11-13T13:40:49.071487+06:00",
+      "sector": "Hollywood",
+      "rank_reason": "Officially announced that the Game Awards will be livestreamed on Disney+ on Dec. 10, providing clear release date, platform and audience reach.",
+      "last_ranked_at": "2026-11-13T22:01:12.801255+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/film/columns/unzipped-4k-restoration-streaming-criterion-channel-isaac-mizrahi-1236946151": {
@@ -1444,17 +1346,18 @@
       "image": "https://variety.com/wp-content/uploads/2026/09/Unzipped_image_01-1000.jpg",
       "discovery": "rss",
       "date_estimated": false,
-      "status": "pending",
+      "status": "posted",
       "first_seen": "2026-11-12T23:26:16.363077+06:00",
       "last_seen": "2026-11-12T23:26:16.363097+06:00",
-      "importance_score": 78,
+      "importance_score": 100,
       "priority_type": "OTT / Streaming Availability",
       "priority_tier": 1,
       "priority_rank": 1,
-      "sector": "International",
-      "rank_reason": "Streaming debut date (Dec 1) for the restored documentary announced, meeting release‑only standards.",
-      "last_ranked_at": "2026-11-13T13:40:49.071386+06:00",
-      "learning_pattern": ""
+      "sector": "Hollywood",
+      "rank_reason": "Confirmed streaming debut of the 4K restored documentary on Dec. 1 on the Criterion Channel, meeting all release‑only criteria.",
+      "last_ranked_at": "2026-11-13T22:01:12.801410+06:00",
+      "learning_pattern": "",
+      "posted_at": "2026-11-13T22:23:35.234192+06:00"
     },
     "deadline.com/2026/11/the-spot-release-date-claire-danes-ewan-mcgregor-hulu-photo-1237222480": {
       "title": "Hulu Series ‘The Spot’ Starring Claire Danes & Ewan McGregor Gets Release Date, First-Look Photos",
@@ -1471,13 +1374,13 @@
       "status": "pending",
       "first_seen": "2026-11-13T13:40:23.553197+06:00",
       "last_seen": "2026-11-13T13:40:23.553218+06:00",
-      "importance_score": 86,
+      "importance_score": 100,
       "priority_type": "Release Date Confirmations",
       "priority_tier": 1,
       "priority_rank": 4,
       "sector": "Hollywood",
-      "rank_reason": "Official release date (Jan 13) announced for the Hulu series with first‑look images, meeting the release‑only criteria.",
-      "last_ranked_at": "2026-11-13T13:40:49.071556+06:00",
+      "rank_reason": "Official release date (Jan 13) announced with first‑look images.",
+      "last_ranked_at": "2026-11-13T22:01:12.801703+06:00",
       "learning_pattern": ""
     },
     "deadline.com/2026/11/alanis-morissette-dogma-ben-affleck-lead-with-my-sexuality-1237222468": {
@@ -1495,13 +1398,13 @@
       "status": "pending",
       "first_seen": "2026-11-13T13:40:23.647475+06:00",
       "last_seen": "2026-11-13T13:40:23.647497+06:00",
-      "importance_score": 38,
+      "importance_score": 0,
       "priority_type": "Theatrical Releases / Re-releases",
       "priority_tier": 1,
       "priority_rank": 5,
-      "sector": "Hollywood",
-      "rank_reason": "Mentions a re‑release but gives no specific date or platform, falling short of release‑only criteria.",
-      "last_ranked_at": "2026-11-13T13:40:49.071788+06:00",
+      "sector": "International",
+      "rank_reason": "Unscored fallback; withheld from publication.",
+      "last_ranked_at": "2026-11-13T22:01:12.802413+06:00",
       "learning_pattern": ""
     },
     "deadline.com/2026/11/yellowjackets-cast-eulogizes-show-final-season-premiere-1237222092": {
@@ -1519,13 +1422,13 @@
       "status": "pending",
       "first_seen": "2026-11-13T13:40:23.806380+06:00",
       "last_seen": "2026-11-13T13:40:23.806396+06:00",
-      "importance_score": 82,
+      "importance_score": 100,
       "priority_type": "Release Date Confirmations",
       "priority_tier": 1,
       "priority_rank": 4,
       "sector": "Hollywood",
-      "rank_reason": "Final season premiere date (Nov 20) disclosed, fulfilling release‑only requirements.",
-      "last_ranked_at": "2026-11-13T13:40:49.071632+06:00",
+      "rank_reason": "Official premiere date (Nov 20) for the final season provided.",
+      "last_ranked_at": "2026-11-13T22:01:12.801837+06:00",
       "learning_pattern": ""
     },
     "deadline.com/2026/11/michael-john-roberts-dead-1237222107": {
@@ -1543,13 +1446,13 @@
       "status": "pending",
       "first_seen": "2026-11-13T13:40:24.089347+06:00",
       "last_seen": "2026-11-13T13:40:24.089364+06:00",
-      "importance_score": 29,
+      "importance_score": 0,
       "priority_type": "New Movie / Series Announcements",
       "priority_tier": 2,
       "priority_rank": 6,
-      "sector": "Hollywood",
-      "rank_reason": "Obituary notice; no release information.",
-      "last_ranked_at": "2026-11-13T13:40:49.072089+06:00",
+      "sector": "International",
+      "rank_reason": "Unscored fallback; withheld from publication.",
+      "last_ranked_at": "2026-11-13T22:01:12.803748+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/tv/news/shilpa-shetty-host-reality-show-pyaar-ka-pressure-cooker-1236946816": {
@@ -1567,13 +1470,13 @@
       "status": "pending",
       "first_seen": "2026-11-13T13:40:24.278277+06:00",
       "last_seen": "2026-11-13T13:40:24.278293+06:00",
-      "importance_score": 51,
+      "importance_score": 0,
       "priority_type": "New Movie / Series Announcements",
       "priority_tier": 2,
       "priority_rank": 6,
-      "sector": "Indian",
-      "rank_reason": "Announces a new reality series and host but lacks a confirmed release date or window, so it cannot reach the publishable threshold.",
-      "last_ranked_at": "2026-11-13T13:40:49.071866+06:00",
+      "sector": "International",
+      "rank_reason": "Unscored fallback; withheld from publication.",
+      "last_ranked_at": "2026-11-13T22:01:12.803354+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/tv/news/the-body-finale-sexuality-grace-god-1236946216": {
@@ -1591,13 +1494,13 @@
       "status": "pending",
       "first_seen": "2026-11-13T13:40:24.473959+06:00",
       "last_seen": "2026-11-13T13:40:24.473979+06:00",
-      "importance_score": 32,
+      "importance_score": 0,
       "priority_type": "New Movie / Series Announcements",
       "priority_tier": 2,
       "priority_rank": 6,
-      "sector": "Hollywood",
-      "rank_reason": "Provides spoilers for an already‑streaming series; no new release information.",
-      "last_ranked_at": "2026-11-13T13:40:49.072018+06:00",
+      "sector": "International",
+      "rank_reason": "Unscored fallback; withheld from publication.",
+      "last_ranked_at": "2026-11-13T22:01:12.803482+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/film/awards/you-can-see-everything-documentary-oscars-history-1236946588": {
@@ -1615,13 +1518,13 @@
       "status": "pending",
       "first_seen": "2026-11-13T13:40:24.706352+06:00",
       "last_seen": "2026-11-13T13:40:24.706373+06:00",
-      "importance_score": 28,
+      "importance_score": 0,
       "priority_type": "New Movie / Series Announcements",
       "priority_tier": 2,
       "priority_rank": 6,
-      "sector": "Hollywood",
-      "rank_reason": "Discusses documentary’s Oscar history; no new release date announced.",
-      "last_ranked_at": "2026-11-13T13:40:49.072157+06:00",
+      "sector": "International",
+      "rank_reason": "Unscored fallback; withheld from publication.",
+      "last_ranked_at": "2026-11-13T22:01:12.803613+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/film/global/chase-infiniti-movie-the-julia-set-sells-out-hanway-1236946566": {
@@ -1639,14 +1542,186 @@
       "status": "pending",
       "first_seen": "2026-11-13T13:40:24.774329+06:00",
       "last_seen": "2026-11-13T13:40:24.774347+06:00",
-      "importance_score": 36,
+      "importance_score": 0,
       "priority_type": "OTT Platform Acquisition / Streaming Rights",
       "priority_tier": 2,
       "priority_rank": 8,
       "sector": "International",
-      "rank_reason": "Reports worldwide sales; lacks a confirmed release window or platform.",
-      "last_ranked_at": "2026-11-13T13:40:49.072446+06:00",
+      "rank_reason": "Unscored fallback; withheld from publication.",
+      "last_ranked_at": "2026-11-13T22:01:12.804250+06:00",
       "learning_pattern": ""
+    },
+    "deadline.com/2026/11/kpop-demon-hunters-2027-golden-tour-dates-1237222688": {
+      "title": "KPop Demon Hunters Announces 2027 Global Arena Tour Dates In North America, U.K. & Europe",
+      "url": "https://deadline.com/2026/11/kpop-demon-hunters-2027-golden-tour-dates-1237222688/",
+      "canonical": "deadline.com/2026/11/kpop-demon-hunters-2027-golden-tour-dates-1237222688",
+      "published_dt": "2026-11-13T20:45:55+06:00",
+      "published_date": "2026-11-13T20:45:55+06:00",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "excerpt": "Netflix’s KPop Demon Hunters will launch a global tour in June, with what Netflix and AEG Presents calls “cutting-edge performance innovations” that allow the animated Huntr/x characters Rumi, Mira and Zoey to interact with audiences. The Golden World Tour is set to open June 5, 2027, at Baltimore’s CFG Bank Arena, with the first tour […]",
+      "image": "https://deadline.com/wp-content/uploads/2026/11/2027-KPopDemonHunters-GenericSocial-1920x1080-1.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-13T21:58:33.861123+06:00",
+      "last_seen": "2026-11-13T21:58:33.861138+06:00",
+      "importance_score": 0,
+      "priority_type": "",
+      "priority_tier": 2,
+      "priority_rank": 5,
+      "sector": "International",
+      "rank_reason": "Unscored fallback; withheld from publication.",
+      "last_ranked_at": "2026-11-13T22:01:12.802575+06:00",
+      "learning_pattern": ""
+    },
+    "deadline.com/2026/11/sam-hartman-the-bachelor-season-30-abc-nfl-1237222687": {
+      "title": "NFL Quarterback Sam Hartman To Headline ‘The Bachelor’ For Season 30 On ABC",
+      "url": "https://deadline.com/2026/11/sam-hartman-the-bachelor-season-30-abc-nfl-1237222687/",
+      "canonical": "deadline.com/2026/11/sam-hartman-the-bachelor-season-30-abc-nfl-1237222687",
+      "published_dt": "2026-11-13T20:12:42+06:00",
+      "published_date": "2026-11-13T20:12:42+06:00",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "excerpt": "ABC has named the Bachelor for the upcoming 30th season of the reality series. Sam Hartman, a 27-year-old pro athlete playing for the NFL’s Washington Commanders, will be searching for love in the new installment, which premieres on Sunday, March 21 at 8 p.m. on ABC and streams next day on Hulu and Hulu on […]",
+      "image": "https://deadline.com/wp-content/uploads/2026/11/SamABC.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "posted",
+      "first_seen": "2026-11-13T21:58:34.169819+06:00",
+      "last_seen": "2026-11-13T21:58:34.169836+06:00",
+      "importance_score": 85,
+      "priority_type": "Release Date Confirmations",
+      "priority_tier": 1,
+      "priority_rank": 4,
+      "sector": "Hollywood",
+      "rank_reason": "Confirmed premiere date (Mar 21) and streaming on Hulu.",
+      "last_ranked_at": "2026-11-13T22:01:12.802287+06:00",
+      "learning_pattern": "",
+      "posted_at": "2026-11-13T22:23:49.681454+06:00"
+    },
+    "deadline.com/2026/11/virgin-river-renewed-season-9-netflix-longest-running-1237222568": {
+      "title": "‘Virgin River’ Gets Early Season 9 Renewal, Officially Becomes Netflix’s Longest-Running Scripted Series",
+      "url": "https://deadline.com/2026/11/virgin-river-renewed-season-9-netflix-longest-running-1237222568/",
+      "canonical": "deadline.com/2026/11/virgin-river-renewed-season-9-netflix-longest-running-1237222568",
+      "published_dt": "2026-11-13T20:00:00+06:00",
+      "published_date": "2026-11-13T20:00:00+06:00",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "excerpt": "Netflix’s content leadership may be changing but one thing remains constant — Virgin River getting another early renewal. The long-running romantic drama starring Alexandra Breckenridge and Martin Henderson has been picked up for a ninth season months ahead of its 2027 Season 8 premiere. It will once again consist of 10 episodes, bringing the show’s […]",
+      "image": "https://deadline.com/wp-content/uploads/2026/03/Virgin_River_n_S7_E1_00_04_47_14_R.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-13T21:58:34.317434+06:00",
+      "last_seen": "2026-11-13T21:58:34.317451+06:00",
+      "importance_score": 0,
+      "priority_type": "",
+      "priority_tier": 2,
+      "priority_rank": 5,
+      "sector": "International",
+      "rank_reason": "Unscored fallback; withheld from publication.",
+      "last_ranked_at": "2026-11-13T22:01:12.802718+06:00",
+      "learning_pattern": ""
+    },
+    "deadline.com/2026/11/afm-david-walliams-international-insider-1237221498": {
+      "title": "International Insider: AFM Deep Dive; Walliams Scandal; ‘Ebenezer’ In London",
+      "url": "https://deadline.com/2026/11/afm-david-walliams-international-insider-1237221498/",
+      "canonical": "deadline.com/2026/11/afm-david-walliams-international-insider-1237221498",
+      "published_dt": "2026-11-13T19:00:00+06:00",
+      "published_date": "2026-11-13T19:00:00+06:00",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "excerpt": "Good afternoon friends, welcome back to another edition of the Deadline International Insider with Max Goldbart bringing you the latest. Scroll down. And sign up here. AFM Heats Up Kicking the tyres: The American Film Market (AFM) took place in Los Angeles this week with no shortage of packages announced in the days before and […]",
+      "image": "https://deadline.com/wp-content/uploads/2026/10/MCDOBSE_UC009.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-13T21:58:34.651827+06:00",
+      "last_seen": "2026-11-13T21:58:34.651843+06:00",
+      "importance_score": 0,
+      "priority_type": "",
+      "priority_tier": 2,
+      "priority_rank": 5,
+      "sector": "International",
+      "rank_reason": "Unscored fallback; withheld from publication.",
+      "last_ranked_at": "2026-11-13T22:01:12.802850+06:00",
+      "learning_pattern": ""
+    },
+    "variety.com/2026/tv/global/russell-brand-open-secret-netflix-revelations-1236946877": {
+      "title": "‘Russell Brand: Open Secret’: Netflix Doc Reveals His ‘Jokes’ About Rape, Making a Girlfriend ‘Brush Her Teeth Until They Bled’ and More",
+      "url": "https://variety.com/2026/tv/global/russell-brand-open-secret-netflix-revelations-1236946877/",
+      "canonical": "variety.com/2026/tv/global/russell-brand-open-secret-netflix-revelations-1236946877",
+      "published_dt": "2026-11-13T21:54:06+06:00",
+      "published_date": "2026-11-13T21:54:06+06:00",
+      "source": "Variety",
+      "region": "Entertainment",
+      "excerpt": "Just a week after former actor and comedian Russell Brand was convicted of rape and sexual assault in a U.K. court, Netflix has released a documentary, “Russell Brand: Open Secret,” exploring his rise to fame and pivot to political influencer even as rumors about his unsettling behavior intensified. Speaking to old roommates, ex-partners and fellow […]",
+      "image": "https://variety.com/wp-content/uploads/2026/11/Russell-Brand_037e35.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "posted",
+      "first_seen": "2026-11-13T21:58:36.536134+06:00",
+      "last_seen": "2026-11-13T21:58:36.536150+06:00",
+      "importance_score": 90,
+      "priority_type": "New Movie / Series Announcements",
+      "priority_tier": 2,
+      "priority_rank": 6,
+      "sector": "Hollywood",
+      "rank_reason": "Netflix officially released the documentary, providing a clear release date and platform.",
+      "last_ranked_at": "2026-11-13T22:01:12.802963+06:00",
+      "learning_pattern": "",
+      "posted_at": "2026-11-13T22:23:54.830044+06:00"
+    },
+    "variety.com/2026/film/global/conspiracy-thriller-the-awakening-kevin-spacey-us-release-1236946183": {
+      "title": "Conspiracy Thriller ‘The Awakening,’ Starring Kevin Spacey, Gets U.S. Release (EXCLUSIVE)",
+      "url": "https://variety.com/2026/film/global/conspiracy-thriller-the-awakening-kevin-spacey-us-release-1236946183/",
+      "canonical": "variety.com/2026/film/global/conspiracy-thriller-the-awakening-kevin-spacey-us-release-1236946183",
+      "published_dt": "2026-11-13T21:51:49+06:00",
+      "published_date": "2026-11-13T21:51:49+06:00",
+      "source": "Variety",
+      "region": "Entertainment",
+      "excerpt": "“The Awakening,” the British conspiracy thriller starring two-time Oscar winner Kevin Spacey in a supporting role, is coming to the U.S. The feature — which has the tagline “The Film They Don’t Want You to See” — will land on digital and cable platforms on Nov. 24 through Blue Harbor Entertainment. The announcement comes after “The Awakening” premiered […]",
+      "image": "https://variety.com/wp-content/uploads/2025/05/Kevin-Spacey-The-Awakening.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "posted",
+      "first_seen": "2026-11-13T21:58:36.679135+06:00",
+      "last_seen": "2026-11-13T21:58:36.679151+06:00",
+      "importance_score": 99,
+      "priority_type": "OTT / Streaming Availability",
+      "priority_tier": 1,
+      "priority_rank": 1,
+      "sector": "International",
+      "rank_reason": "Official announcement of U.S. digital and cable release on Nov. 24.",
+      "last_ranked_at": "2026-11-13T22:01:12.801565+06:00",
+      "learning_pattern": "",
+      "posted_at": "2026-11-13T22:23:40.020166+06:00"
+    },
+    "deadline.com/2026/11/avatar-seven-havens-book-2-release-date-paramount-plus-1237221752": {
+      "title": "‘Avatar: Seven Havens’ Sets Book 2 Release Date At Paramount+ - Deadline",
+      "url": "https://deadline.com/2026/11/avatar-seven-havens-book-2-release-date-paramount-plus-1237221752/",
+      "canonical": "deadline.com/2026/11/avatar-seven-havens-book-2-release-date-paramount-plus-1237221752",
+      "published_dt": "2026-11-13T04:15:00+06:00",
+      "published_date": "2026-11-13T04:15:00+06:00",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "excerpt": "‘Avatar: Seven Havens’ Sets Book 2 Release Date At Paramount+ Deadline",
+      "image": "",
+      "discovery": "google_news",
+      "date_estimated": false,
+      "status": "posted",
+      "first_seen": "2026-11-13T21:59:02.787447+06:00",
+      "last_seen": "2026-11-13T21:59:02.787475+06:00",
+      "importance_score": 100,
+      "priority_type": "Release Date Confirmations",
+      "priority_tier": 1,
+      "priority_rank": 4,
+      "sector": "International",
+      "rank_reason": "Paramount+ set a global spring release schedule with specific dates.",
+      "last_ranked_at": "2026-11-13T22:01:12.801975+06:00",
+      "learning_pattern": "",
+      "posted_at": "2026-11-13T22:23:44.934202+06:00"
     }
   },
   "events": {
@@ -1675,31 +1750,6 @@
       "status": "published",
       "message_id": 1265
     },
-    "retrospective_future_visions": {
-      "event_id": "retrospective_future_visions",
-      "canonical_url": "deadline.com/2026/10/berlinale-2027-retrospective-future-metropolis-1237156601",
-      "original_url": "https://deadline.com/2026/10/berlinale-2027-retrospective-future-metropolis-1237156601/",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "Berlinale",
-      "event_cluster_id": "evt_efc2683847",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Berlinale 2027 Retrospective",
-      "summary": "Berlinale’s 2027 retrospective will focus on future‑vision cinema to mark the 100th anniversary of Fritz Lang’s Metropolis.",
-      "highlights": [
-        "Retrospective theme: cinematic visions of the future and rebellion",
-        "Lineup includes RoboCop (1987), Decoder (1984) and Metoroporisu (2001)",
-        "Features a new restoration of Ngozi Onwurah’s Welcome II the Terrordome (1995)"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-14T16:42:54+06:00",
-      "selected_at": "2026-10-14T17:32:38.230108+06:00",
-      "status": "published",
-      "message_id": 919
-    },
     "production_update": {
       "event_id": "production_update",
       "canonical_url": "netflix.com/tudum/articles/the-take-release-date-cast-news",
@@ -1724,130 +1774,6 @@
       "selected_at": "2026-11-04T13:34:42.472683+06:00",
       "status": "published",
       "message_id": 1240
-    },
-    "tiger_tv_launch": {
-      "event_id": "tiger_tv_launch",
-      "canonical_url": "deadline.com/2026/10/rohit-jain-tiger-tv-1237156538",
-      "original_url": "https://deadline.com/2026/10/rohit-jain-tiger-tv-1237156538/",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "topic": "Streaming Platform News",
-      "institution": "Tiger TV",
-      "event_cluster_id": "evt_1ac90b2671",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Tiger TV",
-      "summary": "Rohit Jain is launching Tiger TV, a streaming service for Hindi and Punjabi content, on October 15.",
-      "highlights": [
-        "Launches on Oct 15 via Lionsgate Play app in Asia and as a standalone app in US, UK, Canada, Australia, NZ",
-        "Available on Amazon Prime Video Channels and YouTube Primetime Channels",
-        "Plans a ₹500 crore+ content portfolio with over 50 titles in its first year"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-14T14:29:39+06:00",
-      "selected_at": "2026-10-14T22:52:21.088014+06:00",
-      "status": "published",
-      "message_id": 923
-    },
-    "the_greatest_trailer": {
-      "event_id": "the_greatest_trailer",
-      "canonical_url": "aboutamazon.com/news/entertainment/the-greatest-muhammad-ali-prime-video",
-      "original_url": "https://www.aboutamazon.com/news/entertainment/the-greatest-muhammad-ali-prime-video?utm_source=rss",
-      "source": "Prime Video / Amazon News",
-      "region": "Entertainment",
-      "topic": "Trailers and First Looks",
-      "institution": "Prime Video / Amazon",
-      "event_cluster_id": "evt_cdc9f35235",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "The Greatest",
-      "summary": "Prime Video’s first authorized Muhammad Ali series premieres on Nov 4, 2026.",
-      "highlights": [
-        "The eight‑episode series launches worldwide on Prime Video on Nov 4",
-        "Jaalen Best stars as Muhammad Ali, with Lonnie Ali as executive producer"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-14T21:00:06+06:00",
-      "selected_at": "2026-10-14T22:52:26.545248+06:00",
-      "status": "published",
-      "message_id": 924
-    },
-    "get_lite_casting": {
-      "event_id": "get_lite_casting",
-      "canonical_url": "variety.com/2026/film/news/nia-long-teyana-taylor-get-lite-cast-1236910445",
-      "original_url": "https://variety.com/2026/film/news/nia-long-teyana-taylor-get-lite-cast-1236910445/",
-      "source": "Variety",
-      "region": "Entertainment",
-      "topic": "Casting",
-      "institution": "Paramount Pictures",
-      "event_cluster_id": "evt_4ddf823a49",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Get Lite",
-      "summary": "Nia Long has joined the cast of Teyana Taylor’s directorial debut film Get Lite, slated for a wide theatrical release in August 2027.",
-      "highlights": [
-        "Nia Long added to ensemble alongside Storm Reid and Ceyair Wright",
-        "Paramount set the film for a wide theatrical release on Aug. 20, 2027",
-        "Production is underway in New York City under Taylor’s direction"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-14T21:30:00+06:00",
-      "selected_at": "2026-10-14T22:52:31.730794+06:00",
-      "status": "published",
-      "message_id": 925
-    },
-    "creme_de_la_creme_rights": {
-      "event_id": "creme_de_la_creme_rights",
-      "canonical_url": "variety.com/2026/tv/global/orf-enterprise-creme-de-la-creme-whatever-pictures-rein-film-1236910449",
-      "original_url": "https://variety.com/2026/tv/global/orf-enterprise-creme-de-la-creme-whatever-pictures-rein-film-1236910449/",
-      "source": "Variety",
-      "region": "Entertainment",
-      "topic": "OTT Rights and Distribution",
-      "institution": "ORF-Enterprise",
-      "event_cluster_id": "evt_7009e8b7d5",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Crème de la Crème",
-      "summary": "Finnish comedy‑drama series about a farmer who launches a sperm‑bank business has been picked up for worldwide distribution by ORF‑Enterprise.",
-      "highlights": [
-        "ORF‑Enterprise acquires international distribution rights",
-        "Show follows Joonas turning his struggling dairy farm into a booming sperm‑bank",
-        "Described as a playful, irreverent take on Nordic drama"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-14T14:22:30+06:00",
-      "selected_at": "2026-10-14T22:52:37.005489+06:00",
-      "status": "published",
-      "message_id": 926
-    },
-    "production_co_production_tokyo": {
-      "event_id": "production_co_production_tokyo",
-      "canonical_url": "variety.com/2026/global/global/japan-bright-minds-france-tv-distribution-nhk-jla-1236908898",
-      "original_url": "https://variety.com/2026/global/global/japan-bright-minds-france-tv-distribution-nhk-jla-1236908898/",
-      "source": "Variety",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "France TV Distribution / JLA Productions / NHK Enterprises",
-      "event_cluster_id": "evt_7771828f03",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Bright Minds",
-      "summary": "Season 7 of the French crime series will be partially filmed in Tokyo, marking the first Franco‑Japanese co‑production.",
-      "highlights": [
-        "Season 7 includes two episodes shot in Tokyo",
-        "First French series to co‑produce with Japan’s NHK Enterprises",
-        "Series is broadcast in over 130 countries"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-14T14:15:59+06:00",
-      "selected_at": "2026-10-15T02:36:49.778745+06:00",
-      "status": "published",
-      "message_id": 929
     },
     "launch_of_xta_media": {
       "event_id": "launch_of_xta_media",
@@ -2024,30 +1950,6 @@
       "status": "published",
       "message_id": 936
     },
-    "kidney_film_co_production_boarding": {
-      "event_id": "kidney_film_co_production_boarding",
-      "canonical_url": "variety.com/2026/film/news/tallinn-indian-drama-kidney-platoon-one-films-1236909621",
-      "original_url": "https://variety.com/2026/film/news/tallinn-indian-drama-kidney-platoon-one-films-1236909621/",
-      "source": "Variety",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "Platoon One Films & Enfant Terrible Productions",
-      "event_cluster_id": "evt_a5261be0ac",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Kidney",
-      "summary": "Indian drama ‘Kidney’ secures co‑producer Platoon One Films ahead of its Critics’ Picks slot at Tallinn Black Nights Festival.",
-      "highlights": [
-        "Platoon One Films joins as co‑producer",
-        "Film selected for Critics’ Picks competition at Tallinn Black Nights Festival"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-14T14:30:08+06:00",
-      "selected_at": "2026-10-15T11:58:18.002301+06:00",
-      "status": "published",
-      "message_id": 937
-    },
     "choreographer_costume_designer_hire": {
       "event_id": "choreographer_costume_designer_hire",
       "canonical_url": "deadline.com/2026/10/la-la-land-stage-musical-creative-team-1237156647",
@@ -2071,31 +1973,6 @@
       "selected_at": "2026-10-15T11:58:22.913887+06:00",
       "status": "published",
       "message_id": 938
-    },
-    "philippine_italian_sales_alliance_launch": {
-      "event_id": "philippine_italian_sales_alliance_launch",
-      "canonical_url": "variety.com/2026/film/markets-festivals/philippine-italian-sales-firms-fire-ice-coccinelle-unite-indies-1236911055",
-      "original_url": "https://variety.com/2026/film/markets-festivals/philippine-italian-sales-firms-fire-ice-coccinelle-unite-indies-1236911055/",
-      "source": "Variety",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "Fire & Ice Media & Coccinelle Film Sales",
-      "event_cluster_id": "evt_e0eed8f04f",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Fire & Ice Media & Coccinelle Film Sales Alliance",
-      "summary": "Fire & Ice Media and Italy’s Coccinelle Film Sales have formed a sales alliance to pitch Filipino indie films to buyers in Asia, Europe and North America.",
-      "highlights": [
-        "Alliance announced at Busan’s Asian Contents & Film Market",
-        "Will represent a hand‑picked slate of Filipino titles for international distribution",
-        "Partners aim to leverage regional expertise to secure deals beyond home markets"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-14T14:53:45+06:00",
-      "selected_at": "2026-10-15T11:58:27.721349+06:00",
-      "status": "published",
-      "message_id": 939
     },
     "russell_brand_case_filing": {
       "event_id": "russell_brand_case_filing",
@@ -2121,30 +1998,6 @@
       "selected_at": "2026-10-15T11:58:32.637926+06:00",
       "status": "published",
       "message_id": 940
-    },
-    "nbc_tv_specials_history": {
-      "event_id": "nbc_tv_specials_history",
-      "canonical_url": "variety.com/2026/tv/news/bob-hope-macys-thanksgiving-day-parade-wicked-nbc-specials-1236909503",
-      "original_url": "https://variety.com/2026/tv/news/bob-hope-macys-thanksgiving-day-parade-wicked-nbc-specials-1236909503/",
-      "source": "Variety",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "NBC",
-      "event_cluster_id": "evt_b10a861064",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "NBC",
-      "summary": "NBC has built a century-long legacy of TV specials from Bob Hope to the Macy’s Thanksgiving Day Parade.",
-      "highlights": [
-        "Bob Hope hosted 283 NBC specials over 46 years",
-        "NBC’s Macy’s Thanksgiving Day Parade now draws over 20 million viewers"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-14T21:15:00+06:00",
-      "selected_at": "2026-10-15T17:09:14.268971+06:00",
-      "status": "published",
-      "message_id": 941
     },
     "black_girl_jump_tv_rights": {
       "event_id": "black_girl_jump_tv_rights",
@@ -10932,6 +10785,130 @@
       "selected_at": "2026-11-13T13:45:50.847029+06:00",
       "status": "published",
       "message_id": 1309
+    },
+    "streaming_debut_dec1": {
+      "event_id": "streaming_debut_dec1",
+      "canonical_url": "variety.com/2026/film/columns/unzipped-4k-restoration-streaming-criterion-channel-isaac-mizrahi-1236946151",
+      "original_url": "https://variety.com/2026/film/columns/unzipped-4k-restoration-streaming-criterion-channel-isaac-mizrahi-1236946151/",
+      "source": "Variety",
+      "region": "Entertainment",
+      "topic": "Streaming Premieres",
+      "institution": "Criterion Channel",
+      "event_cluster_id": "evt_a8c6cd2790",
+      "event_confidence": 0.6,
+      "event_source_count": 1,
+      "headline": "Unzipped",
+      "summary": "The 4K restoration of Isaac Mizrahi’s fashion documentary streams on the Criterion Channel.",
+      "highlights": [
+        "Streams Dec. 1 on Criterion Channel",
+        "Accompanied by new ‘Adventures in Moviegoing’ interview",
+        "Follows limited theatrical run of the 4K restoration"
+      ],
+      "concepts": [],
+      "key_numbers": [],
+      "published_at": "2026-11-12T23:00:00+06:00",
+      "selected_at": "2026-11-13T22:23:35.234313+06:00",
+      "status": "published",
+      "message_id": 1310
+    },
+    "digital_release_the_awakening_us": {
+      "event_id": "digital_release_the_awakening_us",
+      "canonical_url": "variety.com/2026/film/global/conspiracy-thriller-the-awakening-kevin-spacey-us-release-1236946183",
+      "original_url": "https://variety.com/2026/film/global/conspiracy-thriller-the-awakening-kevin-spacey-us-release-1236946183/",
+      "source": "Variety",
+      "region": "Entertainment",
+      "topic": "Release Dates",
+      "institution": "Blue Harbor Entertainment",
+      "event_cluster_id": "evt_658016f22e",
+      "event_confidence": 0.6,
+      "event_source_count": 1,
+      "headline": "The Awakening",
+      "summary": "British conspiracy thriller starring Kevin Spacey set for U.S. digital release.",
+      "highlights": [
+        "Digital and cable launch on Nov. 24 via Blue Harbor Entertainment",
+        "Premiered at Italy’s Matera Film Festival on Nov. 10",
+        "U.K. release scheduled after U.S. launch"
+      ],
+      "concepts": [],
+      "key_numbers": [],
+      "published_at": "2026-11-13T21:51:49+06:00",
+      "selected_at": "2026-11-13T22:23:40.020201+06:00",
+      "status": "published",
+      "message_id": 1311
+    },
+    "avatar_seven_havens_book2_release_may21": {
+      "event_id": "avatar_seven_havens_book2_release_may21",
+      "canonical_url": "deadline.com/2026/11/avatar-seven-havens-book-2-release-date-paramount-plus-1237221752",
+      "original_url": "https://deadline.com/2026/11/avatar-seven-havens-book-2-release-date-paramount-plus-1237221752/",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "topic": "Release Dates",
+      "institution": "Paramount+",
+      "event_cluster_id": "evt_27b85de19a",
+      "event_confidence": 0.6,
+      "event_source_count": 1,
+      "headline": "Avatar: Seven Havens",
+      "summary": "Paramount+ has scheduled the 13‑episode Book 2 of Avatar: Seven Havens for a spring premiere.",
+      "highlights": [
+        "Book 2 launches on May 21 with episodes 1‑3 streaming together",
+        "New episodes roll out weekly over four weeks",
+        "Book 3 is slated for later in 2027 on the same platform"
+      ],
+      "concepts": [],
+      "key_numbers": [],
+      "published_at": "2026-11-13T04:15:00+06:00",
+      "selected_at": "2026-11-13T22:23:44.934232+06:00",
+      "status": "published",
+      "message_id": 1312
+    },
+    "bachelor_s30_premiere": {
+      "event_id": "bachelor_s30_premiere",
+      "canonical_url": "deadline.com/2026/11/sam-hartman-the-bachelor-season-30-abc-nfl-1237222687",
+      "original_url": "https://deadline.com/2026/11/sam-hartman-the-bachelor-season-30-abc-nfl-1237222687/",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "topic": "New Season Releases",
+      "institution": "ABC",
+      "event_cluster_id": "evt_b8ddefd833",
+      "event_confidence": 0.6,
+      "event_source_count": 1,
+      "headline": "The Bachelor",
+      "summary": "Sam Hartman will lead season 30 of The Bachelor, premiering March 21 on ABC.",
+      "highlights": [
+        "Premiere set for Sunday, March 21 at 8 p.m. ET on ABC",
+        "Episodes will stream the next day on Hulu and Hulu on Disney+ for bundle subscribers"
+      ],
+      "concepts": [],
+      "key_numbers": [],
+      "published_at": "2026-11-13T20:12:42+06:00",
+      "selected_at": "2026-11-13T22:23:49.681504+06:00",
+      "status": "published",
+      "message_id": 1313
+    },
+    "doc_release_russell_brand_open_secret": {
+      "event_id": "doc_release_russell_brand_open_secret",
+      "canonical_url": "variety.com/2026/tv/global/russell-brand-open-secret-netflix-revelations-1236946877",
+      "original_url": "https://variety.com/2026/tv/global/russell-brand-open-secret-netflix-revelations-1236946877/",
+      "source": "Variety",
+      "region": "Entertainment",
+      "topic": "Release Dates",
+      "institution": "Netflix",
+      "event_cluster_id": "evt_27a7ad2d55",
+      "event_confidence": 0.6,
+      "event_source_count": 1,
+      "headline": "Russell Brand: Open Secret",
+      "summary": "Netflix has released the documentary “Russell Brand: Open Secret” following his recent rape conviction.",
+      "highlights": [
+        "The film streams on Netflix now",
+        "Features interviews with ex‑partners and archive footage of Brand’s early gigs",
+        "Examines his rise, controversial behavior and shift to political commentary"
+      ],
+      "concepts": [],
+      "key_numbers": [],
+      "published_at": "2026-11-13T21:54:06+06:00",
+      "selected_at": "2026-11-13T22:23:54.830073+06:00",
+      "status": "published",
+      "message_id": 1314
     }
   },
   "event_clusters": {
@@ -29560,8 +29537,8 @@
         "Deadline"
       ],
       "source_count": 1,
-      "confidence": 1.0,
-      "last_seen": "2026-11-13T13:40:49.095878+06:00",
+      "confidence": 0.6,
+      "last_seen": "2026-11-13T22:01:12.897714+06:00",
       "headline": "Hulu Series ‘The Spot’ Starring Claire Danes & Ewan McGregor Gets Release Date, First-Look Photos"
     },
     "evt_930b3195ed": {
@@ -29575,14 +29552,93 @@
       "confidence": 0.6,
       "last_seen": "2026-11-13T13:40:49.095908+06:00",
       "headline": "Gkids Acquires U.S. Rights to Cartoon Saloon’s Animated Film ‘Julián,’ Directed by Louise Bagnall and Executive Produced by Zoe Saldaña (EXCLUSIVE)"
+    },
+    "evt_b2cc649621": {
+      "event_id": "evt_b2cc649621",
+      "topic": "Release Dates",
+      "region": "Entertainment",
+      "sources": [
+        "Variety"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-13T22:01:12.897699+06:00",
+      "headline": "The Game Awards Adds Disney+ to Livestream Lineup"
+    },
+    "evt_a8c6cd2790": {
+      "event_id": "evt_a8c6cd2790",
+      "topic": "Streaming Premieres",
+      "region": "Entertainment",
+      "sources": [
+        "Variety"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-13T22:01:12.897708+06:00",
+      "headline": "‘Unzipped’ 4K Restoration to Make Streaming Debut on Criterion Channel (EXCLUSIVE)"
+    },
+    "evt_658016f22e": {
+      "event_id": "evt_658016f22e",
+      "topic": "Release Dates",
+      "region": "Entertainment",
+      "sources": [
+        "Variety"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-13T22:01:12.897711+06:00",
+      "headline": "Conspiracy Thriller ‘The Awakening,’ Starring Kevin Spacey, Gets U.S. Release (EXCLUSIVE)"
+    },
+    "evt_5200f5c2e7": {
+      "event_id": "evt_5200f5c2e7",
+      "topic": "New Season Releases",
+      "region": "Entertainment",
+      "sources": [
+        "Deadline"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-13T22:01:12.897718+06:00",
+      "headline": "‘Yellowjackets’ Cast Eulogizes Show With “Quite Heartbreaking” Farewell At Final Season Premiere: “All Great Things Must Come To An End”"
+    },
+    "evt_27b85de19a": {
+      "event_id": "evt_27b85de19a",
+      "topic": "Release Dates",
+      "region": "Entertainment",
+      "sources": [
+        "Deadline"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-13T22:01:12.897720+06:00",
+      "headline": "‘Avatar: Seven Havens’ Sets Book 2 Release Date At Paramount+ - Deadline"
+    },
+    "evt_b8ddefd833": {
+      "event_id": "evt_b8ddefd833",
+      "topic": "New Season Releases",
+      "region": "Entertainment",
+      "sources": [
+        "Deadline"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-13T22:01:12.897722+06:00",
+      "headline": "NFL Quarterback Sam Hartman To Headline ‘The Bachelor’ For Season 30 On ABC"
+    },
+    "evt_27a7ad2d55": {
+      "event_id": "evt_27a7ad2d55",
+      "topic": "Release Dates",
+      "region": "Entertainment",
+      "sources": [
+        "Variety"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-13T22:01:12.897725+06:00",
+      "headline": "‘Russell Brand: Open Secret’: Netflix Doc Reveals His ‘Jokes’ About Rape, Making a Girlfriend ‘Brush Her Teeth Until They Bled’ and More"
     }
   },
   "posted_event_ids": [
-    "evt_3389fa0418",
-    "evt_3116165739",
-    "evt_b305b6b99a",
-    "evt_f56cb88612",
-    "evt_51cfa4a75d",
     "evt_fffca57a96",
     "evt_058118fb43",
     "evt_548f586568",
@@ -30077,10 +30133,14 @@
     "evt_1b3060e1f4",
     "evt_e3d74b3b3e",
     "evt_a1e851d554",
-    "evt_930b3195ed"
+    "evt_930b3195ed",
+    "evt_a8c6cd2790",
+    "evt_658016f22e",
+    "evt_27b85de19a",
+    "evt_b8ddefd833",
+    "evt_27a7ad2d55"
   ],
   "recent_titles": [
-    "girls",
     "assassins",
     "confession",
     "grey s anatomy",
@@ -30480,7 +30540,12 @@
     "avengers endgame encore",
     "o saathi re",
     "star wars",
-    "juli n"
+    "juli n",
+    "unzipped",
+    "the awakening",
+    "avatar seven havens",
+    "the bachelor",
+    "russell brand open secret"
   ],
   "work_memory": {
     "the dog stars": {
@@ -31372,12 +31437,13 @@
     },
     "avatar seven havens": {
       "title": "Avatar: Seven Havens",
-      "sector": "Hollywood",
+      "sector": "International",
       "first_published_at": "2026-09-11T11:59:28.737900+06:00",
       "published_events": {
-        "Trailer Releases": "2026-09-11T11:59:28.737905+06:00"
+        "Trailer Releases": "2026-09-11T11:59:28.737905+06:00",
+        "Release Date Confirmations": "2026-11-13T22:23:44.934283+06:00"
       },
-      "last_published_at": "2026-09-11T11:59:28.737903+06:00"
+      "last_published_at": "2026-11-13T22:23:44.934280+06:00"
     },
     "whalefall": {
       "title": "Whalefall",
@@ -38845,6 +38911,42 @@
         "Release Date Confirmations": "2026-11-12T04:40:29.942272+06:00"
       },
       "last_published_at": "2026-11-12T04:40:29.942268+06:00"
+    },
+    "unzipped": {
+      "title": "Unzipped",
+      "sector": "Hollywood",
+      "first_published_at": "2026-11-13T22:23:35.234352+06:00",
+      "published_events": {
+        "OTT / Streaming Availability": "2026-11-13T22:23:35.234359+06:00"
+      },
+      "last_published_at": "2026-11-13T22:23:35.234356+06:00"
+    },
+    "the awakening": {
+      "title": "The Awakening",
+      "sector": "International",
+      "first_published_at": "2026-11-13T22:23:40.020247+06:00",
+      "published_events": {
+        "Release Date Confirmations": "2026-11-13T22:23:40.020255+06:00"
+      },
+      "last_published_at": "2026-11-13T22:23:40.020252+06:00"
+    },
+    "the bachelor": {
+      "title": "The Bachelor",
+      "sector": "Hollywood",
+      "first_published_at": "2026-11-13T22:23:49.681549+06:00",
+      "published_events": {
+        "Release Date Confirmations": "2026-11-13T22:23:49.681555+06:00"
+      },
+      "last_published_at": "2026-11-13T22:23:49.681553+06:00"
+    },
+    "russell brand open secret": {
+      "title": "Russell Brand: Open Secret",
+      "sector": "Hollywood",
+      "first_published_at": "2026-11-13T22:23:54.830122+06:00",
+      "published_events": {
+        "OTT / Streaming Availability": "2026-11-13T22:23:54.830129+06:00"
+      },
+      "last_published_at": "2026-11-13T22:23:54.830126+06:00"
     }
   },
   "publication_fingerprints": [
@@ -49495,6 +49597,61 @@
       "event_key": "theatrical_release",
       "canonical": "variety.com/2026/film/news/gkids-acquires-rights-to-cartoon-saloon-julian-1236946291",
       "published_at": "2026-11-13T13:45:50.847261+06:00"
+    },
+    {
+      "fingerprint": "unzipped|OTT / Streaming Availability|the restoration the groundbreaking fashion documentary will make its debut dec the criterion channel the 1995 chronicles designer isaac mizrahi planning and execution the for his fall 1994 collection the which miramax bought after was sundance hit 1995 includes appearances cindy the restoration isaac mizrahi fashion documentary streams the criterion channel streams dec criterion channel accompanied adventures moviegoing interview follows limited run the restoration criterion channel 2026",
+      "work_key": "unzipped",
+      "priority_type": "OTT / Streaming Availability",
+      "headline": "Unzipped",
+      "event_text": "Unzipped The 4K restoration of the groundbreaking fashion documentary “Unzipped” will make its streaming debut Dec. 1 on the Criterion Channel. The 1995 film chronicles designer Isaac Mizrahi’s planning and execution of the show for his fall 1994 collection. The film, which Miramax bought after it was a Sundance hit in 1995, includes appearances by Cindy […] The 4K restoration of Isaac Mizrahi’s fashion documentary streams on the Criterion Channel. Streams Dec. 1 on Criterion Channel Accompanied by new ‘Adventures in Moviegoing’ interview Follows limited theatrical run of the 4K restoration Criterion Channel 2026-12-01",
+      "core": "the restoration the groundbreaking fashion documentary will make its debut dec the criterion channel the 1995 chronicles designer isaac mizrahi planning and execution the for his fall 1994 collection the which miramax bought after was sundance hit 1995 includes appearances cindy the restoration isaac mizrahi fashion documentary streams the criterion channel streams dec criterion channel accompanied adventures moviegoing interview follows limited run the restoration criterion channel 2026",
+      "event_key": "streaming_debut_Dec1",
+      "canonical": "variety.com/2026/film/columns/unzipped-4k-restoration-streaming-criterion-channel-isaac-mizrahi-1236946151",
+      "published_at": "2026-11-13T22:23:35.234658+06:00"
+    },
+    {
+      "fingerprint": "the awakening|Release Date Confirmations|british conspiracy thriller starring two time oscar winner kevin spacey supporting role coming feature which has tagline they don want you see will land digital and cable platforms nov through blue harbor entertainment comes after premiered british conspiracy thriller starring kevin spacey set for digital digital and cable launch nov via blue harbor entertainment premiered italy matera festival nov scheduled after launch blue harbor entertainment 2026",
+      "work_key": "the awakening",
+      "priority_type": "Release Date Confirmations",
+      "headline": "The Awakening",
+      "event_text": "The Awakening “The Awakening,” the British conspiracy thriller starring two-time Oscar winner Kevin Spacey in a supporting role, is coming to the U.S. The feature — which has the tagline “The Film They Don’t Want You to See” — will land on digital and cable platforms on Nov. 24 through Blue Harbor Entertainment. The announcement comes after “The Awakening” premiered […] British conspiracy thriller starring Kevin Spacey set for U.S. digital release. Digital and cable launch on Nov. 24 via Blue Harbor Entertainment Premiered at Italy’s Matera Film Festival on Nov. 10 U.K. release scheduled after U.S. launch Blue Harbor Entertainment 2026-11-24",
+      "core": "british conspiracy thriller starring two time oscar winner kevin spacey supporting role coming feature which has tagline they don want you see will land digital and cable platforms nov through blue harbor entertainment comes after premiered british conspiracy thriller starring kevin spacey set for digital digital and cable launch nov via blue harbor entertainment premiered italy matera festival nov scheduled after launch blue harbor entertainment 2026",
+      "event_key": "digital_release_the_awakening_us",
+      "canonical": "variety.com/2026/film/global/conspiracy-thriller-the-awakening-kevin-spacey-us-release-1236946183",
+      "published_at": "2026-11-13T22:23:40.020653+06:00"
+    },
+    {
+      "fingerprint": "avatar seven havens|Release Date Confirmations|paramount has set spring date for book the sophomore globally the streamer friday may rolling out weekly with may may june and june the was revealed thursday during exclusive reddit ama with executive producer ethan spaulding and executive producer sehaj sethi book also composed will paramount later 2027 previously the animated will conclude with book with details later date the latest installment the animated universe hails from the last airbender creators michael dante dimartino and bryan koni",
+      "work_key": "avatar seven havens",
+      "priority_type": "Release Date Confirmations",
+      "headline": "Avatar: Seven Havens",
+      "event_text": "Avatar: Seven Havens Paramount+ has set a spring release date for Avatar: Seven Havens Book 2. The 13-episode sophomore season premieres globally on the streamer on Friday, May 21, rolling out weekly with Episodes 1-3 on May 21, 4-6 on May 28, 7-9 on June 4, and 10-13 on June 11.\nThe news was revealed Thursday during an exclusive Reddit AMA with Seven Havens executive producer Ethan Spaulding and co-executive producer Sehaj Sethi.\nBook 3, also composed of 13 episodes, will premiere on Paramount+ later in 2027. As previously announced, the animated series will conclude with Book 4, with premiere details to be announced at a later date.\nAvatar: Seven Havens, the latest installment in the Avatar animated universe, hails from Avatar: The Last Airbender co-creators Michael Dante DiMartino and Bryan Konietzko.\nWatch on Deadline\nIn Book 2, titled “Discovery,” Pavi (Saheli Pavi) continues her chakra journey to the Floating Isles and learns more about what happened to Korra. Meanwhile, Nisha (Aishu Devan) discovers vital information about the mysterious spirit energy Pavi released from Ellora. The girls are brought together in New Ba Sing Se, along with all their unresolved issues.\nReturning cast for Book 2 als Paramount+ has scheduled the 13‑episode Book 2 of Avatar: Seven Havens for a spring premiere. Book 2 launches on May 21 with episodes 1‑3 streaming together New episodes roll out",
+      "core": "paramount has set spring date for book the sophomore globally the streamer friday may rolling out weekly with may may june and june the was revealed thursday during exclusive reddit ama with executive producer ethan spaulding and executive producer sehaj sethi book also composed will paramount later 2027 previously the animated will conclude with book with details later date the latest installment the animated universe hails from the last airbender creators michael dante dimartino and bryan koni",
+      "event_key": "avatar_seven_havens_book2_release_may21",
+      "canonical": "deadline.com/2026/11/avatar-seven-havens-book-2-release-date-paramount-plus-1237221752",
+      "published_at": "2026-11-13T22:23:44.935026+06:00"
+    },
+    {
+      "fingerprint": "the bachelor|Release Date Confirmations|abc has named for 30th reality sam hartman year old pro athlete playing for nfl washington commanders will searching for love installment which sunday march abc and streams next day hulu and hulu sam hartman will lead premiering march abc set for sunday march abc will stream next day hulu and hulu disney for bundle subscribers abc hulu disney 2026",
+      "work_key": "the bachelor",
+      "priority_type": "Release Date Confirmations",
+      "headline": "The Bachelor",
+      "event_text": "The Bachelor ABC has named the Bachelor for the upcoming 30th season of the reality series. Sam Hartman, a 27-year-old pro athlete playing for the NFL’s Washington Commanders, will be searching for love in the new installment, which premieres on Sunday, March 21 at 8 p.m. on ABC and streams next day on Hulu and Hulu on […] Sam Hartman will lead season 30 of The Bachelor, premiering March 21 on ABC. Premiere set for Sunday, March 21 at 8 p.m. ET on ABC Episodes will stream the next day on Hulu and Hulu on Disney+ for bundle subscribers ABC, Hulu, Disney+ 2026-03-21",
+      "core": "abc has named for 30th reality sam hartman year old pro athlete playing for nfl washington commanders will searching for love installment which sunday march abc and streams next day hulu and hulu sam hartman will lead premiering march abc set for sunday march abc will stream next day hulu and hulu disney for bundle subscribers abc hulu disney 2026",
+      "event_key": "bachelor_s30_premiere",
+      "canonical": "deadline.com/2026/11/sam-hartman-the-bachelor-season-30-abc-nfl-1237222687",
+      "published_at": "2026-11-13T22:23:49.681893+06:00"
+    },
+    {
+      "fingerprint": "russell brand open secret|OTT / Streaming Availability|just week after former and comedian was convicted rape and sexual assault court netflix has documentary exploring his rise fame and pivot political influencer even rumors about his unsettling behavior intensified speaking old roommates partners and fellow netflix has the documentary following his recent rape conviction the streams netflix features interviews with partners and archive footage early gigs examines his rise controversial behavior and shift political commentary netflix",
+      "work_key": "russell brand open secret",
+      "priority_type": "OTT / Streaming Availability",
+      "headline": "Russell Brand: Open Secret",
+      "event_text": "Russell Brand: Open Secret Just a week after former actor and comedian Russell Brand was convicted of rape and sexual assault in a U.K. court, Netflix has released a documentary, “Russell Brand: Open Secret,” exploring his rise to fame and pivot to political influencer even as rumors about his unsettling behavior intensified. Speaking to old roommates, ex-partners and fellow […] Netflix has released the documentary “Russell Brand: Open Secret” following his recent rape conviction. The film streams on Netflix now Features interviews with ex‑partners and archive footage of Brand’s early gigs Examines his rise, controversial behavior and shift to political commentary Netflix",
+      "core": "just week after former and comedian was convicted rape and sexual assault court netflix has documentary exploring his rise fame and pivot political influencer even rumors about his unsettling behavior intensified speaking old roommates partners and fellow netflix has the documentary following his recent rape conviction the streams netflix features interviews with partners and archive footage early gigs examines his rise controversial behavior and shift political commentary netflix",
+      "event_key": "doc_release_russell_brand_open_secret",
+      "canonical": "variety.com/2026/tv/global/russell-brand-open-secret-netflix-revelations-1236946877",
+      "published_at": "2026-11-13T22:23:54.830630+06:00"
     }
   ],
   "fresh_start_at": "2026-09-07T13:58:06.173598+06:00",
@@ -49615,253 +49772,21 @@
       ]
     },
     "routine_production": {
-      "observations": 2,
-      "low_score_count": 2,
-      "total_score": 36,
-      "avg_score": 18.0,
-      "last_seen": "2026-11-13T13:40:49.073439+06:00",
+      "observations": 3,
+      "low_score_count": 3,
+      "total_score": 87,
+      "avg_score": 29.0,
+      "last_seen": "2026-11-13T22:01:12.806984+06:00",
       "examples": [
         {
           "title": "Jeff Perry, Randall Park, Debi Mazar & T.R. Knight Join Netflix’s ‘Big Mistakes’ Season 2",
-          "score": 36,
+          "score": 51,
           "priority_type": "Season Renewals / New Season Updates"
         }
       ]
     }
   },
   "score_history": [
-    {
-      "title": "Lexington Film Office Launches Workforce Development Initiative With Location Managers Guild",
-      "score": 46,
-      "pattern": "",
-      "priority_type": "Production / Filming Updates",
-      "source": "Deadline",
-      "seen_at": "2026-11-06T21:45:39.944141+06:00"
-    },
-    {
-      "title": "Utopai Studios Names Former Disney AI Exec Hans Ku Chief Product Officer",
-      "score": 20,
-      "pattern": "",
-      "priority_type": "Production / Filming Updates",
-      "source": "Deadline",
-      "seen_at": "2026-11-06T21:45:39.944235+06:00"
-    },
-    {
-      "title": "Chelsea Frei Directing & Starring In Horror-Comedy ‘Get Off Your Phone’ With Maria Bakalova & Jon Rudnitsky",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "Production / Filming Updates",
-      "source": "Deadline",
-      "seen_at": "2026-11-06T21:45:39.944332+06:00"
-    },
-    {
-      "title": "Joel Coen’s ‘Jack of Spades,’ With Josh O’Connor and Patsy Ferran, Lands at Netflix for Fall 2027",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "OTT Platform Acquisition / Streaming Rights",
-      "source": "Variety",
-      "seen_at": "2026-11-06T21:45:39.944428+06:00"
-    },
-    {
-      "title": "A Day in the Life at ‘The Daily Show’: Jon Stewart Hypes Up Writers’ Room in Behind-the-Scenes Video (EXCLUSIVE)",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "First Look / First Glimpse / Posters",
-      "source": "Variety",
-      "seen_at": "2026-11-06T21:45:39.944526+06:00"
-    },
-    {
-      "title": "அசோக் செல்வனின் ‘அன்பின் அவன்’ ஓடிடி ரிலீஸ் தேதி அறிவிப்பு.. எந்த தளத்தில் தெரியுமா? | Ashok Selvan Starrer Anbil Avan Premieres On SonyLIV ",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "",
-      "source": "tamil.filmibeat.com",
-      "seen_at": "2026-11-06T21:45:39.944594+06:00"
-    },
-    {
-      "title": "Mckenna Grace On Declining Nude Scenes: “I Respect Anybody Who Can, But It’s Terrifying To Me”",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "Cast / Character Announcements",
-      "source": "Deadline",
-      "seen_at": "2026-11-06T21:45:39.944682+06:00"
-    },
-    {
-      "title": "‘The Remarried Princess’ Korean Romantic Drama To Release One Day Early On Disney+ & Hulu",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "Release Date Confirmations",
-      "source": "Deadline",
-      "seen_at": "2026-11-06T21:45:39.944769+06:00"
-    },
-    {
-      "title": "Neve Campbell Says As Far As ‘Scream 8’ Goes, “I’ll Be In It”; Latest Installment Still In Development",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "Season Renewals / New Season Updates",
-      "source": "Deadline",
-      "seen_at": "2026-11-06T21:45:39.944864+06:00"
-    },
-    {
-      "title": "Melanie Lynskey Dispels ‘Two and a Half Men’ Pay Rumors: ‘There Is This Insane Idea That I Made Millions of Dollars’",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "Cast / Character Announcements",
-      "source": "Variety",
-      "seen_at": "2026-11-06T21:45:39.944962+06:00"
-    },
-    {
-      "title": "Jon Stewart Slams Haley Stevens’ Mike Rogers Endorsement Ahead of Election Day",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "First Look / First Glimpse / Posters",
-      "source": "Variety",
-      "seen_at": "2026-11-06T21:45:39.945055+06:00"
-    },
-    {
-      "title": "‘Tetsuo’ Director Tsukamoto Shinya on Staying Independent and Why He Can’t Pull Away From War Films",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "First Look / First Glimpse / Posters",
-      "source": "Variety",
-      "seen_at": "2026-11-06T21:45:39.945147+06:00"
-    },
-    {
-      "title": "Cynthia Nixon Says She ‘Loved’ Miranda’s Attempts to Become ‘Woke’ on ‘And Just Like That’ Despite Fans Being ‘Horrified’",
-      "score": 59,
-      "pattern": "",
-      "priority_type": "First Look / First Glimpse / Posters",
-      "source": "Variety",
-      "seen_at": "2026-11-06T21:45:39.945241+06:00"
-    },
-    {
-      "title": "‘Okinawa Saudade’ Director Matsubayashi Yoju on a 10-Year Journey Tracing Brazilian Dancers’ Island Roots",
-      "score": 77,
-      "pattern": "",
-      "priority_type": "First Look / First Glimpse / Posters",
-      "source": "Variety",
-      "seen_at": "2026-11-06T21:45:39.945324+06:00"
-    },
-    {
-      "title": "Roku Q3 2026 Earnings: Sales Soar 24%, Net Profit Booms 7-Fold",
-      "score": 44,
-      "pattern": "",
-      "priority_type": "Box Office Updates",
-      "source": "Variety",
-      "seen_at": "2026-11-06T21:45:39.945350+06:00"
-    },
-    {
-      "title": "OTT Releases This Week: ఓటీటీలో సినిమాల జాతర.. ఈ వారం మిస్ కాకుండా చూడాల్సిన మూవీస్ ఇవే! | OTT Releases This Week: 20+ Movies & Web Series S",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "OTT / Streaming Availability",
-      "source": "telugu.filmibeat.com",
-      "seen_at": "2026-11-06T21:45:39.945425+06:00"
-    },
-    {
-      "title": "Pierce Brosnan Approves of Callum Turner as New James Bond",
-      "score": 69,
-      "pattern": "",
-      "priority_type": "Cast / Character Announcements",
-      "source": "Variety",
-      "seen_at": "2026-11-06T21:45:39.945447+06:00"
-    },
-    {
-      "title": "‘The Invited’ Series Inspired By Wendy Webb Novels In Works From Impossible Dream Entertainment & Wall To Wall; Helen Black & Jeff Howard Sc",
-      "score": 73,
-      "pattern": "",
-      "priority_type": "New Movie / Series Announcements",
-      "source": "Deadline",
-      "seen_at": "2026-11-06T21:45:39.945548+06:00"
-    },
-    {
-      "title": "Ranbir Kapoor and Yash’s ‘Ramayana’ Makers on Retelling India’s Epic for the World, as Amazon Music and T-Series Bet on A.R. Rahman and Hans",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "",
-      "source": "Variety",
-      "seen_at": "2026-11-06T21:45:39.945657+06:00"
-    },
-    {
-      "title": "Andrew Garfield Says He ‘Never Had Any Interaction’ With Sam Altman While Filming ‘Artificial,’ Despite Altman Claiming They Waved to Each O",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "",
-      "source": "Variety",
-      "seen_at": "2026-11-06T21:45:39.945765+06:00"
-    },
-    {
-      "title": "Atlantic Records & Teddy Park’s The Black Label Join K-Pop Thriller ‘Perfect Girl’; First Look At Jeon Somi, Ally Nitibhon, Adeline Rudolph ",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "OTT / Streaming Availability",
-      "source": "Deadline",
-      "seen_at": "2026-11-06T21:45:39.945867+06:00"
-    },
-    {
-      "title": "‘Snoop’: Hercy Miller Will Portray Master P, Zachariah Rogers Is The D.O.C., & Tyquan Givens Set As Original Character In Universal’s Snoop ",
-      "score": 0,
-      "pattern": "sports",
-      "priority_type": "Cast / Character Announcements",
-      "source": "Deadline",
-      "seen_at": "2026-11-06T21:45:39.945917+06:00"
-    },
-    {
-      "title": "Netflix Pe Pitega Titu Mama Ka ‘Dhindora’: India’s First and Biggest Digital Creator Bhuvan Bam Brings Cult Favourite Back for Season 2 on N",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "",
-      "source": "about.netflix.com",
-      "seen_at": "2026-11-06T21:45:39.945969+06:00"
-    },
-    {
-      "title": "Fox Corp. Closes $22B Acquisition Of Roku",
-      "score": 100,
-      "pattern": "",
-      "priority_type": "OTT / Streaming Availability",
-      "source": "Deadline",
-      "seen_at": "2026-11-06T21:52:50.254902+06:00"
-    },
-    {
-      "title": "Fox Closes $22 Billion Roku Takeover, Says Streaming Platform Will Remain ‘Open Ecosystem’",
-      "score": 93,
-      "pattern": "",
-      "priority_type": "OTT / Streaming Availability",
-      "source": "Variety",
-      "seen_at": "2026-11-06T21:52:50.254998+06:00"
-    },
-    {
-      "title": "‘Avatar: Fire and Ash’ Sets Collectors Edition Featuring Miley Cyrus Q&A and Deleted Scenes",
-      "score": 80,
-      "pattern": "routine_interview",
-      "priority_type": "OTT / Streaming Availability",
-      "source": "Variety",
-      "seen_at": "2026-11-06T21:52:50.255097+06:00"
-    },
-    {
-      "title": "How to watch Camp Flog Gnaw 2026 festival on Amazon Music, Prime Video, and Twitch",
-      "score": 62,
-      "pattern": "",
-      "priority_type": "OTT / Streaming Availability",
-      "source": "Prime Video / Amazon News",
-      "seen_at": "2026-11-06T21:52:50.255345+06:00"
-    },
-    {
-      "title": "Netflix Names Mattel Executive Roberto Stanichi as VP of Consumer Products and Experiences",
-      "score": 60,
-      "pattern": "",
-      "priority_type": "OTT / Streaming Availability",
-      "source": "Variety",
-      "seen_at": "2026-11-06T21:52:50.255443+06:00"
-    },
-    {
-      "title": "The Remarried Empress: Webtoon's TV and Movie Adaptations in Hollywood",
-      "score": 90,
-      "pattern": "",
-      "priority_type": "Release Date Confirmations",
-      "source": "Variety",
-      "seen_at": "2026-11-06T21:52:50.255675+06:00"
-    },
     {
       "title": "‘Entertainment Tonight’ Hosts Kevin Frazier and Nischelle Turner to Serve as Hollywood Christmas Parade Grand Marshals (EXCLUSIVE)",
       "score": 90,
@@ -53629,18 +53554,250 @@
       "priority_type": "OTT Platform Acquisition / Streaming Rights",
       "source": "Variety",
       "seen_at": "2026-11-13T13:40:49.073721+06:00"
+    },
+    {
+      "title": "Keira Knightley Says ‘It Means Nothing’ When Fans Quote ‘Love Actually’ to Her Because She Hasn’t Watched It Since the Premiere: ‘I Don’t Re",
+      "score": 26,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Variety",
+      "seen_at": "2026-11-13T21:58:33.421228+06:00"
+    },
+    {
+      "title": "From a Mockbuster Version of ‘The Odyssey’ to a ‘Jiu-Jitsu Nun’: How Producers Are Keeping the Low-Budget Film Market Alive Via Streaming an",
+      "score": 21,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Variety",
+      "seen_at": "2026-11-13T21:58:33.421376+06:00"
+    },
+    {
+      "title": "‘Harry Potter’ Star Paapa Essiedu Says ‘I Don’t Want to Talk About’ J.K. Rowling ‘At All’ but ‘Trans People Have the Right to Be Treated Wit",
+      "score": 22,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Variety",
+      "seen_at": "2026-11-13T21:58:33.421528+06:00"
+    },
+    {
+      "title": "From Local to Global: Anshuman Jha & Sarah-Jane Dias On Advocating Animal Rights In ‘Lakadbaggha 2’ & Uniqueness Of Crafting An Indian Actio",
+      "score": 35,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Deadline",
+      "seen_at": "2026-11-13T21:58:33.421664+06:00"
+    },
+    {
+      "title": "Amanda Seyfried Joined ‘You Can See Everything’ Without Reps Knowing, Had ‘No Approval’ Over Filming and Got ‘Disrespected’ by Billy Evans: ",
+      "score": 31,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Variety",
+      "seen_at": "2026-11-13T21:58:33.421800+06:00"
+    },
+    {
+      "title": "OTT This week: ஜெயிலர் 2 முதல் ரணபாலி' வரை.. இந்த வாரம் ஓடிடியை கலக்க வரும் மாஸ் படங்களின் லிஸ்ட்! | November 12th to November 15th This wee",
+      "score": 78,
+      "pattern": "",
+      "priority_type": "OTT / Streaming Availability",
+      "source": "tamil.filmibeat.com",
+      "seen_at": "2026-11-13T21:58:33.421888+06:00"
+    },
+    {
+      "title": "2027 புத்தாண்டுக்கே ரசிகர்களுக்கு ட்ரீட் கொடுக்கும் சிஎம் விஜய்.. இந்த படம் ரீ ரிலிஸ் ஆகுதாம்! | CM Vijay's Bairavaa will re release on New ",
+      "score": 73,
+      "pattern": "",
+      "priority_type": "Theatrical Releases / Re-releases",
+      "source": "tamil.filmibeat.com",
+      "seen_at": "2026-11-13T21:58:33.421975+06:00"
+    },
+    {
+      "title": "The Game Awards Adds Disney+ to Livestream Lineup",
+      "score": 100,
+      "pattern": "",
+      "priority_type": "OTT / Streaming Availability",
+      "source": "Variety",
+      "seen_at": "2026-11-13T22:01:12.804509+06:00"
+    },
+    {
+      "title": "‘Unzipped’ 4K Restoration to Make Streaming Debut on Criterion Channel (EXCLUSIVE)",
+      "score": 100,
+      "pattern": "",
+      "priority_type": "OTT / Streaming Availability",
+      "source": "Variety",
+      "seen_at": "2026-11-13T22:01:12.804621+06:00"
+    },
+    {
+      "title": "Conspiracy Thriller ‘The Awakening,’ Starring Kevin Spacey, Gets U.S. Release (EXCLUSIVE)",
+      "score": 99,
+      "pattern": "",
+      "priority_type": "OTT / Streaming Availability",
+      "source": "Variety",
+      "seen_at": "2026-11-13T22:01:12.804748+06:00"
+    },
+    {
+      "title": "Hulu Series ‘The Spot’ Starring Claire Danes & Ewan McGregor Gets Release Date, First-Look Photos",
+      "score": 100,
+      "pattern": "",
+      "priority_type": "Release Date Confirmations",
+      "source": "Deadline",
+      "seen_at": "2026-11-13T22:01:12.804878+06:00"
+    },
+    {
+      "title": "‘Yellowjackets’ Cast Eulogizes Show With “Quite Heartbreaking” Farewell At Final Season Premiere: “All Great Things Must Come To An End”",
+      "score": 100,
+      "pattern": "",
+      "priority_type": "Release Date Confirmations",
+      "source": "Deadline",
+      "seen_at": "2026-11-13T22:01:12.805017+06:00"
+    },
+    {
+      "title": "‘Avatar: Seven Havens’ Sets Book 2 Release Date At Paramount+ - Deadline",
+      "score": 100,
+      "pattern": "",
+      "priority_type": "Release Date Confirmations",
+      "source": "Deadline",
+      "seen_at": "2026-11-13T22:01:12.805323+06:00"
+    },
+    {
+      "title": "NFL Quarterback Sam Hartman To Headline ‘The Bachelor’ For Season 30 On ABC",
+      "score": 85,
+      "pattern": "",
+      "priority_type": "Release Date Confirmations",
+      "source": "Deadline",
+      "seen_at": "2026-11-13T22:01:12.805444+06:00"
+    },
+    {
+      "title": "Alanis Morissette Recalls ‘Dogma’ Co-Star Ben Affleck Asking Her Why She Didn’t “Lead With My Sexuality”",
+      "score": 0,
+      "pattern": "",
+      "priority_type": "Theatrical Releases / Re-releases",
+      "source": "Deadline",
+      "seen_at": "2026-11-13T22:01:12.805591+06:00"
+    },
+    {
+      "title": "KPop Demon Hunters Announces 2027 Global Arena Tour Dates In North America, U.K. & Europe",
+      "score": 0,
+      "pattern": "",
+      "priority_type": "",
+      "source": "Deadline",
+      "seen_at": "2026-11-13T22:01:12.805716+06:00"
+    },
+    {
+      "title": "‘Virgin River’ Gets Early Season 9 Renewal, Officially Becomes Netflix’s Longest-Running Scripted Series",
+      "score": 0,
+      "pattern": "",
+      "priority_type": "",
+      "source": "Deadline",
+      "seen_at": "2026-11-13T22:01:12.805843+06:00"
+    },
+    {
+      "title": "International Insider: AFM Deep Dive; Walliams Scandal; ‘Ebenezer’ In London",
+      "score": 0,
+      "pattern": "",
+      "priority_type": "",
+      "source": "Deadline",
+      "seen_at": "2026-11-13T22:01:12.805954+06:00"
+    },
+    {
+      "title": "‘Russell Brand: Open Secret’: Netflix Doc Reveals His ‘Jokes’ About Rape, Making a Girlfriend ‘Brush Her Teeth Until They Bled’ and More",
+      "score": 90,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Variety",
+      "seen_at": "2026-11-13T22:01:12.806092+06:00"
+    },
+    {
+      "title": "‘Blind Spot,’ With ‘Money Heist’ Star Najwa Nimri, Hits the AFM Courtesy of Film Factory",
+      "score": 44,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Variety",
+      "seen_at": "2026-11-13T22:01:12.806220+06:00"
+    },
+    {
+      "title": "Watermelon Pictures Condemns Killing Of ‘American Doctor’ Surgeon In Gaza Hospital Strike",
+      "score": 35,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Deadline",
+      "seen_at": "2026-11-13T22:01:12.806336+06:00"
+    },
+    {
+      "title": "Shilpa Shetty to Host Relationship Reality Show ‘Pyaar Ka Pressure Cooker’ for India’s JioHotstar and Colors",
+      "score": 0,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Variety",
+      "seen_at": "2026-11-13T22:01:12.806452+06:00"
+    },
+    {
+      "title": "‘The Body’ Creator on the Dance Team’s Sexuality, What Happened to Grace and Whether God Is Real",
+      "score": 0,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Variety",
+      "seen_at": "2026-11-13T22:01:12.806588+06:00"
+    },
+    {
+      "title": "Documentaries at the Oscars: A History of Breaking Out of Their Category — and What It Means for ‘You Can See Everything’",
+      "score": 0,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Variety",
+      "seen_at": "2026-11-13T22:01:12.806723+06:00"
+    },
+    {
+      "title": "Michael John Roberts Dies: ‘TripTank’, ‘BoJack Horseman’ Animator, Director & Producer Was 48",
+      "score": 0,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Deadline",
+      "seen_at": "2026-11-13T22:01:12.806839+06:00"
+    },
+    {
+      "title": "Jeff Perry, Randall Park, Debi Mazar & T.R. Knight Join Netflix’s ‘Big Mistakes’ Season 2",
+      "score": 51,
+      "pattern": "routine_production",
+      "priority_type": "Season Renewals / New Season Updates",
+      "source": "Deadline",
+      "seen_at": "2026-11-13T22:01:12.806990+06:00"
+    },
+    {
+      "title": "‘Big Mistakes’ Season 2 Casts Randall Park, Debi Mazar, T.R. Knight, Jeff Perry",
+      "score": 51,
+      "pattern": "",
+      "priority_type": "Season Renewals / New Season Updates",
+      "source": "Variety",
+      "seen_at": "2026-11-13T22:01:12.807120+06:00"
+    },
+    {
+      "title": "Sophie Nélisse Gives ‘Heated Rivalry’ Season 2 Update: “I Actually Just Wrapped”",
+      "score": 42,
+      "pattern": "",
+      "priority_type": "Season Renewals / New Season Updates",
+      "source": "Deadline",
+      "seen_at": "2026-11-13T22:01:12.807235+06:00"
+    },
+    {
+      "title": "Chase Infiniti Coming-of-Age Drama ‘The Julia Set’ Sells Out for HanWay (EXCLUSIVE)",
+      "score": 0,
+      "pattern": "",
+      "priority_type": "OTT Platform Acquisition / Streaming Rights",
+      "source": "Variety",
+      "seen_at": "2026-11-13T22:01:12.807367+06:00"
     }
   ],
   "adaptive_metrics": {
-    "raw_discovered": 62,
-    "pre_cerebras_rejected": 24748,
-    "hard_rejected": 8469,
+    "raw_discovered": 65,
+    "pre_cerebras_rejected": 24875,
+    "hard_rejected": 8509,
     "duplicate_rejected": 208,
-    "learned_rejected": 16071,
-    "passed_to_cerebras": 4522,
-    "cerebras_ranked": 10784,
-    "published": 970,
-    "estimated_candidates_avoided": 24748
+    "learned_rejected": 16158,
+    "passed_to_cerebras": 4529,
+    "cerebras_ranked": 10806,
+    "published": 975,
+    "estimated_candidates_avoided": 24875
   },
   "source_quality": {
     "collider.com": {
@@ -53672,11 +53829,11 @@
       "last_seen": "2026-09-08T11:49:09.577970+06:00"
     },
     "deadline.com": {
-      "observations": 4935,
-      "low_score_count": 4006,
-      "total_score": 250525,
-      "avg_score": 50.8,
-      "last_seen": "2026-11-13T13:40:49.073793+06:00"
+      "observations": 4947,
+      "low_score_count": 4014,
+      "total_score": 251038,
+      "avg_score": 50.7,
+      "last_seen": "2026-11-13T22:01:12.807551+06:00"
     },
     "thewrap.com": {
       "observations": 16,
@@ -53693,11 +53850,11 @@
       "last_seen": "2026-09-08T21:05:13.366232+06:00"
     },
     "variety.com": {
-      "observations": 5220,
-      "low_score_count": 4308,
-      "total_score": 249506,
+      "observations": 5230,
+      "low_score_count": 4314,
+      "total_score": 249990,
       "avg_score": 47.8,
-      "last_seen": "2026-11-13T13:40:49.073804+06:00"
+      "last_seen": "2026-11-13T22:01:12.807557+06:00"
     },
     "indiewire.com": {
       "observations": 10,
@@ -53814,19 +53971,19 @@
   },
   "category_coverage": {
     "Major Film Announcements": "2026-11-06T22:18:20.099531+06:00",
-    "Release Dates": "2026-11-13T13:45:50.847273+06:00",
+    "Release Dates": "2026-11-13T22:23:54.830648+06:00",
     "Studio Business": "2026-10-24T20:35:57.113797+06:00",
     "Streaming Platform News": "2026-11-06T22:17:44.559012+06:00",
     "Franchises and IP": "2026-11-06T22:17:34.555229+06:00",
     "Casting": "2026-11-06T22:17:49.508067+06:00",
     "Trailers and First Looks": "2026-11-06T22:17:39.684558+06:00",
-    "Streaming Premieres": "2026-10-31T19:28:46.778554+06:00",
+    "Streaming Premieres": "2026-11-13T22:23:35.234678+06:00",
     "OTT Rights and Distribution": "2026-11-06T22:18:14.975916+06:00",
     "Renewals and Cancellations": "2026-10-31T13:03:46.376808+06:00",
     "Acquisitions and Mergers": "2026-11-06T04:58:55.210733+06:00",
     "Korean Drama": "2026-10-29T20:23:16.845456+06:00",
     "Box Office": "2026-09-20T00:05:04.568803+06:00",
-    "New Season Releases": "2026-11-06T23:20:57.593004+06:00",
+    "New Season Releases": "2026-11-13T22:23:49.681911+06:00",
     "Theatrical Releases": "2026-11-11T04:24:45.334042+06:00"
   }
 }
