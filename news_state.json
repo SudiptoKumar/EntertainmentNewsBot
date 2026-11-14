@@ -1,321 +1,152 @@
 {
   "feeds": {
     "https://deadline.com/feed/": {
-      "etag": "W/\"01c85bb933fc352d31889d8a2438e787\"",
-      "last_modified": "Sat, 14 Nov 2026 14:27:22 GMT",
-      "last_checked": "2026-11-14T20:51:49.953490+06:00",
+      "etag": "W/\"0adb19564b4bdaa8397598ea0e3c307e\"",
+      "last_modified": "Sat, 14 Nov 2026 19:46:07 GMT",
+      "last_checked": "2026-11-15T01:47:45.196976+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://variety.com/feed/": {
-      "etag": "W/\"39f34800995a3f0e6b86544aa9b92876\"",
-      "last_modified": "Sat, 14 Nov 2026 14:50:38 GMT",
-      "last_checked": "2026-11-14T20:51:51.099357+06:00",
+      "etag": "W/\"f81fc5d4dedd85d160bd4fe9ab01c944\"",
+      "last_modified": "Sat, 14 Nov 2026 19:22:18 GMT",
+      "last_checked": "2026-11-15T01:47:47.217422+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.hollywoodreporter.com/feed/": {
-      "etag": "W/\"ecad826fcab0b2d725d6e11cabbf177f\"",
-      "last_modified": "Sat, 14 Nov 2026 14:45:27 GMT",
-      "last_checked": "2026-11-14T20:51:52.533200+06:00",
+      "etag": "W/\"ad33081b3036f6ed7f65017428320b8a\"",
+      "last_modified": "Sat, 14 Nov 2026 19:27:59 GMT",
+      "last_checked": "2026-11-15T01:47:48.993723+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.thewrap.com/feed/": {
-      "etag": "\"4b94fbf94d0078d7cc1d84b371cfea24\"",
-      "last_modified": "Sat, 14 Nov 2026 05:26:38 GMT",
-      "last_checked": "2026-11-14T20:51:53.804189+06:00",
+      "etag": "\"93222f119eee5616151220023e8123a0\"",
+      "last_modified": "Sat, 14 Nov 2026 19:43:42 GMT",
+      "last_checked": "2026-11-15T01:47:49.878482+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.indiewire.com/feed/": {
-      "etag": "W/\"e586b38601ce2171ade2fc73599cdbdd\"",
-      "last_modified": "Sat, 14 Nov 2026 01:44:03 GMT",
-      "last_checked": "2026-11-14T20:51:54.565814+06:00",
+      "etag": "W/\"d1f477d880147cbab57965336a3b58af\"",
+      "last_modified": "Sat, 14 Nov 2026 18:51:58 GMT",
+      "last_checked": "2026-11-15T01:47:50.731169+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://collider.com/feed/": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-14T20:51:54.865752+06:00",
+      "last_checked": "2026-11-15T01:47:51.274083+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://tvline.com/feed/": {
-      "etag": "\"eac5e2ecf1047da7e78200da086759e9\"",
-      "last_modified": "Sat, 14 Nov 2026 14:12:00 GMT",
-      "last_checked": "2026-11-14T20:51:56.059537+06:00",
+      "etag": "\"011eb6e79e70098b539b68564d1ec455\"",
+      "last_modified": "Sat, 14 Nov 2026 19:12:00 GMT",
+      "last_checked": "2026-11-15T01:47:52.302705+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.ottplay.com/rss": {
       "etag": "\"b5496c89c58ff0f5d07d64a68d4efe07\"",
       "last_modified": "Thu, 27 May 2021 12:38:49 GMT",
-      "last_checked": "2026-11-14T20:51:58.791825+06:00",
+      "last_checked": "2026-11-15T01:47:55.226309+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.filmibeat.com/rss/feeds/filmibeat-news.xml": {
       "etag": null,
-      "last_modified": "Sat, 14 Nov 2026 14:43:30 GMT",
-      "last_checked": "2026-11-14T20:51:59.252617+06:00",
+      "last_modified": "Sat, 14 Nov 2026 19:45:09 GMT",
+      "last_checked": "2026-11-15T01:47:55.549774+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.pinkvilla.com/rss": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-14T20:51:59.923465+06:00",
+      "last_checked": "2026-11-15T01:47:56.375800+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.bollywoodhungama.com/feed/": {
-      "etag": "\"388e4823d8f4b0dedeab716190dc2e7e\"",
-      "last_modified": "Sat, 14 Nov 2026 13:57:19 GMT",
-      "last_checked": "2026-11-14T20:52:01.010917+06:00",
+      "etag": "\"71dd939831aa5063938a46971da05bc3\"",
+      "last_modified": "Sat, 14 Nov 2026 17:30:54 GMT",
+      "last_checked": "2026-11-15T01:47:56.722904+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.gadgets360.com/entertainment/rss": {
-      "last_checked": "2026-11-14T20:52:02.652187+06:00",
-      "fail_count": 230,
+      "last_checked": "2026-11-15T01:47:58.303929+06:00",
+      "fail_count": 231,
       "alerted": true
     },
     "https://www.soompi.com/feed": {
-      "etag": "W/\"1ce0128ada4ec902270ad75287595682\"",
-      "last_modified": "Sat, 14 Nov 2026 09:57:40 GMT",
-      "last_checked": "2026-11-14T20:52:02.912208+06:00",
+      "etag": "W/\"2f7560e902048ac54b5cfd19d83b6706\"",
+      "last_modified": "Sat, 14 Nov 2026 15:25:07 GMT",
+      "last_checked": "2026-11-15T01:47:58.515430+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.whats-on-netflix.com/feed/": {
       "etag": null,
       "last_modified": "Fri, 13 Nov 2026 19:33:21 GMT",
-      "last_checked": "2026-11-14T20:52:04.485763+06:00",
+      "last_checked": "2026-11-15T01:48:00.212221+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.netflix.com/tudum/rss.xml": {
-      "last_checked": "2026-11-14T20:52:04.928702+06:00",
-      "fail_count": 230,
+      "last_checked": "2026-11-15T01:48:00.857845+06:00",
+      "fail_count": 231,
       "alerted": true
     },
     "https://press.wbd.com/us/en/rss": {
-      "last_checked": "2026-11-14T20:52:05.297344+06:00",
-      "fail_count": 230,
+      "last_checked": "2026-11-15T01:48:01.245903+06:00",
+      "fail_count": 231,
       "alerted": true
     },
     "https://www.apple.com/tv-pr/newsroom/feed/": {
-      "last_checked": "2026-11-14T20:52:06.144852+06:00",
-      "fail_count": 230,
+      "last_checked": "2026-11-15T01:48:02.069821+06:00",
+      "fail_count": 231,
       "alerted": true
     },
     "https://www.aboutamazon.com/rss": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-14T20:52:06.379004+06:00",
+      "last_checked": "2026-11-15T01:48:02.171833+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.marvel.com/articles/feed": {
-      "last_checked": "2026-11-14T20:52:06.949900+06:00",
-      "fail_count": 230,
+      "last_checked": "2026-11-15T01:48:02.584332+06:00",
+      "fail_count": 231,
       "alerted": true
     },
     "https://www.dc.com/blog/rss.xml": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-14T20:52:07.530664+06:00",
-      "fail_count": 11,
+      "last_checked": "2026-11-15T01:48:03.153094+06:00",
+      "fail_count": 12,
       "alerted": true
     },
     "https://www.sonypictures.com/rss": {
-      "last_checked": "2026-11-14T20:52:07.984710+06:00",
-      "fail_count": 230,
+      "last_checked": "2026-11-15T01:48:03.625049+06:00",
+      "fail_count": 231,
       "alerted": true
     },
     "https://www.paramount.com/rss": {
-      "last_checked": "2026-11-14T20:52:08.137314+06:00",
-      "fail_count": 230,
+      "last_checked": "2026-11-15T01:48:03.684812+06:00",
+      "fail_count": 231,
       "alerted": true
     },
     "https://www.universalpictures.com/rss": {
-      "last_checked": "2026-11-14T20:52:08.673468+06:00",
-      "fail_count": 230,
+      "last_checked": "2026-11-15T01:48:04.126243+06:00",
+      "fail_count": 231,
       "alerted": true
     }
   },
   "queue": {
-    "deadline.com/2026/11/millie-bobby-brown-non-refundable-jack-innanen-netflix-1237218578": {
-      "title": "Millie Bobby Brown To Star In, Produce Netflix Comedy ‘Non-Refundable’; Jack Innanen Also Set",
-      "url": "https://deadline.com/2026/11/millie-bobby-brown-non-refundable-jack-innanen-netflix-1237218578/",
-      "canonical": "deadline.com/2026/11/millie-bobby-brown-non-refundable-jack-innanen-netflix-1237218578",
-      "published_dt": "2026-11-10T22:45:00+06:00",
-      "published_date": "2026-11-10T22:45:00+06:00",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "excerpt": "EXCLUSIVE: After wrapping up Stranger Things and capping off an Enola Holmes trilogy, and with a David Harbour co-starring spy comedy upcoming, Millie Bobby Brown has found her next project with Netflix: a comedy titled Non-Refundable that she’ll produce and headline opposite Jack Innanen, the breakout star of FX’s Adults. With Emmy-nominated SNL alum Paul […]",
-      "image": "https://deadline.com/wp-content/uploads/2026/11/Millie-Bobby-Brown-and-Jack-Innanen.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-11-10T22:51:34.439934+06:00",
-      "last_seen": "2026-11-10T22:51:34.439956+06:00",
-      "importance_score": 27,
-      "priority_type": "New Movie / Series Announcements",
-      "priority_tier": 2,
-      "priority_rank": 6,
-      "sector": "Hollywood",
-      "rank_reason": "Announcement of project but no release date; score stays below publishable threshold.",
-      "last_ranked_at": "2026-11-11T22:00:22.954567+06:00",
-      "learning_pattern": ""
-    },
-    "deadline.com/2026/11/a-little-dream-of-me-kaycee-tran-doan-hoang-huu-chau-1237217085": {
-      "title": "Vietnamese Musical Hit ‘A Little Dream Of Me’ Set For North American Release Through Reel Citrus",
-      "url": "https://deadline.com/2026/11/a-little-dream-of-me-kaycee-tran-doan-hoang-huu-chau-1237217085/",
-      "canonical": "deadline.com/2026/11/a-little-dream-of-me-kaycee-tran-doan-hoang-huu-chau-1237217085",
-      "published_dt": "2026-11-10T22:00:00+06:00",
-      "published_date": "2026-11-10T22:00:00+06:00",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "excerpt": "EXCLUSIVE: Reel Citrus has acquired North American rights to Vietnamese musical A Little Dream Of Me and is lining up a theatrical release on December 4. Directed by Chung Chí Công, the film features an 18-track original soundtrack from music producer Phạm Hải Âu and was shot in Vietnam, South Korea and New York. Kaycee, […]",
-      "image": "https://deadline.com/wp-content/uploads/2026/11/A-Little-Dream-Of-Me.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-11-10T22:51:35.020510+06:00",
-      "last_seen": "2026-11-10T22:51:35.020530+06:00",
-      "importance_score": 80,
-      "priority_type": "Theatrical Releases / Re-releases",
-      "priority_tier": 1,
-      "priority_rank": 5,
-      "sector": "International",
-      "rank_reason": "The article provides an official confirmation of the North American theatrical release date (Dec 4, 2026) and platform (Reel Citrus distribution), meeting the release‑only criteria.",
-      "last_ranked_at": "2026-11-11T22:00:22.953782+06:00",
-      "learning_pattern": ""
-    },
-    "variety.com/2026/film/news/producers-adapt-streaming-fast-channels-mockbusters-1236941543": {
-      "title": "From a Mockbuster Version of ‘The Odyssey’ to a ‘Jiu-Jitsu Nun’: How Producers Are Keeping the Low-Budget Film Market Alive Via Streaming and FAST Channels (and Even Lower Budgets)",
-      "url": "https://variety.com/2026/film/news/producers-adapt-streaming-fast-channels-mockbusters-1236941543/",
-      "canonical": "variety.com/2026/film/news/producers-adapt-streaming-fast-channels-mockbusters-1236941543",
-      "published_dt": "2026-11-10T22:15:00+06:00",
-      "published_date": "2026-11-10T22:15:00+06:00",
-      "source": "Variety",
-      "region": "Entertainment",
-      "excerpt": "“Our journey begins with the Cyclops,” says a ginger-bearded and bald Odysseus somewhat nonchalantly in the trailer for “The Odyssey,” moments before a giant one-eyed AI-generated monster bursts onto the screens. The film, based — rather loosely — on Homer’s epic poem, released this summer and was met with mostly comic derision and a flurry […]",
-      "image": "https://variety.com/wp-content/uploads/2026/11/The_Odyssey_1920x1080_still_1_tivo-1.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-11-10T22:51:35.902720+06:00",
-      "last_seen": "2026-11-10T22:51:35.902742+06:00",
-      "importance_score": 21,
-      "priority_type": "New Movie / Series Announcements",
-      "priority_tier": 2,
-      "priority_rank": 6,
-      "sector": "International",
-      "rank_reason": "Analytical piece without a specific release; low score.",
-      "last_ranked_at": "2026-11-11T22:00:22.955042+06:00",
-      "learning_pattern": ""
-    },
-    "variety.com/2026/film/news/afm-2026-tough-market-but-theatrical-breakouts-offer-hope-1236941581": {
-      "title": "AFM 2026: Indie Film Faces a Tougher Market — But Theatrical Breakouts Offer Hope",
-      "url": "https://variety.com/2026/film/news/afm-2026-tough-market-but-theatrical-breakouts-offer-hope-1236941581/",
-      "canonical": "variety.com/2026/film/news/afm-2026-tough-market-but-theatrical-breakouts-offer-hope-1236941581",
-      "published_dt": "2026-11-10T22:15:00+06:00",
-      "published_date": "2026-11-10T22:15:00+06:00",
-      "source": "Variety",
-      "region": "Entertainment",
-      "excerpt": "The indie film biz head into this year’s American Film Market amid one of the industry’s most tumultuous periods in recent memory. The completion of Paramount Skydance’s merger with Warner Bros. Discovery and Netflix’s leadership shake-up have triggered a wave of layoffs and cuts within the last month, while streamers across the board are becoming […]",
-      "image": "https://variety.com/wp-content/uploads/2026/11/River_Still_01_80d221.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-11-10T22:51:35.974673+06:00",
-      "last_seen": "2026-11-10T22:51:35.974692+06:00",
-      "importance_score": 21,
-      "priority_type": "New Movie / Series Announcements",
-      "priority_tier": 2,
-      "priority_rank": 6,
-      "sector": "Hollywood",
-      "rank_reason": "Industry outlook article lacking a concrete release announcement; low score.",
-      "last_ranked_at": "2026-11-11T22:00:22.955214+06:00",
-      "learning_pattern": ""
-    },
-    "about.netflix.com/en/news/netflix-releases-welcome-to-el-bulli-on-november-20": {
-      "title": "Netflix Releases 'Welcome to El Bulli' on November 20 -  About Netflix",
-      "url": "https://about.netflix.com/en/news/netflix-releases-welcome-to-el-bulli-on-november-20",
-      "canonical": "about.netflix.com/en/news/netflix-releases-welcome-to-el-bulli-on-november-20",
-      "published_dt": "2026-11-10T17:16:05+06:00",
-      "published_date": "2026-11-10T17:16:05+06:00",
-      "source": "about.netflix.com",
-      "region": "Entertainment",
-      "excerpt": "N o n e",
-      "image": "https://images.ctfassets.net/4cd45et68cgf/4wygqTcXvosns9W23Gk4AC/5e793b272db16ef4a62fd8ce2451cfe7/genesis-storyart_na_18_zxx.jpg",
-      "discovery": "exa",
-      "source_pool": "primary",
-      "status": "posted",
-      "first_seen": "2026-11-10T22:51:59.206543+06:00",
-      "last_seen": "2026-11-10T22:51:59.206562+06:00",
-      "importance_score": 89,
-      "priority_type": "New Movie / Series Announcements",
-      "priority_tier": 2,
-      "priority_rank": 6,
-      "sector": "International",
-      "rank_reason": "Official Netflix announcement includes exact premiere date (Nov 20) and platform, meeting release‑only criteria.",
-      "last_ranked_at": "2026-11-10T22:52:15.240121+06:00",
-      "learning_pattern": "",
-      "posted_at": "2026-11-10T22:57:17.596339+06:00"
-    },
-    "variety.com/2026/tv/news/later-daters-season-2-1236943793": {
-      "title": "Later Daters Season 2: Christie Brinkley, Margaret Cho in Netflix Series",
-      "url": "https://variety.com/2026/tv/news/later-daters-season-2-1236943793/",
-      "canonical": "variety.com/2026/tv/news/later-daters-season-2-1236943793",
-      "published_dt": "2026-11-10T20:00:00+06:00",
-      "published_date": "2026-11-10T20:00:00+06:00",
-      "source": "Variety",
-      "region": "Entertainment",
-      "excerpt": "N o n e",
-      "image": "https://variety.com/wp-content/uploads/2026/11/The_Later_Daters_n_S2_E1_00_24_50_15_R.jpg?w=1000&h=563&crop=1",
-      "discovery": "exa",
-      "source_pool": "primary",
-      "status": "pending",
-      "first_seen": "2026-11-10T22:52:04.089254+06:00",
-      "last_seen": "2026-11-10T22:52:04.089272+06:00",
-      "importance_score": 76,
-      "priority_type": "Season Renewals / New Season Updates",
-      "priority_tier": 2,
-      "priority_rank": 7,
-      "sector": "Hollywood",
-      "rank_reason": "Official Netflix announcement with premiere date (Dec 30) and cast details.",
-      "last_ranked_at": "2026-11-11T13:35:49.206276+06:00",
-      "learning_pattern": ""
-    },
-    "deadline.com/2026/11/art-detectives-trailer-special-premiere-date-season-2-1237218375": {
-      "title": "'Art Detectives': Watch Trailer For Xmas Special; Premiere Date Set",
-      "url": "https://deadline.com/2026/11/art-detectives-trailer-special-premiere-date-season-2-1237218375/",
-      "canonical": "deadline.com/2026/11/art-detectives-trailer-special-premiere-date-season-2-1237218375",
-      "published_dt": "2026-11-10T20:00:00+06:00",
-      "published_date": "2026-11-10T20:00:00+06:00",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "excerpt": "N o n e",
-      "image": "https://deadline.com/wp-content/uploads/2026/11/Art-Detectives.jpg?w=1024",
-      "discovery": "exa",
-      "source_pool": "primary",
-      "status": "pending",
-      "first_seen": "2026-11-10T22:52:04.142906+06:00",
-      "last_seen": "2026-11-10T22:52:04.142929+06:00",
-      "importance_score": 70,
-      "priority_type": "Upcoming OTT Releases",
-      "priority_tier": 1,
-      "priority_rank": 3,
-      "sector": "International",
-      "rank_reason": "Official trailer and premiere date (Dec 7) on AMC Global Media streamer.",
-      "last_ranked_at": "2026-11-11T13:35:49.204012+06:00",
-      "learning_pattern": ""
-    },
     "deadline.com/2026/11/harry-potter-paapa-essiedu-jk-rowling-super-clear-trans-support-1237219357": {
       "title": "‘Harry Potter’s Paapa Essiedu Doesn’t Want To Discuss J.K. Rowling “At All,” Insists He’s “Super Clear” About Trans Support",
       "url": "https://deadline.com/2026/11/harry-potter-paapa-essiedu-jk-rowling-super-clear-trans-support-1237219357/",
@@ -1520,13 +1351,13 @@
       "status": "pending",
       "first_seen": "2026-11-14T03:54:32.923120+06:00",
       "last_seen": "2026-11-14T03:54:32.923137+06:00",
-      "importance_score": 31,
-      "priority_type": "New Movie / Series Announcements",
+      "importance_score": 19,
+      "priority_type": "Season Renewals / New Season Updates",
       "priority_tier": 2,
-      "priority_rank": 6,
+      "priority_rank": 7,
       "sector": "Hollywood",
-      "rank_reason": "Provides insight on an unaired episode; no release information, thus low score.",
-      "last_ranked_at": "2026-11-14T20:53:17.966605+06:00",
+      "rank_reason": "No concrete release information; only speculation about an unaired episode.",
+      "last_ranked_at": "2026-11-15T01:50:07.290602+06:00",
       "learning_pattern": ""
     },
     "deadline.com/2026/11/magic-the-gathering-planeswalker-tv-show-release-date-photo-1237223256": {
@@ -1544,13 +1375,13 @@
       "status": "pending",
       "first_seen": "2026-11-14T03:54:33.550487+06:00",
       "last_seen": "2026-11-14T03:54:33.550507+06:00",
-      "importance_score": 36,
+      "importance_score": 81,
       "priority_type": "New Movie / Series Announcements",
       "priority_tier": 2,
       "priority_rank": 6,
       "sector": "International",
-      "rank_reason": "Only a release year (2027) is given, no specific date or platform window; score stays below publishable threshold.",
-      "last_ranked_at": "2026-11-14T20:53:17.965493+06:00",
+      "rank_reason": "Official first‑look photo and confirmed launch year give a concrete release timeline for the highly anticipated animated series.",
+      "last_ranked_at": "2026-11-15T01:50:07.289968+06:00",
       "learning_pattern": ""
     },
     "deadline.com/2026/11/indie-films-opening-victorian-psycho-paper-tiger-almodovar-1237223240": {
@@ -1568,13 +1399,13 @@
       "status": "pending",
       "first_seen": "2026-11-14T03:54:33.685922+06:00",
       "last_seen": "2026-11-14T03:54:33.685941+06:00",
-      "importance_score": 32,
+      "importance_score": 15,
       "priority_type": "Theatrical Releases / Re-releases",
       "priority_tier": 1,
       "priority_rank": 5,
       "sector": "International",
-      "rank_reason": "Mentions theatrical openings but without a specific release date or platform; low release relevance.",
-      "last_ranked_at": "2026-11-14T20:53:17.965328+06:00",
+      "rank_reason": "Mentions theatrical openings but lacks specific release dates or platforms for the titles.",
+      "last_ranked_at": "2026-11-15T01:50:07.289838+06:00",
       "learning_pattern": ""
     },
     "deadline.com/2026/11/logan-lerman-joins-playmates-searchlight-1237223249": {
@@ -1592,13 +1423,13 @@
       "status": "pending",
       "first_seen": "2026-11-14T03:54:34.035694+06:00",
       "last_seen": "2026-11-14T03:54:34.035711+06:00",
-      "importance_score": 32,
+      "importance_score": 13,
       "priority_type": "New Movie / Series Announcements",
       "priority_tier": 2,
       "priority_rank": 6,
       "sector": "Hollywood",
-      "rank_reason": "Casting news without a confirmed release window; therefore low publishable score.",
-      "last_ranked_at": "2026-11-14T20:53:17.966201+06:00",
+      "rank_reason": "Casting announcement without a confirmed release date or platform; not a release‑focused story.",
+      "last_ranked_at": "2026-11-15T01:50:07.290338+06:00",
       "learning_pattern": ""
     },
     "deadline.com/2026/11/penn-badgley-wme-agency-range-media-partners-1237223020": {
@@ -1663,7 +1494,15 @@
       "date_estimated": false,
       "status": "pending",
       "first_seen": "2026-11-14T03:54:34.860795+06:00",
-      "last_seen": "2026-11-14T03:54:34.860813+06:00"
+      "last_seen": "2026-11-14T03:54:34.860813+06:00",
+      "importance_score": 19,
+      "priority_type": "Season Renewals / New Season Updates",
+      "priority_tier": 2,
+      "priority_rank": 7,
+      "sector": "International",
+      "rank_reason": "Tragic news without any release schedule; not a release announcement.",
+      "last_ranked_at": "2026-11-15T01:50:07.290735+06:00",
+      "learning_pattern": ""
     },
     "variety.com/2026/film/global/hold-onto-me-myrsini-aristidou-oscar-campaign-sundance-1236945016": {
       "title": "‘Hold Onto Me’ Director Myrsini Aristidou Kicks Off Historic Oscar Campaign for Sundance Audience Award Winner: ‘I Really Feel Like We’re Underdogs’",
@@ -1704,13 +1543,13 @@
       "status": "pending",
       "first_seen": "2026-11-14T13:27:10.289113+06:00",
       "last_seen": "2026-11-14T20:51:50.870781+06:00",
-      "importance_score": 32,
-      "priority_type": "New Movie / Series Announcements",
+      "importance_score": 25,
+      "priority_type": "Season Renewals / New Season Updates",
       "priority_tier": 2,
-      "priority_rank": 6,
+      "priority_rank": 7,
       "sector": "Hollywood",
-      "rank_reason": "Discusses revival talks without confirming a release date or platform; scores below publishable threshold.",
-      "last_ranked_at": "2026-11-14T20:53:17.966035+06:00",
+      "rank_reason": "Discusses development status without a confirmed release window.",
+      "last_ranked_at": "2026-11-15T01:50:07.290453+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/film/news/michael-mann-new-regency-heat-screenplay-lawsuit-1236947532": {
@@ -1728,13 +1567,13 @@
       "status": "pending",
       "first_seen": "2026-11-14T13:27:10.667528+06:00",
       "last_seen": "2026-11-14T20:51:52.013596+06:00",
-      "importance_score": 34,
+      "importance_score": 30,
       "priority_type": "New Movie / Series Announcements",
       "priority_tier": 2,
       "priority_rank": 6,
       "sector": "Hollywood",
-      "rank_reason": "Legal news about a past film; no new release announced, thus low relevance for release channel.",
-      "last_ranked_at": "2026-11-14T20:53:17.965784+06:00",
+      "rank_reason": "Legal dispute without a confirmed release date; not a release announcement.",
+      "last_ranked_at": "2026-11-15T01:50:07.290221+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/digital/news/jason-voorhees-animated-debut-hike-alone-short-1236947225": {
@@ -1752,13 +1591,13 @@
       "status": "pending",
       "first_seen": "2026-11-14T13:27:10.889662+06:00",
       "last_seen": "2026-11-14T13:27:10.889668+06:00",
-      "importance_score": 32,
-      "priority_type": "New Movie / Series Announcements",
-      "priority_tier": 2,
-      "priority_rank": 6,
+      "importance_score": 26,
+      "priority_type": "Theatrical Releases / Re-releases",
+      "priority_tier": 1,
+      "priority_rank": 5,
       "sector": "International",
-      "rank_reason": "Announces a short film but no theatrical/OTT release window; low release relevance.",
-      "last_ranked_at": "2026-11-14T20:53:17.966164+06:00",
+      "rank_reason": "Announces a short film release but without a broad platform or date, limiting its release impact.",
+      "last_ranked_at": "2026-11-15T01:50:07.289797+06:00",
       "learning_pattern": "sports"
     },
     "variety.com/2026/film/news/gambit-avengers-doomsday-kevin-feige-not-laughs-1236947232": {
@@ -1776,13 +1615,13 @@
       "status": "pending",
       "first_seen": "2026-11-14T13:27:11.288204+06:00",
       "last_seen": "2026-11-14T13:27:11.288217+06:00",
-      "importance_score": 33,
-      "priority_type": "New Movie / Series Announcements",
-      "priority_tier": 2,
-      "priority_rank": 6,
+      "importance_score": 55,
+      "priority_type": "Upcoming OTT Releases",
+      "priority_tier": 1,
+      "priority_rank": 3,
       "sector": "Hollywood",
-      "rank_reason": "Talks about character tone for a future film; no release date confirmed, so low publishable score.",
-      "last_ranked_at": "2026-11-14T20:53:17.965895+06:00",
+      "rank_reason": "Mentions the upcoming MCU film featuring Gambit, confirming its future release as part of the franchise.",
+      "last_ranked_at": "2026-11-15T01:50:07.289196+06:00",
       "learning_pattern": ""
     },
     "deadline.com/2026/11/cinephil-alexandru-solomon-small-expectations-idfa-1237223722": {
@@ -1799,14 +1638,14 @@
       "date_estimated": false,
       "status": "pending",
       "first_seen": "2026-11-14T20:51:50.118824+06:00",
-      "last_seen": "2026-11-14T20:51:50.118844+06:00",
-      "importance_score": 31,
-      "priority_type": "New Movie / Series Announcements",
-      "priority_tier": 2,
-      "priority_rank": 6,
+      "last_seen": "2026-11-15T01:47:47.097454+06:00",
+      "importance_score": 59,
+      "priority_type": "Theatrical Releases / Re-releases",
+      "priority_tier": 1,
+      "priority_rank": 5,
       "sector": "International",
-      "rank_reason": "Announces sales board for a documentary ahead of its festival premiere – no release date, so low publishable score.",
-      "last_ranked_at": "2026-11-14T20:53:17.966444+06:00",
+      "rank_reason": "Confirms the documentary will premiere at IDFA, providing a release venue and date window.",
+      "last_ranked_at": "2026-11-15T01:50:07.289636+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/film/global/venice-prizewinner-a-day-in-the-life-of-jo-teenage-girl-1236947632": {
@@ -1824,14 +1663,87 @@
       "status": "pending",
       "first_seen": "2026-11-14T20:51:51.464558+06:00",
       "last_seen": "2026-11-14T20:51:51.464578+06:00",
-      "importance_score": 35,
+      "importance_score": 67,
+      "priority_type": "Theatrical Releases / Re-releases",
+      "priority_tier": 1,
+      "priority_rank": 5,
+      "sector": "International",
+      "rank_reason": "Announces a specific festival screening date, constituting a release event for the film.",
+      "last_ranked_at": "2026-11-15T01:50:07.289467+06:00",
+      "learning_pattern": ""
+    },
+    "deadline.com/2026/11/mormon-wives-hulu-lawsuit-defamation-1237223830": {
+      "title": "Hulu & ‘Secret Lives Of Mormon Wives’ Producers Accused Crafting “False Narrative” & “Staged Confrontations”",
+      "url": "https://deadline.com/2026/11/mormon-wives-hulu-lawsuit-defamation-1237223830/",
+      "canonical": "deadline.com/2026/11/mormon-wives-hulu-lawsuit-defamation-1237223830",
+      "published_dt": "2026-11-15T01:36:56+06:00",
+      "published_date": "2026-11-15T01:36:56+06:00",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "excerpt": "While it might not be a shock to some to know reality TV is not quite as real as presented, longtime The Secret Lives Of Mormon Wives cast member Dakota Mortensen claims the world needs to know he is not the “domestic abuser,” “serial adulterer” and overall heel the Hulu series made him out to […]",
+      "image": "https://deadline.com/wp-content/uploads/2026/11/dakota-mortensen.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-15T01:47:45.648912+06:00",
+      "last_seen": "2026-11-15T01:47:45.648928+06:00",
+      "importance_score": 32,
       "priority_type": "New Movie / Series Announcements",
       "priority_tier": 2,
       "priority_rank": 6,
-      "sector": "International",
-      "rank_reason": "The story reports a festival screening, not a public release; therefore it scores low on release relevance.",
-      "last_ranked_at": "2026-11-14T20:53:17.965637+06:00",
+      "sector": "Hollywood",
+      "rank_reason": "No release information; the story is about controversy rather than a release schedule.",
+      "last_ranked_at": "2026-11-15T01:50:07.290101+06:00",
       "learning_pattern": ""
+    },
+    "deadline.com/feature/2026-tv-premiere-dates-1236391902": {
+      "title": "2026-27 Premiere Dates For New & Returning Series On Broadcast, Streaming & Cable",
+      "url": "https://deadline.com/feature/2026-tv-premiere-dates-1236391902/",
+      "canonical": "deadline.com/feature/2026-tv-premiere-dates-1236391902",
+      "published_dt": "2026-11-14T19:00:00+06:00",
+      "published_date": "2026-11-14T19:00:00+06:00",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "excerpt": "Here is Deadline’s annual list of premiere dates for new and returning TV series. Updated daily, the roster covers hundreds of broadcast, cable and streaming programs debuting in 2026 and early 2027, many still listed as TBA (to be announced). It includes series premieres, season debuts, shows returning from hiatus and some one-offs such as […]",
+      "image": "https://deadline.com/wp-content/uploads/2026/10/2026-27-TV-premiere-dates.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-15T01:47:46.951109+06:00",
+      "last_seen": "2026-11-15T01:47:46.951122+06:00",
+      "importance_score": 76,
+      "priority_type": "Release Date Confirmations",
+      "priority_tier": 1,
+      "priority_rank": 4,
+      "sector": "Hollywood",
+      "rank_reason": "Provides a comprehensive list of upcoming premiere dates across broadcast, cable and streaming, confirming multiple releases.",
+      "last_ranked_at": "2026-11-15T01:50:07.289346+06:00",
+      "learning_pattern": ""
+    },
+    "variety.com/2026/tv/news/the-good-daughter-spoilers-rose-byrne-meghann-fahy-season-finale-1236945641": {
+      "title": "‘The Good Daughter’ Stars Rose Byrne and Meghann Fahy on Playing Sisters With Secrets and That Twisty Killer Ending",
+      "url": "https://variety.com/2026/tv/news/the-good-daughter-spoilers-rose-byrne-meghann-fahy-season-finale-1236945641/",
+      "canonical": "variety.com/2026/tv/news/the-good-daughter-spoilers-rose-byrne-meghann-fahy-season-finale-1236945641",
+      "published_dt": "2026-11-15T01:00:00+06:00",
+      "published_date": "2026-11-15T01:00:00+06:00",
+      "source": "Variety",
+      "region": "Entertainment",
+      "excerpt": "SPOILER ALERT: This interview contains major spoilers from “The Good Daughter,” now streaming on Peacock. For Sam and Charlie Quinn, the estranged sisters played by Rose Byrne and Meghann Fahy in “The Good Daughter,” the truth was always going to set them free. Adapted by author Karin Slaughter from her own bestselling novel of the […]",
+      "image": "https://variety.com/wp-content/uploads/2026/11/TheGoodDaughter-MeghannFahy-RoseByrne.3.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "posted",
+      "first_seen": "2026-11-15T01:47:47.765128+06:00",
+      "last_seen": "2026-11-15T01:47:47.765149+06:00",
+      "importance_score": 86,
+      "priority_type": "OTT / Streaming Availability",
+      "priority_tier": 1,
+      "priority_rank": 1,
+      "sector": "Hollywood",
+      "rank_reason": "The story confirms that the series is now streaming on Peacock, providing a clear release platform and date window for audiences.",
+      "last_ranked_at": "2026-11-15T01:50:07.289027+06:00",
+      "learning_pattern": "",
+      "posted_at": "2026-11-15T01:53:08.653379+06:00"
     }
   },
   "events": {
@@ -1885,106 +1797,6 @@
       "status": "published",
       "message_id": 1240
     },
-    "bleecker_street_acquisition": {
-      "event_id": "bleecker_street_acquisition",
-      "canonical_url": "deadline.com/2026/10/bleecker-street-outerlight-entertainment-1237158222",
-      "original_url": "https://deadline.com/2026/10/bleecker-street-outerlight-entertainment-1237158222/",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "topic": "Acquisitions and Mergers",
-      "institution": "Outerlight Entertainment",
-      "event_cluster_id": "evt_0f50443fcf",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Bleecker Street",
-      "summary": "Outerlight Entertainment has acquired independent studio Bleecker Street Media.",
-      "highlights": [
-        "Outerlight Entertainment completes the purchase of Bleecker Street Media",
-        "CEO Kent Sanderson will continue to lead Bleecker Street",
-        "The documentary Musk, directed by Alex Gibney, remains in release"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-15T22:30:37+06:00",
-      "selected_at": "2026-10-15T22:40:35.549931+06:00",
-      "status": "published",
-      "message_id": 944
-    },
-    "natalee_holloway_doc_release": {
-      "event_id": "natalee_holloway_doc_release",
-      "canonical_url": "deadline.com/2026/10/natalee-holloway-disappearance-doc-premiere-netflix-1237157430",
-      "original_url": "https://deadline.com/2026/10/natalee-holloway-disappearance-doc-premiere-netflix-1237157430/",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "topic": "Release Dates",
-      "institution": "Netflix",
-      "event_cluster_id": "evt_85f149b157",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Natalee Holloway",
-      "summary": "Netflix’s three‑part documentary on Natalee Holloway’s disappearance will debut on Nov.",
-      "highlights": [
-        "Premiere set for November 4 on Netflix",
-        "Three‑episode series from Liz Garbus’ Story Syndicate",
-        "Features exclusive access to Beth Holloway"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-15T22:15:00+06:00",
-      "selected_at": "2026-10-15T22:40:46.097630+06:00",
-      "status": "published",
-      "message_id": 946
-    },
-    "burton_ishiguro_untitled": {
-      "event_id": "burton_ishiguro_untitled",
-      "canonical_url": "deadline.com/2026/10/tim-burton-kazuo-ishiguro-script-the-dish-klara-and-the-sun-1237158240",
-      "original_url": "https://deadline.com/2026/10/tim-burton-kazuo-ishiguro-script-the-dish-klara-and-the-sun-1237158240/",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "Warner Bros.",
-      "event_cluster_id": "evt_40b5eb2b35",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Untitled Tim Burton/Ishiguro film",
-      "summary": "Tim Burton will direct an original film scripted by Nobel laureate Kazuo Ishiguro.",
-      "highlights": [
-        "Burton to direct from Ishiguro's original screenplay",
-        "Set in post‑World War II Japan",
-        "No distributor attached yet"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-15T23:45:00+06:00",
-      "selected_at": "2026-10-16T11:46:56.022665+06:00",
-      "status": "published",
-      "message_id": 953
-    },
-    "title_change": {
-      "event_id": "title_change",
-      "canonical_url": "variety.com/2026/film/news/the-mummy-4-title-book-of-the-dead-brendan-fraser-rachel-weisz-1236913372",
-      "original_url": "https://variety.com/2026/film/news/the-mummy-4-title-book-of-the-dead-brendan-fraser-rachel-weisz-1236913372/",
-      "source": "Variety",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "Variety",
-      "event_cluster_id": "evt_10e0202d7f",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "The Mummy: The Book of the Dead",
-      "summary": "Universal has officially retitled the fourth Mummy film starring Brendan Fraser and Rachel Weisz.",
-      "highlights": [
-        "New title confirmed as “The Mummy: The Book of the Dead.”",
-        "Scheduled for theatrical release on Oct 15, 2027.",
-        "Directed by Radio Silence duo Matt Bettinelli-Olpin and Tyler Gillett."
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-16T01:45:19+06:00",
-      "selected_at": "2026-10-16T11:47:01.657247+06:00",
-      "status": "published",
-      "message_id": 954
-    },
     "the_housemaid_s_secret": {
       "event_id": "the_housemaid_s_secret",
       "canonical_url": "deadline.com/feature/the-housemaid-2-movie-news-updates-sequel-adaptation-1237045522",
@@ -2034,31 +1846,6 @@
       "selected_at": "2026-10-16T11:47:12.517492+06:00",
       "status": "published",
       "message_id": 956
-    },
-    "frisco_king_teaser": {
-      "event_id": "frisco_king_teaser",
-      "canonical_url": "deadline.com/2026/10/frisco-king-trailer-release-date-taylor-sheridan-paramount-1237157647",
-      "original_url": "https://deadline.com/2026/10/frisco-king-trailer-release-date-taylor-sheridan-paramount-1237157647/",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "topic": "Trailers and First Looks",
-      "institution": "Paramount+",
-      "event_cluster_id": "evt_d57cb9f938",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Frisco King",
-      "summary": "Samuel L.",
-      "highlights": [
-        "Teaser released showing Jackson as Russell Lee Washington Jr.",
-        "Series premieres December 18 with two episodes, then new episodes every Friday",
-        "Features a special appearance by Sylvester Stallone"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-15T21:00:00+06:00",
-      "selected_at": "2026-10-16T11:47:18.218745+06:00",
-      "status": "published",
-      "message_id": 957
     },
     "street_fighter_us_previews": {
       "event_id": "street_fighter_us_previews",
@@ -10594,6 +10381,31 @@
       "selected_at": "2026-11-14T04:03:07.589651+06:00",
       "status": "published",
       "message_id": 1315
+    },
+    "the_good_daughter_release": {
+      "event_id": "the_good_daughter_release",
+      "canonical_url": "variety.com/2026/tv/news/the-good-daughter-spoilers-rose-byrne-meghann-fahy-season-finale-1236945641",
+      "original_url": "https://variety.com/2026/tv/news/the-good-daughter-spoilers-rose-byrne-meghann-fahy-season-finale-1236945641/",
+      "source": "Variety",
+      "region": "Entertainment",
+      "topic": "Release Dates",
+      "institution": "Peacock",
+      "event_cluster_id": "evt_1b620c1be9",
+      "event_confidence": 0.6,
+      "event_source_count": 1,
+      "headline": "The Good Daughter",
+      "summary": "Peacock’s six‑episode series follows estranged sisters Sam and Charlie Quinn as they confront a decades‑old family tragedy in rural Georgia.",
+      "highlights": [
+        "Now streaming on Peacock",
+        "Six episodes explore Southern Gothic family secrets",
+        "Stars Rose Byrne and Meghann Fahy as the Quinn sisters"
+      ],
+      "concepts": [],
+      "key_numbers": [],
+      "published_at": "2026-11-15T01:00:00+06:00",
+      "selected_at": "2026-11-15T01:53:08.653505+06:00",
+      "status": "published",
+      "message_id": 1316
     }
   },
   "event_clusters": {
@@ -29331,7 +29143,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-11-14T13:27:34.810468+06:00",
+      "last_seen": "2026-11-15T01:50:07.330952+06:00",
       "headline": "‘Magic The Gathering’ Netflix Animated Series ‘Planeswalker’ Unveils First-Look Photo & Release Year"
     },
     "evt_1cbb0c023e": {
@@ -29345,10 +29157,21 @@
       "confidence": 0.6,
       "last_seen": "2026-11-14T03:57:05.067061+06:00",
       "headline": "‘Virgin River’ Gets Early Season 9 Renewal, Officially Becomes Netflix’s Longest-Running Scripted Series"
+    },
+    "evt_1b620c1be9": {
+      "event_id": "evt_1b620c1be9",
+      "topic": "Release Dates",
+      "region": "Entertainment",
+      "sources": [
+        "Variety"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-15T01:50:07.330939+06:00",
+      "headline": "‘The Good Daughter’ Stars Rose Byrne and Meghann Fahy on Playing Sisters With Secrets and That Twisty Killer Ending"
     }
   },
   "posted_event_ids": [
-    "evt_058118fb43",
     "evt_548f586568",
     "evt_e65315ed04",
     "evt_83baffc25a",
@@ -29847,7 +29670,8 @@
     "evt_27b85de19a",
     "evt_b8ddefd833",
     "evt_27a7ad2d55",
-    "evt_1cbb0c023e"
+    "evt_1cbb0c023e",
+    "evt_1b620c1be9"
   ],
   "recent_titles": [
     "hello sunshine",
@@ -30249,7 +30073,8 @@
     "avatar seven havens",
     "the bachelor",
     "russell brand open secret",
-    "virgin river"
+    "virgin river",
+    "the good daughter"
   ],
   "work_memory": {
     "the dog stars": {
@@ -38660,6 +38485,15 @@
         "Season Renewals / New Season Updates": "2026-11-14T04:03:07.589695+06:00"
       },
       "last_published_at": "2026-11-14T04:03:07.589692+06:00"
+    },
+    "the good daughter": {
+      "title": "The Good Daughter",
+      "sector": "Hollywood",
+      "first_published_at": "2026-11-15T01:53:08.653576+06:00",
+      "published_events": {
+        "OTT / Streaming Availability": "2026-11-15T01:53:08.653586+06:00"
+      },
+      "last_published_at": "2026-11-15T01:53:08.653582+06:00"
     }
   },
   "publication_fingerprints": [
@@ -49376,16 +49210,27 @@
       "event_key": "Virgin_River_season9_renewal_2027",
       "canonical": "deadline.com/2026/11/virgin-river-renewed-season-9-netflix-longest-running-1237222568",
       "published_at": "2026-11-14T04:03:07.589950+06:00"
+    },
+    {
+      "fingerprint": "the good daughter|OTT / Streaming Availability|spoiler alert this interview contains major spoilers from peacock for sam and charlie quinn estranged sisters played rose byrne and meghann fahy truth was always going set them free adapted author karin slaughter from her own bestselling novel peacock six follows estranged sisters sam and charlie quinn they confront decades old family tragedy rural georgia peacock six explore southern gothic family secrets stars rose byrne and meghann fahy quinn sisters peacock",
+      "work_key": "the good daughter",
+      "priority_type": "OTT / Streaming Availability",
+      "headline": "The Good Daughter",
+      "event_text": "The Good Daughter SPOILER ALERT: This interview contains major spoilers from “The Good Daughter,” now streaming on Peacock. For Sam and Charlie Quinn, the estranged sisters played by Rose Byrne and Meghann Fahy in “The Good Daughter,” the truth was always going to set them free. Adapted by author Karin Slaughter from her own bestselling novel of the […] Peacock’s six‑episode series follows estranged sisters Sam and Charlie Quinn as they confront a decades‑old family tragedy in rural Georgia. Now streaming on Peacock Six episodes explore Southern Gothic family secrets Stars Rose Byrne and Meghann Fahy as the Quinn sisters Peacock",
+      "core": "spoiler alert this interview contains major spoilers from peacock for sam and charlie quinn estranged sisters played rose byrne and meghann fahy truth was always going set them free adapted author karin slaughter from her own bestselling novel peacock six follows estranged sisters sam and charlie quinn they confront decades old family tragedy rural georgia peacock six explore southern gothic family secrets stars rose byrne and meghann fahy quinn sisters peacock",
+      "event_key": "The Good Daughter release",
+      "canonical": "variety.com/2026/tv/news/the-good-daughter-spoilers-rose-byrne-meghann-fahy-season-finale-1236945641",
+      "published_at": "2026-11-15T01:53:08.653988+06:00"
     }
   ],
   "fresh_start_at": "2026-09-07T13:58:06.173598+06:00",
   "learned_rejections": {
     "sports": {
-      "observations": 233,
-      "low_score_count": 193,
-      "total_score": 11083,
-      "avg_score": 47.6,
-      "last_seen": "2026-11-14T20:53:17.967832+06:00",
+      "observations": 234,
+      "low_score_count": 194,
+      "total_score": 11109,
+      "avg_score": 47.5,
+      "last_seen": "2026-11-15T01:50:07.291625+06:00",
       "examples": [
         {
           "title": "‘Snoop’: Hercy Miller Will Portray Master P, Zachariah Rogers Is The D.O.C., & Tyquan Givens Set As Original Character In Universal’s Snoop ",
@@ -49409,8 +49254,8 @@
         },
         {
           "title": "Jason Voorhees Makes His Animated Debut in New ‘Never Hike Alone’ Short",
-          "score": 32,
-          "priority_type": "New Movie / Series Announcements"
+          "score": 26,
+          "priority_type": "Theatrical Releases / Re-releases"
         }
       ]
     },
@@ -49511,182 +49356,6 @@
     }
   },
   "score_history": [
-    {
-      "title": "The Dazey Phase Boards ‘Americanish’ Creator-Star Aizzah Fatima’s New Movie ‘Miss Christian Babe’",
-      "score": 36,
-      "pattern": "",
-      "priority_type": "Production / Filming Updates",
-      "source": "Deadline",
-      "seen_at": "2026-11-06T23:14:40.022268+06:00"
-    },
-    {
-      "title": "Bill Hader To Guest Star On ‘Abbott Elementary’ This Season",
-      "score": 61,
-      "pattern": "",
-      "priority_type": "Cast / Character Announcements",
-      "source": "Deadline",
-      "seen_at": "2026-11-06T23:14:40.022364+06:00"
-    },
-    {
-      "title": "Titan1Studios Adapting Stephen R. Bown’s ‘The Company: The Rise and Fall Of The Hudson’s Bay Empire’ As Historical Drama Series",
-      "score": 69,
-      "pattern": "",
-      "priority_type": "New Movie / Series Announcements",
-      "source": "Deadline",
-      "seen_at": "2026-11-06T23:14:40.022486+06:00"
-    },
-    {
-      "title": "Cinemark Stock Pops On Record Q3 Revenue",
-      "score": 63,
-      "pattern": "",
-      "priority_type": "Box Office Updates",
-      "source": "Deadline",
-      "seen_at": "2026-11-06T23:14:40.022583+06:00"
-    },
-    {
-      "title": "Tristan Thompson Boards Jason Zada’s Bitcoin Creator Movie ‘Satoshi’ as Producer (EXCLUSIVE)",
-      "score": 72,
-      "pattern": "",
-      "priority_type": "Production / Filming Updates",
-      "source": "Variety",
-      "seen_at": "2026-11-06T23:14:40.022685+06:00"
-    },
-    {
-      "title": "Josh O’Connor Describes Bond Rumors as ‘Incredibly Bizarre Pinch Me Moment’: ‘To Be Considered Is Extraordinary’",
-      "score": 37,
-      "pattern": "",
-      "priority_type": "Cast / Character Announcements",
-      "source": "Variety",
-      "seen_at": "2026-11-06T23:14:40.022794+06:00"
-    },
-    {
-      "title": "Creators Pounce on Midterm Elections, Hoping to Win New Viewers and More Dollars",
-      "score": 51,
-      "pattern": "",
-      "priority_type": "Upcoming OTT Releases",
-      "source": "Variety",
-      "seen_at": "2026-11-06T23:14:40.022908+06:00"
-    },
-    {
-      "title": "Olga Kurylenko and Alex Pettyfer to Star in Crime Thriller ‘Breakwater,’ WestEnd Films Boards Sales (EXCLUSIVE)",
-      "score": 63,
-      "pattern": "",
-      "priority_type": "Cast / Character Announcements",
-      "source": "Variety",
-      "seen_at": "2026-11-06T23:14:40.023020+06:00"
-    },
-    {
-      "title": "Pierce Brosnan, Fiona Shaw, Cara Delevingne and Gabrielle Union Throw a Lavish Christmas Party in New Burberry Campaign",
-      "score": 42,
-      "pattern": "",
-      "priority_type": "First Look / First Glimpse / Posters",
-      "source": "Variety",
-      "seen_at": "2026-11-06T23:14:40.023135+06:00"
-    },
-    {
-      "title": "Behind Election Night Scenes, Fox News Launches New Multimedia Era",
-      "score": 50,
-      "pattern": "",
-      "priority_type": "Production / Filming Updates",
-      "source": "Variety",
-      "seen_at": "2026-11-06T23:14:40.023230+06:00"
-    },
-    {
-      "title": "Versant CEO: MS NOW Not Suffering From ‘News Fatigue’ Like Fox News",
-      "score": 41,
-      "pattern": "",
-      "priority_type": "Production / Filming Updates",
-      "source": "Variety",
-      "seen_at": "2026-11-06T23:14:40.023330+06:00"
-    },
-    {
-      "title": "OTT Releases This Week: ఓటీటీలో సినిమాల జాతర.. ఈ వారం మిస్ కాకుండా చూడాల్సిన మూవీస్ ఇవే! | OTT Releases This Week: 20+ Movies & Web Series S",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "OTT / Streaming Availability",
-      "source": "telugu.filmibeat.com",
-      "seen_at": "2026-11-06T23:14:40.023418+06:00"
-    },
-    {
-      "title": "Versant Sees Q3 Profit Drop Despite Upticks in Non-TV Operations",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "Box Office Updates",
-      "source": "Variety",
-      "seen_at": "2026-11-06T23:14:40.023446+06:00"
-    },
-    {
-      "title": "Beetz Brothers Hails Skydance Content Chief Casey Bloys",
-      "score": 39,
-      "pattern": "",
-      "priority_type": "Production / Filming Updates",
-      "source": "Deadline",
-      "seen_at": "2026-11-06T23:14:40.023469+06:00"
-    },
-    {
-      "title": "‘The Invited’ Series Inspired By Wendy Webb Novels In Works From Impossible Dream Entertainment & Wall To Wall; Helen Black & Jeff Howard Sc",
-      "score": 73,
-      "pattern": "",
-      "priority_type": "New Movie / Series Announcements",
-      "source": "Deadline",
-      "seen_at": "2026-11-06T23:14:40.023593+06:00"
-    },
-    {
-      "title": "Introducing AI Discover: A New Place to Find Your Next Great Watch -  About Netflix",
-      "score": 76,
-      "pattern": "",
-      "priority_type": "OTT / Streaming Availability",
-      "source": "about.netflix.com",
-      "seen_at": "2026-11-06T23:14:40.023626+06:00"
-    },
-    {
-      "title": "Ranbir Kapoor and Yash’s ‘Ramayana’ Makers on Retelling India’s Epic for the World, as Amazon Music and T-Series Bet on A.R. Rahman and Hans",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "",
-      "source": "Variety",
-      "seen_at": "2026-11-06T23:14:40.023757+06:00"
-    },
-    {
-      "title": "Andrew Garfield Says He ‘Never Had Any Interaction’ With Sam Altman While Filming ‘Artificial,’ Despite Altman Claiming They Waved to Each O",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "",
-      "source": "Variety",
-      "seen_at": "2026-11-06T23:14:40.023916+06:00"
-    },
-    {
-      "title": "Netflix Pe Pitega Titu Mama Ka ‘Dhindora’: India’s First and Biggest Digital Creator Bhuvan Bam Brings Cult Favourite Back for Season 2 on N",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "",
-      "source": "about.netflix.com",
-      "seen_at": "2026-11-06T23:14:40.023982+06:00"
-    },
-    {
-      "title": "From ‘World of Warcraft Forever’ Surprise to Le Sserafim, Simu Liu and T-Pain Appearances, How BlizzCon 2026 Set the Stage for Blizzard Ente",
-      "score": 68,
-      "pattern": "",
-      "priority_type": "First Look / First Glimpse / Posters",
-      "source": "Variety",
-      "seen_at": "2026-11-06T23:14:40.024112+06:00"
-    },
-    {
-      "title": "North of North Season 2 Is Now Streaming - Netflix Tudum",
-      "score": 100,
-      "pattern": "",
-      "priority_type": "OTT / Streaming Availability",
-      "source": "Netflix Tudum",
-      "seen_at": "2026-11-06T23:15:56.482726+06:00"
-    },
-    {
-      "title": "‘The End of Oak Street’ Sets HBO Max Streaming Release Date",
-      "score": 87,
-      "pattern": "",
-      "priority_type": "OTT / Streaming Availability",
-      "source": "Variety",
-      "seen_at": "2026-11-06T23:15:56.482853+06:00"
-    },
     {
       "title": "SpongeBob SquarePants Special ‘Merry Christmas, Mr. Plankton’ Sets Nickelodeon, Paramount+ Release Date (EXCLUSIVE)",
       "score": 81,
@@ -53510,18 +53179,194 @@
       "priority_type": "New Movie / Series Announcements",
       "source": "Deadline",
       "seen_at": "2026-11-14T20:53:17.968578+06:00"
+    },
+    {
+      "title": "‘Harry Potter’ Star Paapa Essiedu Says ‘I Don’t Want to Talk About’ J.K. Rowling ‘At All’ but ‘Trans People Have the Right to Be Treated Wit",
+      "score": 22,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Variety",
+      "seen_at": "2026-11-15T01:47:45.173839+06:00"
+    },
+    {
+      "title": "From Local to Global: Anshuman Jha & Sarah-Jane Dias On Advocating Animal Rights In ‘Lakadbaggha 2’ & Uniqueness Of Crafting An Indian Actio",
+      "score": 35,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Deadline",
+      "seen_at": "2026-11-15T01:47:45.173988+06:00"
+    },
+    {
+      "title": "Amanda Seyfried Joined ‘You Can See Everything’ Without Reps Knowing, Had ‘No Approval’ Over Filming and Got ‘Disrespected’ by Billy Evans: ",
+      "score": 31,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Variety",
+      "seen_at": "2026-11-15T01:47:45.174130+06:00"
+    },
+    {
+      "title": "OTT This week: ஜெயிலர் 2 முதல் ரணபாலி' வரை.. இந்த வாரம் ஓடிடியை கலக்க வரும் மாஸ் படங்களின் லிஸ்ட்! | November 12th to November 15th This wee",
+      "score": 78,
+      "pattern": "",
+      "priority_type": "OTT / Streaming Availability",
+      "source": "tamil.filmibeat.com",
+      "seen_at": "2026-11-15T01:47:45.174221+06:00"
+    },
+    {
+      "title": "2027 புத்தாண்டுக்கே ரசிகர்களுக்கு ட்ரீட் கொடுக்கும் சிஎம் விஜய்.. இந்த படம் ரீ ரிலிஸ் ஆகுதாம்! | CM Vijay's Bairavaa will re release on New ",
+      "score": 73,
+      "pattern": "",
+      "priority_type": "Theatrical Releases / Re-releases",
+      "source": "tamil.filmibeat.com",
+      "seen_at": "2026-11-15T01:47:45.174309+06:00"
+    },
+    {
+      "title": "‘Hold Onto Me’ Director Myrsini Aristidou Kicks Off Historic Oscar Campaign for Sundance Audience Award Winner: ‘I Really Feel Like We’re Un",
+      "score": 32,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Variety",
+      "seen_at": "2026-11-15T01:47:45.174430+06:00"
+    },
+    {
+      "title": "Gambit Gets Serious: Channing Tatum’s Superhero Is ‘Not All Laughs’ in ‘Avengers: Doomsday’ as Kevin Feige Promises Fans a ‘Fully-Rounded Ch",
+      "score": 33,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Variety",
+      "seen_at": "2026-11-15T01:47:45.174569+06:00"
+    },
+    {
+      "title": "Venice Prizewinner ‘A Day in the Life of Jo’ Explores ‘Who and What We Truly Are’ Through Emotional Journey of Ordinary, Remarkable Teenage ",
+      "score": 35,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Variety",
+      "seen_at": "2026-11-15T01:47:45.174697+06:00"
+    },
+    {
+      "title": "‘The Good Daughter’ Stars Rose Byrne and Meghann Fahy on Playing Sisters With Secrets and That Twisty Killer Ending",
+      "score": 86,
+      "pattern": "",
+      "priority_type": "OTT / Streaming Availability",
+      "source": "Variety",
+      "seen_at": "2026-11-15T01:50:07.290992+06:00"
+    },
+    {
+      "title": "Gambit Gets Serious: Channing Tatum’s Superhero Is ‘Not All Laughs’ in ‘Avengers: Doomsday’ as Kevin Feige Promises Fans a ‘Fully-Rounded Ch",
+      "score": 55,
+      "pattern": "",
+      "priority_type": "Upcoming OTT Releases",
+      "source": "Variety",
+      "seen_at": "2026-11-15T01:50:07.291138+06:00"
+    },
+    {
+      "title": "2026-27 Premiere Dates For New & Returning Series On Broadcast, Streaming & Cable",
+      "score": 76,
+      "pattern": "",
+      "priority_type": "Release Date Confirmations",
+      "source": "Deadline",
+      "seen_at": "2026-11-15T01:50:07.291254+06:00"
+    },
+    {
+      "title": "Venice Prizewinner ‘A Day in the Life of Jo’ Explores ‘Who and What We Truly Are’ Through Emotional Journey of Ordinary, Remarkable Teenage ",
+      "score": 67,
+      "pattern": "",
+      "priority_type": "Theatrical Releases / Re-releases",
+      "source": "Variety",
+      "seen_at": "2026-11-15T01:50:07.291403+06:00"
+    },
+    {
+      "title": "Cinephil Boards Alexandru Solomon’s Romanian Election Doc ‘Small Expectations’ – IDFA",
+      "score": 59,
+      "pattern": "",
+      "priority_type": "Theatrical Releases / Re-releases",
+      "source": "Deadline",
+      "seen_at": "2026-11-15T01:50:07.291574+06:00"
+    },
+    {
+      "title": "Jason Voorhees Makes His Animated Debut in New ‘Never Hike Alone’ Short",
+      "score": 26,
+      "pattern": "sports",
+      "priority_type": "Theatrical Releases / Re-releases",
+      "source": "Variety",
+      "seen_at": "2026-11-15T01:50:07.291632+06:00"
+    },
+    {
+      "title": "‘Victorian Psycho’ Joins New James Gray and Pedro Almodóvar Releases In Indie Weekend Lineup — Specialty Preview",
+      "score": 15,
+      "pattern": "",
+      "priority_type": "Theatrical Releases / Re-releases",
+      "source": "Deadline",
+      "seen_at": "2026-11-15T01:50:07.291763+06:00"
+    },
+    {
+      "title": "‘Magic The Gathering’ Netflix Animated Series ‘Planeswalker’ Unveils First-Look Photo & Release Year",
+      "score": 81,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Deadline",
+      "seen_at": "2026-11-15T01:50:07.291894+06:00"
+    },
+    {
+      "title": "Hulu & ‘Secret Lives Of Mormon Wives’ Producers Accused Crafting “False Narrative” & “Staged Confrontations”",
+      "score": 32,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Deadline",
+      "seen_at": "2026-11-15T01:50:07.292011+06:00"
+    },
+    {
+      "title": "Michael Mann Seeks to Reclaim Rights to Original ‘Heat’ Screenplay",
+      "score": 30,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Variety",
+      "seen_at": "2026-11-15T01:50:07.292129+06:00"
+    },
+    {
+      "title": "Logan Lerman Latest To Join Searchlight’s ‘Playmates’",
+      "score": 13,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Deadline",
+      "seen_at": "2026-11-15T01:50:07.292242+06:00"
+    },
+    {
+      "title": "Zosia Mamet Says ‘Girls’ Revival Was “In Talks For A Very Long Time”: “I Kind Of Gave Up”",
+      "score": 25,
+      "pattern": "",
+      "priority_type": "Season Renewals / New Season Updates",
+      "source": "Deadline",
+      "seen_at": "2026-11-15T01:50:07.292375+06:00"
+    },
+    {
+      "title": "‘Yellowjackets’ Co-Creator Bart Nickerson Hints That Unreleased Bonus Episode Didn’t Fit “Canon Of The Show”",
+      "score": 19,
+      "pattern": "",
+      "priority_type": "Season Renewals / New Season Updates",
+      "source": "Deadline",
+      "seen_at": "2026-11-15T01:50:07.292504+06:00"
+    },
+    {
+      "title": "‘Dept. Q’ Crew Member Dies on Set in Edinburgh After Season 2 Wrapped Filming",
+      "score": 19,
+      "pattern": "",
+      "priority_type": "Season Renewals / New Season Updates",
+      "source": "Variety",
+      "seen_at": "2026-11-15T01:50:07.292637+06:00"
     }
   ],
   "adaptive_metrics": {
-    "raw_discovered": 70,
-    "pre_cerebras_rejected": 25195,
-    "hard_rejected": 8644,
+    "raw_discovered": 66,
+    "pre_cerebras_rejected": 25291,
+    "hard_rejected": 8688,
     "duplicate_rejected": 209,
-    "learned_rejected": 16342,
-    "passed_to_cerebras": 4545,
-    "cerebras_ranked": 10850,
-    "published": 976,
-    "estimated_candidates_avoided": 25195
+    "learned_rejected": 16394,
+    "passed_to_cerebras": 4549,
+    "cerebras_ranked": 10864,
+    "published": 977,
+    "estimated_candidates_avoided": 25291
   },
   "source_quality": {
     "collider.com": {
@@ -53553,11 +53398,11 @@
       "last_seen": "2026-09-08T11:49:09.577970+06:00"
     },
     "deadline.com": {
-      "observations": 4977,
-      "low_score_count": 4039,
-      "total_score": 252027,
+      "observations": 4985,
+      "low_score_count": 4046,
+      "total_score": 252347,
       "avg_score": 50.6,
-      "last_seen": "2026-11-14T20:53:17.968699+06:00"
+      "last_seen": "2026-11-15T01:50:07.292755+06:00"
     },
     "thewrap.com": {
       "observations": 16,
@@ -53574,11 +53419,11 @@
       "last_seen": "2026-09-08T21:05:13.366232+06:00"
     },
     "variety.com": {
-      "observations": 5244,
-      "low_score_count": 4328,
-      "total_score": 250321,
+      "observations": 5250,
+      "low_score_count": 4333,
+      "total_score": 250604,
       "avg_score": 47.7,
-      "last_seen": "2026-11-14T20:53:17.968676+06:00"
+      "last_seen": "2026-11-15T01:50:07.292764+06:00"
     },
     "indiewire.com": {
       "observations": 10,
@@ -53695,7 +53540,7 @@
   },
   "category_coverage": {
     "Major Film Announcements": "2026-11-06T22:18:20.099531+06:00",
-    "Release Dates": "2026-11-13T22:23:54.830648+06:00",
+    "Release Dates": "2026-11-15T01:53:08.654007+06:00",
     "Studio Business": "2026-10-24T20:35:57.113797+06:00",
     "Streaming Platform News": "2026-11-06T22:17:44.559012+06:00",
     "Franchises and IP": "2026-11-06T22:17:34.555229+06:00",
