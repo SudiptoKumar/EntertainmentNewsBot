@@ -1,148 +1,148 @@
 {
   "feeds": {
     "https://deadline.com/feed/": {
-      "etag": "W/\"3206014546ca04ea260a57fc4b4a2ebf\"",
-      "last_modified": "Sun, 15 Nov 2026 06:34:23 GMT",
-      "last_checked": "2026-11-15T13:39:09.655812+06:00",
+      "etag": "W/\"08862552ecbf43d68991793170217734\"",
+      "last_modified": "Sun, 15 Nov 2026 12:12:59 GMT",
+      "last_checked": "2026-11-15T21:27:58.048491+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://variety.com/feed/": {
-      "etag": "W/\"0b57011c514bd399db51c1ebf99d2b85\"",
-      "last_modified": "Sun, 15 Nov 2026 07:34:29 GMT",
-      "last_checked": "2026-11-15T13:39:11.395878+06:00",
+      "etag": "W/\"a0d1bed05eb51953da7b616703759f08\"",
+      "last_modified": "Sun, 15 Nov 2026 14:56:35 GMT",
+      "last_checked": "2026-11-15T21:27:59.439624+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.hollywoodreporter.com/feed/": {
-      "etag": "W/\"08f4ff83555cddb580128fd02303658d\"",
-      "last_modified": "Sun, 15 Nov 2026 06:07:57 GMT",
-      "last_checked": "2026-11-15T13:39:12.791979+06:00",
+      "etag": "W/\"a73e2ec0e059fc23c95a1fe2d8ee8dad\"",
+      "last_modified": "Sun, 15 Nov 2026 10:39:30 GMT",
+      "last_checked": "2026-11-15T21:28:01.226261+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.thewrap.com/feed/": {
       "etag": "\"a9ca7330692e879651f18bcaeb92818a\"",
       "last_modified": "Sun, 15 Nov 2026 05:56:22 GMT",
-      "last_checked": "2026-11-15T13:39:14.007660+06:00",
+      "last_checked": "2026-11-15T21:28:02.435318+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.indiewire.com/feed/": {
       "etag": "W/\"bb1d2a54237fe836c75eff6338bfb32b\"",
       "last_modified": "Sat, 14 Nov 2026 19:53:00 GMT",
-      "last_checked": "2026-11-15T13:39:14.981398+06:00",
+      "last_checked": "2026-11-15T21:28:03.311066+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://collider.com/feed/": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-15T13:39:15.213083+06:00",
+      "last_checked": "2026-11-15T21:28:03.641929+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://tvline.com/feed/": {
-      "etag": "\"7be750c2997cd8d699b681c43d0d7bed\"",
-      "last_modified": "Sun, 15 Nov 2026 05:22:24 GMT",
-      "last_checked": "2026-11-15T13:39:16.303718+06:00",
+      "etag": "\"7542109baf6b6feb1446f7ba7ece3a98\"",
+      "last_modified": "Sun, 15 Nov 2026 15:05:34 GMT",
+      "last_checked": "2026-11-15T21:28:04.752800+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.ottplay.com/rss": {
       "etag": "\"b5496c89c58ff0f5d07d64a68d4efe07\"",
       "last_modified": "Thu, 27 May 2021 12:38:49 GMT",
-      "last_checked": "2026-11-15T13:39:19.323391+06:00",
+      "last_checked": "2026-11-15T21:28:07.734353+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.filmibeat.com/rss/feeds/filmibeat-news.xml": {
       "etag": null,
-      "last_modified": "Sun, 15 Nov 2026 07:38:31 GMT",
-      "last_checked": "2026-11-15T13:39:19.659838+06:00",
+      "last_modified": "Sun, 15 Nov 2026 15:28:08 GMT",
+      "last_checked": "2026-11-15T21:28:08.576836+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.pinkvilla.com/rss": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-15T13:39:20.511115+06:00",
+      "last_checked": "2026-11-15T21:28:09.213674+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.bollywoodhungama.com/feed/": {
-      "etag": "\"f252ada188147352054dea49121224b4\"",
-      "last_modified": "Sun, 15 Nov 2026 07:31:01 GMT",
-      "last_checked": "2026-11-15T13:39:21.015107+06:00",
+      "etag": "\"edcf6d8ed5fb0e0e45b8a8bce605bdce\"",
+      "last_modified": "Sun, 15 Nov 2026 14:29:16 GMT",
+      "last_checked": "2026-11-15T21:28:09.362974+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.gadgets360.com/entertainment/rss": {
-      "last_checked": "2026-11-15T13:39:23.182673+06:00",
-      "fail_count": 232,
+      "last_checked": "2026-11-15T21:28:11.066353+06:00",
+      "fail_count": 233,
       "alerted": true
     },
     "https://www.soompi.com/feed": {
-      "etag": "W/\"3d68a69b1626bcaaca029d1267b26849\"",
-      "last_modified": "Sun, 15 Nov 2026 07:26:38 GMT",
-      "last_checked": "2026-11-15T13:39:23.451187+06:00",
+      "etag": "W/\"691839cf72980abc476a18d26cfbc9ec\"",
+      "last_modified": "Sun, 15 Nov 2026 14:57:53 GMT",
+      "last_checked": "2026-11-15T21:28:11.305908+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.whats-on-netflix.com/feed/": {
       "etag": null,
-      "last_modified": "Sat, 14 Nov 2026 21:31:01 GMT",
-      "last_checked": "2026-11-15T13:39:25.330993+06:00",
+      "last_modified": "Sun, 15 Nov 2026 14:49:49 GMT",
+      "last_checked": "2026-11-15T21:28:12.918359+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.netflix.com/tudum/rss.xml": {
-      "last_checked": "2026-11-15T13:39:26.054677+06:00",
-      "fail_count": 232,
+      "last_checked": "2026-11-15T21:28:13.921337+06:00",
+      "fail_count": 233,
       "alerted": true
     },
     "https://press.wbd.com/us/en/rss": {
-      "last_checked": "2026-11-15T13:39:26.387910+06:00",
-      "fail_count": 232,
+      "last_checked": "2026-11-15T21:28:14.459667+06:00",
+      "fail_count": 233,
       "alerted": true
     },
     "https://www.apple.com/tv-pr/newsroom/feed/": {
-      "last_checked": "2026-11-15T13:39:27.283606+06:00",
-      "fail_count": 232,
+      "last_checked": "2026-11-15T21:28:15.172105+06:00",
+      "fail_count": 233,
       "alerted": true
     },
     "https://www.aboutamazon.com/rss": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-15T13:39:27.461487+06:00",
+      "last_checked": "2026-11-15T21:28:15.386467+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.marvel.com/articles/feed": {
-      "last_checked": "2026-11-15T13:39:27.548984+06:00",
-      "fail_count": 232,
+      "last_checked": "2026-11-15T21:28:16.158514+06:00",
+      "fail_count": 233,
       "alerted": true
     },
     "https://www.dc.com/blog/rss.xml": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-15T13:39:27.701622+06:00",
-      "fail_count": 13,
+      "last_checked": "2026-11-15T21:28:17.264471+06:00",
+      "fail_count": 14,
       "alerted": true
     },
     "https://www.sonypictures.com/rss": {
-      "last_checked": "2026-11-15T13:39:28.025105+06:00",
-      "fail_count": 232,
+      "last_checked": "2026-11-15T21:28:17.708470+06:00",
+      "fail_count": 233,
       "alerted": true
     },
     "https://www.paramount.com/rss": {
-      "last_checked": "2026-11-15T13:39:28.188077+06:00",
-      "fail_count": 232,
+      "last_checked": "2026-11-15T21:28:17.863934+06:00",
+      "fail_count": 233,
       "alerted": true
     },
     "https://www.universalpictures.com/rss": {
-      "last_checked": "2026-11-15T13:39:28.522558+06:00",
-      "fail_count": 232,
+      "last_checked": "2026-11-15T21:28:18.291671+06:00",
+      "fail_count": 233,
       "alerted": true
     }
   },
@@ -1469,13 +1469,13 @@
       "status": "pending",
       "first_seen": "2026-11-15T01:47:45.648912+06:00",
       "last_seen": "2026-11-15T01:47:45.648928+06:00",
-      "importance_score": 28,
-      "priority_type": "New Movie / Series Announcements",
-      "priority_tier": 2,
-      "priority_rank": 6,
+      "importance_score": 18,
+      "priority_type": "Release Date Confirmations",
+      "priority_tier": 1,
+      "priority_rank": 4,
       "sector": "Hollywood",
-      "rank_reason": "Controversy about a series, not a release announcement.",
-      "last_ranked_at": "2026-11-15T13:39:37.015319+06:00",
+      "rank_reason": "The piece focuses on controversy rather than a release announcement, keeping the score well below the publishable threshold.",
+      "last_ranked_at": "2026-11-15T21:28:32.026482+06:00",
       "learning_pattern": ""
     },
     "deadline.com/feature/2026-tv-premiere-dates-1236391902": {
@@ -1539,17 +1539,18 @@
       "image": "https://deadline.com/wp-content/uploads/2026/10/Amanda-Seyfried-credit-Nico-Bustos.jpg",
       "discovery": "rss",
       "date_estimated": false,
-      "status": "pending",
+      "status": "posted",
       "first_seen": "2026-11-15T13:39:09.778929+06:00",
-      "last_seen": "2026-11-15T13:39:09.778946+06:00",
-      "importance_score": 95,
+      "last_seen": "2026-11-15T21:27:58.266212+06:00",
+      "importance_score": 85,
       "priority_type": "Release Date Confirmations",
       "priority_tier": 1,
       "priority_rank": 4,
       "sector": "Hollywood",
-      "rank_reason": "Official announcement of Amanda Seyfried hosting the Dec 5 SNL episode provides a clear release date, platform and audience anticipation.",
-      "last_ranked_at": "2026-11-15T13:39:37.014780+06:00",
-      "learning_pattern": ""
+      "rank_reason": "Official NBC announcement of Amanda Seyfried hosting SNL on Dec 5, 2026 provides a clear release date and platform, meeting the release‑only criteria with strong audience anticipation and high‑profile reach.",
+      "last_ranked_at": "2026-11-15T21:28:32.026021+06:00",
+      "learning_pattern": "",
+      "posted_at": "2026-11-15T21:28:36.140398+06:00"
     },
     "deadline.com/2026/11/nickelodeon-kids-choice-awards-winners-1237223740": {
       "title": "Nickelodeon Kids’ Choice Awards: BTS, ‘Stranger Things’ & ‘KPop Demon Hunters’ Among Winners",
@@ -1565,14 +1566,14 @@
       "date_estimated": false,
       "status": "pending",
       "first_seen": "2026-11-15T13:39:09.928549+06:00",
-      "last_seen": "2026-11-15T13:39:09.928567+06:00",
-      "importance_score": 38,
-      "priority_type": "New Movie / Series Announcements",
-      "priority_tier": 2,
-      "priority_rank": 6,
-      "sector": "International",
-      "rank_reason": "Awards ceremony results; no new release announced, therefore score kept well below publishable threshold.",
-      "last_ranked_at": "2026-11-15T13:39:37.015197+06:00",
+      "last_seen": "2026-11-15T21:27:58.409425+06:00",
+      "importance_score": 25,
+      "priority_type": "Release Date Confirmations",
+      "priority_tier": 1,
+      "priority_rank": 4,
+      "sector": "Hollywood",
+      "rank_reason": "Awards results are reported without any new release information, resulting in a low overall score.",
+      "last_ranked_at": "2026-11-15T21:28:32.026376+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/tv/news/amanda-seyfried-snl-host-debut-december-don-toliver-1236947942": {
@@ -1589,14 +1590,62 @@
       "date_estimated": false,
       "status": "pending",
       "first_seen": "2026-11-15T13:39:11.698585+06:00",
-      "last_seen": "2026-11-15T13:39:11.698610+06:00",
-      "importance_score": 86,
+      "last_seen": "2026-11-15T21:28:00.512412+06:00",
+      "importance_score": 76,
       "priority_type": "Release Date Confirmations",
       "priority_tier": 1,
       "priority_rank": 4,
       "sector": "Hollywood",
-      "rank_reason": "Duplicate reporting of the same SNL episode release; still a confirmed release but secondary to the first source.",
-      "last_ranked_at": "2026-11-15T13:39:37.014918+06:00",
+      "rank_reason": "Variety reports the same SNL hosting news; still a release date but with slightly lower source authority than the official NBC release.",
+      "last_ranked_at": "2026-11-15T21:28:32.026143+06:00",
+      "learning_pattern": ""
+    },
+    "deadline.com/2026/11/hbo-surprise-harry-potter-clip-hogwarts-banquet-1237224436": {
+      "title": "HBO Releases Surprise ‘Harry Potter’ Clip Of Hogwarts Banquet",
+      "url": "https://deadline.com/2026/11/hbo-surprise-harry-potter-clip-hogwarts-banquet-1237224436/",
+      "canonical": "deadline.com/2026/11/hbo-surprise-harry-potter-clip-hogwarts-banquet-1237224436",
+      "published_dt": "2026-11-15T17:03:17+06:00",
+      "published_date": "2026-11-15T17:03:17+06:00",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "excerpt": "HBO has offered up an early taste of the Hogwarts banquet. In a surprise 90-second clip from the upcoming Harry Potter series (see below), HBO showed Hogwarts students tucking into their start-of-term feast after new arrivals were sorted into their houses. The scene features Potter (Dominic McLaughlin) asking whether Albus Dumbledore (John Lithgow) is “a […]",
+      "image": "https://deadline.com/wp-content/uploads/2026/11/Screenshot-2026-11-15-at-10.42.57-e1794739463105.png",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-15T21:27:58.180524+06:00",
+      "last_seen": "2026-11-15T21:27:58.180539+06:00",
+      "importance_score": 70,
+      "priority_type": "OTT / Streaming Availability",
+      "priority_tier": 1,
+      "priority_rank": 1,
+      "sector": "Hollywood",
+      "rank_reason": "HBO officially released a 90‑second clip from the upcoming Harry Potter series, but no concrete release date was given, limiting the score to just below the publishable threshold.",
+      "last_ranked_at": "2026-11-15T21:28:32.025871+06:00",
+      "learning_pattern": ""
+    },
+    "variety.com/2026/film/global/seville-european-film-festival-prizes-you-dont-belong-here-1236948019": {
+      "title": "Seville European Film Festival Prizes: ‘You Don’t Belong Here,’ ‘Falling House,’ ’Adult Supervision’ Win Big",
+      "url": "https://variety.com/2026/film/global/seville-european-film-festival-prizes-you-dont-belong-here-1236948019/",
+      "canonical": "variety.com/2026/film/global/seville-european-film-festival-prizes-you-dont-belong-here-1236948019",
+      "published_dt": "2026-11-15T18:52:04+06:00",
+      "published_date": "2026-11-15T18:52:04+06:00",
+      "source": "Variety",
+      "region": "Entertainment",
+      "excerpt": "Romania’s Florin Şerban added a Seville Golden Giraldillo to a Golden Leopard at Locarno on Saturday, winning Best Film in main competition at the 2026 Seville European Film Festival which also prized Venice New Horizons buzz title “Falling House” and Sweden’s Oscar entry “Adult Supervision.” Seville’s biggest world premiere, Spain’s “The Director,” also scored a […]",
+      "image": "https://variety.com/wp-content/uploads/2026/11/PHOTO-SEBIAN.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-15T21:27:59.921156+06:00",
+      "last_seen": "2026-11-15T21:27:59.921172+06:00",
+      "importance_score": 30,
+      "priority_type": "Release Date Confirmations",
+      "priority_tier": 1,
+      "priority_rank": 4,
+      "sector": "International",
+      "rank_reason": "The article reports award winners at a film festival; it does not announce any new release, so it remains below the publishable score threshold.",
+      "last_ranked_at": "2026-11-15T21:28:32.026253+06:00",
       "learning_pattern": ""
     }
   },
@@ -10185,6 +10234,31 @@
       "selected_at": "2026-11-15T01:53:08.653505+06:00",
       "status": "published",
       "message_id": 1316
+    },
+    "snl_dec5_2026": {
+      "event_id": "snl_dec5_2026",
+      "canonical_url": "deadline.com/2026/11/amanda-seyfried-host-saturday-night-live-1237224388",
+      "original_url": "https://deadline.com/2026/11/amanda-seyfried-host-saturday-night-live-1237224388/",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "topic": "Release Dates",
+      "institution": "NBC",
+      "event_cluster_id": "evt_32b5a61b7b",
+      "event_confidence": 1.0,
+      "event_source_count": 2,
+      "headline": "Saturday Night Live",
+      "summary": "Amanda Seyfried will host SNL on Dec.",
+      "highlights": [
+        "Seyfried’s hosting debut is set for the Dec. 5 episode",
+        "Musical guest will be Don Toliver",
+        "Announcement made on the Nov. 14 episode"
+      ],
+      "concepts": [],
+      "key_numbers": [],
+      "published_at": "2026-11-15T11:34:48+06:00",
+      "selected_at": "2026-11-15T21:28:36.140540+06:00",
+      "status": "published",
+      "message_id": 1317
     }
   },
   "event_clusters": {
@@ -28959,12 +29033,11 @@
       ],
       "source_count": 2,
       "confidence": 1.0,
-      "last_seen": "2026-11-15T13:39:37.023238+06:00",
+      "last_seen": "2026-11-15T21:28:32.031777+06:00",
       "headline": "Amanda Seyfried To Host ‘Saturday Night Live’"
     }
   },
   "posted_event_ids": [
-    "evt_548f586568",
     "evt_e65315ed04",
     "evt_83baffc25a",
     "evt_2938c0d462",
@@ -29463,7 +29536,8 @@
     "evt_b8ddefd833",
     "evt_27a7ad2d55",
     "evt_1cbb0c023e",
-    "evt_1b620c1be9"
+    "evt_1b620c1be9",
+    "evt_32b5a61b7b"
   ],
   "recent_titles": [
     "jim queen",
@@ -29865,7 +29939,8 @@
     "the bachelor",
     "russell brand open secret",
     "virgin river",
-    "the good daughter"
+    "the good daughter",
+    "saturday night live"
   ],
   "work_memory": {
     "the dog stars": {
@@ -30630,9 +30705,9 @@
       "sector": "Hollywood",
       "first_published_at": "2026-09-10T21:14:56.150058+06:00",
       "published_events": {
-        "New Movie / Series Announcements": "2026-10-14T03:24:15.937257+06:00"
+        "New Movie / Series Announcements": "2026-11-15T21:28:36.140627+06:00"
       },
-      "last_published_at": "2026-10-14T03:24:15.937255+06:00"
+      "last_published_at": "2026-11-15T21:28:36.140622+06:00"
     },
     "honeymoon funeral": {
       "title": "Honeymoon/Funeral",
@@ -49012,6 +49087,17 @@
       "event_key": "The Good Daughter release",
       "canonical": "variety.com/2026/tv/news/the-good-daughter-spoilers-rose-byrne-meghann-fahy-season-finale-1236945641",
       "published_at": "2026-11-15T01:53:08.653988+06:00"
+    },
+    {
+      "fingerprint": "saturday night live|New Movie / Series Announcements|amanda seyfried will make her hosting debut the december joined musical guest don toliver the nbc sketch comedy made the during the nov hosted john mulaney with musical guest phoebe bridgers the last before thanksgiving hiatus that will strretch dec while amanda seyfried will host snl dec seyfried hosting debut set for the dec musical guest will don toliver made the nov nbc peacock",
+      "work_key": "saturday night live",
+      "priority_type": "New Movie / Series Announcements",
+      "headline": "Saturday Night Live",
+      "event_text": "Saturday Night Live Amanda Seyfried will make her Saturday Night Live hosting debut in the December 5 episode, joined by musical guest Don Toliver. The NBC sketch comedy made the announcement during the Nov. 14 episode hosted by John Mulaney with musical guest Phoebe Bridgers, the last before a Thanksgiving hiatus that will strretch to Dec. 5. While […] Amanda Seyfried will host SNL on Dec. Seyfried’s hosting debut is set for the Dec. 5 episode Musical guest will be Don Toliver Announcement made on the Nov. 14 episode NBC, Peacock",
+      "core": "amanda seyfried will make her hosting debut the december joined musical guest don toliver the nbc sketch comedy made the during the nov hosted john mulaney with musical guest phoebe bridgers the last before thanksgiving hiatus that will strretch dec while amanda seyfried will host snl dec seyfried hosting debut set for the dec musical guest will don toliver made the nov nbc peacock",
+      "event_key": "SNL_Dec5_2026",
+      "canonical": "deadline.com/2026/11/amanda-seyfried-host-saturday-night-live-1237224388",
+      "published_at": "2026-11-15T21:28:36.141074+06:00"
     }
   ],
   "fresh_start_at": "2026-09-07T13:58:06.173598+06:00",
@@ -49147,110 +49233,6 @@
     }
   },
   "score_history": [
-    {
-      "title": "Netflix Names Mattel Executive Roberto Stanichi as VP of Consumer Products and Experiences",
-      "score": 20,
-      "pattern": "",
-      "priority_type": "New Movie / Series Announcements",
-      "source": "Variety",
-      "seen_at": "2026-11-06T23:15:56.486167+06:00"
-    },
-    {
-      "title": "'The Gilded Age' Season 4 Debuts To Series' Best Premiere Audience Yet",
-      "score": 20,
-      "pattern": "",
-      "priority_type": "New Movie / Series Announcements",
-      "source": "Deadline",
-      "seen_at": "2026-11-06T23:15:56.486499+06:00"
-    },
-    {
-      "title": "‘Nobody Wants This’ Renewed For Season 4 By Netflix",
-      "score": 55,
-      "pattern": "",
-      "priority_type": "Season Renewals / New Season Updates",
-      "source": "Deadline",
-      "seen_at": "2026-11-06T23:15:56.486615+06:00"
-    },
-    {
-      "title": "OTT Releases This Week: ఓటీటీలో సినిమాల జాతర.. ఈ వారం మిస్ కాకుండా చూడాల్సిన మూవీస్ ఇవే! | OTT Releases This Week: 20+ Movies & Web Series S",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "OTT / Streaming Availability",
-      "source": "telugu.filmibeat.com",
-      "seen_at": "2026-11-07T03:22:36.887131+06:00"
-    },
-    {
-      "title": "‘The Invited’ Series Inspired By Wendy Webb Novels In Works From Impossible Dream Entertainment & Wall To Wall; Helen Black & Jeff Howard Sc",
-      "score": 73,
-      "pattern": "",
-      "priority_type": "New Movie / Series Announcements",
-      "source": "Deadline",
-      "seen_at": "2026-11-07T03:22:36.887269+06:00"
-    },
-    {
-      "title": "Jimmy Akingbola Signs With Paradigm",
-      "score": 48,
-      "pattern": "",
-      "priority_type": "Production / Filming Updates",
-      "source": "Deadline",
-      "seen_at": "2026-11-07T03:22:36.887370+06:00"
-    },
-    {
-      "title": "Chanel Pysnik Departing As Head Of Nonfiction For Prince Harry & Meghan Markle’s Archewell Prods.",
-      "score": 51,
-      "pattern": "",
-      "priority_type": "Production / Filming Updates",
-      "source": "Deadline",
-      "seen_at": "2026-11-07T03:22:36.887478+06:00"
-    },
-    {
-      "title": "Blumhouse & Atomic Monster Unveil New Name For Combined Studio",
-      "score": 69,
-      "pattern": "",
-      "priority_type": "Production / Filming Updates",
-      "source": "Deadline",
-      "seen_at": "2026-11-07T03:22:36.887590+06:00"
-    },
-    {
-      "title": "Milo Hutton, Booboo Stewart & KaDee Strickland Board Horror Thriller ‘The Thing In The Hall’",
-      "score": 49,
-      "pattern": "",
-      "priority_type": "Cast / Character Announcements",
-      "source": "Deadline",
-      "seen_at": "2026-11-07T03:22:36.887701+06:00"
-    },
-    {
-      "title": "‘Black Snow’: Travis Fimmel Is Back On Cold Case Trail In Teaser For Season 3; Premiere Date Set In Australia",
-      "score": 71,
-      "pattern": "",
-      "priority_type": "Trailer Releases",
-      "source": "Deadline",
-      "seen_at": "2026-11-07T03:22:36.887816+06:00"
-    },
-    {
-      "title": "Lili Taylor Joins ‘The Beast In Me’ Season 2 Cast",
-      "score": 60,
-      "pattern": "",
-      "priority_type": "Cast / Character Announcements",
-      "source": "Deadline",
-      "seen_at": "2026-11-07T03:22:36.887911+06:00"
-    },
-    {
-      "title": "‘Cher Adores Michael Douglas,’ Icon’s Rep Says After Douglas Disses Her Oscar Win for ‘Moonstruck’",
-      "score": 34,
-      "pattern": "",
-      "priority_type": "First Look / First Glimpse / Posters",
-      "source": "Variety",
-      "seen_at": "2026-11-07T03:22:36.888020+06:00"
-    },
-    {
-      "title": "‘The Elder Scrolls 6’ Title Revealed (Gaming News Roundup)",
-      "score": 76,
-      "pattern": "",
-      "priority_type": "First Look / First Glimpse / Posters",
-      "source": "Variety",
-      "seen_at": "2026-11-07T03:22:36.888117+06:00"
-    },
     {
       "title": "James Wan and Jason Blum Unveil New Company Name: Blumhouse Atomic",
       "score": 0,
@@ -53146,18 +53128,122 @@
       "priority_type": "OTT Platform Acquisition / Streaming Rights",
       "source": "Deadline",
       "seen_at": "2026-11-15T13:39:37.016715+06:00"
+    },
+    {
+      "title": "From Local to Global: Anshuman Jha & Sarah-Jane Dias On Advocating Animal Rights In ‘Lakadbaggha 2’ & Uniqueness Of Crafting An Indian Actio",
+      "score": 35,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Deadline",
+      "seen_at": "2026-11-15T21:27:57.964312+06:00"
+    },
+    {
+      "title": "Amanda Seyfried Joined ‘You Can See Everything’ Without Reps Knowing, Had ‘No Approval’ Over Filming and Got ‘Disrespected’ by Billy Evans: ",
+      "score": 31,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Variety",
+      "seen_at": "2026-11-15T21:27:57.964449+06:00"
+    },
+    {
+      "title": "OTT This week: ஜெயிலர் 2 முதல் ரணபாலி' வரை.. இந்த வாரம் ஓடிடியை கலக்க வரும் மாஸ் படங்களின் லிஸ்ட்! | November 12th to November 15th This wee",
+      "score": 78,
+      "pattern": "",
+      "priority_type": "OTT / Streaming Availability",
+      "source": "tamil.filmibeat.com",
+      "seen_at": "2026-11-15T21:27:57.964535+06:00"
+    },
+    {
+      "title": "2027 புத்தாண்டுக்கே ரசிகர்களுக்கு ட்ரீட் கொடுக்கும் சிஎம் விஜய்.. இந்த படம் ரீ ரிலிஸ் ஆகுதாம்! | CM Vijay's Bairavaa will re release on New ",
+      "score": 73,
+      "pattern": "",
+      "priority_type": "Theatrical Releases / Re-releases",
+      "source": "tamil.filmibeat.com",
+      "seen_at": "2026-11-15T21:27:57.964614+06:00"
+    },
+    {
+      "title": "‘Hold Onto Me’ Director Myrsini Aristidou Kicks Off Historic Oscar Campaign for Sundance Audience Award Winner: ‘I Really Feel Like We’re Un",
+      "score": 32,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Variety",
+      "seen_at": "2026-11-15T21:27:57.964725+06:00"
+    },
+    {
+      "title": "Gambit Gets Serious: Channing Tatum’s Superhero Is ‘Not All Laughs’ in ‘Avengers: Doomsday’ as Kevin Feige Promises Fans a ‘Fully-Rounded Ch",
+      "score": 55,
+      "pattern": "",
+      "priority_type": "Upcoming OTT Releases",
+      "source": "Variety",
+      "seen_at": "2026-11-15T21:27:57.964839+06:00"
+    },
+    {
+      "title": "Venice Prizewinner ‘A Day in the Life of Jo’ Explores ‘Who and What We Truly Are’ Through Emotional Journey of Ordinary, Remarkable Teenage ",
+      "score": 47,
+      "pattern": "",
+      "priority_type": "Theatrical Releases / Re-releases",
+      "source": "Variety",
+      "seen_at": "2026-11-15T21:27:57.964954+06:00"
+    },
+    {
+      "title": "HBO Releases Surprise ‘Harry Potter’ Clip Of Hogwarts Banquet",
+      "score": 70,
+      "pattern": "",
+      "priority_type": "OTT / Streaming Availability",
+      "source": "Deadline",
+      "seen_at": "2026-11-15T21:28:32.026689+06:00"
+    },
+    {
+      "title": "Amanda Seyfried To Host ‘Saturday Night Live’",
+      "score": 85,
+      "pattern": "",
+      "priority_type": "Release Date Confirmations",
+      "source": "Deadline",
+      "seen_at": "2026-11-15T21:28:32.026782+06:00"
+    },
+    {
+      "title": "Amanda Seyfried to Make Her Debut as ‘Saturday Night Live’ Host",
+      "score": 76,
+      "pattern": "",
+      "priority_type": "Release Date Confirmations",
+      "source": "Variety",
+      "seen_at": "2026-11-15T21:28:32.026892+06:00"
+    },
+    {
+      "title": "Seville European Film Festival Prizes: ‘You Don’t Belong Here,’ ‘Falling House,’ ’Adult Supervision’ Win Big",
+      "score": 30,
+      "pattern": "",
+      "priority_type": "Release Date Confirmations",
+      "source": "Variety",
+      "seen_at": "2026-11-15T21:28:32.027012+06:00"
+    },
+    {
+      "title": "Nickelodeon Kids’ Choice Awards: BTS, ‘Stranger Things’ & ‘KPop Demon Hunters’ Among Winners",
+      "score": 25,
+      "pattern": "",
+      "priority_type": "Release Date Confirmations",
+      "source": "Deadline",
+      "seen_at": "2026-11-15T21:28:32.027137+06:00"
+    },
+    {
+      "title": "Hulu & ‘Secret Lives Of Mormon Wives’ Producers Accused Crafting “False Narrative” & “Staged Confrontations”",
+      "score": 18,
+      "pattern": "",
+      "priority_type": "Release Date Confirmations",
+      "source": "Deadline",
+      "seen_at": "2026-11-15T21:28:32.027241+06:00"
     }
   ],
   "adaptive_metrics": {
-    "raw_discovered": 60,
-    "pre_cerebras_rejected": 25389,
-    "hard_rejected": 8730,
+    "raw_discovered": 62,
+    "pre_cerebras_rejected": 25486,
+    "hard_rejected": 8774,
     "duplicate_rejected": 209,
-    "learned_rejected": 16450,
-    "passed_to_cerebras": 4552,
-    "cerebras_ranked": 10871,
-    "published": 977,
-    "estimated_candidates_avoided": 25389
+    "learned_rejected": 16503,
+    "passed_to_cerebras": 4557,
+    "cerebras_ranked": 10877,
+    "published": 978,
+    "estimated_candidates_avoided": 25486
   },
   "source_quality": {
     "collider.com": {
@@ -53189,11 +53275,11 @@
       "last_seen": "2026-09-08T11:49:09.577970+06:00"
     },
     "deadline.com": {
-      "observations": 4990,
-      "low_score_count": 4050,
-      "total_score": 252565,
+      "observations": 4994,
+      "low_score_count": 4053,
+      "total_score": 252763,
       "avg_score": 50.6,
-      "last_seen": "2026-11-15T13:39:37.016799+06:00"
+      "last_seen": "2026-11-15T21:28:32.027306+06:00"
     },
     "thewrap.com": {
       "observations": 16,
@@ -53210,11 +53296,11 @@
       "last_seen": "2026-09-08T21:05:13.366232+06:00"
     },
     "variety.com": {
-      "observations": 5252,
-      "low_score_count": 4334,
-      "total_score": 250737,
+      "observations": 5254,
+      "low_score_count": 4336,
+      "total_score": 250843,
       "avg_score": 47.7,
-      "last_seen": "2026-11-15T13:39:37.016768+06:00"
+      "last_seen": "2026-11-15T21:28:32.027292+06:00"
     },
     "indiewire.com": {
       "observations": 10,
@@ -53331,7 +53417,7 @@
   },
   "category_coverage": {
     "Major Film Announcements": "2026-11-06T22:18:20.099531+06:00",
-    "Release Dates": "2026-11-15T01:53:08.653505+06:00",
+    "Release Dates": "2026-11-15T21:28:36.141097+06:00",
     "Studio Business": "2026-10-24T20:35:57.113797+06:00",
     "Streaming Platform News": "2026-11-06T22:17:44.559012+06:00",
     "Franchises and IP": "2026-11-06T22:17:34.555229+06:00",
