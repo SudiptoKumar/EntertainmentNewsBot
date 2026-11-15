@@ -1,298 +1,152 @@
 {
   "feeds": {
     "https://deadline.com/feed/": {
-      "etag": "W/\"08862552ecbf43d68991793170217734\"",
-      "last_modified": "Sun, 15 Nov 2026 12:12:59 GMT",
-      "last_checked": "2026-11-15T21:27:58.048491+06:00",
+      "etag": "W/\"4378f37809bd3788950e53317cbdea4e\"",
+      "last_modified": "Sun, 15 Nov 2026 20:27:36 GMT",
+      "last_checked": "2026-11-16T02:53:13.006495+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://variety.com/feed/": {
-      "etag": "W/\"a0d1bed05eb51953da7b616703759f08\"",
-      "last_modified": "Sun, 15 Nov 2026 14:56:35 GMT",
-      "last_checked": "2026-11-15T21:27:59.439624+06:00",
+      "etag": "W/\"008bc7d171f3110074f348e3a183f971\"",
+      "last_modified": "Sun, 15 Nov 2026 20:18:24 GMT",
+      "last_checked": "2026-11-16T02:53:14.371142+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.hollywoodreporter.com/feed/": {
-      "etag": "W/\"a73e2ec0e059fc23c95a1fe2d8ee8dad\"",
-      "last_modified": "Sun, 15 Nov 2026 10:39:30 GMT",
-      "last_checked": "2026-11-15T21:28:01.226261+06:00",
+      "etag": "W/\"7a244dbf87d0542bbb622c2741e9bac8\"",
+      "last_modified": "Sun, 15 Nov 2026 20:31:32 GMT",
+      "last_checked": "2026-11-16T02:53:16.188477+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.thewrap.com/feed/": {
-      "etag": "\"a9ca7330692e879651f18bcaeb92818a\"",
-      "last_modified": "Sun, 15 Nov 2026 05:56:22 GMT",
-      "last_checked": "2026-11-15T21:28:02.435318+06:00",
+      "etag": "\"efc5f9ae2cbb89309698c994586d4d11\"",
+      "last_modified": "Sun, 15 Nov 2026 20:37:37 GMT",
+      "last_checked": "2026-11-16T02:53:17.450866+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.indiewire.com/feed/": {
-      "etag": "W/\"bb1d2a54237fe836c75eff6338bfb32b\"",
-      "last_modified": "Sat, 14 Nov 2026 19:53:00 GMT",
-      "last_checked": "2026-11-15T21:28:03.311066+06:00",
+      "etag": "W/\"b0055baae3377a2001facf0443d61e11\"",
+      "last_modified": "Sun, 15 Nov 2026 18:50:22 GMT",
+      "last_checked": "2026-11-16T02:53:18.731719+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://collider.com/feed/": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-15T21:28:03.641929+06:00",
+      "last_checked": "2026-11-16T02:53:19.266529+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://tvline.com/feed/": {
-      "etag": "\"7542109baf6b6feb1446f7ba7ece3a98\"",
-      "last_modified": "Sun, 15 Nov 2026 15:05:34 GMT",
-      "last_checked": "2026-11-15T21:28:04.752800+06:00",
+      "etag": "\"280ca552fe49c390fc7ff12018f5eb35\"",
+      "last_modified": "Sun, 15 Nov 2026 20:12:00 GMT",
+      "last_checked": "2026-11-16T02:53:20.389439+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.ottplay.com/rss": {
       "etag": "\"b5496c89c58ff0f5d07d64a68d4efe07\"",
       "last_modified": "Thu, 27 May 2021 12:38:49 GMT",
-      "last_checked": "2026-11-15T21:28:07.734353+06:00",
+      "last_checked": "2026-11-16T02:53:23.000744+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.filmibeat.com/rss/feeds/filmibeat-news.xml": {
       "etag": null,
-      "last_modified": "Sun, 15 Nov 2026 15:28:08 GMT",
-      "last_checked": "2026-11-15T21:28:08.576836+06:00",
+      "last_modified": "Sun, 15 Nov 2026 20:53:23 GMT",
+      "last_checked": "2026-11-16T02:53:23.873123+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.pinkvilla.com/rss": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-15T21:28:09.213674+06:00",
+      "last_checked": "2026-11-16T02:53:24.299041+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.bollywoodhungama.com/feed/": {
-      "etag": "\"edcf6d8ed5fb0e0e45b8a8bce605bdce\"",
-      "last_modified": "Sun, 15 Nov 2026 14:29:16 GMT",
-      "last_checked": "2026-11-15T21:28:09.362974+06:00",
+      "etag": "\"38c1b258fae0743eed5139ae543664a4\"",
+      "last_modified": "Sun, 15 Nov 2026 17:18:41 GMT",
+      "last_checked": "2026-11-16T02:53:24.580780+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.gadgets360.com/entertainment/rss": {
-      "last_checked": "2026-11-15T21:28:11.066353+06:00",
-      "fail_count": 233,
+      "last_checked": "2026-11-16T02:53:26.666568+06:00",
+      "fail_count": 234,
       "alerted": true
     },
     "https://www.soompi.com/feed": {
-      "etag": "W/\"691839cf72980abc476a18d26cfbc9ec\"",
-      "last_modified": "Sun, 15 Nov 2026 14:57:53 GMT",
-      "last_checked": "2026-11-15T21:28:11.305908+06:00",
+      "etag": "W/\"077c2484c249cce0d9020b5b2ce03e28\"",
+      "last_modified": "Sun, 15 Nov 2026 18:32:51 GMT",
+      "last_checked": "2026-11-16T02:53:26.941741+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.whats-on-netflix.com/feed/": {
       "etag": null,
-      "last_modified": "Sun, 15 Nov 2026 14:49:49 GMT",
-      "last_checked": "2026-11-15T21:28:12.918359+06:00",
+      "last_modified": "Sun, 15 Nov 2026 19:13:24 GMT",
+      "last_checked": "2026-11-16T02:53:28.926604+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.netflix.com/tudum/rss.xml": {
-      "last_checked": "2026-11-15T21:28:13.921337+06:00",
-      "fail_count": 233,
+      "last_checked": "2026-11-16T02:53:30.033171+06:00",
+      "fail_count": 234,
       "alerted": true
     },
     "https://press.wbd.com/us/en/rss": {
-      "last_checked": "2026-11-15T21:28:14.459667+06:00",
-      "fail_count": 233,
+      "last_checked": "2026-11-16T02:53:30.310895+06:00",
+      "fail_count": 234,
       "alerted": true
     },
     "https://www.apple.com/tv-pr/newsroom/feed/": {
-      "last_checked": "2026-11-15T21:28:15.172105+06:00",
-      "fail_count": 233,
+      "last_checked": "2026-11-16T02:53:30.797251+06:00",
+      "fail_count": 234,
       "alerted": true
     },
     "https://www.aboutamazon.com/rss": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-15T21:28:15.386467+06:00",
+      "last_checked": "2026-11-16T02:53:30.911235+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.marvel.com/articles/feed": {
-      "last_checked": "2026-11-15T21:28:16.158514+06:00",
-      "fail_count": 233,
+      "last_checked": "2026-11-16T02:53:31.500221+06:00",
+      "fail_count": 234,
       "alerted": true
     },
     "https://www.dc.com/blog/rss.xml": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-15T21:28:17.264471+06:00",
-      "fail_count": 14,
+      "last_checked": "2026-11-16T02:53:32.403775+06:00",
+      "fail_count": 15,
       "alerted": true
     },
     "https://www.sonypictures.com/rss": {
-      "last_checked": "2026-11-15T21:28:17.708470+06:00",
-      "fail_count": 233,
+      "last_checked": "2026-11-16T02:53:33.016430+06:00",
+      "fail_count": 234,
       "alerted": true
     },
     "https://www.paramount.com/rss": {
-      "last_checked": "2026-11-15T21:28:17.863934+06:00",
-      "fail_count": 233,
+      "last_checked": "2026-11-16T02:53:33.052434+06:00",
+      "fail_count": 234,
       "alerted": true
     },
     "https://www.universalpictures.com/rss": {
-      "last_checked": "2026-11-15T21:28:18.291671+06:00",
-      "fail_count": 233,
+      "last_checked": "2026-11-16T02:53:33.458289+06:00",
+      "fail_count": 234,
       "alerted": true
     }
   },
   "queue": {
-    "deadline.com/2026/11/anshuman-jha-sarah-jane-dias-india-lakadbaggha-2-1237217345": {
-      "title": "From Local to Global: Anshuman Jha & Sarah-Jane Dias On Advocating Animal Rights In ‘Lakadbaggha 2’ & Uniqueness Of Crafting An Indian Action Franchise Rooted In Local Marital Arts",
-      "url": "https://deadline.com/2026/11/anshuman-jha-sarah-jane-dias-india-lakadbaggha-2-1237217345/",
-      "canonical": "deadline.com/2026/11/anshuman-jha-sarah-jane-dias-india-lakadbaggha-2-1237217345",
-      "published_dt": "2026-11-11T21:16:18+06:00",
-      "published_date": "2026-11-11T21:16:18+06:00",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "excerpt": "Deadline’s Local to Global series touched down in Bruges, Belgium, last week where we sat down with actor-director Anshuman Jha and actress Sarah-Jane Dias to discuss their upcoming Indian action title Lakadbaggha 2: The Monkey Business. The film, which had its world premiere at the Razor Reel Flanders Film Festival where it was the runner-up […]",
-      "image": "https://deadline.com/wp-content/uploads/2026/11/From-Local-To-Global.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-11-11T21:56:56.252260+06:00",
-      "last_seen": "2026-11-11T21:56:56.252284+06:00",
-      "importance_score": 35,
-      "priority_type": "New Movie / Series Announcements",
-      "priority_tier": 2,
-      "priority_rank": 6,
-      "sector": "Indian",
-      "rank_reason": "Discussion piece without concrete release date; kept below publishable threshold.",
-      "last_ranked_at": "2026-11-12T14:03:08.746530+06:00",
-      "learning_pattern": ""
-    },
-    "deadline.com/2026/11/mhz-choice-the-man-who-died-1237220161": {
-      "title": "MHz CHoice Becomes New U.S. Home For ‘The Man Who Died’, Finnish Dark Comedy Series From ‘Sherlock & Daughter’ Writer Brendan Foley",
-      "url": "https://deadline.com/2026/11/mhz-choice-the-man-who-died-1237220161/",
-      "canonical": "deadline.com/2026/11/mhz-choice-the-man-who-died-1237220161",
-      "published_dt": "2026-11-11T21:00:00+06:00",
-      "published_date": "2026-11-11T21:00:00+06:00",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "excerpt": "EXCLUSIVE: International drama streamer MHz Choice has acquired exclusive U.S. rights to Sherlock & Daughter writer Brendan Foley’s Finnish dark comedy The Man Who Died. The first season will premiere on MHz Choice on December 1 and the long-awaited second season, which never streamed in the U.S. during its original run on Acorn TV, will […]",
-      "image": "https://deadline.com/wp-content/uploads/2026/11/The-Man-Who-Died-e1794398212167.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-11-11T21:56:56.703428+06:00",
-      "last_seen": "2026-11-11T21:56:56.703446+06:00",
-      "importance_score": 77,
-      "priority_type": "OTT Platform Acquisition / Streaming Rights",
-      "priority_tier": 2,
-      "priority_rank": 8,
-      "sector": "International",
-      "rank_reason": "Acquisition announcement includes U.S. premiere date and platform, giving clear release info and cross‑border relevance.",
-      "last_ranked_at": "2026-11-12T14:03:08.746858+06:00",
-      "learning_pattern": ""
-    },
-    "variety.com/2026/film/news/amanda-seyfried-slams-billy-evans-you-can-see-everything-filming-1236945046": {
-      "title": "Amanda Seyfried Joined ‘You Can See Everything’ Without Reps Knowing, Had ‘No Approval’ Over Filming and Got ‘Disrespected’ by Billy Evans: ‘No Reason for Him to Get That Aggressive’",
-      "url": "https://variety.com/2026/film/news/amanda-seyfried-slams-billy-evans-you-can-see-everything-filming-1236945046/",
-      "canonical": "variety.com/2026/film/news/amanda-seyfried-slams-billy-evans-you-can-see-everything-filming-1236945046",
-      "published_dt": "2026-11-11T21:50:57+06:00",
-      "published_date": "2026-11-11T21:50:57+06:00",
-      "source": "Variety",
-      "region": "Entertainment",
-      "excerpt": "Amanda Seyfried started filming “You Can See Everything” without telling her agents or signing any deals with her lawyer, the actor revealed in a new interview with Rolling Stone. The Oscar nominee joined directors Nathan Fielder and Lance Oppenheim for the trio’s first spoiler-filled press interview together now that their documentary has been in theaters […]",
-      "image": "https://variety.com/wp-content/uploads/2026/11/P108ULUA.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-11-11T21:56:57.363013+06:00",
-      "last_seen": "2026-11-11T21:56:57.363030+06:00",
-      "importance_score": 31,
-      "priority_type": "New Movie / Series Announcements",
-      "priority_tier": 2,
-      "priority_rank": 6,
-      "sector": "Hollywood",
-      "rank_reason": "Interview content, no release schedule; low score.",
-      "last_ranked_at": "2026-11-12T14:03:08.746644+06:00",
-      "learning_pattern": ""
-    },
-    "about.netflix.com/en/news/imtiaz-alis-o-saathi-re-starring-aditi-rao-hydari-avinash-tiwary-and-arjun-rampal-premieres-december-4-on-netflix": {
-      "title": "Imtiaz Ali's ‘O Saathi Re’, Starring Aditi Rao Hydari, Avinash Tiwary, and Arjun Rampal, Premieres December 4 on Netflix -  About Netflix",
-      "url": "https://about.netflix.com/en/news/imtiaz-alis-o-saathi-re-starring-aditi-rao-hydari-avinash-tiwary-and-arjun-rampal-premieres-december-4-on-netflix",
-      "canonical": "about.netflix.com/en/news/imtiaz-alis-o-saathi-re-starring-aditi-rao-hydari-avinash-tiwary-and-arjun-rampal-premieres-december-4-on-netflix",
-      "published_dt": "2026-11-11T16:43:33+06:00",
-      "published_date": "2026-11-11T16:43:33+06:00",
-      "source": "about.netflix.com",
-      "region": "Entertainment",
-      "excerpt": "N o n e",
-      "image": "https://images.ctfassets.net/4cd45et68cgf/68I8dQNxs7Q81wWEswdy3H/73ace2c6df22e412635e85ca8a74b36a/EN-GB_OSR_Main_Vertical_1x1_RGB_PREDATE.jpg",
-      "discovery": "exa",
-      "source_pool": "primary",
-      "status": "posted",
-      "first_seen": "2026-11-11T21:58:05.739599+06:00",
-      "last_seen": "2026-11-11T21:58:05.739616+06:00",
-      "importance_score": 80,
-      "priority_type": "New Movie / Series Announcements",
-      "priority_tier": 2,
-      "priority_rank": 6,
-      "sector": "Indian",
-      "rank_reason": "Netflix officially announces the series will premiere Dec 4, 2026 – a high‑profile Imtiaz Ali project.",
-      "last_ranked_at": "2026-11-12T04:36:23.139734+06:00",
-      "learning_pattern": "",
-      "posted_at": "2026-11-12T04:40:29.942163+06:00"
-    },
-    "tamil.filmibeat.com/ott/november-12th-to-november-15th-this-week-ott-release-movies-and-web-series-186843.html": {
-      "title": "OTT This week: ஜெயிலர் 2 முதல் ரணபாலி' வரை.. இந்த வாரம் ஓடிடியை கலக்க வரும் மாஸ் படங்களின் லிஸ்ட்! | November 12th to November 15th This week ott release movies and web series - Tamil Filmibeat",
-      "url": "https://tamil.filmibeat.com/ott/november-12th-to-november-15th-this-week-ott-release-movies-and-web-series-186843.html",
-      "canonical": "tamil.filmibeat.com/ott/november-12th-to-november-15th-this-week-ott-release-movies-and-web-series-186843.html",
-      "published_dt": "2026-11-11T17:26:38+06:00",
-      "published_date": "2026-11-11T17:26:38+06:00",
-      "source": "tamil.filmibeat.com",
-      "region": "Entertainment",
-      "excerpt": "N o n e",
-      "image": "https://images.filmibeat.com/ta/img/2026/11/ott14-58891794396369.jpg",
-      "discovery": "exa",
-      "source_pool": "primary",
-      "status": "pending",
-      "first_seen": "2026-11-11T21:58:09.529998+06:00",
-      "last_seen": "2026-11-11T21:58:09.530016+06:00",
-      "importance_score": 78,
-      "priority_type": "OTT / Streaming Availability",
-      "priority_tier": 1,
-      "priority_rank": 1,
-      "sector": "Indian",
-      "rank_reason": "Exact OTT release date (Nov 12) and platform provided; major Tamil star and high box‑office expectations boost score.",
-      "last_ranked_at": "2026-11-12T14:03:08.745288+06:00",
-      "learning_pattern": ""
-    },
-    "disneyplus.com/en-sg/explore/articles/2026-binge-watch-guide": {
-      "title": "Best 2026 Movies & TV Shows Streaming on Disney+ | Explore Disney+ Singapore",
-      "url": "https://www.disneyplus.com/en-sg/explore/articles/2026-binge-watch-guide",
-      "canonical": "disneyplus.com/en-sg/explore/articles/2026-binge-watch-guide",
-      "published_dt": "2026-11-11T19:32:32+06:00",
-      "published_date": "2026-11-11T19:32:32+06:00",
-      "source": "disneyplus.com",
-      "region": "Entertainment",
-      "excerpt": "N o n e",
-      "image": "https://disney.images.edge.bamgrid.com/ripcut-delivery/v2/variant/disney/66E2211E3BD1D25CABAF6A0E9F940BE75E26F0FB96C2F915004F8354DC015271/scale?format=webp&width=1200",
-      "discovery": "exa",
-      "source_pool": "primary",
-      "status": "posted",
-      "first_seen": "2026-11-11T21:58:17.008752+06:00",
-      "last_seen": "2026-11-11T21:58:17.008767+06:00",
-      "importance_score": 87,
-      "priority_type": "Theatrical Releases / Re-releases",
-      "priority_tier": 1,
-      "priority_rank": 5,
-      "sector": "Hollywood",
-      "rank_reason": "Official Disney+ announcement confirms theatrical release on Dec 18, 2026, with strong platform and audience interest.",
-      "last_ranked_at": "2026-11-11T22:00:22.953607+06:00",
-      "learning_pattern": "",
-      "posted_at": "2026-11-11T22:05:23.816455+06:00"
-    },
     "deadline.com/2026/11/avengers-endgame-encore-disney-plus-stream-release-date-1237220911": {
       "title": "‘Avengers Endgame: Encore’ Sets Disney+ Release Date With New ‘Countdown To Doomsday’ Spot",
       "url": "https://deadline.com/2026/11/avengers-endgame-encore-disney-plus-stream-release-date-1237220911/",
@@ -1567,13 +1421,13 @@
       "status": "pending",
       "first_seen": "2026-11-15T13:39:09.928549+06:00",
       "last_seen": "2026-11-15T21:27:58.409425+06:00",
-      "importance_score": 25,
-      "priority_type": "Release Date Confirmations",
+      "importance_score": 34,
+      "priority_type": "OTT / Streaming Availability",
       "priority_tier": 1,
-      "priority_rank": 4,
-      "sector": "Hollywood",
-      "rank_reason": "Awards results are reported without any new release information, resulting in a low overall score.",
-      "last_ranked_at": "2026-11-15T21:28:32.026376+06:00",
+      "priority_rank": 1,
+      "sector": "International",
+      "rank_reason": "Award ceremony results; no new content release announced.",
+      "last_ranked_at": "2026-11-16T02:53:44.358947+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/tv/news/amanda-seyfried-snl-host-debut-december-don-toliver-1236947942": {
@@ -1591,13 +1445,13 @@
       "status": "pending",
       "first_seen": "2026-11-15T13:39:11.698585+06:00",
       "last_seen": "2026-11-15T21:28:00.512412+06:00",
-      "importance_score": 76,
+      "importance_score": 78,
       "priority_type": "Release Date Confirmations",
       "priority_tier": 1,
       "priority_rank": 4,
       "sector": "Hollywood",
-      "rank_reason": "Variety reports the same SNL hosting news; still a release date but with slightly lower source authority than the official NBC release.",
-      "last_ranked_at": "2026-11-15T21:28:32.026143+06:00",
+      "rank_reason": "Confirmed SNL hosting date Dec 5, major live TV event with wide audience and buzz.",
+      "last_ranked_at": "2026-11-16T02:53:44.359510+06:00",
       "learning_pattern": ""
     },
     "deadline.com/2026/11/hbo-surprise-harry-potter-clip-hogwarts-banquet-1237224436": {
@@ -1614,14 +1468,14 @@
       "date_estimated": false,
       "status": "pending",
       "first_seen": "2026-11-15T21:27:58.180524+06:00",
-      "last_seen": "2026-11-15T21:27:58.180539+06:00",
-      "importance_score": 70,
+      "last_seen": "2026-11-16T02:53:14.275446+06:00",
+      "importance_score": 33,
       "priority_type": "OTT / Streaming Availability",
       "priority_tier": 1,
       "priority_rank": 1,
       "sector": "Hollywood",
-      "rank_reason": "HBO officially released a 90‑second clip from the upcoming Harry Potter series, but no concrete release date was given, limiting the score to just below the publishable threshold.",
-      "last_ranked_at": "2026-11-15T21:28:32.025871+06:00",
+      "rank_reason": "Clip shown without a release date or platform window; not a full release announcement.",
+      "last_ranked_at": "2026-11-16T02:53:44.359078+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/film/global/seville-european-film-festival-prizes-you-dont-belong-here-1236948019": {
@@ -1639,13 +1493,158 @@
       "status": "pending",
       "first_seen": "2026-11-15T21:27:59.921156+06:00",
       "last_seen": "2026-11-15T21:27:59.921172+06:00",
-      "importance_score": 30,
+      "importance_score": 34,
+      "priority_type": "OTT / Streaming Availability",
+      "priority_tier": 1,
+      "priority_rank": 1,
+      "sector": "International",
+      "rank_reason": "Festival awards ceremony; no upcoming release of titles announced.",
+      "last_ranked_at": "2026-11-16T02:53:44.358758+06:00",
+      "learning_pattern": ""
+    },
+    "deadline.com/2026/11/the-good-daughter-author-thinking-about-sequel-1237224525": {
+      "title": "‘The Good Daughter’ Author Is “Thinking About” Short Story Sequel",
+      "url": "https://deadline.com/2026/11/the-good-daughter-author-thinking-about-sequel-1237224525/",
+      "canonical": "deadline.com/2026/11/the-good-daughter-author-thinking-about-sequel-1237224525",
+      "published_dt": "2026-11-16T02:27:36+06:00",
+      "published_date": "2026-11-16T02:27:36+06:00",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "excerpt": "After adapting her 2017 novel The Good Daughter into a Peacock series, author Karin Slaughter wants to revisit Charlie and Sam. The writer, who also penned the streaming series and served as showrunner, revealed that she’s “actually been thinking about” following up the source novel with a short story about the sisters, who are portrayed […]",
+      "image": "https://deadline.com/wp-content/uploads/2026/11/NUP_207241_03300.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-16T02:53:13.158055+06:00",
+      "last_seen": "2026-11-16T02:53:13.158071+06:00",
+      "importance_score": 41,
+      "priority_type": "New Movie / Series Announcements",
+      "priority_tier": 2,
+      "priority_rank": 6,
+      "sector": "Hollywood",
+      "rank_reason": "Only a speculative comment about a possible short‑story sequel; no concrete release date or platform confirmed.",
+      "last_ranked_at": "2026-11-16T02:53:44.359632+06:00",
+      "learning_pattern": ""
+    },
+    "deadline.com/2026/11/behemoth-humanity-pedro-pascal-hope-amid-ai-boom-1237224503": {
+      "title": "‘Behemoth!’s Humanity Gave Pedro Pascal “Tremendous Amount Of Hope” Amid AI Boom, Tony Gilroy Wants To “Blow Up AI Centers… At The Voting Box”",
+      "url": "https://deadline.com/2026/11/behemoth-humanity-pedro-pascal-hope-amid-ai-boom-1237224503/",
+      "canonical": "deadline.com/2026/11/behemoth-humanity-pedro-pascal-hope-amid-ai-boom-1237224503",
+      "published_dt": "2026-11-15T23:51:03+06:00",
+      "published_date": "2026-11-15T23:51:03+06:00",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "excerpt": "As Tony Gilroy and Pedro Pascal bring Behemoth! to the big screen, they’re championing the humanity of art amid an over-reliance on AI. The writer/director and star of the Searchlight film, which premieres Dec. 4 in theaters, discussed the movie’s “fight for humanity” and whether artificial intelligence can replace the “incredibly humanizing element of movies.” […]",
+      "image": "https://deadline.com/wp-content/uploads/2026/11/MCDBEHE_H4019.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-16T02:53:13.761855+06:00",
+      "last_seen": "2026-11-16T02:53:13.761872+06:00",
+      "importance_score": 82,
       "priority_type": "Release Date Confirmations",
       "priority_tier": 1,
       "priority_rank": 4,
+      "sector": "Hollywood",
+      "rank_reason": "Official confirmation of theatrical release on Dec 4 with strong star power and AI‑themed buzz, high audience anticipation.",
+      "last_ranked_at": "2026-11-16T02:53:44.359196+06:00",
+      "learning_pattern": ""
+    },
+    "deadline.com/2026/11/david-tennant-only-murders-in-the-building-doctor-who-future-1237224368": {
+      "title": "David Tennant Teases “Very Small Part” In ‘Only Murders In The Building”, Addresses Future Of ‘Doctor Who’: “It Deserves To Run Forever”",
+      "url": "https://deadline.com/2026/11/david-tennant-only-murders-in-the-building-doctor-who-future-1237224368/",
+      "canonical": "deadline.com/2026/11/david-tennant-only-murders-in-the-building-doctor-who-future-1237224368",
+      "published_dt": "2026-11-15T23:40:57+06:00",
+      "published_date": "2026-11-15T23:40:57+06:00",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "excerpt": "David Tennant is in two Hulu series releasing in late 2026, Season 2 Part 2 of Disney+’s Rivals, which is now streaming, and Season 6 of Only Murders In the Building, which premieres December 8. During an interview with Deadline breaking down this week’s eventful three-episode return of Rivals, Tennant spoke about doing the new […]",
+      "image": "https://deadline.com/wp-content/uploads/2023/11/404254-e1791318509316.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "posted",
+      "first_seen": "2026-11-16T02:53:13.965777+06:00",
+      "last_seen": "2026-11-16T02:53:13.965795+06:00",
+      "importance_score": 80,
+      "priority_type": "Release Date Confirmations",
+      "priority_tier": 1,
+      "priority_rank": 4,
+      "sector": "Hollywood",
+      "rank_reason": "Official announcement of Season 6 premiere on Dec 8, strong franchise, high streaming reach and anticipation.",
+      "last_ranked_at": "2026-11-16T02:53:44.359347+06:00",
+      "learning_pattern": "",
+      "posted_at": "2026-11-16T02:54:47.696196+06:00"
+    },
+    "variety.com/2026/music/news/rock-roll-hall-fame-induction-ceremony-2026-performances-1236948068": {
+      "title": "Rock & Roll Hall of Fame Ceremony Gets Fired Up With Live-Wire Numbers From U2, the Chili Peppers, Usher, Cynthia Erivo, Sienna Spiro, Aerosmith and More",
+      "url": "https://variety.com/2026/music/news/rock-roll-hall-fame-induction-ceremony-2026-performances-1236948068/",
+      "canonical": "variety.com/2026/music/news/rock-roll-hall-fame-induction-ceremony-2026-performances-1236948068",
+      "published_dt": "2026-11-16T00:33:42+06:00",
+      "published_date": "2026-11-16T00:33:42+06:00",
+      "source": "Variety",
+      "region": "Entertainment",
+      "excerpt": "You could feel it in the air that night, at the Rock & Roll Hall of Fame induction ceremony, held Saturday at L.A. Peacock Theatre and filmed for a December ABC special. The show’s producers would relish, as always, the thought of having younger artists salute their elders, or bringing together some powerhouse teamings, coming […]",
+      "image": "https://variety.com/wp-content/uploads/2026/11/GettyImages-2304672508_600d74-e1794759199626.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-16T02:53:15.051596+06:00",
+      "last_seen": "2026-11-16T02:53:15.051612+06:00",
+      "importance_score": 39,
+      "priority_type": "OTT / Streaming Availability",
+      "priority_tier": 1,
+      "priority_rank": 1,
+      "sector": "Hollywood",
+      "rank_reason": "Ceremony already occurred; no new release announced, only coverage of the event.",
+      "last_ranked_at": "2026-11-16T02:53:44.358579+06:00",
+      "learning_pattern": ""
+    },
+    "variety.com/2026/shopping/news/kpop-demon-criterion-blu-ray-buy-online-1236759288": {
+      "title": "‘KPop Demon Hunters’ Criterion Collection Blu-ray On Sale for 50% Off on Heels of New Tour Announcement",
+      "url": "https://variety.com/2026/shopping/news/kpop-demon-criterion-blu-ray-buy-online-1236759288/",
+      "canonical": "variety.com/2026/shopping/news/kpop-demon-criterion-blu-ray-buy-online-1236759288",
+      "published_dt": "2026-11-16T00:02:00+06:00",
+      "published_date": "2026-11-16T00:02:00+06:00",
+      "source": "Variety",
+      "region": "Entertainment",
+      "excerpt": "“KPop Demon Hunters” is getting the Criterion treatment. Netflix’s breakout musical fantasy film is now available as a physical release, thanks to a special Blu-ray set available to buy online now. The film is available in Blu-ray and 4K UHD editions, priced at $39.95 and $49.95, respectively but Amazon currently has the Blu-ray version discounted […]",
+      "image": "https://variety.com/wp-content/uploads/2026/08/kpop-demon-hunters-criterion-1.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-16T02:53:15.208071+06:00",
+      "last_seen": "2026-11-16T02:53:15.208085+06:00",
+      "importance_score": 39,
+      "priority_type": "OTT Platform Acquisition / Streaming Rights",
+      "priority_tier": 2,
+      "priority_rank": 8,
       "sector": "International",
-      "rank_reason": "The article reports award winners at a film festival; it does not announce any new release, so it remains below the publishable score threshold.",
-      "last_ranked_at": "2026-11-15T21:28:32.026253+06:00",
+      "rank_reason": "Discounted physical release of an existing title; not a new content release.",
+      "last_ranked_at": "2026-11-16T02:53:44.359948+06:00",
+      "learning_pattern": ""
+    },
+    "variety.com/2026/film/news/billy-evans-amanda-seyfried-elizabeth-holmes-portrayal-1236948144": {
+      "title": "Billy Evans Addresses Amanda Seyfried’s Portrayal of Elizabeth Holmes in ‘You Can See Everything’: She Was ‘Eager’ to ‘Play a Character’",
+      "url": "https://variety.com/2026/film/news/billy-evans-amanda-seyfried-elizabeth-holmes-portrayal-1236948144/",
+      "canonical": "variety.com/2026/film/news/billy-evans-amanda-seyfried-elizabeth-holmes-portrayal-1236948144",
+      "published_dt": "2026-11-15T23:34:36+06:00",
+      "published_date": "2026-11-15T23:34:36+06:00",
+      "source": "Variety",
+      "region": "Entertainment",
+      "excerpt": "Billy Evans is finally weighing in on Amanda Seyfried’s portrayal of Elizabeth Holmes in “You Can See Everything.” In his first interview since the A24 documentary’s release last month, released Sunday morning, Holmes’ partner sat down with CBS News chief correspondent Matt Gutman to discuss how, exactly, he feels about the film. When asked what […]",
+      "image": "https://variety.com/wp-content/uploads/2026/11/Peacocks-Long-Bright-River-New-York-Premiere-Disgraced-Theranos-Founder-Elizabeth-Holmes-Appears-In-Court-For-A-Restitution-Hearing-1000.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-16T02:53:15.421349+06:00",
+      "last_seen": "2026-11-16T02:53:15.421367+06:00",
+      "importance_score": 36,
+      "priority_type": "Season Renewals / New Season Updates",
+      "priority_tier": 2,
+      "priority_rank": 7,
+      "sector": "Hollywood",
+      "rank_reason": "Discussion of a documentary already released; no new release announced.",
+      "last_ranked_at": "2026-11-16T02:53:44.359776+06:00",
       "learning_pattern": ""
     }
   },
@@ -1723,56 +1722,6 @@
       "selected_at": "2026-10-17T20:23:26.404978+06:00",
       "status": "published",
       "message_id": 959
-    },
-    "jude_law_as_bill_shankly": {
-      "event_id": "jude_law_as_bill_shankly",
-      "canonical_url": "deadline.com/2026/10/jude-law-liverpool-fc-manager-bill-shankly-a24-series-1237155045",
-      "original_url": "https://deadline.com/2026/10/jude-law-liverpool-fc-manager-bill-shankly-a24-series-1237155045/",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "topic": "Casting",
-      "institution": "A24",
-      "event_cluster_id": "evt_e1080a8ec8",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Bill Shankly",
-      "summary": "Jude Law is set to star as Liverpool legend Bill Shankly in a new series from Jack Thorne.",
-      "highlights": [
-        "A24 was originally attached but is no longer involved",
-        "Series will be filmed on location at Anfield in Liverpool",
-        "Producer Tom Werner is courting broadcasters and streamers for the project"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-17T00:17:30+06:00",
-      "selected_at": "2026-10-17T20:23:31.698078+06:00",
-      "status": "published",
-      "message_id": 960
-    },
-    "the_julia_set_rights_acquisition": {
-      "event_id": "the_julia_set_rights_acquisition",
-      "canonical_url": "deadline.com/2026/10/chase-infiniti-julia-set-sony-pictures-classics-1237165898",
-      "original_url": "https://deadline.com/2026/10/chase-infiniti-julia-set-sony-pictures-classics-1237165898/",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "topic": "Acquisitions and Mergers",
-      "institution": "Sony Pictures Classics",
-      "event_cluster_id": "evt_bfe74c0241",
-      "event_confidence": 1.0,
-      "event_source_count": 2,
-      "headline": "The Julia Set",
-      "summary": "Sony Pictures Classics has acquired U.S. and key international theatrical rights to the student drama after its TIFF premiere.",
-      "highlights": [
-        "Acquisition covers U.S., Benelux, UK, Australia, New Zealand, South Africa, Israel and most of Asia",
-        "The film holds a 70% fresh rating on Rotten Tomatoes",
-        "Stars Chase Infiniti as math prodigy Julia Fischer"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-17T00:00:00+06:00",
-      "selected_at": "2026-10-17T20:23:36.795149+06:00",
-      "status": "published",
-      "message_id": 961
     },
     "restoration_it_1927_frenchdeal": {
       "event_id": "restoration_it_1927_frenchdeal",
@@ -10259,6 +10208,31 @@
       "selected_at": "2026-11-15T21:28:36.140540+06:00",
       "status": "published",
       "message_id": 1317
+    },
+    "omitb_s6_dec8": {
+      "event_id": "omitb_s6_dec8",
+      "canonical_url": "deadline.com/2026/11/david-tennant-only-murders-in-the-building-doctor-who-future-1237224368",
+      "original_url": "https://deadline.com/2026/11/david-tennant-only-murders-in-the-building-doctor-who-future-1237224368/",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "topic": "New Season Releases",
+      "institution": "Hulu",
+      "event_cluster_id": "evt_a2ad46c2e7",
+      "event_confidence": 0.6,
+      "event_source_count": 1,
+      "headline": "Only Murders In the Building",
+      "summary": "Season 6 of the Hulu mystery‑comedy premieres on December 8, 2026, featuring a cameo by David Tennant.",
+      "highlights": [
+        "Season 6 launches Dec 8, 2026 on Hulu",
+        "David Tennant appears in a very small cameo",
+        "The trio travels to London to investigate podcaster Cinda Canning’s murder"
+      ],
+      "concepts": [],
+      "key_numbers": [],
+      "published_at": "2026-11-15T23:40:57+06:00",
+      "selected_at": "2026-11-16T02:54:47.696318+06:00",
+      "status": "published",
+      "message_id": 1318
     }
   },
   "event_clusters": {
@@ -29035,10 +29009,33 @@
       "confidence": 1.0,
       "last_seen": "2026-11-15T21:28:32.031777+06:00",
       "headline": "Amanda Seyfried To Host ‘Saturday Night Live’"
+    },
+    "evt_b5e433d943": {
+      "event_id": "evt_b5e433d943",
+      "topic": "Theatrical Releases",
+      "region": "Entertainment",
+      "sources": [
+        "Deadline"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-16T02:53:44.383391+06:00",
+      "headline": "‘Behemoth!’s Humanity Gave Pedro Pascal “Tremendous Amount Of Hope” Amid AI Boom, Tony Gilroy Wants To “Blow Up AI Centers… At The Voting Box”"
+    },
+    "evt_a2ad46c2e7": {
+      "event_id": "evt_a2ad46c2e7",
+      "topic": "New Season Releases",
+      "region": "Entertainment",
+      "sources": [
+        "Deadline"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-16T02:53:44.383401+06:00",
+      "headline": "David Tennant Teases “Very Small Part” In ‘Only Murders In The Building”, Addresses Future Of ‘Doctor Who’: “It Deserves To Run Forever”"
     }
   },
   "posted_event_ids": [
-    "evt_e65315ed04",
     "evt_83baffc25a",
     "evt_2938c0d462",
     "evt_5c1bdff62b",
@@ -29537,10 +29534,10 @@
     "evt_27a7ad2d55",
     "evt_1cbb0c023e",
     "evt_1b620c1be9",
-    "evt_32b5a61b7b"
+    "evt_32b5a61b7b",
+    "evt_a2ad46c2e7"
   ],
   "recent_titles": [
-    "jim queen",
     "the great chimera",
     "the galway bay murders",
     "act one",
@@ -29940,7 +29937,8 @@
     "russell brand open secret",
     "virgin river",
     "the good daughter",
-    "saturday night live"
+    "saturday night live",
+    "only murders in the building"
   ],
   "work_memory": {
     "the dog stars": {
@@ -38360,6 +38358,15 @@
         "OTT / Streaming Availability": "2026-11-15T01:53:08.653586+06:00"
       },
       "last_published_at": "2026-11-15T01:53:08.653582+06:00"
+    },
+    "only murders the building": {
+      "title": "Only Murders In the Building",
+      "sector": "Hollywood",
+      "first_published_at": "2026-11-16T02:54:47.696369+06:00",
+      "published_events": {
+        "Release Date Confirmations": "2026-11-16T02:54:47.696377+06:00"
+      },
+      "last_published_at": "2026-11-16T02:54:47.696373+06:00"
     }
   },
   "publication_fingerprints": [
@@ -49098,6 +49105,17 @@
       "event_key": "SNL_Dec5_2026",
       "canonical": "deadline.com/2026/11/amanda-seyfried-host-saturday-night-live-1237224388",
       "published_at": "2026-11-15T21:28:36.141074+06:00"
+    },
+    {
+      "fingerprint": "only murders the building|Release Date Confirmations|david tennant two hulu releasing late 2026 part disney rivals which and which december during interview with deadline breaking down this week eventful three return rivals tennant spoke about doing hulu mystery comedy december 2026 featuring cameo david tennant launches dec 2026 hulu david tennant appears very small cameo trio travels london investigate podcaster cinda canning murder hulu 2026",
+      "work_key": "only murders the building",
+      "priority_type": "Release Date Confirmations",
+      "headline": "Only Murders In the Building",
+      "event_text": "Only Murders In the Building David Tennant is in two Hulu series releasing in late 2026, Season 2 Part 2 of Disney+’s Rivals, which is now streaming, and Season 6 of Only Murders In the Building, which premieres December 8. During an interview with Deadline breaking down this week’s eventful three-episode return of Rivals, Tennant spoke about doing the new […] Season 6 of the Hulu mystery‑comedy premieres on December 8, 2026, featuring a cameo by David Tennant. Season 6 launches Dec 8, 2026 on Hulu David Tennant appears in a very small cameo The trio travels to London to investigate podcaster Cinda Canning’s murder Hulu 2026-12-08",
+      "core": "david tennant two hulu releasing late 2026 part disney rivals which and which december during interview with deadline breaking down this week eventful three return rivals tennant spoke about doing hulu mystery comedy december 2026 featuring cameo david tennant launches dec 2026 hulu david tennant appears very small cameo trio travels london investigate podcaster cinda canning murder hulu 2026",
+      "event_key": "OMITB_S6_Dec8",
+      "canonical": "deadline.com/2026/11/david-tennant-only-murders-in-the-building-doctor-who-future-1237224368",
+      "published_at": "2026-11-16T02:54:47.696836+06:00"
     }
   ],
   "fresh_start_at": "2026-09-07T13:58:06.173598+06:00",
@@ -49233,118 +49251,6 @@
     }
   },
   "score_history": [
-    {
-      "title": "James Wan and Jason Blum Unveil New Company Name: Blumhouse Atomic",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "Production / Filming Updates",
-      "source": "Variety",
-      "seen_at": "2026-11-07T03:22:36.888216+06:00"
-    },
-    {
-      "title": "What Election Day Commentators Are Saying: Trump Rants, Hasan Piker Wonders if MAGA ‘Cult’ Is Over and More (Updating)",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "First Look / First Glimpse / Posters",
-      "source": "Variety",
-      "seen_at": "2026-11-07T03:22:36.888333+06:00"
-    },
-    {
-      "title": "‘Just Before Dawn’ Producer Prevails in Cult Horror Courtroom Drama",
-      "score": 40,
-      "pattern": "",
-      "priority_type": "Production / Filming Updates",
-      "source": "Variety",
-      "seen_at": "2026-11-07T03:22:36.888430+06:00"
-    },
-    {
-      "title": "Billy Evans Answers ‘You Can See Everything’ Burning Questions on Alleged Cocaine Use, Nathan Fielder Regrets and More",
-      "score": 37,
-      "pattern": "",
-      "priority_type": "First Look / First Glimpse / Posters",
-      "source": "Variety",
-      "seen_at": "2026-11-07T03:22:36.888553+06:00"
-    },
-    {
-      "title": "Gong Jun's 'Blade of Vengeance' female lead faces billing controversy; actress's studio issues statement - MyDramaList News",
-      "score": 24,
-      "pattern": "",
-      "priority_type": "Cast / Character Announcements",
-      "source": "news.mydramalist.com",
-      "seen_at": "2026-11-07T03:22:36.888595+06:00"
-    },
-    {
-      "title": "No ‘Cliff Booth’ At Cinemark: CEO Cites Long-Term Industry Risk",
-      "score": 61,
-      "pattern": "",
-      "priority_type": "Theatrical Releases / Re-releases",
-      "source": "Deadline",
-      "seen_at": "2026-11-07T03:22:36.888630+06:00"
-    },
-    {
-      "title": "Ranbir Kapoor and Yash’s ‘Ramayana’ Makers on Retelling India’s Epic for the World, as Amazon Music and T-Series Bet on A.R. Rahman and Hans",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "",
-      "source": "Variety",
-      "seen_at": "2026-11-07T03:22:36.888763+06:00"
-    },
-    {
-      "title": "Andrew Garfield Says He ‘Never Had Any Interaction’ With Sam Altman While Filming ‘Artificial,’ Despite Altman Claiming They Waved to Each O",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "",
-      "source": "Variety",
-      "seen_at": "2026-11-07T03:22:36.888894+06:00"
-    },
-    {
-      "title": "Netflix Pe Pitega Titu Mama Ka ‘Dhindora’: India’s First and Biggest Digital Creator Bhuvan Bam Brings Cult Favourite Back for Season 2 on N",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "",
-      "source": "about.netflix.com",
-      "seen_at": "2026-11-07T03:22:36.888958+06:00"
-    },
-    {
-      "title": "From ‘World of Warcraft Forever’ Surprise to Le Sserafim, Simu Liu and T-Pain Appearances, How BlizzCon 2026 Set the Stage for Blizzard Ente",
-      "score": 68,
-      "pattern": "",
-      "priority_type": "First Look / First Glimpse / Posters",
-      "source": "Variety",
-      "seen_at": "2026-11-07T03:22:36.889088+06:00"
-    },
-    {
-      "title": "Black Doves Season 2 Now Streaming: Release Date, Episodes, Cast, Plot, Trailer, and More - Netflix Tudum",
-      "score": 86,
-      "pattern": "",
-      "priority_type": "OTT / Streaming Availability",
-      "source": "Netflix Tudum",
-      "seen_at": "2026-11-07T03:25:28.591962+06:00"
-    },
-    {
-      "title": "'The End Of Oak Street' Gets HBO Max Release Date",
-      "score": 85,
-      "pattern": "",
-      "priority_type": "OTT / Streaming Availability",
-      "source": "Deadline",
-      "seen_at": "2026-11-07T03:25:28.592250+06:00"
-    },
-    {
-      "title": "'Melania, The Series' Gets Prime Video Release Date & Trailer",
-      "score": 85,
-      "pattern": "",
-      "priority_type": "OTT / Streaming Availability",
-      "source": "Deadline",
-      "seen_at": "2026-11-07T03:25:28.592595+06:00"
-    },
-    {
-      "title": "‘The End of Oak Street’ Sets HBO Max Streaming Release Date",
-      "score": 78,
-      "pattern": "",
-      "priority_type": "OTT / Streaming Availability",
-      "source": "Variety",
-      "seen_at": "2026-11-07T03:25:28.592719+06:00"
-    },
     {
       "title": "How to watch Camp Flog Gnaw 2026 festival on Amazon Music, Prime Video, and Twitch",
       "score": 47,
@@ -53232,18 +53138,130 @@
       "priority_type": "Release Date Confirmations",
       "source": "Deadline",
       "seen_at": "2026-11-15T21:28:32.027241+06:00"
+    },
+    {
+      "title": "2027 புத்தாண்டுக்கே ரசிகர்களுக்கு ட்ரீட் கொடுக்கும் சிஎம் விஜய்.. இந்த படம் ரீ ரிலிஸ் ஆகுதாம்! | CM Vijay's Bairavaa will re release on New ",
+      "score": 73,
+      "pattern": "",
+      "priority_type": "Theatrical Releases / Re-releases",
+      "source": "tamil.filmibeat.com",
+      "seen_at": "2026-11-16T02:53:12.895768+06:00"
+    },
+    {
+      "title": "‘Hold Onto Me’ Director Myrsini Aristidou Kicks Off Historic Oscar Campaign for Sundance Audience Award Winner: ‘I Really Feel Like We’re Un",
+      "score": 32,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Variety",
+      "seen_at": "2026-11-16T02:53:12.895923+06:00"
+    },
+    {
+      "title": "Gambit Gets Serious: Channing Tatum’s Superhero Is ‘Not All Laughs’ in ‘Avengers: Doomsday’ as Kevin Feige Promises Fans a ‘Fully-Rounded Ch",
+      "score": 55,
+      "pattern": "",
+      "priority_type": "Upcoming OTT Releases",
+      "source": "Variety",
+      "seen_at": "2026-11-16T02:53:12.896056+06:00"
+    },
+    {
+      "title": "Venice Prizewinner ‘A Day in the Life of Jo’ Explores ‘Who and What We Truly Are’ Through Emotional Journey of Ordinary, Remarkable Teenage ",
+      "score": 47,
+      "pattern": "",
+      "priority_type": "Theatrical Releases / Re-releases",
+      "source": "Variety",
+      "seen_at": "2026-11-16T02:53:12.896184+06:00"
+    },
+    {
+      "title": "Rock & Roll Hall of Fame Ceremony Gets Fired Up With Live-Wire Numbers From U2, the Chili Peppers, Usher, Cynthia Erivo, Sienna Spiro, Aeros",
+      "score": 39,
+      "pattern": "",
+      "priority_type": "OTT / Streaming Availability",
+      "source": "Variety",
+      "seen_at": "2026-11-16T02:53:44.360288+06:00"
+    },
+    {
+      "title": "Seville European Film Festival Prizes: ‘You Don’t Belong Here,’ ‘Falling House,’ ’Adult Supervision’ Win Big",
+      "score": 34,
+      "pattern": "",
+      "priority_type": "OTT / Streaming Availability",
+      "source": "Variety",
+      "seen_at": "2026-11-16T02:53:44.360431+06:00"
+    },
+    {
+      "title": "Nickelodeon Kids’ Choice Awards: BTS, ‘Stranger Things’ & ‘KPop Demon Hunters’ Among Winners",
+      "score": 34,
+      "pattern": "",
+      "priority_type": "OTT / Streaming Availability",
+      "source": "Deadline",
+      "seen_at": "2026-11-16T02:53:44.360551+06:00"
+    },
+    {
+      "title": "HBO Releases Surprise ‘Harry Potter’ Clip Of Hogwarts Banquet",
+      "score": 33,
+      "pattern": "",
+      "priority_type": "OTT / Streaming Availability",
+      "source": "Deadline",
+      "seen_at": "2026-11-16T02:53:44.360666+06:00"
+    },
+    {
+      "title": "‘Behemoth!’s Humanity Gave Pedro Pascal “Tremendous Amount Of Hope” Amid AI Boom, Tony Gilroy Wants To “Blow Up AI Centers… At The Voting Bo",
+      "score": 82,
+      "pattern": "",
+      "priority_type": "Release Date Confirmations",
+      "source": "Deadline",
+      "seen_at": "2026-11-16T02:53:44.360813+06:00"
+    },
+    {
+      "title": "David Tennant Teases “Very Small Part” In ‘Only Murders In The Building”, Addresses Future Of ‘Doctor Who’: “It Deserves To Run Forever”",
+      "score": 80,
+      "pattern": "",
+      "priority_type": "Release Date Confirmations",
+      "source": "Deadline",
+      "seen_at": "2026-11-16T02:53:44.360998+06:00"
+    },
+    {
+      "title": "Amanda Seyfried to Make Her Debut as ‘Saturday Night Live’ Host",
+      "score": 78,
+      "pattern": "",
+      "priority_type": "Release Date Confirmations",
+      "source": "Variety",
+      "seen_at": "2026-11-16T02:53:44.361121+06:00"
+    },
+    {
+      "title": "‘The Good Daughter’ Author Is “Thinking About” Short Story Sequel",
+      "score": 41,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Deadline",
+      "seen_at": "2026-11-16T02:53:44.361235+06:00"
+    },
+    {
+      "title": "Billy Evans Addresses Amanda Seyfried’s Portrayal of Elizabeth Holmes in ‘You Can See Everything’: She Was ‘Eager’ to ‘Play a Character’",
+      "score": 36,
+      "pattern": "",
+      "priority_type": "Season Renewals / New Season Updates",
+      "source": "Variety",
+      "seen_at": "2026-11-16T02:53:44.361374+06:00"
+    },
+    {
+      "title": "‘KPop Demon Hunters’ Criterion Collection Blu-ray On Sale for 50% Off on Heels of New Tour Announcement",
+      "score": 39,
+      "pattern": "",
+      "priority_type": "OTT Platform Acquisition / Streaming Rights",
+      "source": "Variety",
+      "seen_at": "2026-11-16T02:53:44.361508+06:00"
     }
   ],
   "adaptive_metrics": {
     "raw_discovered": 62,
-    "pre_cerebras_rejected": 25486,
-    "hard_rejected": 8774,
-    "duplicate_rejected": 209,
-    "learned_rejected": 16503,
-    "passed_to_cerebras": 4557,
-    "cerebras_ranked": 10877,
-    "published": 978,
-    "estimated_candidates_avoided": 25486
+    "pre_cerebras_rejected": 25589,
+    "hard_rejected": 8819,
+    "duplicate_rejected": 210,
+    "learned_rejected": 16560,
+    "passed_to_cerebras": 4564,
+    "cerebras_ranked": 10887,
+    "published": 979,
+    "estimated_candidates_avoided": 25589
   },
   "source_quality": {
     "collider.com": {
@@ -53275,11 +53293,11 @@
       "last_seen": "2026-09-08T11:49:09.577970+06:00"
     },
     "deadline.com": {
-      "observations": 4994,
-      "low_score_count": 4053,
-      "total_score": 252763,
+      "observations": 4999,
+      "low_score_count": 4056,
+      "total_score": 253033,
       "avg_score": 50.6,
-      "last_seen": "2026-11-15T21:28:32.027306+06:00"
+      "last_seen": "2026-11-16T02:53:44.361591+06:00"
     },
     "thewrap.com": {
       "observations": 16,
@@ -53296,11 +53314,11 @@
       "last_seen": "2026-09-08T21:05:13.366232+06:00"
     },
     "variety.com": {
-      "observations": 5254,
-      "low_score_count": 4336,
-      "total_score": 250843,
+      "observations": 5259,
+      "low_score_count": 4341,
+      "total_score": 251069,
       "avg_score": 47.7,
-      "last_seen": "2026-11-15T21:28:32.027292+06:00"
+      "last_seen": "2026-11-16T02:53:44.361604+06:00"
     },
     "indiewire.com": {
       "observations": 10,
@@ -53429,7 +53447,7 @@
     "Acquisitions and Mergers": "2026-11-06T04:58:55.210733+06:00",
     "Korean Drama": "2026-10-29T20:23:16.845456+06:00",
     "Box Office": "2026-09-20T00:05:04.568803+06:00",
-    "New Season Releases": "2026-11-14T04:03:07.589968+06:00",
+    "New Season Releases": "2026-11-16T02:54:47.696854+06:00",
     "Theatrical Releases": "2026-11-11T04:24:45.334042+06:00"
   }
 }
