@@ -1,321 +1,152 @@
 {
   "feeds": {
     "https://deadline.com/feed/": {
-      "etag": "W/\"4378f37809bd3788950e53317cbdea4e\"",
-      "last_modified": "Sun, 15 Nov 2026 20:27:36 GMT",
-      "last_checked": "2026-11-16T02:53:13.006495+06:00",
+      "etag": "W/\"0422c8e887d9201d620b93d78e3bca31\"",
+      "last_modified": "Mon, 16 Nov 2026 07:42:16 GMT",
+      "last_checked": "2026-11-16T13:44:35.215421+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://variety.com/feed/": {
-      "etag": "W/\"008bc7d171f3110074f348e3a183f971\"",
-      "last_modified": "Sun, 15 Nov 2026 20:18:24 GMT",
-      "last_checked": "2026-11-16T02:53:14.371142+06:00",
+      "etag": "W/\"489486dd96f1f2a502c67b1bd73b8a0c\"",
+      "last_modified": "Mon, 16 Nov 2026 07:39:19 GMT",
+      "last_checked": "2026-11-16T13:44:36.625113+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.hollywoodreporter.com/feed/": {
-      "etag": "W/\"7a244dbf87d0542bbb622c2741e9bac8\"",
-      "last_modified": "Sun, 15 Nov 2026 20:31:32 GMT",
-      "last_checked": "2026-11-16T02:53:16.188477+06:00",
+      "etag": "W/\"f9d41bb050db3402cf3c18ed8cf3b55b\"",
+      "last_modified": "Mon, 16 Nov 2026 07:27:07 GMT",
+      "last_checked": "2026-11-16T13:44:37.758843+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.thewrap.com/feed/": {
-      "etag": "\"efc5f9ae2cbb89309698c994586d4d11\"",
-      "last_modified": "Sun, 15 Nov 2026 20:37:37 GMT",
-      "last_checked": "2026-11-16T02:53:17.450866+06:00",
+      "etag": "\"33f276de31a3776fd841c1cfd24709d4\"",
+      "last_modified": "Mon, 16 Nov 2026 03:00:00 GMT",
+      "last_checked": "2026-11-16T13:44:38.639477+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.indiewire.com/feed/": {
-      "etag": "W/\"b0055baae3377a2001facf0443d61e11\"",
-      "last_modified": "Sun, 15 Nov 2026 18:50:22 GMT",
-      "last_checked": "2026-11-16T02:53:18.731719+06:00",
+      "etag": "W/\"a85bb5199066c8bfbb6e961d2e347d1b\"",
+      "last_modified": "Sun, 15 Nov 2026 23:10:43 GMT",
+      "last_checked": "2026-11-16T13:44:39.520625+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://collider.com/feed/": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-16T02:53:19.266529+06:00",
+      "last_checked": "2026-11-16T13:44:39.997878+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://tvline.com/feed/": {
-      "etag": "\"280ca552fe49c390fc7ff12018f5eb35\"",
-      "last_modified": "Sun, 15 Nov 2026 20:12:00 GMT",
-      "last_checked": "2026-11-16T02:53:20.389439+06:00",
+      "etag": "\"33f276de31a3776fd841c1cfd24709d4\"",
+      "last_modified": "Mon, 16 Nov 2026 03:00:00 GMT",
+      "last_checked": "2026-11-16T13:44:41.019031+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.ottplay.com/rss": {
       "etag": "\"b5496c89c58ff0f5d07d64a68d4efe07\"",
       "last_modified": "Thu, 27 May 2021 12:38:49 GMT",
-      "last_checked": "2026-11-16T02:53:23.000744+06:00",
+      "last_checked": "2026-11-16T13:44:43.725524+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.filmibeat.com/rss/feeds/filmibeat-news.xml": {
       "etag": null,
-      "last_modified": "Sun, 15 Nov 2026 20:53:23 GMT",
-      "last_checked": "2026-11-16T02:53:23.873123+06:00",
+      "last_modified": "Mon, 16 Nov 2026 07:44:44 GMT",
+      "last_checked": "2026-11-16T13:44:44.264493+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.pinkvilla.com/rss": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-16T02:53:24.299041+06:00",
+      "last_checked": "2026-11-16T13:44:44.846619+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.bollywoodhungama.com/feed/": {
-      "etag": "\"38c1b258fae0743eed5139ae543664a4\"",
-      "last_modified": "Sun, 15 Nov 2026 17:18:41 GMT",
-      "last_checked": "2026-11-16T02:53:24.580780+06:00",
+      "etag": "\"fb454f81f1b6242b8c28e27a81a75b4f\"",
+      "last_modified": "Mon, 16 Nov 2026 07:38:05 GMT",
+      "last_checked": "2026-11-16T13:44:45.030881+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.gadgets360.com/entertainment/rss": {
-      "last_checked": "2026-11-16T02:53:26.666568+06:00",
-      "fail_count": 234,
+      "last_checked": "2026-11-16T13:44:46.046592+06:00",
+      "fail_count": 235,
       "alerted": true
     },
     "https://www.soompi.com/feed": {
-      "etag": "W/\"077c2484c249cce0d9020b5b2ce03e28\"",
-      "last_modified": "Sun, 15 Nov 2026 18:32:51 GMT",
-      "last_checked": "2026-11-16T02:53:26.941741+06:00",
+      "etag": "W/\"581cb3ed66d978f1123303c009f67d7a\"",
+      "last_modified": "Mon, 16 Nov 2026 07:38:12 GMT",
+      "last_checked": "2026-11-16T13:44:46.238970+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.whats-on-netflix.com/feed/": {
       "etag": null,
-      "last_modified": "Sun, 15 Nov 2026 19:13:24 GMT",
-      "last_checked": "2026-11-16T02:53:28.926604+06:00",
+      "last_modified": "Mon, 16 Nov 2026 00:13:10 GMT",
+      "last_checked": "2026-11-16T13:44:48.889965+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.netflix.com/tudum/rss.xml": {
-      "last_checked": "2026-11-16T02:53:30.033171+06:00",
-      "fail_count": 234,
+      "last_checked": "2026-11-16T13:44:49.830756+06:00",
+      "fail_count": 235,
       "alerted": true
     },
     "https://press.wbd.com/us/en/rss": {
-      "last_checked": "2026-11-16T02:53:30.310895+06:00",
-      "fail_count": 234,
+      "last_checked": "2026-11-16T13:44:50.161180+06:00",
+      "fail_count": 235,
       "alerted": true
     },
     "https://www.apple.com/tv-pr/newsroom/feed/": {
-      "last_checked": "2026-11-16T02:53:30.797251+06:00",
-      "fail_count": 234,
+      "last_checked": "2026-11-16T13:44:50.499971+06:00",
+      "fail_count": 235,
       "alerted": true
     },
     "https://www.aboutamazon.com/rss": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-16T02:53:30.911235+06:00",
+      "last_checked": "2026-11-16T13:44:50.644291+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.marvel.com/articles/feed": {
-      "last_checked": "2026-11-16T02:53:31.500221+06:00",
-      "fail_count": 234,
+      "last_checked": "2026-11-16T13:44:51.289211+06:00",
+      "fail_count": 235,
       "alerted": true
     },
     "https://www.dc.com/blog/rss.xml": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-16T02:53:32.403775+06:00",
-      "fail_count": 15,
-      "alerted": true
+      "last_checked": "2026-11-16T13:44:52.535005+06:00",
+      "fail_count": 0,
+      "alerted": false
     },
     "https://www.sonypictures.com/rss": {
-      "last_checked": "2026-11-16T02:53:33.016430+06:00",
-      "fail_count": 234,
+      "last_checked": "2026-11-16T13:44:52.997497+06:00",
+      "fail_count": 235,
       "alerted": true
     },
     "https://www.paramount.com/rss": {
-      "last_checked": "2026-11-16T02:53:33.052434+06:00",
-      "fail_count": 234,
+      "last_checked": "2026-11-16T13:44:53.104708+06:00",
+      "fail_count": 235,
       "alerted": true
     },
     "https://www.universalpictures.com/rss": {
-      "last_checked": "2026-11-16T02:53:33.458289+06:00",
-      "fail_count": 234,
+      "last_checked": "2026-11-16T13:44:53.562345+06:00",
+      "fail_count": 235,
       "alerted": true
     }
   },
   "queue": {
-    "deadline.com/2026/11/avengers-endgame-encore-disney-plus-stream-release-date-1237220911": {
-      "title": "‘Avengers Endgame: Encore’ Sets Disney+ Release Date With New ‘Countdown To Doomsday’ Spot",
-      "url": "https://deadline.com/2026/11/avengers-endgame-encore-disney-plus-stream-release-date-1237220911/",
-      "canonical": "deadline.com/2026/11/avengers-endgame-encore-disney-plus-stream-release-date-1237220911",
-      "published_dt": "2026-11-12T04:02:06+06:00",
-      "published_date": "2026-11-12T04:02:06+06:00",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "excerpt": "The countdown to Avengers: Doomsday continues, and Disney+ has set the release date for Avengers: Endgame: Encore for Friday, November 13. The epic conclusion to the Infinity Saga, which has grossed more than $2.9 billion at the worldwide box office, includes a first look at Avengers: Doomsday ahead of its December 18 theatrical release. A new TV spot titled […]",
-      "image": "https://deadline.com/wp-content/uploads/2026/11/avengers-endgame-encore-poster.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "posted",
-      "first_seen": "2026-11-12T04:35:30.382950+06:00",
-      "last_seen": "2026-11-12T04:35:30.382958+06:00",
-      "importance_score": 89,
-      "priority_type": "Theatrical Releases / Re-releases",
-      "priority_tier": 1,
-      "priority_rank": 5,
-      "sector": "Hollywood",
-      "rank_reason": "Official Disney+ announcement sets streaming release for Nov 13, 2026 – a major Marvel title with huge audience impact.",
-      "last_ranked_at": "2026-11-12T04:36:23.138607+06:00",
-      "learning_pattern": "",
-      "posted_at": "2026-11-12T04:40:24.476360+06:00"
-    },
-    "deadline.com/2026/11/fox-midseason-2027-dates-1237220662": {
-      "title": "Fox Sets Midseason Dates For ‘Best Medicine,’ ‘The Masked Singer,’ ‘Doc,’ New Drama ‘The Interrogator’ & More",
-      "url": "https://deadline.com/2026/11/fox-midseason-2027-dates-1237220662/",
-      "canonical": "deadline.com/2026/11/fox-midseason-2027-dates-1237220662",
-      "published_dt": "2026-11-12T02:00:00+06:00",
-      "published_date": "2026-11-12T02:00:00+06:00",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "excerpt": "With two weeks to go before Thanksgiving, Fox has set midseason premiere dates for several of its returning series and one new drama. The network said Wednesday that its “Night of Medical Marvels” will return from holiday hiatus on Tuesday, January 6, with remaining episodes of hit sophomore drama Best Medicine at 8 p.m., followed […]",
-      "image": "https://deadline.com/wp-content/uploads/2026/11/Best-Medicine-The-Masked-Singer-Doc-The-Interrogator-.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-11-12T04:35:30.834863+06:00",
-      "last_seen": "2026-11-12T04:35:30.834874+06:00",
-      "importance_score": 0,
-      "priority_type": "Season Renewals / New Season Updates",
-      "priority_tier": 2,
-      "priority_rank": 7,
-      "sector": "International",
-      "rank_reason": "Unscored fallback; withheld from publication.",
-      "last_ranked_at": "2026-11-12T23:26:50.663207+06:00",
-      "learning_pattern": ""
-    },
-    "deadline.com/2026/11/marisa-tomei-cast-upgraded-2-movie-1237220581": {
-      "title": "Marisa Tomei Returning As Claire Dupont In ‘Upgraded 2’",
-      "url": "https://deadline.com/2026/11/marisa-tomei-cast-upgraded-2-movie-1237220581/",
-      "canonical": "deadline.com/2026/11/marisa-tomei-cast-upgraded-2-movie-1237220581",
-      "published_dt": "2026-11-12T02:00:00+06:00",
-      "published_date": "2026-11-12T02:00:00+06:00",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "excerpt": "EXCLUSIVE: Marisa Tomei has set her return for the upcoming Upgraded 2, reprising her role as Claire Dupont, starring opposite the previously announced Camila Mendes and Leslie Bibb. Tomei is an original cast member of the film Upgraded, which was released in 2024. Production is currently underway in Italy. Plot details for the sequel from […]",
-      "image": "https://deadline.com/wp-content/uploads/2026/11/Marisa-Tomei.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-11-12T04:35:31.072469+06:00",
-      "last_seen": "2026-11-12T04:35:31.072477+06:00",
-      "importance_score": 0,
-      "priority_type": "New Movie / Series Announcements",
-      "priority_tier": 2,
-      "priority_rank": 6,
-      "sector": "International",
-      "rank_reason": "Unscored fallback; withheld from publication.",
-      "last_ranked_at": "2026-11-12T23:26:50.663102+06:00",
-      "learning_pattern": ""
-    },
-    "variety.com/2026/film/news/avengers-endgame-encore-disney-streaming-release-date-1236821013": {
-      "title": "Avengers Endgame Encore Sets Disney+ Streaming Release DAte",
-      "url": "https://variety.com/2026/film/news/avengers-endgame-encore-disney-streaming-release-date-1236821013/",
-      "canonical": "variety.com/2026/film/news/avengers-endgame-encore-disney-streaming-release-date-1236821013",
-      "published_dt": "2026-11-11T23:17:18+06:00",
-      "published_date": "2026-11-11T23:17:18+06:00",
-      "source": "Variety",
-      "region": "Entertainment",
-      "excerpt": "N o n e",
-      "image": "https://variety.com/wp-content/uploads/2024/04/MCDAVEN_EC255.jpg?w=1000&h=563&crop=1",
-      "discovery": "exa",
-      "source_pool": "primary",
-      "status": "pending",
-      "first_seen": "2026-11-12T04:36:03.338886+06:00",
-      "last_seen": "2026-11-12T04:36:03.338905+06:00",
-      "importance_score": 86,
-      "priority_type": "OTT / Streaming Availability",
-      "priority_tier": 1,
-      "priority_rank": 1,
-      "sector": "Hollywood",
-      "rank_reason": "Official streaming date announced for Disney+ with clear release date and platform, strong audience interest and high‑profile franchise.",
-      "last_ranked_at": "2026-11-12T14:03:08.745032+06:00",
-      "learning_pattern": ""
-    },
-    "netflix.com/tudum/articles/avedon-release-date-news": {
-      "title": "Richard Avedon Netflix Documentary Directed By Ron Howard Release Date, Trailer, News - Netflix Tudum",
-      "url": "https://www.netflix.com/tudum/articles/avedon-release-date-news",
-      "canonical": "netflix.com/tudum/articles/avedon-release-date-news",
-      "published_dt": "2026-11-11T14:00:38+06:00",
-      "published_date": "2026-11-11T14:00:38+06:00",
-      "source": "Netflix Tudum",
-      "region": "Entertainment",
-      "excerpt": "N o n e",
-      "image": "https://dnm.nflximg.net/api/v6/s0XAg4q_jvYbSSbLvySyUsliNSg/AAAAQXj0Nmmrt4rZERjhX4Wo7bzstwWlpJZv5XAnqCJLsHFcsfFSjCw0X-Xm_dHrqMKLh7_-2a1P7pzdUKx20rzbzSeWmwHymi3nIIDzScxCbpGtFvziUKCyV5EEkhaqZsW4DNLebMQb8VBvPu_nuSStK4uWQ28.jpg?r=03c",
-      "discovery": "exa",
-      "source_pool": "primary",
-      "status": "pending",
-      "first_seen": "2026-11-12T04:36:03.488435+06:00",
-      "last_seen": "2026-11-12T04:36:03.488453+06:00",
-      "importance_score": 44,
-      "priority_type": "OTT / Streaming Availability",
-      "priority_tier": 1,
-      "priority_rank": 1,
-      "sector": "Hollywood",
-      "rank_reason": "Documentary now streaming; no new release date announced – low score.",
-      "last_ranked_at": "2026-11-12T04:36:23.138173+06:00",
-      "learning_pattern": ""
-    },
-    "deadline.com/2026/11/the-age-of-innocence-netflix-release-date-tv-show-photos-1237219435": {
-      "title": "'The Age Of Innocence' TV Show Sets Netflix Release Date; First Photos",
-      "url": "https://deadline.com/2026/11/the-age-of-innocence-netflix-release-date-tv-show-photos-1237219435/",
-      "canonical": "deadline.com/2026/11/the-age-of-innocence-netflix-release-date-tv-show-photos-1237219435",
-      "published_dt": "2026-11-11T05:18:57+06:00",
-      "published_date": "2026-11-11T05:18:57+06:00",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "excerpt": "N o n e",
-      "image": "https://deadline.com/wp-content/uploads/2026/11/AGEOFINNOCENCE_101_251010_CB_00198_R4.jpg?w=1024",
-      "discovery": "exa",
-      "source_pool": "primary",
-      "status": "pending",
-      "first_seen": "2026-11-12T04:36:08.761554+06:00",
-      "last_seen": "2026-11-12T04:36:08.761571+06:00",
-      "importance_score": 78,
-      "priority_type": "New Movie / Series Announcements",
-      "priority_tier": 2,
-      "priority_rank": 6,
-      "sector": "International",
-      "rank_reason": "Netflix sets Feb 18, 2027 release for the limited series – notable adaptation with global appeal.",
-      "last_ranked_at": "2026-11-12T04:36:23.140030+06:00",
-      "learning_pattern": ""
-    },
-    "tamil.filmibeat.com/heroes/cm-vijays-bairavaa-will-re-release-on-new-year-2027-186841.html": {
-      "title": "2027 புத்தாண்டுக்கே ரசிகர்களுக்கு ட்ரீட் கொடுக்கும் சிஎம் விஜய்.. இந்த படம் ரீ ரிலிஸ் ஆகுதாம்! | CM Vijay's Bairavaa will re release on New Year 2027 - Tamil Filmibeat",
-      "url": "https://tamil.filmibeat.com/heroes/cm-vijays-bairavaa-will-re-release-on-new-year-2027-186841.html",
-      "canonical": "tamil.filmibeat.com/heroes/cm-vijays-bairavaa-will-re-release-on-new-year-2027-186841.html",
-      "published_dt": "2026-11-11T17:16:20+06:00",
-      "published_date": "2026-11-11T17:16:20+06:00",
-      "source": "tamil.filmibeat.com",
-      "region": "Entertainment",
-      "excerpt": "N o n e",
-      "image": "https://images.filmibeat.com/ta/img/2026/11/cmvijayy-11271794395761.jpg",
-      "discovery": "exa",
-      "source_pool": "primary",
-      "status": "pending",
-      "first_seen": "2026-11-12T04:36:10.155161+06:00",
-      "last_seen": "2026-11-12T04:36:10.155179+06:00",
-      "importance_score": 73,
-      "priority_type": "Theatrical Releases / Re-releases",
-      "priority_tier": 1,
-      "priority_rank": 5,
-      "sector": "Indian",
-      "rank_reason": "Confirmed theatrical re‑release date and venue; notable regional star ensures strong audience anticipation.",
-      "last_ranked_at": "2026-11-12T14:03:08.745707+06:00",
-      "learning_pattern": ""
-    },
     "deadline.com/2026/11/skyler-gisondo-people-v-gorilla-grodd-james-gunn-dc-exit-1237221337": {
       "title": "Skyler Gisondo On The Future Of ‘The People V. Gorilla Grodd’ After James Gunn’s DC Exit: “There’s A Lot Of Questions”",
       "url": "https://deadline.com/2026/11/skyler-gisondo-people-v-gorilla-grodd-james-gunn-dc-exit-1237221337/",
@@ -1469,13 +1300,13 @@
       "status": "pending",
       "first_seen": "2026-11-15T21:27:58.180524+06:00",
       "last_seen": "2026-11-16T02:53:14.275446+06:00",
-      "importance_score": 33,
+      "importance_score": 0,
       "priority_type": "OTT / Streaming Availability",
       "priority_tier": 1,
       "priority_rank": 1,
-      "sector": "Hollywood",
-      "rank_reason": "Clip shown without a release date or platform window; not a full release announcement.",
-      "last_ranked_at": "2026-11-16T02:53:44.359078+06:00",
+      "sector": "International",
+      "rank_reason": "Unscored fallback; withheld from publication.",
+      "last_ranked_at": "2026-11-16T13:45:06.703505+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/film/global/seville-european-film-festival-prizes-you-dont-belong-here-1236948019": {
@@ -1493,13 +1324,13 @@
       "status": "pending",
       "first_seen": "2026-11-15T21:27:59.921156+06:00",
       "last_seen": "2026-11-15T21:27:59.921172+06:00",
-      "importance_score": 34,
+      "importance_score": 0,
       "priority_type": "OTT / Streaming Availability",
       "priority_tier": 1,
       "priority_rank": 1,
       "sector": "International",
-      "rank_reason": "Festival awards ceremony; no upcoming release of titles announced.",
-      "last_ranked_at": "2026-11-16T02:53:44.358758+06:00",
+      "rank_reason": "Unscored fallback; withheld from publication.",
+      "last_ranked_at": "2026-11-16T13:45:06.703396+06:00",
       "learning_pattern": ""
     },
     "deadline.com/2026/11/the-good-daughter-author-thinking-about-sequel-1237224525": {
@@ -1516,14 +1347,14 @@
       "date_estimated": false,
       "status": "pending",
       "first_seen": "2026-11-16T02:53:13.158055+06:00",
-      "last_seen": "2026-11-16T02:53:13.158071+06:00",
-      "importance_score": 41,
+      "last_seen": "2026-11-16T13:44:36.076788+06:00",
+      "importance_score": 0,
       "priority_type": "New Movie / Series Announcements",
       "priority_tier": 2,
       "priority_rank": 6,
-      "sector": "Hollywood",
-      "rank_reason": "Only a speculative comment about a possible short‑story sequel; no concrete release date or platform confirmed.",
-      "last_ranked_at": "2026-11-16T02:53:44.359632+06:00",
+      "sector": "International",
+      "rank_reason": "Unscored fallback; withheld from publication.",
+      "last_ranked_at": "2026-11-16T13:45:06.703824+06:00",
       "learning_pattern": ""
     },
     "deadline.com/2026/11/behemoth-humanity-pedro-pascal-hope-amid-ai-boom-1237224503": {
@@ -1540,14 +1371,14 @@
       "date_estimated": false,
       "status": "pending",
       "first_seen": "2026-11-16T02:53:13.761855+06:00",
-      "last_seen": "2026-11-16T02:53:13.761872+06:00",
-      "importance_score": 82,
-      "priority_type": "Release Date Confirmations",
+      "last_seen": "2026-11-16T13:44:36.553983+06:00",
+      "importance_score": 100,
+      "priority_type": "Theatrical Releases / Re-releases",
       "priority_tier": 1,
-      "priority_rank": 4,
+      "priority_rank": 5,
       "sector": "Hollywood",
-      "rank_reason": "Official confirmation of theatrical release on Dec 4 with strong star power and AI‑themed buzz, high audience anticipation.",
-      "last_ranked_at": "2026-11-16T02:53:44.359196+06:00",
+      "rank_reason": "Officially announced theatrical premiere date and venue, fulfilling release‑only criteria with strong audience anticipation.",
+      "last_ranked_at": "2026-11-16T13:45:06.703596+06:00",
       "learning_pattern": ""
     },
     "deadline.com/2026/11/david-tennant-only-murders-in-the-building-doctor-who-future-1237224368": {
@@ -1590,13 +1421,13 @@
       "status": "pending",
       "first_seen": "2026-11-16T02:53:15.051596+06:00",
       "last_seen": "2026-11-16T02:53:15.051612+06:00",
-      "importance_score": 39,
+      "importance_score": 0,
       "priority_type": "OTT / Streaming Availability",
       "priority_tier": 1,
       "priority_rank": 1,
-      "sector": "Hollywood",
-      "rank_reason": "Ceremony already occurred; no new release announced, only coverage of the event.",
-      "last_ranked_at": "2026-11-16T02:53:44.358579+06:00",
+      "sector": "International",
+      "rank_reason": "Unscored fallback; withheld from publication.",
+      "last_ranked_at": "2026-11-16T13:45:06.703235+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/shopping/news/kpop-demon-criterion-blu-ray-buy-online-1236759288": {
@@ -1614,13 +1445,13 @@
       "status": "pending",
       "first_seen": "2026-11-16T02:53:15.208071+06:00",
       "last_seen": "2026-11-16T02:53:15.208085+06:00",
-      "importance_score": 39,
+      "importance_score": 0,
       "priority_type": "OTT Platform Acquisition / Streaming Rights",
       "priority_tier": 2,
       "priority_rank": 8,
       "sector": "International",
-      "rank_reason": "Discounted physical release of an existing title; not a new content release.",
-      "last_ranked_at": "2026-11-16T02:53:44.359948+06:00",
+      "rank_reason": "Unscored fallback; withheld from publication.",
+      "last_ranked_at": "2026-11-16T13:45:06.704111+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/film/news/billy-evans-amanda-seyfried-elizabeth-holmes-portrayal-1236948144": {
@@ -1638,13 +1469,61 @@
       "status": "pending",
       "first_seen": "2026-11-16T02:53:15.421349+06:00",
       "last_seen": "2026-11-16T02:53:15.421367+06:00",
-      "importance_score": 36,
+      "importance_score": 0,
+      "priority_type": "Season Renewals / New Season Updates",
+      "priority_tier": 2,
+      "priority_rank": 7,
+      "sector": "International",
+      "rank_reason": "Unscored fallback; withheld from publication.",
+      "last_ranked_at": "2026-11-16T13:45:06.704004+06:00",
+      "learning_pattern": ""
+    },
+    "deadline.com/2026/11/beast-games-season-3-release-date-prime-video-mrbeast-1237223404": {
+      "title": "‘Beast Games’ Sets Season 3 Release Date At Prime Video",
+      "url": "https://deadline.com/2026/11/beast-games-season-3-release-date-prime-video-mrbeast-1237223404/",
+      "canonical": "deadline.com/2026/11/beast-games-season-3-release-date-prime-video-mrbeast-1237223404",
+      "published_dt": "2026-11-16T07:15:00+06:00",
+      "published_date": "2026-11-16T07:15:00+06:00",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "excerpt": "We have a date for Season 3 of Beast Games. Prime Video has set Wednesday, December 16 for the premiere of Beast Games: World Champions. It will launch with three episodes, followed by two weekly episodes leading up to the season finale on Wednesday, January 13. We’re also getting a look at the new season, […]",
+      "image": "https://deadline.com/wp-content/uploads/2026/11/Beast-Games-2.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-16T13:44:35.624605+06:00",
+      "last_seen": "2026-11-16T13:44:35.624620+06:00",
+      "importance_score": 97,
       "priority_type": "Season Renewals / New Season Updates",
       "priority_tier": 2,
       "priority_rank": 7,
       "sector": "Hollywood",
-      "rank_reason": "Discussion of a documentary already released; no new release announced.",
-      "last_ranked_at": "2026-11-16T02:53:44.359776+06:00",
+      "rank_reason": "Officially confirmed release date and platform for Season 3, with detailed rollout schedule, making it a publishable release story.",
+      "last_ranked_at": "2026-11-16T13:45:06.703914+06:00",
+      "learning_pattern": ""
+    },
+    "variety.com/2026/tv/news/gilded-age-peggy-wedding-denee-benton-1236948219": {
+      "title": "‘The Gilded Age’ Star Denée Benton on Peggy’s Big Day: “It Was Like Eating Candy and Steak All at the Same Time”",
+      "url": "https://variety.com/2026/tv/news/gilded-age-peggy-wedding-denee-benton-1236948219/",
+      "canonical": "variety.com/2026/tv/news/gilded-age-peggy-wedding-denee-benton-1236948219",
+      "published_dt": "2026-11-16T09:01:00+06:00",
+      "published_date": "2026-11-16T09:01:00+06:00",
+      "source": "Variety",
+      "region": "Entertainment",
+      "excerpt": "SPOILER ALERT: The following story contains plot details from “Ain’t That Good News,” Season 4, Episode 3 of “The Gilded Age,” now streaming on HBO Max. Peggy Scott’s happily ever after was years in the making. “That’s always been the really long game, intentional pursuit that I’ve been on with the show,” says Denée Benton, […]",
+      "image": "https://variety.com/wp-content/uploads/2026/11/denee-benton-jordan-donica.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-16T13:44:37.487379+06:00",
+      "last_seen": "2026-11-16T13:44:37.487397+06:00",
+      "importance_score": 0,
+      "priority_type": "",
+      "priority_tier": 2,
+      "priority_rank": 5,
+      "sector": "International",
+      "rank_reason": "Unscored fallback; withheld from publication.",
+      "last_ranked_at": "2026-11-16T13:45:06.703711+06:00",
       "learning_pattern": ""
     }
   },
@@ -1699,30 +1578,6 @@
       "status": "published",
       "message_id": 1240
     },
-    "red_rising_movie_announcement": {
-      "event_id": "red_rising_movie_announcement",
-      "canonical_url": "variety.com/2026/film/news/red-rising-movie-paramount-hunger-games-director-books-1236914459",
-      "original_url": "https://variety.com/2026/film/news/red-rising-movie-paramount-hunger-games-director-books-1236914459/",
-      "source": "Variety",
-      "region": "Entertainment",
-      "topic": "Franchises and IP",
-      "institution": "Paramount Pictures",
-      "event_cluster_id": "evt_577169828c",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Red Rising",
-      "summary": "Paramount is developing a film adaptation of the first Red Rising novel with director Francis Lawrence attached.",
-      "highlights": [
-        "Francis Lawrence, known for the Hunger Games franchise, will direct the movie",
-        "Justin Rhodes is penning the screenplay and Pierce Brown will serve as executive producer"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-17T03:34:22+06:00",
-      "selected_at": "2026-10-17T20:23:26.404978+06:00",
-      "status": "published",
-      "message_id": 959
-    },
     "restoration_it_1927_frenchdeal": {
       "event_id": "restoration_it_1927_frenchdeal",
       "canonical_url": "variety.com/2026/film/global/taylor-swift-heroine-clara-bow-it-in-carlotta-artcraft-deal-1236914724",
@@ -1747,56 +1602,6 @@
       "selected_at": "2026-10-18T00:09:22.880265+06:00",
       "status": "published",
       "message_id": 962
-    },
-    "peter_rice_ynon_kreiz_meeting_impact": {
-      "event_id": "peter_rice_ynon_kreiz_meeting_impact",
-      "canonical_url": "variety.com/2026/film/news/netflix-peter-rice-bajaria-messy-dan-lin-jinny-howe-nbcu-1236914573",
-      "original_url": "https://variety.com/2026/film/news/netflix-peter-rice-bajaria-messy-dan-lin-jinny-howe-nbcu-1236914573/",
-      "source": "Variety",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "Netflix / Skydance",
-      "event_cluster_id": "evt_fb5b7e495f",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Peter Rice",
-      "summary": "Peter Rice has been appointed chief content officer of Netflix, succeeding Bela Bajaria amid a major executive shake‑up.",
-      "highlights": [
-        "Rice’s hiring follows the abrupt exit of Bela Bajaria and signals a shift toward a Silicon Valley‑style management approach",
-        "The move comes as Netflix implements a 6% staff layoff and prepares for its Q3 earnings report on Oct. 20",
-        "Industry insiders speculate the hire could precede Netflix’s pursuit of a major studio acquisition, with NBCUniversal a likely target"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-17T07:13:04+06:00",
-      "selected_at": "2026-10-18T00:09:27.699498+06:00",
-      "status": "published",
-      "message_id": 963
-    },
-    "asia_europe_co_production_partnership": {
-      "event_id": "asia_europe_co_production_partnership",
-      "canonical_url": "variety.com/2026/film/markets-festivals/renoir-producers-asia-europe-co-production-panel-tiffcom-1236914637",
-      "original_url": "https://variety.com/2026/film/markets-festivals/renoir-producers-asia-europe-co-production-panel-tiffcom-1236914637/",
-      "source": "Variety",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "Tokyo TIFFCOM",
-      "event_cluster_id": "evt_bbd717ce5a",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Renoir",
-      "summary": "Producers of Cannes‑selected ‘Renoir’ will speak at a Tokyo co‑production panel on Oct.",
-      "highlights": [
-        "Panel focuses on Asia‑Europe creative partnerships",
-        "Speakers include Mizuno‑Gray Eiko and Christophe Bruncher",
-        "Accelerator Atmovie Global Track partners with Ties That Bind"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-17T11:37:19+06:00",
-      "selected_at": "2026-10-18T00:09:32.512566+06:00",
-      "status": "published",
-      "message_id": 964
     },
     "styles_tour_doc": {
       "event_id": "styles_tour_doc",
@@ -29019,7 +28824,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-11-16T02:53:44.383391+06:00",
+      "last_seen": "2026-11-16T13:45:06.717863+06:00",
       "headline": "‘Behemoth!’s Humanity Gave Pedro Pascal “Tremendous Amount Of Hope” Amid AI Boom, Tony Gilroy Wants To “Blow Up AI Centers… At The Voting Box”"
     },
     "evt_a2ad46c2e7": {
@@ -29033,6 +28838,18 @@
       "confidence": 0.6,
       "last_seen": "2026-11-16T02:53:44.383401+06:00",
       "headline": "David Tennant Teases “Very Small Part” In ‘Only Murders In The Building”, Addresses Future Of ‘Doctor Who’: “It Deserves To Run Forever”"
+    },
+    "evt_bebe0dfc3a": {
+      "event_id": "evt_bebe0dfc3a",
+      "topic": "Release Dates",
+      "region": "Entertainment",
+      "sources": [
+        "Deadline"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-16T13:45:06.717873+06:00",
+      "headline": "‘Beast Games’ Sets Season 3 Release Date At Prime Video"
     }
   },
   "posted_event_ids": [
@@ -29538,7 +29355,6 @@
     "evt_a2ad46c2e7"
   ],
   "recent_titles": [
-    "the great chimera",
     "the galway bay murders",
     "act one",
     "below",
@@ -49252,110 +49068,6 @@
   },
   "score_history": [
     {
-      "title": "How to watch Camp Flog Gnaw 2026 festival on Amazon Music, Prime Video, and Twitch",
-      "score": 47,
-      "pattern": "",
-      "priority_type": "OTT / Streaming Availability",
-      "source": "Prime Video / Amazon News",
-      "seen_at": "2026-11-07T03:25:28.593030+06:00"
-    },
-    {
-      "title": "The Best Cell Phone Plans for Streaming: How to Get Netflix, Hulu, Disney+, HBO Max for Free",
-      "score": 39,
-      "pattern": "",
-      "priority_type": "OTT / Streaming Availability",
-      "source": "Variety",
-      "seen_at": "2026-11-07T03:25:28.593160+06:00"
-    },
-    {
-      "title": "Melania Trump Movie Sets Amazon Release Date as Two-Part Series",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "OTT / Streaming Availability",
-      "source": "Variety",
-      "seen_at": "2026-11-07T03:25:28.593453+06:00"
-    },
-    {
-      "title": "New Releases on Disney+ In Novemeber 2026 | New Movies & Shows | Explore Disney+ - Disney Plus",
-      "score": 80,
-      "pattern": "",
-      "priority_type": "Upcoming OTT Releases",
-      "source": "disneyplus.com",
-      "seen_at": "2026-11-07T03:25:28.593780+06:00"
-    },
-    {
-      "title": "Disney+ New Releases In November 2026, New Movies & Shows To Watch | Explore Disney+",
-      "score": 80,
-      "pattern": "",
-      "priority_type": "Upcoming OTT Releases",
-      "source": "disneyplus.com",
-      "seen_at": "2026-11-07T03:25:28.594078+06:00"
-    },
-    {
-      "title": "Bradley Cooper and Danny McBride’s ‘G.I. Joe’ Movie Set for 2028; Paramount Shifts New ‘Paranormal Activity’ to Halloween 2027",
-      "score": 85,
-      "pattern": "",
-      "priority_type": "Theatrical Releases / Re-releases",
-      "source": "Variety",
-      "seen_at": "2026-11-07T03:25:28.594222+06:00"
-    },
-    {
-      "title": "Universal Sets International Rollout Of Alex Gibney Documentary ‘Musk’",
-      "score": 84,
-      "pattern": "",
-      "priority_type": "Theatrical Releases / Re-releases",
-      "source": "Deadline",
-      "seen_at": "2026-11-07T03:25:28.594334+06:00"
-    },
-    {
-      "title": "'Jane Elliott Against The World' To Be Released In Theaters In December",
-      "score": 83,
-      "pattern": "",
-      "priority_type": "Theatrical Releases / Re-releases",
-      "source": "Deadline",
-      "seen_at": "2026-11-07T03:25:28.594649+06:00"
-    },
-    {
-      "title": "‘Musk’ Doc Gets International Release Dates After Questions About Overseas Rollout",
-      "score": 80,
-      "pattern": "",
-      "priority_type": "Theatrical Releases / Re-releases",
-      "source": "Variety",
-      "seen_at": "2026-11-07T03:25:28.594769+06:00"
-    },
-    {
-      "title": "Melania Trump Series Sets Amazon Release Date",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "",
-      "source": "Variety",
-      "seen_at": "2026-11-07T03:25:28.595056+06:00"
-    },
-    {
-      "title": "‘Stranger Things’ Prequel Spinoff ‘Other Worlds’ Ordered to Series at Netflix",
-      "score": 67,
-      "pattern": "",
-      "priority_type": "New Movie / Series Announcements",
-      "source": "Variety",
-      "seen_at": "2026-11-07T03:25:28.595176+06:00"
-    },
-    {
-      "title": "Director Lee Chang-dong Returns with Drama Possible Love - Netflix Tudum",
-      "score": 55,
-      "pattern": "",
-      "priority_type": "New Movie / Series Announcements",
-      "source": "Netflix Tudum",
-      "seen_at": "2026-11-07T03:25:28.595444+06:00"
-    },
-    {
-      "title": "‘Am I The Wave?’: Feature Take Of Francisco Goldman’s Novel ‘Say Her Name’ Set With Manuel García-Rulfo & Renata Vaca",
-      "score": 54,
-      "pattern": "",
-      "priority_type": "New Movie / Series Announcements",
-      "source": "Deadline",
-      "seen_at": "2026-11-07T03:25:28.595599+06:00"
-    },
-    {
       "title": "Jalen Brunson Makes ‘Law & Order: SVU’ Acting Debut as a Promoted Cop: ‘I Focused on My Goals… Things Worked Out’",
       "score": 35,
       "pattern": "",
@@ -53250,18 +52962,122 @@
       "priority_type": "OTT Platform Acquisition / Streaming Rights",
       "source": "Variety",
       "seen_at": "2026-11-16T02:53:44.361508+06:00"
+    },
+    {
+      "title": "‘Hold Onto Me’ Director Myrsini Aristidou Kicks Off Historic Oscar Campaign for Sundance Audience Award Winner: ‘I Really Feel Like We’re Un",
+      "score": 32,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Variety",
+      "seen_at": "2026-11-16T13:44:35.147309+06:00"
+    },
+    {
+      "title": "Gambit Gets Serious: Channing Tatum’s Superhero Is ‘Not All Laughs’ in ‘Avengers: Doomsday’ as Kevin Feige Promises Fans a ‘Fully-Rounded Ch",
+      "score": 55,
+      "pattern": "",
+      "priority_type": "Upcoming OTT Releases",
+      "source": "Variety",
+      "seen_at": "2026-11-16T13:44:35.147419+06:00"
+    },
+    {
+      "title": "Venice Prizewinner ‘A Day in the Life of Jo’ Explores ‘Who and What We Truly Are’ Through Emotional Journey of Ordinary, Remarkable Teenage ",
+      "score": 47,
+      "pattern": "",
+      "priority_type": "Theatrical Releases / Re-releases",
+      "source": "Variety",
+      "seen_at": "2026-11-16T13:44:35.147520+06:00"
+    },
+    {
+      "title": "Rock & Roll Hall of Fame Ceremony Gets Fired Up With Live-Wire Numbers From U2, the Chili Peppers, Usher, Cynthia Erivo, Sienna Spiro, Aeros",
+      "score": 39,
+      "pattern": "",
+      "priority_type": "OTT / Streaming Availability",
+      "source": "Variety",
+      "seen_at": "2026-11-16T13:44:35.147620+06:00"
+    },
+    {
+      "title": "Rock & Roll Hall of Fame Ceremony Gets Fired Up With Live-Wire Numbers From U2, the Chili Peppers, Usher, Cynthia Erivo, Sienna Spiro, Aeros",
+      "score": 0,
+      "pattern": "",
+      "priority_type": "OTT / Streaming Availability",
+      "source": "Variety",
+      "seen_at": "2026-11-16T13:45:06.704346+06:00"
+    },
+    {
+      "title": "Seville European Film Festival Prizes: ‘You Don’t Belong Here,’ ‘Falling House,’ ’Adult Supervision’ Win Big",
+      "score": 0,
+      "pattern": "",
+      "priority_type": "OTT / Streaming Availability",
+      "source": "Variety",
+      "seen_at": "2026-11-16T13:45:06.704454+06:00"
+    },
+    {
+      "title": "HBO Releases Surprise ‘Harry Potter’ Clip Of Hogwarts Banquet",
+      "score": 0,
+      "pattern": "",
+      "priority_type": "OTT / Streaming Availability",
+      "source": "Deadline",
+      "seen_at": "2026-11-16T13:45:06.704542+06:00"
+    },
+    {
+      "title": "‘Behemoth!’s Humanity Gave Pedro Pascal “Tremendous Amount Of Hope” Amid AI Boom, Tony Gilroy Wants To “Blow Up AI Centers… At The Voting Bo",
+      "score": 100,
+      "pattern": "",
+      "priority_type": "Theatrical Releases / Re-releases",
+      "source": "Deadline",
+      "seen_at": "2026-11-16T13:45:06.704654+06:00"
+    },
+    {
+      "title": "‘The Gilded Age’ Star Denée Benton on Peggy’s Big Day: “It Was Like Eating Candy and Steak All at the Same Time”",
+      "score": 0,
+      "pattern": "",
+      "priority_type": "",
+      "source": "Variety",
+      "seen_at": "2026-11-16T13:45:06.704761+06:00"
+    },
+    {
+      "title": "‘The Good Daughter’ Author Is “Thinking About” Short Story Sequel",
+      "score": 0,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Deadline",
+      "seen_at": "2026-11-16T13:45:06.704847+06:00"
+    },
+    {
+      "title": "‘Beast Games’ Sets Season 3 Release Date At Prime Video",
+      "score": 97,
+      "pattern": "",
+      "priority_type": "Season Renewals / New Season Updates",
+      "source": "Deadline",
+      "seen_at": "2026-11-16T13:45:06.704933+06:00"
+    },
+    {
+      "title": "Billy Evans Addresses Amanda Seyfried’s Portrayal of Elizabeth Holmes in ‘You Can See Everything’: She Was ‘Eager’ to ‘Play a Character’",
+      "score": 0,
+      "pattern": "",
+      "priority_type": "Season Renewals / New Season Updates",
+      "source": "Variety",
+      "seen_at": "2026-11-16T13:45:06.705037+06:00"
+    },
+    {
+      "title": "‘KPop Demon Hunters’ Criterion Collection Blu-ray On Sale for 50% Off on Heels of New Tour Announcement",
+      "score": 0,
+      "pattern": "",
+      "priority_type": "OTT Platform Acquisition / Streaming Rights",
+      "source": "Variety",
+      "seen_at": "2026-11-16T13:45:06.705138+06:00"
     }
   ],
   "adaptive_metrics": {
-    "raw_discovered": 62,
-    "pre_cerebras_rejected": 25589,
-    "hard_rejected": 8819,
+    "raw_discovered": 57,
+    "pre_cerebras_rejected": 25703,
+    "hard_rejected": 8872,
     "duplicate_rejected": 210,
-    "learned_rejected": 16560,
-    "passed_to_cerebras": 4564,
-    "cerebras_ranked": 10887,
+    "learned_rejected": 16621,
+    "passed_to_cerebras": 4568,
+    "cerebras_ranked": 10896,
     "published": 979,
-    "estimated_candidates_avoided": 25589
+    "estimated_candidates_avoided": 25703
   },
   "source_quality": {
     "collider.com": {
@@ -53293,11 +53109,11 @@
       "last_seen": "2026-09-08T11:49:09.577970+06:00"
     },
     "deadline.com": {
-      "observations": 4999,
-      "low_score_count": 4056,
-      "total_score": 253033,
+      "observations": 5003,
+      "low_score_count": 4058,
+      "total_score": 253230,
       "avg_score": 50.6,
-      "last_seen": "2026-11-16T02:53:44.361591+06:00"
+      "last_seen": "2026-11-16T13:45:06.705202+06:00"
     },
     "thewrap.com": {
       "observations": 16,
@@ -53314,11 +53130,11 @@
       "last_seen": "2026-09-08T21:05:13.366232+06:00"
     },
     "variety.com": {
-      "observations": 5259,
-      "low_score_count": 4341,
+      "observations": 5264,
+      "low_score_count": 4346,
       "total_score": 251069,
       "avg_score": 47.7,
-      "last_seen": "2026-11-16T02:53:44.361604+06:00"
+      "last_seen": "2026-11-16T13:45:06.705213+06:00"
     },
     "indiewire.com": {
       "observations": 10,
