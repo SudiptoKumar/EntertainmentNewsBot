@@ -1,325 +1,152 @@
 {
   "feeds": {
     "https://deadline.com/feed/": {
-      "etag": "W/\"9395e481642cb6eac9c129ca90e6646d\"",
-      "last_modified": "Tue, 17 Nov 2026 08:43:01 GMT",
-      "last_checked": "2026-11-17T14:54:23.411481+06:00",
+      "etag": "W/\"ca2b394feac02168700c628c01eb148b\"",
+      "last_modified": "Tue, 17 Nov 2026 18:15:39 GMT",
+      "last_checked": "2026-11-18T00:16:56.454447+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://variety.com/feed/": {
-      "etag": "W/\"cd04cef888ce76b074d978ab34e7b4f6\"",
-      "last_modified": "Tue, 17 Nov 2026 08:54:17 GMT",
-      "last_checked": "2026-11-17T14:54:26.686288+06:00",
+      "etag": "W/\"66d7fe7a11c2a06fe02fa3327c39dd14\"",
+      "last_modified": "Tue, 17 Nov 2026 18:16:19 GMT",
+      "last_checked": "2026-11-18T00:16:57.470024+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.hollywoodreporter.com/feed/": {
-      "etag": "W/\"7ebaf4a55d2a08466cd52cf7b716a3db\"",
-      "last_modified": "Tue, 17 Nov 2026 08:17:35 GMT",
-      "last_checked": "2026-11-17T14:54:27.540755+06:00",
+      "etag": "W/\"5b869958acab504d57b9acc7e4658abe\"",
+      "last_modified": "Tue, 17 Nov 2026 00:06:09 GMT",
+      "last_checked": "2026-11-18T00:16:58.673426+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.thewrap.com/feed/": {
-      "etag": "\"4d76cf59b3d3b038aa80a8c4a84d0b9c\"",
-      "last_modified": "Tue, 17 Nov 2026 06:38:57 GMT",
-      "last_checked": "2026-11-17T14:54:28.267610+06:00",
+      "etag": "\"96f4809826391a1247e89f7fa4a35b8c\"",
+      "last_modified": "Tue, 17 Nov 2026 18:15:17 GMT",
+      "last_checked": "2026-11-18T00:16:59.854621+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.indiewire.com/feed/": {
-      "etag": "W/\"b057284da9da1cc57494a1f90de26993\"",
-      "last_modified": "Tue, 17 Nov 2026 06:58:15 GMT",
-      "last_checked": "2026-11-17T14:54:28.710148+06:00",
+      "etag": "W/\"f1ba3c0af34e102357763ac605ce3444\"",
+      "last_modified": "Tue, 17 Nov 2026 17:32:33 GMT",
+      "last_checked": "2026-11-18T00:17:01.176976+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://collider.com/feed/": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-17T14:54:30.039621+06:00",
+      "last_checked": "2026-11-18T00:17:02.425816+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://tvline.com/feed/": {
-      "etag": "\"70aeeca95d93236dbd80e60a58a4b24c\"",
-      "last_modified": "Tue, 17 Nov 2026 03:56:51 GMT",
-      "last_checked": "2026-11-17T14:54:30.782832+06:00",
+      "etag": "\"01126b4cb6c1884929258009da601feb\"",
+      "last_modified": "Tue, 17 Nov 2026 17:12:00 GMT",
+      "last_checked": "2026-11-18T00:17:03.597161+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.ottplay.com/rss": {
       "etag": "\"b5496c89c58ff0f5d07d64a68d4efe07\"",
       "last_modified": "Thu, 27 May 2021 12:38:49 GMT",
-      "last_checked": "2026-11-17T14:54:32.262197+06:00",
+      "last_checked": "2026-11-18T00:17:05.330313+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.filmibeat.com/rss/feeds/filmibeat-news.xml": {
       "etag": null,
-      "last_modified": "Tue, 17 Nov 2026 08:52:32 GMT",
-      "last_checked": "2026-11-17T14:54:32.706659+06:00",
+      "last_modified": "Tue, 17 Nov 2026 18:17:05 GMT",
+      "last_checked": "2026-11-18T00:17:05.863560+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.pinkvilla.com/rss": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-17T14:54:33.079627+06:00",
+      "last_checked": "2026-11-18T00:17:06.443605+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.bollywoodhungama.com/feed/": {
-      "etag": "\"7db9ff34dd3da5c79a43723ee43bb10d\"",
-      "last_modified": "Tue, 17 Nov 2026 08:40:33 GMT",
-      "last_checked": "2026-11-17T14:54:33.234403+06:00",
+      "etag": "\"a0f1599fab8c519e5127268c5127b8fa\"",
+      "last_modified": "Tue, 17 Nov 2026 16:51:21 GMT",
+      "last_checked": "2026-11-18T00:17:06.612180+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.gadgets360.com/entertainment/rss": {
-      "last_checked": "2026-11-17T14:54:34.617548+06:00",
-      "fail_count": 237,
+      "last_checked": "2026-11-18T00:17:08.243135+06:00",
+      "fail_count": 238,
       "alerted": true
     },
     "https://www.soompi.com/feed": {
-      "etag": "W/\"656ae03ce953a11a68ab7d1d514c3259\"",
-      "last_modified": "Tue, 17 Nov 2026 08:24:30 GMT",
-      "last_checked": "2026-11-17T14:54:34.851884+06:00",
+      "etag": "W/\"ec3edb408272983024ded2ae1f3a0a63\"",
+      "last_modified": "Tue, 17 Nov 2026 16:12:46 GMT",
+      "last_checked": "2026-11-18T00:17:08.532296+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.whats-on-netflix.com/feed/": {
       "etag": null,
-      "last_modified": "Mon, 16 Nov 2026 22:30:18 GMT",
-      "last_checked": "2026-11-17T14:54:36.870498+06:00",
+      "last_modified": "Tue, 17 Nov 2026 17:09:03 GMT",
+      "last_checked": "2026-11-18T00:17:11.294626+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.netflix.com/tudum/rss.xml": {
-      "last_checked": "2026-11-17T14:54:38.134781+06:00",
-      "fail_count": 237,
+      "last_checked": "2026-11-18T00:17:13.259355+06:00",
+      "fail_count": 238,
       "alerted": true
     },
     "https://press.wbd.com/us/en/rss": {
-      "last_checked": "2026-11-17T14:54:38.446874+06:00",
-      "fail_count": 237,
+      "last_checked": "2026-11-18T00:17:13.738821+06:00",
+      "fail_count": 238,
       "alerted": true
     },
     "https://www.apple.com/tv-pr/newsroom/feed/": {
-      "last_checked": "2026-11-17T14:54:39.373353+06:00",
-      "fail_count": 237,
+      "last_checked": "2026-11-18T00:17:14.288875+06:00",
+      "fail_count": 238,
       "alerted": true
     },
     "https://www.aboutamazon.com/rss": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-17T14:54:39.508287+06:00",
+      "last_checked": "2026-11-18T00:17:14.574726+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.marvel.com/articles/feed": {
-      "last_checked": "2026-11-17T14:54:40.248469+06:00",
-      "fail_count": 237,
+      "last_checked": "2026-11-18T00:17:15.443529+06:00",
+      "fail_count": 238,
       "alerted": true
     },
     "https://www.dc.com/blog/rss.xml": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-17T14:54:41.428920+06:00",
-      "fail_count": 2,
-      "alerted": false
+      "last_checked": "2026-11-18T00:17:16.282965+06:00",
+      "fail_count": 3,
+      "alerted": true
     },
     "https://www.sonypictures.com/rss": {
-      "last_checked": "2026-11-17T14:54:41.886826+06:00",
-      "fail_count": 237,
+      "last_checked": "2026-11-18T00:17:16.917119+06:00",
+      "fail_count": 238,
       "alerted": true
     },
     "https://www.paramount.com/rss": {
-      "last_checked": "2026-11-17T14:54:41.966405+06:00",
-      "fail_count": 237,
+      "last_checked": "2026-11-18T00:17:17.027116+06:00",
+      "fail_count": 238,
       "alerted": true
     },
     "https://www.universalpictures.com/rss": {
-      "last_checked": "2026-11-17T14:54:42.165712+06:00",
-      "fail_count": 237,
+      "last_checked": "2026-11-18T00:17:17.285792+06:00",
+      "fail_count": 238,
       "alerted": true
     }
   },
   "queue": {
-    "deadline.com/2026/11/kpop-demon-hunters-2027-golden-tour-dates-1237222688": {
-      "title": "KPop Demon Hunters Announces 2027 Global Arena Tour Dates In North America, U.K. & Europe",
-      "url": "https://deadline.com/2026/11/kpop-demon-hunters-2027-golden-tour-dates-1237222688/",
-      "canonical": "deadline.com/2026/11/kpop-demon-hunters-2027-golden-tour-dates-1237222688",
-      "published_dt": "2026-11-13T20:45:55+06:00",
-      "published_date": "2026-11-13T20:45:55+06:00",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "excerpt": "Netflix’s KPop Demon Hunters will launch a global tour in June, with what Netflix and AEG Presents calls “cutting-edge performance innovations” that allow the animated Huntr/x characters Rumi, Mira and Zoey to interact with audiences. The Golden World Tour is set to open June 5, 2027, at Baltimore’s CFG Bank Arena, with the first tour […]",
-      "image": "https://deadline.com/wp-content/uploads/2026/11/2027-KPopDemonHunters-GenericSocial-1920x1080-1.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-11-13T21:58:33.861123+06:00",
-      "last_seen": "2026-11-13T21:58:33.861138+06:00",
-      "importance_score": 30,
-      "priority_type": "New Movie / Series Announcements",
-      "priority_tier": 2,
-      "priority_rank": 6,
-      "sector": "International",
-      "rank_reason": "Tour dates announced but not a media release; kept below publishable threshold",
-      "last_ranked_at": "2026-11-14T13:27:34.786951+06:00",
-      "learning_pattern": ""
-    },
-    "deadline.com/2026/11/sam-hartman-the-bachelor-season-30-abc-nfl-1237222687": {
-      "title": "NFL Quarterback Sam Hartman To Headline ‘The Bachelor’ For Season 30 On ABC",
-      "url": "https://deadline.com/2026/11/sam-hartman-the-bachelor-season-30-abc-nfl-1237222687/",
-      "canonical": "deadline.com/2026/11/sam-hartman-the-bachelor-season-30-abc-nfl-1237222687",
-      "published_dt": "2026-11-13T20:12:42+06:00",
-      "published_date": "2026-11-13T20:12:42+06:00",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "excerpt": "ABC has named the Bachelor for the upcoming 30th season of the reality series. Sam Hartman, a 27-year-old pro athlete playing for the NFL’s Washington Commanders, will be searching for love in the new installment, which premieres on Sunday, March 21 at 8 p.m. on ABC and streams next day on Hulu and Hulu on […]",
-      "image": "https://deadline.com/wp-content/uploads/2026/11/SamABC.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "posted",
-      "first_seen": "2026-11-13T21:58:34.169819+06:00",
-      "last_seen": "2026-11-13T21:58:34.169836+06:00",
-      "importance_score": 85,
-      "priority_type": "Release Date Confirmations",
-      "priority_tier": 1,
-      "priority_rank": 4,
-      "sector": "Hollywood",
-      "rank_reason": "Confirmed premiere date (Mar 21) and streaming on Hulu.",
-      "last_ranked_at": "2026-11-13T22:01:12.802287+06:00",
-      "learning_pattern": "",
-      "posted_at": "2026-11-13T22:23:49.681454+06:00"
-    },
-    "deadline.com/2026/11/virgin-river-renewed-season-9-netflix-longest-running-1237222568": {
-      "title": "‘Virgin River’ Gets Early Season 9 Renewal, Officially Becomes Netflix’s Longest-Running Scripted Series",
-      "url": "https://deadline.com/2026/11/virgin-river-renewed-season-9-netflix-longest-running-1237222568/",
-      "canonical": "deadline.com/2026/11/virgin-river-renewed-season-9-netflix-longest-running-1237222568",
-      "published_dt": "2026-11-13T20:00:00+06:00",
-      "published_date": "2026-11-13T20:00:00+06:00",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "excerpt": "Netflix’s content leadership may be changing but one thing remains constant — Virgin River getting another early renewal. The long-running romantic drama starring Alexandra Breckenridge and Martin Henderson has been picked up for a ninth season months ahead of its 2027 Season 8 premiere. It will once again consist of 10 episodes, bringing the show’s […]",
-      "image": "https://deadline.com/wp-content/uploads/2026/03/Virgin_River_n_S7_E1_00_04_47_14_R.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "posted",
-      "first_seen": "2026-11-13T21:58:34.317434+06:00",
-      "last_seen": "2026-11-13T21:58:34.317451+06:00",
-      "importance_score": 80,
-      "priority_type": "Season Renewals / New Season Updates",
-      "priority_tier": 2,
-      "priority_rank": 7,
-      "sector": "Hollywood",
-      "rank_reason": "Netflix officially confirmed the early renewal and upcoming season release window for ‘Virgin River’, providing a clear release‑date update.",
-      "last_ranked_at": "2026-11-14T03:57:05.015518+06:00",
-      "learning_pattern": "",
-      "posted_at": "2026-11-14T04:03:07.589529+06:00"
-    },
-    "deadline.com/2026/11/afm-david-walliams-international-insider-1237221498": {
-      "title": "International Insider: AFM Deep Dive; Walliams Scandal; ‘Ebenezer’ In London",
-      "url": "https://deadline.com/2026/11/afm-david-walliams-international-insider-1237221498/",
-      "canonical": "deadline.com/2026/11/afm-david-walliams-international-insider-1237221498",
-      "published_dt": "2026-11-13T19:00:00+06:00",
-      "published_date": "2026-11-13T19:00:00+06:00",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "excerpt": "Good afternoon friends, welcome back to another edition of the Deadline International Insider with Max Goldbart bringing you the latest. Scroll down. And sign up here. AFM Heats Up Kicking the tyres: The American Film Market (AFM) took place in Los Angeles this week with no shortage of packages announced in the days before and […]",
-      "image": "https://deadline.com/wp-content/uploads/2026/10/MCDOBSE_UC009.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-11-13T21:58:34.651827+06:00",
-      "last_seen": "2026-11-13T21:58:34.651843+06:00",
-      "importance_score": 30,
-      "priority_type": "New Movie / Series Announcements",
-      "priority_tier": 2,
-      "priority_rank": 6,
-      "sector": "International",
-      "rank_reason": "Industry roundup without specific release announcements; low score",
-      "last_ranked_at": "2026-11-14T13:27:34.787018+06:00",
-      "learning_pattern": ""
-    },
-    "variety.com/2026/tv/global/russell-brand-open-secret-netflix-revelations-1236946877": {
-      "title": "‘Russell Brand: Open Secret’: Netflix Doc Reveals His ‘Jokes’ About Rape, Making a Girlfriend ‘Brush Her Teeth Until They Bled’ and More",
-      "url": "https://variety.com/2026/tv/global/russell-brand-open-secret-netflix-revelations-1236946877/",
-      "canonical": "variety.com/2026/tv/global/russell-brand-open-secret-netflix-revelations-1236946877",
-      "published_dt": "2026-11-13T21:54:06+06:00",
-      "published_date": "2026-11-13T21:54:06+06:00",
-      "source": "Variety",
-      "region": "Entertainment",
-      "excerpt": "Just a week after former actor and comedian Russell Brand was convicted of rape and sexual assault in a U.K. court, Netflix has released a documentary, “Russell Brand: Open Secret,” exploring his rise to fame and pivot to political influencer even as rumors about his unsettling behavior intensified. Speaking to old roommates, ex-partners and fellow […]",
-      "image": "https://variety.com/wp-content/uploads/2026/11/Russell-Brand_037e35.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "posted",
-      "first_seen": "2026-11-13T21:58:36.536134+06:00",
-      "last_seen": "2026-11-13T21:58:36.536150+06:00",
-      "importance_score": 90,
-      "priority_type": "New Movie / Series Announcements",
-      "priority_tier": 2,
-      "priority_rank": 6,
-      "sector": "Hollywood",
-      "rank_reason": "Netflix officially released the documentary, providing a clear release date and platform.",
-      "last_ranked_at": "2026-11-13T22:01:12.802963+06:00",
-      "learning_pattern": "",
-      "posted_at": "2026-11-13T22:23:54.830044+06:00"
-    },
-    "variety.com/2026/film/global/conspiracy-thriller-the-awakening-kevin-spacey-us-release-1236946183": {
-      "title": "Conspiracy Thriller ‘The Awakening,’ Starring Kevin Spacey, Gets U.S. Release (EXCLUSIVE)",
-      "url": "https://variety.com/2026/film/global/conspiracy-thriller-the-awakening-kevin-spacey-us-release-1236946183/",
-      "canonical": "variety.com/2026/film/global/conspiracy-thriller-the-awakening-kevin-spacey-us-release-1236946183",
-      "published_dt": "2026-11-13T21:51:49+06:00",
-      "published_date": "2026-11-13T21:51:49+06:00",
-      "source": "Variety",
-      "region": "Entertainment",
-      "excerpt": "“The Awakening,” the British conspiracy thriller starring two-time Oscar winner Kevin Spacey in a supporting role, is coming to the U.S. The feature — which has the tagline “The Film They Don’t Want You to See” — will land on digital and cable platforms on Nov. 24 through Blue Harbor Entertainment. The announcement comes after “The Awakening” premiered […]",
-      "image": "https://variety.com/wp-content/uploads/2025/05/Kevin-Spacey-The-Awakening.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "posted",
-      "first_seen": "2026-11-13T21:58:36.679135+06:00",
-      "last_seen": "2026-11-13T21:58:36.679151+06:00",
-      "importance_score": 99,
-      "priority_type": "OTT / Streaming Availability",
-      "priority_tier": 1,
-      "priority_rank": 1,
-      "sector": "International",
-      "rank_reason": "Official announcement of U.S. digital and cable release on Nov. 24.",
-      "last_ranked_at": "2026-11-13T22:01:12.801565+06:00",
-      "learning_pattern": "",
-      "posted_at": "2026-11-13T22:23:40.020166+06:00"
-    },
-    "deadline.com/2026/11/avatar-seven-havens-book-2-release-date-paramount-plus-1237221752": {
-      "title": "‘Avatar: Seven Havens’ Sets Book 2 Release Date At Paramount+ - Deadline",
-      "url": "https://deadline.com/2026/11/avatar-seven-havens-book-2-release-date-paramount-plus-1237221752/",
-      "canonical": "deadline.com/2026/11/avatar-seven-havens-book-2-release-date-paramount-plus-1237221752",
-      "published_dt": "2026-11-13T04:15:00+06:00",
-      "published_date": "2026-11-13T04:15:00+06:00",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "excerpt": "‘Avatar: Seven Havens’ Sets Book 2 Release Date At Paramount+ Deadline",
-      "image": "",
-      "discovery": "google_news",
-      "date_estimated": false,
-      "status": "posted",
-      "first_seen": "2026-11-13T21:59:02.787447+06:00",
-      "last_seen": "2026-11-13T21:59:02.787475+06:00",
-      "importance_score": 100,
-      "priority_type": "Release Date Confirmations",
-      "priority_tier": 1,
-      "priority_rank": 4,
-      "sector": "International",
-      "rank_reason": "Paramount+ set a global spring release schedule with specific dates.",
-      "last_ranked_at": "2026-11-13T22:01:12.801975+06:00",
-      "learning_pattern": "",
-      "posted_at": "2026-11-13T22:23:44.934202+06:00"
-    },
     "deadline.com/2026/11/yellowjackets-creator-unreleased-bonus-episode-didnt-fit-canon-1237223357": {
       "title": "‘Yellowjackets’ Co-Creator Bart Nickerson Hints That Unreleased Bonus Episode Didn’t Fit “Canon Of The Show”",
       "url": "https://deadline.com/2026/11/yellowjackets-creator-unreleased-bonus-episode-didnt-fit-canon-1237223357/",
@@ -1253,12 +1080,12 @@
       "first_seen": "2026-11-17T14:54:23.830442+06:00",
       "last_seen": "2026-11-17T14:54:23.830450+06:00",
       "importance_score": 81,
-      "priority_type": "Upcoming OTT Releases",
-      "priority_tier": 1,
-      "priority_rank": 3,
+      "priority_type": "Season Renewals / New Season Updates",
+      "priority_tier": 2,
+      "priority_rank": 7,
       "sector": "Hollywood",
-      "rank_reason": "Provides concrete release window for new episodes on Disney+ and aligns with a major franchise, meeting the release‑only criteria.",
-      "last_ranked_at": "2026-11-17T15:00:47.369966+06:00",
+      "rank_reason": "Season 3 release window announced for Disney+ (exact date not given) with clear schedule information.",
+      "last_ranked_at": "2026-11-18T00:17:26.670521+06:00",
       "learning_pattern": ""
     },
     "deadline.com/2026/11/chris-long-direct-first-episode-katie-greaves-edie-falco-1237225773": {
@@ -1276,13 +1103,13 @@
       "status": "pending",
       "first_seen": "2026-11-17T14:54:23.929999+06:00",
       "last_seen": "2026-11-17T14:54:23.930007+06:00",
-      "importance_score": 49,
+      "importance_score": 73,
       "priority_type": "New Movie / Series Announcements",
       "priority_tier": 2,
       "priority_rank": 6,
       "sector": "Hollywood",
-      "rank_reason": "Announces series slated for 2027‑28 season but lacks a concrete release window; below publishable threshold.",
-      "last_ranked_at": "2026-11-17T15:00:47.370962+06:00",
+      "rank_reason": "Series announced with premiere season (2027‑28) but without a specific release date; still a release‑type announcement.",
+      "last_ranked_at": "2026-11-18T00:17:26.670105+06:00",
       "learning_pattern": ""
     },
     "deadline.com/2026/11/spider-man-brand-new-day-rosario-dawson-re-release-date-1237225762": {
@@ -1300,13 +1127,13 @@
       "status": "pending",
       "first_seen": "2026-11-17T14:54:24.127631+06:00",
       "last_seen": "2026-11-17T14:54:24.127642+06:00",
-      "importance_score": 82,
+      "importance_score": 79,
       "priority_type": "Theatrical Releases / Re-releases",
       "priority_tier": 1,
       "priority_rank": 5,
       "sector": "Hollywood",
-      "rank_reason": "Announces theatrical re‑release date (Dec 4) with new footage, fulfilling release‑only requirements.",
-      "last_ranked_at": "2026-11-17T15:00:47.370651+06:00",
+      "rank_reason": "Re‑release date (Dec 4) and new footage confirmed, making it a publishable release story.",
+      "last_ranked_at": "2026-11-18T00:17:26.669999+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/film/news/cliff-booth-first-reactions-brad-pitt-fincher-tarantino-1236948975": {
@@ -1324,13 +1151,13 @@
       "status": "pending",
       "first_seen": "2026-11-17T14:54:27.040732+06:00",
       "last_seen": "2026-11-17T14:54:27.040744+06:00",
-      "importance_score": 53,
-      "priority_type": "New Movie / Series Announcements",
-      "priority_tier": 2,
-      "priority_rank": 6,
+      "importance_score": 35,
+      "priority_type": "Upcoming OTT Releases",
+      "priority_tier": 1,
+      "priority_rank": 3,
       "sector": "Hollywood",
-      "rank_reason": "Only press preview reactions; no confirmed release date or window, so score stays below publishable threshold.",
-      "last_ranked_at": "2026-11-17T15:00:47.370845+06:00",
+      "rank_reason": "Reviews/first reactions without a release date; score kept low.",
+      "last_ranked_at": "2026-11-18T00:17:26.669529+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/film/columns/brad-pitt-oceans-14-shooting-late-2027-1236950020": {
@@ -1348,13 +1175,13 @@
       "status": "pending",
       "first_seen": "2026-11-17T14:54:27.113709+06:00",
       "last_seen": "2026-11-17T14:54:27.113719+06:00",
-      "importance_score": 47,
+      "importance_score": 35,
       "priority_type": "Release Date Confirmations",
       "priority_tier": 1,
       "priority_rank": 4,
       "sector": "Hollywood",
-      "rank_reason": "Provides production timeline but no release date; falls under non‑publishable category.",
-      "last_ranked_at": "2026-11-17T15:00:47.370328+06:00",
+      "rank_reason": "Speculative shooting schedule, no confirmed release date; below publishable threshold.",
+      "last_ranked_at": "2026-11-18T00:17:26.669790+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/film/columns/elizabeth-debicki-tenet-co-star-robert-pattinson-james-bond-1236949754": {
@@ -1372,13 +1199,134 @@
       "status": "pending",
       "first_seen": "2026-11-17T14:54:27.331575+06:00",
       "last_seen": "2026-11-17T14:54:27.331585+06:00",
-      "importance_score": 42,
+      "importance_score": 35,
+      "priority_type": "Upcoming OTT Releases",
+      "priority_tier": 1,
+      "priority_rank": 3,
+      "sector": "Hollywood",
+      "rank_reason": "Opinion/commentary on casting, not a release announcement.",
+      "last_ranked_at": "2026-11-18T00:17:26.669649+06:00",
+      "learning_pattern": ""
+    },
+    "deadline.com/2026/11/jena-malone-suzanna-son-to-star-kismet-1237226780": {
+      "title": "Jena Malone, Suzanna Son & Sofia Mortera Wrap On Indie ‘Kismet’ From Giovanna Molina",
+      "url": "https://deadline.com/2026/11/jena-malone-suzanna-son-to-star-kismet-1237226780/",
+      "canonical": "deadline.com/2026/11/jena-malone-suzanna-son-to-star-kismet-1237226780",
+      "published_dt": "2026-11-18T00:13:44+06:00",
+      "published_date": "2026-11-18T00:13:44+06:00",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "excerpt": "EXCLUSIVE: Jena Malone (The Boroughs) and Suzanna Son (Monster: The Ed Gein Story) have wrapped roles opposite newcomer Sofia Mortera in Kismet, an indie from Radiance Pictures and Distant Films that marks the feature debut of writer-director Giovanna Molina. Set during the desolate off-season on Fire Island, Kismet follows a melancholic 13-year-old girl (Mortera) who, […]",
+      "image": "https://deadline.com/wp-content/uploads/2026/11/Netflixs-Monster-The-Ed-Gein-Story-World-Premiere-Arrivals-1000.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-18T00:16:56.591733+06:00",
+      "last_seen": "2026-11-18T00:16:56.591751+06:00",
+      "importance_score": 45,
       "priority_type": "New Movie / Series Announcements",
       "priority_tier": 2,
       "priority_rank": 6,
       "sector": "Hollywood",
-      "rank_reason": "Opinion piece without any release information; score remains low.",
-      "last_ranked_at": "2026-11-17T15:00:47.371061+06:00",
+      "rank_reason": "Only reports production wrap; no release date, so score stays below publishable threshold.",
+      "last_ranked_at": "2026-11-18T00:17:26.670210+06:00",
+      "learning_pattern": ""
+    },
+    "deadline.com/2026/11/warner-bros-jeff-goldstein-distribution-exits-1237148114": {
+      "title": "Jeff Goldstein Exits As Global Theatrical Distribution Boss After 48-Year Warner Bros Run",
+      "url": "https://deadline.com/2026/11/warner-bros-jeff-goldstein-distribution-exits-1237148114/",
+      "canonical": "deadline.com/2026/11/warner-bros-jeff-goldstein-distribution-exits-1237148114",
+      "published_dt": "2026-11-17T23:16:19+06:00",
+      "published_date": "2026-11-17T23:16:19+06:00",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "excerpt": "Warner Bros veteran and current head of global theatrical distribution Jeff Goldstein is leaving the studio following Paramount’s acquisition of the studio back in October. He will remain a consultant. Goldstein’s retirement after a more than 48-year run comes amid news Tuesday of a major Skydance executive reorg after the absorbing of Warner Bros: Netflix […]",
+      "image": "https://deadline.com/wp-content/uploads/2026/10/Jeff-Goldstein-WB2.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-18T00:16:56.970097+06:00",
+      "last_seen": "2026-11-18T00:16:56.970115+06:00",
+      "importance_score": 39,
+      "priority_type": "New Movie / Series Announcements",
+      "priority_tier": 2,
+      "priority_rank": 6,
+      "sector": "Hollywood",
+      "rank_reason": "Executive departure news, not a release story.",
+      "last_ranked_at": "2026-11-18T00:17:26.670310+06:00",
+      "learning_pattern": ""
+    },
+    "deadline.com/2026/11/kira-goldberg-leaving-netflix-vp-film-paramount-pictures-1237226627": {
+      "title": "Kira Goldberg Leaving Netflix As VP Film To Join Paramount As President Of Motion Picture Group Alongside Don Granger; WB’s Jesse Ehrman Upped",
+      "url": "https://deadline.com/2026/11/kira-goldberg-leaving-netflix-vp-film-paramount-pictures-1237226627/",
+      "canonical": "deadline.com/2026/11/kira-goldberg-leaving-netflix-vp-film-paramount-pictures-1237226627",
+      "published_dt": "2026-11-17T22:50:32+06:00",
+      "published_date": "2026-11-17T22:50:32+06:00",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "excerpt": "Kira Goldberg is departing Netflix where she has been for eight years, most recently as VP Film, Faith, Holiday, YA, and Family. She is headed to Paramount Pictures, where she will take on a top position alongside Don Granger, who will maintain his current title. Both will now be Presidents, Motion Picture Group, reporting to […]",
+      "image": "https://deadline.com/wp-content/uploads/2026/11/Kira-Goldberg-Don-Jesse.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-18T00:16:57.332116+06:00",
+      "last_seen": "2026-11-18T00:16:57.332134+06:00",
+      "importance_score": 39,
+      "priority_type": "New Movie / Series Announcements",
+      "priority_tier": 2,
+      "priority_rank": 6,
+      "sector": "Hollywood",
+      "rank_reason": "Executive move, no title release information.",
+      "last_ranked_at": "2026-11-18T00:17:26.670410+06:00",
+      "learning_pattern": ""
+    },
+    "variety.com/2026/film/news/roadside-attractions-acquires-one-second-after-movie-1236949333": {
+      "title": "Roadside Attractions Acquires U.S. Rights to Thriller ‘One Second After’ Based on William R. Forstchen Novel (EXCLUSIVE)",
+      "url": "https://variety.com/2026/film/news/roadside-attractions-acquires-one-second-after-movie-1236949333/",
+      "canonical": "variety.com/2026/film/news/roadside-attractions-acquires-one-second-after-movie-1236949333",
+      "published_dt": "2026-11-18T00:15:00+06:00",
+      "published_date": "2026-11-18T00:15:00+06:00",
+      "source": "Variety",
+      "region": "Entertainment",
+      "excerpt": "Roadside Attractions has acquired U.S. distribution rights to “One Second After,” Scott Rogers’ action thriller based on the 2009 novel by William R. Forstchen. The film is set for theatrical release on April 30, 2027. “One Second After” marks Roger’s directorial debut. J. Michael Straczynski and Nicole Roewe penned the screenplay. Rob Pfaltzgraff, Nick Reid, […]",
+      "image": "https://variety.com/wp-content/uploads/2026/11/OSA_Day12_SV_0146_DSC02758_C.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "posted",
+      "first_seen": "2026-11-18T00:16:57.619790+06:00",
+      "last_seen": "2026-11-18T00:16:57.619807+06:00",
+      "importance_score": 88,
+      "priority_type": "Theatrical Releases / Re-releases",
+      "priority_tier": 1,
+      "priority_rank": 5,
+      "sector": "Hollywood",
+      "rank_reason": "U.S. theatrical release date confirmed for April 30 2027 with official distributor announcement.",
+      "last_ranked_at": "2026-11-18T00:17:26.669890+06:00",
+      "learning_pattern": "",
+      "posted_at": "2026-11-18T00:22:29.198728+06:00"
+    },
+    "variety.com/shop/star-wars-best-gifts-1203079097": {
+      "title": "The Best ‘Star Wars’ Gifts to Shop in 2026: Film Premiere Tickets, a $500 Grogu Animatronic, Limited-Edition Collectibles and More",
+      "url": "https://variety.com/shop/star-wars-best-gifts-1203079097/",
+      "canonical": "variety.com/shop/star-wars-best-gifts-1203079097",
+      "published_dt": "2026-11-18T00:07:10+06:00",
+      "published_date": "2026-11-18T00:07:10+06:00",
+      "source": "Variety",
+      "region": "Entertainment",
+      "excerpt": "The Force is especially strong this holiday season. With the 50th anniversary of “Star Wars” approaching in 2027, Disney and Lucasfilm are preparing for a yearlong celebration of the franchise, complete with new merchandise, immersive experiences and a theatrical re-release of George Lucas’ original 1977 film. The companies officially kicked off the countdown in November, […]",
+      "image": "https://variety.com/wp-content/uploads/2024/08/star-wars-gift-guide.png",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-18T00:16:57.769430+06:00",
+      "last_seen": "2026-11-18T00:16:57.769447+06:00",
+      "importance_score": 44,
+      "priority_type": "Upcoming OTT Releases",
+      "priority_tier": 1,
+      "priority_rank": 3,
+      "sector": "Hollywood",
+      "rank_reason": "Merchandise guide, no release date for a title; below publishable threshold.",
+      "last_ranked_at": "2026-11-18T00:17:26.669382+06:00",
       "learning_pattern": ""
     }
   },
@@ -1432,129 +1380,6 @@
       "selected_at": "2026-11-04T13:34:42.472683+06:00",
       "status": "published",
       "message_id": 1240
-    },
-    "snluk_trumpimpersonation_oct2026": {
-      "event_id": "snluk_trumpimpersonation_oct2026",
-      "canonical_url": "variety.com/2026/tv/global/snl-uk-james-austin-johnson-trump-surprise-cold-open-1236915603",
-      "original_url": "https://variety.com/2026/tv/global/snl-uk-james-austin-johnson-trump-surprise-cold-open-1236915603/",
-      "source": "Variety",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "SNL (U.K. edition)",
-      "event_cluster_id": "evt_339de9663a",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "SNL U.K.",
-      "summary": "James Austin Johnson makes his first appearance as Donald Trump in a cold‑open on SNL U.K., marking a crossover with the US SNL cast.",
-      "highlights": [
-        "James Austin Johnson appears as Donald Trump on SNL U.K.",
-        "First crossover between SNL U.K. and the US SNL casts",
-        "Sketch features Andy Burnham and Ukraine President Zelenskyy characters"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-18T15:23:42+06:00",
-      "selected_at": "2026-10-18T16:41:39.130711+06:00",
-      "status": "published",
-      "message_id": 974
-    },
-    "imperium_bestfilm": {
-      "event_id": "imperium_bestfilm",
-      "canonical_url": "deadline.com/2026/10/london-film-festival-award-winners-2026-1237166918",
-      "original_url": "https://deadline.com/2026/10/london-film-festival-award-winners-2026-1237166918/",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "BFI London Film Festival",
-      "event_cluster_id": "evt_3b29a771a7",
-      "event_confidence": 1.0,
-      "event_source_count": 2,
-      "headline": "Imperium",
-      "summary": "Sergei Loznitsa’s Imperium won the Best Film Award in the Official Competition at the London Film Festival.",
-      "highlights": [
-        "Best Film Award at LFF Official Competition",
-        "Jury praised its archival look at early‑1970s Soviet Union",
-        "Thai film 9 Temples To Heaven won the Sutherland Award"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-18T19:00:00+06:00",
-      "selected_at": "2026-10-18T20:38:11.413204+06:00",
-      "status": "published",
-      "message_id": 976
-    },
-    "cinegouna_emerge_2026": {
-      "event_id": "cinegouna_emerge_2026",
-      "canonical_url": "deadline.com/2026/10/el-gouna-cinegouna-emerge-2026-rising-stars-1237166913",
-      "original_url": "https://deadline.com/2026/10/el-gouna-cinegouna-emerge-2026-rising-stars-1237166913/",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "topic": "Casting",
-      "institution": "El Gouna Film Festival",
-      "event_cluster_id": "evt_c7ffd875b7",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "El Gouna Film Festival",
-      "summary": "El Gouna Film Festival announced the third cohort of its CineGouna Emerge Rising Stars program featuring emerging MENA filmmakers.",
-      "highlights": [
-        "The cohort includes director Abdallah Dnewar, writer‑director Razan AlSoghayer, filmmaker Omar Rammal, director‑producer Asmahan",
-        "The program integrates the Rising Stars into the festival’s main activities and industry events",
-        "CineGouna Emerge, launched in 2024, aims to nurture the next generation of MENA film professionals"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-18T18:01:00+06:00",
-      "selected_at": "2026-10-18T20:38:16.428772+06:00",
-      "status": "published",
-      "message_id": 977
-    },
-    "jengira_magnificent_dream_collaboration": {
-      "event_id": "jengira_magnificent_dream_collaboration",
-      "canonical_url": "variety.com/2026/film/global/apichatpong-weerasethakul-tilda-swinton-piano-1236915017",
-      "original_url": "https://variety.com/2026/film/global/apichatpong-weerasethakul-tilda-swinton-piano-1236915017/",
-      "source": "Variety",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "Piano (Mexican co‑producer)",
-      "event_cluster_id": "evt_e42ed096b8",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Jengira’s Magnificent Dream",
-      "summary": "Apichatpong Weerasethakul’s new film has secured Mexican co‑producer Piano, with Tilda Swinton attached.",
-      "highlights": [
-        "Piano, the company behind “Triangle of Sadness,” joins the project as co‑producer",
-        "Tilda Swinton confirmed to star alongside Thai actors Jenjira Pongpas and Sakda Kaewbuadee"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-18T20:32:49+06:00",
-      "selected_at": "2026-10-19T11:54:30.136832+06:00",
-      "status": "published",
-      "message_id": 985
-    },
-    "la_bola_negra_theatrical_grosses": {
-      "event_id": "la_bola_negra_theatrical_grosses",
-      "canonical_url": "variety.com/2026/film/news/la-bola-negra-box-office-netflix-reports-grosses-1236915765",
-      "original_url": "https://variety.com/2026/film/news/la-bola-negra-box-office-netflix-reports-grosses-1236915765/",
-      "source": "Variety",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "Netflix",
-      "event_cluster_id": "evt_3b98be8506",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "La Bola Negra",
-      "summary": "Netflix’s ‘La Bola Negra’ earned $277,500 from four U.S. theaters, the highest per‑screen average for a Spanish‑language film.",
-      "highlights": [
-        "Average $69,375 per location, second‑highest for a non‑English film ever",
-        "Netflix will keep the film in theaters for a 45‑day window before its streaming debut on Dec 2"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-18T23:12:54+06:00",
-      "selected_at": "2026-10-19T11:54:35.530350+06:00",
-      "status": "published",
-      "message_id": 986
     },
     "seasonrenewal_traumacode": {
       "event_id": "seasonrenewal_traumacode",
@@ -9496,6 +9321,31 @@
       "selected_at": "2026-11-17T00:08:26.667277+06:00",
       "status": "published",
       "message_id": 1320
+    },
+    "theatrical_release_april_30_2027": {
+      "event_id": "theatrical_release_april_30_2027",
+      "canonical_url": "variety.com/2026/film/news/roadside-attractions-acquires-one-second-after-movie-1236949333",
+      "original_url": "https://variety.com/2026/film/news/roadside-attractions-acquires-one-second-after-movie-1236949333/",
+      "source": "Variety",
+      "region": "Entertainment",
+      "topic": "Release Dates",
+      "institution": "Roadside Attractions",
+      "event_cluster_id": "evt_567e9dc2f8",
+      "event_confidence": 0.6,
+      "event_source_count": 1,
+      "headline": "One Second After",
+      "summary": "Roadside Attractions will distribute the action thriller ‘One Second After’ in U.S. theaters.",
+      "highlights": [
+        "Roadside Attractions acquired U.S. distribution rights",
+        "Theatrical release set for April 30, 2027",
+        "Based on William R. Forstchen’s 2009 novel"
+      ],
+      "concepts": [],
+      "key_numbers": [],
+      "published_at": "2026-11-18T00:15:00+06:00",
+      "selected_at": "2026-11-18T00:22:29.198845+06:00",
+      "status": "published",
+      "message_id": 1321
     }
   },
   "event_clusters": {
@@ -28336,14 +28186,14 @@
     },
     "evt_03a5190dce": {
       "event_id": "evt_03a5190dce",
-      "topic": "Release Dates",
+      "topic": "New Season Releases",
       "region": "Entertainment",
       "sources": [
         "Deadline"
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-11-17T15:00:47.388488+06:00",
+      "last_seen": "2026-11-18T00:17:26.691858+06:00",
       "headline": "‘Percy Jackson And The Olympians’ Season 3 Release Schedule: When Do New Episodes Come Out?"
     },
     "evt_9e24e13461": {
@@ -28357,10 +28207,21 @@
       "confidence": 0.6,
       "last_seen": "2026-11-17T15:00:47.388494+06:00",
       "headline": "‘Spider-Man: Brand New Day’ Re-Release With New Rosario Dawson Night Nurse Footage Sets Release"
+    },
+    "evt_567e9dc2f8": {
+      "event_id": "evt_567e9dc2f8",
+      "topic": "Release Dates",
+      "region": "Entertainment",
+      "sources": [
+        "Variety"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-18T00:17:26.691846+06:00",
+      "headline": "Roadside Attractions Acquires U.S. Rights to Thriller ‘One Second After’ Based on William R. Forstchen Novel (EXCLUSIVE)"
     }
   },
   "posted_event_ids": [
-    "evt_5c1bdff62b",
     "evt_cadfa2184b",
     "evt_0c42ee536e",
     "evt_92aea2b3af",
@@ -28859,7 +28720,8 @@
     "evt_32b5a61b7b",
     "evt_a2ad46c2e7",
     "evt_29b0ec2175",
-    "evt_c0f7b848bf"
+    "evt_c0f7b848bf",
+    "evt_567e9dc2f8"
   ],
   "recent_titles": [
     "below",
@@ -29261,7 +29123,8 @@
     "saturday night live",
     "only murders in the building",
     "nothing to fix",
-    "beast games"
+    "beast games",
+    "one second after"
   ],
   "work_memory": {
     "the dog stars": {
@@ -37708,6 +37571,15 @@
         "Release Date Confirmations": "2026-11-17T00:08:26.667335+06:00"
       },
       "last_published_at": "2026-11-17T00:08:26.667331+06:00"
+    },
+    "one second after": {
+      "title": "One Second After",
+      "sector": "Hollywood",
+      "first_published_at": "2026-11-18T00:22:29.198885+06:00",
+      "published_events": {
+        "Theatrical Releases / Re-releases": "2026-11-18T00:22:29.198891+06:00"
+      },
+      "last_published_at": "2026-11-18T00:22:29.198889+06:00"
     }
   },
   "publication_fingerprints": [
@@ -48479,6 +48351,17 @@
       "event_key": "Season 3 premiere December 16 2026",
       "canonical": "aboutamazon.com/news/entertainment/mr-beast-prime-video-beast-games-season-three",
       "published_at": "2026-11-17T00:08:26.667953+06:00"
+    },
+    {
+      "fingerprint": "one second after|Theatrical Releases / Re-releases|roadside attractions has distribution scott rogers action thriller based the 2009 novel william forstchen the set for april 2027 marks roger directorial debut michael straczynski and nicole roewe penned the screenplay rob pfaltzgraff nick reid roadside attractions will distribute the action thriller theaters roadside attractions distribution set for april 2027 based william forstchen 2009 novel april 2027",
+      "work_key": "one second after",
+      "priority_type": "Theatrical Releases / Re-releases",
+      "headline": "One Second After",
+      "event_text": "One Second After Roadside Attractions has acquired U.S. distribution rights to “One Second After,” Scott Rogers’ action thriller based on the 2009 novel by William R. Forstchen. The film is set for theatrical release on April 30, 2027. “One Second After” marks Roger’s directorial debut. J. Michael Straczynski and Nicole Roewe penned the screenplay. Rob Pfaltzgraff, Nick Reid, […] Roadside Attractions will distribute the action thriller ‘One Second After’ in U.S. theaters. Roadside Attractions acquired U.S. distribution rights Theatrical release set for April 30, 2027 Based on William R. Forstchen’s 2009 novel  April 30, 2027",
+      "core": "roadside attractions has distribution scott rogers action thriller based the 2009 novel william forstchen the set for april 2027 marks roger directorial debut michael straczynski and nicole roewe penned the screenplay rob pfaltzgraff nick reid roadside attractions will distribute the action thriller theaters roadside attractions distribution set for april 2027 based william forstchen 2009 novel april 2027",
+      "event_key": "theatrical_release_april_30_2027",
+      "canonical": "variety.com/2026/film/news/roadside-attractions-acquires-one-second-after-movie-1236949333",
+      "published_at": "2026-11-18T00:22:29.199189+06:00"
     }
   ],
   "fresh_start_at": "2026-09-07T13:58:06.173598+06:00",
@@ -48614,126 +48497,6 @@
     }
   },
   "score_history": [
-    {
-      "title": "‘Am I The Wave?’: Feature Take Of Francisco Goldman’s Novel ‘Say Her Name’ Set With Manuel García-Rulfo & Renata Vaca",
-      "score": 36,
-      "pattern": "",
-      "priority_type": "New Movie / Series Announcements",
-      "source": "Deadline",
-      "seen_at": "2026-11-07T12:54:09.564121+06:00"
-    },
-    {
-      "title": "The Best Cell Phone Plans for Streaming: How to Get Netflix, Hulu, Disney+, HBO Max for Free",
-      "score": 36,
-      "pattern": "",
-      "priority_type": "New Movie / Series Announcements",
-      "source": "Variety",
-      "seen_at": "2026-11-07T12:54:09.564221+06:00"
-    },
-    {
-      "title": "‘Nobody Wants This’ Renewed For Season 4 By Netflix",
-      "score": 36,
-      "pattern": "",
-      "priority_type": "Season Renewals / New Season Updates",
-      "source": "Deadline",
-      "seen_at": "2026-11-07T12:54:09.564308+06:00"
-    },
-    {
-      "title": "OTT Releases This Week: ఓటీటీలో సినిమాల జాతర.. ఈ వారం మిస్ కాకుండా చూడాల్సిన మూవీస్ ఇవే! | OTT Releases This Week: 20+ Movies & Web Series S",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "OTT / Streaming Availability",
-      "source": "telugu.filmibeat.com",
-      "seen_at": "2026-11-07T19:47:20.494541+06:00"
-    },
-    {
-      "title": "‘The Invited’ Series Inspired By Wendy Webb Novels In Works From Impossible Dream Entertainment & Wall To Wall; Helen Black & Jeff Howard Sc",
-      "score": 73,
-      "pattern": "",
-      "priority_type": "New Movie / Series Announcements",
-      "source": "Deadline",
-      "seen_at": "2026-11-07T19:47:20.494678+06:00"
-    },
-    {
-      "title": "Pierce Brosnan Endorses Callum Turner As Next James Bond As “He’s So Strong”; Josh O’Connor Reacts To Talk Around 007 Casting",
-      "score": 34,
-      "pattern": "",
-      "priority_type": "Cast / Character Announcements",
-      "source": "Deadline",
-      "seen_at": "2026-11-07T19:47:20.494800+06:00"
-    },
-    {
-      "title": "Paramount+ Drama Slate: Series Moving To HBO, Sarah Aubrey & Francesca Orsi Sharing Oversight Among Options Explored Post-Merger – The Dish",
-      "score": 69,
-      "pattern": "",
-      "priority_type": "Production / Filming Updates",
-      "source": "Deadline",
-      "seen_at": "2026-11-07T19:47:20.494968+06:00"
-    },
-    {
-      "title": "Cristian Mungiu’s Cinematographer Tudor Vladimir Panduru Breaks Down Long Takes on ‘Fjord,’ ‘R.M.N.’ at Jakarta World Cinema Masterclass",
-      "score": 14,
-      "pattern": "",
-      "priority_type": "Production / Filming Updates",
-      "source": "Variety",
-      "seen_at": "2026-11-07T19:47:20.495104+06:00"
-    },
-    {
-      "title": "Ranbir Kapoor and Yash’s ‘Ramayana’ Makers on Retelling India’s Epic for the World, as Amazon Music and T-Series Bet on A.R. Rahman and Hans",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "",
-      "source": "Variety",
-      "seen_at": "2026-11-07T19:47:20.495264+06:00"
-    },
-    {
-      "title": "Andrew Garfield Says He ‘Never Had Any Interaction’ With Sam Altman While Filming ‘Artificial,’ Despite Altman Claiming They Waved to Each O",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "",
-      "source": "Variety",
-      "seen_at": "2026-11-07T19:47:20.495399+06:00"
-    },
-    {
-      "title": "Netflix Pe Pitega Titu Mama Ka ‘Dhindora’: India’s First and Biggest Digital Creator Bhuvan Bam Brings Cult Favourite Back for Season 2 on N",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "",
-      "source": "about.netflix.com",
-      "seen_at": "2026-11-07T19:47:20.495462+06:00"
-    },
-    {
-      "title": "From ‘World of Warcraft Forever’ Surprise to Le Sserafim, Simu Liu and T-Pain Appearances, How BlizzCon 2026 Set the Stage for Blizzard Ente",
-      "score": 68,
-      "pattern": "",
-      "priority_type": "First Look / First Glimpse / Posters",
-      "source": "Variety",
-      "seen_at": "2026-11-07T19:47:20.495592+06:00"
-    },
-    {
-      "title": "'Melania, The Series' Gets Prime Video Release Date & Trailer",
-      "score": 80,
-      "pattern": "",
-      "priority_type": "OTT / Streaming Availability",
-      "source": "Deadline",
-      "seen_at": "2026-11-07T19:51:32.252550+06:00"
-    },
-    {
-      "title": "Nobody Wants This Season 3 Now Streaming: New Plot, Cast, Release Date, Photos - Netflix Tudum",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "OTT / Streaming Availability",
-      "source": "Netflix Tudum",
-      "seen_at": "2026-11-07T19:51:32.252876+06:00"
-    },
-    {
-      "title": "You Can See Everything Sparks Frenzy in Europe Ahead of Release",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "Upcoming OTT Releases",
-      "source": "Variety",
-      "seen_at": "2026-11-07T19:51:32.253206+06:00"
-    },
     {
       "title": "'The End Of Oak Street' Gets HBO Max Release Date",
       "score": 0,
@@ -52613,18 +52376,138 @@
       "priority_type": "OTT Platform Acquisition / Streaming Rights",
       "source": "Deadline",
       "seen_at": "2026-11-17T15:00:47.372674+06:00"
+    },
+    {
+      "title": "‘Hold Onto Me’ Director Myrsini Aristidou Kicks Off Historic Oscar Campaign for Sundance Audience Award Winner: ‘I Really Feel Like We’re Un",
+      "score": 32,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Variety",
+      "seen_at": "2026-11-18T00:16:56.317303+06:00"
+    },
+    {
+      "title": "Gambit Gets Serious: Channing Tatum’s Superhero Is ‘Not All Laughs’ in ‘Avengers: Doomsday’ as Kevin Feige Promises Fans a ‘Fully-Rounded Ch",
+      "score": 55,
+      "pattern": "",
+      "priority_type": "Upcoming OTT Releases",
+      "source": "Variety",
+      "seen_at": "2026-11-18T00:16:56.317410+06:00"
+    },
+    {
+      "title": "Venice Prizewinner ‘A Day in the Life of Jo’ Explores ‘Who and What We Truly Are’ Through Emotional Journey of Ordinary, Remarkable Teenage ",
+      "score": 47,
+      "pattern": "",
+      "priority_type": "Theatrical Releases / Re-releases",
+      "source": "Variety",
+      "seen_at": "2026-11-18T00:16:56.317509+06:00"
+    },
+    {
+      "title": "Rock & Roll Hall of Fame Ceremony Gets Fired Up With Live-Wire Numbers From U2, the Chili Peppers, Usher, Cynthia Erivo, Sienna Spiro, Aeros",
+      "score": 16,
+      "pattern": "",
+      "priority_type": "Theatrical Releases / Re-releases",
+      "source": "Variety",
+      "seen_at": "2026-11-18T00:16:56.317609+06:00"
+    },
+    {
+      "title": "The Best ‘Star Wars’ Gifts to Shop in 2026: Film Premiere Tickets, a $500 Grogu Animatronic, Limited-Edition Collectibles and More",
+      "score": 44,
+      "pattern": "",
+      "priority_type": "Upcoming OTT Releases",
+      "source": "Variety",
+      "seen_at": "2026-11-18T00:17:26.670752+06:00"
+    },
+    {
+      "title": "‘Cliff Booth’ First Reactions: Brad Pitt’s Sequel Is an ‘Absolute Triumph’ and a ‘Wildly Entertaining’ ‘Love Letter’ to Hollywood",
+      "score": 35,
+      "pattern": "",
+      "priority_type": "Upcoming OTT Releases",
+      "source": "Variety",
+      "seen_at": "2026-11-18T00:17:26.670865+06:00"
+    },
+    {
+      "title": "Elizabeth Debicki Says ‘Tenet’ Co-Star Robert Pattinson Will Be the ‘Perfect’ James Bond: ‘I’m So Thrilled’",
+      "score": 35,
+      "pattern": "",
+      "priority_type": "Upcoming OTT Releases",
+      "source": "Variety",
+      "seen_at": "2026-11-18T00:17:26.670972+06:00"
+    },
+    {
+      "title": "Brad Pitt Says ‘Ocean’s 14’ Not Shooting Until ‘Late’ 2027",
+      "score": 35,
+      "pattern": "",
+      "priority_type": "Release Date Confirmations",
+      "source": "Variety",
+      "seen_at": "2026-11-18T00:17:26.671067+06:00"
+    },
+    {
+      "title": "Roadside Attractions Acquires U.S. Rights to Thriller ‘One Second After’ Based on William R. Forstchen Novel (EXCLUSIVE)",
+      "score": 88,
+      "pattern": "",
+      "priority_type": "Theatrical Releases / Re-releases",
+      "source": "Variety",
+      "seen_at": "2026-11-18T00:17:26.671172+06:00"
+    },
+    {
+      "title": "‘Spider-Man: Brand New Day’ Re-Release With New Rosario Dawson Night Nurse Footage Sets Release",
+      "score": 79,
+      "pattern": "",
+      "priority_type": "Theatrical Releases / Re-releases",
+      "source": "Deadline",
+      "seen_at": "2026-11-18T00:17:26.671274+06:00"
+    },
+    {
+      "title": "Chris Long To Direct First Episode Of Fox Legal Drama ‘Katie Greaves’ Starring Edie Falco",
+      "score": 73,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Deadline",
+      "seen_at": "2026-11-18T00:17:26.671375+06:00"
+    },
+    {
+      "title": "Jena Malone, Suzanna Son & Sofia Mortera Wrap On Indie ‘Kismet’ From Giovanna Molina",
+      "score": 45,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Deadline",
+      "seen_at": "2026-11-18T00:17:26.671471+06:00"
+    },
+    {
+      "title": "Jeff Goldstein Exits As Global Theatrical Distribution Boss After 48-Year Warner Bros Run",
+      "score": 39,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Deadline",
+      "seen_at": "2026-11-18T00:17:26.671567+06:00"
+    },
+    {
+      "title": "Kira Goldberg Leaving Netflix As VP Film To Join Paramount As President Of Motion Picture Group Alongside Don Granger; WB’s Jesse Ehrman Upp",
+      "score": 39,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Deadline",
+      "seen_at": "2026-11-18T00:17:26.671673+06:00"
+    },
+    {
+      "title": "‘Percy Jackson And The Olympians’ Season 3 Release Schedule: When Do New Episodes Come Out?",
+      "score": 81,
+      "pattern": "",
+      "priority_type": "Season Renewals / New Season Updates",
+      "source": "Deadline",
+      "seen_at": "2026-11-18T00:17:26.671800+06:00"
     }
   ],
   "adaptive_metrics": {
-    "raw_discovered": 51,
-    "pre_cerebras_rejected": 25960,
-    "hard_rejected": 8965,
+    "raw_discovered": 49,
+    "pre_cerebras_rejected": 26096,
+    "hard_rejected": 9012,
     "duplicate_rejected": 211,
-    "learned_rejected": 16784,
-    "passed_to_cerebras": 4582,
-    "cerebras_ranked": 10920,
-    "published": 981,
-    "estimated_candidates_avoided": 25960
+    "learned_rejected": 16873,
+    "passed_to_cerebras": 4587,
+    "cerebras_ranked": 10931,
+    "published": 982,
+    "estimated_candidates_avoided": 26096
   },
   "source_quality": {
     "collider.com": {
@@ -52656,11 +52539,11 @@
       "last_seen": "2026-09-08T11:49:09.577970+06:00"
     },
     "deadline.com": {
-      "observations": 5015,
-      "low_score_count": 4066,
-      "total_score": 253841,
+      "observations": 5021,
+      "low_score_count": 4071,
+      "total_score": 254197,
       "avg_score": 50.6,
-      "last_seen": "2026-11-17T15:00:47.372749+06:00"
+      "last_seen": "2026-11-18T00:17:26.671886+06:00"
     },
     "thewrap.com": {
       "observations": 16,
@@ -52677,11 +52560,11 @@
       "last_seen": "2026-09-08T21:05:13.366232+06:00"
     },
     "variety.com": {
-      "observations": 5275,
-      "low_score_count": 4357,
-      "total_score": 251489,
+      "observations": 5280,
+      "low_score_count": 4361,
+      "total_score": 251726,
       "avg_score": 47.7,
-      "last_seen": "2026-11-17T15:00:47.372745+06:00"
+      "last_seen": "2026-11-18T00:17:26.671854+06:00"
     },
     "indiewire.com": {
       "observations": 10,
@@ -52798,7 +52681,7 @@
   },
   "category_coverage": {
     "Major Film Announcements": "2026-11-06T22:18:20.099531+06:00",
-    "Release Dates": "2026-11-17T00:08:20.627604+06:00",
+    "Release Dates": "2026-11-18T00:22:29.199208+06:00",
     "Studio Business": "2026-10-24T20:35:57.113797+06:00",
     "Streaming Platform News": "2026-11-06T22:17:44.559012+06:00",
     "Franchises and IP": "2026-11-06T22:17:34.555229+06:00",
