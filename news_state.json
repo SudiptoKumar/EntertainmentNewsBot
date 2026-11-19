@@ -1,249 +1,152 @@
 {
   "feeds": {
     "https://deadline.com/feed/": {
-      "etag": "W/\"c59a54e2c6ae252875b24ddfd096d076\"",
-      "last_modified": "Wed, 18 Nov 2026 17:51:51 GMT",
-      "last_checked": "2026-11-18T23:52:19.116613+06:00",
+      "etag": "W/\"b4e3ed90eaaf34190ac11f8c5b3de1d4\"",
+      "last_modified": "Thu, 19 Nov 2026 08:06:52 GMT",
+      "last_checked": "2026-11-19T14:30:13.729600+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://variety.com/feed/": {
-      "etag": "W/\"7d0a2e80f6275d6b87221bfe81147d08\"",
-      "last_modified": "Wed, 18 Nov 2026 17:49:04 GMT",
-      "last_checked": "2026-11-18T23:52:20.648647+06:00",
+      "etag": "W/\"96e38aaa8913376eda70ed81fc453615\"",
+      "last_modified": "Thu, 19 Nov 2026 07:11:06 GMT",
+      "last_checked": "2026-11-19T14:30:14.566799+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.hollywoodreporter.com/feed/": {
-      "etag": "W/\"680dcdefe695b0c177be922b0779122d\"",
-      "last_modified": "Wed, 18 Nov 2026 17:50:40 GMT",
-      "last_checked": "2026-11-18T23:52:22.492515+06:00",
+      "etag": "W/\"57e6c8fc3202b9a242847786bac153e0\"",
+      "last_modified": "Thu, 19 Nov 2026 00:54:42 GMT",
+      "last_checked": "2026-11-19T14:30:15.474576+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.thewrap.com/feed/": {
-      "etag": "\"e04a5e440ee8d4aebd8e15c309e0061e\"",
-      "last_modified": "Wed, 18 Nov 2026 17:36:55 GMT",
-      "last_checked": "2026-11-18T23:52:23.382064+06:00",
+      "etag": "\"cf394dc9c2f72c5e349df72adbfca4e7\"",
+      "last_modified": "Thu, 19 Nov 2026 06:39:05 GMT",
+      "last_checked": "2026-11-19T14:30:16.053226+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.indiewire.com/feed/": {
-      "etag": "W/\"fb9923361aa6fbc916fc527d246cd997\"",
-      "last_modified": "Wed, 18 Nov 2026 17:50:53 GMT",
-      "last_checked": "2026-11-18T23:52:24.362675+06:00",
+      "etag": "W/\"360bef3ddd0e8ec9f160a333442c15e1\"",
+      "last_modified": "Thu, 19 Nov 2026 02:36:01 GMT",
+      "last_checked": "2026-11-19T14:30:16.744476+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://collider.com/feed/": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-18T23:52:25.990941+06:00",
+      "last_checked": "2026-11-19T14:30:17.706053+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://tvline.com/feed/": {
-      "etag": "\"b82c879926800029c9b5d2291221d5ac\"",
-      "last_modified": "Wed, 18 Nov 2026 17:27:31 GMT",
-      "last_checked": "2026-11-18T23:52:27.058000+06:00",
+      "etag": "\"52796ff3872e26793c63c159d1715361\"",
+      "last_modified": "Thu, 19 Nov 2026 08:00:00 GMT",
+      "last_checked": "2026-11-19T14:30:18.303465+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.ottplay.com/rss": {
       "etag": "\"b5496c89c58ff0f5d07d64a68d4efe07\"",
       "last_modified": "Thu, 27 May 2021 12:38:49 GMT",
-      "last_checked": "2026-11-18T23:52:29.576199+06:00",
+      "last_checked": "2026-11-19T14:30:19.180069+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.filmibeat.com/rss/feeds/filmibeat-news.xml": {
       "etag": null,
-      "last_modified": "Wed, 18 Nov 2026 17:51:36 GMT",
-      "last_checked": "2026-11-18T23:52:29.973520+06:00",
+      "last_modified": "Thu, 19 Nov 2026 08:30:19 GMT",
+      "last_checked": "2026-11-19T14:30:19.732643+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.pinkvilla.com/rss": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-18T23:52:31.032096+06:00",
+      "last_checked": "2026-11-19T14:30:20.280967+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.bollywoodhungama.com/feed/": {
-      "etag": "\"6c5e5ec40962df94ef6c5b2569705181\"",
-      "last_modified": "Wed, 18 Nov 2026 17:40:18 GMT",
-      "last_checked": "2026-11-18T23:52:31.560063+06:00",
+      "etag": "\"52570bcd89d759aa9647f765a55d2c15\"",
+      "last_modified": "Thu, 19 Nov 2026 08:22:28 GMT",
+      "last_checked": "2026-11-19T14:30:20.481529+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.gadgets360.com/entertainment/rss": {
-      "last_checked": "2026-11-18T23:52:34.017302+06:00",
-      "fail_count": 240,
+      "last_checked": "2026-11-19T14:30:21.463459+06:00",
+      "fail_count": 241,
       "alerted": true
     },
     "https://www.soompi.com/feed": {
-      "etag": "W/\"3e0535a8aa6cd802e3788f7fbe872e84\"",
-      "last_modified": "Wed, 18 Nov 2026 16:01:35 GMT",
-      "last_checked": "2026-11-18T23:52:34.337551+06:00",
+      "etag": "W/\"c137453cb587d4d3d6a3eb95a12c0051\"",
+      "last_modified": "Thu, 19 Nov 2026 08:24:33 GMT",
+      "last_checked": "2026-11-19T14:30:21.754897+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.whats-on-netflix.com/feed/": {
       "etag": null,
-      "last_modified": "Wed, 18 Nov 2026 17:41:45 GMT",
-      "last_checked": "2026-11-18T23:52:36.731443+06:00",
+      "last_modified": "Wed, 18 Nov 2026 19:51:28 GMT",
+      "last_checked": "2026-11-19T14:30:23.373879+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.netflix.com/tudum/rss.xml": {
-      "last_checked": "2026-11-18T23:52:39.013321+06:00",
-      "fail_count": 240,
+      "last_checked": "2026-11-19T14:30:24.567643+06:00",
+      "fail_count": 241,
       "alerted": true
     },
     "https://press.wbd.com/us/en/rss": {
-      "last_checked": "2026-11-18T23:52:39.566731+06:00",
-      "fail_count": 240,
+      "last_checked": "2026-11-19T14:30:24.862450+06:00",
+      "fail_count": 241,
       "alerted": true
     },
     "https://www.apple.com/tv-pr/newsroom/feed/": {
-      "last_checked": "2026-11-18T23:52:39.982646+06:00",
-      "fail_count": 240,
+      "last_checked": "2026-11-19T14:30:25.279593+06:00",
+      "fail_count": 241,
       "alerted": true
     },
     "https://www.aboutamazon.com/rss": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-18T23:52:40.054434+06:00",
+      "last_checked": "2026-11-19T14:30:25.496990+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.marvel.com/articles/feed": {
-      "last_checked": "2026-11-18T23:52:40.157629+06:00",
-      "fail_count": 240,
+      "last_checked": "2026-11-19T14:30:26.097258+06:00",
+      "fail_count": 241,
       "alerted": true
     },
     "https://www.dc.com/blog/rss.xml": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-18T23:52:40.678577+06:00",
-      "fail_count": 5,
+      "last_checked": "2026-11-19T14:30:27.102850+06:00",
+      "fail_count": 6,
       "alerted": true
     },
     "https://www.sonypictures.com/rss": {
-      "last_checked": "2026-11-18T23:52:40.994323+06:00",
-      "fail_count": 240,
+      "last_checked": "2026-11-19T14:30:27.615063+06:00",
+      "fail_count": 241,
       "alerted": true
     },
     "https://www.paramount.com/rss": {
-      "last_checked": "2026-11-18T23:52:41.077450+06:00",
-      "fail_count": 240,
+      "last_checked": "2026-11-19T14:30:27.715567+06:00",
+      "fail_count": 241,
       "alerted": true
     },
     "https://www.universalpictures.com/rss": {
-      "last_checked": "2026-11-18T23:52:41.429202+06:00",
-      "fail_count": 240,
+      "last_checked": "2026-11-19T14:30:28.132521+06:00",
+      "fail_count": 241,
       "alerted": true
     }
   },
   "queue": {
-    "deadline.com/2026/11/cinephil-alexandru-solomon-small-expectations-idfa-1237223722": {
-      "title": "Cinephil Boards Alexandru Solomon’s Romanian Election Doc ‘Small Expectations’ – IDFA",
-      "url": "https://deadline.com/2026/11/cinephil-alexandru-solomon-small-expectations-idfa-1237223722/",
-      "canonical": "deadline.com/2026/11/cinephil-alexandru-solomon-small-expectations-idfa-1237223722",
-      "published_dt": "2026-11-14T17:40:53+06:00",
-      "published_date": "2026-11-14T17:40:53+06:00",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "excerpt": "EXCLUSIVE: Doc sales specialist Cinephil has boarded Alexandru Solomon’s Small Expectations ahead of its world premiere in the Frontlight sidebar of the International Documentary Film Festival Amsterdam next week. The first-person investigation chronicles the chaotic lead-up to Romania’s 2025 presidential election in which moderate independent Nicușor Dan faced off against far-right forces, including Trump-aligned street […]",
-      "image": "https://deadline.com/wp-content/uploads/2026/11/1_Small-Expectations_Balcony.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-11-14T20:51:50.118824+06:00",
-      "last_seen": "2026-11-15T01:47:47.097454+06:00",
-      "importance_score": 30,
-      "priority_type": "OTT Platform Acquisition / Streaming Rights",
-      "priority_tier": 2,
-      "priority_rank": 8,
-      "sector": "International",
-      "rank_reason": "Doc acquisition news without a confirmed release date or platform; therefore low publishable score.",
-      "last_ranked_at": "2026-11-15T13:39:37.015554+06:00",
-      "learning_pattern": ""
-    },
-    "deadline.com/2026/11/mormon-wives-hulu-lawsuit-defamation-1237223830": {
-      "title": "Hulu & ‘Secret Lives Of Mormon Wives’ Producers Accused Crafting “False Narrative” & “Staged Confrontations”",
-      "url": "https://deadline.com/2026/11/mormon-wives-hulu-lawsuit-defamation-1237223830/",
-      "canonical": "deadline.com/2026/11/mormon-wives-hulu-lawsuit-defamation-1237223830",
-      "published_dt": "2026-11-15T01:36:56+06:00",
-      "published_date": "2026-11-15T01:36:56+06:00",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "excerpt": "While it might not be a shock to some to know reality TV is not quite as real as presented, longtime The Secret Lives Of Mormon Wives cast member Dakota Mortensen claims the world needs to know he is not the “domestic abuser,” “serial adulterer” and overall heel the Hulu series made him out to […]",
-      "image": "https://deadline.com/wp-content/uploads/2026/11/dakota-mortensen.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-11-15T01:47:45.648912+06:00",
-      "last_seen": "2026-11-15T01:47:45.648928+06:00",
-      "importance_score": 18,
-      "priority_type": "Release Date Confirmations",
-      "priority_tier": 1,
-      "priority_rank": 4,
-      "sector": "Hollywood",
-      "rank_reason": "The piece focuses on controversy rather than a release announcement, keeping the score well below the publishable threshold.",
-      "last_ranked_at": "2026-11-15T21:28:32.026482+06:00",
-      "learning_pattern": ""
-    },
-    "deadline.com/feature/2026-tv-premiere-dates-1236391902": {
-      "title": "2026-27 Premiere Dates For New & Returning Series On Broadcast, Streaming & Cable",
-      "url": "https://deadline.com/feature/2026-tv-premiere-dates-1236391902/",
-      "canonical": "deadline.com/feature/2026-tv-premiere-dates-1236391902",
-      "published_dt": "2026-11-14T19:00:00+06:00",
-      "published_date": "2026-11-14T19:00:00+06:00",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "excerpt": "Here is Deadline’s annual list of premiere dates for new and returning TV series. Updated daily, the roster covers hundreds of broadcast, cable and streaming programs debuting in 2026 and early 2027, many still listed as TBA (to be announced). It includes series premieres, season debuts, shows returning from hiatus and some one-offs such as […]",
-      "image": "https://deadline.com/wp-content/uploads/2026/10/2026-27-TV-premiere-dates.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-11-15T01:47:46.951109+06:00",
-      "last_seen": "2026-11-15T01:47:46.951122+06:00",
-      "importance_score": 27,
-      "priority_type": "New Movie / Series Announcements",
-      "priority_tier": 2,
-      "priority_rank": 6,
-      "sector": "Hollywood",
-      "rank_reason": "Aggregated list of upcoming premieres; not a single release announcement.",
-      "last_ranked_at": "2026-11-15T13:39:37.015437+06:00",
-      "learning_pattern": ""
-    },
-    "variety.com/2026/tv/news/the-good-daughter-spoilers-rose-byrne-meghann-fahy-season-finale-1236945641": {
-      "title": "‘The Good Daughter’ Stars Rose Byrne and Meghann Fahy on Playing Sisters With Secrets and That Twisty Killer Ending",
-      "url": "https://variety.com/2026/tv/news/the-good-daughter-spoilers-rose-byrne-meghann-fahy-season-finale-1236945641/",
-      "canonical": "variety.com/2026/tv/news/the-good-daughter-spoilers-rose-byrne-meghann-fahy-season-finale-1236945641",
-      "published_dt": "2026-11-15T01:00:00+06:00",
-      "published_date": "2026-11-15T01:00:00+06:00",
-      "source": "Variety",
-      "region": "Entertainment",
-      "excerpt": "SPOILER ALERT: This interview contains major spoilers from “The Good Daughter,” now streaming on Peacock. For Sam and Charlie Quinn, the estranged sisters played by Rose Byrne and Meghann Fahy in “The Good Daughter,” the truth was always going to set them free. Adapted by author Karin Slaughter from her own bestselling novel of the […]",
-      "image": "https://variety.com/wp-content/uploads/2026/11/TheGoodDaughter-MeghannFahy-RoseByrne.3.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "posted",
-      "first_seen": "2026-11-15T01:47:47.765128+06:00",
-      "last_seen": "2026-11-15T01:47:47.765149+06:00",
-      "importance_score": 86,
-      "priority_type": "OTT / Streaming Availability",
-      "priority_tier": 1,
-      "priority_rank": 1,
-      "sector": "Hollywood",
-      "rank_reason": "The story confirms that the series is now streaming on Peacock, providing a clear release platform and date window for audiences.",
-      "last_ranked_at": "2026-11-15T01:50:07.289027+06:00",
-      "learning_pattern": "",
-      "posted_at": "2026-11-15T01:53:08.653379+06:00"
-    },
     "deadline.com/2026/11/amanda-seyfried-host-saturday-night-live-1237224388": {
       "title": "Amanda Seyfried To Host ‘Saturday Night Live’",
       "url": "https://deadline.com/2026/11/amanda-seyfried-host-saturday-night-live-1237224388/",
@@ -1152,13 +1055,13 @@
       "status": "pending",
       "first_seen": "2026-11-18T23:52:19.418151+06:00",
       "last_seen": "2026-11-18T23:52:19.418169+06:00",
-      "importance_score": 87,
+      "importance_score": 85,
       "priority_type": "OTT / Streaming Availability",
       "priority_tier": 1,
       "priority_rank": 1,
       "sector": "Hollywood",
-      "rank_reason": "Official streaming date and platform announced, clear release window and high audience interest.",
-      "last_ranked_at": "2026-11-18T23:52:52.219588+06:00",
+      "rank_reason": "Official streaming release date announced for Dec 4 2026 on HBO Max, meeting release‑only criteria.",
+      "last_ranked_at": "2026-11-19T14:30:35.410734+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/tv/global/agatha-christie-tommy-tuppence-stream-channel-5-uk-1236952007": {
@@ -1201,14 +1104,111 @@
       "status": "pending",
       "first_seen": "2026-11-18T23:52:22.404863+06:00",
       "last_seen": "2026-11-18T23:52:22.404880+06:00",
-      "importance_score": 43,
-      "priority_type": "OTT / Streaming Availability",
-      "priority_tier": 1,
-      "priority_rank": 1,
+      "importance_score": 45,
+      "priority_type": "New Movie / Series Announcements",
+      "priority_tier": 2,
+      "priority_rank": 6,
       "sector": "International",
-      "rank_reason": "Product launch, not a release of media content; scores below publishable threshold.",
-      "last_ranked_at": "2026-11-18T23:52:52.220003+06:00",
+      "rank_reason": "Product launch, not a content release; score stays under publishable threshold.",
+      "last_ranked_at": "2026-11-19T14:30:35.411142+06:00",
       "learning_pattern": ""
+    },
+    "deadline.com/2026/11/netflix-penelope-cruz-juan-diego-bottos-patricia-moonlyon-1237228807": {
+      "title": "Netflix Unveils Penélope Cruz & Juan Diego Botto’s Domestic Violence Drama ‘Patricia’ As Production Gets Underway",
+      "url": "https://deadline.com/2026/11/netflix-penelope-cruz-juan-diego-bottos-patricia-moonlyon-1237228807/",
+      "canonical": "deadline.com/2026/11/netflix-penelope-cruz-juan-diego-bottos-patricia-moonlyon-1237228807",
+      "published_dt": "2026-11-19T14:00:03+06:00",
+      "published_date": "2026-11-19T14:00:03+06:00",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "excerpt": "EXCLUSIVE: Netflix has announced the start of production on Juan Diego Botto’s domestic violence drama Patricia starring Penélope Cruz, who also produces under the banner of her audiovisual company Moonlyon. The news comes as Cruz enjoys a buzzy awards season thank to her roles in Best International Feature Film Oscar frontrunner La Bola Negra and […]",
+      "image": "https://deadline.com/wp-content/uploads/2026/11/Red-Carpet-Platino-Awards-2023-1000.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-19T14:30:13.839166+06:00",
+      "last_seen": "2026-11-19T14:30:13.839187+06:00",
+      "importance_score": 56,
+      "priority_type": "New Movie / Series Announcements",
+      "priority_tier": 2,
+      "priority_rank": 6,
+      "sector": "Hollywood",
+      "rank_reason": "Announces production start but no release date; score kept below 80 as per release‑only policy.",
+      "last_ranked_at": "2026-11-19T14:30:35.410977+06:00",
+      "learning_pattern": ""
+    },
+    "deadline.com/2026/11/netflix-renews-physical-asia-second-season-1237228790": {
+      "title": "Netflix Renews Unscripted Show ‘Physical: Asia’ For Second Season As Franchise Expands",
+      "url": "https://deadline.com/2026/11/netflix-renews-physical-asia-second-season-1237228790/",
+      "canonical": "deadline.com/2026/11/netflix-renews-physical-asia-second-season-1237228790",
+      "published_dt": "2026-11-19T10:40:52+06:00",
+      "published_date": "2026-11-19T10:40:52+06:00",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "excerpt": "Netflix has confirmed that unscripted show Physical: Asia, which pits teams from different Asian nations against each other in high-stakes quests inspired by local cultures, has been confirmed for a second season, due to start streaming in 2027. One of Netflix’s first unscripted Asian shows, the first season of Physical: Asia premiered in October 2025 […]",
+      "image": "https://deadline.com/wp-content/uploads/2026/11/Physical-Asia.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-19T14:30:14.111650+06:00",
+      "last_seen": "2026-11-19T14:30:14.111668+06:00",
+      "importance_score": 53,
+      "priority_type": "Season Renewals / New Season Updates",
+      "priority_tier": 2,
+      "priority_rank": 7,
+      "sector": "International",
+      "rank_reason": "Renewal announced for 2027 but no specific release window; kept below 80 as per policy.",
+      "last_ranked_at": "2026-11-19T14:30:35.411216+06:00",
+      "learning_pattern": ""
+    },
+    "variety.com/2026/film/columns/gemma-chan-play-bond-girl-fan-casting-1236952719": {
+      "title": "Gemma Chan Says She’d ‘Absolutely’ Play a Bond Girl Amid Fan-Casting: ‘I’m Flattered’",
+      "url": "https://variety.com/2026/film/columns/gemma-chan-play-bond-girl-fan-casting-1236952719/",
+      "canonical": "variety.com/2026/film/columns/gemma-chan-play-bond-girl-fan-casting-1236952719",
+      "published_dt": "2026-11-19T11:08:41+06:00",
+      "published_date": "2026-11-19T11:08:41+06:00",
+      "source": "Variety",
+      "region": "Entertainment",
+      "excerpt": "Gemma Chan is ready for her license to kill. The “Crazy Rich Asians” star tells me that she’s aware that fans have been dream-casting her as a Bond Girl. “I’m flattered, and absolutely I would,” Chan said Wednesday night at the premiere of her new drama “Josephine” at the DGA in West Hollywood. “It’s an […]",
+      "image": "https://variety.com/wp-content/uploads/2026/11/Los-Angeles-Premiere-Of-Josephine-1000.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-19T14:30:15.262203+06:00",
+      "last_seen": "2026-11-19T14:30:15.262224+06:00",
+      "importance_score": 52,
+      "priority_type": "New Movie / Series Announcements",
+      "priority_tier": 2,
+      "priority_rank": 6,
+      "sector": "Hollywood",
+      "rank_reason": "Speculative casting comment without release details; score remains below publishable threshold.",
+      "last_ranked_at": "2026-11-19T14:30:35.411051+06:00",
+      "learning_pattern": ""
+    },
+    "deadline.com/2026/11/the-cw-midseason-premiere-dates-wild-cards-game-shows-1237228142": {
+      "title": "The CW Midseason Premiere Dates: 'Wild Cards' Season 4, Game Shows, More - Deadline",
+      "url": "https://deadline.com/2026/11/the-cw-midseason-premiere-dates-wild-cards-game-shows-1237228142/",
+      "canonical": "deadline.com/2026/11/the-cw-midseason-premiere-dates-wild-cards-game-shows-1237228142",
+      "published_dt": "2026-11-19T00:00:00+06:00",
+      "published_date": "2026-11-19T00:00:00+06:00",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "excerpt": "The CW Midseason Premiere Dates: 'Wild Cards' Season 4, Game Shows, More Deadline",
+      "image": "",
+      "discovery": "google_news",
+      "date_estimated": false,
+      "status": "posted",
+      "first_seen": "2026-11-19T14:30:31.066612+06:00",
+      "last_seen": "2026-11-19T14:30:31.066630+06:00",
+      "importance_score": 84,
+      "priority_type": "Release Date Confirmations",
+      "priority_tier": 1,
+      "priority_rank": 4,
+      "sector": "Hollywood",
+      "rank_reason": "CW provided exact premiere date (Feb 1 2027) for new season, satisfying release‑only requirements.",
+      "last_ranked_at": "2026-11-19T14:30:35.410836+06:00",
+      "learning_pattern": "",
+      "posted_at": "2026-11-19T14:37:39.615917+06:00"
     }
   },
   "events": {
@@ -1261,231 +1261,6 @@
       "selected_at": "2026-11-04T13:34:42.472683+06:00",
       "status": "published",
       "message_id": 1240
-    },
-    "lead_role_announcement": {
-      "event_id": "lead_role_announcement",
-      "canonical_url": "variety.com/2026/tv/news/gwyneth-paltrow-a24-the-apology-first-lead-tv-role-1236916711",
-      "original_url": "https://variety.com/2026/tv/news/gwyneth-paltrow-a24-the-apology-first-lead-tv-role-1236916711/",
-      "source": "Variety",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "Netflix / A24",
-      "event_cluster_id": "evt_765fb710a2",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "The Apology",
-      "summary": "Gwyneth Paltrow lands her first lead TV role in A24’s new drama series.",
-      "highlights": [
-        "Paltrow stars as Evelyn Amspoker in the two‑season Netflix order",
-        "Series created by Joe Murtagh and directed by Thomas Vinterberg",
-        "A24 is producing the show"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-20T00:46:48+06:00",
-      "selected_at": "2026-10-20T01:17:34.418140+06:00",
-      "status": "published",
-      "message_id": 993
-    },
-    "star_wars_alternate_super_bowl_telecast_feb_14": {
-      "event_id": "star_wars_alternate_super_bowl_telecast_feb_14",
-      "canonical_url": "deadline.com/2026/10/star-wars-super-bowl-2027-altcast-disney-nfl-1237168321",
-      "original_url": "https://deadline.com/2026/10/star-wars-super-bowl-2027-altcast-disney-nfl-1237168321/",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "Disney+ / Disney Channel / Disney XD",
-      "event_cluster_id": "evt_d0c6d67591",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Star Wars Funday Football",
-      "summary": "Disney+ will air an animated Star Wars alternate telecast of Super Bowl LXI on Feb 14, 2027.",
-      "highlights": [
-        "C‑3PO voiced by Anthony Daniels will appear",
-        "The telecast will animate every play in real time",
-        "Spanish‑language version will stream on Disney+ and ESPN Deportes"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-20T09:10:51+06:00",
-      "selected_at": "2026-10-20T11:55:52.808957+06:00",
-      "status": "published",
-      "message_id": 997
-    },
-    "lizard_music_theatrical_release_dec_25_2027": {
-      "event_id": "lizard_music_theatrical_release_dec_25_2027",
-      "canonical_url": "deadline.com/2026/10/dwayne-johnson-lizard-music-release-date-1237167973",
-      "original_url": "https://deadline.com/2026/10/dwayne-johnson-lizard-music-release-date-1237167973/",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "Amazon MGM Studios",
-      "event_cluster_id": "evt_235bdea509",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Lizard Music",
-      "summary": "Amazon MGM Studios sets a Christmas Day 2027 theatrical release for the Dwayne Johnson‑led fantasy film.",
-      "highlights": [
-        "Release date confirmed for December 25, 2027",
-        "Live‑action/CGI hybrid starring Dwayne Johnson as the Chicken Man",
-        "Directed by Benny Safdie, based on Daniel Pinkwater’s novel"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-20T06:00:00+06:00",
-      "selected_at": "2026-10-20T11:55:58.296589+06:00",
-      "status": "published",
-      "message_id": 998
-    },
-    "carol_choi_appointed_disney_apac_president": {
-      "event_id": "carol_choi_appointed_disney_apac_president",
-      "canonical_url": "deadline.com/2026/10/disney-carol-choi-luke-kang-asia-pacific-1237168258",
-      "original_url": "https://deadline.com/2026/10/disney-carol-choi-luke-kang-asia-pacific-1237168258/",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "The Walt Disney Company",
-      "event_cluster_id": "evt_168308e966",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Disney",
-      "summary": "Carol Choi will become Disney's Asia Pacific President on Dec 1, succeeding retiring Luke Kang.",
-      "highlights": [
-        "Choi has been EVP of Disney Asia Pacific and a 20‑year Disney veteran",
-        "She will oversee studios, Disney+, content production, consumer products and media networks across APAC",
-        "Her appointment follows Kang’s 16‑year tenure leading the region"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-20T06:25:29+06:00",
-      "selected_at": "2026-10-20T11:56:13.483927+06:00",
-      "status": "published",
-      "message_id": 1001
-    },
-    "dan_lin_removed_as_head_of_film": {
-      "event_id": "dan_lin_removed_as_head_of_film",
-      "canonical_url": "variety.com/2026/film/news/netflix-fired-dan-lin-greta-gerwig-narnia-tensions-1236916933",
-      "original_url": "https://variety.com/2026/film/news/netflix-fired-dan-lin-greta-gerwig-narnia-tensions-1236916933/",
-      "source": "Variety",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "Netflix",
-      "event_cluster_id": "evt_4d00a7578f",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Dan Lin",
-      "summary": "Netflix has dismissed head of film Dan Lin amid a broader leadership overhaul.",
-      "highlights": [
-        "Lin was fired after a week of layoffs that also saw chief content officer Bela Bajaria exit",
-        "Peter Rice will take over Netflix's film division",
-        "The move follows concerns over Netflix's declining stock and user engagement"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-20T06:31:27+06:00",
-      "selected_at": "2026-10-20T11:56:18.294073+06:00",
-      "status": "published",
-      "message_id": 1002
-    },
-    "last_weekend_production_boarding": {
-      "event_id": "last_weekend_production_boarding",
-      "canonical_url": "variety.com/2026/film/global/michael-rowe-last-weekend-paloma-negra-leap-year-1236916044",
-      "original_url": "https://variety.com/2026/film/global/michael-rowe-last-weekend-paloma-negra-leap-year-1236916044/",
-      "source": "Variety",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "Paloma Negra",
-      "event_cluster_id": "evt_9f94894339",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Last Weekend",
-      "summary": "Michael Rowe’s cross‑border drama ‘Last Weekend’ has been boarded by Mexico’s Paloma Negra production company.",
-      "highlights": [
-        "Paloma Negra joins the project as a producer",
-        "Filming wrapped on Oct. 15 after a 17‑day shoot in Southern California and Mexico",
-        "Director Rowe is seeking additional partners for post‑production"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-20T00:26:57+06:00",
-      "selected_at": "2026-10-20T11:56:23.227722+06:00",
-      "status": "published",
-      "message_id": 1003
-    },
-    "orphan_black_co_exclusive_streaming_deal": {
-      "event_id": "orphan_black_co_exclusive_streaming_deal",
-      "canonical_url": "deadline.com/2026/10/orphan-black-hbo-max-peacock-co-exclusive-streaming-deal-1237168150",
-      "original_url": "https://deadline.com/2026/10/orphan-black-hbo-max-peacock-co-exclusive-streaming-deal-1237168150/",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "Boat Rocker Studios / HBO Max / Peacock",
-      "event_cluster_id": "evt_03d1ac6e3f",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Orphan Black",
-      "summary": "All five seasons of Orphan Black are now streaming on HBO Max and Peacock under a co‑exclusive deal.",
-      "highlights": [
-        "Co‑exclusive U.S. streaming agreement with HBO Max and Peacock",
-        "All five seasons become available on both platforms",
-        "Series debuted in 2013 and won the 2014 Peabody Award"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-20T04:49:04+06:00",
-      "selected_at": "2026-10-20T11:56:28.216231+06:00",
-      "status": "published",
-      "message_id": 1004
-    },
-    "aakhri_ride_halloween_release": {
-      "event_id": "aakhri_ride_halloween_release",
-      "canonical_url": "variety.com/2026/film/news/anurag-kashyap-vasan-bala-mumbai-cab-thriller-aakhri-ride-1236915547",
-      "original_url": "https://variety.com/2026/film/news/anurag-kashyap-vasan-bala-mumbai-cab-thriller-aakhri-ride-1236915547/",
-      "source": "Variety",
-      "region": "Entertainment",
-      "topic": "Release Dates",
-      "institution": "Oh Short Flips",
-      "event_cluster_id": "evt_d1b03d0b85",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Aakhri Ride",
-      "summary": "Anurag Kashyap and Vasan Bala present the short thriller ‘Aakhri Ride’ set for worldwide release on Halloween.",
-      "highlights": [
-        "Releases worldwide on Oct. 31 via the Oh Short Flips YouTube channel",
-        "Directed by debut duo Vijesh Rajan and Yashoda Parthasarthy",
-        "Won Silver Audience Award for best Asian short at Fantasia"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-20T10:30:00+06:00",
-      "selected_at": "2026-10-20T17:14:47.384983+06:00",
-      "status": "published",
-      "message_id": 1005
-    },
-    "dailyshow_2028_extension": {
-      "event_id": "dailyshow_2028_extension",
-      "canonical_url": "variety.com/2026/tv/news/jon-stewart-daily-show-host-2028-1236916557",
-      "original_url": "https://variety.com/2026/tv/news/jon-stewart-daily-show-host-2028-1236916557/",
-      "source": "Variety",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "Comedy Central",
-      "event_cluster_id": "evt_7db03a3a38",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "The Daily Show",
-      "summary": "Jon Stewart has extended his contract to remain host through 2028.",
-      "highlights": [
-        "Stewart’s contract now runs until the end of 2028",
-        "He will continue alongside rotating hosts like Ronny Chieng and Jordan Klepper",
-        "The show remains the most‑viewed cable program on social media in 2026"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-20T00:30:00+06:00",
-      "selected_at": "2026-10-20T17:14:52.475991+06:00",
-      "status": "published",
-      "message_id": 1006
     },
     "euro_film_fund_launch_2026_10_20": {
       "event_id": "euro_film_fund_launch_2026_10_20",
@@ -8929,6 +8704,31 @@
       "selected_at": "2026-11-19T00:06:55.374839+06:00",
       "status": "published",
       "message_id": 1322
+    },
+    "wild_cards_season_4_premiere": {
+      "event_id": "wild_cards_season_4_premiere",
+      "canonical_url": "deadline.com/2026/11/the-cw-midseason-premiere-dates-wild-cards-game-shows-1237228142",
+      "original_url": "https://deadline.com/2026/11/the-cw-midseason-premiere-dates-wild-cards-game-shows-1237228142/",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "topic": "Release Dates",
+      "institution": "The CW",
+      "event_cluster_id": "evt_742f57d399",
+      "event_confidence": 0.6,
+      "event_source_count": 1,
+      "headline": "Wild Cards",
+      "summary": "The CW announced the Season 4 premiere of Wild Cards for mid‑season 2027.",
+      "highlights": [
+        "Season 4 debuts Monday, February 1, 2027 at 8 p.m. ET/PT",
+        "Ellis faces wedding chaos while Max deals with a shrinking social circle",
+        "The series airs on The CW network"
+      ],
+      "concepts": [],
+      "key_numbers": [],
+      "published_at": "2026-11-19T00:00:00+06:00",
+      "selected_at": "2026-11-19T14:37:39.616038+06:00",
+      "status": "published",
+      "message_id": 1323
     }
   },
   "event_clusters": {
@@ -27836,7 +27636,7 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-11-18T23:52:52.250575+06:00",
+      "last_seen": "2026-11-19T14:30:35.415308+06:00",
       "headline": "‘I Want Your Sex’ Sets HBO Max Streaming Release Date"
     },
     "evt_ea039c9a04": {
@@ -27850,10 +27650,21 @@
       "confidence": 0.6,
       "last_seen": "2026-11-18T23:52:52.250585+06:00",
       "headline": "Agatha Christie Series ‘Tommy & Tuppence’ Coming to Channel 5 in the U.K."
+    },
+    "evt_742f57d399": {
+      "event_id": "evt_742f57d399",
+      "topic": "Release Dates",
+      "region": "Entertainment",
+      "sources": [
+        "Deadline"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-19T14:30:35.415315+06:00",
+      "headline": "The CW Midseason Premiere Dates: 'Wild Cards' Season 4, Game Shows, More - Deadline"
     }
   },
   "posted_event_ids": [
-    "evt_0c42ee536e",
     "evt_92aea2b3af",
     "evt_97dcf86d12",
     "evt_30d6032ad1",
@@ -28352,10 +28163,10 @@
     "evt_29b0ec2175",
     "evt_c0f7b848bf",
     "evt_567e9dc2f8",
-    "evt_ea039c9a04"
+    "evt_ea039c9a04",
+    "evt_742f57d399"
   ],
   "recent_titles": [
-    "once upon a time in hollywood",
     "office hours",
     "bondit buffalo 8 sandaled kid horror slate",
     "berlinale 2027 retrospective",
@@ -28755,7 +28566,8 @@
     "nothing to fix",
     "beast games",
     "one second after",
-    "tommy tuppence"
+    "tommy tuppence",
+    "wild cards"
   ],
   "work_memory": {
     "the dog stars": {
@@ -37220,6 +37032,15 @@
         "New Movie / Series Announcements": "2026-11-19T00:06:55.374899+06:00"
       },
       "last_published_at": "2026-11-19T00:06:55.374896+06:00"
+    },
+    "wild cards": {
+      "title": "Wild Cards",
+      "sector": "Hollywood",
+      "first_published_at": "2026-11-19T14:37:39.616069+06:00",
+      "published_events": {
+        "Release Date Confirmations": "2026-11-19T14:37:39.616074+06:00"
+      },
+      "last_published_at": "2026-11-19T14:37:39.616072+06:00"
     }
   },
   "publication_fingerprints": [
@@ -48013,6 +47834,17 @@
       "event_key": "Tommy & Tuppence UK streaming 2026 festive season",
       "canonical": "variety.com/2026/tv/global/agatha-christie-tommy-tuppence-stream-channel-5-uk-1236952007",
       "published_at": "2026-11-19T00:06:55.375365+06:00"
+    },
+    {
+      "fingerprint": "wild cards|Release Date Confirmations|the network has revealed its 2027 midseason dates for its hit drama game shows scrabble and trivial pursuit unscripted franchises penn teller fool and masters illusion and unscripted police returns for its fourth monday february the starts with ellis giacomo gianniotti soon married man dealing with overwhelming wedding plans and guest lists while max vanessa morgan has her own circle getting smaller she sees george jason priestley and vivenne tamara taylor off for their real honeymoon the crime ",
+      "work_key": "wild cards",
+      "priority_type": "Release Date Confirmations",
+      "headline": "Wild Cards",
+      "event_text": "Wild Cards The CW Network has revealed its 2027 midseason premiere dates for Season 4 of its hit drama series Wild Cards, game shows Scrabble and Trivial Pursuit, unscripted franchises Penn & Teller: Fool Us and Masters of Illusion and unscripted series Police 24/7.\nWild Cards returns for its fourth season Monday, February, 1 at 8 p.m. The new season starts with Ellis (Giacomo Gianniotti) as a soon-to-be married man dealing with overwhelming wedding plans and guest lists, while Max (Vanessa Morgan) has her own circle getting smaller as she sees George (Jason Priestley) and Vivenne (Tamara Taylor) off for their first real honeymoon. The crime-solving procedural hails from Blink49 Studios, Front Street Pictures, and Piller/Segan, in association with The CW for commissioning broadcaster CBC in Canada.\nLong-running unscripted franchises Penn & Teller: Fool Us and Masters of Illusion return for their 12th seasons, January 22 at 8 and 9 p.m.,. respectively.\nWatch on Deadline\nRELATED: 2026 TV Cancellations Photo Gallery: Series Ending This Year & Beyond\nCraig Ferguson-hosted Scrabble returns for a third season on Thursday, February 18 at 8 p.m. ET/PT and Police 24/7 premieres its third season on Wed The CW announced the Season 4 premiere of Wild Cards for mid‑season 2027. Season 4 debuts Monday, February 1, 2027 at 8 p.m. ET/PT Ellis faces wedding chaos while Max deals with a shrinkin",
+      "core": "the network has revealed its 2027 midseason dates for its hit drama game shows scrabble and trivial pursuit unscripted franchises penn teller fool and masters illusion and unscripted police returns for its fourth monday february the starts with ellis giacomo gianniotti soon married man dealing with overwhelming wedding plans and guest lists while max vanessa morgan has her own circle getting smaller she sees george jason priestley and vivenne tamara taylor off for their real honeymoon the crime ",
+      "event_key": "Wild Cards Season 4 Premiere",
+      "canonical": "deadline.com/2026/11/the-cw-midseason-premiere-dates-wild-cards-game-shows-1237228142",
+      "published_at": "2026-11-19T14:37:39.616435+06:00"
     }
   ],
   "fresh_start_at": "2026-09-07T13:58:06.173598+06:00",
@@ -48148,70 +47980,6 @@
     }
   },
   "score_history": [
-    {
-      "title": "LG Channels Now Offers Over 170 Free Channels in India With New Movie and Music Additions | Technology News",
-      "score": 21,
-      "pattern": "",
-      "priority_type": "OTT / Streaming Availability",
-      "source": "Gadgets 360",
-      "seen_at": "2026-11-08T00:30:23.598612+06:00"
-    },
-    {
-      "title": "Ranbir Kapoor and Yash’s ‘Ramayana’ Makers on Retelling India’s Epic for the World, as Amazon Music and T-Series Bet on A.R. Rahman and Hans",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "",
-      "source": "Variety",
-      "seen_at": "2026-11-08T00:30:23.598744+06:00"
-    },
-    {
-      "title": "Andrew Garfield Says He ‘Never Had Any Interaction’ With Sam Altman While Filming ‘Artificial,’ Despite Altman Claiming They Waved to Each O",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "",
-      "source": "Variety",
-      "seen_at": "2026-11-08T00:30:23.598874+06:00"
-    },
-    {
-      "title": "Netflix Pe Pitega Titu Mama Ka ‘Dhindora’: India’s First and Biggest Digital Creator Bhuvan Bam Brings Cult Favourite Back for Season 2 on N",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "",
-      "source": "about.netflix.com",
-      "seen_at": "2026-11-08T00:30:23.598936+06:00"
-    },
-    {
-      "title": "From ‘World of Warcraft Forever’ Surprise to Le Sserafim, Simu Liu and T-Pain Appearances, How BlizzCon 2026 Set the Stage for Blizzard Ente",
-      "score": 68,
-      "pattern": "",
-      "priority_type": "First Look / First Glimpse / Posters",
-      "source": "Variety",
-      "seen_at": "2026-11-08T00:30:23.599071+06:00"
-    },
-    {
-      "title": "‘The Remarried Empress’ Sets Disney+ Record As Most Viewed Local Original Launch Ever",
-      "score": 42,
-      "pattern": "",
-      "priority_type": "OTT / Streaming Availability",
-      "source": "Deadline",
-      "seen_at": "2026-11-08T00:32:37.527550+06:00"
-    },
-    {
-      "title": "‘The Remarried Empress’ Becomes Most-Viewed Local Original Premiere Ever on Disney+ and Hulu",
-      "score": 40,
-      "pattern": "",
-      "priority_type": "OTT / Streaming Availability",
-      "source": "Variety",
-      "seen_at": "2026-11-08T00:32:37.527681+06:00"
-    },
-    {
-      "title": "Bill Maher Rubs Salt in Trump’s Midterms Wound: ‘Donnie, Are You OK?’",
-      "score": 25,
-      "pattern": "",
-      "priority_type": "Release Date Confirmations",
-      "source": "Variety",
-      "seen_at": "2026-11-08T00:32:37.527813+06:00"
-    },
     {
       "title": "Bradley Cooper 'G.I. Joe' Movie, 'Paranormal Activity' Release Dates Set",
       "score": 90,
@@ -52147,18 +51915,82 @@
       "priority_type": "Season Renewals / New Season Updates",
       "source": "Variety",
       "seen_at": "2026-11-18T23:52:52.222221+06:00"
+    },
+    {
+      "title": "Rock & Roll Hall of Fame Ceremony Gets Fired Up With Live-Wire Numbers From U2, the Chili Peppers, Usher, Cynthia Erivo, Sienna Spiro, Aeros",
+      "score": 16,
+      "pattern": "",
+      "priority_type": "Theatrical Releases / Re-releases",
+      "source": "Variety",
+      "seen_at": "2026-11-19T14:30:13.580824+06:00"
+    },
+    {
+      "title": "Kira Goldberg Leaving Netflix As VP Film To Join Paramount As President Of Motion Picture Group Alongside Don Granger; WB’s Jesse Ehrman Upp",
+      "score": 33,
+      "pattern": "",
+      "priority_type": "OTT / Streaming Availability",
+      "source": "Deadline",
+      "seen_at": "2026-11-19T14:30:13.580902+06:00"
+    },
+    {
+      "title": "‘I Want Your Sex’ Sets HBO Max Streaming Release Date",
+      "score": 85,
+      "pattern": "",
+      "priority_type": "OTT / Streaming Availability",
+      "source": "Deadline",
+      "seen_at": "2026-11-19T14:30:35.411349+06:00"
+    },
+    {
+      "title": "The CW Midseason Premiere Dates: 'Wild Cards' Season 4, Game Shows, More - Deadline",
+      "score": 84,
+      "pattern": "",
+      "priority_type": "Release Date Confirmations",
+      "source": "Deadline",
+      "seen_at": "2026-11-19T14:30:35.411500+06:00"
+    },
+    {
+      "title": "Netflix Unveils Penélope Cruz & Juan Diego Botto’s Domestic Violence Drama ‘Patricia’ As Production Gets Underway",
+      "score": 56,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Deadline",
+      "seen_at": "2026-11-19T14:30:35.411572+06:00"
+    },
+    {
+      "title": "Gemma Chan Says She’d ‘Absolutely’ Play a Bond Girl Amid Fan-Casting: ‘I’m Flattered’",
+      "score": 52,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Variety",
+      "seen_at": "2026-11-19T14:30:35.411642+06:00"
+    },
+    {
+      "title": "This New Mariah Carey Barbie Recreates Her ‘All I Want for Christmas Is You’ Cover",
+      "score": 45,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Variety",
+      "seen_at": "2026-11-19T14:30:35.411712+06:00"
+    },
+    {
+      "title": "Netflix Renews Unscripted Show ‘Physical: Asia’ For Second Season As Franchise Expands",
+      "score": 53,
+      "pattern": "",
+      "priority_type": "Season Renewals / New Season Updates",
+      "source": "Deadline",
+      "seen_at": "2026-11-19T14:30:35.411778+06:00"
     }
   ],
   "adaptive_metrics": {
     "raw_discovered": 44,
-    "pre_cerebras_rejected": 26366,
-    "hard_rejected": 9128,
-    "duplicate_rejected": 211,
-    "learned_rejected": 17027,
-    "passed_to_cerebras": 4595,
-    "cerebras_ranked": 10950,
-    "published": 983,
-    "estimated_candidates_avoided": 26366
+    "pre_cerebras_rejected": 26494,
+    "hard_rejected": 9185,
+    "duplicate_rejected": 212,
+    "learned_rejected": 17097,
+    "passed_to_cerebras": 4599,
+    "cerebras_ranked": 10956,
+    "published": 984,
+    "estimated_candidates_avoided": 26494
   },
   "source_quality": {
     "collider.com": {
@@ -52190,11 +52022,11 @@
       "last_seen": "2026-09-08T11:49:09.577970+06:00"
     },
     "deadline.com": {
-      "observations": 5028,
-      "low_score_count": 4077,
-      "total_score": 254502,
+      "observations": 5032,
+      "low_score_count": 4079,
+      "total_score": 254780,
       "avg_score": 50.6,
-      "last_seen": "2026-11-18T23:52:52.222306+06:00"
+      "last_seen": "2026-11-19T14:30:35.411826+06:00"
     },
     "thewrap.com": {
       "observations": 16,
@@ -52211,11 +52043,11 @@
       "last_seen": "2026-09-08T21:05:13.366232+06:00"
     },
     "variety.com": {
-      "observations": 5292,
-      "low_score_count": 4368,
-      "total_score": 252428,
+      "observations": 5294,
+      "low_score_count": 4370,
+      "total_score": 252525,
       "avg_score": 47.7,
-      "last_seen": "2026-11-18T23:52:52.222320+06:00"
+      "last_seen": "2026-11-19T14:30:35.411821+06:00"
     },
     "indiewire.com": {
       "observations": 10,
@@ -52332,7 +52164,7 @@
   },
   "category_coverage": {
     "Major Film Announcements": "2026-11-06T22:18:20.099531+06:00",
-    "Release Dates": "2026-11-19T00:06:55.375391+06:00",
+    "Release Dates": "2026-11-19T14:37:39.616448+06:00",
     "Studio Business": "2026-10-24T20:35:57.113797+06:00",
     "Streaming Platform News": "2026-11-06T22:17:44.559012+06:00",
     "Franchises and IP": "2026-11-06T22:17:34.555229+06:00",
