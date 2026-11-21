@@ -1,346 +1,152 @@
 {
   "feeds": {
     "https://deadline.com/feed/": {
-      "etag": "W/\"10aec01d37ec9649a6aa099964d7eb50\"",
-      "last_modified": "Fri, 20 Nov 2026 17:37:38 GMT",
-      "last_checked": "2026-11-20T23:38:00.354614+06:00",
+      "etag": "W/\"765730801c25788a78d5dd125ec94e7d\"",
+      "last_modified": "Sat, 21 Nov 2026 06:41:17 GMT",
+      "last_checked": "2026-11-21T14:04:59.969949+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://variety.com/feed/": {
-      "etag": "W/\"fc577b222b4da7cc3dca81c15010b3e4\"",
-      "last_modified": "Fri, 20 Nov 2026 17:33:47 GMT",
-      "last_checked": "2026-11-20T23:38:01.580684+06:00",
+      "etag": "W/\"38e3ef2f0cf4447eee2e2ff3276ea283\"",
+      "last_modified": "Sat, 21 Nov 2026 06:49:28 GMT",
+      "last_checked": "2026-11-21T14:05:01.242580+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.hollywoodreporter.com/feed/": {
-      "etag": "W/\"1faa0bec606e294be4ac1eadbd75ee48\"",
-      "last_modified": "Fri, 20 Nov 2026 17:34:34 GMT",
-      "last_checked": "2026-11-20T23:38:03.504317+06:00",
+      "etag": "W/\"6f6bd1109e6abba8a8efd3736fc419b4\"",
+      "last_modified": "Sat, 21 Nov 2026 06:31:26 GMT",
+      "last_checked": "2026-11-21T14:05:02.786591+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.thewrap.com/feed/": {
-      "etag": "\"95174530bbd53c3a11b601a692550dd1\"",
-      "last_modified": "Fri, 20 Nov 2026 17:37:11 GMT",
-      "last_checked": "2026-11-20T23:38:04.370576+06:00",
+      "etag": "\"547b35c9001e60c182da0edf39763a3d\"",
+      "last_modified": "Sat, 21 Nov 2026 06:34:06 GMT",
+      "last_checked": "2026-11-21T14:05:03.850406+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.indiewire.com/feed/": {
-      "etag": "W/\"d68718a746c49cc8d6e35e07a3afb9a5\"",
-      "last_modified": "Fri, 20 Nov 2026 16:32:17 GMT",
-      "last_checked": "2026-11-20T23:38:05.608080+06:00",
+      "etag": "W/\"ad1ba47f9f26881bcb069a8a63b6b95a\"",
+      "last_modified": "Sat, 21 Nov 2026 01:04:20 GMT",
+      "last_checked": "2026-11-21T14:05:05.028597+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://collider.com/feed/": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-20T23:38:06.783641+06:00",
+      "last_checked": "2026-11-21T14:05:06.099384+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://tvline.com/feed/": {
-      "etag": "\"fb56a618445c7e0f96c7ea7d99fb5b44\"",
-      "last_modified": "Fri, 20 Nov 2026 17:22:00 GMT",
-      "last_checked": "2026-11-20T23:38:07.689935+06:00",
+      "etag": "\"c1f2f59b5f3e57064d267436740db2b9\"",
+      "last_modified": "Sat, 21 Nov 2026 02:12:00 GMT",
+      "last_checked": "2026-11-21T14:05:07.150968+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.ottplay.com/rss": {
       "etag": "\"b5496c89c58ff0f5d07d64a68d4efe07\"",
       "last_modified": "Thu, 27 May 2021 12:38:49 GMT",
-      "last_checked": "2026-11-20T23:38:10.631886+06:00",
+      "last_checked": "2026-11-21T14:05:09.145178+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.filmibeat.com/rss/feeds/filmibeat-news.xml": {
       "etag": null,
-      "last_modified": "Fri, 20 Nov 2026 17:33:45 GMT",
-      "last_checked": "2026-11-20T23:38:11.017517+06:00",
+      "last_modified": "Sat, 21 Nov 2026 08:05:09 GMT",
+      "last_checked": "2026-11-21T14:05:09.554427+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.pinkvilla.com/rss": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-20T23:38:11.817083+06:00",
+      "last_checked": "2026-11-21T14:05:10.375661+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.bollywoodhungama.com/feed/": {
-      "etag": "\"747083915c4eccbb24a278639a00efc7\"",
-      "last_modified": "Fri, 20 Nov 2026 15:51:54 GMT",
-      "last_checked": "2026-11-20T23:38:12.534679+06:00",
+      "etag": "\"1dc2d7a4f82ee28c97d1f7a2a785fa13\"",
+      "last_modified": "Sat, 21 Nov 2026 07:50:05 GMT",
+      "last_checked": "2026-11-21T14:05:10.584686+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.gadgets360.com/entertainment/rss": {
-      "last_checked": "2026-11-20T23:38:13.974304+06:00",
-      "fail_count": 244,
+      "last_checked": "2026-11-21T14:05:12.325019+06:00",
+      "fail_count": 245,
       "alerted": true
     },
     "https://www.soompi.com/feed": {
-      "etag": "W/\"ebb62d2e5f0a7f98cce1b77eb7116675\"",
-      "last_modified": "Fri, 20 Nov 2026 16:49:33 GMT",
-      "last_checked": "2026-11-20T23:38:14.190900+06:00",
+      "etag": "W/\"22ac0918e25926d8d8da79bcac291345\"",
+      "last_modified": "Sat, 21 Nov 2026 07:33:27 GMT",
+      "last_checked": "2026-11-21T14:05:12.571276+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.whats-on-netflix.com/feed/": {
       "etag": null,
-      "last_modified": "Fri, 20 Nov 2026 17:35:27 GMT",
-      "last_checked": "2026-11-20T23:38:16.532947+06:00",
+      "last_modified": "Fri, 20 Nov 2026 20:23:11 GMT",
+      "last_checked": "2026-11-21T14:05:14.273914+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.netflix.com/tudum/rss.xml": {
-      "last_checked": "2026-11-20T23:38:18.111889+06:00",
-      "fail_count": 244,
+      "last_checked": "2026-11-21T14:05:15.767523+06:00",
+      "fail_count": 245,
       "alerted": true
     },
     "https://press.wbd.com/us/en/rss": {
-      "last_checked": "2026-11-20T23:38:18.462378+06:00",
-      "fail_count": 244,
+      "last_checked": "2026-11-21T14:05:16.272409+06:00",
+      "fail_count": 245,
       "alerted": true
     },
     "https://www.apple.com/tv-pr/newsroom/feed/": {
-      "last_checked": "2026-11-20T23:38:19.289582+06:00",
-      "fail_count": 244,
+      "last_checked": "2026-11-21T14:05:16.890634+06:00",
+      "fail_count": 245,
       "alerted": true
     },
     "https://www.aboutamazon.com/rss": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-20T23:38:19.496911+06:00",
+      "last_checked": "2026-11-21T14:05:17.093599+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.marvel.com/articles/feed": {
-      "last_checked": "2026-11-20T23:38:19.877178+06:00",
-      "fail_count": 244,
+      "last_checked": "2026-11-21T14:05:17.546141+06:00",
+      "fail_count": 245,
       "alerted": true
     },
     "https://www.dc.com/blog/rss.xml": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-20T23:38:20.059424+06:00",
-      "fail_count": 9,
+      "last_checked": "2026-11-21T14:05:18.814549+06:00",
+      "fail_count": 10,
       "alerted": true
     },
     "https://www.sonypictures.com/rss": {
-      "last_checked": "2026-11-20T23:38:20.489615+06:00",
-      "fail_count": 244,
+      "last_checked": "2026-11-21T14:05:19.119479+06:00",
+      "fail_count": 245,
       "alerted": true
     },
     "https://www.paramount.com/rss": {
-      "last_checked": "2026-11-20T23:38:20.658696+06:00",
-      "fail_count": 244,
+      "last_checked": "2026-11-21T14:05:19.384308+06:00",
+      "fail_count": 245,
       "alerted": true
     },
     "https://www.universalpictures.com/rss": {
-      "last_checked": "2026-11-20T23:38:21.086079+06:00",
-      "fail_count": 244,
+      "last_checked": "2026-11-21T14:05:19.864533+06:00",
+      "fail_count": 245,
       "alerted": true
     }
   },
   "queue": {
-    "deadline.com/2026/11/chad-daniels-comedian-new-special-premiere-date-1237225378": {
-      "title": "Comedian Chad Daniels Sets 12th Hour Special ‘Nothing To Fix’ – Watch The Trailer",
-      "url": "https://deadline.com/2026/11/chad-daniels-comedian-new-special-premiere-date-1237225378/",
-      "canonical": "deadline.com/2026/11/chad-daniels-comedian-new-special-premiere-date-1237225378",
-      "published_dt": "2026-11-17T00:02:22+06:00",
-      "published_date": "2026-11-17T00:02:22+06:00",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "excerpt": "EXCLUSIVE: Minnesota comic Chad Daniels has announced that his 12th hour special, Nothing to Fix, will premiere November 19 on YouTube. In Nothing to Fix, Daniels tackles life’s absurdities, getting older and the realization that sometimes there’s nothing wrong with you, even when it feels like there should be. After years of squeezing laughs out […]",
-      "image": "https://deadline.com/wp-content/uploads/2026/11/Chad-Daniels_NTF_Promo_PreLaunch_9x16.png",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "posted",
-      "first_seen": "2026-11-17T00:05:42.455994+06:00",
-      "last_seen": "2026-11-17T00:05:42.456005+06:00",
-      "importance_score": 100,
-      "priority_type": "OTT / Streaming Availability",
-      "priority_tier": 1,
-      "priority_rank": 1,
-      "sector": "Hollywood",
-      "rank_reason": "Official announcement of a new comedy special with a clear release date and platform (YouTube), strong audience anticipation and global reach.",
-      "last_ranked_at": "2026-11-17T00:06:17.724051+06:00",
-      "learning_pattern": "",
-      "posted_at": "2026-11-17T00:08:20.627479+06:00"
-    },
-    "deadline.com/2026/11/kyle-maclachlan-michael-hyatt-hulu-limited-series-victoria-1237225367": {
-      "title": "Kyle MacLachlan, Michael Hyatt, Marwan Kenzari & J. Alphonse Nicholson Join Hulu Limited Series ‘Victoria’",
-      "url": "https://deadline.com/2026/11/kyle-maclachlan-michael-hyatt-hulu-limited-series-victoria-1237225367/",
-      "canonical": "deadline.com/2026/11/kyle-maclachlan-michael-hyatt-hulu-limited-series-victoria-1237225367",
-      "published_dt": "2026-11-17T00:00:00+06:00",
-      "published_date": "2026-11-17T00:00:00+06:00",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "excerpt": "Hulu’s limited series Victoria has cast Kyle MacLachlan (Twin Peaks), Michael Hyatt (Snowfall), Marwan Kenzari (Aladdin), and J. Alphonse Nicholson (Lanterns) in series regular roles, joining the previously announced Li Jun Li, Diane Lane, and Mark Duplass. Created and written by Christy Hall (I Am Not Okay with This) and set in the cutthroat world […]",
-      "image": "https://deadline.com/wp-content/uploads/2026/11/Victoria-casting.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-11-17T00:05:42.773247+06:00",
-      "last_seen": "2026-11-17T00:05:42.773264+06:00",
-      "importance_score": 44,
-      "priority_type": "Upcoming OTT Releases",
-      "priority_tier": 1,
-      "priority_rank": 3,
-      "sector": "Hollywood",
-      "rank_reason": "Cast news only; no release date or window provided.",
-      "last_ranked_at": "2026-11-17T15:00:47.370097+06:00",
-      "learning_pattern": ""
-    },
-    "deadline.com/2026/11/shondaland-amy-joy-rivkin-karyn-smith-forge-1237224622": {
-      "title": "Shondaland Hires Amy Joy Rivkin & Karyn Smith-Forge",
-      "url": "https://deadline.com/2026/11/shondaland-amy-joy-rivkin-karyn-smith-forge-1237224622/",
-      "canonical": "deadline.com/2026/11/shondaland-amy-joy-rivkin-karyn-smith-forge-1237224622",
-      "published_dt": "2026-11-16T23:00:00+06:00",
-      "published_date": "2026-11-16T23:00:00+06:00",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "excerpt": "Shonda Rhimes’ Shondaland is expanding with two new hires. The company behind Netflix series including Bridgerton has named Amy Joy Rivkin, VP, Production and Karyn Smith-Forge, VP, Scripted Series. Rivkin joins from The Morning Show producer Media Res and before that she was part of Netflix’s Original Series Drama group. She will oversee oversee physical […]",
-      "image": "https://deadline.com/wp-content/uploads/2026/11/split-image-1500-1-1.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-11-17T00:05:43.269507+06:00",
-      "last_seen": "2026-11-17T00:05:43.269525+06:00",
-      "importance_score": 37,
-      "priority_type": "OTT Platform Acquisition / Streaming Rights",
-      "priority_tier": 2,
-      "priority_rank": 8,
-      "sector": "Hollywood",
-      "rank_reason": "Corporate hiring news without any title release details.",
-      "last_ranked_at": "2026-11-17T15:00:47.371264+06:00",
-      "learning_pattern": ""
-    },
-    "variety.com/2026/tv/news/hulu-victoria-kyle-maclachlan-michael-hyatt-marwan-kenzari-1236949120": {
-      "title": "Hulu Erotic Thriller Series ‘Victoria’ Casts Kyle MacLachlan, Michael Hyatt, Marwan Kenzari, J. Alphonse Nicholson",
-      "url": "https://variety.com/2026/tv/news/hulu-victoria-kyle-maclachlan-michael-hyatt-marwan-kenzari-1236949120/",
-      "canonical": "variety.com/2026/tv/news/hulu-victoria-kyle-maclachlan-michael-hyatt-marwan-kenzari-1236949120",
-      "published_dt": "2026-11-17T00:00:00+06:00",
-      "published_date": "2026-11-17T00:00:00+06:00",
-      "source": "Variety",
-      "region": "Entertainment",
-      "excerpt": "The upcoming Hulu-Onyx Collective limited series “Victoria” has added four new cast members, Variety has learned. Kyle MacLachlan (“Twin Peaks,” “Fallout”), Michael Hyatt (“The Wire,” “The Pitt”), Marwan Kenzari (“Aladdin,” “The Old Guard”), and J. Alphonse Nicholson (“Lanterns,” “P-Valley”) are all set to appear in the series, which was ordered at Hulu in September. Previously […]",
-      "image": "https://variety.com/wp-content/uploads/2026/11/Hulu-Victoria-Cast.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-11-17T00:05:44.340212+06:00",
-      "last_seen": "2026-11-17T00:05:44.340227+06:00",
-      "importance_score": 44,
-      "priority_type": "Upcoming OTT Releases",
-      "priority_tier": 1,
-      "priority_rank": 3,
-      "sector": "Hollywood",
-      "rank_reason": "Duplicate cast announcement; no release schedule, thus low score.",
-      "last_ranked_at": "2026-11-17T15:00:47.370217+06:00",
-      "learning_pattern": ""
-    },
-    "variety.com/2026/film/news/ryan-mccartan-only-good-feelings-great-gatsby-broadway-1236947307": {
-      "title": "Broadway Star Ryan McCartan to Star in Crime Drama ‘Only Good Feelings’ (EXCLUSIVE)",
-      "url": "https://variety.com/2026/film/news/ryan-mccartan-only-good-feelings-great-gatsby-broadway-1236947307/",
-      "canonical": "variety.com/2026/film/news/ryan-mccartan-only-good-feelings-great-gatsby-broadway-1236947307",
-      "published_dt": "2026-11-17T00:00:00+06:00",
-      "published_date": "2026-11-17T00:00:00+06:00",
-      "source": "Variety",
-      "region": "Entertainment",
-      "excerpt": "Ryan McCartan, fresh off his starring role as Jay Gatsby in Broadway’s “The Great Gatsby,” will make his theatrical debut as the lead in the indie crime drama “Only Good Feelings.” SNR Films is giving the title a limited New York run in February 2027. Other cast members include Elias Kacavas (“Pretty Little Liars: Original […]",
-      "image": "https://variety.com/wp-content/uploads/2026/11/GettyImages-2194345781.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-11-17T00:05:44.487733+06:00",
-      "last_seen": "2026-11-17T00:05:44.487746+06:00",
-      "importance_score": 70,
-      "priority_type": "Theatrical Releases / Re-releases",
-      "priority_tier": 1,
-      "priority_rank": 5,
-      "sector": "Hollywood",
-      "rank_reason": "Specifies limited theatrical run in New York (Feb 2027), satisfying release‑only criteria.",
-      "last_ranked_at": "2026-11-17T15:00:47.370750+06:00",
-      "learning_pattern": ""
-    },
-    "variety.com/2026/tv/global/entertainment-companies-government-meeting-abuse-scandals-1236949193": {
-      "title": "BBC, Netflix and Live Nation Among Major Entertainment Companies Summoned to U.K. Government Meeting Over Abuse Scandals",
-      "url": "https://variety.com/2026/tv/global/entertainment-companies-government-meeting-abuse-scandals-1236949193/",
-      "canonical": "variety.com/2026/tv/global/entertainment-companies-government-meeting-abuse-scandals-1236949193",
-      "published_dt": "2026-11-16T23:57:05+06:00",
-      "published_date": "2026-11-16T23:57:05+06:00",
-      "source": "Variety",
-      "region": "Entertainment",
-      "excerpt": "The BBC, Netflix and Live Nation are among the major entertainment companies summoned to a U.K. government meeting over industry abuse scandals. Britain’s culture minister Lisa Nandy convened the meeting, which also included ITV, NBC Universal, Amazon, HarperCollins and some sports companies, among other organizations, in the wake of a litany of entertainment industry scandals […]",
-      "image": "https://variety.com/wp-content/uploads/2026/10/russell-2-1000.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-11-17T00:05:44.809732+06:00",
-      "last_seen": "2026-11-17T00:05:44.809749+06:00",
-      "importance_score": 45,
-      "priority_type": "OTT Platform Acquisition / Streaming Rights",
-      "priority_tier": 2,
-      "priority_rank": 8,
-      "sector": "International",
-      "rank_reason": "Policy‑related news; no release information for a title, so remains below publishable threshold.",
-      "last_ranked_at": "2026-11-17T15:00:47.371164+06:00",
-      "learning_pattern": ""
-    },
-    "aboutamazon.com/news/entertainment/mr-beast-prime-video-beast-games-season-three": {
-      "title": "Watch the teaser trailer for ‘Beast Games’ Season 3, coming to Prime Video December 16",
-      "url": "https://www.aboutamazon.com/news/entertainment/mr-beast-prime-video-beast-games-season-three?utm_source=rss",
-      "canonical": "aboutamazon.com/news/entertainment/mr-beast-prime-video-beast-games-season-three",
-      "published_dt": "2026-11-16T23:47:38+06:00",
-      "published_date": "2026-11-16T23:47:38+06:00",
-      "source": "Prime Video / Amazon News",
-      "region": "Entertainment",
-      "excerpt": "MrBeast's competition series goes global, with competitors from 196 nations battling for $5 million.",
-      "image": "https://assets.aboutamazon.com/dims4/default/a44e556/2147483647/strip/true/crop/480x360+0+0/resize/767x575!/quality/90/?url=https%3A%2F%2Fi.ytimg.com%2Fvi%2FaVoih9O-cuc%2Fhqdefault.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "posted",
-      "first_seen": "2026-11-17T00:06:03.903964+06:00",
-      "last_seen": "2026-11-17T00:06:03.903976+06:00",
-      "importance_score": 100,
-      "priority_type": "OTT / Streaming Availability",
-      "priority_tier": 1,
-      "priority_rank": 1,
-      "sector": "Hollywood",
-      "rank_reason": "Official Prime Video teaser confirming exact premiere date, platform and episode rollout schedule; high‑profile unscripted competition with worldwide appeal.",
-      "last_ranked_at": "2026-11-17T00:06:17.724207+06:00",
-      "learning_pattern": "",
-      "posted_at": "2026-11-17T00:08:26.667235+06:00"
-    },
-    "deadline.com/2026/11/cbs-midseason-premiere-dates-ghosts-sheriff-country-survivor-1237223505": {
-      "title": "CBS Midseason Premiere Dates: 'Cupertino' Moves, Survivor' Supersized - Deadline",
-      "url": "https://deadline.com/2026/11/cbs-midseason-premiere-dates-ghosts-sheriff-country-survivor-1237223505/",
-      "canonical": "deadline.com/2026/11/cbs-midseason-premiere-dates-ghosts-sheriff-country-survivor-1237223505",
-      "published_dt": "2026-11-16T21:00:00+06:00",
-      "published_date": "2026-11-16T21:00:00+06:00",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "excerpt": "CBS Midseason Premiere Dates: 'Cupertino' Moves, Survivor' Supersized Deadline",
-      "image": "",
-      "discovery": "google_news",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-11-17T00:06:08.425866+06:00",
-      "last_seen": "2026-11-17T00:06:08.425884+06:00",
-      "importance_score": 37,
-      "priority_type": "Release Date Confirmations",
-      "priority_tier": 1,
-      "priority_rank": 4,
-      "sector": "Hollywood",
-      "rank_reason": "Schedule update for existing series; no new title release, thus low score.",
-      "last_ranked_at": "2026-11-17T15:00:47.370420+06:00",
-      "learning_pattern": ""
-    },
     "deadline.com/2026/11/percy-jackson-and-the-olympians-season-3-release-schedule-1237226036": {
       "title": "‘Percy Jackson And The Olympians’ Season 3 Release Schedule: When Do New Episodes Come Out?",
       "url": "https://deadline.com/2026/11/percy-jackson-and-the-olympians-season-3-release-schedule-1237226036/",
@@ -1273,13 +1079,13 @@
       "status": "pending",
       "first_seen": "2026-11-20T23:38:00.770303+06:00",
       "last_seen": "2026-11-20T23:38:00.770317+06:00",
-      "importance_score": 53,
+      "importance_score": 57,
       "priority_type": "New Movie / Series Announcements",
       "priority_tier": 2,
       "priority_rank": 6,
       "sector": "Hollywood",
-      "rank_reason": "Deal announced for development only; no release window or platform, limiting publishability.",
-      "last_ranked_at": "2026-11-20T23:39:29.867549+06:00",
+      "rank_reason": "Announces a development deal without a confirmed release date or window, thus not a release story.",
+      "last_ranked_at": "2026-11-21T14:05:28.844950+06:00",
       "learning_pattern": ""
     },
     "deadline.com/2026/11/steps-songs-soundtrack-netflix-cinderella-movie-animated-1237229486": {
@@ -1297,13 +1103,13 @@
       "status": "pending",
       "first_seen": "2026-11-20T23:38:00.901025+06:00",
       "last_seen": "2026-11-20T23:38:00.901035+06:00",
-      "importance_score": 48,
-      "priority_type": "Upcoming OTT Releases",
-      "priority_tier": 1,
-      "priority_rank": 3,
+      "importance_score": 43,
+      "priority_type": "New Movie / Series Announcements",
+      "priority_tier": 2,
+      "priority_rank": 6,
       "sector": "Hollywood",
-      "rank_reason": "Provides song list but no release date or platform confirmation for the film itself.",
-      "last_ranked_at": "2026-11-20T23:39:29.867118+06:00",
+      "rank_reason": "Lists songs from an already‑released film; no new release announced, thus not a publishable release story.",
+      "last_ranked_at": "2026-11-21T14:05:28.845235+06:00",
       "learning_pattern": ""
     },
     "deadline.com/2026/11/mobland-season-3-starts-shooting-finale-paramount-1237230065": {
@@ -1321,13 +1127,13 @@
       "status": "pending",
       "first_seen": "2026-11-20T23:38:01.373655+06:00",
       "last_seen": "2026-11-20T23:38:01.373670+06:00",
-      "importance_score": 47,
+      "importance_score": 42,
       "priority_type": "Season Renewals / New Season Updates",
       "priority_tier": 2,
       "priority_rank": 7,
       "sector": "Hollywood",
-      "rank_reason": "Production start announced; no release window for the new season.",
-      "last_ranked_at": "2026-11-20T23:39:29.869021+06:00",
+      "rank_reason": "Notes the start of production for Season 3; no release date or platform confirmed, so score stays below publishable level.",
+      "last_ranked_at": "2026-11-21T14:05:28.845537+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/film/columns/jennifer-lopez-186-carat-diamond-necklace-jlo-show-premiere-dolce-gabbana-1236953996": {
@@ -1345,13 +1151,13 @@
       "status": "pending",
       "first_seen": "2026-11-20T23:38:01.901220+06:00",
       "last_seen": "2026-11-20T23:38:01.901234+06:00",
-      "importance_score": 50,
-      "priority_type": "New Movie / Series Announcements",
-      "priority_tier": 2,
-      "priority_rank": 6,
+      "importance_score": 41,
+      "priority_type": "Theatrical Releases / Re-releases",
+      "priority_tier": 1,
+      "priority_rank": 5,
       "sector": "Hollywood",
-      "rank_reason": "Premiere coverage without a release schedule; primarily event reporting.",
-      "last_ranked_at": "2026-11-20T23:39:29.867672+06:00",
+      "rank_reason": "Covers a premiere event; no release date or platform for new content, so score stays below publishable level.",
+      "last_ranked_at": "2026-11-21T14:05:28.844745+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/film/global/sofia-coppola-pays-tribute-eleanor-making-marie-antoinette-1236954157": {
@@ -1369,13 +1175,13 @@
       "status": "pending",
       "first_seen": "2026-11-20T23:38:03.107321+06:00",
       "last_seen": "2026-11-20T23:38:03.107331+06:00",
-      "importance_score": 45,
-      "priority_type": "New Movie / Series Announcements",
-      "priority_tier": 2,
-      "priority_rank": 6,
-      "sector": "International",
-      "rank_reason": "Screening event without a new release; limited relevance to release news.",
-      "last_ranked_at": "2026-11-20T23:39:29.868076+06:00",
+      "importance_score": 41,
+      "priority_type": "Theatrical Releases / Re-releases",
+      "priority_tier": 1,
+      "priority_rank": 5,
+      "sector": "Hollywood",
+      "rank_reason": "Covers a tribute screening event; no new release date or platform, so remains below publishable threshold.",
+      "last_ranked_at": "2026-11-21T14:05:28.844848+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/film/news/bond-robert-pattinson-screen-test-amazon-execs-1236954194": {
@@ -1393,13 +1199,158 @@
       "status": "pending",
       "first_seen": "2026-11-20T23:38:03.271335+06:00",
       "last_seen": "2026-11-20T23:38:03.271343+06:00",
-      "importance_score": 50,
+      "importance_score": 48,
       "priority_type": "New Movie / Series Announcements",
       "priority_tier": 2,
       "priority_rank": 6,
       "sector": "Hollywood",
-      "rank_reason": "Casting confirmation but no release date or platform schedule.",
-      "last_ranked_at": "2026-11-20T23:39:29.867809+06:00",
+      "rank_reason": "Announces casting for an upcoming Bond film but lacks a confirmed release date or window, thus not a release‑only story.",
+      "last_ranked_at": "2026-11-21T14:05:28.845137+06:00",
+      "learning_pattern": ""
+    },
+    "deadline.com/2026/11/yellowjackets-melanie-lynskey-christina-ricci-misty-plot-1237230788": {
+      "title": "‘Yellowjackets’ Stars Melanie Lynskey & Christina Ricci On Misty’s Plot “To Save Themselves” From Shauna: “She’ll Be The Downfall Of Everybody”",
+      "url": "https://deadline.com/2026/11/yellowjackets-melanie-lynskey-christina-ricci-misty-plot-1237230788/",
+      "canonical": "deadline.com/2026/11/yellowjackets-melanie-lynskey-christina-ricci-misty-plot-1237230788",
+      "published_dt": "2026-11-21T07:47:22+06:00",
+      "published_date": "2026-11-21T07:47:22+06:00",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "excerpt": "SPOILERS: This post contains details about the Yellowjackets Season 4 premiere episode “Hivemind” As the final season of Yellowjackets debuts, it appears the team could be prepping one last sacrifice to the wilderness. While discussing Friday’s Season 4 premiere episode “Hivemind” with Deadline, Christina Ricci explained that the episode picks up shortly after the Season […]",
+      "image": "https://deadline.com/wp-content/uploads/2026/11/Lynskey-RIcci-Yellowjackets-2-shot.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "posted",
+      "first_seen": "2026-11-21T14:05:00.558772+06:00",
+      "last_seen": "2026-11-21T14:05:00.558789+06:00",
+      "importance_score": 88,
+      "priority_type": "Release Date Confirmations",
+      "priority_tier": 1,
+      "priority_rank": 4,
+      "sector": "Hollywood",
+      "rank_reason": "Provides the official release date and platform for the Season 4 premiere of Yellowjackets, confirming when and where the new episode will be available.",
+      "last_ranked_at": "2026-11-21T14:05:28.844383+06:00",
+      "learning_pattern": "",
+      "posted_at": "2026-11-21T14:06:30.877395+06:00"
+    },
+    "deadline.com/2026/11/aaron-pierre-future-lanterns-safran-gunn-dc-studios-exit-1237230759": {
+      "title": "‘Lanterns’ Star Aaron Pierre On DCU Future After Safran & Gunn’s DC Studios Exit: “I’m Very At Peace”",
+      "url": "https://deadline.com/2026/11/aaron-pierre-future-lanterns-safran-gunn-dc-studios-exit-1237230759/",
+      "canonical": "deadline.com/2026/11/aaron-pierre-future-lanterns-safran-gunn-dc-studios-exit-1237230759",
+      "published_dt": "2026-11-21T05:50:33+06:00",
+      "published_date": "2026-11-21T05:50:33+06:00",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "excerpt": "Aaron Pierre starred as John Stewart in the HBO & DC Studios series Lanterns and was set to play him across the DC Universe. However, with Peter Safran and James Gunn no longer co-heads of DC Studios, the future of the world they were building seems uncertain. In a new interview, Pierre reacted to Safran […]",
+      "image": "https://deadline.com/wp-content/uploads/2026/11/aaron-pierre-lanterns-season-2-james-gunn-dc-studios.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-21T14:05:00.695722+06:00",
+      "last_seen": "2026-11-21T14:05:00.695738+06:00",
+      "importance_score": 40,
+      "priority_type": "New Movie / Series Announcements",
+      "priority_tier": 2,
+      "priority_rank": 6,
+      "sector": "Hollywood",
+      "rank_reason": "Interview about future plans; lacks a concrete release date or platform, thus not a release‑only story.",
+      "last_ranked_at": "2026-11-21T14:05:28.845435+06:00",
+      "learning_pattern": ""
+    },
+    "variety.com/2026/tv/news/bill-maher-grand-theft-auto-6-young-men-ice-real-time-hbo-1236954795": {
+      "title": "Bill Maher Mocks ‘Grand Theft Auto 6’-Playing Young Men With Awful ICE Joke",
+      "url": "https://variety.com/2026/tv/news/bill-maher-grand-theft-auto-6-young-men-ice-real-time-hbo-1236954795/",
+      "canonical": "variety.com/2026/tv/news/bill-maher-grand-theft-auto-6-young-men-ice-real-time-hbo-1236954795",
+      "published_dt": "2026-11-21T09:21:11+06:00",
+      "published_date": "2026-11-21T09:21:11+06:00",
+      "source": "Variety",
+      "region": "Entertainment",
+      "excerpt": "The Season 24 finale of “Real Time with Bill Maher” aired Friday night — it’s been renewed for two more seasons through 2028 — and the crabby comic’s monologue tackled everything from the spate of tech outages to former Nvidia CEO Jensen Huang’s infidelity to “Grand Theft Auto 6.” “It’s getting a little scary out […]",
+      "image": "https://variety.com/wp-content/uploads/2026/05/real-time-with-bill-maher.webp",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-21T14:05:01.356099+06:00",
+      "last_seen": "2026-11-21T14:05:01.356116+06:00",
+      "importance_score": 48,
+      "priority_type": "New Movie / Series Announcements",
+      "priority_tier": 2,
+      "priority_rank": 6,
+      "sector": "Hollywood",
+      "rank_reason": "Discusses a monologue aired on Real Time with Bill Maher; no new release announced, so score remains below publishable threshold.",
+      "last_ranked_at": "2026-11-21T14:05:28.845038+06:00",
+      "learning_pattern": ""
+    },
+    "variety.com/2026/film/markets-festivals/godavari-director-nikhil-mahajan-carjacking-neo-noir-mongoose-1236954786": {
+      "title": "‘Godavari’ Director Nikhil Mahajan Turns a Malegaon Carjacking Into Neo-Noir With WAVES Film Bazaar Project ‘Mongoose’",
+      "url": "https://variety.com/2026/film/markets-festivals/godavari-director-nikhil-mahajan-carjacking-neo-noir-mongoose-1236954786/",
+      "canonical": "variety.com/2026/film/markets-festivals/godavari-director-nikhil-mahajan-carjacking-neo-noir-mongoose-1236954786",
+      "published_dt": "2026-11-21T08:32:10+06:00",
+      "published_date": "2026-11-21T08:32:10+06:00",
+      "source": "Variety",
+      "region": "Entertainment",
+      "excerpt": "Nikhil Mahajan, the Indian National Film Award-winning director of “Godavari” and the Netflix series “Betaal,” is bringing “Mongoose,” a Marathi-language neo-noir thriller about a cab driver and the con man who steals his taxi, to the Co-Production Market at WAVES Film Bazaar. Set in the hardscrabble town of Malegaon, the film follows Abhimanyu, a hardworking […]",
+      "image": "https://variety.com/wp-content/uploads/2026/11/Mongoose-concept-art.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-21T14:05:01.503639+06:00",
+      "last_seen": "2026-11-21T14:05:01.503655+06:00",
+      "importance_score": 42,
+      "priority_type": "New Movie / Series Announcements",
+      "priority_tier": 2,
+      "priority_rank": 6,
+      "sector": "Indian",
+      "rank_reason": "Announces a project entering a market; no confirmed release date or platform, thus not a publishable release story.",
+      "last_ranked_at": "2026-11-21T14:05:28.845328+06:00",
+      "learning_pattern": ""
+    },
+    "variety.com/2026/tv/news/melania-trump-series-gaza-israel-children-peace-amazon-1236954718": {
+      "title": "Melania Trump Calls for ‘Peace’ When Asked About Children in Gaza and Israel at Amazon Series Premiere",
+      "url": "https://variety.com/2026/tv/news/melania-trump-series-gaza-israel-children-peace-amazon-1236954718/",
+      "canonical": "variety.com/2026/tv/news/melania-trump-series-gaza-israel-children-peace-amazon-1236954718",
+      "published_dt": "2026-11-21T06:30:25+06:00",
+      "published_date": "2026-11-21T06:30:25+06:00",
+      "source": "Variety",
+      "region": "Entertainment",
+      "excerpt": "Amazon Prime Video’s “Melania: The Series” offers a peek into the often-reclusive first lady’s personal life and role inside the White House, including her efforts to provide children in foster care with educational and career opportunities. But as the first lady seeks a more public-facing role in international peacemaking efforts, most recently taking credit for […]",
+      "image": "https://variety.com/wp-content/uploads/2026/11/GettyImages-2306006977.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-21T14:05:01.632296+06:00",
+      "last_seen": "2026-11-21T14:05:01.632310+06:00",
+      "importance_score": 43,
+      "priority_type": "Theatrical Releases / Re-releases",
+      "priority_tier": 1,
+      "priority_rank": 5,
+      "sector": "Hollywood",
+      "rank_reason": "Covers the premiere of an existing series; no new release window announced, so score stays below publishable level.",
+      "last_ranked_at": "2026-11-21T14:05:28.844640+06:00",
+      "learning_pattern": ""
+    },
+    "variety.com/2026/music/news/cma-awards-taylor-swift-big-ratings-increase-1236954677": {
+      "title": "CMA Awards See a 55% Ratings Bump in Key Adult Demo With Taylor Swift’s Return to the Show",
+      "url": "https://variety.com/2026/music/news/cma-awards-taylor-swift-big-ratings-increase-1236954677/",
+      "canonical": "variety.com/2026/music/news/cma-awards-taylor-swift-big-ratings-increase-1236954677",
+      "published_dt": "2026-11-21T05:21:58+06:00",
+      "published_date": "2026-11-21T05:21:58+06:00",
+      "source": "Variety",
+      "region": "Entertainment",
+      "excerpt": "The CMA Awards’ producers knew it; they knew her. What they undoubtedly knew was that a performance by Taylor Swift would bring a ratings bonanza to the 60th annual telecast, with the only question being how big a boost. It was a substantial one, as ratings released Friday showed the 2026 show being up 26% […]",
+      "image": "https://variety.com/wp-content/uploads/2026/11/MAB_4944.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-21T14:05:01.852286+06:00",
+      "last_seen": "2026-11-21T14:05:01.852304+06:00",
+      "importance_score": 62,
+      "priority_type": "Theatrical Releases / Re-releases",
+      "priority_tier": 1,
+      "priority_rank": 5,
+      "sector": "Hollywood",
+      "rank_reason": "Reports ratings increase for an awards broadcast; no new content release, so remains below publishable threshold.",
+      "last_ranked_at": "2026-11-21T14:05:28.844525+06:00",
       "learning_pattern": ""
     }
   },
@@ -1454,129 +1405,6 @@
       "status": "published",
       "message_id": 1240
     },
-    "afi_life_achievement_2027": {
-      "event_id": "afi_life_achievement_2027",
-      "canonical_url": "deadline.com/2026/10/tom-cruise-afi-life-achievement-award-1237169872",
-      "original_url": "https://deadline.com/2026/10/tom-cruise-afi-life-achievement-award-1237169872/",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "American Film Institute",
-      "event_cluster_id": "evt_56981c0c90",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Tom Cruise",
-      "summary": "Tom Cruise will receive the 52nd AFI Life Achievement Award at a gala in Los Angeles on April 24, 2027.",
-      "highlights": [
-        "Award ceremony scheduled for April 24, 2027 at the Dolby Theatre",
-        "AFI Board calls it the highest honor for a film career",
-        "Cruise joins past honorees like Bette Davis and Meryl Streep"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-22T01:00:00+06:00",
-      "selected_at": "2026-10-22T02:52:06.261347+06:00",
-      "status": "published",
-      "message_id": 1034
-    },
-    "narnia_magicians_nephew_2027": {
-      "event_id": "narnia_magicians_nephew_2027",
-      "canonical_url": "deadline.com/feature/narnia-the-magicians-nephew-movie-news-updates-greta-gerwig-1237169855",
-      "original_url": "https://deadline.com/feature/narnia-the-magicians-nephew-movie-news-updates-greta-gerwig-1237169855/",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "Netflix",
-      "event_cluster_id": "evt_1aabf638de",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Narnia: The Magician’s Nephew",
-      "summary": "Greta Gerwig’s adaptation of C.S.",
-      "highlights": [
-        "Release scheduled for Feb 12 2027 in theaters",
-        "Trailer featuring Led Zeppelin’s “Stairway to Heaven” has gone viral",
-        "Cast includes Daniel Craig as Uncle Andrew and Meryl Streep voicing Aslan"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-22T01:31:18+06:00",
-      "selected_at": "2026-10-22T02:52:11.032864+06:00",
-      "status": "published",
-      "message_id": 1035
-    },
-    "fourthwing_lead_casting": {
-      "event_id": "fourthwing_lead_casting",
-      "canonical_url": "deadline.com/2026/10/esther-mcgregor-emilio-sakraya-fourth-wing-cast-confirm-1237169794",
-      "original_url": "https://deadline.com/2026/10/esther-mcgregor-emilio-sakraya-fourth-wing-cast-confirm-1237169794/",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "topic": "Casting",
-      "institution": "Prime Video",
-      "event_cluster_id": "evt_a7d3999012",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Fourth Wing",
-      "summary": "Esther McGregor and Emilio Sakraya have been cast as leads in the upcoming Fourth Wing TV series.",
-      "highlights": [
-        "McGregor will play Violet Sorrengail",
-        "Sakraya will play Xaden Riorson"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-22T00:30:00+06:00",
-      "selected_at": "2026-10-22T02:52:20.891420+06:00",
-      "status": "published",
-      "message_id": 1037
-    },
-    "ramayana_part_one_ppv_deal": {
-      "event_id": "ramayana_part_one_ppv_deal",
-      "canonical_url": "variety.com/2026/film/news/ranbir-kapoor-yash-ramayana-jiohotstar-pay-per-view-release-1236919377",
-      "original_url": "https://variety.com/2026/film/news/ranbir-kapoor-yash-ramayana-jiohotstar-pay-per-view-release-1236919377/",
-      "source": "Variety",
-      "region": "Entertainment",
-      "topic": "Release Dates",
-      "institution": "JioHotstar / Prime Focus Studios",
-      "event_cluster_id": "evt_43d113ab94",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Ramayana: Part One",
-      "summary": "Nitesh Tiwari’s epic starring Ranbir Kapoor and Yash will be offered as a pay‑per‑view purchase on JioHotstar after its theatrical run.",
-      "highlights": [
-        "PPV on‑demand purchase will launch on JioHotstar post‑theatrical run",
-        "Film opened worldwide on Nov 5 in Hindi, Tamil, Telugu, Kannada, Malayalam and English",
-        "Stars Ranbir Kapoor, Yash and Sai Pallavi"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-22T07:05:09+06:00",
-      "selected_at": "2026-10-22T11:57:13.920153+06:00",
-      "status": "published",
-      "message_id": 1039
-    },
-    "karaoke_murder_worldwide_opening": {
-      "event_id": "karaoke_murder_worldwide_opening",
-      "canonical_url": "variety.com/2026/film/news/vietnamese-whodunit-karaoke-murder-four-continent-release-1236919373",
-      "original_url": "https://variety.com/2026/film/news/vietnamese-whodunit-karaoke-murder-four-continent-release-1236919373/",
-      "source": "Variety",
-      "region": "Entertainment",
-      "topic": "Release Dates",
-      "institution": "3388 Films",
-      "event_cluster_id": "evt_4e739e31c4",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Karaoke Murder",
-      "summary": "Vietnamese whodunit ‘Karaoke Murder’ will open simultaneously in cinemas across four continents on Oct.",
-      "highlights": [
-        "Opening in North America, Europe, Australia and Asia the same weekend",
-        "Distributed by 3388 Films with exclusive rights in multiple territories"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-22T06:49:00+06:00",
-      "selected_at": "2026-10-22T11:57:29.120844+06:00",
-      "status": "published",
-      "message_id": 1042
-    },
     "series_order": {
       "event_id": "series_order",
       "canonical_url": "variety.com/2026/tv/news/netflix-ya-drama-prep-curtis-sittenfeld-novel-nicole-taylor-1236938734",
@@ -1602,31 +1430,6 @@
       "status": "published",
       "message_id": 1237
     },
-    "cast_return": {
-      "event_id": "cast_return",
-      "canonical_url": "variety.com/2026/tv/news/slow-horses-season-6-finale-olivia-cooke-interview-1236917817",
-      "original_url": "https://variety.com/2026/tv/news/slow-horses-season-6-finale-olivia-cooke-interview-1236917817/",
-      "source": "Variety",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "Apple TV+",
-      "event_cluster_id": "evt_2054a8a3f7",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Slow Horses",
-      "summary": "Olivia Cooke returns to Apple TV's spy series for Season 6, recounting a quad injury from night shoots and a cliffhanger finale.",
-      "highlights": [
-        "Cooke back as Sidonie Baker in Season 6",
-        "Sustained a serious quad injury during a chase sequence",
-        "Season 6 ends on a dramatic cliffhanger"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-22T04:30:00+06:00",
-      "selected_at": "2026-10-22T17:37:15.933516+06:00",
-      "status": "published",
-      "message_id": 1048
-    },
     "upcoming_ott_series": {
       "event_id": "upcoming_ott_series",
       "canonical_url": "deadline.com/2026/10/sam-heughan-joins-ascent-viola-davis-1237170649",
@@ -1651,106 +1454,6 @@
       "selected_at": "2026-10-22T22:58:54.768678+06:00",
       "status": "published",
       "message_id": 1051
-    },
-    "star_lord_return_confirmation": {
-      "event_id": "star_lord_return_confirmation",
-      "canonical_url": "variety.com/2026/film/news/chris-pratt-star-lord-mcu-1236919455",
-      "original_url": "https://variety.com/2026/film/news/chris-pratt-star-lord-mcu-1236919455/",
-      "source": "Variety",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "Marvel Studios",
-      "event_cluster_id": "evt_5ca36d6f32",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Star-Lord",
-      "summary": "Chris Pratt confirmed Star-Lord will return to the MCU, though no timeline was given.",
-      "highlights": [
-        "Pratt said hard action has been taken to secure the character’s comeback",
-        "He has pitched ideas to Marvel and is ready to contribute to future MCU storytelling",
-        "No release date disclosed"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-22T10:37:15+06:00",
-      "selected_at": "2026-10-22T22:58:59.824415+06:00",
-      "status": "published",
-      "message_id": 1052
-    },
-    "poison_ivy_series_hbo": {
-      "event_id": "poison_ivy_series_hbo",
-      "canonical_url": "variety.com/2026/tv/news/poison-ivy-tv-show-hbo-dc-penguin-1236919156",
-      "original_url": "https://variety.com/2026/tv/news/poison-ivy-tv-show-hbo-dc-penguin-1236919156/",
-      "source": "Variety",
-      "region": "Entertainment",
-      "topic": "Streaming Platform News",
-      "institution": "HBO/Warner Bros.",
-      "event_cluster_id": "evt_39b7a8d7f0",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Poison Ivy",
-      "summary": "HBO is developing a live‑action Poison Ivy series with \"The Penguin\" showrunner Lauren LeFranc attached as producer.",
-      "highlights": [
-        "Series confirmed in development at HBO",
-        "Lauren LeFranc, who produced \"The Penguin,\" will produce the show",
-        "Poison Ivy has never headlined a TV series before"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-22T01:24:59+06:00",
-      "selected_at": "2026-10-22T22:59:05.210468+06:00",
-      "status": "published",
-      "message_id": 1053
-    },
-    "basquiat_film_cudi": {
-      "event_id": "basquiat_film_cudi",
-      "canonical_url": "deadline.com/2026/10/kid-cudi-basquiat-movie-1237169913",
-      "original_url": "https://deadline.com/2026/10/kid-cudi-basquiat-movie-1237169913/",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "topic": "Casting",
-      "institution": "Independent Production",
-      "event_cluster_id": "evt_037534edec",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Basquiat",
-      "summary": "Kid Cudi announced he will write, direct and star in a new film about artist Jean‑Michel Basquiat.",
-      "highlights": [
-        "Cudi will serve as writer, director and lead actor",
-        "The project is a love letter to Basquiat, the 80s and NYC",
-        "Filming is slated for 2027"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-22T01:30:16+06:00",
-      "selected_at": "2026-10-22T22:59:11.644820+06:00",
-      "status": "published",
-      "message_id": 1054
-    },
-    "sebastian_koch_cast_in_disavowed": {
-      "event_id": "sebastian_koch_cast_in_disavowed",
-      "canonical_url": "deadline.com/2026/10/sebastian-koch-cast-apple-tv-series-disavowed-1237170279",
-      "original_url": "https://deadline.com/2026/10/sebastian-koch-cast-apple-tv-series-disavowed-1237170279/",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "topic": "Casting",
-      "institution": "Apple TV+",
-      "event_cluster_id": "evt_47fd5eb160",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Disavowed",
-      "summary": "Sebastian Koch has been added as a series regular to Apple TV+’s upcoming thriller Disavowed.",
-      "highlights": [
-        "Koch joins a cast that includes James Marsden and Norman Reedus",
-        "Series created by Art Marcum and Matt Holloway",
-        "MacLaren will direct the first two episodes"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-22T06:20:28+06:00",
-      "selected_at": "2026-10-22T22:59:17.096090+06:00",
-      "status": "published",
-      "message_id": 1055
     },
     "snapshot_north_america_deal": {
       "event_id": "snapshot_north_america_deal",
@@ -1900,31 +1603,6 @@
       "selected_at": "2026-10-23T11:55:04.498791+06:00",
       "status": "published",
       "message_id": 1061
-    },
-    "hoichoi_series_hindi_tamil_telugu_deal": {
-      "event_id": "hoichoi_series_hindi_tamil_telugu_deal",
-      "canonical_url": "variety.com/2026/tv/news/netflix-hoichoi-partner-bengali-series-hindi-tamil-telugu-1236919476",
-      "original_url": "https://variety.com/2026/tv/news/netflix-hoichoi-partner-bengali-series-hindi-tamil-telugu-1236919476/",
-      "source": "Variety",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "Netflix & Hoichoi",
-      "event_cluster_id": "evt_89b0653cdc",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "The Cursed Temple of Kauriburi",
-      "summary": "Hoichoi’s new horror series will debut in Bengali on Hoichoi and simultaneously in Hindi, Tamil and Telugu on Netflix.",
-      "highlights": [
-        "First Hoichoi series to launch in three Indian languages on Netflix",
-        "Series premieres on Nov 6 alongside its Bengali release",
-        "Netflix will also add 14 existing Hoichoi series in dubbed versions"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-22T13:03:43+06:00",
-      "selected_at": "2026-10-23T11:55:09.243602+06:00",
-      "status": "published",
-      "message_id": 1062
     },
     "game_of_pets_film_announcement": {
       "event_id": "game_of_pets_film_announcement",
@@ -8097,6 +7775,31 @@
       "selected_at": "2026-11-20T00:14:57.945612+06:00",
       "status": "published",
       "message_id": 1325
+    },
+    "yellowjackets_s4_premiere": {
+      "event_id": "yellowjackets_s4_premiere",
+      "canonical_url": "deadline.com/2026/11/yellowjackets-melanie-lynskey-christina-ricci-misty-plot-1237230788",
+      "original_url": "https://deadline.com/2026/11/yellowjackets-melanie-lynskey-christina-ricci-misty-plot-1237230788/",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "topic": "New Season Releases",
+      "institution": "Showtime/Paramount+",
+      "event_cluster_id": "evt_943b838f52",
+      "event_confidence": 0.6,
+      "event_source_count": 1,
+      "headline": "Yellowjackets",
+      "summary": "Season 4 of Yellowjackets premieres with Misty plotting to eliminate Shauna.",
+      "highlights": [
+        "Season 4 premiere episode “Hivemind” aired on Friday",
+        "Misty plans to kill Shauna to protect the group",
+        "New episodes stream Fridays on Paramount+ Premium"
+      ],
+      "concepts": [],
+      "key_numbers": [],
+      "published_at": "2026-11-21T07:47:22+06:00",
+      "selected_at": "2026-11-21T14:06:30.877509+06:00",
+      "status": "published",
+      "message_id": 1326
     }
   },
   "event_clusters": {
@@ -27078,10 +26781,21 @@
       "confidence": 0.6,
       "last_seen": "2026-11-20T23:39:29.945667+06:00",
       "headline": "‘Project 11,’ Shot by 11 Directors in 11 Global Cities, Returns on Oh Short Flips (EXCLUSIVE)"
+    },
+    "evt_943b838f52": {
+      "event_id": "evt_943b838f52",
+      "topic": "New Season Releases",
+      "region": "Entertainment",
+      "sources": [
+        "Deadline"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-21T14:05:28.870539+06:00",
+      "headline": "‘Yellowjackets’ Stars Melanie Lynskey & Christina Ricci On Misty’s Plot “To Save Themselves” From Shauna: “She’ll Be The Downfall Of Everybody”"
     }
   },
   "posted_event_ids": [
-    "evt_30d6032ad1",
     "evt_d284334461",
     "evt_060dd91090",
     "evt_a9222817bf",
@@ -27580,7 +27294,8 @@
     "evt_ea039c9a04",
     "evt_742f57d399",
     "evt_aa940d5125",
-    "evt_9a194406fe"
+    "evt_9a194406fe",
+    "evt_943b838f52"
   ],
   "recent_titles": [
     "bay theater",
@@ -27982,7 +27697,8 @@
     "tommy tuppence",
     "wild cards",
     "invincible",
-    "ozzy fox"
+    "ozzy fox",
+    "yellowjackets"
   ],
   "work_memory": {
     "the dog stars": {
@@ -36474,6 +36190,15 @@
         "Release Date Confirmations": "2026-11-20T00:14:57.945650+06:00"
       },
       "last_published_at": "2026-11-20T00:14:57.945648+06:00"
+    },
+    "yellowjackets": {
+      "title": "Yellowjackets",
+      "sector": "Hollywood",
+      "first_published_at": "2026-11-21T14:06:30.877543+06:00",
+      "published_events": {
+        "OTT / Streaming Availability": "2026-11-21T14:06:30.877550+06:00"
+      },
+      "last_published_at": "2026-11-21T14:06:30.877547+06:00"
     }
   },
   "publication_fingerprints": [
@@ -47300,6 +47025,17 @@
       "event_key": "ozzy_fox_release",
       "canonical": "variety.com/2026/tv/news/ozzy-fox-disney-plus-release-date-1236953192",
       "published_at": "2026-11-20T00:14:57.945991+06:00"
+    },
+    {
+      "fingerprint": "yellowjackets|OTT / Streaming Availability|spoilers this post contains details about the hivemind the final debuts appears the team could prepping one last sacrifice the wilderness while discussing friday hivemind with deadline christina ricci explained that the picks shortly after the with misty plotting eliminate shauna hivemind aired friday misty plans kill shauna protect the group stream fridays paramount premium paramount",
+      "work_key": "yellowjackets",
+      "priority_type": "OTT / Streaming Availability",
+      "headline": "Yellowjackets",
+      "event_text": "Yellowjackets SPOILERS: This post contains details about the Yellowjackets Season 4 premiere episode “Hivemind” As the final season of Yellowjackets debuts, it appears the team could be prepping one last sacrifice to the wilderness. While discussing Friday’s Season 4 premiere episode “Hivemind” with Deadline, Christina Ricci explained that the episode picks up shortly after the Season […] Season 4 of Yellowjackets premieres with Misty plotting to eliminate Shauna. Season 4 premiere episode “Hivemind” aired on Friday Misty plans to kill Shauna to protect the group New episodes stream Fridays on Paramount+ Premium Paramount+",
+      "core": "spoilers this post contains details about the hivemind the final debuts appears the team could prepping one last sacrifice the wilderness while discussing friday hivemind with deadline christina ricci explained that the picks shortly after the with misty plotting eliminate shauna hivemind aired friday misty plans kill shauna protect the group stream fridays paramount premium paramount",
+      "event_key": "Yellowjackets_S4_Premiere",
+      "canonical": "deadline.com/2026/11/yellowjackets-melanie-lynskey-christina-ricci-misty-plot-1237230788",
+      "published_at": "2026-11-21T14:06:30.877789+06:00"
     }
   ],
   "fresh_start_at": "2026-09-07T13:58:06.173598+06:00",
@@ -47435,126 +47171,6 @@
     }
   },
   "score_history": [
-    {
-      "title": "Magnolia Pictures To Qualify ‘Just Look Up’ For Oscars; Documentary Examines Climate Activist (And Standup Comedian) Michael Greenberg",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "Release Date Confirmations",
-      "source": "Deadline",
-      "seen_at": "2026-11-09T01:24:22.435719+06:00"
-    },
-    {
-      "title": "Ranbir Kapoor and Yash’s ‘Ramayana’ Makers on Retelling India’s Epic for the World, as Amazon Music and T-Series Bet on A.R. Rahman and Hans",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "",
-      "source": "Variety",
-      "seen_at": "2026-11-09T01:24:22.435833+06:00"
-    },
-    {
-      "title": "Andrew Garfield Says He ‘Never Had Any Interaction’ With Sam Altman While Filming ‘Artificial,’ Despite Altman Claiming They Waved to Each O",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "",
-      "source": "Variety",
-      "seen_at": "2026-11-09T01:24:22.435936+06:00"
-    },
-    {
-      "title": "Netflix Pe Pitega Titu Mama Ka ‘Dhindora’: India’s First and Biggest Digital Creator Bhuvan Bam Brings Cult Favourite Back for Season 2 on N",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "",
-      "source": "about.netflix.com",
-      "seen_at": "2026-11-09T01:24:22.435987+06:00"
-    },
-    {
-      "title": "From ‘World of Warcraft Forever’ Surprise to Le Sserafim, Simu Liu and T-Pain Appearances, How BlizzCon 2026 Set the Stage for Blizzard Ente",
-      "score": 68,
-      "pattern": "",
-      "priority_type": "First Look / First Glimpse / Posters",
-      "source": "Variety",
-      "seen_at": "2026-11-09T01:24:22.436088+06:00"
-    },
-    {
-      "title": "Former NCT Member Lucas Wong Makes Acting Debut in Taiwanese Folk-Music Drama ‘A Time’ With Jerry Yan, Ning Chang at Taiwan Creative Content",
-      "score": 55,
-      "pattern": "",
-      "priority_type": "New Movie / Series Announcements",
-      "source": "Variety",
-      "seen_at": "2026-11-09T01:24:22.436184+06:00"
-    },
-    {
-      "title": "This week Movie Releases: భోగి, ఇట్లు అర్జున, దొంగ నా కొడుకు.. ఇంకా ఈ వారం విడుదలయ్యే సినిమాలు ఇవే! | This Week Movie Releases: Bhogi, Itlu ",
-      "score": 58,
-      "pattern": "",
-      "priority_type": "Theatrical Releases / Re-releases",
-      "source": "telugu.filmibeat.com",
-      "seen_at": "2026-11-09T01:24:22.436266+06:00"
-    },
-    {
-      "title": "Cristian Mungiu’s Palme d’Or Winner ‘Fjord’ Takes Jakarta World Cinema Audience Award as Short Film Winners Land Debut Feature Funding",
-      "score": 51,
-      "pattern": "",
-      "priority_type": "Release Date Confirmations",
-      "source": "Variety",
-      "seen_at": "2026-11-09T01:26:04.491567+06:00"
-    },
-    {
-      "title": "‘The Invisible Guest’ Remake Director Danial Rifki on Suharto-Era Fear and Why His New Thriller Is About ‘How to Fight Back’",
-      "score": 51,
-      "pattern": "",
-      "priority_type": "Release Date Confirmations",
-      "source": "Variety",
-      "seen_at": "2026-11-09T01:26:04.491674+06:00"
-    },
-    {
-      "title": "Druski Serves Elizabeth Holmes Whiteface In ‘Dru Can See Everything’ Sketch During ‘SNL’ Debut",
-      "score": 47,
-      "pattern": "",
-      "priority_type": "Release Date Confirmations",
-      "source": "Deadline",
-      "seen_at": "2026-11-09T01:26:04.491768+06:00"
-    },
-    {
-      "title": "Emma Stone Joins Druski For His ‘SNL’ Debut Opening Monologue While Filming ‘The Catch’ Rom-Com",
-      "score": 47,
-      "pattern": "",
-      "priority_type": "Release Date Confirmations",
-      "source": "Deadline",
-      "seen_at": "2026-11-09T01:26:04.491861+06:00"
-    },
-    {
-      "title": "This week Movie Releases: భోగి, ఇట్లు అర్జున, దొంగ నా కొడుకు.. ఇంకా ఈ వారం విడుదలయ్యే సినిమాలు ఇవే! | This Week Movie Releases: Bhogi, Itlu ",
-      "score": 49,
-      "pattern": "",
-      "priority_type": "Theatrical Releases / Re-releases",
-      "source": "telugu.filmibeat.com",
-      "seen_at": "2026-11-09T01:26:04.492300+06:00"
-    },
-    {
-      "title": "Trinity Trailer, Release Date, Plot of Richard Madden and Gugu Mbatha-Raw Series - Netflix Tudum",
-      "score": 90,
-      "pattern": "",
-      "priority_type": "New Movie / Series Announcements",
-      "source": "Netflix Tudum",
-      "seen_at": "2026-11-09T01:26:04.492582+06:00"
-    },
-    {
-      "title": "Former NCT Member Lucas Wong Makes Acting Debut in Taiwanese Folk-Music Drama ‘A Time’ With Jerry Yan, Ning Chang at Taiwan Creative Content",
-      "score": 51,
-      "pattern": "",
-      "priority_type": "New Movie / Series Announcements",
-      "source": "Variety",
-      "seen_at": "2026-11-09T01:26:04.492696+06:00"
-    },
-    {
-      "title": "Benito Skinner Teases “2016 Millennial Hopecore” For ‘Overcompensating’ Season 2: “Sorry For The Wait”",
-      "score": 55,
-      "pattern": "",
-      "priority_type": "Season Renewals / New Season Updates",
-      "source": "Deadline",
-      "seen_at": "2026-11-09T01:26:04.492791+06:00"
-    },
     {
       "title": "Ranbir Kapoor and Yash’s ‘Ramayana’ Makers on Retelling India’s Epic for the World, as Amazon Music and T-Series Bet on A.R. Rahman and Hans",
       "score": 0,
@@ -51434,18 +51050,138 @@
       "priority_type": "Season Renewals / New Season Updates",
       "source": "Deadline",
       "seen_at": "2026-11-20T23:39:29.871512+06:00"
+    },
+    {
+      "title": "Kira Goldberg Leaving Netflix As VP Film To Join Paramount As President Of Motion Picture Group Alongside Don Granger; WB’s Jesse Ehrman Upp",
+      "score": 33,
+      "pattern": "",
+      "priority_type": "OTT / Streaming Availability",
+      "source": "Deadline",
+      "seen_at": "2026-11-21T14:04:59.884736+06:00"
+    },
+    {
+      "title": "Busan-Selected Director Anoop Lokkur Turns His Own Tenant War Into Bengaluru Dark Comedy ‘Melgade Mane Kelgade Mane’ at India’s WAVES Film B",
+      "score": 43,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Variety",
+      "seen_at": "2026-11-21T14:04:59.884846+06:00"
+    },
+    {
+      "title": "Berlinale Forum-Selected Director R. Gowtham Salutes Village Health Workers in Tamil Dark Comedy ‘Superman Vivagaram’ at India’s WAVES Film ",
+      "score": 43,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Variety",
+      "seen_at": "2026-11-21T14:04:59.884941+06:00"
+    },
+    {
+      "title": "‘Yellowjackets’ Stars Melanie Lynskey & Christina Ricci On Misty’s Plot “To Save Themselves” From Shauna: “She’ll Be The Downfall Of Everybo",
+      "score": 88,
+      "pattern": "",
+      "priority_type": "Release Date Confirmations",
+      "source": "Deadline",
+      "seen_at": "2026-11-21T14:05:28.845744+06:00"
+    },
+    {
+      "title": "CMA Awards See a 55% Ratings Bump in Key Adult Demo With Taylor Swift’s Return to the Show",
+      "score": 62,
+      "pattern": "",
+      "priority_type": "Theatrical Releases / Re-releases",
+      "source": "Variety",
+      "seen_at": "2026-11-21T14:05:28.845844+06:00"
+    },
+    {
+      "title": "Melania Trump Calls for ‘Peace’ When Asked About Children in Gaza and Israel at Amazon Series Premiere",
+      "score": 43,
+      "pattern": "",
+      "priority_type": "Theatrical Releases / Re-releases",
+      "source": "Variety",
+      "seen_at": "2026-11-21T14:05:28.845944+06:00"
+    },
+    {
+      "title": "Jennifer Lopez Wears 186-Carat Diamond Necklace to ‘JLo Show’ Premiere: ‘There’s Security All Around’",
+      "score": 41,
+      "pattern": "",
+      "priority_type": "Theatrical Releases / Re-releases",
+      "source": "Variety",
+      "seen_at": "2026-11-21T14:05:28.846044+06:00"
+    },
+    {
+      "title": "Sofia Coppola Pays Tribute to Late Mother Eleanor Coppola at Chanel-Hosted Paris Screening of ‘Making Marie Antoinette’",
+      "score": 41,
+      "pattern": "",
+      "priority_type": "Theatrical Releases / Re-releases",
+      "source": "Variety",
+      "seen_at": "2026-11-21T14:05:28.846145+06:00"
+    },
+    {
+      "title": "Tracy Oliver & Issa Rae Drama ‘Open’ Lands At HBO",
+      "score": 57,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Deadline",
+      "seen_at": "2026-11-21T14:05:28.846234+06:00"
+    },
+    {
+      "title": "Bill Maher Mocks ‘Grand Theft Auto 6’-Playing Young Men With Awful ICE Joke",
+      "score": 48,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Variety",
+      "seen_at": "2026-11-21T14:05:28.846331+06:00"
+    },
+    {
+      "title": "Robert Pattinson’s Bond Ascent: How Pricey Screen Tests and Amazon Execs Landed a Starry 007",
+      "score": 48,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Variety",
+      "seen_at": "2026-11-21T14:05:28.846426+06:00"
+    },
+    {
+      "title": "All The Songs In Netflix’s ‘Steps’: Olivia Rodrigo To Amanda Seyfried",
+      "score": 43,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Deadline",
+      "seen_at": "2026-11-21T14:05:28.846516+06:00"
+    },
+    {
+      "title": "‘Godavari’ Director Nikhil Mahajan Turns a Malegaon Carjacking Into Neo-Noir With WAVES Film Bazaar Project ‘Mongoose’",
+      "score": 42,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Variety",
+      "seen_at": "2026-11-21T14:05:28.846629+06:00"
+    },
+    {
+      "title": "‘Lanterns’ Star Aaron Pierre On DCU Future After Safran & Gunn’s DC Studios Exit: “I’m Very At Peace”",
+      "score": 40,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Deadline",
+      "seen_at": "2026-11-21T14:05:28.846725+06:00"
+    },
+    {
+      "title": "‘MobLand’ Season 3 Starts Shooting As Season 2 Finale Drops On Paramount+",
+      "score": 42,
+      "pattern": "",
+      "priority_type": "Season Renewals / New Season Updates",
+      "source": "Deadline",
+      "seen_at": "2026-11-21T14:05:28.846814+06:00"
     }
   ],
   "adaptive_metrics": {
-    "raw_discovered": 52,
-    "pre_cerebras_rejected": 26857,
-    "hard_rejected": 9324,
+    "raw_discovered": 50,
+    "pre_cerebras_rejected": 26972,
+    "hard_rejected": 9359,
     "duplicate_rejected": 214,
-    "learned_rejected": 17319,
-    "passed_to_cerebras": 4621,
-    "cerebras_ranked": 10996,
-    "published": 986,
-    "estimated_candidates_avoided": 26857
+    "learned_rejected": 17399,
+    "passed_to_cerebras": 4627,
+    "cerebras_ranked": 11008,
+    "published": 987,
+    "estimated_candidates_avoided": 26972
   },
   "source_quality": {
     "collider.com": {
@@ -51477,11 +51213,11 @@
       "last_seen": "2026-09-08T11:49:09.577970+06:00"
     },
     "deadline.com": {
-      "observations": 5049,
-      "low_score_count": 4093,
-      "total_score": 255414,
+      "observations": 5054,
+      "low_score_count": 4097,
+      "total_score": 255684,
       "avg_score": 50.6,
-      "last_seen": "2026-11-20T23:39:29.871661+06:00"
+      "last_seen": "2026-11-21T14:05:28.846905+06:00"
     },
     "thewrap.com": {
       "observations": 16,
@@ -51498,11 +51234,11 @@
       "last_seen": "2026-09-08T21:05:13.366232+06:00"
     },
     "variety.com": {
-      "observations": 5314,
-      "low_score_count": 4388,
-      "total_score": 253217,
-      "avg_score": 47.7,
-      "last_seen": "2026-11-20T23:39:29.871628+06:00"
+      "observations": 5321,
+      "low_score_count": 4395,
+      "total_score": 253542,
+      "avg_score": 47.6,
+      "last_seen": "2026-11-21T14:05:28.846894+06:00"
     },
     "indiewire.com": {
       "observations": 10,
@@ -51631,7 +51367,7 @@
     "Acquisitions and Mergers": "2026-11-06T04:58:55.210733+06:00",
     "Korean Drama": "2026-10-29T20:23:16.845456+06:00",
     "Box Office": "2026-09-20T00:05:04.568803+06:00",
-    "New Season Releases": "2026-11-20T00:14:51.078734+06:00",
+    "New Season Releases": "2026-11-21T14:06:30.877807+06:00",
     "Theatrical Releases": "2026-11-11T04:24:45.334042+06:00"
   }
 }
