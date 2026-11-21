@@ -1,273 +1,152 @@
 {
   "feeds": {
     "https://deadline.com/feed/": {
-      "etag": "W/\"d7ee424a13ff6f8ae851ea14f4fa752c\"",
-      "last_modified": "Sat, 21 Nov 2026 16:38:18 GMT",
-      "last_checked": "2026-11-21T22:39:20.631257+06:00",
+      "etag": "W/\"1a9f310457bc56af58eb7745dcb26df1\"",
+      "last_modified": "Sat, 21 Nov 2026 21:54:04 GMT",
+      "last_checked": "2026-11-22T04:04:01.327606+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://variety.com/feed/": {
-      "etag": "W/\"92a0971a33eadcee8092ed7b9c58f45f\"",
-      "last_modified": "Sat, 21 Nov 2026 16:32:50 GMT",
-      "last_checked": "2026-11-21T22:39:22.408532+06:00",
+      "etag": "W/\"13bf687173ee483c1eac92cfcf5983d0\"",
+      "last_modified": "Sat, 21 Nov 2026 21:58:16 GMT",
+      "last_checked": "2026-11-22T04:04:02.742166+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.hollywoodreporter.com/feed/": {
-      "etag": "W/\"27c1c972e81e67b8fe2a0ca948ae4533\"",
-      "last_modified": "Sat, 21 Nov 2026 16:38:11 GMT",
-      "last_checked": "2026-11-21T22:39:24.042166+06:00",
+      "etag": "W/\"256d968d92796f6837465c017cb96822\"",
+      "last_modified": "Sat, 21 Nov 2026 21:57:39 GMT",
+      "last_checked": "2026-11-22T04:04:04.304890+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.thewrap.com/feed/": {
-      "etag": "\"ad5dc7381c3b9318b88da0c62aa206a3\"",
-      "last_modified": "Sat, 21 Nov 2026 16:12:15 GMT",
-      "last_checked": "2026-11-21T22:39:25.149755+06:00",
+      "etag": "\"e3cd93bfdf178f7e6a8fcfa528905f39\"",
+      "last_modified": "Sat, 21 Nov 2026 21:22:46 GMT",
+      "last_checked": "2026-11-22T04:04:05.077512+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.indiewire.com/feed/": {
-      "etag": "W/\"ad1ba47f9f26881bcb069a8a63b6b95a\"",
-      "last_modified": "Sat, 21 Nov 2026 01:04:20 GMT",
-      "last_checked": "2026-11-21T22:39:26.473067+06:00",
+      "etag": "W/\"858a921584fa23a9b00ba5b658ac5cbd\"",
+      "last_modified": "Sat, 21 Nov 2026 18:06:23 GMT",
+      "last_checked": "2026-11-22T04:04:06.218609+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://collider.com/feed/": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-21T22:39:26.653190+06:00",
+      "last_checked": "2026-11-22T04:04:06.581221+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://tvline.com/feed/": {
-      "etag": "\"b1add97fdbf1ab5f52905257458553da\"",
-      "last_modified": "Sat, 21 Nov 2026 16:12:00 GMT",
-      "last_checked": "2026-11-21T22:39:27.832281+06:00",
+      "etag": "\"1b319b2393117a55151161b678119c0d\"",
+      "last_modified": "Sat, 21 Nov 2026 21:52:00 GMT",
+      "last_checked": "2026-11-22T04:04:07.353352+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.ottplay.com/rss": {
       "etag": "\"b5496c89c58ff0f5d07d64a68d4efe07\"",
       "last_modified": "Thu, 27 May 2021 12:38:49 GMT",
-      "last_checked": "2026-11-21T22:39:29.858507+06:00",
+      "last_checked": "2026-11-22T04:04:09.227635+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.filmibeat.com/rss/feeds/filmibeat-news.xml": {
       "etag": null,
-      "last_modified": "Sat, 21 Nov 2026 16:39:30 GMT",
-      "last_checked": "2026-11-21T22:39:30.277456+06:00",
+      "last_modified": "Sat, 21 Nov 2026 22:04:09 GMT",
+      "last_checked": "2026-11-22T04:04:09.652281+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.pinkvilla.com/rss": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-21T22:39:31.133149+06:00",
+      "last_checked": "2026-11-22T04:04:10.417952+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.bollywoodhungama.com/feed/": {
-      "etag": "\"0c46bd0983c353a7537b35deae8695a1\"",
-      "last_modified": "Sat, 21 Nov 2026 15:31:29 GMT",
-      "last_checked": "2026-11-21T22:39:31.607991+06:00",
+      "etag": "\"041e018e2eea2f59e23e9487efedc23e\"",
+      "last_modified": "Sat, 21 Nov 2026 17:20:55 GMT",
+      "last_checked": "2026-11-22T04:04:11.502743+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.gadgets360.com/entertainment/rss": {
-      "last_checked": "2026-11-21T22:39:33.468646+06:00",
-      "fail_count": 246,
+      "last_checked": "2026-11-22T04:04:13.018485+06:00",
+      "fail_count": 247,
       "alerted": true
     },
     "https://www.soompi.com/feed": {
       "etag": "W/\"234eb58ca326f9a5d88cd17bfe5e416d\"",
       "last_modified": "Sat, 21 Nov 2026 15:41:04 GMT",
-      "last_checked": "2026-11-21T22:39:33.700174+06:00",
+      "last_checked": "2026-11-22T04:04:13.246289+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.whats-on-netflix.com/feed/": {
       "etag": null,
-      "last_modified": "Fri, 20 Nov 2026 20:23:11 GMT",
-      "last_checked": "2026-11-21T22:39:35.168776+06:00",
+      "last_modified": "Sat, 21 Nov 2026 21:24:18 GMT",
+      "last_checked": "2026-11-22T04:04:13.825505+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.netflix.com/tudum/rss.xml": {
-      "last_checked": "2026-11-21T22:39:35.735893+06:00",
-      "fail_count": 246,
+      "last_checked": "2026-11-22T04:04:14.541496+06:00",
+      "fail_count": 247,
       "alerted": true
     },
     "https://press.wbd.com/us/en/rss": {
-      "last_checked": "2026-11-21T22:39:36.059025+06:00",
-      "fail_count": 246,
+      "last_checked": "2026-11-22T04:04:14.814874+06:00",
+      "fail_count": 247,
       "alerted": true
     },
     "https://www.apple.com/tv-pr/newsroom/feed/": {
-      "last_checked": "2026-11-21T22:39:36.854064+06:00",
-      "fail_count": 246,
+      "last_checked": "2026-11-22T04:04:15.327910+06:00",
+      "fail_count": 247,
       "alerted": true
     },
     "https://www.aboutamazon.com/rss": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-21T22:39:37.056544+06:00",
+      "last_checked": "2026-11-22T04:04:15.549222+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.marvel.com/articles/feed": {
-      "last_checked": "2026-11-21T22:39:37.471910+06:00",
-      "fail_count": 246,
+      "last_checked": "2026-11-22T04:04:16.039518+06:00",
+      "fail_count": 247,
       "alerted": true
     },
     "https://www.dc.com/blog/rss.xml": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-21T22:39:37.861819+06:00",
-      "fail_count": 11,
+      "last_checked": "2026-11-22T04:04:16.612442+06:00",
+      "fail_count": 12,
       "alerted": true
     },
     "https://www.sonypictures.com/rss": {
-      "last_checked": "2026-11-21T22:39:38.175665+06:00",
-      "fail_count": 246,
+      "last_checked": "2026-11-22T04:04:17.047807+06:00",
+      "fail_count": 247,
       "alerted": true
     },
     "https://www.paramount.com/rss": {
-      "last_checked": "2026-11-21T22:39:38.341844+06:00",
-      "fail_count": 246,
+      "last_checked": "2026-11-22T04:04:17.243643+06:00",
+      "fail_count": 247,
       "alerted": true
     },
     "https://www.universalpictures.com/rss": {
-      "last_checked": "2026-11-21T22:39:38.757371+06:00",
-      "fail_count": 246,
+      "last_checked": "2026-11-22T04:04:17.726981+06:00",
+      "fail_count": 247,
       "alerted": true
     }
   },
   "queue": {
-    "deadline.com/2026/11/jena-malone-suzanna-son-to-star-kismet-1237226780": {
-      "title": "Jena Malone, Suzanna Son & Sofia Mortera Wrap On Indie ‘Kismet’ From Giovanna Molina",
-      "url": "https://deadline.com/2026/11/jena-malone-suzanna-son-to-star-kismet-1237226780/",
-      "canonical": "deadline.com/2026/11/jena-malone-suzanna-son-to-star-kismet-1237226780",
-      "published_dt": "2026-11-18T00:13:44+06:00",
-      "published_date": "2026-11-18T00:13:44+06:00",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "excerpt": "EXCLUSIVE: Jena Malone (The Boroughs) and Suzanna Son (Monster: The Ed Gein Story) have wrapped roles opposite newcomer Sofia Mortera in Kismet, an indie from Radiance Pictures and Distant Films that marks the feature debut of writer-director Giovanna Molina. Set during the desolate off-season on Fire Island, Kismet follows a melancholic 13-year-old girl (Mortera) who, […]",
-      "image": "https://deadline.com/wp-content/uploads/2026/11/Netflixs-Monster-The-Ed-Gein-Story-World-Premiere-Arrivals-1000.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-11-18T00:16:56.591733+06:00",
-      "last_seen": "2026-11-18T00:16:56.591751+06:00",
-      "importance_score": 43,
-      "priority_type": "OTT / Streaming Availability",
-      "priority_tier": 1,
-      "priority_rank": 1,
-      "sector": "Hollywood",
-      "rank_reason": "Production wrap news, no release window; below publishable threshold.",
-      "last_ranked_at": "2026-11-18T23:52:52.220543+06:00",
-      "learning_pattern": ""
-    },
-    "deadline.com/2026/11/warner-bros-jeff-goldstein-distribution-exits-1237148114": {
-      "title": "Jeff Goldstein Exits As Global Theatrical Distribution Boss After 48-Year Warner Bros Run",
-      "url": "https://deadline.com/2026/11/warner-bros-jeff-goldstein-distribution-exits-1237148114/",
-      "canonical": "deadline.com/2026/11/warner-bros-jeff-goldstein-distribution-exits-1237148114",
-      "published_dt": "2026-11-17T23:16:19+06:00",
-      "published_date": "2026-11-17T23:16:19+06:00",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "excerpt": "Warner Bros veteran and current head of global theatrical distribution Jeff Goldstein is leaving the studio following Paramount’s acquisition of the studio back in October. He will remain a consultant. Goldstein’s retirement after a more than 48-year run comes amid news Tuesday of a major Skydance executive reorg after the absorbing of Warner Bros: Netflix […]",
-      "image": "https://deadline.com/wp-content/uploads/2026/10/Jeff-Goldstein-WB2.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-11-18T00:16:56.970097+06:00",
-      "last_seen": "2026-11-18T00:16:56.970115+06:00",
-      "importance_score": 33,
-      "priority_type": "OTT / Streaming Availability",
-      "priority_tier": 1,
-      "priority_rank": 1,
-      "sector": "Hollywood",
-      "rank_reason": "Executive departure; not a release announcement.",
-      "last_ranked_at": "2026-11-18T14:21:04.750577+06:00",
-      "learning_pattern": ""
-    },
-    "deadline.com/2026/11/kira-goldberg-leaving-netflix-vp-film-paramount-pictures-1237226627": {
-      "title": "Kira Goldberg Leaving Netflix As VP Film To Join Paramount As President Of Motion Picture Group Alongside Don Granger; WB’s Jesse Ehrman Upped",
-      "url": "https://deadline.com/2026/11/kira-goldberg-leaving-netflix-vp-film-paramount-pictures-1237226627/",
-      "canonical": "deadline.com/2026/11/kira-goldberg-leaving-netflix-vp-film-paramount-pictures-1237226627",
-      "published_dt": "2026-11-17T22:50:32+06:00",
-      "published_date": "2026-11-17T22:50:32+06:00",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "excerpt": "Kira Goldberg is departing Netflix where she has been for eight years, most recently as VP Film, Faith, Holiday, YA, and Family. She is headed to Paramount Pictures, where she will take on a top position alongside Don Granger, who will maintain his current title. Both will now be Presidents, Motion Picture Group, reporting to […]",
-      "image": "https://deadline.com/wp-content/uploads/2026/11/Kira-Goldberg-Don-Jesse.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-11-18T00:16:57.332116+06:00",
-      "last_seen": "2026-11-18T00:16:57.332134+06:00",
-      "importance_score": 33,
-      "priority_type": "OTT / Streaming Availability",
-      "priority_tier": 1,
-      "priority_rank": 1,
-      "sector": "Hollywood",
-      "rank_reason": "Executive move; no new title release information.",
-      "last_ranked_at": "2026-11-18T14:21:04.750703+06:00",
-      "learning_pattern": ""
-    },
-    "variety.com/2026/film/news/roadside-attractions-acquires-one-second-after-movie-1236949333": {
-      "title": "Roadside Attractions Acquires U.S. Rights to Thriller ‘One Second After’ Based on William R. Forstchen Novel (EXCLUSIVE)",
-      "url": "https://variety.com/2026/film/news/roadside-attractions-acquires-one-second-after-movie-1236949333/",
-      "canonical": "variety.com/2026/film/news/roadside-attractions-acquires-one-second-after-movie-1236949333",
-      "published_dt": "2026-11-18T00:15:00+06:00",
-      "published_date": "2026-11-18T00:15:00+06:00",
-      "source": "Variety",
-      "region": "Entertainment",
-      "excerpt": "Roadside Attractions has acquired U.S. distribution rights to “One Second After,” Scott Rogers’ action thriller based on the 2009 novel by William R. Forstchen. The film is set for theatrical release on April 30, 2027. “One Second After” marks Roger’s directorial debut. J. Michael Straczynski and Nicole Roewe penned the screenplay. Rob Pfaltzgraff, Nick Reid, […]",
-      "image": "https://variety.com/wp-content/uploads/2026/11/OSA_Day12_SV_0146_DSC02758_C.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "posted",
-      "first_seen": "2026-11-18T00:16:57.619790+06:00",
-      "last_seen": "2026-11-18T00:16:57.619807+06:00",
-      "importance_score": 88,
-      "priority_type": "Theatrical Releases / Re-releases",
-      "priority_tier": 1,
-      "priority_rank": 5,
-      "sector": "Hollywood",
-      "rank_reason": "U.S. theatrical release date confirmed for April 30 2027 with official distributor announcement.",
-      "last_ranked_at": "2026-11-18T00:17:26.669890+06:00",
-      "learning_pattern": "",
-      "posted_at": "2026-11-18T00:22:29.198728+06:00"
-    },
-    "variety.com/shop/star-wars-best-gifts-1203079097": {
-      "title": "The Best ‘Star Wars’ Gifts to Shop in 2026: Film Premiere Tickets, a $500 Grogu Animatronic, Limited-Edition Collectibles and More",
-      "url": "https://variety.com/shop/star-wars-best-gifts-1203079097/",
-      "canonical": "variety.com/shop/star-wars-best-gifts-1203079097",
-      "published_dt": "2026-11-18T00:07:10+06:00",
-      "published_date": "2026-11-18T00:07:10+06:00",
-      "source": "Variety",
-      "region": "Entertainment",
-      "excerpt": "The Force is especially strong this holiday season. With the 50th anniversary of “Star Wars” approaching in 2027, Disney and Lucasfilm are preparing for a yearlong celebration of the franchise, complete with new merchandise, immersive experiences and a theatrical re-release of George Lucas’ original 1977 film. The companies officially kicked off the countdown in November, […]",
-      "image": "https://variety.com/wp-content/uploads/2024/08/star-wars-gift-guide.png",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-11-18T00:16:57.769430+06:00",
-      "last_seen": "2026-11-18T00:16:57.769447+06:00",
-      "importance_score": 43,
-      "priority_type": "OTT / Streaming Availability",
-      "priority_tier": 1,
-      "priority_rank": 1,
-      "sector": "International",
-      "rank_reason": "Merchandise guide, not a media release; low scoring.",
-      "last_ranked_at": "2026-11-18T23:52:52.220677+06:00",
-      "learning_pattern": ""
-    },
     "deadline.com/2026/11/youtube-new-slate-emma-chamberlain-phil-rosenthal-1237226843": {
       "title": "YouTube Hits Back At Rivals With New Slate Featuring Rising Creators, Established Stars & Hot New Directors",
       "url": "https://deadline.com/2026/11/youtube-new-slate-emma-chamberlain-phil-rosenthal-1237226843/",
@@ -1104,13 +983,13 @@
       "status": "pending",
       "first_seen": "2026-11-21T14:05:00.695722+06:00",
       "last_seen": "2026-11-21T14:05:00.695738+06:00",
-      "importance_score": 29,
-      "priority_type": "Release Date Confirmations",
-      "priority_tier": 1,
-      "priority_rank": 4,
+      "importance_score": 31,
+      "priority_type": "Season Renewals / New Season Updates",
+      "priority_tier": 2,
+      "priority_rank": 7,
       "sector": "Hollywood",
-      "rank_reason": "Interview content without a concrete release schedule; low scoring.",
-      "last_ranked_at": "2026-11-21T22:39:46.916441+06:00",
+      "rank_reason": "Interview content without any announced release date or window.",
+      "last_ranked_at": "2026-11-22T04:04:27.272409+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/tv/news/bill-maher-grand-theft-auto-6-young-men-ice-real-time-hbo-1236954795": {
@@ -1128,13 +1007,13 @@
       "status": "pending",
       "first_seen": "2026-11-21T14:05:01.356099+06:00",
       "last_seen": "2026-11-21T14:05:01.356116+06:00",
-      "importance_score": 29,
-      "priority_type": "Release Date Confirmations",
+      "importance_score": 31,
+      "priority_type": "OTT / Streaming Availability",
       "priority_tier": 1,
-      "priority_rank": 4,
+      "priority_rank": 1,
       "sector": "Hollywood",
-      "rank_reason": "Talk‑show commentary without a release schedule; low overall score.",
-      "last_ranked_at": "2026-11-21T22:39:46.916308+06:00",
+      "rank_reason": "Commentary on a aired episode; no new release info.",
+      "last_ranked_at": "2026-11-22T04:04:27.271388+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/film/markets-festivals/godavari-director-nikhil-mahajan-carjacking-neo-noir-mongoose-1236954786": {
@@ -1152,13 +1031,13 @@
       "status": "pending",
       "first_seen": "2026-11-21T14:05:01.503639+06:00",
       "last_seen": "2026-11-21T14:05:01.503655+06:00",
-      "importance_score": 36,
+      "importance_score": 38,
       "priority_type": "New Movie / Series Announcements",
       "priority_tier": 2,
       "priority_rank": 6,
       "sector": "Indian",
-      "rank_reason": "Project announced for market screening; no public release date/platform, so score remains below 80.",
-      "last_ranked_at": "2026-11-21T22:39:46.917038+06:00",
+      "rank_reason": "Project announced for market screening, not a public release date; stays below publishable threshold.",
+      "last_ranked_at": "2026-11-22T04:04:27.272195+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/tv/news/melania-trump-series-gaza-israel-children-peace-amazon-1236954718": {
@@ -1176,13 +1055,13 @@
       "status": "pending",
       "first_seen": "2026-11-21T14:05:01.632296+06:00",
       "last_seen": "2026-11-21T14:05:01.632310+06:00",
-      "importance_score": 36,
-      "priority_type": "OTT / Streaming Availability",
+      "importance_score": 37,
+      "priority_type": "Theatrical Releases / Re-releases",
       "priority_tier": 1,
-      "priority_rank": 1,
+      "priority_rank": 5,
       "sector": "Hollywood",
-      "rank_reason": "Series premiere mentioned but no specific release date/window; limited release‑only value.",
-      "last_ranked_at": "2026-11-21T22:39:46.916027+06:00",
+      "rank_reason": "Premiere already occurred; no future release schedule provided.",
+      "last_ranked_at": "2026-11-22T04:04:27.271886+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/music/news/cma-awards-taylor-swift-big-ratings-increase-1236954677": {
@@ -1200,13 +1079,13 @@
       "status": "pending",
       "first_seen": "2026-11-21T14:05:01.852286+06:00",
       "last_seen": "2026-11-21T14:05:01.852304+06:00",
-      "importance_score": 28,
-      "priority_type": "Release Date Confirmations",
+      "importance_score": 31,
+      "priority_type": "OTT / Streaming Availability",
       "priority_tier": 1,
-      "priority_rank": 4,
+      "priority_rank": 1,
       "sector": "Hollywood",
-      "rank_reason": "Ratings report, not a release announcement; stays below publishable threshold.",
-      "last_ranked_at": "2026-11-21T22:39:46.916564+06:00",
+      "rank_reason": "Ratings report, not a release announcement; score remains under 80.",
+      "last_ranked_at": "2026-11-22T04:04:27.271494+06:00",
       "learning_pattern": ""
     },
     "deadline.com/2026/11/kate-middleton-documentary-heal-release-date-trailer-1237230712": {
@@ -1224,13 +1103,13 @@
       "status": "pending",
       "first_seen": "2026-11-21T22:39:21.677667+06:00",
       "last_seen": "2026-11-21T22:39:21.677679+06:00",
-      "importance_score": 100,
+      "importance_score": 89,
       "priority_type": "New Movie / Series Announcements",
       "priority_tier": 2,
       "priority_rank": 6,
       "sector": "International",
-      "rank_reason": "Official premiere dates and platforms (BBC UK 29 Nov, NBC US 30 Nov) are announced, meeting release‑only criteria.",
-      "last_ranked_at": "2026-11-21T22:39:46.916806+06:00",
+      "rank_reason": "Officially confirmed premiere dates and platforms (BBC UK 29 Nov, NBC US 30 Nov) with clear release details, meeting the release‑only criteria.",
+      "last_ranked_at": "2026-11-22T04:04:27.271991+06:00",
       "learning_pattern": ""
     },
     "deadline.com/2026/11/michael-jackson-biopic-michael-skipping-baftas-1237230863": {
@@ -1248,13 +1127,13 @@
       "status": "pending",
       "first_seen": "2026-11-21T22:39:22.022853+06:00",
       "last_seen": "2026-11-21T22:39:22.022861+06:00",
-      "importance_score": 37,
+      "importance_score": 38,
       "priority_type": "Release Date Confirmations",
       "priority_tier": 1,
       "priority_rank": 4,
       "sector": "Hollywood",
-      "rank_reason": "No release date or platform announced; only a festival‑submission decision, so score stays below 80.",
-      "last_ranked_at": "2026-11-21T22:39:46.916198+06:00",
+      "rank_reason": "Mentions distribution but no release date/window; score kept below 80.",
+      "last_ranked_at": "2026-11-22T04:04:27.271799+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/tv/news/princess-kate-cancer-documentary-premiere-dates-1236954745": {
@@ -1272,13 +1151,109 @@
       "status": "pending",
       "first_seen": "2026-11-21T22:39:23.359586+06:00",
       "last_seen": "2026-11-21T22:39:23.359598+06:00",
-      "importance_score": 100,
+      "importance_score": 85,
       "priority_type": "New Movie / Series Announcements",
       "priority_tier": 2,
       "priority_rank": 6,
       "sector": "International",
-      "rank_reason": "Duplicate confirmation of the same release; still qualifies as a release announcement.",
-      "last_ranked_at": "2026-11-21T22:39:46.916928+06:00",
+      "rank_reason": "Duplicate official announcement of the same documentary with identical release info; still a valid release but slightly lower weight due to redundancy.",
+      "last_ranked_at": "2026-11-22T04:04:27.272103+06:00",
+      "learning_pattern": ""
+    },
+    "deadline.com/2026/11/kaitlan-collins-real-time-absence-white-house-press-conference-1237231015": {
+      "title": "Kaitlan Collins Notes ‘Real Time’ Absence Was Due To White House Press Conference",
+      "url": "https://deadline.com/2026/11/kaitlan-collins-real-time-absence-white-house-press-conference-1237231015/",
+      "canonical": "deadline.com/2026/11/kaitlan-collins-real-time-absence-white-house-press-conference-1237231015",
+      "published_dt": "2026-11-22T03:54:04+06:00",
+      "published_date": "2026-11-22T03:54:04+06:00",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "excerpt": "The Season 24 finale of Real Time with Bill Maher featured a last-minute guest change as Kaitlan Collins was held up in Washington DC. Although she was scheduled to appear on the HBO talk show alongside newly elected Texas Democratic congressman Bobby Pulido, the CNN anchor explained she was covering a White House press conference […]",
+      "image": "https://deadline.com/wp-content/uploads/2026/11/GettyImages-2295827851.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-22T04:04:01.460472+06:00",
+      "last_seen": "2026-11-22T04:04:01.460490+06:00",
+      "importance_score": 42,
+      "priority_type": "Release Date Confirmations",
+      "priority_tier": 1,
+      "priority_rank": 4,
+      "sector": "Hollywood",
+      "rank_reason": "Only reports a guest’s absence; no release date or new content announced, so score stays well below publishable threshold.",
+      "last_ranked_at": "2026-11-22T04:04:27.271703+06:00",
+      "learning_pattern": ""
+    },
+    "deadline.com/2026/11/luca-guadagnino-artificial-interview-sam-altman-openai-1237230964": {
+      "title": "‘Artificial’ Filmmaker Luca Guadagnino On Whether AI Is Humanity’s Doomsday & Sam Altman’s Arsenal – Crew Call Podcast",
+      "url": "https://deadline.com/2026/11/luca-guadagnino-artificial-interview-sam-altman-openai-1237230964/",
+      "canonical": "deadline.com/2026/11/luca-guadagnino-artificial-interview-sam-altman-openai-1237230964",
+      "published_dt": "2026-11-22T02:45:59+06:00",
+      "published_date": "2026-11-22T02:45:59+06:00",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "excerpt": "Unlike Sony’s recent theatrical release of The Social Reckoning, which arguably didn’t resonate with the current tech era we’re living in, Neon is unwrapping Luca Guadagnino’s Artificial about Open AI co-founders Sam Altman, Ilya Sutskever and Elon Musk at a time when we fear the technology will end us. Now whether that’s in regards to […]",
+      "image": "https://deadline.com/wp-content/uploads/2026/11/GettyImages-2299206209.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-22T04:04:01.609102+06:00",
+      "last_seen": "2026-11-22T04:04:01.609116+06:00",
+      "importance_score": 38,
+      "priority_type": "Upcoming OTT Releases",
+      "priority_tier": 1,
+      "priority_rank": 3,
+      "sector": "Hollywood",
+      "rank_reason": "Podcast discussion without any release schedule; not a release announcement.",
+      "last_ranked_at": "2026-11-22T04:04:27.271596+06:00",
+      "learning_pattern": ""
+    },
+    "deadline.com/2026/11/netflix-minimum-short-episode-sitcoms-1237229899": {
+      "title": "Netflix’s ‘Minimum Wage’ Ushers In Streaming’s Short Ep Sitcom Era: “The Future Is 15-Minute ‘SpongeBob’-Length Episodes”",
+      "url": "https://deadline.com/2026/11/netflix-minimum-short-episode-sitcoms-1237229899/",
+      "canonical": "deadline.com/2026/11/netflix-minimum-short-episode-sitcoms-1237229899",
+      "published_dt": "2026-11-22T01:06:00+06:00",
+      "published_date": "2026-11-22T01:06:00+06:00",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "excerpt": "In a world of increasingly short attention spans, social media slop and doomscrolling brainrot, it’s a wonder why many television shows got longer in the streaming era. Case in point, the 22-minute broadcast sitcom was largely replaced by the 30-minute dramedy and the 43-minute procedural has been overshadowed by the hour-long premium drama series. Netflix, […]",
+      "image": "https://deadline.com/wp-content/uploads/2026/11/Minimum_Wage_n_S1_00_04_13_18.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-22T04:04:01.870547+06:00",
+      "last_seen": "2026-11-22T04:04:01.870566+06:00",
+      "importance_score": 37,
+      "priority_type": "OTT / Streaming Availability",
+      "priority_tier": 1,
+      "priority_rank": 1,
+      "sector": "Hollywood",
+      "rank_reason": "Analytical piece, no concrete title release date; remains below publishable score.",
+      "last_ranked_at": "2026-11-22T04:04:27.271251+06:00",
+      "learning_pattern": ""
+    },
+    "variety.com/lists/2027-sag-actor-awards-predictions": {
+      "title": "Actor Awards Predictions: Andrew Garfield, Inde Navarrette and ‘The Odyssey’ Lead an Unsettled Film Race as ‘Widow’s Bay’ and HBO Max Could Rule TV",
+      "url": "https://variety.com/lists/2027-sag-actor-awards-predictions/",
+      "canonical": "variety.com/lists/2027-sag-actor-awards-predictions",
+      "published_dt": "2026-11-22T00:15:00+06:00",
+      "published_date": "2026-11-22T00:15:00+06:00",
+      "source": "Variety",
+      "region": "Entertainment",
+      "excerpt": "Variety Awards Circuit section is the home for all awards news and related content throughout the year, featuring the following: the official predictions for the upcoming Oscars, Emmys, Grammys and Tony Awards ceremonies, curated by Variety chief awards editor Clayton Davis. The prediction pages reflect the current standings in the race and do not reflect […]",
+      "image": "https://variety.com/wp-content/uploads/2026/03/artificial-teaser-trailer-1000.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-22T04:04:03.931948+06:00",
+      "last_seen": "2026-11-22T04:04:03.931966+06:00",
+      "importance_score": 37,
+      "priority_type": "Season Renewals / New Season Updates",
+      "priority_tier": 2,
+      "priority_rank": 7,
+      "sector": "Hollywood",
+      "rank_reason": "Predictions, not an actual release announcement.",
+      "last_ranked_at": "2026-11-22T04:04:27.272302+06:00",
       "learning_pattern": ""
     }
   },
@@ -1383,30 +1358,6 @@
       "status": "published",
       "message_id": 1059
     },
-    "tom_skerritt_death": {
-      "event_id": "tom_skerritt_death",
-      "canonical_url": "deadline.com/2026/10/tom-skerritt-dead-top-gun-actor-1237171003",
-      "original_url": "https://deadline.com/2026/10/tom-skerritt-dead-top-gun-actor-1237171003/",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "topic": "Casting",
-      "institution": "Deadline",
-      "event_cluster_id": "evt_b89dce0d7d",
-      "event_confidence": 1.0,
-      "event_source_count": 2,
-      "headline": "Tom Skerritt",
-      "summary": "Veteran actor Tom Skerritt died at 93, confirmed by family.",
-      "highlights": [
-        "Skerritt was known for roles in Top Gun, Alien and Picket Fences",
-        "He won an Emmy for lead role on Picket Fences in 1993"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-23T01:19:10+06:00",
-      "selected_at": "2026-10-23T11:54:59.672980+06:00",
-      "status": "published",
-      "message_id": 1060
-    },
     "perfection_feature_debut": {
       "event_id": "perfection_feature_debut",
       "canonical_url": "variety.com/2026/film/global/michal-marczak-perfection-berlin-1236921395",
@@ -1431,81 +1382,6 @@
       "selected_at": "2026-10-23T17:22:04.205162+06:00",
       "status": "published",
       "message_id": 1064
-    },
-    "tax_incentive_support": {
-      "event_id": "tax_incentive_support",
-      "canonical_url": "variety.com/2026/film/news/american-entertainment-alliance-film-incentive-1236921707",
-      "original_url": "https://variety.com/2026/film/news/american-entertainment-alliance-film-incentive-1236921707/",
-      "source": "Variety",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "American Entertainment Alliance (CAA, WME, UTA)",
-      "event_cluster_id": "evt_4dc91506d2",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "U.S. Film Tax Incentive",
-      "summary": "Hollywood agencies and indie producers back a proposed 20% federal tax credit for domestic production.",
-      "highlights": [
-        "American Entertainment Alliance backs the 20% tax incentive",
-        "Bill includes a 5% bonus for independent productions",
-        "Group will push for additional reforms in the next Congress"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-23T02:13:06+06:00",
-      "selected_at": "2026-10-23T17:22:09.126006+06:00",
-      "status": "published",
-      "message_id": 1065
-    },
-    "nbcuniversal_split_announcement": {
-      "event_id": "nbcuniversal_split_announcement",
-      "canonical_url": "deadline.com/2026/10/comcast-nbcuniversal-split-brian-roberts-1237170992",
-      "original_url": "https://deadline.com/2026/10/comcast-nbcuniversal-split-brian-roberts-1237170992/",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "topic": "Casting",
-      "institution": "Comcast/NBCUniversal",
-      "event_cluster_id": "evt_96d118d445",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "NBCUniversal",
-      "summary": "Comcast plans to split NBCUniversal into a stand‑alone company by mid‑2027.",
-      "highlights": [
-        "Co‑CEO Brian Roberts says staff are excited about the pending split",
-        "Peacock posted its second consecutive profitable quarter",
-        "The separation is slated for completion by mid‑2027"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-23T01:26:08+06:00",
-      "selected_at": "2026-10-23T22:50:26.921945+06:00",
-      "status": "published",
-      "message_id": 1068
-    },
-    "butcher_and_blackbird_acquisition": {
-      "event_id": "butcher_and_blackbird_acquisition",
-      "canonical_url": "deadline.com/2026/10/butcher-and-blackbird-movie-amazon-mgm-cast-unveiled-1237170757",
-      "original_url": "https://deadline.com/2026/10/butcher-and-blackbird-movie-amazon-mgm-cast-unveiled-1237170757/",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "topic": "Casting",
-      "institution": "Amazon MGM Studios",
-      "event_cluster_id": "evt_166d52573f",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Butcher & Blackbird",
-      "summary": "Amazon MGM Studios acquires the dark romance feature package ‘Butcher & Blackbird’ for Prime Video.",
-      "highlights": [
-        "Chris McKay will direct the adaptation",
-        "Emma Laird and Thomas Doherty are attached to star",
-        "The film is based on Brynne Weaver’s bestselling novel"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-23T00:45:00+06:00",
-      "selected_at": "2026-10-23T22:50:32.395089+06:00",
-      "status": "published",
-      "message_id": 1069
     },
     "season_renewals": {
       "event_id": "season_renewals",
@@ -1557,56 +1433,6 @@
       "status": "published",
       "message_id": 1071
     },
-    "dutton_ranch_season2_filming": {
-      "event_id": "dutton_ranch_season2_filming",
-      "canonical_url": "deadline.com/2026/10/dutton-ranch-season-2-filming-kelly-reilly-paramount-uk-1237170938",
-      "original_url": "https://deadline.com/2026/10/dutton-ranch-season-2-filming-kelly-reilly-paramount-uk-1237170938/",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "Paramount+",
-      "event_cluster_id": "evt_074a899dbf",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Dutton Ranch",
-      "summary": "Kelly Reilly announced that Season 2 of the Paramount+ series will begin filming in early 2027.",
-      "highlights": [
-        "Season 2 filming starts early 2027",
-        "Series is a Yellowstone spinoff on Paramount+",
-        "Renewal confirmed with two episodes of Season 1 still streaming"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-23T00:45:57+06:00",
-      "selected_at": "2026-10-23T22:50:49.507625+06:00",
-      "status": "published",
-      "message_id": 1072
-    },
-    "iron_jane_cast_update": {
-      "event_id": "iron_jane_cast_update",
-      "canonical_url": "deadline.com/2026/10/iron-jane-cast-rafael-casal-alexandra-metz-jesse-garcia-1237170931",
-      "original_url": "https://deadline.com/2026/10/iron-jane-cast-rafael-casal-alexandra-metz-jesse-garcia-1237170931/",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "Iron Jane Production",
-      "event_cluster_id": "evt_f8dd31e3fd",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Iron Jane",
-      "summary": "Production on the feature film Iron Jane has wrapped in Atlanta and Las Vegas.",
-      "highlights": [
-        "Rafael Casal, Alexandra Metz, Jesse Garcia, Nicholas Gonzalez and Lenda Murray join the cast",
-        "Victoria Alonso added as producer",
-        "Highland Film Group handling international sales at AFM"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-23T00:43:02+06:00",
-      "selected_at": "2026-10-23T22:50:54.350079+06:00",
-      "status": "published",
-      "message_id": 1073
-    },
     "cast_character_announcement": {
       "event_id": "cast_character_announcement",
       "canonical_url": "deadline.com/2026/11/charles-porter-actor-dead-1237213861",
@@ -1656,31 +1482,6 @@
       "selected_at": "2026-10-23T22:51:04.465715+06:00",
       "status": "published",
       "message_id": 1075
-    },
-    "once_upon_a_time_in_harlem_screenings": {
-      "event_id": "once_upon_a_time_in_harlem_screenings",
-      "canonical_url": "deadline.com/2026/10/mayor-zohran-mamdani-neon-free-shows-once-upon-a-time-in-harlem-1237170985",
-      "original_url": "https://deadline.com/2026/10/mayor-zohran-mamdani-neon-free-shows-once-upon-a-time-in-harlem-1237170985/",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "Neon",
-      "event_cluster_id": "evt_4a85e9de1d",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Once Upon A Time In Harlem",
-      "summary": "Neon and NYC Mayor host four free screenings of the documentary this weekend.",
-      "highlights": [
-        "Screenings at AMC Magic Johnson Harlem, Film Forum, and Film at Lincoln Center on Oct. 24‑25",
-        "Documentary nominated for five Critics Choice Documentary Awards and won the 2026 Library of Congress Lavine/Ken Burns Film Prize",
-        "Only film this year to screen at Sundance, Cannes, Telluride, Toronto and New York Film Festivals"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-23T01:18:18+06:00",
-      "selected_at": "2026-10-23T22:51:09.437905+06:00",
-      "status": "published",
-      "message_id": 1076
     },
     "multiplatform_ratings_premiere_week": {
       "event_id": "multiplatform_ratings_premiere_week",
@@ -1732,31 +1533,6 @@
       "status": "published",
       "message_id": 1078
     },
-    "black_shine_premiere": {
-      "event_id": "black_shine_premiere",
-      "canonical_url": "variety.com/2026/film/global/morelia-film-festival-black-shine-aftermath-mining-tragedy-1236918375",
-      "original_url": "https://variety.com/2026/film/global/morelia-film-festival-black-shine-aftermath-mining-tragedy-1236918375/",
-      "source": "Variety",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "Morelia Film Festival",
-      "event_cluster_id": "evt_65fdcf62e0",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Black Shine",
-      "summary": "Santiago Maza’s documentary short premieres at Morelia, revisiting the 2006 Pasta de Conchos mine disaster.",
-      "highlights": [
-        "Premiered at the Morelia Film Festival",
-        "Examines the aftermath of the 2006 Pasta de Conchos explosion that buried 65 miners",
-        "Centers on the stories of former miner El Güero and his wife Elvira"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-23T02:23:57+06:00",
-      "selected_at": "2026-10-24T02:34:00.107406+06:00",
-      "status": "published",
-      "message_id": 1079
-    },
     "one_last_summer_announcement": {
       "event_id": "one_last_summer_announcement",
       "canonical_url": "deadline.com/2026/10/louis-partridge-one-last-summer-enola-holmes-1237171542",
@@ -1806,31 +1582,6 @@
       "selected_at": "2026-10-24T02:34:09.677100+06:00",
       "status": "published",
       "message_id": 1081
-    },
-    "ai_discussion": {
-      "event_id": "ai_discussion",
-      "canonical_url": "variety.com/2026/film/columns/wildwood-director-travis-knight-ai-1236921716",
-      "original_url": "https://variety.com/2026/film/columns/wildwood-director-travis-knight-ai-1236921716/",
-      "source": "Variety",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "AFI Fest / Laika",
-      "event_cluster_id": "evt_1f58ac4b82",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Wildwood",
-      "summary": "Director Travis Knight says he won’t embrace AI for the stop‑motion film, which took 16 years to make.",
-      "highlights": [
-        "Knight calls AI an amazing tool but refuses to let it replace artists",
-        "Wildwood’s stop‑motion production spanned 16 years",
-        "He stresses the irreplaceable human touch in animation"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-23T03:21:27+06:00",
-      "selected_at": "2026-10-24T02:34:14.457458+06:00",
-      "status": "published",
-      "message_id": 1082
     },
     "7_up_series_finale": {
       "event_id": "7_up_series_finale",
@@ -26532,7 +26283,7 @@
       ],
       "source_count": 2,
       "confidence": 1.0,
-      "last_seen": "2026-11-21T22:39:46.934870+06:00",
+      "last_seen": "2026-11-22T04:04:27.294875+06:00",
       "headline": "Princess Of Wales Documentary ‘Heal’ Set At BBC & NBC; Special About Kate Middleton’s Cancer Journey Gets Release Date & Trailer"
     }
   },
@@ -46912,118 +46663,6 @@
   },
   "score_history": [
     {
-      "title": "This week Movie Releases: భోగి, ఇట్లు అర్జున, దొంగ నా కొడుకు.. ఇంకా ఈ వారం విడుదలయ్యే సినిమాలు ఇవే! | This Week Movie Releases: Bhogi, Itlu ",
-      "score": 49,
-      "pattern": "",
-      "priority_type": "Theatrical Releases / Re-releases",
-      "source": "telugu.filmibeat.com",
-      "seen_at": "2026-11-10T14:04:25.328597+06:00"
-    },
-    {
-      "title": "Netflix's The Devil's Plan: Dead Again Premieres With 16 Players Today - MyDramaList News",
-      "score": 80,
-      "pattern": "",
-      "priority_type": "Release Date Confirmations",
-      "source": "news.mydramalist.com",
-      "seen_at": "2026-11-10T14:07:03.537529+06:00"
-    },
-    {
-      "title": "Netflix Karen Read John O'Keefe Documentary Release Date, Trailer, and News - Netflix Tudum",
-      "score": 75,
-      "pattern": "",
-      "priority_type": "Release Date Confirmations",
-      "source": "Netflix Tudum",
-      "seen_at": "2026-11-10T14:07:03.537839+06:00"
-    },
-    {
-      "title": "Debut: Be The First to Watch JENNIE's Animated Lyric Video for \"Someone to Hold\" for Steps Movie - Netflix Tudum",
-      "score": 74,
-      "pattern": "",
-      "priority_type": "Release Date Confirmations",
-      "source": "Netflix Tudum",
-      "seen_at": "2026-11-10T14:07:03.538171+06:00"
-    },
-    {
-      "title": "'Heated Rivalry' Fans Hit Theaters for Theatrical Re-Release",
-      "score": 87,
-      "pattern": "sports",
-      "priority_type": "Theatrical Releases / Re-releases",
-      "source": "Variety",
-      "seen_at": "2026-11-10T14:07:03.538240+06:00"
-    },
-    {
-      "title": "Keira Knightley Says ‘It Means Nothing’ When Fans Quote ‘Love Actually’ to Her Because She Hasn’t Watched It Since the Premiere: ‘I Don’t Re",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "",
-      "source": "Variety",
-      "seen_at": "2026-11-10T14:07:03.538385+06:00"
-    },
-    {
-      "title": "Johnny Depp & Ti West Land In A Chilly London For ‘Ebenezer’ Global Premiere",
-      "score": 0,
-      "pattern": "celebrity_lifestyle",
-      "priority_type": "",
-      "source": "Deadline",
-      "seen_at": "2026-11-10T14:07:03.538478+06:00"
-    },
-    {
-      "title": "Johnny Depp Premieres ‘Ebenezer’ in London, Kim Kardashian Wears Gucci to LACMA Art+Film and More Celeb Red Carpet Photos: November 2026",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "",
-      "source": "Variety",
-      "seen_at": "2026-11-10T14:07:03.538598+06:00"
-    },
-    {
-      "title": "‘Paddington: The Musical’ Sets Broadway Cast With Tony Hale, J. Quinton Johnson, Jessie Mueller & More",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "",
-      "source": "Deadline",
-      "seen_at": "2026-11-10T14:07:03.538724+06:00"
-    },
-    {
-      "title": "When Is the Love Is Blind Season 11 Reunion? Find Out How to Watch - Netflix",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "",
-      "source": "Netflix Tudum",
-      "seen_at": "2026-11-10T14:07:03.539058+06:00"
-    },
-    {
-      "title": "Former NCT Member Lucas Wong Makes Acting Debut in Taiwanese Folk-Music Drama ‘A Time’ With Jerry Yan, Ning Chang at Taiwan Creative Content",
-      "score": 51,
-      "pattern": "",
-      "priority_type": "New Movie / Series Announcements",
-      "source": "Variety",
-      "seen_at": "2026-11-10T22:51:34.258815+06:00"
-    },
-    {
-      "title": "This week Movie Releases: భోగి, ఇట్లు అర్జున, దొంగ నా కొడుకు.. ఇంకా ఈ వారం విడుదలయ్యే సినిమాలు ఇవే! | This Week Movie Releases: Bhogi, Itlu ",
-      "score": 49,
-      "pattern": "",
-      "priority_type": "Theatrical Releases / Re-releases",
-      "source": "telugu.filmibeat.com",
-      "seen_at": "2026-11-10T22:51:34.258877+06:00"
-    },
-    {
-      "title": "Keira Knightley Says ‘It Means Nothing’ When Fans Quote ‘Love Actually’ to Her Because She Hasn’t Watched It Since the Premiere: ‘I Don’t Re",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "",
-      "source": "Variety",
-      "seen_at": "2026-11-10T22:51:34.258953+06:00"
-    },
-    {
-      "title": "Debut: Be The First to Watch JENNIE's Animated Lyric Video for \"Someone to Hold\" for Steps Movie - Netflix Tudum",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "Release Date Confirmations",
-      "source": "Netflix Tudum",
-      "seen_at": "2026-11-10T22:52:15.241103+06:00"
-    },
-    {
       "title": "'Heated Rivalry' Fans Hit Theaters for Theatrical Re-Release",
       "score": 0,
       "pattern": "sports",
@@ -50910,18 +50549,130 @@
       "priority_type": "New Movie / Series Announcements",
       "source": "Deadline",
       "seen_at": "2026-11-21T22:39:46.918471+06:00"
+    },
+    {
+      "title": "Busan-Selected Director Anoop Lokkur Turns His Own Tenant War Into Bengaluru Dark Comedy ‘Melgade Mane Kelgade Mane’ at India’s WAVES Film B",
+      "score": 43,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Variety",
+      "seen_at": "2026-11-22T04:04:01.224763+06:00"
+    },
+    {
+      "title": "Berlinale Forum-Selected Director R. Gowtham Salutes Village Health Workers in Tamil Dark Comedy ‘Superman Vivagaram’ at India’s WAVES Film ",
+      "score": 43,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Variety",
+      "seen_at": "2026-11-22T04:04:01.224867+06:00"
+    },
+    {
+      "title": "Netflix’s ‘Minimum Wage’ Ushers In Streaming’s Short Ep Sitcom Era: “The Future Is 15-Minute ‘SpongeBob’-Length Episodes”",
+      "score": 37,
+      "pattern": "",
+      "priority_type": "OTT / Streaming Availability",
+      "source": "Deadline",
+      "seen_at": "2026-11-22T04:04:27.272613+06:00"
+    },
+    {
+      "title": "Bill Maher Mocks ‘Grand Theft Auto 6’-Playing Young Men With Awful ICE Joke",
+      "score": 31,
+      "pattern": "",
+      "priority_type": "OTT / Streaming Availability",
+      "source": "Variety",
+      "seen_at": "2026-11-22T04:04:27.272712+06:00"
+    },
+    {
+      "title": "CMA Awards See a 55% Ratings Bump in Key Adult Demo With Taylor Swift’s Return to the Show",
+      "score": 31,
+      "pattern": "",
+      "priority_type": "OTT / Streaming Availability",
+      "source": "Variety",
+      "seen_at": "2026-11-22T04:04:27.272808+06:00"
+    },
+    {
+      "title": "‘Artificial’ Filmmaker Luca Guadagnino On Whether AI Is Humanity’s Doomsday & Sam Altman’s Arsenal – Crew Call Podcast",
+      "score": 38,
+      "pattern": "",
+      "priority_type": "Upcoming OTT Releases",
+      "source": "Deadline",
+      "seen_at": "2026-11-22T04:04:27.272909+06:00"
+    },
+    {
+      "title": "Kaitlan Collins Notes ‘Real Time’ Absence Was Due To White House Press Conference",
+      "score": 42,
+      "pattern": "",
+      "priority_type": "Release Date Confirmations",
+      "source": "Deadline",
+      "seen_at": "2026-11-22T04:04:27.273000+06:00"
+    },
+    {
+      "title": "Michael Jackson Biopic ‘Michael’ Skipping BAFTAs",
+      "score": 38,
+      "pattern": "",
+      "priority_type": "Release Date Confirmations",
+      "source": "Deadline",
+      "seen_at": "2026-11-22T04:04:27.273092+06:00"
+    },
+    {
+      "title": "Melania Trump Calls for ‘Peace’ When Asked About Children in Gaza and Israel at Amazon Series Premiere",
+      "score": 37,
+      "pattern": "",
+      "priority_type": "Theatrical Releases / Re-releases",
+      "source": "Variety",
+      "seen_at": "2026-11-22T04:04:27.273192+06:00"
+    },
+    {
+      "title": "Princess Of Wales Documentary ‘Heal’ Set At BBC & NBC; Special About Kate Middleton’s Cancer Journey Gets Release Date & Trailer",
+      "score": 89,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Deadline",
+      "seen_at": "2026-11-22T04:04:27.273290+06:00"
+    },
+    {
+      "title": "Princess Kate Cancer Documentary ‘Heal’ Sets BBC, NBC and International Premiere Dates",
+      "score": 85,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Variety",
+      "seen_at": "2026-11-22T04:04:27.273378+06:00"
+    },
+    {
+      "title": "‘Godavari’ Director Nikhil Mahajan Turns a Malegaon Carjacking Into Neo-Noir With WAVES Film Bazaar Project ‘Mongoose’",
+      "score": 38,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Variety",
+      "seen_at": "2026-11-22T04:04:27.273480+06:00"
+    },
+    {
+      "title": "Actor Awards Predictions: Andrew Garfield, Inde Navarrette and ‘The Odyssey’ Lead an Unsettled Film Race as ‘Widow’s Bay’ and HBO Max Could ",
+      "score": 37,
+      "pattern": "",
+      "priority_type": "Season Renewals / New Season Updates",
+      "source": "Variety",
+      "seen_at": "2026-11-22T04:04:27.273582+06:00"
+    },
+    {
+      "title": "‘Lanterns’ Star Aaron Pierre On DCU Future After Safran & Gunn’s DC Studios Exit: “I’m Very At Peace”",
+      "score": 31,
+      "pattern": "",
+      "priority_type": "Season Renewals / New Season Updates",
+      "source": "Deadline",
+      "seen_at": "2026-11-22T04:04:27.273679+06:00"
     }
   ],
   "adaptive_metrics": {
-    "raw_discovered": 47,
-    "pre_cerebras_rejected": 27066,
-    "hard_rejected": 9394,
+    "raw_discovered": 46,
+    "pre_cerebras_rejected": 27147,
+    "hard_rejected": 9430,
     "duplicate_rejected": 214,
-    "learned_rejected": 17458,
-    "passed_to_cerebras": 4630,
-    "cerebras_ranked": 11018,
+    "learned_rejected": 17503,
+    "passed_to_cerebras": 4634,
+    "cerebras_ranked": 11030,
     "published": 987,
-    "estimated_candidates_avoided": 27066
+    "estimated_candidates_avoided": 27147
   },
   "source_quality": {
     "collider.com": {
@@ -50953,11 +50704,11 @@
       "last_seen": "2026-09-08T11:49:09.577970+06:00"
     },
     "deadline.com": {
-      "observations": 5058,
-      "low_score_count": 4100,
-      "total_score": 255879,
+      "observations": 5064,
+      "low_score_count": 4105,
+      "total_score": 256154,
       "avg_score": 50.6,
-      "last_seen": "2026-11-21T22:39:46.918557+06:00"
+      "last_seen": "2026-11-22T04:04:27.273770+06:00"
     },
     "thewrap.com": {
       "observations": 16,
@@ -50974,11 +50725,11 @@
       "last_seen": "2026-09-08T21:05:13.366232+06:00"
     },
     "variety.com": {
-      "observations": 5327,
-      "low_score_count": 4400,
-      "total_score": 253799,
+      "observations": 5333,
+      "low_score_count": 4405,
+      "total_score": 254058,
       "avg_score": 47.6,
-      "last_seen": "2026-11-21T22:39:46.918551+06:00"
+      "last_seen": "2026-11-22T04:04:27.273765+06:00"
     },
     "indiewire.com": {
       "observations": 10,
