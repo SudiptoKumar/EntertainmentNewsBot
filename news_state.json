@@ -1,272 +1,152 @@
 {
   "feeds": {
     "https://deadline.com/feed/": {
-      "etag": "W/\"0093e9e93a942d7feac09cf9ceeb8f3b\"",
-      "last_modified": "Sun, 22 Nov 2026 05:56:41 GMT",
-      "last_checked": "2026-11-22T13:51:23.508482+06:00",
+      "etag": "W/\"39edc7b3f0fb8000b2efdf3912a6574e\"",
+      "last_modified": "Sun, 22 Nov 2026 15:58:40 GMT",
+      "last_checked": "2026-11-22T22:01:25.787381+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://variety.com/feed/": {
-      "etag": "W/\"fa65e0b1de6ce4dcff0874a0367ef52b\"",
-      "last_modified": "Sun, 22 Nov 2026 07:39:54 GMT",
-      "last_checked": "2026-11-22T13:51:25.356295+06:00",
+      "etag": "W/\"8507daf3ad791d84a3aaea95277cb946\"",
+      "last_modified": "Sun, 22 Nov 2026 15:07:50 GMT",
+      "last_checked": "2026-11-22T22:01:27.132909+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.hollywoodreporter.com/feed/": {
       "etag": "W/\"c0839ccc710b4e23d9c1491153dd10b0\"",
       "last_modified": "Sun, 22 Nov 2026 06:11:45 GMT",
-      "last_checked": "2026-11-22T13:51:27.605654+06:00",
+      "last_checked": "2026-11-22T22:01:28.732041+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.thewrap.com/feed/": {
       "etag": "\"7d6283ff15aa11a7b30470e9b9deb949\"",
       "last_modified": "Sun, 22 Nov 2026 01:10:26 GMT",
-      "last_checked": "2026-11-22T13:51:28.352755+06:00",
+      "last_checked": "2026-11-22T22:01:28.834067+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.indiewire.com/feed/": {
-      "etag": "W/\"c485ad16b33ba8bf74f64e2646ddf0a4\"",
-      "last_modified": "Sat, 21 Nov 2026 23:38:43 GMT",
-      "last_checked": "2026-11-22T13:51:29.176622+06:00",
+      "etag": "W/\"9f7441e429afdf03d6bb7a91375c42d8\"",
+      "last_modified": "Sun, 22 Nov 2026 15:55:05 GMT",
+      "last_checked": "2026-11-22T22:01:29.512345+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://collider.com/feed/": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-22T13:51:29.460914+06:00",
+      "last_checked": "2026-11-22T22:01:29.838620+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://tvline.com/feed/": {
-      "etag": "\"5b5f99690c087a48c2317254e102fd89\"",
-      "last_modified": "Sun, 22 Nov 2026 02:12:00 GMT",
-      "last_checked": "2026-11-22T13:51:30.747758+06:00",
+      "etag": "\"e6888bcfcfa31440bda26f9b18e8a3a9\"",
+      "last_modified": "Sun, 22 Nov 2026 15:52:00 GMT",
+      "last_checked": "2026-11-22T22:01:30.667662+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.ottplay.com/rss": {
       "etag": "\"b5496c89c58ff0f5d07d64a68d4efe07\"",
       "last_modified": "Thu, 27 May 2021 12:38:49 GMT",
-      "last_checked": "2026-11-22T13:51:33.472676+06:00",
+      "last_checked": "2026-11-22T22:01:32.715770+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.filmibeat.com/rss/feeds/filmibeat-news.xml": {
       "etag": null,
-      "last_modified": "Sun, 22 Nov 2026 07:44:12 GMT",
-      "last_checked": "2026-11-22T13:51:33.836388+06:00",
+      "last_modified": "Sun, 22 Nov 2026 15:52:59 GMT",
+      "last_checked": "2026-11-22T22:01:33.088960+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.pinkvilla.com/rss": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-22T13:51:34.546727+06:00",
+      "last_checked": "2026-11-22T22:01:33.717714+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.bollywoodhungama.com/feed/": {
-      "etag": "\"5678fbe5e9e467953fdb489bae89cb26\"",
-      "last_modified": "Sun, 22 Nov 2026 07:46:27 GMT",
-      "last_checked": "2026-11-22T13:51:34.722676+06:00",
+      "etag": "\"32c20a8d7dc3c22d7d6ce0ae02301853\"",
+      "last_modified": "Sun, 22 Nov 2026 15:32:18 GMT",
+      "last_checked": "2026-11-22T22:01:34.245529+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.gadgets360.com/entertainment/rss": {
-      "last_checked": "2026-11-22T13:51:36.970046+06:00",
-      "fail_count": 248,
+      "last_checked": "2026-11-22T22:01:35.350427+06:00",
+      "fail_count": 249,
       "alerted": true
     },
     "https://www.soompi.com/feed": {
-      "etag": "W/\"880b1ec607d261ca5a97029cb177a7b8\"",
-      "last_modified": "Sun, 22 Nov 2026 07:33:12 GMT",
-      "last_checked": "2026-11-22T13:51:37.138596+06:00",
+      "etag": "W/\"61334573fedfd652f63faa2491ac1e45\"",
+      "last_modified": "Sun, 22 Nov 2026 15:47:40 GMT",
+      "last_checked": "2026-11-22T22:01:35.635918+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.whats-on-netflix.com/feed/": {
       "etag": null,
       "last_modified": "Sat, 21 Nov 2026 21:24:18 GMT",
-      "last_checked": "2026-11-22T13:51:39.149476+06:00",
+      "last_checked": "2026-11-22T22:01:37.145568+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.netflix.com/tudum/rss.xml": {
-      "last_checked": "2026-11-22T13:51:39.654625+06:00",
-      "fail_count": 248,
+      "last_checked": "2026-11-22T22:01:37.369998+06:00",
+      "fail_count": 249,
       "alerted": true
     },
     "https://press.wbd.com/us/en/rss": {
-      "last_checked": "2026-11-22T13:51:39.882527+06:00",
-      "fail_count": 248,
+      "last_checked": "2026-11-22T22:01:37.737213+06:00",
+      "fail_count": 249,
       "alerted": true
     },
     "https://www.apple.com/tv-pr/newsroom/feed/": {
-      "last_checked": "2026-11-22T13:51:40.517400+06:00",
-      "fail_count": 248,
+      "last_checked": "2026-11-22T22:01:38.273151+06:00",
+      "fail_count": 249,
       "alerted": true
     },
     "https://www.aboutamazon.com/rss": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-22T13:51:40.663268+06:00",
+      "last_checked": "2026-11-22T22:01:38.420571+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.marvel.com/articles/feed": {
-      "last_checked": "2026-11-22T13:51:41.044692+06:00",
-      "fail_count": 248,
+      "last_checked": "2026-11-22T22:01:38.588049+06:00",
+      "fail_count": 249,
       "alerted": true
     },
     "https://www.dc.com/blog/rss.xml": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-22T13:51:41.194987+06:00",
-      "fail_count": 13,
+      "last_checked": "2026-11-22T22:01:38.753604+06:00",
+      "fail_count": 14,
       "alerted": true
     },
     "https://www.sonypictures.com/rss": {
-      "last_checked": "2026-11-22T13:51:41.712278+06:00",
-      "fail_count": 248,
+      "last_checked": "2026-11-22T22:01:39.225685+06:00",
+      "fail_count": 249,
       "alerted": true
     },
     "https://www.paramount.com/rss": {
-      "last_checked": "2026-11-22T13:51:41.785770+06:00",
-      "fail_count": 248,
+      "last_checked": "2026-11-22T22:01:39.316075+06:00",
+      "fail_count": 249,
       "alerted": true
     },
     "https://www.universalpictures.com/rss": {
-      "last_checked": "2026-11-22T13:51:42.132108+06:00",
-      "fail_count": 248,
+      "last_checked": "2026-11-22T22:01:39.663075+06:00",
+      "fail_count": 249,
       "alerted": true
     }
   },
   "queue": {
-    "deadline.com/2026/11/youtube-new-slate-emma-chamberlain-phil-rosenthal-1237226843": {
-      "title": "YouTube Hits Back At Rivals With New Slate Featuring Rising Creators, Established Stars & Hot New Directors",
-      "url": "https://deadline.com/2026/11/youtube-new-slate-emma-chamberlain-phil-rosenthal-1237226843/",
-      "canonical": "deadline.com/2026/11/youtube-new-slate-emma-chamberlain-phil-rosenthal-1237226843",
-      "published_dt": "2026-11-18T10:00:00+06:00",
-      "published_date": "2026-11-18T10:00:00+06:00",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "excerpt": "As rivals such as Netflix and Disney start encroaching on their world of creators, YouTube has returned fire with a new slate of programming from a slew of burgeoning creators such as Nick DiGiovanni and Emma Chamberlain, established stars including Phil Rosenthal and Aryna Sabalenka and one director that insiders have dubbed the “next Kane […]",
-      "image": "https://deadline.com/wp-content/uploads/2026/11/L1012576.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-11-18T14:18:10.924359+06:00",
-      "last_seen": "2026-11-18T14:18:10.924378+06:00",
-      "importance_score": 43,
-      "priority_type": "OTT / Streaming Availability",
-      "priority_tier": 1,
-      "priority_rank": 1,
-      "sector": "International",
-      "rank_reason": "Programming slate announcement, no specific release dates; low score.",
-      "last_ranked_at": "2026-11-18T23:52:52.220415+06:00",
-      "learning_pattern": ""
-    },
-    "variety.com/2026/tv/news/nawazuddin-siddiqui-house-adaptation-dr-hassan-premiere-1236950232": {
-      "title": "Nawazuddin Siddiqui’s Indian ‘House’ Adaptation ‘Dr. Hassan’ Sets December Premiere on JioHotstar (EXCLUSIVE)",
-      "url": "https://variety.com/2026/tv/news/nawazuddin-siddiqui-house-adaptation-dr-hassan-premiere-1236950232/",
-      "canonical": "variety.com/2026/tv/news/nawazuddin-siddiqui-house-adaptation-dr-hassan-premiere-1236950232",
-      "published_dt": "2026-11-18T14:15:00+06:00",
-      "published_date": "2026-11-18T14:15:00+06:00",
-      "source": "Variety",
-      "region": "Entertainment",
-      "excerpt": "The Indian adaptation of Universal Television’s medical drama “House,” starring Nawazuddin Siddiqui as a brilliant but difficult diagnostician, will premiere Dec. 11 on JioHotstar under the title “Dr. Hassan.” Dia Mirza co-stars in the show, directed by Rohan Sippy, with a cast that also includes Faisal Rashid, Rehmat Rattan, Jayson Thaam and Smaran Sanu. JioHotstar […]",
-      "image": "https://variety.com/wp-content/uploads/2026/11/Dr.-Hassan.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-11-18T14:18:12.114640+06:00",
-      "last_seen": "2026-11-18T14:18:12.114659+06:00",
-      "importance_score": 87,
-      "priority_type": "OTT / Streaming Availability",
-      "priority_tier": 1,
-      "priority_rank": 1,
-      "sector": "Indian",
-      "rank_reason": "Indian adaptation of ‘House’ with confirmed premiere date and platform.",
-      "last_ranked_at": "2026-11-18T23:52:52.219871+06:00",
-      "learning_pattern": ""
-    },
-    "variety.com/2026/tv/news/dancing-with-the-stars-harry-shum-jr-glee-naya-rivera-1236951568": {
-      "title": "Harry Shum Jr. Honors Late ‘Glee’ Co-Star Naya Rivera During ‘Dancing With the Stars’ Semifinals: ‘We Miss You, Baby Girl’",
-      "url": "https://variety.com/2026/tv/news/dancing-with-the-stars-harry-shum-jr-glee-naya-rivera-1236951568/",
-      "canonical": "variety.com/2026/tv/news/dancing-with-the-stars-harry-shum-jr-glee-naya-rivera-1236951568",
-      "published_dt": "2026-11-18T13:17:09+06:00",
-      "published_date": "2026-11-18T13:17:09+06:00",
-      "source": "Variety",
-      "region": "Entertainment",
-      "excerpt": "SPOILER ALERT: This post contains spoilers from the Nov. 17 episode of “Dancing With the Stars,” now streaming on Hulu. Harry Shum Jr. pulled on the heartstrings of “Glee” fans everywhere during the “Dancing With the Stars” semi-finals. For the second dance on Tuesday night’s episode, Shum Jr. and partner Jenna Johnson performed a quickstep […]",
-      "image": "https://variety.com/wp-content/uploads/2026/11/183939_EM201068.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-11-18T14:18:12.293545+06:00",
-      "last_seen": "2026-11-18T14:18:12.293560+06:00",
-      "importance_score": 43,
-      "priority_type": "OTT / Streaming Availability",
-      "priority_tier": 1,
-      "priority_rank": 1,
-      "sector": "Hollywood",
-      "rank_reason": "Performance segment, no new release; low scoring.",
-      "last_ranked_at": "2026-11-18T23:52:52.220133+06:00",
-      "learning_pattern": ""
-    },
-    "variety.com/2026/tv/news/dune-prophecy-star-tabu-yrf-netflix-series-tunnel-men-1236950175": {
-      "title": "‘Dune: Prophecy’ Star Tabu Joins YRF Entertainment’s Netflix Rescue Drama ‘Tunnel Men’ (EXCLUSIVE)",
-      "url": "https://variety.com/2026/tv/news/dune-prophecy-star-tabu-yrf-netflix-series-tunnel-men-1236950175/",
-      "canonical": "variety.com/2026/tv/news/dune-prophecy-star-tabu-yrf-netflix-series-tunnel-men-1236950175",
-      "published_dt": "2026-11-18T12:30:00+06:00",
-      "published_date": "2026-11-18T12:30:00+06:00",
-      "source": "Variety",
-      "region": "Entertainment",
-      "excerpt": "Indian star Tabu, whose international credits include “Life of Pi” and “Dune: Prophecy,” has signed on to “Tunnel Men,” a Netflix series from YRF Entertainment, the streaming banner of studio Yash Raj Films. The show is her first original Hindi-language series for streaming. “Tunnel Men” is a fictionalized drama that takes its cue from the […]",
-      "image": "https://variety.com/wp-content/uploads/2022/11/Tabu.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-11-18T14:18:12.542976+06:00",
-      "last_seen": "2026-11-18T14:18:12.542996+06:00",
-      "importance_score": 43,
-      "priority_type": "OTT / Streaming Availability",
-      "priority_tier": 1,
-      "priority_rank": 1,
-      "sector": "Indian",
-      "rank_reason": "Casting announcement without release date; below publishable threshold.",
-      "last_ranked_at": "2026-11-18T23:52:52.220274+06:00",
-      "learning_pattern": ""
-    },
-    "variety.com/2026/tv/news/panchayat-season-5-december-date-prime-video-1236950181": {
-      "title": "‘Panchayat’ Season 5 Sets December Date on Prime Video (EXCLUSIVE)",
-      "url": "https://variety.com/2026/tv/news/panchayat-season-5-december-date-prime-video-1236950181/",
-      "canonical": "variety.com/2026/tv/news/panchayat-season-5-december-date-prime-video-1236950181",
-      "published_dt": "2026-11-18T12:25:00+06:00",
-      "published_date": "2026-11-18T12:25:00+06:00",
-      "source": "Variety",
-      "region": "Entertainment",
-      "excerpt": "Prime Video will launch Season 5 of Hindi comedy-drama “Panchayat” worldwide on Dec. 3, and the Indian village where the show is set has a new man in charge. The Viral Fever (TVF) produces the series, which will stream exclusively on the platform in India and across more than 240 countries and territories. Deepak Kumar […]",
-      "image": "https://variety.com/wp-content/uploads/2026/11/Panchayat-season-5.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-11-18T14:18:12.634736+06:00",
-      "last_seen": "2026-11-18T14:18:12.634757+06:00",
-      "importance_score": 87,
-      "priority_type": "Season Renewals / New Season Updates",
-      "priority_tier": 2,
-      "priority_rank": 7,
-      "sector": "Indian",
-      "rank_reason": "Season renewal with exact release date and global streaming platform.",
-      "last_ranked_at": "2026-11-18T23:52:52.220824+06:00",
-      "learning_pattern": ""
-    },
     "deadline.com/2026/11/i-want-your-sex-streaming-release-date-hbo-max-1237228093": {
       "title": "‘I Want Your Sex’ Sets HBO Max Streaming Release Date",
       "url": "https://deadline.com/2026/11/i-want-your-sex-streaming-release-date-hbo-max-1237228093/",
@@ -1175,14 +1055,14 @@
       "date_estimated": false,
       "status": "pending",
       "first_seen": "2026-11-22T04:04:01.460472+06:00",
-      "last_seen": "2026-11-22T13:51:24.552093+06:00",
-      "importance_score": 37,
+      "last_seen": "2026-11-22T22:01:26.797255+06:00",
+      "importance_score": 40,
       "priority_type": "New Movie / Series Announcements",
       "priority_tier": 2,
       "priority_rank": 6,
       "sector": "Hollywood",
-      "rank_reason": "Article reports a guest change on a talk‑show episode; no release date or new content announced, so low impact.",
-      "last_ranked_at": "2026-11-22T13:51:50.707172+06:00",
+      "rank_reason": "The story reports a last‑minute guest change on a talk‑show; it does not announce a new release, so the overall score stays well below the publishable threshold.",
+      "last_ranked_at": "2026-11-22T22:01:58.049447+06:00",
       "learning_pattern": ""
     },
     "deadline.com/2026/11/luca-guadagnino-artificial-interview-sam-altman-openai-1237230964": {
@@ -1199,14 +1079,14 @@
       "date_estimated": false,
       "status": "pending",
       "first_seen": "2026-11-22T04:04:01.609102+06:00",
-      "last_seen": "2026-11-22T13:51:24.743963+06:00",
-      "importance_score": 32,
+      "last_seen": "2026-11-22T22:01:26.950038+06:00",
+      "importance_score": 35,
       "priority_type": "New Movie / Series Announcements",
       "priority_tier": 2,
       "priority_rank": 6,
       "sector": "Hollywood",
-      "rank_reason": "Podcast discussion about an upcoming film without a confirmed release window; limited release relevance.",
-      "last_ranked_at": "2026-11-22T13:51:50.707294+06:00",
+      "rank_reason": "The piece is a podcast interview about an upcoming film but provides no release date or platform details, so it cannot be treated as a release announcement.",
+      "last_ranked_at": "2026-11-22T22:01:58.049686+06:00",
       "learning_pattern": ""
     },
     "deadline.com/2026/11/netflix-minimum-short-episode-sitcoms-1237229899": {
@@ -1224,13 +1104,13 @@
       "status": "pending",
       "first_seen": "2026-11-22T04:04:01.870547+06:00",
       "last_seen": "2026-11-22T13:51:25.081363+06:00",
-      "importance_score": 31,
+      "importance_score": 32,
       "priority_type": "New Movie / Series Announcements",
       "priority_tier": 2,
       "priority_rank": 6,
       "sector": "Hollywood",
-      "rank_reason": "Analytical piece on format trends; no specific title release announced, thus low scoring.",
-      "last_ranked_at": "2026-11-22T13:51:50.707426+06:00",
+      "rank_reason": "An industry analysis article without a concrete release date or platform for a specific title; therefore it remains below the publishable score threshold.",
+      "last_ranked_at": "2026-11-22T22:01:58.049815+06:00",
       "learning_pattern": ""
     },
     "variety.com/lists/2027-sag-actor-awards-predictions": {
@@ -1248,13 +1128,13 @@
       "status": "pending",
       "first_seen": "2026-11-22T04:04:03.931948+06:00",
       "last_seen": "2026-11-22T04:04:03.931966+06:00",
-      "importance_score": 30,
+      "importance_score": 37,
       "priority_type": "New Movie / Series Announcements",
       "priority_tier": 2,
       "priority_rank": 6,
       "sector": "Hollywood",
-      "rank_reason": "Predictions article without any confirmed release; primarily speculative, low priority.",
-      "last_ranked_at": "2026-11-22T13:51:50.707560+06:00",
+      "rank_reason": "Predictions and speculation about awards do not constitute a release announcement, keeping the total score under the publishable limit.",
+      "last_ranked_at": "2026-11-22T22:01:58.049576+06:00",
       "learning_pattern": ""
     }
   },
@@ -1334,81 +1214,6 @@
       "status": "published",
       "message_id": 1237
     },
-    "perfection_feature_debut": {
-      "event_id": "perfection_feature_debut",
-      "canonical_url": "variety.com/2026/film/global/michal-marczak-perfection-berlin-1236921395",
-      "original_url": "https://variety.com/2026/film/global/michal-marczak-perfection-berlin-1236921395/",
-      "source": "Variety",
-      "region": "Entertainment",
-      "topic": "Streaming Premieres",
-      "institution": "Variety",
-      "event_cluster_id": "evt_c3f22753dc",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Perfection",
-      "summary": "Polish documentarian Michał Marczak is set to direct his narrative feature debut ‘Perfection’ about Berlin‑based hipster millennials.",
-      "highlights": [
-        "Based on Vincenzo Latronico’s novel shortlisted for the 2025 International Booker Prize",
-        "Co‑produced by Razor Film, Potboiler Productions and Vivo Film",
-        "Project is in early development with a screenplay to be written next"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-23T16:40:00+06:00",
-      "selected_at": "2026-10-23T17:22:04.205162+06:00",
-      "status": "published",
-      "message_id": 1064
-    },
-    "season_renewals": {
-      "event_id": "season_renewals",
-      "canonical_url": "deadline.com/2026/10/summer-house-spinoff-in-the-city-renewed-southern-hospitality-bravo-1237171331",
-      "original_url": "https://deadline.com/2026/10/summer-house-spinoff-in-the-city-renewed-southern-hospitality-bravo-1237171331/",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "topic": "Renewals and Cancellations",
-      "institution": "Bravo",
-      "event_cluster_id": "evt_47c808c2a4",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "In The City",
-      "summary": "Bravo has renewed the Summer House spinoff In The City for a second season.",
-      "highlights": [
-        "Season 2 confirmed for In The City",
-        "Series was a ratings success early last summer",
-        "Cast for Season 2 not yet announced"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-23T21:00:00+06:00",
-      "selected_at": "2026-10-23T22:50:37.745516+06:00",
-      "status": "published",
-      "message_id": 1070
-    },
-    "season_renewals_new_orders": {
-      "event_id": "season_renewals_new_orders",
-      "canonical_url": "variety.com/2026/tv/news/bravo-renews-in-the-city-next-gen-nyc-southern-hospitality-1236921826",
-      "original_url": "https://variety.com/2026/tv/news/bravo-renews-in-the-city-next-gen-nyc-southern-hospitality-1236921826/",
-      "source": "Variety",
-      "region": "Entertainment",
-      "topic": "Renewals and Cancellations",
-      "institution": "Bravo",
-      "event_cluster_id": "evt_358be83224",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Charmed by a Southern Monster",
-      "summary": "Bravo’s first scripted micro‑drama launches on Peacock on Nov 9.",
-      "highlights": [
-        "Series debuts Nov 9 on the Peacock mobile app",
-        "Stars Craig Conover and Nicole Mattox lead the cast",
-        "Marks Bravo’s entry into scripted micro‑drama"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-23T21:00:00+06:00",
-      "selected_at": "2026-10-23T22:50:42.726125+06:00",
-      "status": "published",
-      "message_id": 1071
-    },
     "cast_character_announcement": {
       "event_id": "cast_character_announcement",
       "canonical_url": "deadline.com/2026/11/charles-porter-actor-dead-1237213861",
@@ -1433,31 +1238,6 @@
       "selected_at": "2026-11-06T04:58:45.305387+06:00",
       "status": "published",
       "message_id": 1262
-    },
-    "theatrical_release_rights": {
-      "event_id": "theatrical_release_rights",
-      "canonical_url": "deadline.com/2026/10/abramorama-acquires-john-david-coles-documentary-the-choice-1237171609",
-      "original_url": "https://deadline.com/2026/10/abramorama-acquires-john-david-coles-documentary-the-choice-1237171609/",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "topic": "Acquisitions and Mergers",
-      "institution": "Abramorama",
-      "event_cluster_id": "evt_354f3bd938",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "The Choice",
-      "summary": "John David Coles documentary ‘The Choice’ secures North American theatrical rights and a Jan 15 release.",
-      "highlights": [
-        "Abramorama acquires North American theatrical rights",
-        "Opening at the Quad in NYC on Jan 15 followed by national rollout",
-        "Doc eligible for Oscar Best Feature Documentary"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-23T21:00:00+06:00",
-      "selected_at": "2026-10-23T22:51:04.465715+06:00",
-      "status": "published",
-      "message_id": 1075
     },
     "fallout_shelter_experiment_release": {
       "event_id": "fallout_shelter_experiment_release",
@@ -1508,131 +1288,6 @@
       "selected_at": "2026-10-24T11:35:37.577092+06:00",
       "status": "published",
       "message_id": 1085
-    },
-    "dylan_douglas_movie_debut_the_hit_on_hitler_heads_to_afm_with_bleiberg_first_look": {
-      "event_id": "dylan_douglas_movie_debut_the_hit_on_hitler_heads_to_afm_with_bleiberg_first_look",
-      "canonical_url": "deadline.com/2026/10/dylan-douglas-movie-debut-hit-on-hitler-first-look-afm-1237171688",
-      "original_url": "https://deadline.com/2026/10/dylan-douglas-movie-debut-hit-on-hitler-first-look-afm-1237171688/",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "topic": "OTT Rights and Distribution",
-      "institution": "Bleiberg Entertainment",
-      "event_cluster_id": "evt_0173e75416",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "The Hit on Hitler: Mobsters vs. Nazis",
-      "summary": "Bleiberg Entertainment has secured international rights to Dylan Douglas’ feature debut, a WWII‑gangster thriller.",
-      "highlights": [
-        "The film is in post‑production and will be shopped at the American Film Market in November",
-        "Stars Dylan Douglas alongside David Arquette and Harry Goodwins",
-        "Directed by Danny A. Abeckaser, the story blends mob history with a plot to assassinate Hitler"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-23T21:17:02+06:00",
-      "selected_at": "2026-10-24T11:35:41.861253+06:00",
-      "status": "published",
-      "message_id": 1086
-    },
-    "ai_giant_nvidia_invests_in_entertainment_startup_higgsfield": {
-      "event_id": "ai_giant_nvidia_invests_in_entertainment_startup_higgsfield",
-      "canonical_url": "variety.com/2026/digital/news/nvidia-tcv-invest-generative-ai-startup-higgsfield-1236929624",
-      "original_url": "https://variety.com/2026/digital/news/nvidia-tcv-invest-generative-ai-startup-higgsfield-1236929624/",
-      "source": "Variety",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "Nvidia",
-      "event_cluster_id": "evt_91a480f87f",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Higgsfield",
-      "summary": "Nvidia has joined TCV in a Series B investment round for AI video startup Higgsfield.",
-      "highlights": [
-        "Nvidia and TCV invested in Higgsfield’s Series B round",
-        "Company reached $1 billion annualized revenue in September",
-        "Higgsfield processes 12 trillion tokens monthly across 150 million generations"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-23T21:18:11+06:00",
-      "selected_at": "2026-10-24T11:35:51.867127+06:00",
-      "status": "published",
-      "message_id": 1088
-    },
-    "salen_lobas_sales": {
-      "event_id": "salen_lobas_sales",
-      "canonical_url": "variety.com/2026/film/markets-festivals/morethan-films-salen-las-lobas-sales-valladolid-1236917768",
-      "original_url": "https://variety.com/2026/film/markets-festivals/morethan-films-salen-las-lobas-sales-valladolid-1236917768/",
-      "source": "Variety",
-      "region": "Entertainment",
-      "topic": "OTT Rights and Distribution",
-      "institution": "MoreThan Films",
-      "event_cluster_id": "evt_ca548709cc",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Salen las lobas",
-      "summary": "MoreThan Films has acquired international sales rights to the Spanish coming‑of‑age drama ahead of its Valladolid premiere.",
-      "highlights": [
-        "World premiere at Valladolid Film Festival on Oct. 25",
-        "Feature debut of director Claudia Estrada Tarascó",
-        "Co‑production between Spain, Belgium and Denmark"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-23T21:49:18+06:00",
-      "selected_at": "2026-10-24T16:36:09.903698+06:00",
-      "status": "published",
-      "message_id": 1089
-    },
-    "recluse_north_america": {
-      "event_id": "recluse_north_america",
-      "canonical_url": "deadline.com/2026/10/recluse-tribeca-horror-north-american-deal-vertical-1237171670",
-      "original_url": "https://deadline.com/2026/10/recluse-tribeca-horror-north-american-deal-vertical-1237171670/",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "topic": "OTT Rights and Distribution",
-      "institution": "Vertical",
-      "event_cluster_id": "evt_41d25a2fdb",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Recluse",
-      "summary": "Vertical has secured North American theatrical rights to the Tribeca horror film Recluse.",
-      "highlights": [
-        "Vertical acquires North American rights",
-        "Theatrical release slated for the first half of 2027",
-        "Stars Sasha Frolova and Xander Berkeley"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-23T21:00:35+06:00",
-      "selected_at": "2026-10-24T16:36:14.999338+06:00",
-      "status": "published",
-      "message_id": 1090
-    },
-    "award_announcement": {
-      "event_id": "award_announcement",
-      "canonical_url": "variety.com/2026/film/global/the-inheritance-sony-pictures-television-award-mia-market-1236929546",
-      "original_url": "https://variety.com/2026/film/global/the-inheritance-sony-pictures-television-award-mia-market-1236929546/",
-      "source": "Variety",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "Sony Pictures Television",
-      "event_cluster_id": "evt_85a3fe1558",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "The Inheritance",
-      "summary": "Belgian series The Inheritance won the Sony Pictures Television Award for best drama at the MIA Market in Rome.",
-      "highlights": [
-        "Awarded best drama project by Sony Pictures Television at MIA Market",
-        "Praised for its complex female protagonist in a male‑dominated setting",
-        "Series produced by Kristoffel Mertens and Kato Maes for Panenka"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-23T21:34:37+06:00",
-      "selected_at": "2026-10-24T20:35:31.866590+06:00",
-      "status": "published",
-      "message_id": 1091
     },
     "awards_season_preview": {
       "event_id": "awards_season_preview",
@@ -26641,7 +26296,6 @@
     "evt_15be58be40"
   ],
   "recent_titles": [
-    "the white lotus",
     "the revolution against death",
     "tiger tv",
     "the greatest",
@@ -46535,62 +46189,6 @@
   },
   "score_history": [
     {
-      "title": "Later Daters Season 2: Christie Brinkley, Margaret Cho in Netflix Series",
-      "score": 80,
-      "pattern": "",
-      "priority_type": "New Movie / Series Announcements",
-      "source": "Variety",
-      "seen_at": "2026-11-10T22:52:15.242207+06:00"
-    },
-    {
-      "title": "Netflix Karen Read John O'Keefe Documentary Release Date, Trailer, and News - Netflix Tudum",
-      "score": 80,
-      "pattern": "",
-      "priority_type": "New Movie / Series Announcements",
-      "source": "Netflix Tudum",
-      "seen_at": "2026-11-10T22:52:15.242386+06:00"
-    },
-    {
-      "title": "Vietnamese Musical Hit ‘A Little Dream Of Me’ Set For North American Release Through Reel Citrus",
-      "score": 76,
-      "pattern": "",
-      "priority_type": "New Movie / Series Announcements",
-      "source": "Deadline",
-      "seen_at": "2026-11-10T22:52:15.242463+06:00"
-    },
-    {
-      "title": "'Art Detectives': Watch Trailer For Xmas Special; Premiere Date Set",
-      "score": 72,
-      "pattern": "",
-      "priority_type": "New Movie / Series Announcements",
-      "source": "Deadline",
-      "seen_at": "2026-11-10T22:52:15.242669+06:00"
-    },
-    {
-      "title": "Former NCT Member Lucas Wong Makes Acting Debut in Taiwanese Folk-Music Drama ‘A Time’ With Jerry Yan, Ning Chang at Taiwan Creative Content",
-      "score": 51,
-      "pattern": "",
-      "priority_type": "New Movie / Series Announcements",
-      "source": "Variety",
-      "seen_at": "2026-11-11T04:11:48.055122+06:00"
-    },
-    {
-      "title": "This week Movie Releases: భోగి, ఇట్లు అర్జున, దొంగ నా కొడుకు.. ఇంకా ఈ వారం విడుదలయ్యే సినిమాలు ఇవే! | This Week Movie Releases: Bhogi, Itlu ",
-      "score": 49,
-      "pattern": "",
-      "priority_type": "Theatrical Releases / Re-releases",
-      "source": "telugu.filmibeat.com",
-      "seen_at": "2026-11-11T04:11:48.055231+06:00"
-    },
-    {
-      "title": "Keira Knightley Says ‘It Means Nothing’ When Fans Quote ‘Love Actually’ to Her Because She Hasn’t Watched It Since the Premiere: ‘I Don’t Re",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "",
-      "source": "Variety",
-      "seen_at": "2026-11-11T04:11:48.055362+06:00"
-    },
-    {
       "title": "From a Mockbuster Version of ‘The Odyssey’ to a ‘Jiu-Jitsu Nun’: How Producers Are Keeping the Low-Budget Film Market Alive Via Streaming an",
       "score": 0,
       "pattern": "",
@@ -50533,18 +50131,74 @@
       "priority_type": "New Movie / Series Announcements",
       "source": "Deadline",
       "seen_at": "2026-11-22T13:51:50.708677+06:00"
+    },
+    {
+      "title": "Busan-Selected Director Anoop Lokkur Turns His Own Tenant War Into Bengaluru Dark Comedy ‘Melgade Mane Kelgade Mane’ at India’s WAVES Film B",
+      "score": 43,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Variety",
+      "seen_at": "2026-11-22T22:01:25.726560+06:00"
+    },
+    {
+      "title": "Berlinale Forum-Selected Director R. Gowtham Salutes Village Health Workers in Tamil Dark Comedy ‘Superman Vivagaram’ at India’s WAVES Film ",
+      "score": 43,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Variety",
+      "seen_at": "2026-11-22T22:01:25.726666+06:00"
+    },
+    {
+      "title": "Actor Awards Predictions: Andrew Garfield, Inde Navarrette and ‘The Odyssey’ Lead an Unsettled Film Race as ‘Widow’s Bay’ and HBO Max Could ",
+      "score": 30,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Variety",
+      "seen_at": "2026-11-22T22:01:25.726787+06:00"
+    },
+    {
+      "title": "Kaitlan Collins Notes ‘Real Time’ Absence Was Due To White House Press Conference",
+      "score": 40,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Deadline",
+      "seen_at": "2026-11-22T22:01:58.050014+06:00"
+    },
+    {
+      "title": "Actor Awards Predictions: Andrew Garfield, Inde Navarrette and ‘The Odyssey’ Lead an Unsettled Film Race as ‘Widow’s Bay’ and HBO Max Could ",
+      "score": 37,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Variety",
+      "seen_at": "2026-11-22T22:01:58.050118+06:00"
+    },
+    {
+      "title": "‘Artificial’ Filmmaker Luca Guadagnino On Whether AI Is Humanity’s Doomsday & Sam Altman’s Arsenal – Crew Call Podcast",
+      "score": 35,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Deadline",
+      "seen_at": "2026-11-22T22:01:58.050218+06:00"
+    },
+    {
+      "title": "Netflix’s ‘Minimum Wage’ Ushers In Streaming’s Short Ep Sitcom Era: “The Future Is 15-Minute ‘SpongeBob’-Length Episodes”",
+      "score": 32,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Deadline",
+      "seen_at": "2026-11-22T22:01:58.050320+06:00"
     }
   ],
   "adaptive_metrics": {
-    "raw_discovered": 46,
-    "pre_cerebras_rejected": 27243,
-    "hard_rejected": 9474,
+    "raw_discovered": 41,
+    "pre_cerebras_rejected": 27325,
+    "hard_rejected": 9520,
     "duplicate_rejected": 214,
-    "learned_rejected": 17555,
-    "passed_to_cerebras": 4637,
-    "cerebras_ranked": 11037,
+    "learned_rejected": 17591,
+    "passed_to_cerebras": 4639,
+    "cerebras_ranked": 11041,
     "published": 988,
-    "estimated_candidates_avoided": 27243
+    "estimated_candidates_avoided": 27325
   },
   "source_quality": {
     "collider.com": {
@@ -50576,11 +50230,11 @@
       "last_seen": "2026-09-08T11:49:09.577970+06:00"
     },
     "deadline.com": {
-      "observations": 5069,
-      "low_score_count": 4109,
-      "total_score": 256384,
+      "observations": 5072,
+      "low_score_count": 4112,
+      "total_score": 256491,
       "avg_score": 50.6,
-      "last_seen": "2026-11-22T13:51:50.708749+06:00"
+      "last_seen": "2026-11-22T22:01:58.050368+06:00"
     },
     "thewrap.com": {
       "observations": 16,
@@ -50597,11 +50251,11 @@
       "last_seen": "2026-09-08T21:05:13.366232+06:00"
     },
     "variety.com": {
-      "observations": 5335,
-      "low_score_count": 4406,
-      "total_score": 254188,
+      "observations": 5336,
+      "low_score_count": 4407,
+      "total_score": 254225,
       "avg_score": 47.6,
-      "last_seen": "2026-11-22T13:51:50.708742+06:00"
+      "last_seen": "2026-11-22T22:01:58.050355+06:00"
     },
     "indiewire.com": {
       "observations": 10,
