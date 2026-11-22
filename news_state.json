@@ -1,225 +1,152 @@
 {
   "feeds": {
     "https://deadline.com/feed/": {
-      "etag": "W/\"39edc7b3f0fb8000b2efdf3912a6574e\"",
-      "last_modified": "Sun, 22 Nov 2026 15:58:40 GMT",
-      "last_checked": "2026-11-22T22:01:25.787381+06:00",
+      "etag": "W/\"e9f6c7f37979b009947998222fcd4281\"",
+      "last_modified": "Sun, 22 Nov 2026 21:30:29 GMT",
+      "last_checked": "2026-11-23T04:20:14.034402+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://variety.com/feed/": {
-      "etag": "W/\"8507daf3ad791d84a3aaea95277cb946\"",
-      "last_modified": "Sun, 22 Nov 2026 15:07:50 GMT",
-      "last_checked": "2026-11-22T22:01:27.132909+06:00",
+      "etag": "W/\"b6a66955a26a3b3c9cceefa64b72bc07\"",
+      "last_modified": "Sun, 22 Nov 2026 22:17:14 GMT",
+      "last_checked": "2026-11-23T04:20:15.475703+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.hollywoodreporter.com/feed/": {
-      "etag": "W/\"c0839ccc710b4e23d9c1491153dd10b0\"",
-      "last_modified": "Sun, 22 Nov 2026 06:11:45 GMT",
-      "last_checked": "2026-11-22T22:01:28.732041+06:00",
+      "etag": "W/\"574239f57e0d3fd59dfe024912368c2c\"",
+      "last_modified": "Sun, 22 Nov 2026 21:41:46 GMT",
+      "last_checked": "2026-11-23T04:20:17.476366+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.thewrap.com/feed/": {
-      "etag": "\"7d6283ff15aa11a7b30470e9b9deb949\"",
-      "last_modified": "Sun, 22 Nov 2026 01:10:26 GMT",
-      "last_checked": "2026-11-22T22:01:28.834067+06:00",
+      "etag": "\"51e7781e18606226fabc8fae1207aa8d\"",
+      "last_modified": "Sun, 22 Nov 2026 21:27:29 GMT",
+      "last_checked": "2026-11-23T04:20:18.399878+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.indiewire.com/feed/": {
-      "etag": "W/\"9f7441e429afdf03d6bb7a91375c42d8\"",
-      "last_modified": "Sun, 22 Nov 2026 15:55:05 GMT",
-      "last_checked": "2026-11-22T22:01:29.512345+06:00",
+      "etag": "W/\"1c5d85c121e962e04b28578904955203\"",
+      "last_modified": "Sun, 22 Nov 2026 21:14:07 GMT",
+      "last_checked": "2026-11-23T04:20:19.350335+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://collider.com/feed/": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-22T22:01:29.838620+06:00",
+      "last_checked": "2026-11-23T04:20:19.867138+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://tvline.com/feed/": {
-      "etag": "\"e6888bcfcfa31440bda26f9b18e8a3a9\"",
-      "last_modified": "Sun, 22 Nov 2026 15:52:00 GMT",
-      "last_checked": "2026-11-22T22:01:30.667662+06:00",
+      "etag": "\"af8aa0299742d62f042015762a98e21d\"",
+      "last_modified": "Sun, 22 Nov 2026 21:52:00 GMT",
+      "last_checked": "2026-11-23T04:20:21.170325+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.ottplay.com/rss": {
       "etag": "\"b5496c89c58ff0f5d07d64a68d4efe07\"",
       "last_modified": "Thu, 27 May 2021 12:38:49 GMT",
-      "last_checked": "2026-11-22T22:01:32.715770+06:00",
+      "last_checked": "2026-11-23T04:20:24.364118+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.filmibeat.com/rss/feeds/filmibeat-news.xml": {
       "etag": null,
-      "last_modified": "Sun, 22 Nov 2026 15:52:59 GMT",
-      "last_checked": "2026-11-22T22:01:33.088960+06:00",
+      "last_modified": "Sun, 22 Nov 2026 22:14:02 GMT",
+      "last_checked": "2026-11-23T04:20:24.714714+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.pinkvilla.com/rss": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-22T22:01:33.717714+06:00",
+      "last_checked": "2026-11-23T04:20:25.424805+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.bollywoodhungama.com/feed/": {
       "etag": "\"32c20a8d7dc3c22d7d6ce0ae02301853\"",
       "last_modified": "Sun, 22 Nov 2026 15:32:18 GMT",
-      "last_checked": "2026-11-22T22:01:34.245529+06:00",
+      "last_checked": "2026-11-23T04:20:25.606435+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.gadgets360.com/entertainment/rss": {
-      "last_checked": "2026-11-22T22:01:35.350427+06:00",
-      "fail_count": 249,
+      "last_checked": "2026-11-23T04:20:25.727443+06:00",
+      "fail_count": 250,
       "alerted": true
     },
     "https://www.soompi.com/feed": {
-      "etag": "W/\"61334573fedfd652f63faa2491ac1e45\"",
-      "last_modified": "Sun, 22 Nov 2026 15:47:40 GMT",
-      "last_checked": "2026-11-22T22:01:35.635918+06:00",
+      "etag": "W/\"fa11d096150b2ddc38c033f19ce8b692\"",
+      "last_modified": "Sun, 22 Nov 2026 22:05:01 GMT",
+      "last_checked": "2026-11-23T04:20:25.924051+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.whats-on-netflix.com/feed/": {
       "etag": null,
       "last_modified": "Sat, 21 Nov 2026 21:24:18 GMT",
-      "last_checked": "2026-11-22T22:01:37.145568+06:00",
+      "last_checked": "2026-11-23T04:20:27.636048+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.netflix.com/tudum/rss.xml": {
-      "last_checked": "2026-11-22T22:01:37.369998+06:00",
-      "fail_count": 249,
+      "last_checked": "2026-11-23T04:20:28.229369+06:00",
+      "fail_count": 250,
       "alerted": true
     },
     "https://press.wbd.com/us/en/rss": {
-      "last_checked": "2026-11-22T22:01:37.737213+06:00",
-      "fail_count": 249,
+      "last_checked": "2026-11-23T04:20:28.488695+06:00",
+      "fail_count": 250,
       "alerted": true
     },
     "https://www.apple.com/tv-pr/newsroom/feed/": {
-      "last_checked": "2026-11-22T22:01:38.273151+06:00",
-      "fail_count": 249,
+      "last_checked": "2026-11-23T04:20:28.905200+06:00",
+      "fail_count": 250,
       "alerted": true
     },
     "https://www.aboutamazon.com/rss": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-22T22:01:38.420571+06:00",
+      "last_checked": "2026-11-23T04:20:29.068839+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.marvel.com/articles/feed": {
-      "last_checked": "2026-11-22T22:01:38.588049+06:00",
-      "fail_count": 249,
+      "last_checked": "2026-11-23T04:20:29.460982+06:00",
+      "fail_count": 250,
       "alerted": true
     },
     "https://www.dc.com/blog/rss.xml": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-22T22:01:38.753604+06:00",
-      "fail_count": 14,
+      "last_checked": "2026-11-23T04:20:30.030004+06:00",
+      "fail_count": 15,
       "alerted": true
     },
     "https://www.sonypictures.com/rss": {
-      "last_checked": "2026-11-22T22:01:39.225685+06:00",
-      "fail_count": 249,
+      "last_checked": "2026-11-23T04:20:30.259882+06:00",
+      "fail_count": 250,
       "alerted": true
     },
     "https://www.paramount.com/rss": {
-      "last_checked": "2026-11-22T22:01:39.316075+06:00",
-      "fail_count": 249,
+      "last_checked": "2026-11-23T04:20:30.338587+06:00",
+      "fail_count": 250,
       "alerted": true
     },
     "https://www.universalpictures.com/rss": {
-      "last_checked": "2026-11-22T22:01:39.663075+06:00",
-      "fail_count": 249,
+      "last_checked": "2026-11-23T04:20:30.743478+06:00",
+      "fail_count": 250,
       "alerted": true
     }
   },
   "queue": {
-    "deadline.com/2026/11/i-want-your-sex-streaming-release-date-hbo-max-1237228093": {
-      "title": "‘I Want Your Sex’ Sets HBO Max Streaming Release Date",
-      "url": "https://deadline.com/2026/11/i-want-your-sex-streaming-release-date-hbo-max-1237228093/",
-      "canonical": "deadline.com/2026/11/i-want-your-sex-streaming-release-date-hbo-max-1237228093",
-      "published_dt": "2026-11-18T23:28:35+06:00",
-      "published_date": "2026-11-18T23:28:35+06:00",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "excerpt": "I Want Your Sex, starring Olivia Wilde as an artsy dominatrix and Cooper Hoffman as her muse, begins streaming on HBO Max on December 4. The film will premiere on HBO linear the following day, on Saturday, December 5 at 8 p.m. ET. The streaming date marks a 126-day window following its theatrical release on […]",
-      "image": "https://deadline.com/wp-content/uploads/2026/02/IWYS_36A_03_STILL_20250615_00134552-1.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-11-18T23:52:19.418151+06:00",
-      "last_seen": "2026-11-18T23:52:19.418169+06:00",
-      "importance_score": 85,
-      "priority_type": "OTT / Streaming Availability",
-      "priority_tier": 1,
-      "priority_rank": 1,
-      "sector": "Hollywood",
-      "rank_reason": "Official streaming release date announced for Dec 4 2026 on HBO Max, meeting release‑only criteria.",
-      "last_ranked_at": "2026-11-19T14:30:35.410734+06:00",
-      "learning_pattern": ""
-    },
-    "variety.com/2026/tv/global/agatha-christie-tommy-tuppence-stream-channel-5-uk-1236952007": {
-      "title": "Agatha Christie Series ‘Tommy & Tuppence’ Coming to Channel 5 in the U.K.",
-      "url": "https://variety.com/2026/tv/global/agatha-christie-tommy-tuppence-stream-channel-5-uk-1236952007/",
-      "canonical": "variety.com/2026/tv/global/agatha-christie-tommy-tuppence-stream-channel-5-uk-1236952007",
-      "published_dt": "2026-11-18T22:37:24+06:00",
-      "published_date": "2026-11-18T22:37:24+06:00",
-      "source": "Variety",
-      "region": "Entertainment",
-      "excerpt": "BritBox’s Agatha Christie series “Tommy & Tuppence” has found a home in the U.K. on Channel 5. The six-part drama will be available to stream and watch live this festive season, it was announced on Wednesday. Starring Antonia Thomas and Josh Dylan, the modern take on Christie’s characters premiered in North America via BritBox this […]",
-      "image": "https://variety.com/wp-content/uploads/2026/10/josh-dylan-tommy-and_6ace256c9a314.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "posted",
-      "first_seen": "2026-11-18T23:52:21.713525+06:00",
-      "last_seen": "2026-11-18T23:52:21.713545+06:00",
-      "importance_score": 87,
-      "priority_type": "OTT / Streaming Availability",
-      "priority_tier": 1,
-      "priority_rank": 1,
-      "sector": "International",
-      "rank_reason": "Series confirmed for streaming on Channel 5 in the U.K., providing a clear release window.",
-      "last_ranked_at": "2026-11-18T23:52:52.219739+06:00",
-      "learning_pattern": "",
-      "posted_at": "2026-11-19T00:06:55.374705+06:00"
-    },
-    "variety.com/2026/shopping/news/mariah-carey-christmas-barbie-doll-buy-online-1236951861": {
-      "title": "This New Mariah Carey Barbie Recreates Her ‘All I Want for Christmas Is You’ Cover",
-      "url": "https://variety.com/2026/shopping/news/mariah-carey-christmas-barbie-doll-buy-online-1236951861/",
-      "canonical": "variety.com/2026/shopping/news/mariah-carey-christmas-barbie-doll-buy-online-1236951861",
-      "published_dt": "2026-11-18T22:00:00+06:00",
-      "published_date": "2026-11-18T22:00:00+06:00",
-      "source": "Variety",
-      "region": "Entertainment",
-      "excerpt": "It’s tiiiiime! Mariah Carey is getting the Barbie treatment once again, just in time for the holiday season. Mattel has released a new collectible doll inspired by the singer’s “All I Want for Christmas Is You” music video, recreating her festive Santa-inspired look. But bad news: it’s already sold out online less than 30 minutes […]",
-      "image": "https://variety.com/wp-content/uploads/2026/11/2-Split-3x2-1.png",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-11-18T23:52:22.404863+06:00",
-      "last_seen": "2026-11-18T23:52:22.404880+06:00",
-      "importance_score": 45,
-      "priority_type": "New Movie / Series Announcements",
-      "priority_tier": 2,
-      "priority_rank": 6,
-      "sector": "International",
-      "rank_reason": "Product launch, not a content release; score stays under publishable threshold.",
-      "last_ranked_at": "2026-11-19T14:30:35.411142+06:00",
-      "learning_pattern": ""
-    },
     "deadline.com/2026/11/netflix-penelope-cruz-juan-diego-bottos-patricia-moonlyon-1237228807": {
       "title": "Netflix Unveils Penélope Cruz & Juan Diego Botto’s Domestic Violence Drama ‘Patricia’ As Production Gets Underway",
       "url": "https://deadline.com/2026/11/netflix-penelope-cruz-juan-diego-bottos-patricia-moonlyon-1237228807/",
@@ -1136,6 +1063,30 @@
       "rank_reason": "Predictions and speculation about awards do not constitute a release announcement, keeping the total score under the publishable limit.",
       "last_ranked_at": "2026-11-22T22:01:58.049576+06:00",
       "learning_pattern": ""
+    },
+    "deadline.com/2026/11/robert-eggers-eager-move-away-horror-genre-1237231196": {
+      "title": "Robert Eggers Is “Eager” To Move Away From Horror Genre: “I Think I Need A Break”",
+      "url": "https://deadline.com/2026/11/robert-eggers-eager-move-away-horror-genre-1237231196/",
+      "canonical": "deadline.com/2026/11/robert-eggers-eager-move-away-horror-genre-1237231196",
+      "published_dt": "2026-11-22T23:41:30+06:00",
+      "published_date": "2026-11-22T23:41:30+06:00",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "excerpt": "From witches to vampires and werewolves, Robert Eggers has had his fill of the horror genre after more than a decade. The Werwulf co-writer and director recently explained that he’s ready to break free from “Robert Eggers’ House of Horror” as he hopes to explore other genres with his next project, following Werwulf‘s Christmas premiere […]",
+      "image": "https://deadline.com/wp-content/uploads/2026/11/P10TZ6G-e1795368445987.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-23T04:20:14.881778+06:00",
+      "last_seen": "2026-11-23T04:20:14.881792+06:00",
+      "importance_score": 40,
+      "priority_type": "New Movie / Series Announcements",
+      "priority_tier": 2,
+      "priority_rank": 6,
+      "sector": "Hollywood",
+      "rank_reason": "The article is an interview with the director and does not announce any concrete release date, platform, or title, so it cannot be treated as a publishable release story. Scores reflect low significance and reach for a non‑release piece.",
+      "last_ranked_at": "2026-11-23T04:20:37.964554+06:00",
+      "learning_pattern": ""
     }
   },
   "events": {
@@ -1239,31 +1190,6 @@
       "status": "published",
       "message_id": 1262
     },
-    "fallout_shelter_experiment_release": {
-      "event_id": "fallout_shelter_experiment_release",
-      "canonical_url": "deadline.com/2026/10/fallout-shelter-release-date-video-game-prime-video-1237171923",
-      "original_url": "https://deadline.com/2026/10/fallout-shelter-release-date-video-game-prime-video-1237171923/",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "topic": "Release Dates",
-      "institution": "Prime Video",
-      "event_cluster_id": "evt_e19f76fe46",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Fallout Shelter: The Experiment",
-      "summary": "Prime Video has set an early‑2027 release for the unscripted competition series based on the Fallout Shelter game.",
-      "highlights": [
-        "First four episodes launch on January 13, 2027",
-        "Three new episodes will drop weekly through January 27, 2027",
-        "Series will be exclusive to Prime Video in over 240 countries"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-24T01:51:51+06:00",
-      "selected_at": "2026-10-24T02:33:55.316406+06:00",
-      "status": "published",
-      "message_id": 1078
-    },
     "new_film_announcement": {
       "event_id": "new_film_announcement",
       "canonical_url": "deadline.com/feature/miami-vice-85-movie-news-updates-1237172205",
@@ -1313,31 +1239,6 @@
       "selected_at": "2026-10-24T20:35:36.956681+06:00",
       "status": "published",
       "message_id": 1092
-    },
-    "new_movie_script": {
-      "event_id": "new_movie_script",
-      "canonical_url": "deadline.com/2026/10/new-alien-movie-aaron-guzikowski-writing-20th-1237172102",
-      "original_url": "https://deadline.com/2026/10/new-alien-movie-aaron-guzikowski-writing-20th-1237172102/",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "20th Century Studios / Scott Free",
-      "event_cluster_id": "evt_4eebfff143",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Alien",
-      "summary": "Aaron Guzikowski is set to write a new Alien film for 20th Century Studios.",
-      "highlights": [
-        "Guzikowski, creator of Raised by Wolves, tapped as screenwriter",
-        "Project is in very early development",
-        "Scott Free will produce alongside 20th Century Studios"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-24T03:57:05+06:00",
-      "selected_at": "2026-10-24T20:35:41.830834+06:00",
-      "status": "published",
-      "message_id": 1093
     },
     "morelia_ojo_award": {
       "event_id": "morelia_ojo_award",
@@ -1414,55 +1315,6 @@
       "status": "published",
       "message_id": 1096
     },
-    "zendaya_oscar_campaign_dune3": {
-      "event_id": "zendaya_oscar_campaign_dune3",
-      "canonical_url": "variety.com/2026/film/awards/zendaya-oscars-dune-3-best-actress-1236918133",
-      "original_url": "https://variety.com/2026/film/awards/zendaya-oscars-dune-3-best-actress-1236918133/",
-      "source": "Variety",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "Variety",
-      "event_cluster_id": "evt_39fbd7b7a2",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Dune: Part Three",
-      "summary": "Zendaya will campaign for Best Actress for the final Dune film.",
-      "highlights": [
-        "Zendaya shifts to lead‑actress Oscar campaign for Dune: Part Three",
-        "Chani’s expanded role now central to the story",
-        "Warner Bros. set theatrical and IMAX release for Dec 18, 2026"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-24T01:02:02+06:00",
-      "selected_at": "2026-10-25T00:08:30.321746+06:00",
-      "status": "published",
-      "message_id": 1097
-    },
-    "hunter_biden_caa_signing": {
-      "event_id": "hunter_biden_caa_signing",
-      "canonical_url": "variety.com/2026/tv/news/hunter-biden-caa-1236929895",
-      "original_url": "https://variety.com/2026/tv/news/hunter-biden-caa-1236929895/",
-      "source": "Variety",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "Variety",
-      "event_cluster_id": "evt_28444f97c1",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Hunter Biden",
-      "summary": "CAA has signed a deal to represent Hunter Biden.",
-      "highlights": [
-        "The talent agency will seek new promotional and storytelling opportunities for the former attorney and painter",
-        "CAA previously represented President Joe Biden and has a long relationship with the Biden family"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-24T00:36:47+06:00",
-      "selected_at": "2026-10-25T00:08:35.358504+06:00",
-      "status": "published",
-      "message_id": 1098
-    },
     "trailer_release_world_series": {
       "event_id": "trailer_release_world_series",
       "canonical_url": "deadline.com/2026/10/avengers-doomsday-world-series-sneak-peek-1237172207",
@@ -1487,106 +1339,6 @@
       "selected_at": "2026-10-25T00:08:41.404300+06:00",
       "status": "published",
       "message_id": 1099
-    },
-    "leslie_bibb_upgraded2_cast": {
-      "event_id": "leslie_bibb_upgraded2_cast",
-      "canonical_url": "deadline.com/2026/10/leslie-bibb-upgraded-2-camila-mendes-1237171787",
-      "original_url": "https://deadline.com/2026/10/leslie-bibb-upgraded-2-camila-mendes-1237171787/",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "topic": "Casting",
-      "institution": "Deadline",
-      "event_cluster_id": "evt_45ca781225",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Upgraded 2",
-      "summary": "Leslie Bibb joins Camila Mendes in the sequel Upgraded 2, set for production in Italy.",
-      "highlights": [
-        "Amazon MGM Studios secured worldwide distribution on Prime Video",
-        "Production starts this month in Italy",
-        "Film will be available in over 240 countries and territories"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-24T00:00:00+06:00",
-      "selected_at": "2026-10-25T00:08:46.192309+06:00",
-      "status": "published",
-      "message_id": 1100
-    },
-    "pedro_pascal_cello_behemoth": {
-      "event_id": "pedro_pascal_cello_behemoth",
-      "canonical_url": "variety.com/2026/film/awards/pedro-pascal-behemoth-cello-avengers-doomsday-line-podcast-1236921933",
-      "original_url": "https://variety.com/2026/film/awards/pedro-pascal-behemoth-cello-avengers-doomsday-line-podcast-1236921933/",
-      "source": "Variety",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "Variety",
-      "event_cluster_id": "evt_cbe69692aa",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Behemoth!",
-      "summary": "Pedro Pascal learned cello for his lead role in the upcoming Searchlight Pictures film “Behemoth!”",
-      "highlights": [
-        "Premiered at the New York Film Festival on Oct. 2",
-        "Wide release scheduled for Dec. 4",
-        "Pascal began cello lessons months before filming began in Los Angeles and Vienna"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-24T00:13:48+06:00",
-      "selected_at": "2026-10-25T00:08:50.919276+06:00",
-      "status": "published",
-      "message_id": 1101
-    },
-    "dance_of_the_souls_morelia": {
-      "event_id": "dance_of_the_souls_morelia",
-      "canonical_url": "variety.com/2026/film/global/dance-of-the-souls-oaxaca-muerteadas-day-of-the-dead-1236919640",
-      "original_url": "https://variety.com/2026/film/global/dance-of-the-souls-oaxaca-muerteadas-day-of-the-dead-1236919640/",
-      "source": "Variety",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "Variety",
-      "event_cluster_id": "evt_df9ef38d7e",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Dance of the Souls",
-      "summary": "Documentary filmmaker Ramón Llaven captures Oaxaca’s 12‑hour muerteada dance tradition.",
-      "highlights": [
-        "Screens at Morelia Film Festival, DocsMX and Ji.hlava",
-        "Shows the 12‑hour death‑dance with heavy bell‑laden costumes",
-        "Filming spanned 2021‑2024, delayed by pandemic"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-24T00:24:13+06:00",
-      "selected_at": "2026-10-25T00:08:55.660609+06:00",
-      "status": "published",
-      "message_id": 1102
-    },
-    "iatse_technology_officer_arnold": {
-      "event_id": "iatse_technology_officer_arnold",
-      "canonical_url": "variety.com/2026/biz/news/iatse-jillian-arnold-first-labor-and-technology-officer-1236929876",
-      "original_url": "https://variety.com/2026/biz/news/iatse-jillian-arnold-first-labor-and-technology-officer-1236929876/",
-      "source": "Variety",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "Variety",
-      "event_cluster_id": "evt_fbaeeb565b",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "IATSE",
-      "summary": "IATSE has appointed video engineer Jillian Arnold as its first Labor and Technology Intelligence Officer.",
-      "highlights": [
-        "Arnold will guide IATSE’s response to emerging technologies",
-        "She previously chaired IATSE’s AI subcommittee during 2024 negotiations",
-        "The move follows similar tech‑focused hires at Disney, Ticketmaster, Amazon MGM and Lionsgate"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-24T00:30:41+06:00",
-      "selected_at": "2026-10-25T00:09:00.585174+06:00",
-      "status": "published",
-      "message_id": 1103
     },
     "reboot_announcement": {
       "event_id": "reboot_announcement",
@@ -46189,38 +45941,6 @@
   },
   "score_history": [
     {
-      "title": "From a Mockbuster Version of ‘The Odyssey’ to a ‘Jiu-Jitsu Nun’: How Producers Are Keeping the Low-Budget Film Market Alive Via Streaming an",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "",
-      "source": "Variety",
-      "seen_at": "2026-11-11T04:11:48.055499+06:00"
-    },
-    {
-      "title": "When Is the Love Is Blind Season 11 Reunion? Find Out How to Watch - Netflix",
-      "score": 90,
-      "pattern": "",
-      "priority_type": "Upcoming OTT Releases",
-      "source": "Netflix Tudum",
-      "seen_at": "2026-11-11T04:13:43.131043+06:00"
-    },
-    {
-      "title": "'Art Detectives': Watch Trailer For Xmas Special; Premiere Date Set",
-      "score": 73,
-      "pattern": "",
-      "priority_type": "Upcoming OTT Releases",
-      "source": "Deadline",
-      "seen_at": "2026-11-11T04:13:43.131364+06:00"
-    },
-    {
-      "title": "‘Harry Potter’s Paapa Essiedu Doesn’t Want To Discuss J.K. Rowling “At All,” Insists He’s “Super Clear” About Trans Support",
-      "score": 87,
-      "pattern": "",
-      "priority_type": "Release Date Confirmations",
-      "source": "Deadline",
-      "seen_at": "2026-11-11T04:13:43.131507+06:00"
-    },
-    {
       "title": "‘Harry Potter’ Star Paapa Essiedu Says ‘I Don’t Want to Talk About’ J.K. Rowling ‘At All’ but ‘Trans People Have the Right to Be Treated Wit",
       "score": 84,
       "pattern": "",
@@ -50187,18 +49907,50 @@
       "priority_type": "New Movie / Series Announcements",
       "source": "Deadline",
       "seen_at": "2026-11-22T22:01:58.050320+06:00"
+    },
+    {
+      "title": "Busan-Selected Director Anoop Lokkur Turns His Own Tenant War Into Bengaluru Dark Comedy ‘Melgade Mane Kelgade Mane’ at India’s WAVES Film B",
+      "score": 43,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Variety",
+      "seen_at": "2026-11-23T04:20:13.984149+06:00"
+    },
+    {
+      "title": "Berlinale Forum-Selected Director R. Gowtham Salutes Village Health Workers in Tamil Dark Comedy ‘Superman Vivagaram’ at India’s WAVES Film ",
+      "score": 43,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Variety",
+      "seen_at": "2026-11-23T04:20:13.984287+06:00"
+    },
+    {
+      "title": "Actor Awards Predictions: Andrew Garfield, Inde Navarrette and ‘The Odyssey’ Lead an Unsettled Film Race as ‘Widow’s Bay’ and HBO Max Could ",
+      "score": 37,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Variety",
+      "seen_at": "2026-11-23T04:20:13.984415+06:00"
+    },
+    {
+      "title": "Robert Eggers Is “Eager” To Move Away From Horror Genre: “I Think I Need A Break”",
+      "score": 40,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Deadline",
+      "seen_at": "2026-11-23T04:20:37.964838+06:00"
     }
   ],
   "adaptive_metrics": {
-    "raw_discovered": 41,
-    "pre_cerebras_rejected": 27325,
-    "hard_rejected": 9520,
+    "raw_discovered": 39,
+    "pre_cerebras_rejected": 27415,
+    "hard_rejected": 9563,
     "duplicate_rejected": 214,
-    "learned_rejected": 17591,
-    "passed_to_cerebras": 4639,
-    "cerebras_ranked": 11041,
+    "learned_rejected": 17638,
+    "passed_to_cerebras": 4640,
+    "cerebras_ranked": 11042,
     "published": 988,
-    "estimated_candidates_avoided": 27325
+    "estimated_candidates_avoided": 27415
   },
   "source_quality": {
     "collider.com": {
@@ -50230,11 +49982,11 @@
       "last_seen": "2026-09-08T11:49:09.577970+06:00"
     },
     "deadline.com": {
-      "observations": 5072,
-      "low_score_count": 4112,
-      "total_score": 256491,
+      "observations": 5073,
+      "low_score_count": 4113,
+      "total_score": 256531,
       "avg_score": 50.6,
-      "last_seen": "2026-11-22T22:01:58.050368+06:00"
+      "last_seen": "2026-11-23T04:20:37.964866+06:00"
     },
     "thewrap.com": {
       "observations": 16,
