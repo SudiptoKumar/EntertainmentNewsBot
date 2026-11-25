@@ -1,225 +1,152 @@
 {
   "feeds": {
     "https://deadline.com/feed/": {
-      "etag": "W/\"f3f6951fbede3b4566bde22b959aaba4\"",
-      "last_modified": "Wed, 25 Nov 2026 09:34:06 GMT",
-      "last_checked": "2026-11-25T15:39:38.568287+06:00",
+      "etag": "W/\"3293beb8f4cd1d00b41ac4765d307a36\"",
+      "last_modified": "Wed, 25 Nov 2026 19:45:49 GMT",
+      "last_checked": "2026-11-26T01:48:51.434017+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://variety.com/feed/": {
-      "etag": "W/\"a1871ce2f3a773edfefd66a4594a1cc4\"",
-      "last_modified": "Wed, 25 Nov 2026 09:15:12 GMT",
-      "last_checked": "2026-11-25T15:39:39.774488+06:00",
+      "etag": "W/\"ccd47a9e57d6a37c108a72da2627afa3\"",
+      "last_modified": "Wed, 25 Nov 2026 19:41:23 GMT",
+      "last_checked": "2026-11-26T01:48:52.445222+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.hollywoodreporter.com/feed/": {
-      "etag": "W/\"546f525c3a344a2231acb7852b5e20b4\"",
-      "last_modified": "Wed, 25 Nov 2026 09:39:30 GMT",
-      "last_checked": "2026-11-25T15:39:41.245682+06:00",
+      "etag": "W/\"fe5d606b59d1a2e51d2cbf089b968d2c\"",
+      "last_modified": "Wed, 25 Nov 2026 19:47:08 GMT",
+      "last_checked": "2026-11-26T01:48:53.893342+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.thewrap.com/feed/": {
-      "etag": "\"299a95caa3ac0960fb465dbda242cff3\"",
-      "last_modified": "Wed, 25 Nov 2026 07:08:50 GMT",
-      "last_checked": "2026-11-25T15:39:42.125858+06:00",
+      "etag": "\"754ad596912cfe7129fbdf13037628aa\"",
+      "last_modified": "Wed, 25 Nov 2026 18:50:30 GMT",
+      "last_checked": "2026-11-26T01:48:54.778238+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.indiewire.com/feed/": {
-      "etag": "W/\"79d0d0b6e4a3ef1e2d5cec16bcc73a78\"",
-      "last_modified": "Wed, 25 Nov 2026 00:14:08 GMT",
-      "last_checked": "2026-11-25T15:39:42.748070+06:00",
+      "etag": "W/\"13f06b9a07cd7c9730ed99ab951f048d\"",
+      "last_modified": "Wed, 25 Nov 2026 19:47:59 GMT",
+      "last_checked": "2026-11-26T01:48:55.761334+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://collider.com/feed/": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-25T15:39:44.068715+06:00",
+      "last_checked": "2026-11-26T01:48:56.653240+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://tvline.com/feed/": {
-      "etag": "\"2a2e111cfb16554d6985906f659d758c\"",
-      "last_modified": "Wed, 25 Nov 2026 05:47:06 GMT",
-      "last_checked": "2026-11-25T15:39:44.905364+06:00",
+      "etag": "\"0f23cd094639a1b6b4e5454d58abab72\"",
+      "last_modified": "Wed, 25 Nov 2026 18:25:00 GMT",
+      "last_checked": "2026-11-26T01:48:57.754169+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.ottplay.com/rss": {
       "etag": "\"b5496c89c58ff0f5d07d64a68d4efe07\"",
       "last_modified": "Thu, 27 May 2021 12:38:49 GMT",
-      "last_checked": "2026-11-25T15:39:47.532162+06:00",
+      "last_checked": "2026-11-26T01:49:00.497294+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.filmibeat.com/rss/feeds/filmibeat-news.xml": {
       "etag": null,
-      "last_modified": "Wed, 25 Nov 2026 09:35:56 GMT",
-      "last_checked": "2026-11-25T15:39:47.924779+06:00",
+      "last_modified": "Wed, 25 Nov 2026 19:49:01 GMT",
+      "last_checked": "2026-11-26T01:49:01.298081+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.pinkvilla.com/rss": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-25T15:39:48.806297+06:00",
+      "last_checked": "2026-11-26T01:49:01.871430+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.bollywoodhungama.com/feed/": {
-      "etag": "\"19e00ce07a03f7d4c9c2a23869a92cc6\"",
-      "last_modified": "Wed, 25 Nov 2026 09:34:28 GMT",
-      "last_checked": "2026-11-25T15:39:49.131609+06:00",
+      "etag": "\"b44cbe3e2b8a40e695a0465dd2a5d5d3\"",
+      "last_modified": "Wed, 25 Nov 2026 17:13:16 GMT",
+      "last_checked": "2026-11-26T01:49:02.200517+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.gadgets360.com/entertainment/rss": {
-      "last_checked": "2026-11-25T15:39:50.601164+06:00",
-      "fail_count": 255,
+      "last_checked": "2026-11-26T01:49:03.911451+06:00",
+      "fail_count": 256,
       "alerted": true
     },
     "https://www.soompi.com/feed": {
-      "etag": "W/\"a5255304ec4d70916bfeb6029f35dcfc\"",
-      "last_modified": "Wed, 25 Nov 2026 09:20:20 GMT",
-      "last_checked": "2026-11-25T15:39:50.848571+06:00",
+      "etag": "W/\"47f2ed2d055aef852299b6f5eee3229b\"",
+      "last_modified": "Wed, 25 Nov 2026 17:13:15 GMT",
+      "last_checked": "2026-11-26T01:49:04.142210+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.whats-on-netflix.com/feed/": {
       "etag": null,
-      "last_modified": "Wed, 25 Nov 2026 08:00:44 GMT",
-      "last_checked": "2026-11-25T15:39:53.162180+06:00",
+      "last_modified": "Wed, 25 Nov 2026 17:26:38 GMT",
+      "last_checked": "2026-11-26T01:49:06.377058+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.netflix.com/tudum/rss.xml": {
-      "last_checked": "2026-11-25T15:39:54.323406+06:00",
-      "fail_count": 255,
+      "last_checked": "2026-11-26T01:49:07.822677+06:00",
+      "fail_count": 256,
       "alerted": true
     },
     "https://press.wbd.com/us/en/rss": {
-      "last_checked": "2026-11-25T15:39:54.610585+06:00",
-      "fail_count": 255,
+      "last_checked": "2026-11-26T01:49:08.503254+06:00",
+      "fail_count": 256,
       "alerted": true
     },
     "https://www.apple.com/tv-pr/newsroom/feed/": {
-      "last_checked": "2026-11-25T15:39:55.114241+06:00",
-      "fail_count": 255,
+      "last_checked": "2026-11-26T01:49:08.917878+06:00",
+      "fail_count": 256,
       "alerted": true
     },
     "https://www.aboutamazon.com/rss": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-25T15:39:55.267566+06:00",
+      "last_checked": "2026-11-26T01:49:09.036771+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.marvel.com/articles/feed": {
-      "last_checked": "2026-11-25T15:39:55.840258+06:00",
-      "fail_count": 255,
+      "last_checked": "2026-11-26T01:49:09.599483+06:00",
+      "fail_count": 256,
       "alerted": true
     },
     "https://www.dc.com/blog/rss.xml": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-25T15:39:56.030319+06:00",
-      "fail_count": 20,
-      "alerted": true
+      "last_checked": "2026-11-26T01:49:11.254436+06:00",
+      "fail_count": 0,
+      "alerted": false
     },
     "https://www.sonypictures.com/rss": {
-      "last_checked": "2026-11-25T15:39:56.523010+06:00",
-      "fail_count": 255,
+      "last_checked": "2026-11-26T01:49:11.740262+06:00",
+      "fail_count": 256,
       "alerted": true
     },
     "https://www.paramount.com/rss": {
-      "last_checked": "2026-11-25T15:39:56.597924+06:00",
-      "fail_count": 255,
+      "last_checked": "2026-11-26T01:49:11.855389+06:00",
+      "fail_count": 256,
       "alerted": true
     },
     "https://www.universalpictures.com/rss": {
-      "last_checked": "2026-11-25T15:39:57.015288+06:00",
-      "fail_count": 255,
+      "last_checked": "2026-11-26T01:49:12.266973+06:00",
+      "fail_count": 256,
       "alerted": true
     }
   },
   "queue": {
-    "deadline.com/2026/11/kate-middleton-documentary-heal-release-date-trailer-1237230712": {
-      "title": "Princess Of Wales Documentary ‘Heal’ Set At BBC & NBC; Special About Kate Middleton’s Cancer Journey Gets Release Date & Trailer",
-      "url": "https://deadline.com/2026/11/kate-middleton-documentary-heal-release-date-trailer-1237230712/",
-      "canonical": "deadline.com/2026/11/kate-middleton-documentary-heal-release-date-trailer-1237230712",
-      "published_dt": "2026-11-21T18:00:00+06:00",
-      "published_date": "2026-11-21T18:00:00+06:00",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "excerpt": "Kate Middleton is starring in her first documentary, and it’s a personal one. Heal, which will premiere on the BBC in the UK on November 29 and NBC in the U.S. on November 30, follows the Princess of Wales as she undertakes the National Three Peaks Challenge and reflects on her life as a cancer […]",
-      "image": "https://deadline.com/wp-content/uploads/2026/11/Heal_KA_16x9.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "posted",
-      "first_seen": "2026-11-21T22:39:21.677667+06:00",
-      "last_seen": "2026-11-21T22:39:21.677679+06:00",
-      "importance_score": 100,
-      "priority_type": "Release Date Confirmations",
-      "priority_tier": 1,
-      "priority_rank": 4,
-      "sector": "International",
-      "rank_reason": "Officially confirmed premiere dates on BBC (UK) and NBC (US) with international rollout – clear release information.",
-      "last_ranked_at": "2026-11-22T13:51:50.706897+06:00",
-      "learning_pattern": "",
-      "posted_at": "2026-11-22T13:51:53.591061+06:00"
-    },
-    "deadline.com/2026/11/michael-jackson-biopic-michael-skipping-baftas-1237230863": {
-      "title": "Michael Jackson Biopic ‘Michael’ Skipping BAFTAs",
-      "url": "https://deadline.com/2026/11/michael-jackson-biopic-michael-skipping-baftas-1237230863/",
-      "canonical": "deadline.com/2026/11/michael-jackson-biopic-michael-skipping-baftas-1237230863",
-      "published_dt": "2026-11-21T15:47:11+06:00",
-      "published_date": "2026-11-21T15:47:11+06:00",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "excerpt": "In a surprise move, the record-breaking box office smash Michael is skipping the BAFTAs, Deadline has confirmed. Antoine Fuqua’s billion-dollar film about the King of Pop won’t be submitted by producers GK Films or distributor Universal, which released internationally for Lionsgate. This takes the likes of Jaafar Jackson, Colman Domingo and the craft team out […]",
-      "image": "https://deadline.com/wp-content/uploads/2026/11/MCDMICH_LG024.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-11-21T22:39:22.022853+06:00",
-      "last_seen": "2026-11-21T22:39:22.022861+06:00",
-      "importance_score": 30,
-      "priority_type": "New Movie / Series Announcements",
-      "priority_tier": 2,
-      "priority_rank": 6,
-      "sector": "Hollywood",
-      "rank_reason": "News about awards strategy, not a release announcement; therefore low scoring.",
-      "last_ranked_at": "2026-11-22T13:51:50.707693+06:00",
-      "learning_pattern": ""
-    },
-    "variety.com/2026/tv/news/princess-kate-cancer-documentary-premiere-dates-1236954745": {
-      "title": "Princess Kate Cancer Documentary ‘Heal’ Sets BBC, NBC and International Premiere Dates",
-      "url": "https://variety.com/2026/tv/news/princess-kate-cancer-documentary-premiere-dates-1236954745/",
-      "canonical": "variety.com/2026/tv/news/princess-kate-cancer-documentary-premiere-dates-1236954745",
-      "published_dt": "2026-11-21T18:00:00+06:00",
-      "published_date": "2026-11-21T18:00:00+06:00",
-      "source": "Variety",
-      "region": "Entertainment",
-      "excerpt": "“Heal,” a documentary from Princess Kate on her cancer diagnosis and living life in the face of serious illness, will debut in the U.K. on Nov. 29, with international premieres to follow. The documentary will premiere on the BBC in the U.K. on Nov. 29, via NBCUniversal in the United States on Nov. 30, Channel […]",
-      "image": "https://variety.com/wp-content/uploads/2025/01/kate-middleton.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-11-21T22:39:23.359586+06:00",
-      "last_seen": "2026-11-21T22:39:23.359598+06:00",
-      "importance_score": 100,
-      "priority_type": "Release Date Confirmations",
-      "priority_tier": 1,
-      "priority_rank": 4,
-      "sector": "International",
-      "rank_reason": "Variety repeats the official BBC/NBC premiere dates – same release details as candidate 5, confirming the event.",
-      "last_ranked_at": "2026-11-22T13:51:50.707050+06:00",
-      "learning_pattern": ""
-    },
     "deadline.com/2026/11/kaitlan-collins-real-time-absence-white-house-press-conference-1237231015": {
       "title": "Kaitlan Collins Notes ‘Real Time’ Absence Was Due To White House Press Conference",
       "url": "https://deadline.com/2026/11/kaitlan-collins-real-time-absence-white-house-press-conference-1237231015/",
@@ -571,13 +498,13 @@
       "status": "pending",
       "first_seen": "2026-11-25T03:00:57.678033+06:00",
       "last_seen": "2026-11-25T03:00:57.678041+06:00",
-      "importance_score": 49,
+      "importance_score": 35,
       "priority_type": "Season Renewals / New Season Updates",
       "priority_tier": 2,
       "priority_rank": 7,
       "sector": "Hollywood",
-      "rank_reason": "Casting news without a confirmed release window; score stays below 80.",
-      "last_ranked_at": "2026-11-25T15:40:06.857817+06:00",
+      "rank_reason": "Casting news without a confirmed release window; kept below publishable threshold.",
+      "last_ranked_at": "2026-11-26T01:49:25.834320+06:00",
       "learning_pattern": ""
     },
     "deadline.com/2026/11/netflix-buys-radford-studios-1237232812": {
@@ -595,13 +522,13 @@
       "status": "pending",
       "first_seen": "2026-11-25T03:00:57.901231+06:00",
       "last_seen": "2026-11-25T03:00:57.901238+06:00",
-      "importance_score": 48,
-      "priority_type": "OTT Platform Acquisition / Streaming Rights",
+      "importance_score": 43,
+      "priority_type": "New Movie / Series Announcements",
       "priority_tier": 2,
-      "priority_rank": 8,
+      "priority_rank": 6,
       "sector": "Hollywood",
-      "rank_reason": "Same acquisition news as ID 4, confirmed but still non‑release.",
-      "last_ranked_at": "2026-11-25T15:40:06.858299+06:00",
+      "rank_reason": "Same acquisition news as ID 11, no release details; kept below publishable threshold.",
+      "last_ranked_at": "2026-11-26T01:49:25.833672+06:00",
       "learning_pattern": ""
     },
     "deadline.com/2026/11/storm-macys-thanksgiving-parade-nbc-balloons-1237232716": {
@@ -619,13 +546,13 @@
       "status": "pending",
       "first_seen": "2026-11-25T03:00:58.071288+06:00",
       "last_seen": "2026-11-25T03:00:58.071297+06:00",
-      "importance_score": 39,
-      "priority_type": "Release Date Confirmations",
-      "priority_tier": 1,
-      "priority_rank": 4,
+      "importance_score": 35,
+      "priority_type": "New Movie / Series Announcements",
+      "priority_tier": 2,
+      "priority_rank": 6,
       "sector": "Hollywood",
-      "rank_reason": "Logistical update, no new entertainment release.",
-      "last_ranked_at": "2026-11-25T15:40:06.857101+06:00",
+      "rank_reason": "Broadcast coverage announcement, not a new title release; score remains under publishable level.",
+      "last_ranked_at": "2026-11-26T01:49:25.834208+06:00",
       "learning_pattern": ""
     },
     "deadline.com/2026/11/bunker-trailer-penelope-cruz-javier-bardem-1237232766": {
@@ -643,13 +570,13 @@
       "status": "pending",
       "first_seen": "2026-11-25T03:00:58.232982+06:00",
       "last_seen": "2026-11-25T03:00:58.232989+06:00",
-      "importance_score": 86,
-      "priority_type": "Theatrical Releases / Re-releases",
+      "importance_score": 82,
+      "priority_type": "Release Date Confirmations",
       "priority_tier": 1,
-      "priority_rank": 5,
-      "sector": "International",
-      "rank_reason": "Provides a confirmed UK theatrical release date for the film “Bunker,” satisfying the release‑only requirement.",
-      "last_ranked_at": "2026-11-25T15:40:06.857203+06:00",
+      "priority_rank": 4,
+      "sector": "Hollywood",
+      "rank_reason": "Deadline provides the UK theatrical release date alongside a trailer, giving a concrete release window.",
+      "last_ranked_at": "2026-11-26T01:49:25.833214+06:00",
       "learning_pattern": ""
     },
     "deadline.com/2026/11/imax-craig-dehmel-qube-cinema-1237232749": {
@@ -715,13 +642,13 @@
       "status": "pending",
       "first_seen": "2026-11-25T03:00:59.320427+06:00",
       "last_seen": "2026-11-25T03:00:59.320436+06:00",
-      "importance_score": 48,
-      "priority_type": "OTT Platform Acquisition / Streaming Rights",
+      "importance_score": 43,
+      "priority_type": "New Movie / Series Announcements",
       "priority_tier": 2,
-      "priority_rank": 8,
+      "priority_rank": 6,
       "sector": "Hollywood",
-      "rank_reason": "Business acquisition; no release date, thus low publishable score.",
-      "last_ranked_at": "2026-11-25T15:40:06.858205+06:00",
+      "rank_reason": "Corporate acquisition announcement, not a title release; score stays below publishable threshold.",
+      "last_ranked_at": "2026-11-26T01:49:25.833577+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/film/news/namaslay-sets-streaming-release-date-1236956061": {
@@ -812,13 +739,13 @@
       "status": "pending",
       "first_seen": "2026-11-25T15:39:39.291718+06:00",
       "last_seen": "2026-11-25T15:39:39.291737+06:00",
-      "importance_score": 54,
+      "importance_score": 35,
       "priority_type": "New Movie / Series Announcements",
       "priority_tier": 2,
       "priority_rank": 6,
       "sector": "International",
-      "rank_reason": "Interview piece without a new release date; scores below publishable threshold.",
-      "last_ranked_at": "2026-11-25T15:40:06.857406+06:00",
+      "rank_reason": "Interview piece lacking a new release announcement; kept below publishable threshold.",
+      "last_ranked_at": "2026-11-26T01:49:25.833992+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/film/markets-festivals/indonesia-france-film-lab-projects-paris-forum-1236957588": {
@@ -836,13 +763,183 @@
       "status": "pending",
       "first_seen": "2026-11-25T15:39:40.776326+06:00",
       "last_seen": "2026-11-25T15:39:40.776344+06:00",
-      "importance_score": 48,
+      "importance_score": 35,
       "priority_type": "New Movie / Series Announcements",
       "priority_tier": 2,
       "priority_rank": 6,
       "sector": "International",
-      "rank_reason": "Announces projects but no release schedule; kept below publishable score.",
-      "last_ranked_at": "2026-11-25T15:40:06.857507+06:00",
+      "rank_reason": "Project announcement without a concrete release date; score remains under publishable level.",
+      "last_ranked_at": "2026-11-26T01:49:25.834105+06:00",
+      "learning_pattern": ""
+    },
+    "deadline.com/2026/11/the-pitt-season-3-premiere-date-1237233493": {
+      "title": "‘The Pitt’ Sets Season 3 Premiere Date",
+      "url": "https://deadline.com/2026/11/the-pitt-season-3-premiere-date-1237233493/",
+      "canonical": "deadline.com/2026/11/the-pitt-season-3-premiere-date-1237233493",
+      "published_dt": "2026-11-26T01:25:39+06:00",
+      "published_date": "2026-11-26T01:25:39+06:00",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "excerpt": "The holidays have arrived early, as HBO Max has revealed that its critically acclaimed medical drama, The Pitt, will premiere its third season on January 7, 2027. The news dropped today via the show’s Instagram account, with actors Taylor Dearden, Isa Briones, and Gerran Howell dressed as their characters Mel, Santos, and Whitaker, respectively. The […]",
+      "image": "https://deadline.com/wp-content/uploads/2026/08/the-pitt-season-3-photos-hbo-max.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "posted",
+      "first_seen": "2026-11-26T01:48:51.651451+06:00",
+      "last_seen": "2026-11-26T01:48:51.651464+06:00",
+      "importance_score": 83,
+      "priority_type": "Release Date Confirmations",
+      "priority_tier": 1,
+      "priority_rank": 4,
+      "sector": "Hollywood",
+      "rank_reason": "Deadline reports the official Instagram announcement of a January 7 2027 premiere for Season 3, providing a concrete release window.",
+      "last_ranked_at": "2026-11-26T01:49:25.833128+06:00",
+      "learning_pattern": "",
+      "posted_at": "2026-11-26T02:12:17.768452+06:00"
+    },
+    "variety.com/2026/tv/news/dropout-very-important-people-season-4-release-ben-schwartz-1236958190": {
+      "title": "Dropout’s ‘Very Important People’ Reveals Season 4 Release Date; Adds Ben Schwartz, Kirby Howell-Baptiste and More Guests",
+      "url": "https://variety.com/2026/tv/news/dropout-very-important-people-season-4-release-ben-schwartz-1236958190/",
+      "canonical": "variety.com/2026/tv/news/dropout-very-important-people-season-4-release-ben-schwartz-1236958190",
+      "published_dt": "2026-11-26T00:30:12+06:00",
+      "published_date": "2026-11-26T00:30:12+06:00",
+      "source": "Variety",
+      "region": "Entertainment",
+      "excerpt": "Dropout’s improv interview series “Very Important People” is set to debut its fourth season Dec. 10 with a new batch of weirdo guests. Hosted by comedian Vic Michaelis, “Very Important People” features improv comedians after they undergo an extensive makeover by a talented team of make-up artists to transform them into an entirely new and […]",
+      "image": "https://variety.com/wp-content/uploads/2026/11/VIP-Dropout.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-26T01:48:53.448858+06:00",
+      "last_seen": "2026-11-26T01:48:53.448877+06:00",
+      "importance_score": 80,
+      "priority_type": "Release Date Confirmations",
+      "priority_tier": 1,
+      "priority_rank": 4,
+      "sector": "Hollywood",
+      "rank_reason": "Variety article gives the exact debut date (Dec 10) for Season 4, meeting the release‑only criteria.",
+      "last_ranked_at": "2026-11-26T01:49:25.833330+06:00",
+      "learning_pattern": ""
+    },
+    "variety.com/2026/film/columns/cliff-booth-imax-limited-release-netflix-1236956318": {
+      "title": "As ‘The Further Mis-Adventures of Cliff Booth’ Opens on Just 200 Imax Screens, Netflix’s Movie Theater Push Is Still Failing Moviegoers",
+      "url": "https://variety.com/2026/film/columns/cliff-booth-imax-limited-release-netflix-1236956318/",
+      "canonical": "variety.com/2026/film/columns/cliff-booth-imax-limited-release-netflix-1236956318",
+      "published_dt": "2026-11-26T00:15:00+06:00",
+      "published_date": "2026-11-26T00:15:00+06:00",
+      "source": "Variety",
+      "region": "Entertainment",
+      "excerpt": "If you’re a fan of Quentin Tarantino and David Fincher and Brad Pitt, and you loved “Once Upon a Time in Hollywood” and have your heart set on seeing that film’s sequel, the highly entertaining (and appropriately well-reviewed) “The Further Mis-Adventures of Cliff Booth,” over Thanksgiving weekend, I have a scientific phrase to describe your […]",
+      "image": "https://variety.com/wp-content/uploads/2026/11/UFP25_R2_Rec709_2p4gamma_6188x3240_20260818.0191897_R1.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-26T01:48:53.719523+06:00",
+      "last_seen": "2026-11-26T01:48:53.719542+06:00",
+      "importance_score": 77,
+      "priority_type": "Theatrical Releases / Re-releases",
+      "priority_tier": 1,
+      "priority_rank": 5,
+      "sector": "Hollywood",
+      "rank_reason": "Article confirms the film’s limited IMAX theatrical opening, providing release venue and timing details.",
+      "last_ranked_at": "2026-11-26T01:49:25.833468+06:00",
+      "learning_pattern": ""
+    },
+    "variety.com/2026/film/news/takashi-miike-bad-lieutenant-tokyo-release-date-neon-1236957562": {
+      "title": "Takashi Miike’s ‘Bad Lieutenant: Tokyo’ Sets March 2027 Release Date",
+      "url": "https://variety.com/2026/film/news/takashi-miike-bad-lieutenant-tokyo-release-date-neon-1236957562/",
+      "canonical": "variety.com/2026/film/news/takashi-miike-bad-lieutenant-tokyo-release-date-neon-1236957562",
+      "published_dt": "2026-11-26T00:15:00+06:00",
+      "published_date": "2026-11-26T00:15:00+06:00",
+      "source": "Variety",
+      "region": "Entertainment",
+      "excerpt": "Neon has set the theatrical release date for Takashi Miike’s gritty cop thriller “Bad Lieutenant: Tokyo” for March 5, 2027. The third installment in the cult classic series, which premiered at the Toronto International Film Festival, stars Shun Oguri, Lily James and WWE wrestler Liv Morgan. An official logline for “Bad Lieutenant: Tokyo” reads: “Seasoned […]",
+      "image": "https://variety.com/wp-content/uploads/2026/11/04_BAD-LIEUTENANT-TOKYO_courtesyNEON.jpeg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "posted",
+      "first_seen": "2026-11-26T01:48:53.802755+06:00",
+      "last_seen": "2026-11-26T01:48:53.802772+06:00",
+      "importance_score": 80,
+      "priority_type": "Theatrical Releases / Re-releases",
+      "priority_tier": 1,
+      "priority_rank": 5,
+      "sector": "International",
+      "rank_reason": "Variety reports an official theatrical release date (Mar 5 2027) for the film, satisfying the release criteria.",
+      "last_ranked_at": "2026-11-26T01:49:25.833435+06:00",
+      "learning_pattern": "sports",
+      "posted_at": "2026-11-26T02:12:23.239193+06:00"
+    },
+    "deadline.com/2026/11/netflix-streaming-licensing-off-network-revenue-promotion-1237213705": {
+      "title": "How Netflix Became Go-To Source Of Off-Net Revenue & Tune-In Promotion - Deadline",
+      "url": "https://deadline.com/2026/11/netflix-streaming-licensing-off-network-revenue-promotion-1237213705/",
+      "canonical": "deadline.com/2026/11/netflix-streaming-licensing-off-network-revenue-promotion-1237213705",
+      "published_dt": "2026-11-25T21:00:00+06:00",
+      "published_date": "2026-11-25T21:00:00+06:00",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "excerpt": "How Netflix Became Go-To Source Of Off-Net Revenue & Tune-In Promotion Deadline",
+      "image": "",
+      "discovery": "google_news",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-26T01:49:15.371379+06:00",
+      "last_seen": "2026-11-26T01:49:15.371397+06:00",
+      "importance_score": 35,
+      "priority_type": "New Movie / Series Announcements",
+      "priority_tier": 2,
+      "priority_rank": 6,
+      "sector": "Hollywood",
+      "rank_reason": "Business analysis piece without any specific title release information; score kept below publishable threshold.",
+      "last_ranked_at": "2026-11-26T01:49:25.833781+06:00",
+      "learning_pattern": ""
+    },
+    "disneyplus.com/explore/articles/percy-jackson-season-3": {
+      "title": "Percy Jackson and the Olympians Season 3 Is Now Streaming | Explore Disney+ - Disney Plus",
+      "url": "https://www.disneyplus.com/explore/articles/percy-jackson-season-3",
+      "canonical": "disneyplus.com/explore/articles/percy-jackson-season-3",
+      "published_dt": "2026-11-25T19:49:50+06:00",
+      "published_date": "2026-11-25T19:49:50+06:00",
+      "source": "disneyplus.com",
+      "region": "Entertainment",
+      "excerpt": "Percy Jackson and the Olympians Season 3 Is Now Streaming | Explore Disney+ Disney Plus",
+      "image": "",
+      "discovery": "google_news",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-26T01:49:16.703926+06:00",
+      "last_seen": "2026-11-26T01:49:16.703942+06:00",
+      "importance_score": 85,
+      "priority_type": "OTT / Streaming Availability",
+      "priority_tier": 1,
+      "priority_rank": 1,
+      "sector": "International",
+      "rank_reason": "Official Disney+ page confirming Season 3 of Percy Jackson is now streaming, with platform and episode details.",
+      "last_ranked_at": "2026-11-26T01:49:25.832891+06:00",
+      "learning_pattern": ""
+    },
+    "disneyplus.com/explore/articles/the-remarried-empress": {
+      "title": "Royally Scandalous K-Drama The Remarried Empress Is Now Streaming - Disney Plus",
+      "url": "https://www.disneyplus.com/explore/articles/the-remarried-empress",
+      "canonical": "disneyplus.com/explore/articles/the-remarried-empress",
+      "published_dt": "2026-11-26T01:35:14+06:00",
+      "published_date": "2026-11-26T01:35:14+06:00",
+      "source": "disneyplus.com",
+      "region": "Entertainment",
+      "excerpt": "Royally Scandalous K-Drama The Remarried Empress Is Now Streaming Disney Plus",
+      "image": "",
+      "discovery": "google_news",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-26T01:49:18.860244+06:00",
+      "last_seen": "2026-11-26T01:49:18.860268+06:00",
+      "importance_score": 86,
+      "priority_type": "OTT / Streaming Availability",
+      "priority_tier": 1,
+      "priority_rank": 1,
+      "sector": "International",
+      "rank_reason": "Official Disney+ announcement that the K‑drama is now streaming on Disney+ and Hulu, with clear platform and release details.",
+      "last_ranked_at": "2026-11-26T01:49:25.832641+06:00",
       "learning_pattern": ""
     }
   },
@@ -972,31 +1069,6 @@
       "status": "published",
       "message_id": 1227
     },
-    "greg_berlanti_paley_honors_duplicate": {
-      "event_id": "greg_berlanti_paley_honors_duplicate",
-      "canonical_url": "variety.com/2026/tv/news/greg-berlanti-paley-center-honors-award-1236930363",
-      "original_url": "https://variety.com/2026/tv/news/greg-berlanti-paley-center-honors-award-1236930363/",
-      "source": "Variety",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "Paley Center for Media",
-      "event_cluster_id": "evt_3ba013b314",
-      "event_confidence": 1.0,
-      "event_source_count": 2,
-      "headline": "Greg Berlanti",
-      "summary": "Greg Berlanti will receive the Paley Center for Media’s Honors Award at the Fall Gala on Dec.",
-      "highlights": [
-        "Award ceremony set for Dec 3 at the Beverly Wilshire Hotel",
-        "Honors recognize his 30‑year impact on TV storytelling",
-        "Previous honorees include Reba McEntire and Bill Lawrence"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-26T18:00:00+06:00",
-      "selected_at": "2026-10-27T12:30:00.646215+06:00",
-      "status": "published",
-      "message_id": 1112
-    },
     "new_movie_announcement": {
       "event_id": "new_movie_announcement",
       "canonical_url": "deadline.com/2026/11/toy-story-5-andrew-stanton-interview-1237213590",
@@ -1022,181 +1094,6 @@
       "status": "published",
       "message_id": 1266
     },
-    "season_renewal": {
-      "event_id": "season_renewal",
-      "canonical_url": "deadline.com/2026/10/coven-academy-renewed-season-2-disney-1237175312",
-      "original_url": "https://deadline.com/2026/10/coven-academy-renewed-season-2-disney-1237175312/",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "topic": "Renewals and Cancellations",
-      "institution": "Disney+/Hulu",
-      "event_cluster_id": "evt_4055f73afa",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Coven Academy",
-      "summary": "Disney+ and Hulu have renewed the teen supernatural drama for a second season.",
-      "highlights": [
-        "Season 2 confirmed for Disney+/Hulu",
-        "Season 1 logged 20.3 million global streaming hours in three weeks",
-        "Series topped teen viewership charts at launch"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-27T00:00:00+06:00",
-      "selected_at": "2026-10-27T12:30:11.238758+06:00",
-      "status": "published",
-      "message_id": 1114
-    },
-    "young_americans_casting": {
-      "event_id": "young_americans_casting",
-      "canonical_url": "deadline.com/2026/10/young-americans-pilot-hulu-adds-five-1237173642",
-      "original_url": "https://deadline.com/2026/10/young-americans-pilot-hulu-adds-five-1237173642/",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "topic": "Casting",
-      "institution": "Hulu",
-      "event_cluster_id": "evt_f6decafca7",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Young Americans",
-      "summary": "Hulu has announced its five young leads for the political drama pilot Young Americans opposite Scott Foley.",
-      "highlights": [
-        "Billie Boullet, Sam Rechner, Mia Isaac, Oscar Winter and Lauren Mei join the cast",
-        "Scott Foley will play U.S. President Judd Burchfield",
-        "The series follows elite teens at Capitol Crest Academy in Washington D.C."
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-26T23:15:00+06:00",
-      "selected_at": "2026-10-27T12:30:16.142614+06:00",
-      "status": "published",
-      "message_id": 1115
-    },
-    "tiff_2026_opening": {
-      "event_id": "tiff_2026_opening",
-      "canonical_url": "variety.com/2026/film/festivals/tokyo-film-fest-opens-sukiyaki-japan-content-goal-1236931066",
-      "original_url": "https://variety.com/2026/film/festivals/tokyo-film-fest-opens-sukiyaki-japan-content-goal-1236931066/",
-      "source": "Variety",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "Tokyo International Film Festival",
-      "event_cluster_id": "evt_59f05e2755",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Sukiyaki",
-      "summary": "The 39th Tokyo International Film Festival opened with the film “Sukiyaki,” highlighting Japan’s push to export JPY20 trillion of content by 2033.",
-      "highlights": [
-        "Tokyo festival received 1,892 submissions from 112 countries",
-        "Japanese government aims to boost overseas content sales to JPY20 trillion by 2033",
-        "Centerpiece film “Godzilla Minus Zero” slated for worldwide release next month"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-26T16:54:12+06:00",
-      "selected_at": "2026-10-27T12:30:20.986563+06:00",
-      "status": "published",
-      "message_id": 1116
-    },
-    "make_work_na_rights": {
-      "event_id": "make_work_na_rights",
-      "canonical_url": "deadline.com/2026/10/abramorama-buys-make-work-new-york-city-ballet-film-1237177271",
-      "original_url": "https://deadline.com/2026/10/abramorama-buys-make-work-new-york-city-ballet-film-1237177271/",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "topic": "OTT Rights and Distribution",
-      "institution": "Abramorama",
-      "event_cluster_id": "evt_1766fa2ce6",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Make Work",
-      "summary": "Abramorama has secured North American distribution for the ballet documentary Make Work.",
-      "highlights": [
-        "Abramorama acquires North American rights",
-        "Theatrical release slated for March 5, 2027",
-        "Follows four choreographers developing new works at NYCB"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-26T23:01:50+06:00",
-      "selected_at": "2026-10-27T12:30:25.990595+06:00",
-      "status": "published",
-      "message_id": 1117
-    },
-    "princess_international_rights": {
-      "event_id": "princess_international_rights",
-      "canonical_url": "variety.com/2026/film/global/queer-drama-nusta-princess-mmm-film-sales-christian-rojas-1236904121",
-      "original_url": "https://variety.com/2026/film/global/queer-drama-nusta-princess-mmm-film-sales-christian-rojas-1236904121/",
-      "source": "Variety",
-      "region": "Entertainment",
-      "topic": "Acquisitions and Mergers",
-      "institution": "MMM Film Sales",
-      "event_cluster_id": "evt_2859181f89",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Princess",
-      "summary": "Ecuadorian queer drama “Princess” has been acquired by MMM Film Sales for international distribution ahead of its world premiere at Tallinn Black Nights Film Festival.",
-      "highlights": [
-        "MMM Film Sales secures worldwide rights",
-        "World premiere slated for Tallinn Black Nights Film Festival",
-        "Debut feature by director Christian Rojas explores Indigenous trans identity"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-26T18:07:04+06:00",
-      "selected_at": "2026-10-27T12:30:30.904482+06:00",
-      "status": "published",
-      "message_id": 1118
-    },
-    "tccf_2026": {
-      "event_id": "tccf_2026",
-      "canonical_url": "deadline.com/2026/10/asia-ip-co-production-taiwan-creative-content-fest-2026-1237172965",
-      "original_url": "https://deadline.com/2026/10/asia-ip-co-production-taiwan-creative-content-fest-2026-1237172965/",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "Taiwan Creative Content Agency",
-      "event_cluster_id": "evt_487fd85530",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Taiwan Creative Content Fest 2026",
-      "summary": "The Taiwan Creative Content Fest runs Nov 6‑9, 2026 in Taipei, featuring pitching, market and forum events for global co‑production opportunities.",
-      "highlights": [
-        "Over 60% of pitching projects involve international co‑productions with Taiwan",
-        "Prize pool exceeds $310,000 (TWD 10 million) across film, series, animation and documentary segments",
-        "107 exhibitors from seven countries will showcase rights transactions and IP deals"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-26T17:05:25+06:00",
-      "selected_at": "2026-10-27T12:30:35.715319+06:00",
-      "status": "published",
-      "message_id": 1119
-    },
-    "death_2026_koenig": {
-      "event_id": "death_2026_koenig",
-      "canonical_url": "deadline.com/2026/10/walter-koenig-star-trek-chekov-1237176812",
-      "original_url": "https://deadline.com/2026/10/walter-koenig-star-trek-chekov-1237176812/",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "Deadline",
-      "event_cluster_id": "evt_ad6d5492cf",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Walter Koenig",
-      "summary": "Original ‘Star Trek’ actor Walter Koenig, who played Ensign Pavel Chekov, died at 90 of natural causes.",
-      "highlights": [
-        "Koenig originated Chekov in the 1960s series and appeared in the first seven Star Trek films",
-        "His death leaves George Takei and William Shatner as the only surviving original main cast members",
-        "He won the Platinum Award for Best Actor at the 2026 Independent Shorts Awards for the short film ‘Mr. Fleischmann’"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-26T23:01:50+06:00",
-      "selected_at": "2026-10-27T19:07:25.009153+06:00",
-      "status": "published",
-      "message_id": 1121
-    },
     "bowie_immersive_berlin_premiere": {
       "event_id": "bowie_immersive_berlin_premiere",
       "canonical_url": "deadline.com/2026/10/brett-morgen-david-bowie-immersive-concert-berlin-1237205735",
@@ -1221,31 +1118,6 @@
       "selected_at": "2026-10-27T19:07:30.879188+06:00",
       "status": "published",
       "message_id": 1122
-    },
-    "sharjah_festival_partnership_2026": {
-      "event_id": "sharjah_festival_partnership_2026",
-      "canonical_url": "variety.com/2026/film/global/sharjah-film-festival-uae-national-media-authority-fann-1236931290",
-      "original_url": "https://variety.com/2026/film/global/sharjah-film-festival-uae-national-media-authority-fann-1236931290/",
-      "source": "Variety",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "Variety",
-      "event_cluster_id": "evt_5451e69197",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Sharjah International Film Festival",
-      "summary": "Sharjah's film festival for children and youth has partnered with the UAE National Media Authority to aid emerging filmmakers.",
-      "highlights": [
-        "The partnership will streamline film screening permits and provide technical training",
-        "National Media Authority will join festival juries and media activities",
-        "SIFF’s 13th edition runs through Nov. 1 with 71 films from 38 countries"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-26T23:00:00+06:00",
-      "selected_at": "2026-10-27T19:07:36.745651+06:00",
-      "status": "published",
-      "message_id": 1123
     },
     "release_date_confirmations": {
       "event_id": "release_date_confirmations",
@@ -5970,6 +5842,56 @@
       "selected_at": "2026-11-25T15:41:08.457914+06:00",
       "status": "published",
       "message_id": 1328
+    },
+    "the_pitt_s3_premiere": {
+      "event_id": "the_pitt_s3_premiere",
+      "canonical_url": "deadline.com/2026/11/the-pitt-season-3-premiere-date-1237233493",
+      "original_url": "https://deadline.com/2026/11/the-pitt-season-3-premiere-date-1237233493/",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "topic": "Release Dates",
+      "institution": "HBO Max",
+      "event_cluster_id": "evt_e2bce7ca13",
+      "event_confidence": 0.6,
+      "event_source_count": 1,
+      "headline": "The Pitt",
+      "summary": "HBO Max announced Season 3 of the medical drama will debut on Jan.",
+      "highlights": [
+        "Season 3 premieres Jan 7, 2027 on HBO Max",
+        "Series follows frontline doctors at Pittsburgh Trauma Medical Center",
+        "Season 3 explores doctors becoming patients themselves"
+      ],
+      "concepts": [],
+      "key_numbers": [],
+      "published_at": "2026-11-26T01:25:39+06:00",
+      "selected_at": "2026-11-26T02:12:17.768571+06:00",
+      "status": "published",
+      "message_id": 1329
+    },
+    "bad_lieutenant_tokyo_release": {
+      "event_id": "bad_lieutenant_tokyo_release",
+      "canonical_url": "variety.com/2026/film/news/takashi-miike-bad-lieutenant-tokyo-release-date-neon-1236957562",
+      "original_url": "https://variety.com/2026/film/news/takashi-miike-bad-lieutenant-tokyo-release-date-neon-1236957562/",
+      "source": "Variety",
+      "region": "Entertainment",
+      "topic": "Release Dates",
+      "institution": "Neon",
+      "event_cluster_id": "evt_6c54ffe324",
+      "event_confidence": 0.6,
+      "event_source_count": 1,
+      "headline": "Bad Lieutenant: Tokyo",
+      "summary": "Takashi Miike’s third ‘Bad Lieutenant’ film is set for theatrical release on March 5, 2027.",
+      "highlights": [
+        "Neon announced the March 5, 2027 release date",
+        "Stars include Shun Oguri, Lily James and Liv Morgan",
+        "The film premiered at the Toronto International Film Festival"
+      ],
+      "concepts": [],
+      "key_numbers": [],
+      "published_at": "2026-11-26T00:15:00+06:00",
+      "selected_at": "2026-11-26T02:12:23.239226+06:00",
+      "status": "published",
+      "message_id": 1330
     }
   },
   "event_clusters": {
@@ -25010,13 +24932,71 @@
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-11-25T15:40:06.887671+06:00",
+      "last_seen": "2026-11-26T01:49:25.867111+06:00",
       "headline": "‘Bunker’ Trailer: Penélope Cruz & Javier Bardem Clash In Florian Zeller’s Venice Breakout; UK Release Date Set"
+    },
+    "evt_d88da50b3b": {
+      "event_id": "evt_d88da50b3b",
+      "topic": "Release Dates",
+      "region": "Entertainment",
+      "sources": [
+        "disneyplus.com"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-26T01:49:25.867095+06:00",
+      "headline": "Royally Scandalous K-Drama The Remarried Empress Is Now Streaming - Disney Plus"
+    },
+    "evt_db2a592225": {
+      "event_id": "evt_db2a592225",
+      "topic": "New Season Releases",
+      "region": "Entertainment",
+      "sources": [
+        "disneyplus.com"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-26T01:49:25.867106+06:00",
+      "headline": "Percy Jackson and the Olympians Season 3 Is Now Streaming | Explore Disney+ - Disney Plus"
+    },
+    "evt_e2bce7ca13": {
+      "event_id": "evt_e2bce7ca13",
+      "topic": "Release Dates",
+      "region": "Entertainment",
+      "sources": [
+        "Deadline"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-26T01:49:25.867109+06:00",
+      "headline": "‘The Pitt’ Sets Season 3 Premiere Date"
+    },
+    "evt_35ff872260": {
+      "event_id": "evt_35ff872260",
+      "topic": "Release Dates",
+      "region": "Entertainment",
+      "sources": [
+        "Variety"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-26T01:49:25.867114+06:00",
+      "headline": "Dropout’s ‘Very Important People’ Reveals Season 4 Release Date; Adds Ben Schwartz, Kirby Howell-Baptiste and More Guests"
+    },
+    "evt_6c54ffe324": {
+      "event_id": "evt_6c54ffe324",
+      "topic": "Release Dates",
+      "region": "Entertainment",
+      "sources": [
+        "Variety"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-26T01:49:25.867117+06:00",
+      "headline": "Takashi Miike’s ‘Bad Lieutenant: Tokyo’ Sets March 2027 Release Date"
     }
   },
   "posted_event_ids": [
-    "evt_a9222817bf",
-    "evt_6d10214862",
     "evt_40bc35fbed",
     "evt_1875c303e8",
     "evt_2036ffdf2d",
@@ -25514,10 +25494,11 @@
     "evt_9a194406fe",
     "evt_943b838f52",
     "evt_15be58be40",
-    "evt_340e7eb76a"
+    "evt_340e7eb76a",
+    "evt_e2bce7ca13",
+    "evt_6c54ffe324"
   ],
   "recent_titles": [
-    "the revolution against death",
     "tiger tv",
     "the greatest",
     "get lite",
@@ -25917,7 +25898,9 @@
     "ozzy fox",
     "yellowjackets",
     "heal",
-    "namaslay"
+    "namaslay",
+    "the pitt",
+    "bad lieutenant tokyo"
   ],
   "work_memory": {
     "the dog stars": {
@@ -27033,9 +27016,10 @@
       "sector": "Hollywood",
       "first_published_at": "2026-09-12T16:22:47.137949+06:00",
       "published_events": {
-        "New Movie / Series Announcements": "2026-09-12T16:22:47.137955+06:00"
+        "New Movie / Series Announcements": "2026-09-12T16:22:47.137955+06:00",
+        "Release Date Confirmations": "2026-11-26T02:12:17.768614+06:00"
       },
-      "last_published_at": "2026-09-12T16:22:47.137952+06:00"
+      "last_published_at": "2026-11-26T02:12:17.768612+06:00"
     },
     "the retrievals": {
       "title": "The Retrievals",
@@ -34436,6 +34420,15 @@
         "Release Date Confirmations": "2026-11-25T15:41:08.457953+06:00"
       },
       "last_published_at": "2026-11-25T15:41:08.457950+06:00"
+    },
+    "bad lieutenant tokyo": {
+      "title": "Bad Lieutenant: Tokyo",
+      "sector": "International",
+      "first_published_at": "2026-11-26T02:12:23.239272+06:00",
+      "published_events": {
+        "Theatrical Releases / Re-releases": "2026-11-26T02:12:23.239279+06:00"
+      },
+      "last_published_at": "2026-11-26T02:12:23.239276+06:00"
     }
   },
   "publication_fingerprints": [
@@ -45295,16 +45288,38 @@
       "event_key": "Namaslay_Dec15_2026",
       "canonical": "variety.com/2026/film/news/namaslay-sets-streaming-release-date-1236956061",
       "published_at": "2026-11-25T15:41:08.458161+06:00"
+    },
+    {
+      "fingerprint": "the pitt|Release Date Confirmations|holidays have arrived early hbo max has revealed that its critically acclaimed medical drama will its third january 2027 dropped today via instagram account with actors taylor dearden isa briones and gerran howell dressed their characters mel santos and whitaker respectively hbo max medical drama will debut jan jan 2027 hbo max follows frontline doctors pittsburgh trauma medical center explores doctors becoming patients themselves hbo max january 2027",
+      "work_key": "the pitt",
+      "priority_type": "Release Date Confirmations",
+      "headline": "The Pitt",
+      "event_text": "The Pitt The holidays have arrived early, as HBO Max has revealed that its critically acclaimed medical drama, The Pitt, will premiere its third season on January 7, 2027. The news dropped today via the show’s Instagram account, with actors Taylor Dearden, Isa Briones, and Gerran Howell dressed as their characters Mel, Santos, and Whitaker, respectively. The […] HBO Max announced Season 3 of the medical drama will debut on Jan. Season 3 premieres Jan 7, 2027 on HBO Max Series follows frontline doctors at Pittsburgh Trauma Medical Center Season 3 explores doctors becoming patients themselves HBO Max January 7, 2027",
+      "core": "holidays have arrived early hbo max has revealed that its critically acclaimed medical drama will its third january 2027 dropped today via instagram account with actors taylor dearden isa briones and gerran howell dressed their characters mel santos and whitaker respectively hbo max medical drama will debut jan jan 2027 hbo max follows frontline doctors pittsburgh trauma medical center explores doctors becoming patients themselves hbo max january 2027",
+      "event_key": "the_pitt_s3_premiere",
+      "canonical": "deadline.com/2026/11/the-pitt-season-3-premiere-date-1237233493",
+      "published_at": "2026-11-26T02:12:17.768880+06:00"
+    },
+    {
+      "fingerprint": "bad lieutenant tokyo|Theatrical Releases / Re-releases|neon has set the date for takashi miike gritty cop thriller for march 2027 the third installment the cult classic which premiered the toronto international festival stars shun oguri lily james and wwe wrestler liv morgan logline for reads seasoned takashi miike third set for march 2027 neon the march 2027 date stars include shun oguri lily james and liv morgan the premiered the toronto international festival 2027",
+      "work_key": "bad lieutenant tokyo",
+      "priority_type": "Theatrical Releases / Re-releases",
+      "headline": "Bad Lieutenant: Tokyo",
+      "event_text": "Bad Lieutenant: Tokyo Neon has set the theatrical release date for Takashi Miike’s gritty cop thriller “Bad Lieutenant: Tokyo” for March 5, 2027. The third installment in the cult classic series, which premiered at the Toronto International Film Festival, stars Shun Oguri, Lily James and WWE wrestler Liv Morgan. An official logline for “Bad Lieutenant: Tokyo” reads: “Seasoned […] Takashi Miike’s third ‘Bad Lieutenant’ film is set for theatrical release on March 5, 2027. Neon announced the March 5, 2027 release date Stars include Shun Oguri, Lily James and Liv Morgan The film premiered at the Toronto International Film Festival  2027-03-05",
+      "core": "neon has set the date for takashi miike gritty cop thriller for march 2027 the third installment the cult classic which premiered the toronto international festival stars shun oguri lily james and wwe wrestler liv morgan logline for reads seasoned takashi miike third set for march 2027 neon the march 2027 date stars include shun oguri lily james and liv morgan the premiered the toronto international festival 2027",
+      "event_key": "bad_lieutenant_tokyo_release",
+      "canonical": "variety.com/2026/film/news/takashi-miike-bad-lieutenant-tokyo-release-date-neon-1236957562",
+      "published_at": "2026-11-26T02:12:23.239638+06:00"
     }
   ],
   "fresh_start_at": "2026-09-07T13:58:06.173598+06:00",
   "learned_rejections": {
     "sports": {
-      "observations": 236,
+      "observations": 237,
       "low_score_count": 196,
-      "total_score": 11192,
-      "avg_score": 47.4,
-      "last_seen": "2026-11-24T16:45:04.279432+06:00",
+      "total_score": 11272,
+      "avg_score": 47.6,
+      "last_seen": "2026-11-26T01:49:25.835220+06:00",
       "examples": [
         {
           "title": "‘Snoop’: Hercy Miller Will Portray Master P, Zachariah Rogers Is The D.O.C., & Tyquan Givens Set As Original Character In Universal’s Snoop ",
@@ -45435,134 +45450,6 @@
     }
   },
   "score_history": [
-    {
-      "title": "MHz CHoice Becomes New U.S. Home For ‘The Man Who Died’, Finnish Dark Comedy Series From ‘Sherlock & Daughter’ Writer Brendan Foley",
-      "score": 76,
-      "pattern": "",
-      "priority_type": "OTT Platform Acquisition / Streaming Rights",
-      "source": "Deadline",
-      "seen_at": "2026-11-11T22:00:22.959063+06:00"
-    },
-    {
-      "title": "Former NCT Member Lucas Wong Makes Acting Debut in Taiwanese Folk-Music Drama ‘A Time’ With Jerry Yan, Ning Chang at Taiwan Creative Content",
-      "score": 51,
-      "pattern": "",
-      "priority_type": "New Movie / Series Announcements",
-      "source": "Variety",
-      "seen_at": "2026-11-12T04:35:29.827871+06:00"
-    },
-    {
-      "title": "This week Movie Releases: భోగి, ఇట్లు అర్జున, దొంగ నా కొడుకు.. ఇంకా ఈ వారం విడుదలయ్యే సినిమాలు ఇవే! | This Week Movie Releases: Bhogi, Itlu ",
-      "score": 49,
-      "pattern": "",
-      "priority_type": "Theatrical Releases / Re-releases",
-      "source": "telugu.filmibeat.com",
-      "seen_at": "2026-11-12T04:35:29.827978+06:00"
-    },
-    {
-      "title": "Keira Knightley Says ‘It Means Nothing’ When Fans Quote ‘Love Actually’ to Her Because She Hasn’t Watched It Since the Premiere: ‘I Don’t Re",
-      "score": 26,
-      "pattern": "",
-      "priority_type": "New Movie / Series Announcements",
-      "source": "Variety",
-      "seen_at": "2026-11-12T04:35:29.828110+06:00"
-    },
-    {
-      "title": "From a Mockbuster Version of ‘The Odyssey’ to a ‘Jiu-Jitsu Nun’: How Producers Are Keeping the Low-Budget Film Market Alive Via Streaming an",
-      "score": 21,
-      "pattern": "",
-      "priority_type": "New Movie / Series Announcements",
-      "source": "Variety",
-      "seen_at": "2026-11-12T04:35:29.828247+06:00"
-    },
-    {
-      "title": "‘Harry Potter’ Star Paapa Essiedu Says ‘I Don’t Want to Talk About’ J.K. Rowling ‘At All’ but ‘Trans People Have the Right to Be Treated Wit",
-      "score": 22,
-      "pattern": "",
-      "priority_type": "New Movie / Series Announcements",
-      "source": "Variety",
-      "seen_at": "2026-11-12T04:35:29.828384+06:00"
-    },
-    {
-      "title": "From Local to Global: Anshuman Jha & Sarah-Jane Dias On Advocating Animal Rights In ‘Lakadbaggha 2’ & Uniqueness Of Crafting An Indian Actio",
-      "score": 33,
-      "pattern": "",
-      "priority_type": "New Movie / Series Announcements",
-      "source": "Deadline",
-      "seen_at": "2026-11-12T04:35:29.828543+06:00"
-    },
-    {
-      "title": "Amanda Seyfried Joined ‘You Can See Everything’ Without Reps Knowing, Had ‘No Approval’ Over Filming and Got ‘Disrespected’ by Billy Evans: ",
-      "score": 33,
-      "pattern": "",
-      "priority_type": "New Movie / Series Announcements",
-      "source": "Variety",
-      "seen_at": "2026-11-12T04:35:29.828680+06:00"
-    },
-    {
-      "title": "OTT This week: ஜெயிலர் 2 முதல் ரணபாலி' வரை.. இந்த வாரம் ஓடிடியை கலக்க வரும் மாஸ் படங்களின் லிஸ்ட்! | November 12th to November 15th This wee",
-      "score": 63,
-      "pattern": "",
-      "priority_type": "Upcoming OTT Releases",
-      "source": "tamil.filmibeat.com",
-      "seen_at": "2026-11-12T04:35:29.828768+06:00"
-    },
-    {
-      "title": "OTT This week: ஜெயிலர் 2 முதல் ரணபாலி' வரை.. இந்த வாரம் ஓடிடியை கலக்க வரும் மாஸ் படங்களின் லிஸ்ட்! | November 12th to November 15th This wee",
-      "score": 69,
-      "pattern": "",
-      "priority_type": "OTT / Streaming Availability",
-      "source": "tamil.filmibeat.com",
-      "seen_at": "2026-11-12T04:36:23.141779+06:00"
-    },
-    {
-      "title": "Richard Avedon Netflix Documentary Directed By Ron Howard Release Date, Trailer, News - Netflix Tudum",
-      "score": 44,
-      "pattern": "",
-      "priority_type": "OTT / Streaming Availability",
-      "source": "Netflix Tudum",
-      "seen_at": "2026-11-12T04:36:23.142055+06:00"
-    },
-    {
-      "title": "Fox Sets Midseason Dates For ‘Best Medicine,’ ‘The Masked Singer,’ ‘Doc,’ New Drama ‘The Interrogator’ & More",
-      "score": 46,
-      "pattern": "",
-      "priority_type": "Release Date Confirmations",
-      "source": "Deadline",
-      "seen_at": "2026-11-12T04:36:23.142180+06:00"
-    },
-    {
-      "title": "‘Avengers Endgame: Encore’ Sets Disney+ Release Date With New ‘Countdown To Doomsday’ Spot",
-      "score": 89,
-      "pattern": "",
-      "priority_type": "Theatrical Releases / Re-releases",
-      "source": "Deadline",
-      "seen_at": "2026-11-12T04:36:23.142307+06:00"
-    },
-    {
-      "title": "Avengers Endgame Encore Sets Disney+ Streaming Release DAte",
-      "score": 83,
-      "pattern": "",
-      "priority_type": "Theatrical Releases / Re-releases",
-      "source": "Variety",
-      "seen_at": "2026-11-12T04:36:23.142615+06:00"
-    },
-    {
-      "title": "2027 புத்தாண்டுக்கே ரசிகர்களுக்கு ட்ரீட் கொடுக்கும் சிஎம் விஜய்.. இந்த படம் ரீ ரிலிஸ் ஆகுதாம்! | CM Vijay's Bairavaa will re release on New ",
-      "score": 66,
-      "pattern": "",
-      "priority_type": "Theatrical Releases / Re-releases",
-      "source": "tamil.filmibeat.com",
-      "seen_at": "2026-11-12T04:36:23.143196+06:00"
-    },
-    {
-      "title": "Imtiaz Ali's ‘O Saathi Re’, Starring Aditi Rao Hydari, Avinash Tiwary, and Arjun Rampal, Premieres December 4 on Netflix -  About Netflix",
-      "score": 80,
-      "pattern": "",
-      "priority_type": "New Movie / Series Announcements",
-      "source": "about.netflix.com",
-      "seen_at": "2026-11-12T04:36:23.143485+06:00"
-    },
     {
       "title": "'The Age Of Innocence' TV Show Sets Netflix Release Date; First Photos",
       "score": 78,
@@ -49434,18 +49321,146 @@
       "priority_type": "OTT Platform Acquisition / Streaming Rights",
       "source": "Deadline",
       "seen_at": "2026-11-25T15:40:06.859815+06:00"
+    },
+    {
+      "title": "Actor Awards Predictions: Andrew Garfield, Inde Navarrette and ‘The Odyssey’ Lead an Unsettled Film Race as ‘Widow’s Bay’ and HBO Max Could ",
+      "score": 37,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Variety",
+      "seen_at": "2026-11-26T01:48:51.365827+06:00"
+    },
+    {
+      "title": "Done Deal! Netflix Buys Radford Studios For Almost $400M; Streamer Calls Purchase “A Meaningful New Investment In California’s Film Industry",
+      "score": 48,
+      "pattern": "",
+      "priority_type": "OTT Platform Acquisition / Streaming Rights",
+      "source": "Deadline",
+      "seen_at": "2026-11-26T01:48:51.365932+06:00"
+    },
+    {
+      "title": "Royally Scandalous K-Drama The Remarried Empress Is Now Streaming - Disney Plus",
+      "score": 86,
+      "pattern": "",
+      "priority_type": "OTT / Streaming Availability",
+      "source": "disneyplus.com",
+      "seen_at": "2026-11-26T01:49:25.834643+06:00"
+    },
+    {
+      "title": "Percy Jackson and the Olympians Season 3 Is Now Streaming | Explore Disney+ - Disney Plus",
+      "score": 85,
+      "pattern": "",
+      "priority_type": "OTT / Streaming Availability",
+      "source": "disneyplus.com",
+      "seen_at": "2026-11-26T01:49:25.834884+06:00"
+    },
+    {
+      "title": "‘The Pitt’ Sets Season 3 Premiere Date",
+      "score": 83,
+      "pattern": "",
+      "priority_type": "Release Date Confirmations",
+      "source": "Deadline",
+      "seen_at": "2026-11-26T01:49:25.834969+06:00"
+    },
+    {
+      "title": "‘Bunker’ Trailer: Penélope Cruz & Javier Bardem Clash In Florian Zeller’s Venice Breakout; UK Release Date Set",
+      "score": 82,
+      "pattern": "",
+      "priority_type": "Release Date Confirmations",
+      "source": "Deadline",
+      "seen_at": "2026-11-26T01:49:25.835074+06:00"
+    },
+    {
+      "title": "Dropout’s ‘Very Important People’ Reveals Season 4 Release Date; Adds Ben Schwartz, Kirby Howell-Baptiste and More Guests",
+      "score": 80,
+      "pattern": "",
+      "priority_type": "Release Date Confirmations",
+      "source": "Variety",
+      "seen_at": "2026-11-26T01:49:25.835178+06:00"
+    },
+    {
+      "title": "Takashi Miike’s ‘Bad Lieutenant: Tokyo’ Sets March 2027 Release Date",
+      "score": 80,
+      "pattern": "sports",
+      "priority_type": "Theatrical Releases / Re-releases",
+      "source": "Variety",
+      "seen_at": "2026-11-26T01:49:25.835222+06:00"
+    },
+    {
+      "title": "As ‘The Further Mis-Adventures of Cliff Booth’ Opens on Just 200 Imax Screens, Netflix’s Movie Theater Push Is Still Failing Moviegoers",
+      "score": 77,
+      "pattern": "",
+      "priority_type": "Theatrical Releases / Re-releases",
+      "source": "Variety",
+      "seen_at": "2026-11-26T01:49:25.835342+06:00"
+    },
+    {
+      "title": "Netflix Closes $380 Million Acquisition of Radford Studio Center",
+      "score": 43,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Variety",
+      "seen_at": "2026-11-26T01:49:25.835434+06:00"
+    },
+    {
+      "title": "Done Deal! Netflix Buys Radford Studios For Almost $400M; Streamer Calls Purchase “A Meaningful New Investment In California’s Film Industry",
+      "score": 43,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Deadline",
+      "seen_at": "2026-11-26T01:49:25.835539+06:00"
+    },
+    {
+      "title": "How Netflix Became Go-To Source Of Off-Net Revenue & Tune-In Promotion - Deadline",
+      "score": 35,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Deadline",
+      "seen_at": "2026-11-26T01:49:25.835741+06:00"
+    },
+    {
+      "title": "‘The Remarried Empress’ Star Shin Mina On Playing Royalty, Shooting In Europe & Why The Show Is Such A Huge Hit",
+      "score": 35,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Deadline",
+      "seen_at": "2026-11-26T01:49:25.835842+06:00"
+    },
+    {
+      "title": "Indonesia-France Film Lab Unveils Six Projects as Paris Readies First Southeast Asia Co-Production Forum (EXCLUSIVE)",
+      "score": 35,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Variety",
+      "seen_at": "2026-11-26T01:49:25.835944+06:00"
+    },
+    {
+      "title": "NBC Tracking Storm Due To Hit 100th Annual Macy’s Thanksgiving Day Parade: Will Balloons Be Grounded?",
+      "score": 35,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Deadline",
+      "seen_at": "2026-11-26T01:49:25.836044+06:00"
+    },
+    {
+      "title": "Kelly Rowland Joins Hulu’s ‘Reasonable Doubt’ For Season 5",
+      "score": 35,
+      "pattern": "",
+      "priority_type": "Season Renewals / New Season Updates",
+      "source": "Deadline",
+      "seen_at": "2026-11-26T01:49:25.836136+06:00"
     }
   ],
   "adaptive_metrics": {
-    "raw_discovered": 29,
-    "pre_cerebras_rejected": 28035,
-    "hard_rejected": 9815,
+    "raw_discovered": 33,
+    "pre_cerebras_rejected": 28165,
+    "hard_rejected": 9869,
     "duplicate_rejected": 214,
-    "learned_rejected": 18006,
-    "passed_to_cerebras": 4661,
-    "cerebras_ranked": 11085,
-    "published": 989,
-    "estimated_candidates_avoided": 28035
+    "learned_rejected": 18082,
+    "passed_to_cerebras": 4668,
+    "cerebras_ranked": 11099,
+    "published": 991,
+    "estimated_candidates_avoided": 28165
   },
   "source_quality": {
     "collider.com": {
@@ -49477,11 +49492,11 @@
       "last_seen": "2026-09-08T11:49:09.577970+06:00"
     },
     "deadline.com": {
-      "observations": 5099,
-      "low_score_count": 4136,
-      "total_score": 257780,
+      "observations": 5106,
+      "low_score_count": 4141,
+      "total_score": 258128,
       "avg_score": 50.6,
-      "last_seen": "2026-11-25T15:40:06.859921+06:00"
+      "last_seen": "2026-11-26T01:49:25.836232+06:00"
     },
     "thewrap.com": {
       "observations": 16,
@@ -49498,11 +49513,11 @@
       "last_seen": "2026-09-08T21:05:13.366232+06:00"
     },
     "variety.com": {
-      "observations": 5353,
-      "low_score_count": 4422,
-      "total_score": 255100,
+      "observations": 5358,
+      "low_score_count": 4425,
+      "total_score": 255415,
       "avg_score": 47.7,
-      "last_seen": "2026-11-25T15:40:06.859916+06:00"
+      "last_seen": "2026-11-26T01:49:25.836222+06:00"
     },
     "indiewire.com": {
       "observations": 10,
@@ -49575,11 +49590,11 @@
       "last_seen": "2026-11-12T04:36:23.144686+06:00"
     },
     "disneyplus.com": {
-      "observations": 9,
+      "observations": 11,
       "low_score_count": 4,
-      "total_score": 501,
-      "avg_score": 55.7,
-      "last_seen": "2026-11-20T14:12:53.135916+06:00"
+      "total_score": 672,
+      "avg_score": 61.1,
+      "last_seen": "2026-11-26T01:49:25.836166+06:00"
     },
     "blog.asianwiki.com": {
       "observations": 1,
@@ -49619,7 +49634,7 @@
   },
   "category_coverage": {
     "Major Film Announcements": "2026-11-06T22:18:20.099531+06:00",
-    "Release Dates": "2026-11-25T15:41:08.458178+06:00",
+    "Release Dates": "2026-11-26T02:12:23.239658+06:00",
     "Studio Business": "2026-10-24T20:35:57.113797+06:00",
     "Streaming Platform News": "2026-11-06T22:17:44.559012+06:00",
     "Franchises and IP": "2026-11-06T22:17:34.555229+06:00",
