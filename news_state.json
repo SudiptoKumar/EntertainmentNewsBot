@@ -1,200 +1,152 @@
 {
   "feeds": {
     "https://deadline.com/feed/": {
-      "etag": "W/\"0cca2beb7a8ad1a9f10152c30f81f71b\"",
-      "last_modified": "Thu, 26 Nov 2026 09:11:16 GMT",
-      "last_checked": "2026-11-26T15:14:18.423089+06:00",
+      "etag": "W/\"8dd7e6d390f4087a038869b6049300bc\"",
+      "last_modified": "Thu, 26 Nov 2026 19:04:43 GMT",
+      "last_checked": "2026-11-27T01:27:13.181518+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://variety.com/feed/": {
-      "etag": "W/\"1ed3ea7811228d655dc492fbf49e630e\"",
-      "last_modified": "Thu, 26 Nov 2026 09:11:47 GMT",
-      "last_checked": "2026-11-26T15:14:19.883082+06:00",
+      "etag": "W/\"c1729d834ec76dc27c9cd00f21eb5478\"",
+      "last_modified": "Thu, 26 Nov 2026 19:02:31 GMT",
+      "last_checked": "2026-11-27T01:27:14.488246+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.hollywoodreporter.com/feed/": {
-      "etag": "W/\"ffe0df725ebf2438d13736b33111688e\"",
-      "last_modified": "Thu, 26 Nov 2026 09:04:55 GMT",
-      "last_checked": "2026-11-26T15:14:21.733818+06:00",
+      "etag": "W/\"a2220e4cb3e11e642975d342adb86c21\"",
+      "last_modified": "Thu, 26 Nov 2026 18:40:36 GMT",
+      "last_checked": "2026-11-27T01:27:15.635848+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.thewrap.com/feed/": {
-      "etag": "\"a5a10eda49b5a968945826a52a807324\"",
-      "last_modified": "Thu, 26 Nov 2026 06:37:20 GMT",
-      "last_checked": "2026-11-26T15:14:22.541242+06:00",
+      "etag": "\"be413a949a98da4b62ba6902a23975a3\"",
+      "last_modified": "Thu, 26 Nov 2026 19:14:47 GMT",
+      "last_checked": "2026-11-27T01:27:16.756101+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.indiewire.com/feed/": {
-      "etag": "W/\"a49c620d0a2f11ca899b87457c6af48e\"",
-      "last_modified": "Thu, 26 Nov 2026 00:00:15 GMT",
-      "last_checked": "2026-11-26T15:14:23.725108+06:00",
+      "etag": "W/\"ae8104915d4456f09ff72bfa975f5ff1\"",
+      "last_modified": "Thu, 26 Nov 2026 19:00:16 GMT",
+      "last_checked": "2026-11-27T01:27:17.487129+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://collider.com/feed/": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-26T15:14:25.363368+06:00",
+      "last_checked": "2026-11-27T01:27:18.747139+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://tvline.com/feed/": {
-      "etag": "\"94c2b78606d92f371f53f73cd70be896\"",
-      "last_modified": "Thu, 26 Nov 2026 02:00:00 GMT",
-      "last_checked": "2026-11-26T15:14:26.422496+06:00",
+      "etag": "\"8d26897e77b935215b00e56aa3f0a5e8\"",
+      "last_modified": "Thu, 26 Nov 2026 19:01:39 GMT",
+      "last_checked": "2026-11-27T01:27:19.465301+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.ottplay.com/rss": {
       "etag": "\"b5496c89c58ff0f5d07d64a68d4efe07\"",
       "last_modified": "Thu, 27 May 2021 12:38:49 GMT",
-      "last_checked": "2026-11-26T15:14:28.906169+06:00",
+      "last_checked": "2026-11-27T01:27:21.884617+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.filmibeat.com/rss/feeds/filmibeat-news.xml": {
       "etag": null,
-      "last_modified": "Thu, 26 Nov 2026 09:14:29 GMT",
-      "last_checked": "2026-11-26T15:14:29.431932+06:00",
+      "last_modified": "Thu, 26 Nov 2026 19:25:55 GMT",
+      "last_checked": "2026-11-27T01:27:22.261673+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.pinkvilla.com/rss": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-26T15:14:30.230127+06:00",
+      "last_checked": "2026-11-27T01:27:23.209089+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.bollywoodhungama.com/feed/": {
-      "etag": "\"abc900ed728b6eabdb82804020a0f7c0\"",
-      "last_modified": "Thu, 26 Nov 2026 08:49:26 GMT",
-      "last_checked": "2026-11-26T15:14:30.535624+06:00",
+      "etag": "\"d975c05c6aa8f026d1c36abb1d6e7326\"",
+      "last_modified": "Thu, 26 Nov 2026 18:33:48 GMT",
+      "last_checked": "2026-11-27T01:27:23.423484+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.gadgets360.com/entertainment/rss": {
-      "last_checked": "2026-11-26T15:14:32.162455+06:00",
-      "fail_count": 257,
+      "last_checked": "2026-11-27T01:27:25.030422+06:00",
+      "fail_count": 258,
       "alerted": true
     },
     "https://www.soompi.com/feed": {
-      "etag": "W/\"6b5c4d35bfa577287e67930adc7b35ed\"",
-      "last_modified": "Thu, 26 Nov 2026 08:42:45 GMT",
-      "last_checked": "2026-11-26T15:14:32.375225+06:00",
+      "etag": "W/\"cee1f54c30b27ae82005cbb4a81a23f2\"",
+      "last_modified": "Thu, 26 Nov 2026 15:30:45 GMT",
+      "last_checked": "2026-11-27T01:27:25.265533+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.whats-on-netflix.com/feed/": {
       "etag": null,
-      "last_modified": "Wed, 25 Nov 2026 22:25:11 GMT",
-      "last_checked": "2026-11-26T15:14:35.815596+06:00",
+      "last_modified": "Thu, 26 Nov 2026 16:29:53 GMT",
+      "last_checked": "2026-11-27T01:27:27.459591+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.netflix.com/tudum/rss.xml": {
-      "last_checked": "2026-11-26T15:14:38.265284+06:00",
-      "fail_count": 257,
+      "last_checked": "2026-11-27T01:27:29.599020+06:00",
+      "fail_count": 258,
       "alerted": true
     },
     "https://press.wbd.com/us/en/rss": {
-      "last_checked": "2026-11-26T15:14:38.608377+06:00",
-      "fail_count": 257,
+      "last_checked": "2026-11-27T01:27:29.993552+06:00",
+      "fail_count": 258,
       "alerted": true
     },
     "https://www.apple.com/tv-pr/newsroom/feed/": {
-      "last_checked": "2026-11-26T15:14:39.428396+06:00",
-      "fail_count": 257,
+      "last_checked": "2026-11-27T01:27:30.503395+06:00",
+      "fail_count": 258,
       "alerted": true
     },
     "https://www.aboutamazon.com/rss": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-26T15:14:39.604318+06:00",
+      "last_checked": "2026-11-27T01:27:30.656488+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.marvel.com/articles/feed": {
-      "last_checked": "2026-11-26T15:14:40.376524+06:00",
-      "fail_count": 257,
+      "last_checked": "2026-11-27T01:27:31.022659+06:00",
+      "fail_count": 258,
       "alerted": true
     },
     "https://www.dc.com/blog/rss.xml": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-26T15:14:41.130369+06:00",
-      "fail_count": 1,
+      "last_checked": "2026-11-27T01:27:32.803904+06:00",
+      "fail_count": 2,
       "alerted": false
     },
     "https://www.sonypictures.com/rss": {
-      "last_checked": "2026-11-26T15:14:41.615699+06:00",
-      "fail_count": 257,
+      "last_checked": "2026-11-27T01:27:33.227686+06:00",
+      "fail_count": 258,
       "alerted": true
     },
     "https://www.paramount.com/rss": {
-      "last_checked": "2026-11-26T15:14:41.822914+06:00",
-      "fail_count": 257,
+      "last_checked": "2026-11-27T01:27:33.311636+06:00",
+      "fail_count": 258,
       "alerted": true
     },
     "https://www.universalpictures.com/rss": {
-      "last_checked": "2026-11-26T15:14:42.231113+06:00",
-      "fail_count": 257,
+      "last_checked": "2026-11-27T01:27:33.700128+06:00",
+      "fail_count": 258,
       "alerted": true
     }
   },
   "queue": {
-    "deadline.com/2026/11/kaitlan-collins-real-time-absence-white-house-press-conference-1237231015": {
-      "title": "Kaitlan Collins Notes ‘Real Time’ Absence Was Due To White House Press Conference",
-      "url": "https://deadline.com/2026/11/kaitlan-collins-real-time-absence-white-house-press-conference-1237231015/",
-      "canonical": "deadline.com/2026/11/kaitlan-collins-real-time-absence-white-house-press-conference-1237231015",
-      "published_dt": "2026-11-22T03:54:04+06:00",
-      "published_date": "2026-11-22T03:54:04+06:00",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "excerpt": "The Season 24 finale of Real Time with Bill Maher featured a last-minute guest change as Kaitlan Collins was held up in Washington DC. Although she was scheduled to appear on the HBO talk show alongside newly elected Texas Democratic congressman Bobby Pulido, the CNN anchor explained she was covering a White House press conference […]",
-      "image": "https://deadline.com/wp-content/uploads/2026/11/GettyImages-2295827851.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-11-22T04:04:01.460472+06:00",
-      "last_seen": "2026-11-22T22:01:26.797255+06:00",
-      "importance_score": 40,
-      "priority_type": "New Movie / Series Announcements",
-      "priority_tier": 2,
-      "priority_rank": 6,
-      "sector": "Hollywood",
-      "rank_reason": "The story reports a last‑minute guest change on a talk‑show; it does not announce a new release, so the overall score stays well below the publishable threshold.",
-      "last_ranked_at": "2026-11-22T22:01:58.049447+06:00",
-      "learning_pattern": ""
-    },
-    "deadline.com/2026/11/luca-guadagnino-artificial-interview-sam-altman-openai-1237230964": {
-      "title": "‘Artificial’ Filmmaker Luca Guadagnino On Whether AI Is Humanity’s Doomsday & Sam Altman’s Arsenal – Crew Call Podcast",
-      "url": "https://deadline.com/2026/11/luca-guadagnino-artificial-interview-sam-altman-openai-1237230964/",
-      "canonical": "deadline.com/2026/11/luca-guadagnino-artificial-interview-sam-altman-openai-1237230964",
-      "published_dt": "2026-11-22T02:45:59+06:00",
-      "published_date": "2026-11-22T02:45:59+06:00",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "excerpt": "Unlike Sony’s recent theatrical release of The Social Reckoning, which arguably didn’t resonate with the current tech era we’re living in, Neon is unwrapping Luca Guadagnino’s Artificial about Open AI co-founders Sam Altman, Ilya Sutskever and Elon Musk at a time when we fear the technology will end us. Now whether that’s in regards to […]",
-      "image": "https://deadline.com/wp-content/uploads/2026/11/GettyImages-2299206209.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-11-22T04:04:01.609102+06:00",
-      "last_seen": "2026-11-22T22:01:26.950038+06:00",
-      "importance_score": 35,
-      "priority_type": "New Movie / Series Announcements",
-      "priority_tier": 2,
-      "priority_rank": 6,
-      "sector": "Hollywood",
-      "rank_reason": "The piece is a podcast interview about an upcoming film but provides no release date or platform details, so it cannot be treated as a release announcement.",
-      "last_ranked_at": "2026-11-22T22:01:58.049686+06:00",
-      "learning_pattern": ""
-    },
     "deadline.com/2026/11/robert-eggers-eager-move-away-horror-genre-1237231196": {
       "title": "Robert Eggers Is “Eager” To Move Away From Horror Genre: “I Think I Need A Break”",
       "url": "https://deadline.com/2026/11/robert-eggers-eager-move-away-horror-genre-1237231196/",
@@ -885,13 +837,13 @@
       "status": "pending",
       "first_seen": "2026-11-26T01:49:18.860244+06:00",
       "last_seen": "2026-11-26T01:49:18.860268+06:00",
-      "importance_score": 95,
+      "importance_score": 87,
       "priority_type": "OTT / Streaming Availability",
       "priority_tier": 1,
       "priority_rank": 1,
       "sector": "International",
-      "rank_reason": "The K‑drama is now available for streaming on major OTT platforms, confirming a release window and offering strong international relevance.",
-      "last_ranked_at": "2026-11-26T15:14:55.301202+06:00",
+      "rank_reason": "Official Disney+ announcement that the K‑drama is now streaming, high platform strength and global interest.",
+      "last_ranked_at": "2026-11-27T01:27:43.091242+06:00",
       "learning_pattern": ""
     },
     "deadline.com/2026/11/netflix-cancels-amsterdam-empire-famke-janssen-holland-1237233284": {
@@ -909,13 +861,13 @@
       "status": "pending",
       "first_seen": "2026-11-26T15:14:18.581527+06:00",
       "last_seen": "2026-11-26T15:14:18.581534+06:00",
-      "importance_score": 35,
+      "importance_score": 61,
       "priority_type": "New Movie / Series Announcements",
       "priority_tier": 2,
       "priority_rank": 6,
       "sector": "Hollywood",
-      "rank_reason": "Cancellation announcement lacks a new release date, so score remains below publishable threshold.",
-      "last_ranked_at": "2026-11-26T15:14:55.301788+06:00",
+      "rank_reason": "Cancellation news, no new release; scores kept below publishable threshold.",
+      "last_ranked_at": "2026-11-27T01:27:43.091609+06:00",
       "learning_pattern": ""
     },
     "deadline.com/2026/11/lauren-ash-mae-martin-dirts-shozer-comedy-1237232683": {
@@ -933,13 +885,13 @@
       "status": "pending",
       "first_seen": "2026-11-26T15:14:18.735954+06:00",
       "last_seen": "2026-11-26T15:14:18.735964+06:00",
-      "importance_score": 35,
+      "importance_score": 55,
       "priority_type": "New Movie / Series Announcements",
       "priority_tier": 2,
       "priority_rank": 6,
       "sector": "Hollywood",
-      "rank_reason": "Only casting information; no release window provided, keeping total score low.",
-      "last_ranked_at": "2026-11-26T15:14:55.301914+06:00",
+      "rank_reason": "Cast announcement without confirmed release date; low release relevance.",
+      "last_ranked_at": "2026-11-27T01:27:43.091699+06:00",
       "learning_pattern": ""
     },
     "deadline.com/2026/11/constance-wang-the-altruists-very-stereotypical-racist-1237233708": {
@@ -957,13 +909,13 @@
       "status": "pending",
       "first_seen": "2026-11-26T15:14:19.621265+06:00",
       "last_seen": "2026-11-26T15:14:19.621273+06:00",
-      "importance_score": 35,
+      "importance_score": 45,
       "priority_type": "New Movie / Series Announcements",
       "priority_tier": 2,
       "priority_rank": 6,
       "sector": "Hollywood",
-      "rank_reason": "Controversy article lacking any release information; score stays low.",
-      "last_ranked_at": "2026-11-26T15:14:55.302051+06:00",
+      "rank_reason": "Controversy piece without release announcement; kept below publishable threshold.",
+      "last_ranked_at": "2026-11-27T01:27:43.091906+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/tv/news/jiostar-star-plus-colors-mtv-india-fubo-us-1236958804": {
@@ -1006,14 +958,39 @@
       "status": "pending",
       "first_seen": "2026-11-26T15:14:21.267592+06:00",
       "last_seen": "2026-11-26T15:14:21.267602+06:00",
-      "importance_score": 35,
-      "priority_type": "Season Renewals / New Season Updates",
+      "importance_score": 51,
+      "priority_type": "New Movie / Series Announcements",
       "priority_tier": 2,
-      "priority_rank": 7,
+      "priority_rank": 6,
       "sector": "Hollywood",
-      "rank_reason": "Episode recap without a release schedule; score remains under publishable threshold.",
-      "last_ranked_at": "2026-11-26T15:14:55.302485+06:00",
+      "rank_reason": "Episode recap, no new release window; scores reflect limited publishable value.",
+      "last_ranked_at": "2026-11-27T01:27:43.091799+06:00",
       "learning_pattern": ""
+    },
+    "deadline.com/2026/11/netflix-thanksgiving-message-hunting-wives-season-2-1237234078": {
+      "title": "Netflix Posts Racy Thanksgiving Message On ‘The Hunting Wives’ Season 2 Premiere Day",
+      "url": "https://deadline.com/2026/11/netflix-thanksgiving-message-hunting-wives-season-2-1237234078/",
+      "canonical": "deadline.com/2026/11/netflix-thanksgiving-message-hunting-wives-season-2-1237234078",
+      "published_dt": "2026-11-26T23:44:07+06:00",
+      "published_date": "2026-11-26T23:44:07+06:00",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "excerpt": "Netflix welcomed Thanksgiving with a racy message on X this morning. With The Hunting Wives Season 2 landing on the streamer today, Netflix posted a clip of leads Brittany Snow and Malin Åkerman in bed together overlaid with the message “this thanksgiving plate.” In the short clip, the pair say “I love you” to each […]",
+      "image": "https://deadline.com/wp-content/uploads/2026/10/The_Hunting_Wives_n_S2_E5_00_08_39_10RC_C.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "posted",
+      "first_seen": "2026-11-27T01:27:13.406620+06:00",
+      "last_seen": "2026-11-27T01:27:13.406637+06:00",
+      "importance_score": 85,
+      "priority_type": "Release Date Confirmations",
+      "priority_tier": 1,
+      "priority_rank": 4,
+      "sector": "Hollywood",
+      "rank_reason": "Season 2 lands on Netflix today with confirmed release date, strong audience anticipation and platform impact.",
+      "last_ranked_at": "2026-11-27T01:27:43.091512+06:00",
+      "learning_pattern": "",
+      "posted_at": "2026-11-27T01:34:10.574566+06:00"
     }
   },
   "events": {
@@ -1167,31 +1144,6 @@
       "status": "published",
       "message_id": 1266
     },
-    "bowie_immersive_berlin_premiere": {
-      "event_id": "bowie_immersive_berlin_premiere",
-      "canonical_url": "deadline.com/2026/10/brett-morgen-david-bowie-immersive-concert-berlin-1237205735",
-      "original_url": "https://deadline.com/2026/10/brett-morgen-david-bowie-immersive-concert-berlin-1237205735/",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "Berlin Film Festival",
-      "event_cluster_id": "evt_1136af9213",
-      "event_confidence": 1.0,
-      "event_source_count": 2,
-      "headline": "David Bowie “Stage”",
-      "summary": "Brett Morgen’s immersive David Bowie concert experience will world‑premiere at the Berlinale in February 2027.",
-      "highlights": [
-        "World premiere scheduled for Feb 14 2027 at Berlin’s 17,000‑seat Uber Arena",
-        "Features restored 1978 Isolar II tour footage with 7.1 surround and spatial audio",
-        "Created in collaboration with the David Bowie Estate and Wonderworld"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-27T17:00:00+06:00",
-      "selected_at": "2026-10-27T19:07:30.879188+06:00",
-      "status": "published",
-      "message_id": 1122
-    },
     "the_kitchen_special_episode_return": {
       "event_id": "the_kitchen_special_episode_return",
       "canonical_url": "deadline.com/2026/10/the-kitchen-food-network-date-special-episode-1237206795",
@@ -1217,31 +1169,6 @@
       "status": "published",
       "message_id": 1129
     },
-    "barbara_forever_documentary": {
-      "event_id": "barbara_forever_documentary",
-      "canonical_url": "variety.com/2026/film/global/barbara-forever-brydie-oconnor-queer-christine-vachon-1236930304",
-      "original_url": "https://variety.com/2026/film/global/barbara-forever-brydie-oconnor-queer-christine-vachon-1236930304/",
-      "source": "Variety",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "Variety",
-      "event_cluster_id": "evt_0687a8262e",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Barbara Forever",
-      "summary": "Documentary director Brydie O’Connor discusses the new film about lesbian filmmaker Barbara Hammer.",
-      "highlights": [
-        "Screened at Sundance and Berlinale",
-        "Set for Ji.hlava International Documentary Film Festival",
-        "Produced by A Space Time Films, Killer Films and Kartemquin with support from Kristen Stewart and Christine Vachon"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-27T17:45:00+06:00",
-      "selected_at": "2026-10-28T13:11:39.952375+06:00",
-      "status": "published",
-      "message_id": 1130
-    },
     "hasan_piker_lawsuit": {
       "event_id": "hasan_piker_lawsuit",
       "canonical_url": "variety.com/2026/politics/news/hasan-piker-scott-jennings-lynching-quote-suit-1236932558",
@@ -1265,278 +1192,6 @@
       "selected_at": "2026-10-28T13:11:45.106044+06:00",
       "status": "published",
       "message_id": 1131
-    },
-    "lilly_wachowski_boards_making_a_bridesmaid": {
-      "event_id": "lilly_wachowski_boards_making_a_bridesmaid",
-      "canonical_url": "deadline.com/2026/10/lilly-wachowski-joins-comedy-making-a-bridesmaid-afm-sales-1237206395",
-      "original_url": "https://deadline.com/2026/10/lilly-wachowski-joins-comedy-making-a-bridesmaid-afm-sales-1237206395/",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "Deadline",
-      "event_cluster_id": "evt_0ce6966d7e",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Making A Bridesmaid",
-      "summary": "Lilly Wachowski joins writer‑director Molly Ratermann’s comedy as executive producer as the film heads to AFM for worldwide sales.",
-      "highlights": [
-        "Wachowski’s production company Anarchists United is attached as EP",
-        "Film will launch sales via Finn Bruce and Belstone Pictures at the American Film Market",
-        "Post‑production is complete and a festival run is planned"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-28T01:03:35+06:00",
-      "selected_at": "2026-10-28T13:11:50.420893+06:00",
-      "status": "published",
-      "message_id": 1132
-    },
-    "the_birds_hbo_limited_series": {
-      "event_id": "the_birds_hbo_limited_series",
-      "canonical_url": "variety.com/2026/tv/news/the-birds-reboot-sarah-snook-hbo-series-hitchcock-1236932282",
-      "original_url": "https://variety.com/2026/tv/news/the-birds-reboot-sarah-snook-hbo-series-hitchcock-1236932282/",
-      "source": "Variety",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "Variety",
-      "event_cluster_id": "evt_e61c7830ae",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "The Birds",
-      "summary": "HBO is developing a limited‑series reboot of Hitchcock’s The Birds starring Sarah Snook.",
-      "highlights": [
-        "Sarah Snook will star and executive‑produce the series",
-        "Tom Spezialy wrote the pilot and will also executive‑produce",
-        "The project is a co‑production between HBO and Universal Global Television"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-28T01:01:35+06:00",
-      "selected_at": "2026-10-28T13:11:55.558088+06:00",
-      "status": "published",
-      "message_id": 1133
-    },
-    "nobody_wants_this_season_3_viewership": {
-      "event_id": "nobody_wants_this_season_3_viewership",
-      "canonical_url": "variety.com/2026/tv/news/nobody-wants-this-season-3-ratings-netflix-views-1236932276",
-      "original_url": "https://variety.com/2026/tv/news/nobody-wants-this-season-3-ratings-netflix-views-1236932276/",
-      "source": "Variety",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "Variety",
-      "event_cluster_id": "evt_d15e6fb3da",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Nobody Wants This",
-      "summary": "Season 3 logged 6.2 million views in its first four days on Netflix.",
-      "highlights": [
-        "Second‑most‑watched TV title on Netflix for the week of Oct 19‑25",
-        "Largest opening weekend for a returning comedy series on Netflix in 2026"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-28T01:10:09+06:00",
-      "selected_at": "2026-10-28T13:12:00.687041+06:00",
-      "status": "published",
-      "message_id": 1134
-    },
-    "noah_wyle_sexiest_man_alive": {
-      "event_id": "noah_wyle_sexiest_man_alive",
-      "canonical_url": "variety.com/2026/tv/news/noah-wyle-people-2026-sexiest-man-alive-1236931645",
-      "original_url": "https://variety.com/2026/tv/news/noah-wyle-people-2026-sexiest-man-alive-1236931645/",
-      "source": "Variety",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "Variety",
-      "event_cluster_id": "evt_2635541a7d",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Noah Wyle",
-      "summary": "Noah Wyle named People’s Sexiest Man Alive for 2026.",
-      "highlights": [
-        "First time winning the title",
-        "Award follows his recent Golden Globe and Emmy wins for HBO’s The Pitt"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-27T16:08:39+06:00",
-      "selected_at": "2026-10-28T13:12:05.688649+06:00",
-      "status": "published",
-      "message_id": 1135
-    },
-    "david_bowie_immersive_experience_premiere": {
-      "event_id": "david_bowie_immersive_experience_premiere",
-      "canonical_url": "variety.com/2026/film/global/david-bowie-immersive-concert-experience-stage-berlin-1236931930",
-      "original_url": "https://variety.com/2026/film/global/david-bowie-immersive-concert-experience-stage-berlin-1236931930/",
-      "source": "Variety",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "Berlin Film Festival",
-      "event_cluster_id": "evt_ce4173bbd5",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Stage",
-      "summary": "David Bowie immersive concert experience ‘Stage’ will world premiere at Berlin’s Uber Arena during the Berlinale.",
-      "highlights": [
-        "Premiere set for Feb. 14 at Berlin Film Festival",
-        "Features restored 1978 Isolar II footage with 7.1 surround sound",
-        "Created by Brett Morgen with lighting designer Patrick Woodroffe"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-27T17:00:00+06:00",
-      "selected_at": "2026-10-28T13:12:11.491376+06:00",
-      "status": "published",
-      "message_id": 1136
-    },
-    "bafta_new_chair_announcement": {
-      "event_id": "bafta_new_chair_announcement",
-      "canonical_url": "deadline.com/2026/10/bafta-names-hilary-rosen-chair-uktv-sara-putt-1237206009",
-      "original_url": "https://deadline.com/2026/10/bafta-names-hilary-rosen-chair-uktv-sara-putt-1237206009/",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "Deadline",
-      "event_cluster_id": "evt_aecd29963b",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "BAFTA",
-      "summary": "UKTV commissioning boss Hilary Rosen will become the new chair of BAFTA, succeeding Sara Putt.",
-      "highlights": [
-        "Hilary Rosen, current Deputy Chair, appointed as BAFTA Chair",
-        "Sara Putt’s three‑year term ends",
-        "New committee chairs named for Games, Television, LIT and Governance"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-27T15:35:13+06:00",
-      "selected_at": "2026-10-28T13:12:16.267664+06:00",
-      "status": "published",
-      "message_id": 1137
-    },
-    "dirty_towel_film_wrap": {
-      "event_id": "dirty_towel_film_wrap",
-      "canonical_url": "deadline.com/2026/10/emma-parks-peyton-elizabeth-lee-conor-sherry-star-dirty-towel-1237206375",
-      "original_url": "https://deadline.com/2026/10/emma-parks-peyton-elizabeth-lee-conor-sherry-star-dirty-towel-1237206375/",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "Deadline",
-      "event_cluster_id": "evt_10caf5cb47",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Dirty Towel",
-      "summary": "Indie coming‑of‑age feature ‘Dirty Towel’ has finished principal photography.",
-      "highlights": [
-        "Wrap on principal photography completed",
-        "Feature expands award‑winning 2024 Tribeca short",
-        "Crew was over 77% women, including an all‑female above‑the‑line team"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-28T00:42:46+06:00",
-      "selected_at": "2026-10-28T13:12:26.094390+06:00",
-      "status": "published",
-      "message_id": 1139
-    },
-    "fear_factor_vertical_scripted_series": {
-      "event_id": "fear_factor_vertical_scripted_series",
-      "canonical_url": "variety.com/2026/tv/news/fear-factor-microdrama-fox-my-drama-holywater-endemol-1236932245",
-      "original_url": "https://variety.com/2026/tv/news/fear-factor-microdrama-fox-my-drama-holywater-endemol-1236932245/",
-      "source": "Variety",
-      "region": "Entertainment",
-      "topic": "Franchises and IP",
-      "institution": "Variety",
-      "event_cluster_id": "evt_ada7a41897",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Fear Factor",
-      "summary": "Fox and Endemol Shine are adapting Fear Factor into a scripted micro‑drama series for the My Drama app.",
-      "highlights": [
-        "30 episodes of three minutes each",
-        "Distributed via Holywater Tech’s My Drama app",
-        "Produced by Ian Nsenga and Yuliia Vyshnevska"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-28T00:39:55+06:00",
-      "selected_at": "2026-10-28T13:12:30.986210+06:00",
-      "status": "published",
-      "message_id": 1140
-    },
-    "kevin_delaney_nbc_news_head_of_digital": {
-      "event_id": "kevin_delaney_nbc_news_head_of_digital",
-      "canonical_url": "variety.com/2026/tv/news/kevin-delaney-nbc-news-digital-content-and-subscription-1236932202",
-      "original_url": "https://variety.com/2026/tv/news/kevin-delaney-nbc-news-digital-content-and-subscription-1236932202/",
-      "source": "Variety",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "Variety",
-      "event_cluster_id": "evt_b479489d14",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Kevin Delaney",
-      "summary": "Kevin Delaney has been appointed head of digital content and subscription at NBC News.",
-      "highlights": [
-        "Delaney will oversee digital publishing and AI initiatives at NBC News",
-        "He starts the role on November 16",
-        "NBC News recently expanded its streaming outlet NBC News Now and launched a mobile subscription product"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-28T00:35:00+06:00",
-      "selected_at": "2026-10-28T13:12:36.686178+06:00",
-      "status": "published",
-      "message_id": 1141
-    },
-    "tokyo_vice_producer_calls_for_incentive_changes": {
-      "event_id": "tokyo_vice_producer_calls_for_incentive_changes",
-      "canonical_url": "deadline.com/2026/10/japan-incentives-scheme-netflix-tokyo-vice-toho-tombo-1237205993",
-      "original_url": "https://deadline.com/2026/10/japan-incentives-scheme-netflix-tokyo-vice-toho-tombo-1237205993/",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "Deadline",
-      "event_cluster_id": "evt_3327893b64",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Japan IP360 incentive scheme",
-      "summary": "Producers suggest lowering the $5M spend threshold and adding automatic approvals to make Japan’s IP360 incentives more accessible.",
-      "highlights": [
-        "Current minimum spend of $5M limits indie and co‑production projects",
-        "Producers call for consistent, certain criteria and a two‑year application window",
-        "Netflix exec stresses equal support for local and foreign productions"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-27T15:39:28+06:00",
-      "selected_at": "2026-10-28T13:12:41.808036+06:00",
-      "status": "published",
-      "message_id": 1142
-    },
-    "netflix_awol_acquisition": {
-      "event_id": "netflix_awol_acquisition",
-      "canonical_url": "deadline.com/2026/10/netflix-awol-series-goldstein-daley-1237206277",
-      "original_url": "https://deadline.com/2026/10/netflix-awol-series-goldstein-daley-1237206277/",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "topic": "Acquisitions and Mergers",
-      "institution": "Deadline",
-      "event_cluster_id": "evt_9ac8e88532",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "AWOL",
-      "summary": "Netflix has acquired the hour‑long dramedy series AWOL from Craig Rowin, John Francis Daley and Jonathan Goldstein.",
-      "highlights": [
-        "Netflix snapped up the series package in a competitive deal",
-        "Series will be scripted by Emmy‑nominated writer Craig Rowin and produced by Daley & Goldstein’s GoldDay Productions"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-28T01:15:00+06:00",
-      "selected_at": "2026-10-28T13:12:51.352935+06:00",
-      "status": "published",
-      "message_id": 1144
     },
     "klara_and_the_sun_box_office": {
       "event_id": "klara_and_the_sun_box_office",
@@ -1562,31 +1217,6 @@
       "selected_at": "2026-10-28T13:12:56.136394+06:00",
       "status": "published",
       "message_id": 1145
-    },
-    "patagonia_series_premiere": {
-      "event_id": "patagonia_series_premiere",
-      "canonical_url": "variety.com/2026/film/global/itziar-ituno-movistar-latin-america-patagonia-eco-thriller-1236931263",
-      "original_url": "https://variety.com/2026/film/global/itziar-ituno-movistar-latin-america-patagonia-eco-thriller-1236931263/",
-      "source": "Variety",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "Movistar Plus",
-      "event_cluster_id": "evt_555f2a392b",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Patagonia",
-      "summary": "Eco‑thriller series starring Itziar Ituño premieres in Cádiz and will launch on Movistar Plus in January 2027.",
-      "highlights": [
-        "World premiere at the South International Series Festival in Cádiz",
-        "Six‑episode series starring Money Heist star Itziar Ituño",
-        "Set for release on Movistar Plus in January 2027"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-28T00:09:44+06:00",
-      "selected_at": "2026-10-28T20:06:19.040938+06:00",
-      "status": "published",
-      "message_id": 1146
     },
     "fyseefalleditshowcase": {
       "event_id": "fyseefalleditshowcase",
@@ -5817,6 +5447,31 @@
       "selected_at": "2026-11-26T15:31:59.116154+06:00",
       "status": "published",
       "message_id": 1331
+    },
+    "the_hunting_wives_s2_premiere": {
+      "event_id": "the_hunting_wives_s2_premiere",
+      "canonical_url": "deadline.com/2026/11/netflix-thanksgiving-message-hunting-wives-season-2-1237234078",
+      "original_url": "https://deadline.com/2026/11/netflix-thanksgiving-message-hunting-wives-season-2-1237234078/",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "topic": "Release Dates",
+      "institution": "Netflix",
+      "event_cluster_id": "evt_f9ec4a1c26",
+      "event_confidence": 0.6,
+      "event_source_count": 1,
+      "headline": "The Hunting Wives",
+      "summary": "Season 2 of The Hunting Wives is now streaming on Netflix.",
+      "highlights": [
+        "All eight episodes dropped today",
+        "Series moved from Starz to Netflix",
+        "Third season confirmed"
+      ],
+      "concepts": [],
+      "key_numbers": [],
+      "published_at": "2026-11-26T23:44:07+06:00",
+      "selected_at": "2026-11-27T01:34:10.574685+06:00",
+      "status": "published",
+      "message_id": 1332
     }
   },
   "event_clusters": {
@@ -24862,14 +24517,14 @@
     },
     "evt_d88da50b3b": {
       "event_id": "evt_d88da50b3b",
-      "topic": "Streaming Premieres",
+      "topic": "Release Dates",
       "region": "Entertainment",
       "sources": [
         "disneyplus.com"
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-11-26T15:14:55.325066+06:00",
+      "last_seen": "2026-11-27T01:27:43.099041+06:00",
       "headline": "Royally Scandalous K-Drama The Remarried Empress Is Now Streaming - Disney Plus"
     },
     "evt_db2a592225": {
@@ -24943,10 +24598,21 @@
       "confidence": 0.6,
       "last_seen": "2026-11-26T15:14:55.325074+06:00",
       "headline": "As ‘The Further Mis-Adventures of Cliff Booth’ Opens on Just 200 Imax Screens, Netflix’s Movie Theater Push Is Still Failing Moviegoers"
+    },
+    "evt_f9ec4a1c26": {
+      "event_id": "evt_f9ec4a1c26",
+      "topic": "Release Dates",
+      "region": "Entertainment",
+      "sources": [
+        "Deadline"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-27T01:27:43.099050+06:00",
+      "headline": "Netflix Posts Racy Thanksgiving Message On ‘The Hunting Wives’ Season 2 Premiere Day"
     }
   },
   "posted_event_ids": [
-    "evt_1875c303e8",
     "evt_2036ffdf2d",
     "evt_07da56902d",
     "evt_7adf776302",
@@ -25445,10 +25111,10 @@
     "evt_340e7eb76a",
     "evt_e2bce7ca13",
     "evt_6c54ffe324",
-    "evt_75c6a50f74"
+    "evt_75c6a50f74",
+    "evt_f9ec4a1c26"
   ],
   "recent_titles": [
-    "get lite",
     "cr me de la cr me",
     "jesse jo stark",
     "paramount studios",
@@ -25848,7 +25514,8 @@
     "namaslay",
     "the pitt",
     "bad lieutenant tokyo",
-    "star plus"
+    "star plus",
+    "the hunting wives"
   ],
   "work_memory": {
     "the dog stars": {
@@ -34386,6 +34053,15 @@
         "OTT / Streaming Availability": "2026-11-26T15:31:59.116211+06:00"
       },
       "last_published_at": "2026-11-26T15:31:59.116207+06:00"
+    },
+    "the hunting wives": {
+      "title": "The Hunting Wives",
+      "sector": "Hollywood",
+      "first_published_at": "2026-11-27T01:34:10.574726+06:00",
+      "published_events": {
+        "OTT / Streaming Availability": "2026-11-27T01:34:10.574733+06:00"
+      },
+      "last_published_at": "2026-11-27T01:34:10.574730+06:00"
     }
   },
   "publication_fingerprints": [
@@ -45278,6 +44954,17 @@
       "event_key": "JioStar_Fubo_Addition",
       "canonical": "variety.com/2026/tv/news/jiostar-star-plus-colors-mtv-india-fubo-us-1236958804",
       "published_at": "2026-11-26T15:31:59.116652+06:00"
+    },
+    {
+      "fingerprint": "the hunting wives|OTT / Streaming Availability|netflix welcomed thanksgiving with racy message this morning with landing streamer today netflix posted clip leads brittany snow and malin kerman bed together overlaid with message this thanksgiving plate short clip pair say love you each netflix all eight dropped today moved from starz netflix third netflix 2026",
+      "work_key": "the hunting wives",
+      "priority_type": "OTT / Streaming Availability",
+      "headline": "The Hunting Wives",
+      "event_text": "The Hunting Wives Netflix welcomed Thanksgiving with a racy message on X this morning. With The Hunting Wives Season 2 landing on the streamer today, Netflix posted a clip of leads Brittany Snow and Malin Åkerman in bed together overlaid with the message “this thanksgiving plate.” In the short clip, the pair say “I love you” to each […] Season 2 of The Hunting Wives is now streaming on Netflix. All eight episodes dropped today Series moved from Starz to Netflix Third season confirmed Netflix 2026-11-26",
+      "core": "netflix welcomed thanksgiving with racy message this morning with landing streamer today netflix posted clip leads brittany snow and malin kerman bed together overlaid with message this thanksgiving plate short clip pair say love you each netflix all eight dropped today moved from starz netflix third netflix 2026",
+      "event_key": "The Hunting Wives S2 Premiere",
+      "canonical": "deadline.com/2026/11/netflix-thanksgiving-message-hunting-wives-season-2-1237234078",
+      "published_at": "2026-11-27T01:34:10.575012+06:00"
     }
   ],
   "fresh_start_at": "2026-09-07T13:58:06.173598+06:00",
@@ -45418,62 +45105,6 @@
     }
   },
   "score_history": [
-    {
-      "title": "From Local to Global: Anshuman Jha & Sarah-Jane Dias On Advocating Animal Rights In ‘Lakadbaggha 2’ & Uniqueness Of Crafting An Indian Actio",
-      "score": 23,
-      "pattern": "",
-      "priority_type": "New Movie / Series Announcements",
-      "source": "Deadline",
-      "seen_at": "2026-11-12T14:01:42.633824+06:00"
-    },
-    {
-      "title": "Amanda Seyfried Joined ‘You Can See Everything’ Without Reps Knowing, Had ‘No Approval’ Over Filming and Got ‘Disrespected’ by Billy Evans: ",
-      "score": 23,
-      "pattern": "",
-      "priority_type": "New Movie / Series Announcements",
-      "source": "Variety",
-      "seen_at": "2026-11-12T14:01:42.633926+06:00"
-    },
-    {
-      "title": "OTT This week: ஜெயிலர் 2 முதல் ரணபாலி' வரை.. இந்த வாரம் ஓடிடியை கலக்க வரும் மாஸ் படங்களின் லிஸ்ட்! | November 12th to November 15th This wee",
-      "score": 69,
-      "pattern": "",
-      "priority_type": "OTT / Streaming Availability",
-      "source": "tamil.filmibeat.com",
-      "seen_at": "2026-11-12T14:01:42.634004+06:00"
-    },
-    {
-      "title": "2027 புத்தாண்டுக்கே ரசிகர்களுக்கு ட்ரீட் கொடுக்கும் சிஎம் விஜய்.. இந்த படம் ரீ ரிலிஸ் ஆகுதாம்! | CM Vijay's Bairavaa will re release on New ",
-      "score": 66,
-      "pattern": "",
-      "priority_type": "Theatrical Releases / Re-releases",
-      "source": "tamil.filmibeat.com",
-      "seen_at": "2026-11-12T14:01:42.634070+06:00"
-    },
-    {
-      "title": "Avengers Endgame Encore Sets Disney+ Streaming Release DAte",
-      "score": 86,
-      "pattern": "",
-      "priority_type": "OTT / Streaming Availability",
-      "source": "Variety",
-      "seen_at": "2026-11-12T14:03:08.747188+06:00"
-    },
-    {
-      "title": "OTT This week: ஜெயிலர் 2 முதல் ரணபாலி' வரை.. இந்த வாரம் ஓடிடியை கலக்க வரும் மாஸ் படங்களின் லிஸ்ட்! | November 12th to November 15th This wee",
-      "score": 78,
-      "pattern": "",
-      "priority_type": "OTT / Streaming Availability",
-      "source": "tamil.filmibeat.com",
-      "seen_at": "2026-11-12T14:03:08.747607+06:00"
-    },
-    {
-      "title": "2027 புத்தாண்டுக்கே ரசிகர்களுக்கு ட்ரீட் கொடுக்கும் சிஎம் விஜய்.. இந்த படம் ரீ ரிலிஸ் ஆகுதாம்! | CM Vijay's Bairavaa will re release on New ",
-      "score": 73,
-      "pattern": "",
-      "priority_type": "Theatrical Releases / Re-releases",
-      "source": "tamil.filmibeat.com",
-      "seen_at": "2026-11-12T14:03:08.748026+06:00"
-    },
     {
       "title": "Gang Dong-won & Kim Go-eun To Lead Netflix Korea Romance-Action Period Drama ‘The Twilight Between Us’ From Kim Won-suk",
       "score": 45,
@@ -49417,18 +49048,74 @@
       "priority_type": "Season Renewals / New Season Updates",
       "source": "Variety",
       "seen_at": "2026-11-26T15:14:55.304578+06:00"
+    },
+    {
+      "title": "Done Deal! Netflix Buys Radford Studios For Almost $400M; Streamer Calls Purchase “A Meaningful New Investment In California’s Film Industry",
+      "score": 43,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Deadline",
+      "seen_at": "2026-11-27T01:27:13.085578+06:00"
+    },
+    {
+      "title": "Royally Scandalous K-Drama The Remarried Empress Is Now Streaming - Disney Plus",
+      "score": 87,
+      "pattern": "",
+      "priority_type": "OTT / Streaming Availability",
+      "source": "disneyplus.com",
+      "seen_at": "2026-11-27T01:27:43.092230+06:00"
+    },
+    {
+      "title": "Netflix Posts Racy Thanksgiving Message On ‘The Hunting Wives’ Season 2 Premiere Day",
+      "score": 85,
+      "pattern": "",
+      "priority_type": "Release Date Confirmations",
+      "source": "Deadline",
+      "seen_at": "2026-11-27T01:27:43.092322+06:00"
+    },
+    {
+      "title": "Netflix Cancels ‘Amsterdam Empire’ Starring Famke Janssen After One Season",
+      "score": 61,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Deadline",
+      "seen_at": "2026-11-27T01:27:43.092419+06:00"
+    },
+    {
+      "title": "Lauren Ash & Mae Martin Among Cast Of Shozer’s Adult Animation High-School Comedy ‘Dirts’",
+      "score": 55,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Deadline",
+      "seen_at": "2026-11-27T01:27:43.092517+06:00"
+    },
+    {
+      "title": "‘South Park’ Season 29 Finale: ‘GTA 6’ Inspires Stan, Kyle and Cartman to Get to the Bottom of South America’s Power Outages",
+      "score": 51,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Variety",
+      "seen_at": "2026-11-27T01:27:43.092624+06:00"
+    },
+    {
+      "title": "Constance Wang Denounces ‘The Altruists’ Portrayal As “Very Stereotypical” & “Racist”: “What Did We Expect?”",
+      "score": 45,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Deadline",
+      "seen_at": "2026-11-27T01:27:43.092724+06:00"
     }
   ],
   "adaptive_metrics": {
-    "raw_discovered": 36,
-    "pre_cerebras_rejected": 28285,
-    "hard_rejected": 9921,
+    "raw_discovered": 35,
+    "pre_cerebras_rejected": 28409,
+    "hard_rejected": 9969,
     "duplicate_rejected": 214,
-    "learned_rejected": 18150,
-    "passed_to_cerebras": 4674,
-    "cerebras_ranked": 11109,
-    "published": 992,
-    "estimated_candidates_avoided": 28285
+    "learned_rejected": 18226,
+    "passed_to_cerebras": 4675,
+    "cerebras_ranked": 11115,
+    "published": 993,
+    "estimated_candidates_avoided": 28409
   },
   "source_quality": {
     "collider.com": {
@@ -49460,11 +49147,11 @@
       "last_seen": "2026-09-08T11:49:09.577970+06:00"
     },
     "deadline.com": {
-      "observations": 5110,
-      "low_score_count": 4145,
-      "total_score": 258268,
-      "avg_score": 50.5,
-      "last_seen": "2026-11-26T15:14:55.304673+06:00"
+      "observations": 5114,
+      "low_score_count": 4148,
+      "total_score": 258514,
+      "avg_score": 50.6,
+      "last_seen": "2026-11-27T01:27:43.092784+06:00"
     },
     "thewrap.com": {
       "observations": 16,
@@ -49481,11 +49168,11 @@
       "last_seen": "2026-09-08T21:05:13.366232+06:00"
     },
     "variety.com": {
-      "observations": 5362,
-      "low_score_count": 4426,
-      "total_score": 255746,
+      "observations": 5363,
+      "low_score_count": 4427,
+      "total_score": 255797,
       "avg_score": 47.7,
-      "last_seen": "2026-11-26T15:14:55.304680+06:00"
+      "last_seen": "2026-11-27T01:27:43.092779+06:00"
     },
     "indiewire.com": {
       "observations": 10,
@@ -49558,11 +49245,11 @@
       "last_seen": "2026-11-12T04:36:23.144686+06:00"
     },
     "disneyplus.com": {
-      "observations": 13,
+      "observations": 14,
       "low_score_count": 4,
-      "total_score": 867,
-      "avg_score": 66.7,
-      "last_seen": "2026-11-26T15:14:55.304629+06:00"
+      "total_score": 954,
+      "avg_score": 68.1,
+      "last_seen": "2026-11-27T01:27:43.092751+06:00"
     },
     "blog.asianwiki.com": {
       "observations": 1,
@@ -49602,7 +49289,7 @@
   },
   "category_coverage": {
     "Major Film Announcements": "2026-11-06T22:18:20.099531+06:00",
-    "Release Dates": "2026-11-26T15:31:59.116671+06:00",
+    "Release Dates": "2026-11-27T01:34:10.575029+06:00",
     "Studio Business": "2026-10-24T20:35:57.113797+06:00",
     "Streaming Platform News": "2026-11-06T22:17:44.559012+06:00",
     "Franchises and IP": "2026-11-06T22:17:34.555229+06:00",
