@@ -1,200 +1,152 @@
 {
   "feeds": {
     "https://deadline.com/feed/": {
-      "etag": "W/\"8dd7e6d390f4087a038869b6049300bc\"",
-      "last_modified": "Thu, 26 Nov 2026 19:04:43 GMT",
-      "last_checked": "2026-11-27T01:27:13.181518+06:00",
+      "etag": "W/\"f9fdc20ac06bc9e7847a61be43da4806\"",
+      "last_modified": "Fri, 27 Nov 2026 09:13:34 GMT",
+      "last_checked": "2026-11-27T15:30:09.434419+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://variety.com/feed/": {
-      "etag": "W/\"c1729d834ec76dc27c9cd00f21eb5478\"",
-      "last_modified": "Thu, 26 Nov 2026 19:02:31 GMT",
-      "last_checked": "2026-11-27T01:27:14.488246+06:00",
+      "etag": "W/\"538986e459d6cf21bf98f70dde65fd81\"",
+      "last_modified": "Fri, 27 Nov 2026 09:23:29 GMT",
+      "last_checked": "2026-11-27T15:30:10.856320+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.hollywoodreporter.com/feed/": {
-      "etag": "W/\"a2220e4cb3e11e642975d342adb86c21\"",
-      "last_modified": "Thu, 26 Nov 2026 18:40:36 GMT",
-      "last_checked": "2026-11-27T01:27:15.635848+06:00",
+      "etag": "W/\"c702001f8925bdaa59350919d0a7acfb\"",
+      "last_modified": "Fri, 27 Nov 2026 05:05:13 GMT",
+      "last_checked": "2026-11-27T15:30:12.707114+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.thewrap.com/feed/": {
-      "etag": "\"be413a949a98da4b62ba6902a23975a3\"",
-      "last_modified": "Thu, 26 Nov 2026 19:14:47 GMT",
-      "last_checked": "2026-11-27T01:27:16.756101+06:00",
+      "etag": "\"146de75b3a635dd67a9cc68781ad9285\"",
+      "last_modified": "Fri, 27 Nov 2026 03:14:07 GMT",
+      "last_checked": "2026-11-27T15:30:13.884054+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.indiewire.com/feed/": {
-      "etag": "W/\"ae8104915d4456f09ff72bfa975f5ff1\"",
-      "last_modified": "Thu, 26 Nov 2026 19:00:16 GMT",
-      "last_checked": "2026-11-27T01:27:17.487129+06:00",
+      "etag": "W/\"8782252e4a8cc760ce78bf54bd9699bb\"",
+      "last_modified": "Thu, 26 Nov 2026 22:54:35 GMT",
+      "last_checked": "2026-11-27T15:30:14.363287+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://collider.com/feed/": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-27T01:27:18.747139+06:00",
+      "last_checked": "2026-11-27T15:30:14.977393+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://tvline.com/feed/": {
-      "etag": "\"8d26897e77b935215b00e56aa3f0a5e8\"",
-      "last_modified": "Thu, 26 Nov 2026 19:01:39 GMT",
-      "last_checked": "2026-11-27T01:27:19.465301+06:00",
+      "etag": "\"b503058da8981e1e920ff76ae8e45e33\"",
+      "last_modified": "Fri, 27 Nov 2026 08:00:00 GMT",
+      "last_checked": "2026-11-27T15:30:16.094970+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.ottplay.com/rss": {
       "etag": "\"b5496c89c58ff0f5d07d64a68d4efe07\"",
       "last_modified": "Thu, 27 May 2021 12:38:49 GMT",
-      "last_checked": "2026-11-27T01:27:21.884617+06:00",
+      "last_checked": "2026-11-27T15:30:18.558565+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.filmibeat.com/rss/feeds/filmibeat-news.xml": {
       "etag": null,
-      "last_modified": "Thu, 26 Nov 2026 19:25:55 GMT",
-      "last_checked": "2026-11-27T01:27:22.261673+06:00",
+      "last_modified": "Fri, 27 Nov 2026 09:30:05 GMT",
+      "last_checked": "2026-11-27T15:30:18.946720+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.pinkvilla.com/rss": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-27T01:27:23.209089+06:00",
+      "last_checked": "2026-11-27T15:30:19.529715+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.bollywoodhungama.com/feed/": {
-      "etag": "\"d975c05c6aa8f026d1c36abb1d6e7326\"",
-      "last_modified": "Thu, 26 Nov 2026 18:33:48 GMT",
-      "last_checked": "2026-11-27T01:27:23.423484+06:00",
+      "etag": "\"9e7fb60f246161106a141720a69f1753\"",
+      "last_modified": "Fri, 27 Nov 2026 09:24:18 GMT",
+      "last_checked": "2026-11-27T15:30:20.139201+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.gadgets360.com/entertainment/rss": {
-      "last_checked": "2026-11-27T01:27:25.030422+06:00",
-      "fail_count": 258,
+      "last_checked": "2026-11-27T15:30:21.894582+06:00",
+      "fail_count": 259,
       "alerted": true
     },
     "https://www.soompi.com/feed": {
-      "etag": "W/\"cee1f54c30b27ae82005cbb4a81a23f2\"",
-      "last_modified": "Thu, 26 Nov 2026 15:30:45 GMT",
-      "last_checked": "2026-11-27T01:27:25.265533+06:00",
+      "etag": "W/\"69526af7292b6bd3bee3429c0f9959d6\"",
+      "last_modified": "Fri, 27 Nov 2026 09:09:19 GMT",
+      "last_checked": "2026-11-27T15:30:22.166422+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.whats-on-netflix.com/feed/": {
       "etag": null,
-      "last_modified": "Thu, 26 Nov 2026 16:29:53 GMT",
-      "last_checked": "2026-11-27T01:27:27.459591+06:00",
+      "last_modified": "Fri, 27 Nov 2026 08:00:44 GMT",
+      "last_checked": "2026-11-27T15:30:24.561822+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.netflix.com/tudum/rss.xml": {
-      "last_checked": "2026-11-27T01:27:29.599020+06:00",
-      "fail_count": 258,
+      "last_checked": "2026-11-27T15:30:26.666888+06:00",
+      "fail_count": 259,
       "alerted": true
     },
     "https://press.wbd.com/us/en/rss": {
-      "last_checked": "2026-11-27T01:27:29.993552+06:00",
-      "fail_count": 258,
+      "last_checked": "2026-11-27T15:30:26.922164+06:00",
+      "fail_count": 259,
       "alerted": true
     },
     "https://www.apple.com/tv-pr/newsroom/feed/": {
-      "last_checked": "2026-11-27T01:27:30.503395+06:00",
-      "fail_count": 258,
+      "last_checked": "2026-11-27T15:30:27.527043+06:00",
+      "fail_count": 259,
       "alerted": true
     },
     "https://www.aboutamazon.com/rss": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-27T01:27:30.656488+06:00",
+      "last_checked": "2026-11-27T15:30:27.729740+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.marvel.com/articles/feed": {
-      "last_checked": "2026-11-27T01:27:31.022659+06:00",
-      "fail_count": 258,
+      "last_checked": "2026-11-27T15:30:28.108536+06:00",
+      "fail_count": 259,
       "alerted": true
     },
     "https://www.dc.com/blog/rss.xml": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-27T01:27:32.803904+06:00",
-      "fail_count": 2,
-      "alerted": false
+      "last_checked": "2026-11-27T15:30:28.287713+06:00",
+      "fail_count": 3,
+      "alerted": true
     },
     "https://www.sonypictures.com/rss": {
-      "last_checked": "2026-11-27T01:27:33.227686+06:00",
-      "fail_count": 258,
+      "last_checked": "2026-11-27T15:30:28.761483+06:00",
+      "fail_count": 259,
       "alerted": true
     },
     "https://www.paramount.com/rss": {
-      "last_checked": "2026-11-27T01:27:33.311636+06:00",
-      "fail_count": 258,
+      "last_checked": "2026-11-27T15:30:28.872960+06:00",
+      "fail_count": 259,
       "alerted": true
     },
     "https://www.universalpictures.com/rss": {
-      "last_checked": "2026-11-27T01:27:33.700128+06:00",
-      "fail_count": 258,
+      "last_checked": "2026-11-27T15:30:29.297500+06:00",
+      "fail_count": 259,
       "alerted": true
     }
   },
   "queue": {
-    "deadline.com/2026/11/robert-eggers-eager-move-away-horror-genre-1237231196": {
-      "title": "Robert Eggers Is “Eager” To Move Away From Horror Genre: “I Think I Need A Break”",
-      "url": "https://deadline.com/2026/11/robert-eggers-eager-move-away-horror-genre-1237231196/",
-      "canonical": "deadline.com/2026/11/robert-eggers-eager-move-away-horror-genre-1237231196",
-      "published_dt": "2026-11-22T23:41:30+06:00",
-      "published_date": "2026-11-22T23:41:30+06:00",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "excerpt": "From witches to vampires and werewolves, Robert Eggers has had his fill of the horror genre after more than a decade. The Werwulf co-writer and director recently explained that he’s ready to break free from “Robert Eggers’ House of Horror” as he hopes to explore other genres with his next project, following Werwulf‘s Christmas premiere […]",
-      "image": "https://deadline.com/wp-content/uploads/2026/11/P10TZ6G-e1795368445987.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-11-23T04:20:14.881778+06:00",
-      "last_seen": "2026-11-23T04:20:14.881792+06:00",
-      "importance_score": 40,
-      "priority_type": "New Movie / Series Announcements",
-      "priority_tier": 2,
-      "priority_rank": 6,
-      "sector": "Hollywood",
-      "rank_reason": "The piece is an interview about future genre plans and contains no concrete release information, so it is scored below the publishable threshold.",
-      "last_ranked_at": "2026-11-23T14:42:25.266013+06:00",
-      "learning_pattern": ""
-    },
-    "deadline.com/2026/11/hailee-steinfeld-confirms-avengers-doomsday-1237231382": {
-      "title": "Hailee Steinfeld Confirms She’s In ‘Avengers: Doomsday’",
-      "url": "https://deadline.com/2026/11/hailee-steinfeld-confirms-avengers-doomsday-1237231382/",
-      "canonical": "deadline.com/2026/11/hailee-steinfeld-confirms-avengers-doomsday-1237231382",
-      "published_dt": "2026-11-23T09:27:25+06:00",
-      "published_date": "2026-11-23T09:27:25+06:00",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "excerpt": "In a nifty bit of cross promotion, Disney used its surefire blockbuster and a helpful coincidence to reveal an Avengers: Doomsday casting as well as promote a smaller animated title. Earlier today, Marvel and Walt Disney Animation posted a video of Hailee Steinfeld, who’s in Europe promoting Disney Animation’s Hexed, ahead of its release next […]",
-      "image": "https://deadline.com/wp-content/uploads/2026/11/TCDHAWK_G5018.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-11-23T14:42:03.535027+06:00",
-      "last_seen": "2026-11-23T14:42:03.535032+06:00",
-      "importance_score": 31,
-      "priority_type": "New Movie / Series Announcements",
-      "priority_tier": 2,
-      "priority_rank": 6,
-      "sector": "Hollywood",
-      "rank_reason": "Casting confirmation without release date; remains below publishable score.",
-      "last_ranked_at": "2026-11-24T02:59:23.350609+06:00",
-      "learning_pattern": "promotion"
-    },
     "deadline.com/2026/11/ted-lasso-renewed-season-5-apple-tv-1237231022": {
       "title": "‘Ted Lasso’ Renewed For Season 5 By Apple TV",
       "url": "https://deadline.com/2026/11/ted-lasso-renewed-season-5-apple-tv-1237231022/",
@@ -991,6 +943,79 @@
       "last_ranked_at": "2026-11-27T01:27:43.091512+06:00",
       "learning_pattern": "",
       "posted_at": "2026-11-27T01:34:10.574566+06:00"
+    },
+    "deadline.com/2026/11/hunger-games-producer-regrets-splitting-mockingjay-1237233567": {
+      "title": "‘Hunger Games’ Producer Regrets Splitting ‘Mockingjay’ As Fans Felt It Was A “Play To Make Them See Two Films Instead Of One”",
+      "url": "https://deadline.com/2026/11/hunger-games-producer-regrets-splitting-mockingjay-1237233567/",
+      "canonical": "deadline.com/2026/11/hunger-games-producer-regrets-splitting-mockingjay-1237233567",
+      "published_dt": "2026-11-27T04:00:14+06:00",
+      "published_date": "2026-11-27T04:00:14+06:00",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "excerpt": "With the release of the prequel The Hunger Games: Sunrise on the Reaping, franchise producer Nina Jacobson regrets splitting the Mockingjay films into two parts. At the time, The Twilight Saga and Harry Potter split their grand finale into two films, and Lionsgate followed suit, breaking up the last Suzanne Collins book of the OG Hunger Games […]",
+      "image": "https://deadline.com/wp-content/uploads/2026/11/hunger-games-mockingjay-jennifer-lawrence.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-27T15:30:10.248912+06:00",
+      "last_seen": "2026-11-27T15:30:10.248931+06:00",
+      "importance_score": 48,
+      "priority_type": "New Movie / Series Announcements",
+      "priority_tier": 2,
+      "priority_rank": 6,
+      "sector": "Hollywood",
+      "rank_reason": "The piece discusses producer regret about a past split decision and does not announce a new release, so it scores below the publishable threshold.",
+      "last_ranked_at": "2026-11-27T15:30:37.824250+06:00",
+      "learning_pattern": ""
+    },
+    "deadline.com/2026/11/jesse-eisenberg-sexuality-work-fans-sleep-1237234140": {
+      "title": "Jesse Eisenberg Says “There’s No Sexuality To My Work” & Why Life Is “Different” When Fans “Want To Sleep With A Person Onscreen”",
+      "url": "https://deadline.com/2026/11/jesse-eisenberg-sexuality-work-fans-sleep-1237234140/",
+      "canonical": "deadline.com/2026/11/jesse-eisenberg-sexuality-work-fans-sleep-1237234140",
+      "published_dt": "2026-11-27T02:59:10+06:00",
+      "published_date": "2026-11-27T02:59:10+06:00",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "excerpt": "Jesse Eisenberg is reflecting on his work in Hollywood and why he has a very different experience with fans in public than some other actors. In a new interview with The New Yorker, the actor, director, writer, and producer of The Debut said fans of his work are “mostly fine” when they see him in […]",
+      "image": "https://deadline.com/wp-content/uploads/2026/11/GettyImages-2297135306.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-27T15:30:10.609021+06:00",
+      "last_seen": "2026-11-27T15:30:10.609040+06:00",
+      "importance_score": 40,
+      "priority_type": "New Movie / Series Announcements",
+      "priority_tier": 2,
+      "priority_rank": 6,
+      "sector": "Hollywood",
+      "rank_reason": "The interview provides commentary without any release information, keeping the total score well under 80 and thus not a publishable release update.",
+      "last_ranked_at": "2026-11-27T15:30:37.824391+06:00",
+      "learning_pattern": ""
+    },
+    "variety.com/2026/tv/news/blade-runner-2099-finale-cora-olwen-fates-1236958380": {
+      "title": "‘Blade Runner 2099’ Boss Silka Luisa on What the Finale Means for Replicants and the Fate of Cora and Olwen",
+      "url": "https://variety.com/2026/tv/news/blade-runner-2099-finale-cora-olwen-fates-1236958380/",
+      "canonical": "variety.com/2026/tv/news/blade-runner-2099-finale-cora-olwen-fates-1236958380",
+      "published_dt": "2026-11-27T07:00:00+06:00",
+      "published_date": "2026-11-27T07:00:00+06:00",
+      "source": "Variety",
+      "region": "Entertainment",
+      "excerpt": "SPOILER ALERT: This article contains major spoilers for the finale of “Blade Runner 2099,” now streaming on Prime Video. In the finale of “Blade Runner 2099,” the future of humanity is anything but certain. After discovering that the stolen memory they’ve spent the series searching for contains Dr. Eldon Tyrell’s (Joe Turkell) original Nexus-1 replicant […]",
+      "image": "https://variety.com/wp-content/uploads/2026/11/BLDR_S1_UT_241030_ENOCLA_00065_R21_3000.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "posted",
+      "first_seen": "2026-11-27T15:30:11.513569+06:00",
+      "last_seen": "2026-11-27T15:30:11.513584+06:00",
+      "importance_score": 88,
+      "priority_type": "OTT / Streaming Availability",
+      "priority_tier": 1,
+      "priority_rank": 1,
+      "sector": "Hollywood",
+      "rank_reason": "The article confirms that the series finale is now streaming on Prime Video, providing a clear release date/window and platform, making it a publishable release update.",
+      "last_ranked_at": "2026-11-27T15:30:37.824058+06:00",
+      "learning_pattern": "",
+      "posted_at": "2026-11-27T15:31:40.205472+06:00"
     }
   },
   "events": {
@@ -1144,80 +1169,6 @@
       "status": "published",
       "message_id": 1266
     },
-    "the_kitchen_special_episode_return": {
-      "event_id": "the_kitchen_special_episode_return",
-      "canonical_url": "deadline.com/2026/10/the-kitchen-food-network-date-special-episode-1237206795",
-      "original_url": "https://deadline.com/2026/10/the-kitchen-food-network-date-special-episode-1237206795/",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "Deadline",
-      "event_cluster_id": "evt_81a38caa86",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "The Kitchen",
-      "summary": "The cooking talk show returns for a special episode on Food Network after its cancellation.",
-      "highlights": [
-        "Special episode airs Saturday, October 31 at 11 a.m. ET",
-        "Hosts Katie Lee Biegel, Geoffrey Zakarian, Alex Guarnaschelli and Jeff Mauro filmed the segment",
-        "The show was cancelled in October 2025 after 12 years on air"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-28T06:46:47+06:00",
-      "selected_at": "2026-10-28T13:11:35.212157+06:00",
-      "status": "published",
-      "message_id": 1129
-    },
-    "hasan_piker_lawsuit": {
-      "event_id": "hasan_piker_lawsuit",
-      "canonical_url": "variety.com/2026/politics/news/hasan-piker-scott-jennings-lynching-quote-suit-1236932558",
-      "original_url": "https://variety.com/2026/politics/news/hasan-piker-scott-jennings-lynching-quote-suit-1236932558/",
-      "source": "Variety",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "Variety",
-      "event_cluster_id": "evt_05aa43c77a",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Hasan Piker",
-      "summary": "Hasan Piker has filed a $72.5 million defamation lawsuit against commentator Scott Jennings over a misrepresented lynching comment.",
-      "highlights": [
-        "Lawsuit alleges Jennings twisted Piker's sarcastic remarks into false advocacy of lynchings",
-        "Snopes fact‑check backs Piker’s claim that the original clip was sarcastic"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-28T07:01:18+06:00",
-      "selected_at": "2026-10-28T13:11:45.106044+06:00",
-      "status": "published",
-      "message_id": 1131
-    },
-    "klara_and_the_sun_box_office": {
-      "event_id": "klara_and_the_sun_box_office",
-      "canonical_url": "deadline.com/2026/10/klara-and-the-sun-box-office-fail-1237201321",
-      "original_url": "https://deadline.com/2026/10/klara-and-the-sun-box-office-fail-1237201321/",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "Deadline",
-      "event_cluster_id": "evt_7cf0c5f3c1",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Klara and the Sun",
-      "summary": "Sony's Taika Waititi‑directed adaptation opened to a $701K domestic debut, far below expectations.",
-      "highlights": [
-        "Opened in 880 theaters with a sub‑$800 per‑theater average",
-        "Critical reception was poor, Rotten Tomatoes score 25%",
-        "Despite modest test scores, audience turnout was weak, especially among women 25+"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-28T06:51:17+06:00",
-      "selected_at": "2026-10-28T13:12:56.136394+06:00",
-      "status": "published",
-      "message_id": 1145
-    },
     "fyseefalleditshowcase": {
       "event_id": "fyseefalleditshowcase",
       "canonical_url": "variety.com/2026/tv/news/netflix-fysee-fall-edit-diplomat-nobody-wants-this-1236932579",
@@ -1266,31 +1217,6 @@
       "selected_at": "2026-10-29T01:56:48.507396+06:00",
       "status": "published",
       "message_id": 1148
-    },
-    "ai_rule_tweaks": {
-      "event_id": "ai_rule_tweaks",
-      "canonical_url": "variety.com/2026/film/festivals/oscars-always-reward-human-excellence-ai-era-academy-1236932637",
-      "original_url": "https://variety.com/2026/film/festivals/oscars-always-reward-human-excellence-ai-era-academy-1236932637/",
-      "source": "Variety",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "Academy of Motion Picture Arts and Sciences",
-      "event_cluster_id": "evt_1d1df5e0ee",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Oscars",
-      "summary": "The Academy says Oscars will continue to honor human‑driven work despite AI growth and is reviewing international feature rules.",
-      "highlights": [
-        "Academy President Lynette Howell Taylor stresses human excellence as the core of Oscar eligibility",
-        "Six top festival awards now qualify non‑English films for International Feature without a country submission",
-        "The 2029 ceremony will move to YouTube to reach a global audience in over 30 languages"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-28T09:48:43+06:00",
-      "selected_at": "2026-10-29T01:56:53.911103+06:00",
-      "status": "published",
-      "message_id": 1149
     },
     "i_play_rocky_opening": {
       "event_id": "i_play_rocky_opening",
@@ -5472,6 +5398,31 @@
       "selected_at": "2026-11-27T01:34:10.574685+06:00",
       "status": "published",
       "message_id": 1332
+    },
+    "blade_runner_2099_finale_release": {
+      "event_id": "blade_runner_2099_finale_release",
+      "canonical_url": "variety.com/2026/tv/news/blade-runner-2099-finale-cora-olwen-fates-1236958380",
+      "original_url": "https://variety.com/2026/tv/news/blade-runner-2099-finale-cora-olwen-fates-1236958380/",
+      "source": "Variety",
+      "region": "Entertainment",
+      "topic": "Release Dates",
+      "institution": "Prime Video",
+      "event_cluster_id": "evt_9b13f98637",
+      "event_confidence": 0.6,
+      "event_source_count": 1,
+      "headline": "Blade Runner 2099",
+      "summary": "The series finale shows Olwen becoming a Nexus‑1 replicant and replicants staying in control of Los Angeles.",
+      "highlights": [
+        "Now streaming on Prime Video",
+        "Olwen is transformed into a Nexus‑1, gaining a longer lifespan",
+        "Cora passes the empathy Index test, confirming her humanity"
+      ],
+      "concepts": [],
+      "key_numbers": [],
+      "published_at": "2026-11-27T07:00:00+06:00",
+      "selected_at": "2026-11-27T15:31:40.205604+06:00",
+      "status": "published",
+      "message_id": 1333
     }
   },
   "event_clusters": {
@@ -24610,10 +24561,21 @@
       "confidence": 0.6,
       "last_seen": "2026-11-27T01:27:43.099050+06:00",
       "headline": "Netflix Posts Racy Thanksgiving Message On ‘The Hunting Wives’ Season 2 Premiere Day"
+    },
+    "evt_9b13f98637": {
+      "event_id": "evt_9b13f98637",
+      "topic": "Release Dates",
+      "region": "Entertainment",
+      "sources": [
+        "Variety"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-27T15:30:37.827405+06:00",
+      "headline": "‘Blade Runner 2099’ Boss Silka Luisa on What the Finale Means for Replicants and the Fate of Cora and Olwen"
     }
   },
   "posted_event_ids": [
-    "evt_2036ffdf2d",
     "evt_07da56902d",
     "evt_7adf776302",
     "evt_31c0458ea9",
@@ -25112,10 +25074,10 @@
     "evt_e2bce7ca13",
     "evt_6c54ffe324",
     "evt_75c6a50f74",
-    "evt_f9ec4a1c26"
+    "evt_f9ec4a1c26",
+    "evt_9b13f98637"
   ],
   "recent_titles": [
-    "cr me de la cr me",
     "jesse jo stark",
     "paramount studios",
     "bright minds",
@@ -25515,7 +25477,8 @@
     "the pitt",
     "bad lieutenant tokyo",
     "star plus",
-    "the hunting wives"
+    "the hunting wives",
+    "blade runner 2099"
   ],
   "work_memory": {
     "the dog stars": {
@@ -25592,13 +25555,13 @@
       "last_published_at": "2026-09-07T18:03:06.700018+06:00"
     },
     "blade runner": {
-      "title": "Blade Runner 2049",
+      "title": "Blade Runner 2099",
       "sector": "Hollywood",
       "first_published_at": "2026-09-07T23:48:35.934307+06:00",
       "published_events": {
-        "OTT / Streaming Availability": "2026-09-07T23:48:35.934315+06:00"
+        "OTT / Streaming Availability": "2026-11-27T15:31:40.205655+06:00"
       },
-      "last_published_at": "2026-09-07T23:48:35.934312+06:00"
+      "last_published_at": "2026-11-27T15:31:40.205653+06:00"
     },
     "why did i get married again": {
       "title": "Why Did I Get Married Again?",
@@ -44965,6 +44928,17 @@
       "event_key": "The Hunting Wives S2 Premiere",
       "canonical": "deadline.com/2026/11/netflix-thanksgiving-message-hunting-wives-season-2-1237234078",
       "published_at": "2026-11-27T01:34:10.575012+06:00"
+    },
+    {
+      "fingerprint": "blade runner|OTT / Streaming Availability|2099 spoiler alert this article contains major spoilers for the finale 2099 prime video the finale 2099 the future humanity anything but certain after discovering that the stolen memory they spent the searching for contains eldon tyrell joe turkell original nexus replicant the finale shows olwen becoming nexus replicant and replicants staying control los angeles prime video olwen transformed into nexus gaining longer lifespan cora passes the empathy index test confirming her humanity prime video",
+      "work_key": "blade runner",
+      "priority_type": "OTT / Streaming Availability",
+      "headline": "Blade Runner 2099",
+      "event_text": "Blade Runner 2099 SPOILER ALERT: This article contains major spoilers for the finale of “Blade Runner 2099,” now streaming on Prime Video. In the finale of “Blade Runner 2099,” the future of humanity is anything but certain. After discovering that the stolen memory they’ve spent the series searching for contains Dr. Eldon Tyrell’s (Joe Turkell) original Nexus-1 replicant […] The series finale shows Olwen becoming a Nexus‑1 replicant and replicants staying in control of Los Angeles. Now streaming on Prime Video Olwen is transformed into a Nexus‑1, gaining a longer lifespan Cora passes the empathy Index test, confirming her humanity Prime Video",
+      "core": "2099 spoiler alert this article contains major spoilers for the finale 2099 prime video the finale 2099 the future humanity anything but certain after discovering that the stolen memory they spent the searching for contains eldon tyrell joe turkell original nexus replicant the finale shows olwen becoming nexus replicant and replicants staying control los angeles prime video olwen transformed into nexus gaining longer lifespan cora passes the empathy index test confirming her humanity prime video",
+      "event_key": "Blade_Runner_2099_Finale_Release",
+      "canonical": "variety.com/2026/tv/news/blade-runner-2099-finale-cora-olwen-fates-1236958380",
+      "published_at": "2026-11-27T15:31:40.205971+06:00"
     }
   ],
   "fresh_start_at": "2026-09-07T13:58:06.173598+06:00",
@@ -45105,38 +45079,6 @@
     }
   },
   "score_history": [
-    {
-      "title": "Gang Dong-won & Kim Go-eun To Lead Netflix Korea Romance-Action Period Drama ‘The Twilight Between Us’ From Kim Won-suk",
-      "score": 45,
-      "pattern": "",
-      "priority_type": "New Movie / Series Announcements",
-      "source": "Deadline",
-      "seen_at": "2026-11-12T14:03:08.748133+06:00"
-    },
-    {
-      "title": "Sun Valley Film Festival to Open With ‘The Debut’; Honorees Announced",
-      "score": 42,
-      "pattern": "",
-      "priority_type": "New Movie / Series Announcements",
-      "source": "Variety",
-      "seen_at": "2026-11-12T14:03:08.748218+06:00"
-    },
-    {
-      "title": "Skyler Gisondo On The Future Of ‘The People V. Gorilla Grodd’ After James Gunn’s DC Exit: “There’s A Lot Of Questions”",
-      "score": 41,
-      "pattern": "",
-      "priority_type": "New Movie / Series Announcements",
-      "source": "Deadline",
-      "seen_at": "2026-11-12T14:03:08.748321+06:00"
-    },
-    {
-      "title": "Marisa Tomei Returning As Claire Dupont In ‘Upgraded 2’",
-      "score": 39,
-      "pattern": "",
-      "priority_type": "New Movie / Series Announcements",
-      "source": "Deadline",
-      "seen_at": "2026-11-12T14:03:08.748401+06:00"
-    },
     {
       "title": "From Local to Global: Anshuman Jha & Sarah-Jane Dias On Advocating Animal Rights In ‘Lakadbaggha 2’ & Uniqueness Of Crafting An Indian Actio",
       "score": 35,
@@ -49104,18 +49046,50 @@
       "priority_type": "New Movie / Series Announcements",
       "source": "Deadline",
       "seen_at": "2026-11-27T01:27:43.092724+06:00"
+    },
+    {
+      "title": "Done Deal! Netflix Buys Radford Studios For Almost $400M; Streamer Calls Purchase “A Meaningful New Investment In California’s Film Industry",
+      "score": 43,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Deadline",
+      "seen_at": "2026-11-27T15:30:09.333431+06:00"
+    },
+    {
+      "title": "‘Blade Runner 2099’ Boss Silka Luisa on What the Finale Means for Replicants and the Fate of Cora and Olwen",
+      "score": 88,
+      "pattern": "",
+      "priority_type": "OTT / Streaming Availability",
+      "source": "Variety",
+      "seen_at": "2026-11-27T15:30:37.824651+06:00"
+    },
+    {
+      "title": "‘Hunger Games’ Producer Regrets Splitting ‘Mockingjay’ As Fans Felt It Was A “Play To Make Them See Two Films Instead Of One”",
+      "score": 48,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Deadline",
+      "seen_at": "2026-11-27T15:30:37.824784+06:00"
+    },
+    {
+      "title": "Jesse Eisenberg Says “There’s No Sexuality To My Work” & Why Life Is “Different” When Fans “Want To Sleep With A Person Onscreen”",
+      "score": 40,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Deadline",
+      "seen_at": "2026-11-27T15:30:37.824910+06:00"
     }
   ],
   "adaptive_metrics": {
-    "raw_discovered": 35,
-    "pre_cerebras_rejected": 28409,
-    "hard_rejected": 9969,
+    "raw_discovered": 36,
+    "pre_cerebras_rejected": 28521,
+    "hard_rejected": 10015,
     "duplicate_rejected": 214,
-    "learned_rejected": 18226,
-    "passed_to_cerebras": 4675,
-    "cerebras_ranked": 11115,
-    "published": 993,
-    "estimated_candidates_avoided": 28409
+    "learned_rejected": 18292,
+    "passed_to_cerebras": 4678,
+    "cerebras_ranked": 11118,
+    "published": 994,
+    "estimated_candidates_avoided": 28521
   },
   "source_quality": {
     "collider.com": {
@@ -49147,11 +49121,11 @@
       "last_seen": "2026-09-08T11:49:09.577970+06:00"
     },
     "deadline.com": {
-      "observations": 5114,
-      "low_score_count": 4148,
-      "total_score": 258514,
-      "avg_score": 50.6,
-      "last_seen": "2026-11-27T01:27:43.092784+06:00"
+      "observations": 5116,
+      "low_score_count": 4150,
+      "total_score": 258602,
+      "avg_score": 50.5,
+      "last_seen": "2026-11-27T15:30:37.824956+06:00"
     },
     "thewrap.com": {
       "observations": 16,
@@ -49168,11 +49142,11 @@
       "last_seen": "2026-09-08T21:05:13.366232+06:00"
     },
     "variety.com": {
-      "observations": 5363,
+      "observations": 5364,
       "low_score_count": 4427,
-      "total_score": 255797,
+      "total_score": 255885,
       "avg_score": 47.7,
-      "last_seen": "2026-11-27T01:27:43.092779+06:00"
+      "last_seen": "2026-11-27T15:30:37.824937+06:00"
     },
     "indiewire.com": {
       "observations": 10,
@@ -49289,7 +49263,7 @@
   },
   "category_coverage": {
     "Major Film Announcements": "2026-11-06T22:18:20.099531+06:00",
-    "Release Dates": "2026-11-27T01:34:10.575029+06:00",
+    "Release Dates": "2026-11-27T15:31:40.205987+06:00",
     "Studio Business": "2026-10-24T20:35:57.113797+06:00",
     "Streaming Platform News": "2026-11-06T22:17:44.559012+06:00",
     "Franchises and IP": "2026-11-06T22:17:34.555229+06:00",
