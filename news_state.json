@@ -1,272 +1,152 @@
 {
   "feeds": {
     "https://deadline.com/feed/": {
-      "etag": "W/\"b489953ecbb166536849865b2d25ed52\"",
-      "last_modified": "Fri, 27 Nov 2026 19:04:10 GMT",
-      "last_checked": "2026-11-28T01:22:54.447570+06:00",
+      "etag": "W/\"3b97b04d5578ce89e7a4556f8ca42e7b\"",
+      "last_modified": "Sat, 28 Nov 2026 03:46:45 GMT",
+      "last_checked": "2026-11-28T14:43:41.608412+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://variety.com/feed/": {
-      "etag": "W/\"315230c47069c3c390a7d10356f5b1c8\"",
-      "last_modified": "Fri, 27 Nov 2026 18:56:59 GMT",
-      "last_checked": "2026-11-28T01:22:55.610913+06:00",
+      "etag": "W/\"a2a29848325f3ad877cb3109d06a55d0\"",
+      "last_modified": "Sat, 28 Nov 2026 08:21:48 GMT",
+      "last_checked": "2026-11-28T14:43:43.047044+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.hollywoodreporter.com/feed/": {
-      "etag": "W/\"9a892daabe9c42a7c3e78967946c6e1f\"",
-      "last_modified": "Fri, 27 Nov 2026 19:10:45 GMT",
-      "last_checked": "2026-11-28T01:22:56.456767+06:00",
+      "etag": "W/\"7314d164ba6346ff0f46f37a69440915\"",
+      "last_modified": "Sat, 28 Nov 2026 07:10:49 GMT",
+      "last_checked": "2026-11-28T14:43:44.677555+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.thewrap.com/feed/": {
-      "etag": "\"f702210e6a67268d2aae55d4f4f4ce19\"",
-      "last_modified": "Fri, 27 Nov 2026 19:09:32 GMT",
-      "last_checked": "2026-11-28T01:22:57.186995+06:00",
+      "etag": "\"0aa3225f4e893107b0924cae2ce3a42c\"",
+      "last_modified": "Sat, 28 Nov 2026 05:29:46 GMT",
+      "last_checked": "2026-11-28T14:43:45.756305+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.indiewire.com/feed/": {
-      "etag": "W/\"95bcf9f680461ed30c6b6765a3913bc9\"",
-      "last_modified": "Fri, 27 Nov 2026 16:50:14 GMT",
-      "last_checked": "2026-11-28T01:22:57.767527+06:00",
+      "etag": "W/\"ddaf9902e6e0d7deb87b78f07373d948\"",
+      "last_modified": "Fri, 27 Nov 2026 22:08:06 GMT",
+      "last_checked": "2026-11-28T14:43:46.610199+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://collider.com/feed/": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-28T01:22:58.274063+06:00",
+      "last_checked": "2026-11-28T14:43:47.180667+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://tvline.com/feed/": {
-      "etag": "\"2cee07680ff4a04e8b5a33369d60347e\"",
-      "last_modified": "Fri, 27 Nov 2026 19:12:00 GMT",
-      "last_checked": "2026-11-28T01:22:58.898550+06:00",
+      "etag": "\"1e138ebe2c7182f86fe98f900e0c455d\"",
+      "last_modified": "Sat, 28 Nov 2026 05:49:51 GMT",
+      "last_checked": "2026-11-28T14:43:48.646382+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.ottplay.com/rss": {
       "etag": "\"b5496c89c58ff0f5d07d64a68d4efe07\"",
       "last_modified": "Thu, 27 May 2021 12:38:49 GMT",
-      "last_checked": "2026-11-28T01:23:01.020105+06:00",
+      "last_checked": "2026-11-28T14:43:51.695769+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.filmibeat.com/rss/feeds/filmibeat-news.xml": {
       "etag": null,
-      "last_modified": "Fri, 27 Nov 2026 19:16:17 GMT",
-      "last_checked": "2026-11-28T01:23:01.520290+06:00",
+      "last_modified": "Sat, 28 Nov 2026 08:42:36 GMT",
+      "last_checked": "2026-11-28T14:43:52.010561+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.pinkvilla.com/rss": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-28T01:23:01.965609+06:00",
+      "last_checked": "2026-11-28T14:43:52.905960+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.bollywoodhungama.com/feed/": {
-      "etag": "\"6c84f324399590669d146d78d61514b9\"",
-      "last_modified": "Fri, 27 Nov 2026 19:06:32 GMT",
-      "last_checked": "2026-11-28T01:23:02.204884+06:00",
+      "etag": "\"5bc77f442ef9fbe0d7ff951dddf91874\"",
+      "last_modified": "Sat, 28 Nov 2026 08:38:06 GMT",
+      "last_checked": "2026-11-28T14:43:53.365900+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.gadgets360.com/entertainment/rss": {
-      "last_checked": "2026-11-28T01:23:03.173161+06:00",
-      "fail_count": 260,
+      "last_checked": "2026-11-28T14:43:55.280317+06:00",
+      "fail_count": 261,
       "alerted": true
     },
     "https://www.soompi.com/feed": {
-      "etag": "W/\"61077ff915737d981beb707e0d645e2d\"",
-      "last_modified": "Fri, 27 Nov 2026 12:21:45 GMT",
-      "last_checked": "2026-11-28T01:23:03.440379+06:00",
+      "etag": "W/\"c04bd300c66e313a0912029e8d40a8b0\"",
+      "last_modified": "Sat, 28 Nov 2026 08:27:30 GMT",
+      "last_checked": "2026-11-28T14:43:55.475406+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.whats-on-netflix.com/feed/": {
       "etag": null,
-      "last_modified": "Fri, 27 Nov 2026 19:01:46 GMT",
-      "last_checked": "2026-11-28T01:23:05.424956+06:00",
+      "last_modified": "Fri, 27 Nov 2026 23:55:10 GMT",
+      "last_checked": "2026-11-28T14:43:57.335328+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.netflix.com/tudum/rss.xml": {
-      "last_checked": "2026-11-28T01:23:06.849891+06:00",
-      "fail_count": 260,
+      "last_checked": "2026-11-28T14:44:00.256863+06:00",
+      "fail_count": 261,
       "alerted": true
     },
     "https://press.wbd.com/us/en/rss": {
-      "last_checked": "2026-11-28T01:23:07.282036+06:00",
-      "fail_count": 260,
+      "last_checked": "2026-11-28T14:44:00.506151+06:00",
+      "fail_count": 261,
       "alerted": true
     },
     "https://www.apple.com/tv-pr/newsroom/feed/": {
-      "last_checked": "2026-11-28T01:23:08.186271+06:00",
-      "fail_count": 260,
+      "last_checked": "2026-11-28T14:44:00.915499+06:00",
+      "fail_count": 261,
       "alerted": true
     },
     "https://www.aboutamazon.com/rss": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-28T01:23:08.399490+06:00",
+      "last_checked": "2026-11-28T14:44:01.102638+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.marvel.com/articles/feed": {
-      "last_checked": "2026-11-28T01:23:09.552050+06:00",
-      "fail_count": 260,
+      "last_checked": "2026-11-28T14:44:01.478577+06:00",
+      "fail_count": 261,
       "alerted": true
     },
     "https://www.dc.com/blog/rss.xml": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-28T01:23:10.400368+06:00",
-      "fail_count": 4,
+      "last_checked": "2026-11-28T14:44:01.665940+06:00",
+      "fail_count": 5,
       "alerted": true
     },
     "https://www.sonypictures.com/rss": {
-      "last_checked": "2026-11-28T01:23:11.188172+06:00",
-      "fail_count": 260,
+      "last_checked": "2026-11-28T14:44:02.168841+06:00",
+      "fail_count": 261,
       "alerted": true
     },
     "https://www.paramount.com/rss": {
-      "last_checked": "2026-11-28T01:23:11.452122+06:00",
-      "fail_count": 260,
+      "last_checked": "2026-11-28T14:44:02.265633+06:00",
+      "fail_count": 261,
       "alerted": true
     },
     "https://www.universalpictures.com/rss": {
-      "last_checked": "2026-11-28T01:23:11.822458+06:00",
-      "fail_count": 260,
+      "last_checked": "2026-11-28T14:44:02.677388+06:00",
+      "fail_count": 261,
       "alerted": true
     }
   },
   "queue": {
-    "deadline.com/2026/11/ted-lasso-renewed-season-5-apple-tv-1237231022": {
-      "title": "‘Ted Lasso’ Renewed For Season 5 By Apple TV",
-      "url": "https://deadline.com/2026/11/ted-lasso-renewed-season-5-apple-tv-1237231022/",
-      "canonical": "deadline.com/2026/11/ted-lasso-renewed-season-5-apple-tv-1237231022",
-      "published_dt": "2026-11-24T02:30:15+06:00",
-      "published_date": "2026-11-24T02:30:15+06:00",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "excerpt": "Ted Lasso fans have something extra to be thankful for this Thanksgiving: the popular Apple TV comedy series has been officially renewed for a fifth season. Its targeted production start date is April 14, I hear. The renewal, which has been pending since the Season 4 finale was released in early October, was never in […]",
-      "image": "https://deadline.com/wp-content/uploads/2026/10/Ted_Lasso_Photo_041006.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-11-24T02:57:55.069225+06:00",
-      "last_seen": "2026-11-24T02:57:55.069243+06:00",
-      "importance_score": 50,
-      "priority_type": "Season Renewals / New Season Updates",
-      "priority_tier": 2,
-      "priority_rank": 7,
-      "sector": "Hollywood",
-      "rank_reason": "Renewal confirmed with production start date but no release window; not a release announcement.",
-      "last_ranked_at": "2026-11-24T16:45:04.279018+06:00",
-      "learning_pattern": ""
-    },
-    "deadline.com/2026/11/ray-mckinnon-amc-nascar-series-thunder-road-1237231832": {
-      "title": "Ray McKinnon Joins AMC NASCAR Drama Series ‘Thunder Road’",
-      "url": "https://deadline.com/2026/11/ray-mckinnon-amc-nascar-series-thunder-road-1237231832/",
-      "canonical": "deadline.com/2026/11/ray-mckinnon-amc-nascar-series-thunder-road-1237231832",
-      "published_dt": "2026-11-24T02:21:03+06:00",
-      "published_date": "2026-11-24T02:21:03+06:00",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "excerpt": "EXCLUSIVE: Ray McKinnon has joined the recurring cast of AMC’s NASCAR drama series Thunder Road, from John Fusco. The series will debut on AMC and AMC+ in 2027. McKinnon will play Benton Hale, who is as comfortable as a deacon at a church picnic — as he should be, given his standing in the infamous, […]",
-      "image": "https://deadline.com/wp-content/uploads/2026/11/ray.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-11-24T02:57:55.227914+06:00",
-      "last_seen": "2026-11-24T02:57:55.227931+06:00",
-      "importance_score": 44,
-      "priority_type": "New Movie / Series Announcements",
-      "priority_tier": 2,
-      "priority_rank": 6,
-      "sector": "Hollywood",
-      "rank_reason": "Casting news with debut year 2027 but no release date; below publishable threshold.",
-      "last_ranked_at": "2026-11-24T16:45:04.278458+06:00",
-      "learning_pattern": "sports"
-    },
-    "deadline.com/2026/11/reliant-talent-agency-jason-zenowich-kyle-levinson-rick-ferrell-michelle-romeo-1237231857": {
-      "title": "Reliant Talent Adds Jason Zenowich, Kyle Levinson,  Rick Ferrell & Michelle Romeo As Agents",
-      "url": "https://deadline.com/2026/11/reliant-talent-agency-jason-zenowich-kyle-levinson-rick-ferrell-michelle-romeo-1237231857/",
-      "canonical": "deadline.com/2026/11/reliant-talent-agency-jason-zenowich-kyle-levinson-rick-ferrell-michelle-romeo-1237231857",
-      "published_dt": "2026-11-24T02:02:26+06:00",
-      "published_date": "2026-11-24T02:02:26+06:00",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "excerpt": "EXCLUSIVE: Reliant Talent Agency has added four new agents across their talent, touring and corporate departments. On the talent theatrical side, the company has hired veteran talent agent Jason Zenowich who has worked at ICM, A3 and most recently the Kohner Agency. Zenowich will be located in Los Angeles and will bring a majority of […]",
-      "image": "https://deadline.com/wp-content/uploads/2026/11/Jason-Zenowich-Rick-Ferrell-Kyle-Levinso-Michelle-Romeo-Reliant-Media.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-11-24T02:57:55.343728+06:00",
-      "last_seen": "2026-11-24T02:57:55.343747+06:00",
-      "importance_score": 24,
-      "priority_type": "New Movie / Series Announcements",
-      "priority_tier": 2,
-      "priority_rank": 6,
-      "sector": "Hollywood",
-      "rank_reason": "Agency hiring news, no release details; lowest publishability.",
-      "last_ranked_at": "2026-11-24T16:45:04.278892+06:00",
-      "learning_pattern": ""
-    },
-    "deadline.com/2026/11/vanessa-ferlito-john-carroll-lynch-denzel-washington-1237231409": {
-      "title": "Vanessa Ferlito, John Carroll Lynch And Ted Levine Join Denzel Washington In New Thriller From Christopher McQuarrie And United Artists",
-      "url": "https://deadline.com/2026/11/vanessa-ferlito-john-carroll-lynch-denzel-washington-1237231409/",
-      "canonical": "deadline.com/2026/11/vanessa-ferlito-john-carroll-lynch-denzel-washington-1237231409",
-      "published_dt": "2026-11-24T01:30:00+06:00",
-      "published_date": "2026-11-24T01:30:00+06:00",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "excerpt": "EXCLUSIVE: Vanessa Ferlito, John Carroll Lynch, and Ted Levine are set to join in Amazon MGM Studios’ and United Artists’ untitled Christopher McQuarrie-helmed thriller alongside previously announced stars Denzel Washington, Teyonah Parris and Miles Caton. The film, which is penned by Scott Barkan and Gregg Zehentner, will be released in theaters on October 1. The […]",
-      "image": "https://deadline.com/wp-content/uploads/2026/11/split-image-1500-12.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-11-24T02:57:55.704672+06:00",
-      "last_seen": "2026-11-24T02:57:55.704691+06:00",
-      "importance_score": 86,
-      "priority_type": "Theatrical Releases / Re-releases",
-      "priority_tier": 1,
-      "priority_rank": 5,
-      "sector": "Hollywood",
-      "rank_reason": "Officially announced theatrical release date (Oct 1 2026) for a high‑profile thriller starring Denzel Washington, confirming platform, date and venue – meets release‑only criteria.",
-      "last_ranked_at": "2026-11-24T16:45:04.278128+06:00",
-      "learning_pattern": ""
-    },
-    "variety.com/2026/film/awards/oscars-2027-eligible-animated-documentary-international-1236956087": {
-      "title": "Oscars: 38 Animated Movies, 104 International Films and 190 Documentaries Make the Eligibility Lists, Setting New Records",
-      "url": "https://variety.com/2026/film/awards/oscars-2027-eligible-animated-documentary-international-1236956087/",
-      "canonical": "variety.com/2026/film/awards/oscars-2027-eligible-animated-documentary-international-1236956087",
-      "published_dt": "2026-11-24T01:00:00+06:00",
-      "published_date": "2026-11-24T01:00:00+06:00",
-      "source": "Variety",
-      "region": "Entertainment",
-      "excerpt": "The Academy of Motion Picture Arts and Sciences has released the lists of films eligible for animated feature, documentary feature and international feature at the 99th Academy Awards, and two of the three are setting records. Animated feature has 38 eligible films, the most in the category’s history. International feature has 104, also a record. […]",
-      "image": "https://variety.com/wp-content/uploads/2026/11/split-image-1000-2-4.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-11-24T02:57:59.438561+06:00",
-      "last_seen": "2026-11-24T02:57:59.438579+06:00",
-      "importance_score": 39,
-      "priority_type": "New Movie / Series Announcements",
-      "priority_tier": 2,
-      "priority_rank": 6,
-      "sector": "Hollywood",
-      "rank_reason": "Eligibility list publication, not a release announcement.",
-      "last_ranked_at": "2026-11-24T16:45:04.278616+06:00",
-      "learning_pattern": ""
-    },
     "deadline.com/2026/11/netflix-bela-bajaria-emmys-streaming-executive-1237231936": {
       "title": "Bela Bajaria Says Her Phone Has Been Ringing Since Netflix Exit, But “I’m Not Really A ‘Just Do The Exact Same Thing’ Kind Of Person”",
       "url": "https://deadline.com/2026/11/netflix-bela-bajaria-emmys-streaming-executive-1237231936/",
@@ -1032,13 +912,13 @@
       "status": "pending",
       "first_seen": "2026-11-28T01:22:54.841935+06:00",
       "last_seen": "2026-11-28T01:22:54.841946+06:00",
-      "importance_score": 45,
+      "importance_score": 30,
       "priority_type": "Release Date Confirmations",
       "priority_tier": 1,
       "priority_rank": 4,
       "sector": "Hollywood",
-      "rank_reason": "Discussion of release schedule conflict; no new release announced, score kept below 80.",
-      "last_ranked_at": "2026-11-28T01:23:19.727139+06:00",
+      "rank_reason": "Only commentary on scheduling conflict; no confirmed release details for either title, so score remains below publishable level.",
+      "last_ranked_at": "2026-11-28T14:44:11.685612+06:00",
       "learning_pattern": ""
     },
     "deadline.com/2026/11/netflix-edits-tyson-fury-schizophrenia-scene-paris-fury-1237234272": {
@@ -1056,13 +936,13 @@
       "status": "pending",
       "first_seen": "2026-11-28T01:22:55.204247+06:00",
       "last_seen": "2026-11-28T01:22:55.204269+06:00",
-      "importance_score": 37,
-      "priority_type": "New Movie / Series Announcements",
-      "priority_tier": 2,
-      "priority_rank": 6,
+      "importance_score": 24,
+      "priority_type": "Release Date Confirmations",
+      "priority_tier": 1,
+      "priority_rank": 4,
       "sector": "Hollywood",
-      "rank_reason": "Content edit news; no release information, low overall score.",
-      "last_ranked_at": "2026-11-28T01:23:19.727352+06:00",
+      "rank_reason": "Story about post‑production edit; no new release window announced, thus low total.",
+      "last_ranked_at": "2026-11-28T14:44:11.685860+06:00",
       "learning_pattern": "sports"
     },
     "deadline.com/2026/11/netflix-buys-chinese-drama-the-melody-of-love-release-date-1237234243": {
@@ -1105,13 +985,13 @@
       "status": "pending",
       "first_seen": "2026-11-28T01:22:56.152226+06:00",
       "last_seen": "2026-11-28T01:22:56.152249+06:00",
-      "importance_score": 40,
-      "priority_type": "New Movie / Series Announcements",
-      "priority_tier": 2,
-      "priority_rank": 6,
+      "importance_score": 22,
+      "priority_type": "Release Date Confirmations",
+      "priority_tier": 1,
+      "priority_rank": 4,
       "sector": "Hollywood",
-      "rank_reason": "Feature story about Beckham’s routine; no release announcement, thus low scoring.",
-      "last_ranked_at": "2026-11-28T01:23:19.727284+06:00",
+      "rank_reason": "Article discusses a docuseries but provides no new release date or window; therefore low score.",
+      "last_ranked_at": "2026-11-28T14:44:11.685899+06:00",
       "learning_pattern": ""
     },
     "disneyplus.com/explore/articles/only-murders-in-london": {
@@ -1129,13 +1009,85 @@
       "status": "pending",
       "first_seen": "2026-11-28T01:23:15.007915+06:00",
       "last_seen": "2026-11-28T01:23:15.007924+06:00",
-      "importance_score": 55,
+      "importance_score": 39,
       "priority_type": "Release Date Confirmations",
       "priority_tier": 1,
       "priority_rank": 4,
       "sector": "Hollywood",
-      "rank_reason": "The Disney+ article lists the upcoming season of ‘Only Murders in London’ but does not specify an exact release date or window, so it does not meet the release‑only threshold and receives a sub‑80 score.",
-      "last_ranked_at": "2026-11-28T01:23:19.726915+06:00",
+      "rank_reason": "Provides platform (Disney+/Hulu) but lacks a specific release date; qualifies as a release‑date‑confirmation story but scores below the publishable threshold.",
+      "last_ranked_at": "2026-11-28T14:44:11.685109+06:00",
+      "learning_pattern": ""
+    },
+    "deadline.com/2026/11/trump-jr-hunting-wives-kiss-1237234421": {
+      "title": "Donald Trump Jr.’s Outrage Gifts Netflix’s ‘Hunting Wives’ Some Priceless Streisand Effect PR",
+      "url": "https://deadline.com/2026/11/trump-jr-hunting-wives-kiss-1237234421/",
+      "canonical": "deadline.com/2026/11/trump-jr-hunting-wives-kiss-1237234421",
+      "published_dt": "2026-11-28T05:46:48+06:00",
+      "published_date": "2026-11-28T05:46:48+06:00",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "excerpt": "Christmas came on Thanksgiving for Netflix’s The Hunting Wives, thanks to a fatuous Donald Trump Jr. Never slow to put his silver foot in his big mouth, the oldest and most ambitious son of El Presidente got very hot under the digital collar early on Turkey Day over a passionate promo for the soapy and […]",
+      "image": "https://deadline.com/wp-content/uploads/2026/11/Hunting-Wives-kiss-Donad-Trump-Jr.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-28T14:43:42.015613+06:00",
+      "last_seen": "2026-11-28T14:43:42.015633+06:00",
+      "importance_score": 33,
+      "priority_type": "Release Date Confirmations",
+      "priority_tier": 1,
+      "priority_rank": 4,
+      "sector": "Hollywood",
+      "rank_reason": "Only a promotional tweet; no new release date or platform information, so score stays well below publishable threshold.",
+      "last_ranked_at": "2026-11-28T14:44:11.685489+06:00",
+      "learning_pattern": "promotion"
+    },
+    "deadline.com/2026/11/salli-newman-hunting-wives-tribute-1237234359": {
+      "title": "‘The Hunting Wives’ Pays Tribute To Lionsgate Exec Salli Newman",
+      "url": "https://deadline.com/2026/11/salli-newman-hunting-wives-tribute-1237234359/",
+      "canonical": "deadline.com/2026/11/salli-newman-hunting-wives-tribute-1237234359",
+      "published_dt": "2026-11-28T01:58:06+06:00",
+      "published_date": "2026-11-28T01:58:06+06:00",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "excerpt": "Viewers of the second season of The Hunting Wives, currently streaming on Netflix, will find a poignant message at the end of the season finale: “In Loving Memory of Salli Newman.” Newman was SVP Television Production at Lionsgate, producer of The Hunting Wives. She died of a heart attack on December 8, 2025, in her […]",
+      "image": "https://deadline.com/wp-content/uploads/2026/11/salli-newman-burbank-ca-obituary.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-28T14:43:42.430011+06:00",
+      "last_seen": "2026-11-28T14:43:42.430032+06:00",
+      "importance_score": 24,
+      "priority_type": "Release Date Confirmations",
+      "priority_tier": 1,
+      "priority_rank": 4,
+      "sector": "Hollywood",
+      "rank_reason": "Content is a tribute, not a new release announcement; lacks release specifics, keeping total low.",
+      "last_ranked_at": "2026-11-28T14:44:11.685745+06:00",
+      "learning_pattern": ""
+    },
+    "variety.com/2026/film/festivals/netflix-secrets-ravi-bharwani-thriller-1236959343": {
+      "title": "Netflix’s ‘Secrets’ Takes Indonesian Auteur Ravi Bharwani Into Thriller Territory After Eight-Year Gap",
+      "url": "https://variety.com/2026/film/festivals/netflix-secrets-ravi-bharwani-thriller-1236959343/",
+      "canonical": "variety.com/2026/film/festivals/netflix-secrets-ravi-bharwani-thriller-1236959343",
+      "published_dt": "2026-11-28T09:00:00+06:00",
+      "published_date": "2026-11-28T09:00:00+06:00",
+      "source": "Variety",
+      "region": "Entertainment",
+      "excerpt": "Indonesian filmmaker Ravi Bharwani’s Netflix thriller “Secrets,” his first feature in eight years, will world premiere at the 21st Jogja-Netpac Asian Film Festival on Nov. 29, four days before it begins streaming on the platform on Dec. 3. Sha Ine Febriyanti (“This Earth of Mankind”) plays Parni, a former sex worker who now runs a […]",
+      "image": "https://variety.com/wp-content/uploads/2026/11/Secrets.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-28T14:43:44.420976+06:00",
+      "last_seen": "2026-11-28T14:43:44.420997+06:00",
+      "importance_score": 100,
+      "priority_type": "New Movie / Series Announcements",
+      "priority_tier": 2,
+      "priority_rank": 6,
+      "sector": "International",
+      "rank_reason": "Clear world‑premiere date (Nov 29) and streaming launch (Dec 3) on Netflix, with official confirmation from Variety, making it a publishable release story.",
+      "last_ranked_at": "2026-11-28T14:44:11.686022+06:00",
       "learning_pattern": ""
     }
   },
@@ -1290,81 +1242,6 @@
       "status": "published",
       "message_id": 1266
     },
-    "remington_scott_eros_imagination": {
-      "event_id": "remington_scott_eros_imagination",
-      "canonical_url": "variety.com/2026/digital/news/lord-of-the-rings-spider-man-vet-remington-scott-leads-eros-unit-1236933708",
-      "original_url": "https://variety.com/2026/digital/news/lord-of-the-rings-spider-man-vet-remington-scott-leads-eros-unit-1236933708/",
-      "source": "Variety",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "Eros Innovation",
-      "event_cluster_id": "evt_6b7b03e027",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Eros Imagination",
-      "summary": "Eros Innovation launches a new creative‑tech unit led by digital‑human pioneer Remington Scott.",
-      "highlights": [
-        "Scott, who led Gollum’s motion capture and Spider‑Man 2 digital humans, will head the London‑based unit",
-        "First project will be an immersive Mohammed Rafi music experience using AI and digital‑human tech",
-        "Eros Imagination will offer AI‑assisted filmmaking, virtual production and game‑character services"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-29T05:09:57+06:00",
-      "selected_at": "2026-10-29T12:58:30.989539+06:00",
-      "status": "published",
-      "message_id": 1161
-    },
-    "dcu_character_hierarchy": {
-      "event_id": "dcu_character_hierarchy",
-      "canonical_url": "variety.com/2026/film/news/james-gunn-batman-superman-wonder-woman-dcu-1236933827",
-      "original_url": "https://variety.com/2026/film/news/james-gunn-batman-superman-wonder-woman-dcu-1236933827/",
-      "source": "Variety",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "Paramount/James Gunn",
-      "event_cluster_id": "evt_68bd85fb35",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Superman: Man of Tomorrow",
-      "summary": "James Gunn outlines DCU’s ‘diamond characters’ and confirms the upcoming Superman film for July 2027.",
-      "highlights": [
-        "Gunn labels Batman, Superman and Wonder Woman as core ‘diamond characters’",
-        "He says smaller heroes like Krypto, John Stewart and Peacemaker could be elevated",
-        "The film is slated for theatrical release on July 9, 2027"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-29T09:53:49+06:00",
-      "selected_at": "2026-10-29T20:23:10.883720+06:00",
-      "status": "published",
-      "message_id": 1163
-    },
-    "merry_berry_love_collab": {
-      "event_id": "merry_berry_love_collab",
-      "canonical_url": "deadline.com/2026/10/merry-berry-love-nippon-tv-cj-enm-japan-korea-drama-1237207929",
-      "original_url": "https://deadline.com/2026/10/merry-berry-love-nippon-tv-cj-enm-japan-korea-drama-1237207929/",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "topic": "Korean Drama",
-      "institution": "Nippon TV & CJ ENM",
-      "event_cluster_id": "evt_161ba1cff0",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Merry Berry Love",
-      "summary": "Japanese‑Korean drama series launched on Disney+ and topped viewership charts in 2026.",
-      "highlights": [
-        "Ten‑part series streamed worldwide on Disney+ from Oct 7",
-        "Stars Ji Chang Wook and Mio Imada",
-        "Number‑one most‑viewed Japanese live‑action title on Disney+ globally in 2026"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-29T10:59:23+06:00",
-      "selected_at": "2026-10-29T20:23:16.844933+06:00",
-      "status": "published",
-      "message_id": 1164
-    },
     "box_office_q3_2026": {
       "event_id": "box_office_q3_2026",
       "canonical_url": "deadline.com/2026/10/marcus-theatres-record-earnings-spider-man-the-odyssey-1237208075",
@@ -1414,31 +1291,6 @@
       "selected_at": "2026-10-30T02:09:04.643789+06:00",
       "status": "published",
       "message_id": 1166
-    },
-    "smile_3_announcement": {
-      "event_id": "smile_3_announcement",
-      "canonical_url": "variety.com/2026/film/news/smile-3-director-writer-1236838500",
-      "original_url": "https://variety.com/2026/film/news/smile-3-director-writer-1236838500/",
-      "source": "Variety",
-      "region": "Entertainment",
-      "topic": "Franchises and IP",
-      "institution": "Paramount Pictures",
-      "event_cluster_id": "evt_14ad51f89b",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Smile 3",
-      "summary": "Paramount confirms a third \"Smile\" film with David Bruckner directing and Nick Antosca writing.",
-      "highlights": [
-        "David Bruckner hired to direct the sequel",
-        "Nick Antosca to write the screenplay",
-        "Franchise creator Parker Finn remains as producer"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-29T06:02:24+06:00",
-      "selected_at": "2026-10-30T02:09:11.811093+06:00",
-      "status": "published",
-      "message_id": 1167
     },
     "good_books_tv_adaptation": {
       "event_id": "good_books_tv_adaptation",
@@ -24384,6 +24236,18 @@
       "confidence": 0.6,
       "last_seen": "2026-11-28T01:23:19.735121+06:00",
       "headline": "Netflix Tunes Into Music-Driven Chinese Fantasy Series ‘The Melody Of Love’"
+    },
+    "evt_45a626f4a9": {
+      "event_id": "evt_45a626f4a9",
+      "topic": "Release Dates",
+      "region": "Entertainment",
+      "sources": [
+        "Variety"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-28T14:44:11.698947+06:00",
+      "headline": "Netflix’s ‘Secrets’ Takes Indonesian Auteur Ravi Bharwani Into Thriller Territory After Eight-Year Gap"
     }
   },
   "posted_event_ids": [
@@ -24889,7 +24753,6 @@
     "evt_b3ad79fc8c"
   ],
   "recent_titles": [
-    "paramount studios",
     "bright minds",
     "xta media",
     "further lane",
@@ -44775,11 +44638,11 @@
   "fresh_start_at": "2026-09-07T13:58:06.173598+06:00",
   "learned_rejections": {
     "sports": {
-      "observations": 238,
-      "low_score_count": 197,
-      "total_score": 11309,
-      "avg_score": 47.5,
-      "last_seen": "2026-11-28T01:23:19.727947+06:00",
+      "observations": 239,
+      "low_score_count": 198,
+      "total_score": 11333,
+      "avg_score": 47.4,
+      "last_seen": "2026-11-28T14:44:11.686889+06:00",
       "examples": [
         {
           "title": "'Heated Rivalry' Fans Hit Theaters for Theatrical Re-Release",
@@ -44803,8 +44666,8 @@
         },
         {
           "title": "Netflix Edits Schizophrenia Scene Out Of Tyson Fury Doc After Wife Reveals Boxer Does Not Have Condition",
-          "score": 37,
-          "priority_type": "New Movie / Series Announcements"
+          "score": 24,
+          "priority_type": "Release Date Confirmations"
         }
       ]
     },
@@ -44843,11 +44706,11 @@
       ]
     },
     "promotion": {
-      "observations": 10,
-      "low_score_count": 10,
-      "total_score": 518,
-      "avg_score": 51.8,
-      "last_seen": "2026-11-24T02:59:23.351164+06:00",
+      "observations": 11,
+      "low_score_count": 11,
+      "total_score": 551,
+      "avg_score": 50.1,
+      "last_seen": "2026-11-28T14:44:11.686599+06:00",
       "examples": [
         {
           "title": "New ‘South Park’ Takes On Data Centers And The Billionaires Who Build Them",
@@ -44863,6 +44726,11 @@
           "title": "Hailee Steinfeld Confirms She’s In ‘Avengers: Doomsday’",
           "score": 31,
           "priority_type": "New Movie / Series Announcements"
+        },
+        {
+          "title": "Donald Trump Jr.’s Outrage Gifts Netflix’s ‘Hunting Wives’ Some Priceless Streisand Effect PR",
+          "score": 33,
+          "priority_type": "Release Date Confirmations"
         }
       ]
     },
@@ -44910,70 +44778,6 @@
     }
   },
   "score_history": [
-    {
-      "title": "Amanda Seyfried Joined ‘You Can See Everything’ Without Reps Knowing, Had ‘No Approval’ Over Filming and Got ‘Disrespected’ by Billy Evans: ",
-      "score": 31,
-      "pattern": "",
-      "priority_type": "New Movie / Series Announcements",
-      "source": "Variety",
-      "seen_at": "2026-11-12T23:26:10.378364+06:00"
-    },
-    {
-      "title": "OTT This week: ஜெயிலர் 2 முதல் ரணபாலி' வரை.. இந்த வாரம் ஓடிடியை கலக்க வரும் மாஸ் படங்களின் லிஸ்ட்! | November 12th to November 15th This wee",
-      "score": 78,
-      "pattern": "",
-      "priority_type": "OTT / Streaming Availability",
-      "source": "tamil.filmibeat.com",
-      "seen_at": "2026-11-12T23:26:10.378454+06:00"
-    },
-    {
-      "title": "2027 புத்தாண்டுக்கே ரசிகர்களுக்கு ட்ரீட் கொடுக்கும் சிஎம் விஜய்.. இந்த படம் ரீ ரிலிஸ் ஆகுதாம்! | CM Vijay's Bairavaa will re release on New ",
-      "score": 73,
-      "pattern": "",
-      "priority_type": "Theatrical Releases / Re-releases",
-      "source": "tamil.filmibeat.com",
-      "seen_at": "2026-11-12T23:26:10.378539+06:00"
-    },
-    {
-      "title": "The Game Awards Adds Disney+ to Livestream Lineup",
-      "score": 74,
-      "pattern": "",
-      "priority_type": "OTT / Streaming Availability",
-      "source": "Variety",
-      "seen_at": "2026-11-12T23:26:50.663436+06:00"
-    },
-    {
-      "title": "‘Unzipped’ 4K Restoration to Make Streaming Debut on Criterion Channel (EXCLUSIVE)",
-      "score": 66,
-      "pattern": "",
-      "priority_type": "OTT / Streaming Availability",
-      "source": "Variety",
-      "seen_at": "2026-11-12T23:26:50.663537+06:00"
-    },
-    {
-      "title": "Lucasfilm Sets ‘Star Wars: A New Hope’ IMAX 70mm Re-Release & New Behind-The-Scenes Doc ‘The Hero Awakens’ For 50th Anniversary Celebrations",
-      "score": 84,
-      "pattern": "",
-      "priority_type": "Theatrical Releases / Re-releases",
-      "source": "Deadline",
-      "seen_at": "2026-11-12T23:26:50.663672+06:00"
-    },
-    {
-      "title": "Jeff Perry, Randall Park, Debi Mazar & T.R. Knight Join Netflix’s ‘Big Mistakes’ Season 2",
-      "score": 0,
-      "pattern": "routine_production",
-      "priority_type": "",
-      "source": "Deadline",
-      "seen_at": "2026-11-12T23:26:50.663815+06:00"
-    },
-    {
-      "title": "‘Blind Spot,’ With ‘Money Heist’ Star Najwa Nimri, Hits the AFM Courtesy of Film Factory",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "",
-      "source": "Variety",
-      "seen_at": "2026-11-12T23:26:50.663954+06:00"
-    },
     {
       "title": "Sophie Nélisse Gives ‘Heated Rivalry’ Season 2 Update: “I Actually Just Wrapped”",
       "score": 0,
@@ -48909,18 +48713,82 @@
       "priority_type": "New Movie / Series Announcements",
       "source": "Deadline",
       "seen_at": "2026-11-28T01:23:19.728131+06:00"
+    },
+    {
+      "title": "Done Deal! Netflix Buys Radford Studios For Almost $400M; Streamer Calls Purchase “A Meaningful New Investment In California’s Film Industry",
+      "score": 43,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Deadline",
+      "seen_at": "2026-11-28T14:43:41.536394+06:00"
+    },
+    {
+      "title": "Only Murders in London Release Date & Where To Watch - Disney Plus",
+      "score": 39,
+      "pattern": "",
+      "priority_type": "Release Date Confirmations",
+      "source": "disneyplus.com",
+      "seen_at": "2026-11-28T14:44:11.686476+06:00"
+    },
+    {
+      "title": "Donald Trump Jr.’s Outrage Gifts Netflix’s ‘Hunting Wives’ Some Priceless Streisand Effect PR",
+      "score": 33,
+      "pattern": "promotion",
+      "priority_type": "Release Date Confirmations",
+      "source": "Deadline",
+      "seen_at": "2026-11-28T14:44:11.686605+06:00"
+    },
+    {
+      "title": "Denis Villeneuve “Deeply Disappointed” That ‘Avengers: Doomsday’ Will Launch On Same Weekend As ‘Dune: Part Three’",
+      "score": 30,
+      "pattern": "",
+      "priority_type": "Release Date Confirmations",
+      "source": "Deadline",
+      "seen_at": "2026-11-28T14:44:11.686734+06:00"
+    },
+    {
+      "title": "‘The Hunting Wives’ Pays Tribute To Lionsgate Exec Salli Newman",
+      "score": 24,
+      "pattern": "",
+      "priority_type": "Release Date Confirmations",
+      "source": "Deadline",
+      "seen_at": "2026-11-28T14:44:11.686846+06:00"
+    },
+    {
+      "title": "Netflix Edits Schizophrenia Scene Out Of Tyson Fury Doc After Wife Reveals Boxer Does Not Have Condition",
+      "score": 24,
+      "pattern": "sports",
+      "priority_type": "Release Date Confirmations",
+      "source": "Deadline",
+      "seen_at": "2026-11-28T14:44:11.686895+06:00"
+    },
+    {
+      "title": "David Beckham’s Morning Routine Has One Non-Negotiable",
+      "score": 22,
+      "pattern": "",
+      "priority_type": "Release Date Confirmations",
+      "source": "Variety",
+      "seen_at": "2026-11-28T14:44:11.687015+06:00"
+    },
+    {
+      "title": "Netflix’s ‘Secrets’ Takes Indonesian Auteur Ravi Bharwani Into Thriller Territory After Eight-Year Gap",
+      "score": 100,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Variety",
+      "seen_at": "2026-11-28T14:44:11.687141+06:00"
     }
   ],
   "adaptive_metrics": {
-    "raw_discovered": 41,
-    "pre_cerebras_rejected": 28636,
-    "hard_rejected": 10056,
+    "raw_discovered": 39,
+    "pre_cerebras_rejected": 28745,
+    "hard_rejected": 10096,
     "duplicate_rejected": 214,
-    "learned_rejected": 18366,
-    "passed_to_cerebras": 4683,
-    "cerebras_ranked": 11125,
+    "learned_rejected": 18435,
+    "passed_to_cerebras": 4687,
+    "cerebras_ranked": 11132,
     "published": 995,
-    "estimated_candidates_avoided": 28636
+    "estimated_candidates_avoided": 28745
   },
   "source_quality": {
     "collider.com": {
@@ -48952,11 +48820,11 @@
       "last_seen": "2026-09-08T11:49:09.577970+06:00"
     },
     "deadline.com": {
-      "observations": 5121,
-      "low_score_count": 4154,
-      "total_score": 258842,
+      "observations": 5125,
+      "low_score_count": 4158,
+      "total_score": 258953,
       "avg_score": 50.5,
-      "last_seen": "2026-11-28T01:23:19.728177+06:00"
+      "last_seen": "2026-11-28T14:44:11.687202+06:00"
     },
     "thewrap.com": {
       "observations": 16,
@@ -48973,11 +48841,11 @@
       "last_seen": "2026-09-08T21:05:13.366232+06:00"
     },
     "variety.com": {
-      "observations": 5365,
-      "low_score_count": 4428,
-      "total_score": 255925,
+      "observations": 5367,
+      "low_score_count": 4429,
+      "total_score": 256047,
       "avg_score": 47.7,
-      "last_seen": "2026-11-28T01:23:19.728165+06:00"
+      "last_seen": "2026-11-28T14:44:11.687217+06:00"
     },
     "indiewire.com": {
       "observations": 10,
@@ -49050,11 +48918,11 @@
       "last_seen": "2026-11-12T04:36:23.144686+06:00"
     },
     "disneyplus.com": {
-      "observations": 15,
-      "low_score_count": 5,
-      "total_score": 1009,
-      "avg_score": 67.3,
-      "last_seen": "2026-11-28T01:23:19.728147+06:00"
+      "observations": 16,
+      "low_score_count": 6,
+      "total_score": 1048,
+      "avg_score": 65.5,
+      "last_seen": "2026-11-28T14:44:11.687167+06:00"
     },
     "blog.asianwiki.com": {
       "observations": 1,
