@@ -1,224 +1,152 @@
 {
   "feeds": {
     "https://deadline.com/feed/": {
-      "etag": "W/\"3b97b04d5578ce89e7a4556f8ca42e7b\"",
-      "last_modified": "Sat, 28 Nov 2026 03:46:45 GMT",
-      "last_checked": "2026-11-28T14:43:41.608412+06:00",
+      "etag": "W/\"80372f7b08fe062c8bc2f037d836c242\"",
+      "last_modified": "Sat, 28 Nov 2026 17:22:35 GMT",
+      "last_checked": "2026-11-28T23:25:07.068221+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://variety.com/feed/": {
-      "etag": "W/\"a2a29848325f3ad877cb3109d06a55d0\"",
-      "last_modified": "Sat, 28 Nov 2026 08:21:48 GMT",
-      "last_checked": "2026-11-28T14:43:43.047044+06:00",
+      "etag": "W/\"f95de98370285bc1e4645042e647136b\"",
+      "last_modified": "Sat, 28 Nov 2026 16:24:48 GMT",
+      "last_checked": "2026-11-28T23:25:08.180432+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.hollywoodreporter.com/feed/": {
-      "etag": "W/\"7314d164ba6346ff0f46f37a69440915\"",
-      "last_modified": "Sat, 28 Nov 2026 07:10:49 GMT",
-      "last_checked": "2026-11-28T14:43:44.677555+06:00",
+      "etag": "W/\"7115356cc11598fb885de8cf2ab8df3f\"",
+      "last_modified": "Sat, 28 Nov 2026 16:00:09 GMT",
+      "last_checked": "2026-11-28T23:25:10.190591+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.thewrap.com/feed/": {
       "etag": "\"0aa3225f4e893107b0924cae2ce3a42c\"",
       "last_modified": "Sat, 28 Nov 2026 05:29:46 GMT",
-      "last_checked": "2026-11-28T14:43:45.756305+06:00",
+      "last_checked": "2026-11-28T23:25:11.061158+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.indiewire.com/feed/": {
       "etag": "W/\"ddaf9902e6e0d7deb87b78f07373d948\"",
       "last_modified": "Fri, 27 Nov 2026 22:08:06 GMT",
-      "last_checked": "2026-11-28T14:43:46.610199+06:00",
+      "last_checked": "2026-11-28T23:25:11.939832+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://collider.com/feed/": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-28T14:43:47.180667+06:00",
+      "last_checked": "2026-11-28T23:25:12.153600+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://tvline.com/feed/": {
-      "etag": "\"1e138ebe2c7182f86fe98f900e0c455d\"",
-      "last_modified": "Sat, 28 Nov 2026 05:49:51 GMT",
-      "last_checked": "2026-11-28T14:43:48.646382+06:00",
+      "etag": "\"91e059d8bd9f864b69bbb7a6e2606fc3\"",
+      "last_modified": "Sat, 28 Nov 2026 17:12:00 GMT",
+      "last_checked": "2026-11-28T23:25:13.026321+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.ottplay.com/rss": {
       "etag": "\"b5496c89c58ff0f5d07d64a68d4efe07\"",
       "last_modified": "Thu, 27 May 2021 12:38:49 GMT",
-      "last_checked": "2026-11-28T14:43:51.695769+06:00",
+      "last_checked": "2026-11-28T23:25:16.082639+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.filmibeat.com/rss/feeds/filmibeat-news.xml": {
       "etag": null,
-      "last_modified": "Sat, 28 Nov 2026 08:42:36 GMT",
-      "last_checked": "2026-11-28T14:43:52.010561+06:00",
+      "last_modified": "Sat, 28 Nov 2026 17:17:58 GMT",
+      "last_checked": "2026-11-28T23:25:16.492655+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.pinkvilla.com/rss": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-28T14:43:52.905960+06:00",
+      "last_checked": "2026-11-28T23:25:17.251007+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.bollywoodhungama.com/feed/": {
-      "etag": "\"5bc77f442ef9fbe0d7ff951dddf91874\"",
-      "last_modified": "Sat, 28 Nov 2026 08:38:06 GMT",
-      "last_checked": "2026-11-28T14:43:53.365900+06:00",
+      "etag": "\"e13543f311984e50a79dc29180a3d004\"",
+      "last_modified": "Sat, 28 Nov 2026 14:27:27 GMT",
+      "last_checked": "2026-11-28T23:25:17.674023+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.gadgets360.com/entertainment/rss": {
-      "last_checked": "2026-11-28T14:43:55.280317+06:00",
-      "fail_count": 261,
+      "last_checked": "2026-11-28T23:25:19.046103+06:00",
+      "fail_count": 262,
       "alerted": true
     },
     "https://www.soompi.com/feed": {
-      "etag": "W/\"c04bd300c66e313a0912029e8d40a8b0\"",
-      "last_modified": "Sat, 28 Nov 2026 08:27:30 GMT",
-      "last_checked": "2026-11-28T14:43:55.475406+06:00",
+      "etag": "W/\"ef90b4e4d1feaa02634c21c56cf5ac2d\"",
+      "last_modified": "Sat, 28 Nov 2026 10:13:00 GMT",
+      "last_checked": "2026-11-28T23:25:19.312407+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.whats-on-netflix.com/feed/": {
       "etag": null,
-      "last_modified": "Fri, 27 Nov 2026 23:55:10 GMT",
-      "last_checked": "2026-11-28T14:43:57.335328+06:00",
+      "last_modified": "Sat, 28 Nov 2026 16:20:18 GMT",
+      "last_checked": "2026-11-28T23:25:20.909949+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.netflix.com/tudum/rss.xml": {
-      "last_checked": "2026-11-28T14:44:00.256863+06:00",
-      "fail_count": 261,
+      "last_checked": "2026-11-28T23:25:22.649219+06:00",
+      "fail_count": 262,
       "alerted": true
     },
     "https://press.wbd.com/us/en/rss": {
-      "last_checked": "2026-11-28T14:44:00.506151+06:00",
-      "fail_count": 261,
+      "last_checked": "2026-11-28T23:25:22.952542+06:00",
+      "fail_count": 262,
       "alerted": true
     },
     "https://www.apple.com/tv-pr/newsroom/feed/": {
-      "last_checked": "2026-11-28T14:44:00.915499+06:00",
-      "fail_count": 261,
+      "last_checked": "2026-11-28T23:25:23.396780+06:00",
+      "fail_count": 262,
       "alerted": true
     },
     "https://www.aboutamazon.com/rss": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-28T14:44:01.102638+06:00",
+      "last_checked": "2026-11-28T23:25:23.584731+06:00",
       "fail_count": 0,
       "alerted": false
     },
     "https://www.marvel.com/articles/feed": {
-      "last_checked": "2026-11-28T14:44:01.478577+06:00",
-      "fail_count": 261,
+      "last_checked": "2026-11-28T23:25:24.012134+06:00",
+      "fail_count": 262,
       "alerted": true
     },
     "https://www.dc.com/blog/rss.xml": {
       "etag": null,
       "last_modified": null,
-      "last_checked": "2026-11-28T14:44:01.665940+06:00",
-      "fail_count": 5,
+      "last_checked": "2026-11-28T23:25:24.442426+06:00",
+      "fail_count": 6,
       "alerted": true
     },
     "https://www.sonypictures.com/rss": {
-      "last_checked": "2026-11-28T14:44:02.168841+06:00",
-      "fail_count": 261,
+      "last_checked": "2026-11-28T23:25:24.843870+06:00",
+      "fail_count": 262,
       "alerted": true
     },
     "https://www.paramount.com/rss": {
-      "last_checked": "2026-11-28T14:44:02.265633+06:00",
-      "fail_count": 261,
+      "last_checked": "2026-11-28T23:25:24.928941+06:00",
+      "fail_count": 262,
       "alerted": true
     },
     "https://www.universalpictures.com/rss": {
-      "last_checked": "2026-11-28T14:44:02.677388+06:00",
-      "fail_count": 261,
+      "last_checked": "2026-11-28T23:25:25.283661+06:00",
+      "fail_count": 262,
       "alerted": true
     }
   },
   "queue": {
-    "deadline.com/2026/11/netflix-bela-bajaria-emmys-streaming-executive-1237231936": {
-      "title": "Bela Bajaria Says Her Phone Has Been Ringing Since Netflix Exit, But “I’m Not Really A ‘Just Do The Exact Same Thing’ Kind Of Person”",
-      "url": "https://deadline.com/2026/11/netflix-bela-bajaria-emmys-streaming-executive-1237231936/",
-      "canonical": "deadline.com/2026/11/netflix-bela-bajaria-emmys-streaming-executive-1237231936",
-      "published_dt": "2026-11-24T08:44:00+06:00",
-      "published_date": "2026-11-24T08:44:00+06:00",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "excerpt": "UPDATED with acceptance speech remarks. Bela Bajaria told Deadline her phone has been ringing since she was ousted last month as Netflix’s content chief. “I’ve received a lot of support,” she said in New York on Monday shortly before accepting the Founders Award at the International Emmys, in her first public comments since leaving Netflix […]",
-      "image": "https://deadline.com/wp-content/uploads/2026/11/Bela-Bajaria-e1795468124186.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-11-24T16:43:44.654570+06:00",
-      "last_seen": "2026-11-24T16:43:44.654582+06:00",
-      "importance_score": 36,
-      "priority_type": "New Movie / Series Announcements",
-      "priority_tier": 2,
-      "priority_rank": 6,
-      "sector": "Hollywood",
-      "rank_reason": "Executive departure news; no release information, thus low score.",
-      "last_ranked_at": "2026-11-25T03:02:19.514017+06:00",
-      "learning_pattern": ""
-    },
-    "variety.com/2026/film/global/netflix-french-thriller-elite-force-tomer-sisley-season-2-1236956810": {
-      "title": "Netflix’s Hit French Action Thriller ‘Elite Force’ Starring Tomer Sisley Starts Production on Season 2",
-      "url": "https://variety.com/2026/film/global/netflix-french-thriller-elite-force-tomer-sisley-season-2-1236956810/",
-      "canonical": "variety.com/2026/film/global/netflix-french-thriller-elite-force-tomer-sisley-season-2-1236956810",
-      "published_dt": "2026-11-24T16:16:54+06:00",
-      "published_date": "2026-11-24T16:16:54+06:00",
-      "source": "Variety",
-      "region": "Entertainment",
-      "excerpt": "Netflix has kicked off production on the second season of “Elite Force,” its hit French action thriller starring Tomer Sisley (“Largo Winch”). Created by Julien Leclercq and Sylvain Caron and directed by Leclercq, the series spent four weeks in Netflix’s global Top 10 for non-English-language shows and cracked the streamer’s Top 10 in 91 countries. […]",
-      "image": "https://variety.com/wp-content/uploads/2026/11/images-3.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-11-24T16:43:45.698668+06:00",
-      "last_seen": "2026-11-24T16:43:45.698676+06:00",
-      "importance_score": 38,
-      "priority_type": "Season Renewals / New Season Updates",
-      "priority_tier": 2,
-      "priority_rank": 7,
-      "sector": "International",
-      "rank_reason": "Production start announcement, no release date; kept below publishable threshold.",
-      "last_ranked_at": "2026-11-25T15:40:06.858099+06:00",
-      "learning_pattern": ""
-    },
-    "variety.com/2026/film/global/gijon-film-festival-prizes-the-guest-peter-mullan-1236956268": {
-      "title": "Gijón Film Festival Prizes: Mads Mengel’s Debut ‘The Guest’ Wins Big as Peter Mullan and Carlos Reygadas Receive Honorary Awards",
-      "url": "https://variety.com/2026/film/global/gijon-film-festival-prizes-the-guest-peter-mullan-1236956268/",
-      "canonical": "variety.com/2026/film/global/gijon-film-festival-prizes-the-guest-peter-mullan-1236956268",
-      "published_dt": "2026-11-24T16:00:07+06:00",
-      "published_date": "2026-11-24T16:00:07+06:00",
-      "source": "Variety",
-      "region": "Entertainment",
-      "excerpt": "GIJÓN, Spain — “The Guest,” Mads Mengel’s directorial debut, has won the top Albar Award at the 64th Gijón/Xixón Film Festival. Anthony Boyle and Yuki Katayama took the top acting prizes, while Félix De Givry (“Adieu monde cruel”) scored best director. Danish feature “The Guest”, which premiered at Karlovy Vary, marks out Mengel as a […]",
-      "image": "https://variety.com/wp-content/uploads/2026/11/THE-GUEST.jpg",
-      "discovery": "rss",
-      "date_estimated": false,
-      "status": "pending",
-      "first_seen": "2026-11-24T16:43:46.098062+06:00",
-      "last_seen": "2026-11-24T16:43:46.098076+06:00",
-      "importance_score": 31,
-      "priority_type": "New Movie / Series Announcements",
-      "priority_tier": 2,
-      "priority_rank": 6,
-      "sector": "International",
-      "rank_reason": "Award announcement, not a release; low score.",
-      "last_ranked_at": "2026-11-25T15:40:06.857700+06:00",
-      "learning_pattern": ""
-    },
     "deadline.com/2026/11/kelly-rowland-cast-hulu-reasonable-doubt-season-5-1237232824": {
       "title": "Kelly Rowland Joins Hulu’s ‘Reasonable Doubt’ For Season 5",
       "url": "https://deadline.com/2026/11/kelly-rowland-cast-hulu-reasonable-doubt-season-5-1237232824/",
@@ -912,13 +840,13 @@
       "status": "pending",
       "first_seen": "2026-11-28T01:22:54.841935+06:00",
       "last_seen": "2026-11-28T01:22:54.841946+06:00",
-      "importance_score": 30,
+      "importance_score": 87,
       "priority_type": "Release Date Confirmations",
       "priority_tier": 1,
       "priority_rank": 4,
       "sector": "Hollywood",
-      "rank_reason": "Only commentary on scheduling conflict; no confirmed release details for either title, so score remains below publishable level.",
-      "last_ranked_at": "2026-11-28T14:44:11.685612+06:00",
+      "rank_reason": "Officially confirmed release weekend (Dec 18) for two major franchises; high relevance and audience anticipation.",
+      "last_ranked_at": "2026-11-28T23:25:35.028892+06:00",
       "learning_pattern": ""
     },
     "deadline.com/2026/11/netflix-edits-tyson-fury-schizophrenia-scene-paris-fury-1237234272": {
@@ -985,13 +913,13 @@
       "status": "pending",
       "first_seen": "2026-11-28T01:22:56.152226+06:00",
       "last_seen": "2026-11-28T01:22:56.152249+06:00",
-      "importance_score": 22,
+      "importance_score": 34,
       "priority_type": "Release Date Confirmations",
       "priority_tier": 1,
       "priority_rank": 4,
-      "sector": "Hollywood",
-      "rank_reason": "Article discusses a docuseries but provides no new release date or window; therefore low score.",
-      "last_ranked_at": "2026-11-28T14:44:11.685899+06:00",
+      "sector": "International",
+      "rank_reason": "Lifestyle piece without any release announcement; kept below publishable threshold.",
+      "last_ranked_at": "2026-11-28T23:25:35.029018+06:00",
       "learning_pattern": ""
     },
     "disneyplus.com/explore/articles/only-murders-in-london": {
@@ -1032,14 +960,14 @@
       "date_estimated": false,
       "status": "pending",
       "first_seen": "2026-11-28T14:43:42.015613+06:00",
-      "last_seen": "2026-11-28T14:43:42.015633+06:00",
-      "importance_score": 33,
-      "priority_type": "Release Date Confirmations",
+      "last_seen": "2026-11-28T23:25:07.840627+06:00",
+      "importance_score": 59,
+      "priority_type": "OTT / Streaming Availability",
       "priority_tier": 1,
-      "priority_rank": 4,
+      "priority_rank": 1,
       "sector": "Hollywood",
-      "rank_reason": "Only a promotional tweet; no new release date or platform information, so score stays well below publishable threshold.",
-      "last_ranked_at": "2026-11-28T14:44:11.685489+06:00",
+      "rank_reason": "Promotional push but no new release window; still a release‑related story with moderate scores.",
+      "last_ranked_at": "2026-11-28T23:25:35.028783+06:00",
       "learning_pattern": "promotion"
     },
     "deadline.com/2026/11/salli-newman-hunting-wives-tribute-1237234359": {
@@ -1057,13 +985,13 @@
       "status": "pending",
       "first_seen": "2026-11-28T14:43:42.430011+06:00",
       "last_seen": "2026-11-28T14:43:42.430032+06:00",
-      "importance_score": 24,
-      "priority_type": "Release Date Confirmations",
-      "priority_tier": 1,
-      "priority_rank": 4,
+      "importance_score": 54,
+      "priority_type": "Season Renewals / New Season Updates",
+      "priority_tier": 2,
+      "priority_rank": 7,
       "sector": "Hollywood",
-      "rank_reason": "Content is a tribute, not a new release announcement; lacks release specifics, keeping total low.",
-      "last_ranked_at": "2026-11-28T14:44:11.685745+06:00",
+      "rank_reason": "Season finale content, no new release date; scores reflect limited release impact.",
+      "last_ranked_at": "2026-11-28T23:25:35.029689+06:00",
       "learning_pattern": ""
     },
     "variety.com/2026/film/festivals/netflix-secrets-ravi-bharwani-thriller-1236959343": {
@@ -1081,13 +1009,109 @@
       "status": "pending",
       "first_seen": "2026-11-28T14:43:44.420976+06:00",
       "last_seen": "2026-11-28T14:43:44.420997+06:00",
-      "importance_score": 100,
-      "priority_type": "New Movie / Series Announcements",
-      "priority_tier": 2,
-      "priority_rank": 6,
+      "importance_score": 89,
+      "priority_type": "OTT / Streaming Availability",
+      "priority_tier": 1,
+      "priority_rank": 1,
       "sector": "International",
-      "rank_reason": "Clear world‑premiere date (Nov 29) and streaming launch (Dec 3) on Netflix, with official confirmation from Variety, making it a publishable release story.",
-      "last_ranked_at": "2026-11-28T14:44:11.686022+06:00",
+      "rank_reason": "Official Netflix announcement of streaming start on Dec 3, with world‑premiere at Jogja‑Netpac Festival; strong release relevance.",
+      "last_ranked_at": "2026-11-28T23:25:35.028623+06:00",
+      "learning_pattern": ""
+    },
+    "deadline.com/2026/11/channel-4-responds-huw-edwards-doc-government-criticism-1237234520": {
+      "title": "Channel 4 Defends Huw Edwards Doc After Government Criticism: “There Is Clear Public Interest In Confronting Him With Questions”",
+      "url": "https://deadline.com/2026/11/channel-4-responds-huw-edwards-doc-government-criticism-1237234520/",
+      "canonical": "deadline.com/2026/11/channel-4-responds-huw-edwards-doc-government-criticism-1237234520",
+      "published_dt": "2026-11-28T16:07:17+06:00",
+      "published_date": "2026-11-28T16:07:17+06:00",
+      "source": "Deadline",
+      "region": "Entertainment",
+      "excerpt": "Channel 4 has been forced to defend its Huw Edwards doc three days before it premieres, with the network’s news chief saying the film has “clear public interest.” Channel 4 unveiled Huw Edwards – Guilty last week and it will air Tuesday night. It has already been met with a barrage of criticism including from […]",
+      "image": "https://deadline.com/wp-content/uploads/2024/09/GettyImages-2164585424.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-28T23:25:07.459537+06:00",
+      "last_seen": "2026-11-28T23:25:07.459556+06:00",
+      "importance_score": 31,
+      "priority_type": "Release Date Confirmations",
+      "priority_tier": 1,
+      "priority_rank": 4,
+      "sector": "International",
+      "rank_reason": "Defence of a documentary prior to its premiere; no release window provided, so kept below publishable score.",
+      "last_ranked_at": "2026-11-28T23:25:35.029152+06:00",
+      "learning_pattern": ""
+    },
+    "variety.com/2026/film/festivals/rishab-shetty-iffi-best-actor-aqui-golden-peacock-1236960006": {
+      "title": "Rishab Shetty Wins Best Actor for ‘Kantara: A Legend – Chapter 1′ as Tiago Guedes’ ‘Aqui’ Takes Golden Peacock at International Film Festival of India",
+      "url": "https://variety.com/2026/film/festivals/rishab-shetty-iffi-best-actor-aqui-golden-peacock-1236960006/",
+      "canonical": "variety.com/2026/film/festivals/rishab-shetty-iffi-best-actor-aqui-golden-peacock-1236960006",
+      "published_dt": "2026-11-28T21:57:32+06:00",
+      "published_date": "2026-11-28T21:57:32+06:00",
+      "source": "Variety",
+      "region": "Entertainment",
+      "excerpt": "Portuguese filmmaker Tiago Guedes’ Spanish-language film “Aqui” won the Golden Peacock for Best Film at the 57th International Film Festival of India (IFFI), which concluded in Goa on Nov. 28. Produced by Paulo Branco, “Aqui” received the festival’s top award, with the jury praising its ability to transport audiences into “a comforting and dreamlike universe […]",
+      "image": "https://variety.com/wp-content/uploads/2026/11/Rishab-Shetty-IFFI.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-28T23:25:09.183683+06:00",
+      "last_seen": "2026-11-28T23:25:09.183705+06:00",
+      "importance_score": 30,
+      "priority_type": "Release Date Confirmations",
+      "priority_tier": 1,
+      "priority_rank": 4,
+      "sector": "International",
+      "rank_reason": "Award win without any announced release date or platform; therefore not a publishable release story.",
+      "last_ranked_at": "2026-11-28T23:25:35.029282+06:00",
+      "learning_pattern": ""
+    },
+    "variety.com/2026/film/markets-festivals/beauty-and-the-beast-flipped-thriller-wreck-and-ruin-jaff-1236959968": {
+      "title": "‘Beauty and the Beast’ Becomes a Tale of Coercive Control in Romantic Thriller ‘Wreck and Ruin’ at JAFF Market",
+      "url": "https://variety.com/2026/film/markets-festivals/beauty-and-the-beast-flipped-thriller-wreck-and-ruin-jaff-1236959968/",
+      "canonical": "variety.com/2026/film/markets-festivals/beauty-and-the-beast-flipped-thriller-wreck-and-ruin-jaff-1236959968",
+      "published_dt": "2026-11-28T18:02:39+06:00",
+      "published_date": "2026-11-28T18:02:39+06:00",
+      "source": "Variety",
+      "region": "Entertainment",
+      "excerpt": "Australian director Rosie Lourde’s debut project “Wreck and Ruin” is being presented at the 2026 JAFF Future Project at JAFF Market. Set in 1893 on a tropical volcanic island with black-sand coastlines, the story follows Elizabeth, who has just lost her sister Christina in a shipwreck, as she falls in love with Louis. As Christina’s […]",
+      "image": "https://variety.com/wp-content/uploads/2026/11/Wreck-and-Ruin-key-image.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-28T23:25:09.738008+06:00",
+      "last_seen": "2026-11-28T23:25:09.738028+06:00",
+      "importance_score": 26,
+      "priority_type": "Release Date Confirmations",
+      "priority_tier": 1,
+      "priority_rank": 4,
+      "sector": "International",
+      "rank_reason": "Project presentation only; no release date or platform disclosed, so score stays below publishable threshold.",
+      "last_ranked_at": "2026-11-28T23:25:35.029428+06:00",
+      "learning_pattern": ""
+    },
+    "variety.com/2026/film/markets-festivals/indonesian-thriller-quiet-sunshine-women-autonomy-1236959964": {
+      "title": "Indonesian Social Thriller ‘A Quiet Sunshine’ Speaks Up for Women’s Bodily Autonomy at JAFF Market",
+      "url": "https://variety.com/2026/film/markets-festivals/indonesian-thriller-quiet-sunshine-women-autonomy-1236959964/",
+      "canonical": "variety.com/2026/film/markets-festivals/indonesian-thriller-quiet-sunshine-women-autonomy-1236959964",
+      "published_dt": "2026-11-28T17:45:39+06:00",
+      "published_date": "2026-11-28T17:45:39+06:00",
+      "source": "Variety",
+      "region": "Entertainment",
+      "excerpt": "Indonesian writer-director Ninndi Raras’ debut project “A Quiet Sunshine” is among the projects selected for the 2026 JAFF Future Project at JAFF Market. The story follows the intuitive bond between two women living on a remote Indonesian island: Melyana, a midwife, and Amira, a 17-year-old who became pregnant as a result of a sexual assault. […]",
+      "image": "https://variety.com/wp-content/uploads/2026/11/A-Quiet-Sunshine-key-art.jpg",
+      "discovery": "rss",
+      "date_estimated": false,
+      "status": "pending",
+      "first_seen": "2026-11-28T23:25:09.904045+06:00",
+      "last_seen": "2026-11-28T23:25:09.904063+06:00",
+      "importance_score": 26,
+      "priority_type": "Release Date Confirmations",
+      "priority_tier": 1,
+      "priority_rank": 4,
+      "sector": "International",
+      "rank_reason": "Selection announcement without release details; not a release story.",
+      "last_ranked_at": "2026-11-28T23:25:35.029563+06:00",
       "learning_pattern": ""
     }
   },
@@ -1242,31 +1266,6 @@
       "status": "published",
       "message_id": 1266
     },
-    "box_office_q3_2026": {
-      "event_id": "box_office_q3_2026",
-      "canonical_url": "deadline.com/2026/10/marcus-theatres-record-earnings-spider-man-the-odyssey-1237208075",
-      "original_url": "https://deadline.com/2026/10/marcus-theatres-record-earnings-spider-man-the-odyssey-1237208075/",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "Marcus Theatres",
-      "event_cluster_id": "evt_3d9e674c07",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Marcus Theatres",
-      "summary": "Marcus Theatres reported record Q3 revenue driven by Spider-Man: Brand New Day and The Odyssey.",
-      "highlights": [
-        "Box office revenues rose 21% to $145 million in Q3",
-        "Operating income increased $9.9 million to $22.2 million",
-        "Top‑grossing films were Spider‑Man: Brand New Day, The Odyssey, Toy Story 5, Minions & Monsters and Moana"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-29T19:45:14+06:00",
-      "selected_at": "2026-10-29T20:23:22.791317+06:00",
-      "status": "published",
-      "message_id": 1165
-    },
     "pubg_series_development": {
       "event_id": "pubg_series_development",
       "canonical_url": "deadline.com/2026/10/pubg-donald-glover-live-action-series-game-netflix-1237207739",
@@ -1291,80 +1290,6 @@
       "selected_at": "2026-10-30T02:09:04.643789+06:00",
       "status": "published",
       "message_id": 1166
-    },
-    "good_books_tv_adaptation": {
-      "event_id": "good_books_tv_adaptation",
-      "canonical_url": "variety.com/2026/tv/global/tahmima-anam-good-books-tv-pacesetter-kudos-emily-in-paris-1236933613",
-      "original_url": "https://variety.com/2026/tv/global/tahmima-anam-good-books-tv-pacesetter-kudos-emily-in-paris-1236933613/",
-      "source": "Variety",
-      "region": "Entertainment",
-      "topic": "Franchises and IP",
-      "institution": "Pacesetter Productions / Kudos",
-      "event_cluster_id": "evt_58952da7e4",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Good Books",
-      "summary": "Tahmima Anam’s upcoming novel “Good Books” is being developed for television by Pacesetter Productions and Kudos.",
-      "highlights": [
-        "Adaptation involves Emmy‑nominated writer Alison Brown of “Emily in Paris”",
-        "U.K. publisher Cannongate set to release the book in 2028, with Scribner handling North American rights"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-29T17:30:00+06:00",
-      "selected_at": "2026-10-30T02:09:16.958387+06:00",
-      "status": "published",
-      "message_id": 1168
-    },
-    "cnc_anniversary": {
-      "event_id": "cnc_anniversary",
-      "canonical_url": "variety.com/2026/film/global/cannes-thierry-fremaux-french-film-model-cnc-gaetan-bruel-1236934291",
-      "original_url": "https://variety.com/2026/film/global/cannes-thierry-fremaux-french-film-model-cnc-gaetan-bruel-1236934291/",
-      "source": "Variety",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "CNC (France)",
-      "event_cluster_id": "evt_09ca91d6f2",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "CNC",
-      "summary": "Cannes chief Thierry Frémaux defended France’s film funding model as CNC president Gaëtan Bruel warned of political attacks on the institution’s future.",
-      "highlights": [
-        "CNC celebrated its 80th anniversary with a three‑day industry gathering in Paris",
-        "Bruel pledged to fight budget cuts and push for digital creators like YouTube to contribute to French audiovisual financing",
-        "Frémaux highlighted the CNC’s role in supporting film restoration and contemporary production"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-29T23:08:00+06:00",
-      "selected_at": "2026-10-30T02:09:21.937807+06:00",
-      "status": "published",
-      "message_id": 1169
-    },
-    "ai_feature_announcement": {
-      "event_id": "ai_feature_announcement",
-      "canonical_url": "deadline.com/2026/10/beta-builder-ai-movie-mayur-more-ashlesha-thakur-1237208010",
-      "original_url": "https://deadline.com/2026/10/beta-builder-ai-movie-mayur-more-ashlesha-thakur-1237208010/",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "Abundantia Entertainment & InVideo",
-      "event_cluster_id": "evt_83ada4f321",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Beta Builder",
-      "summary": "Mayur More and Ashlesha Thakur star in India's first hybrid AI‑driven feature film.",
-      "highlights": [
-        "Mayur More & Ashlesha Thakur lead the cast",
-        "First AI‑driven feature from Abundantia AiOn & InVideo",
-        "Principal photography began today in Mumbai"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-29T15:43:08+06:00",
-      "selected_at": "2026-10-30T13:04:44.727160+06:00",
-      "status": "published",
-      "message_id": 1176
     },
     "pride_of_bharat_epic": {
       "event_id": "pride_of_bharat_epic",
@@ -1391,55 +1316,6 @@
       "status": "published",
       "message_id": 1177
     },
-    "docuseries_release": {
-      "event_id": "docuseries_release",
-      "canonical_url": "variety.com/2026/tv/news/andrew-tate-docuseries-toxic-empire-investigation-discovery-1236933458",
-      "original_url": "https://variety.com/2026/tv/news/andrew-tate-docuseries-toxic-empire-investigation-discovery-1236933458/",
-      "source": "Variety",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "Investigation Discovery",
-      "event_cluster_id": "evt_af5dd6dbd1",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Andrew Tate: Toxic Empire",
-      "summary": "Investigation Discovery will premiere a four‑part docuseries on Andrew and Tristan Tate on Nov.",
-      "highlights": [
-        "Premiere on ID on Nov 25 at 9 pm ET/PT",
-        "Four episodes, new installment each Wednesday",
-        "Also streaming on HBO Max"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-29T23:00:00+06:00",
-      "selected_at": "2026-10-30T13:05:00.636182+06:00",
-      "status": "published",
-      "message_id": 1178
-    },
-    "adler_hire": {
-      "event_id": "adler_hire",
-      "canonical_url": "deadline.com/2026/10/adam-adler-joins-channel-4-productions-the-cube-1237207215",
-      "original_url": "https://deadline.com/2026/10/adam-adler-joins-channel-4-productions-the-cube-1237207215/",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "Channel 4",
-      "event_cluster_id": "evt_a5031f37bd",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "The Cube",
-      "summary": "Creator Adam Adler has been hired as Creative Director of Channel 4’s new in‑house production unit.",
-      "highlights": [
-        "Adler, known for The Cube (2009‑2021), will lead new show development at Channel 4",
-        "The hire follows Channel 4’s restructuring and aims to create globally‑sellable formats"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-29T17:00:00+06:00",
-      "selected_at": "2026-10-30T13:05:05.871247+06:00",
-      "status": "published",
-      "message_id": 1179
-    },
     "wb_tv_production_under_skydance": {
       "event_id": "wb_tv_production_under_skydance",
       "canonical_url": "deadline.com/2026/10/channing-dungey-warner-bros-international-tv-production-1237208993",
@@ -1464,31 +1340,6 @@
       "selected_at": "2026-10-30T13:05:11.515065+06:00",
       "status": "published",
       "message_id": 1180
-    },
-    "wentworth_sequel_uk_rights": {
-      "event_id": "wentworth_sequel_uk_rights",
-      "canonical_url": "deadline.com/2026/10/wentworth-sequel-series-5-uk-deal-1237207207",
-      "original_url": "https://deadline.com/2026/10/wentworth-sequel-series-5-uk-deal-1237207207/",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "topic": "OTT Rights and Distribution",
-      "institution": "Skydance / 5 / Fremantle",
-      "event_cluster_id": "evt_6c2e0103eb",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Wentworth: Halfway Home",
-      "summary": "Skydance’s UK network 5 has acquired the UK rights to the Wentworth sequel series, set to launch later this year.",
-      "highlights": [
-        "Series will debut on UK channel 5 and on Australia’s DAZN Binge",
-        "Original stars Katrina Milosevic, Nicole da Silva and Kate Box return",
-        "Fremantle markets the show as Wentworth: Beyond Bars outside Australia"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-29T15:30:00+06:00",
-      "selected_at": "2026-10-30T13:05:17.003480+06:00",
-      "status": "published",
-      "message_id": 1181
     },
     "anime_market_record_2025": {
       "event_id": "anime_market_record_2025",
@@ -1564,56 +1415,6 @@
       "selected_at": "2026-10-30T20:12:39.309220+06:00",
       "status": "published",
       "message_id": 1184
-    },
-    "set_design_reveal": {
-      "event_id": "set_design_reveal",
-      "canonical_url": "aboutamazon.com/news/entertainment/lord-of-the-rings-the-rings-of-power-rivendell",
-      "original_url": "https://www.aboutamazon.com/news/entertainment/lord-of-the-rings-the-rings-of-power-rivendell?utm_source=rss",
-      "source": "Prime Video / Amazon News",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "Amazon Prime Video",
-      "event_cluster_id": "evt_9a3de39601",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "The Rings of Power",
-      "summary": "Season 3 reveals an early‑era Rivendell built mostly of wood and real plants at Shepperton Studios.",
-      "highlights": [
-        "Rivendell set uses real trees and is primarily wooden",
-        "Design was guided by a Tolkien watercolor and a Swiss valley scan",
-        "The location is introduced in Season 3 as the Elves' early sanctuary"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-29T21:55:44+06:00",
-      "selected_at": "2026-10-30T20:12:44.971978+06:00",
-      "status": "published",
-      "message_id": 1185
-    },
-    "tribute_video_release": {
-      "event_id": "tribute_video_release",
-      "canonical_url": "deadline.com/2026/10/fox-video-bob-uecker-milwaukee-brewers-world-series-1237208074",
-      "original_url": "https://deadline.com/2026/10/fox-video-bob-uecker-milwaukee-brewers-world-series-1237208074/",
-      "source": "Deadline",
-      "region": "Entertainment",
-      "topic": "Major Film Announcements",
-      "institution": "Fox Sports",
-      "event_cluster_id": "evt_c8b4bd6037",
-      "event_confidence": 0.6,
-      "event_source_count": 1,
-      "headline": "Bob Uecker",
-      "summary": "Fox Sports aired a tribute video imagining late announcer Bob Uecker calling the Brewers’ first World Series win.",
-      "highlights": [
-        "The one‑minute video mixes real Uecker audio with 2026 championship footage",
-        "Kevin Burkhardt introduced the segment during the Brewers’ victory broadcast",
-        "Fox analysts Alex Rodriguez and Derek Jeter paid on‑air tributes to Uecker"
-      ],
-      "concepts": [],
-      "key_numbers": [],
-      "published_at": "2026-10-29T19:54:25+06:00",
-      "selected_at": "2026-10-30T20:12:51.565064+06:00",
-      "status": "published",
-      "message_id": 1186
     },
     "the_chairman_showrunner_change": {
       "event_id": "the_chairman_showrunner_change",
@@ -24239,15 +24040,27 @@
     },
     "evt_45a626f4a9": {
       "event_id": "evt_45a626f4a9",
-      "topic": "Release Dates",
+      "topic": "Streaming Premieres",
       "region": "Entertainment",
       "sources": [
         "Variety"
       ],
       "source_count": 1,
       "confidence": 0.6,
-      "last_seen": "2026-11-28T14:44:11.698947+06:00",
+      "last_seen": "2026-11-28T23:25:35.051833+06:00",
       "headline": "Netflix’s ‘Secrets’ Takes Indonesian Auteur Ravi Bharwani Into Thriller Territory After Eight-Year Gap"
+    },
+    "evt_a47dc472cc": {
+      "event_id": "evt_a47dc472cc",
+      "topic": "Release Dates",
+      "region": "Entertainment",
+      "sources": [
+        "Deadline"
+      ],
+      "source_count": 1,
+      "confidence": 0.6,
+      "last_seen": "2026-11-28T23:25:35.051847+06:00",
+      "headline": "Denis Villeneuve “Deeply Disappointed” That ‘Avengers: Doomsday’ Will Launch On Same Weekend As ‘Dune: Part Three’"
     }
   },
   "posted_event_ids": [
@@ -44706,11 +44519,11 @@
       ]
     },
     "promotion": {
-      "observations": 11,
-      "low_score_count": 11,
-      "total_score": 551,
-      "avg_score": 50.1,
-      "last_seen": "2026-11-28T14:44:11.686599+06:00",
+      "observations": 12,
+      "low_score_count": 12,
+      "total_score": 610,
+      "avg_score": 50.8,
+      "last_seen": "2026-11-28T23:25:35.030027+06:00",
       "examples": [
         {
           "title": "New ‘South Park’ Takes On Data Centers And The Billionaires Who Build Them",
@@ -44729,8 +44542,8 @@
         },
         {
           "title": "Donald Trump Jr.’s Outrage Gifts Netflix’s ‘Hunting Wives’ Some Priceless Streisand Effect PR",
-          "score": 33,
-          "priority_type": "Release Date Confirmations"
+          "score": 59,
+          "priority_type": "OTT / Streaming Availability"
         }
       ]
     },
@@ -44778,86 +44591,6 @@
     }
   },
   "score_history": [
-    {
-      "title": "Sophie Nélisse Gives ‘Heated Rivalry’ Season 2 Update: “I Actually Just Wrapped”",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "",
-      "source": "Deadline",
-      "seen_at": "2026-11-12T23:26:50.664065+06:00"
-    },
-    {
-      "title": "‘Big Mistakes’ Season 2 Casts Randall Park, Debi Mazar, T.R. Knight, Jeff Perry",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "",
-      "source": "Variety",
-      "seen_at": "2026-11-12T23:26:50.664199+06:00"
-    },
-    {
-      "title": "Watermelon Pictures Condemns Killing Of ‘American Doctor’ Surgeon In Gaza Hospital Strike",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "",
-      "source": "Deadline",
-      "seen_at": "2026-11-12T23:26:50.664313+06:00"
-    },
-    {
-      "title": "Gkids Acquires U.S. Rights to Cartoon Saloon’s Animated Film ‘Julián,’ Directed by Louise Bagnall and Executive Produced by Zoe Saldaña (EXC",
-      "score": 78,
-      "pattern": "",
-      "priority_type": "New Movie / Series Announcements",
-      "source": "Variety",
-      "seen_at": "2026-11-12T23:26:50.664448+06:00"
-    },
-    {
-      "title": "Skyler Gisondo On The Future Of ‘The People V. Gorilla Grodd’ After James Gunn’s DC Exit: “There’s A Lot Of Questions”",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "New Movie / Series Announcements",
-      "source": "Deadline",
-      "seen_at": "2026-11-12T23:26:50.664582+06:00"
-    },
-    {
-      "title": "Sun Valley Film Festival to Open With ‘The Debut’; Honorees Announced",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "New Movie / Series Announcements",
-      "source": "Variety",
-      "seen_at": "2026-11-12T23:26:50.664694+06:00"
-    },
-    {
-      "title": "Gang Dong-won & Kim Go-eun To Lead Netflix Korea Romance-Action Period Drama ‘The Twilight Between Us’ From Kim Won-suk",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "New Movie / Series Announcements",
-      "source": "Deadline",
-      "seen_at": "2026-11-12T23:26:50.664830+06:00"
-    },
-    {
-      "title": "Marisa Tomei Returning As Claire Dupont In ‘Upgraded 2’",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "New Movie / Series Announcements",
-      "source": "Deadline",
-      "seen_at": "2026-11-12T23:26:50.664955+06:00"
-    },
-    {
-      "title": "Fox Sets Midseason Dates For ‘Best Medicine,’ ‘The Masked Singer,’ ‘Doc,’ New Drama ‘The Interrogator’ & More",
-      "score": 0,
-      "pattern": "",
-      "priority_type": "Season Renewals / New Season Updates",
-      "source": "Deadline",
-      "seen_at": "2026-11-12T23:26:50.665075+06:00"
-    },
-    {
-      "title": "Keira Knightley Says ‘It Means Nothing’ When Fans Quote ‘Love Actually’ to Her Because She Hasn’t Watched It Since the Premiere: ‘I Don’t Re",
-      "score": 26,
-      "pattern": "",
-      "priority_type": "New Movie / Series Announcements",
-      "source": "Variety",
-      "seen_at": "2026-11-13T13:40:23.360940+06:00"
-    },
     {
       "title": "From a Mockbuster Version of ‘The Odyssey’ to a ‘Jiu-Jitsu Nun’: How Producers Are Keeping the Low-Budget Film Market Alive Via Streaming an",
       "score": 21,
@@ -48777,18 +48510,98 @@
       "priority_type": "New Movie / Series Announcements",
       "source": "Variety",
       "seen_at": "2026-11-28T14:44:11.687141+06:00"
+    },
+    {
+      "title": "Done Deal! Netflix Buys Radford Studios For Almost $400M; Streamer Calls Purchase “A Meaningful New Investment In California’s Film Industry",
+      "score": 43,
+      "pattern": "",
+      "priority_type": "New Movie / Series Announcements",
+      "source": "Deadline",
+      "seen_at": "2026-11-28T23:25:07.021493+06:00"
+    },
+    {
+      "title": "Netflix’s ‘Secrets’ Takes Indonesian Auteur Ravi Bharwani Into Thriller Territory After Eight-Year Gap",
+      "score": 89,
+      "pattern": "",
+      "priority_type": "OTT / Streaming Availability",
+      "source": "Variety",
+      "seen_at": "2026-11-28T23:25:35.029916+06:00"
+    },
+    {
+      "title": "Donald Trump Jr.’s Outrage Gifts Netflix’s ‘Hunting Wives’ Some Priceless Streisand Effect PR",
+      "score": 59,
+      "pattern": "promotion",
+      "priority_type": "OTT / Streaming Availability",
+      "source": "Deadline",
+      "seen_at": "2026-11-28T23:25:35.030043+06:00"
+    },
+    {
+      "title": "Denis Villeneuve “Deeply Disappointed” That ‘Avengers: Doomsday’ Will Launch On Same Weekend As ‘Dune: Part Three’",
+      "score": 87,
+      "pattern": "",
+      "priority_type": "Release Date Confirmations",
+      "source": "Deadline",
+      "seen_at": "2026-11-28T23:25:35.030163+06:00"
+    },
+    {
+      "title": "David Beckham’s Morning Routine Has One Non-Negotiable",
+      "score": 34,
+      "pattern": "",
+      "priority_type": "Release Date Confirmations",
+      "source": "Variety",
+      "seen_at": "2026-11-28T23:25:35.030275+06:00"
+    },
+    {
+      "title": "Channel 4 Defends Huw Edwards Doc After Government Criticism: “There Is Clear Public Interest In Confronting Him With Questions”",
+      "score": 31,
+      "pattern": "",
+      "priority_type": "Release Date Confirmations",
+      "source": "Deadline",
+      "seen_at": "2026-11-28T23:25:35.030398+06:00"
+    },
+    {
+      "title": "Rishab Shetty Wins Best Actor for ‘Kantara: A Legend – Chapter 1′ as Tiago Guedes’ ‘Aqui’ Takes Golden Peacock at International Film Festiva",
+      "score": 30,
+      "pattern": "",
+      "priority_type": "Release Date Confirmations",
+      "source": "Variety",
+      "seen_at": "2026-11-28T23:25:35.030537+06:00"
+    },
+    {
+      "title": "‘Beauty and the Beast’ Becomes a Tale of Coercive Control in Romantic Thriller ‘Wreck and Ruin’ at JAFF Market",
+      "score": 26,
+      "pattern": "",
+      "priority_type": "Release Date Confirmations",
+      "source": "Variety",
+      "seen_at": "2026-11-28T23:25:35.030668+06:00"
+    },
+    {
+      "title": "Indonesian Social Thriller ‘A Quiet Sunshine’ Speaks Up for Women’s Bodily Autonomy at JAFF Market",
+      "score": 26,
+      "pattern": "",
+      "priority_type": "Release Date Confirmations",
+      "source": "Variety",
+      "seen_at": "2026-11-28T23:25:35.030789+06:00"
+    },
+    {
+      "title": "‘The Hunting Wives’ Pays Tribute To Lionsgate Exec Salli Newman",
+      "score": 54,
+      "pattern": "",
+      "priority_type": "Season Renewals / New Season Updates",
+      "source": "Deadline",
+      "seen_at": "2026-11-28T23:25:35.030892+06:00"
     }
   ],
   "adaptive_metrics": {
-    "raw_discovered": 39,
-    "pre_cerebras_rejected": 28745,
-    "hard_rejected": 10096,
+    "raw_discovered": 40,
+    "pre_cerebras_rejected": 28842,
+    "hard_rejected": 10145,
     "duplicate_rejected": 214,
-    "learned_rejected": 18435,
-    "passed_to_cerebras": 4687,
-    "cerebras_ranked": 11132,
+    "learned_rejected": 18483,
+    "passed_to_cerebras": 4692,
+    "cerebras_ranked": 11141,
     "published": 995,
-    "estimated_candidates_avoided": 28745
+    "estimated_candidates_avoided": 28842
   },
   "source_quality": {
     "collider.com": {
@@ -48820,11 +48633,11 @@
       "last_seen": "2026-09-08T11:49:09.577970+06:00"
     },
     "deadline.com": {
-      "observations": 5125,
-      "low_score_count": 4158,
-      "total_score": 258953,
+      "observations": 5129,
+      "low_score_count": 4161,
+      "total_score": 259184,
       "avg_score": 50.5,
-      "last_seen": "2026-11-28T14:44:11.687202+06:00"
+      "last_seen": "2026-11-28T23:25:35.030981+06:00"
     },
     "thewrap.com": {
       "observations": 16,
@@ -48841,11 +48654,11 @@
       "last_seen": "2026-09-08T21:05:13.366232+06:00"
     },
     "variety.com": {
-      "observations": 5367,
-      "low_score_count": 4429,
-      "total_score": 256047,
+      "observations": 5372,
+      "low_score_count": 4433,
+      "total_score": 256252,
       "avg_score": 47.7,
-      "last_seen": "2026-11-28T14:44:11.687217+06:00"
+      "last_seen": "2026-11-28T23:25:35.030974+06:00"
     },
     "indiewire.com": {
       "observations": 10,
